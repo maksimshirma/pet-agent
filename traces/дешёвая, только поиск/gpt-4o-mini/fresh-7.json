@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "fresh-7",
+  "source": "fresh",
+  "question": "Сколько строк кода переписал Strawberry Browser с React на Svelte?",
+  "answer": "130 000 строк",
+  "evidence": "Strawberry Browser переписал 130 000 строк с React на Svelte за две недели",
+  "page": "Frontend Status #10",
+  "url": "https://habr.com/ru/articles/1015700/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "Strawberry Browser переписал 130 000 строк кода с React на Svelte. \n\nFINAL: 130000",
+ "final": "130000",
+ "correct": false,
+ "cost": 0.00017714999999998704,
+ "seconds": 3.6208905410021544,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Сколько строк кода переписал Strawberry Browser с React на Svelte?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_0L7bSVleWwZZQ1CQTrDPZDeD",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"Strawberry Browser React Svelte строки кода переписка\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_0L7bSVleWwZZQ1CQTrDPZDeD",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 27.03.2026] https://habr.com/ru/articles/1015700 — ⚡ TypeScript 6.0, обновления безопасности Node.js, петиция против AI-кода в ядре Node.js и Kafka из Node.js по-взрослому. ⚛️ TanStack улучшил пропускную способность SSR в 5 раз, а Strawberry Browser переписал 130 000 строк с React на Svelte за две недели. 🅰️ Angular выпустила официальные скиллы для AI-агентов. 💚 Компоненты визуализации звука для Vue.js на Web Audio API. …и многое другое. ### 📺 Мед"
+  },
+  {
+   "role": "assistant",
+   "content": "Strawberry Browser переписал 130 000 строк кода с React на Svelte. \n\nFINAL: 130000",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

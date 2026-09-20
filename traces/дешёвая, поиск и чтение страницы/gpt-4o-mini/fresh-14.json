@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "fresh-14",
+  "source": "fresh",
+  "question": "В какой версии Chromium доступен экспериментальный API HTML in Canvas?",
+  "answer": "Chromium 146+",
+  "evidence": "Доступно пока только в Chromium 146+ за флагом",
+  "page": "Frontend Status #14",
+  "url": "https://habr.com/ru/articles/1028734/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "Экспериментальный API HTML in Canvas доступен в Chromium версии 146 и выше. FINAL: 146",
+ "final": "146",
+ "correct": false,
+ "cost": 0.00026624999999999566,
+ "seconds": 4.5889543749945005,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "В какой версии Chromium доступен экспериментальный API HTML in Canvas?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_DemmZwexkk41S9lLzKReKw3r",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"экспериментальный API HTML in Canvas версия Chromium\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_DemmZwexkk41S9lLzKReKw3r",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 27.04.2026] https://habr.com/ru/articles/1028734 — The Web Is Fun Again: First Experiments with HTML in Canvas. Амит Шин разбирает свежий экспериментальный API, который позволяет рендерить настоящий HTML внутри `<canvas>` и применять к пикселям эффекты через 2D Canvas, WebGL или WebGPU — при этом DOM-элементы остаются интерактивными, форма работает, инпут принимает ввод, всё доступно для скринридеров. Доступно пока только в Chromium 146+ за флагом\n[Frontend Status: свежий дайджест фронтенда и AI — 04.06.2026] https://habr.com/ru/articles/1043510 — Наконец-то можно перестать выбирать между «DOM или canvas»: фича пока за флагом `chrome://flags/#canvas-draw-element` (а лучше через Canary), но потенциал виден сразу: интерактивный UI на экране 3D-модели компьютера, который раньше пришлось бы собирать на UIKit с рендером в render target и фрагментным шейдером, теперь делается с полной мощью CSS. Если нет желания ждать поддержки во всех браузерах \n[Улучшаем производительность HTML5 canvas / Хабр] https://habr.com/ru/articles/127014 — `var m_canvas = document.createElement('canvas'); m_canvas.width = 64; m_canvas.height = 64; var m_context = m_canvas.getContext(‘2d’); drawMario(m_context); function render() { context.drawImage(m_canvas, 0, 0); requestAnimationFrame(render); }` `can2.width = 100; can2.height = 40;` `can3.width = 300; can3.height = 100;` #### Группируйте вызовы [...] `for (var i = 0; i < STRIPES; i++) { context.f\n[Как я сделал Chrome Dino в Telegram Mini App / Хабр] https://habr.com/ru/articles/1002564 — Использовать не упрощённую копию, а оригинальный движок T-Rex Runner из кода Chromium (лицензия BSD) Добавить Telegram-бота с красивым меню, картинкой и кнопками Разместить всё на бесплатном хостинге с HTTPS Прикрутить команды /start, /game и обработку текста Зачем? Чтобы доказать: полноценный Mini App можно запустить за вечер и бесплатно. ### Инструменты Оригинальный код dino.js и dino.css (Copyr\n[Валентин К"
+  },
+  {
+   "role": "assistant",
+   "content": "Экспериментальный API HTML in Canvas доступен в Chromium версии 146 и выше. FINAL: 146",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

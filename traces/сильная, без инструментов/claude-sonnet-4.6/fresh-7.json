@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "fresh-7",
+  "source": "fresh",
+  "question": "Сколько строк кода переписал Strawberry Browser с React на Svelte?",
+  "answer": "130 000 строк",
+  "evidence": "Strawberry Browser переписал 130 000 строк с React на Svelte за две недели",
+  "page": "Frontend Status #10",
+  "url": "https://habr.com/ru/articles/1015700/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "FINAL: Точными данными о количестве переписанных строк кода не располагаю",
+ "final": "Точными данными о количестве переписанных строк кода не располагаю",
+ "correct": false,
+ "cost": 0.0019409999999999983,
+ "seconds": 2.7152098750084406,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Сколько строк кода переписал Strawberry Browser с React на Svelte?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\": \"Поиск информации о Strawberry Browser и переходе с React на Svelte. Это относительно малоизвестный проект, и у меня нет точных данных о количестве переписанных строк кода.\", \"final\": \"Точными данными о количестве переписанных строк кода не располагаю\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

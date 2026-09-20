@@ -1,0 +1,181 @@
+{
+ "task": {
+  "id": "fresh-21",
+  "source": "fresh",
+  "question": "Какой API опубликован как First Public Working Draft в мае 2026?",
+  "answer": "Long Animation Frames API",
+  "evidence": "First Public Working Draft: Long Animation Frames API",
+  "page": "Frontend Status #15",
+  "url": "https://habr.com/ru/articles/1032276/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "API, который был опубликован как First Public Working Draft в мае 2026, называется Long Animation Frames API. Этот API предназначен для обнаружения длительных анимационных кадров, блокирующих UI-поток, что помогает оптимизировать производительность веб-страниц. \n\nFINAL: Long Animation Frames API",
+ "final": "Long Animation Frames API",
+ "correct": true,
+ "cost": 0.0015483000000000025,
+ "seconds": 19.090973749989644,
+ "steps": 7,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какой API опубликован как First Public Working Draft в мае 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_mF6FIUxhDlD4N4zNcjyj5I0O",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"API First Public Working Draft май 2026\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_mF6FIUxhDlD4N4zNcjyj5I0O",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 06.05.2026] https://habr.com/ru/articles/1032276 — `<search>` `isWellFormed()` `toWellFormed()` `element.ariaPressed` `aria-labelledby` First Public Working Draft: Long Animation Frames API. Long Animation Frames API позволяет обнаруживать длительные анимационные кадры, блокирующие UI-поток. Это помогает оптимизировать производительность веб-страниц, предотвращая задержки в выполнении критических задач. Это развитие идеи Long Tasks API. [...] Base\n[Проектирование API — О создании API / Хабр] https://habr.com/ru/hubs/api/posts — 1. Как фронтенд получает данные с сервера: лучшие практики 2026 О том, как backend и frontend договариваются через API, где уместны REST, GraphQL, BFF и Server Components, и почему «быстро отдать JSON» ещё не значит сделать удобный интерфейс для клиента. 2. Domain‑Driven Design: полный гайд по моделированию домена в 2026 году Разбор DDD как способа управлять сложностью: единый язык, ограниченные к\n[Из-за критической уязвимости VLESS клиентов скоро все ваши ...] https://habr.com/ru/articles/1020080/comments — Но на сейчас 26.04.2026 на версии 3.18.1(1767) inbound авторизация реально \"сломалась\" и при ее включении у меня соединение с VPN сервером как бы выполняется.. но при попытке его проверить, пишет ошибка TLS. И по сути VPN просто не работает. Если отключить inbound авторизацию, то сразу все начинает работать. Ждем обновы или какой то реации разработчиков. [...] Минцифры в марте–апреле 2026 разослал\n[Комплексные IT-решения для бизнеса | Обслуживание IT ...] https://u.habr.com/jetweb — 10 сен. 2026 Названы победители первой отраслевой премии «Инженерное искусство» 10 сен. 2026 В Москве стартовала главная ИТ‑конференция осени IT Elements 2026 9 сен. 2026 По данным «Инфосистемы Джет», каждая третья кибератака — взлом через подрядчика 7 сен. 2026 «Инфосистемы Джет» внедрила IDM‑систему JIM для управления правами доступа 2 сен. 2026 Сетевая инфраструктура в ЦОДах 2026: исследование \n[Журнал — Ха"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_P60cEitLihvh16Lc5hnFv7Jc",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"Long Animation Frames API\"}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 1,
+     "id": "call_3Cgkkxpl1FdKqQqADolrz7YJ",
+     "function": {
+      "name": "web_search_ru",
+      "arguments": "{\"query\": \"Long Animation Frames API\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_P60cEitLihvh16Lc5hnFv7Jc",
+   "content": "[Pixar] Pixar (), doing business as Pixar Animation Studios, is an American animation studio based in Emeryville, California, known for its commercially successful computer-animated feature films. Pixar is a subsidiary of Walt Disney Studios, a division of the Disney Entertainment segment of the Walt Disney Company. It is one of Disney's three feature animation studios, alongside Walt Disney Animation Studios and 20th Century Animation. The studio started in 1979 as part of the Lucasfilm computer division. It was known as the Graphics Group before its spin-off as a corporation in 1986, with funding from Apple co-founder Steve Jobs, who became its majority shareholder. The studio's mascot is Luxo Jr., a desk lamp from the studio's 1986 short film of the same name. Disney announced its acquisition of Pixar in January 2006, and completed it in May 2006. Pixar is best known for its feature films, technologically powered by its RenderMan software. RenderMan began as Pixar's implementation of the industry-standard RenderMan Interface Specification (RISpec) image-rendering API, which came out in 1988; support for RISpec was dropped in 2016. RenderMan became fully path-traced and physically based (PBR). In addition to producing short films, Pixar has produced 31 feature films, beginning with Toy Story (1995), which is also the first fully computer-animated feature film; its most recent film is Toy Story 5 (2026). As of July 2023, its feature films have earned over $17 billion at the worldwide box office with an average gross of $589 million per film. Toy Story 3 (2010), Finding Dory (2016), Incredibles 2 (2018), Toy Story 4 (2019), Inside Out 2 (2024) and Toy Story 5 (2026) all grossed over $1 billion and are among the 50 highest-grossing films of all time. Moreover, 13 of Pixar's films are in the 50 highest-grossing animated films of all time. As of 2026, Inside Out 2 is the third highest-grossing animated film of all time, previously being the first-highest before being s"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_3Cgkkxpl1FdKqQqADolrz7YJ",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_195DHrgtAsdEnblRRYIcOtdb",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"Long Animation Frames API первая публикация\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_195DHrgtAsdEnblRRYIcOtdb",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 06.05.2026] https://habr.com/ru/articles/1032276 — `<search>` `isWellFormed()` `toWellFormed()` `element.ariaPressed` `aria-labelledby` First Public Working Draft: Long Animation Frames API. Long Animation Frames API позволяет обнаруживать длительные анимационные кадры, блокирующие UI-поток. Это помогает оптимизировать производительность веб-страниц, предотвращая задержки в выполнении критических задач. Это развитие идеи Long Tasks API. [...] `use\n[Вышел Chrome 123 - Habr] https://habr.com/ru/news/801869 — добавлен API Long Animation Frames для диагностики отзывчивости интерфейса сайта и выявления узких мест при отрисовке;. внесены улучшения в\n[Flutter, Fuchsia, Zircon, ChromeOS, Aluminium OS, WGPU, Tensor Modem, RIL, SeL4, FIDL будущее Андроида и других ОС №2 / Хабр] https://habr.com/ru/articles/984090 — ### 1. Flutter, OpenGL и накопленный технический долг графического стека В ранних версиях Flutter разработчики нередко сталкивались с «jank» — кратковременными подтормаживаниями анимаций и первого кадра. Часто причиной называли язык Dart или дополнительные слои абстракции фреймворка. На практике же основной источник проблем находился ниже — в архитектурных ограничениях OpenGL, поверх которого стро\n[Как я год строил расширениe для браузера которое читает статьи голосом (с синхронизацией в подкаст) / Хабр] https://habr.com/ru/articles/358374 — GPT-6 Astra помогла прочесть зашифрованную Enigma немецкую радиограмму 1941 года — над ней бились 21 год ### Rewrite It in Rust: когда переписывание действительно оправдано ### Релиз языка программирования Mojo 1.1 ### А какое у вас нишевое хобби? Я вот сделала курс по архитектуре мессенджера, пока готовилась к собесу ## Публикации ## Ближайшие события [...] image google forms spreadsheet intellig\n[Event Loop. Мифы и реальность - Habr] https://habr.com/ru/articles/789572 — Это понятие существует в рамках HOST-исполнителя, конкретная реализация движка JavaScript может использова"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_dqooxb6gUbI5gmU5FFPp08uR",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Long Animation Frames API May 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_dqooxb6gUbI5gmU5FFPp08uR",
+   "content": "[Pixar] Pixar (), doing business as Pixar Animation Studios, is an American animation studio based in Emeryville, California, known for its commercially successful computer-animated feature films. Pixar is a subsidiary of Walt Disney Studios, a division of the Disney Entertainment segment of the Walt Disney Company. It is one of Disney's three feature animation studios, alongside Walt Disney Animation Studios and 20th Century Animation. The studio started in 1979 as part of the Lucasfilm computer division. It was known as the Graphics Group before its spin-off as a corporation in 1986, with funding from Apple co-founder Steve Jobs, who became its majority shareholder. The studio's mascot is Luxo Jr., a desk lamp from the studio's 1986 short film of the same name. Disney announced its acquisition of Pixar in January 2006, and completed it in May 2006. Pixar is best known for its feature films, technologically powered by its RenderMan software. RenderMan began as Pixar's implementation of the industry-standard RenderMan Interface Specification (RISpec) image-rendering API, which came out in 1988; support for RISpec was dropped in 2016. RenderMan became fully path-traced and physically based (PBR). In addition to producing short films, Pixar has produced 31 feature films, beginning with Toy Story (1995), which is also the first fully computer-animated feature film; its most recent film is Toy Story 5 (2026). As of July 2023, its feature films have earned over $17 billion at the worldwide box office with an average gross of $589 million per film. Toy Story 3 (2010), Finding Dory (2016), Incredibles 2 (2018), Toy Story 4 (2019), Inside Out 2 (2024) and Toy Story 5 (2026) all grossed over $1 billion and are among the 50 highest-grossing films of all time. Moreover, 13 of Pixar's films are in the 50 highest-grossing animated films of all time. As of 2026, Inside Out 2 is the third highest-grossing animated film of all time, previously being the first-highest before being s"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_Yy2qIVb71B6no08Ksg4GuXBh",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"Long Animation Frames API\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_Yy2qIVb71B6no08Ksg4GuXBh",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 06.05.2026] https://habr.com/ru/articles/1032276 — `<search>` `isWellFormed()` `toWellFormed()` `element.ariaPressed` `aria-labelledby` First Public Working Draft: Long Animation Frames API. Long Animation Frames API позволяет обнаруживать длительные анимационные кадры, блокирующие UI-поток. Это помогает оптимизировать производительность веб-страниц, предотвращая задержки в выполнении критических задач. Это развитие идеи Long Tasks API. [...] `use\n[Валентин Климахин (soshroom) — Хабр Карьера - Habr] https://career.habr.com/soshroom — Ищу работу Написать ### Контакты Войти Возраст: 23 года Опыт работы: 4 года и 9 месяцев Регистрация: 16.02.2026 Последний визит: 1 день назад Гражданство: Россия Местоположение: Россия, Москва Дополнительно: готов к переезду и к удаленной работе Знание языков: Английский С1 • Русский родной язык Награды 15 откликовЗадает планкуЕсть опытЕсть контакт! Все награды Рекомендательные письма 0Друзья 0 ##\n[Комплексные IT-решения для бизнеса | Обслуживание IT ...] https://u.habr.com/jetweb — Перед «Инфосистемы Джет» сейчас стоят очень большие амбициозные перспективы, и рынок этому очень способствует. Я уверена, что компания справится со всеми вызовами с достоинством и успешно, как и всегда. Ну а мы, как ваш партнер, будем рядом, и, я уверена, будем вам в этом помогать. Мария Давыдова, Группа компаний «Детский мир» [...] Любые проекты можно делать только вместе, в партнерстве. «Инфосис\n[Работа и свежие вакансии для IT специалистов ... - Хабр Карьера] https://career.habr.com/vacancies — Все сервисы Хабра Сообщество IT-специалистовОтветы на любые вопросы об ITПрофессиональное развитие в ITОбучение для смены профессии, роста в карьере и саморазвития Войти через Хабр АккаунтЗарегистрироваться Войти через Хабр АккаунтЗарегистрироваться ВакансииСпециалистыКурсы и обучениеЭкспертыКомпанииРейтингЗарплатыЖурнал # Работа и вакансии Экосистема тенниса Technical Lead (CTO) от 500 000 ₽ Можн\n[Интернет-магазин"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_xk1zE9h1K94AtCHyvuH4oYDt",
+     "function": {
+      "name": "web_search_ru",
+      "arguments": "{\"query\":\"Long Animation Frames API первая публикация\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_xk1zE9h1K94AtCHyvuH4oYDt",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": "API, который был опубликован как First Public Working Draft в мае 2026, называется Long Animation Frames API. Этот API предназначен для обнаружения длительных анимационных кадров, блокирующих UI-поток, что помогает оптимизировать производительность веб-страниц. \n\nFINAL: Long Animation Frames API",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

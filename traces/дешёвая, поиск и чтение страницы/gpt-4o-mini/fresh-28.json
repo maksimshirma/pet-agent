@@ -1,0 +1,149 @@
+{
+ "task": {
+  "id": "fresh-28",
+  "source": "fresh",
+  "question": "Какой размер InferDI в бандле?",
+  "answer": "около 2 КБ",
+  "evidence": "в бандле — около 2 КБ",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "К сожалению, у меня нет актуальной информации о размере бандла InferDI. FINAL: размер бандла InferDI не известен.",
+ "final": "размер бандла InferDI не известен.",
+ "correct": false,
+ "cost": 0.0017641499999999921,
+ "seconds": 12.549277500002063,
+ "steps": 7,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какой размер InferDI в бандле?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_ZhcavjIEXSfiJFW13ZgmZHqh",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"размер InferDI в бандле\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_ZhcavjIEXSfiJFW13ZgmZHqh",
+   "content": "[DI в TypeScript без декораторов: почему это будущее / Habr] https://habr.com/ru/amp/publications/1042290 — В следующей статье мы заглянем «под капот» InferDI и детально разберем результаты бенчмарков. Мы сравним его производительность с InversifyJS, TSyringe, TypeDI и Awilix. Вы увидите, как полный отказ от Reflection API и Proxy позволяет InferDI работать до 48 раз быстрее конкурентов при сборке графа и до 2 раз быстрее на горячем пути (hot path). 🌟 Готовы попробовать? Исходный код, документация и бен\n[DI в TypeScript без декораторов: почему это будущее / Хабр] https://habr.com/ru/articles/1042290 — В следующей статье мы заглянем «под капот» InferDI и детально разберем результаты бенчмарков. Мы сравним его производительность с InversifyJS, TSyringe, TypeDI и Awilix. Вы увидите, как полный отказ от Reflection API и Proxy позволяет InferDI работать до 48 раз быстрее конкурентов при сборке графа и до 2 раз быстрее на горячем пути (hot path). 🌟 Готовы попробовать? Исходный код, документация и бен\n[DI в TypeScript без декораторов: почему это будущее / Комментарии / Хабр] https://habr.com/ru/articles/1042290/comments — `$mol` Поэтому я бы разделил эти подходы так: `$mol` делает такую ошибку невыразимой через архитектуру всего приложения, а InferDI через тип DI-графа внутри обычной TypeScript-архитектуры. Это разные уровни решения одной и той же проблемы. `$mol` А я старался над комментарием... А вы видели как di реализован в последнем angular? service = inject(UserService) и это красиво. А вот ваши контейннеры в\n[Справочники в iOS: храним, обновляем, используем / Хабр] https://habr.com/ru/companies/hh/articles/658257 — Title: Справочники в iOS: храним, обновляем, используем / Хабр # Справочники в iOS: храним, обновляем, используем. Меня зовут Саша, и я iOS-разработчик в hh.ru. Страны, города, профобласти, языки, валюты – всё это названия справочников внутри нашего мобильного приложения. Они очень редко меняются, но используются повсюду, а поэтому обязаны быть актуальным"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_VObTfVAg5hns2Mhpr6vGmYXl",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"InferDI размер бандла\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_VObTfVAg5hns2Mhpr6vGmYXl",
+   "content": "[Как уменьшить размер бандла раз и навсегда: приемы, метрики, мониторинг / Хабр] https://habr.com/ru/articles/788656 — Title: Как уменьшить размер бандла раз и навсегда: приемы, метрики, мониторинг / Хабр # Как уменьшить размер бандла раз и навсегда: приемы, метрики, мониторинг. Последние полгода мой фокус сильно сместился в сторону оптимизации размера бандла нашего веб-приложения. Когда я начинал работать над уменьшением размера клиента, мне сильно не хватало подробного гайда или руководства как вообще подступить\n[Blazor: Нужен ли нам .Net в вебе? / Комментарии / Хабр] https://habr.com/ru/companies/orioninc/articles/651311/comments — Вы все верно говорите, не могу понять, где в статье говориться обратное НЛО прилетело и опубликовало эту надпись здесь У нас проект прекрасно живёт на Blazor. Шарп плохо компилируется в васм, потому что «у Blazor у которого дженерики не мономорфизируются выходит 5-6 мб на hello world, а такая же программа на Rust у которого они мономорфизируется в несколько килобайт» А это комменты под офиц. > у B\n[Как оптимизировать размер бандла SPA и ускорить загрузку приложения в несколько раз / Хабр] https://habr.com/ru/articles/595307 — Title: Как оптимизировать размер бандла SPA и ускорить загрузку приложения в несколько раз / Хабр # Как оптимизировать размер бандла SPA и ускорить загрузку приложения в несколько раз. Браузер получит HTML документ, в котором не будет никакого контента, кроме ссылок на дополнительные ресурсы — JS бандл и стили. Обычно загрузка JS и CSS файлов может быть синхронной и асинхронной, но в ситуации с ти\n[Кастомизация компонентов Ant Design и оптимизация бандла / Хабр] https://habr.com/ru/company/vk/blog/530798 — Title: Кастомизация компонентов Ant Design и оптимизация бандла / Хабр # Кастомизация компонентов Ant Design и оптимизация бандла. Я Иван Копенков, ведущий фронтенд-разработчик в Mail.ru Cloud Solutions, в статье расскажу, какие есть подходы к кастомизации компонентов UI-библиотеки Ant Design, как это сделали мы"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_twcZc0h119kPYsHoYH6aLZln",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"InferDI bundle size\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_twcZc0h119kPYsHoYH6aLZln",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 16.06.2026] https://habr.com/ru/articles/1047986 — InferDI: типобезопасный DI для TypeScript: контейнер зависимостей обычно ловит ошибки на проде — не тот тип, забыли зарегистрировать, ресурс не закрыли, и сервер падает в три часа ночи. InferDI — опенсорсный DI для TypeScript с другим подходом: подавляющее большинство промахов отлавливается при сборке, а не после деплоя; ресурсы сами закрываются через новый стандарт `using`, без ручной возни; под \n[DI в TypeScript без декораторов: почему это будущее / Хабр] https://habr.com/ru/articles/1042290 — Title: DI в TypeScript без декораторов: почему это будущее / Хабр # DI в TypeScript без декораторов: почему это будущее. Если вы пишете на TypeScript больше пары лет, то наверняка привыкли к классическому паттерну внедрения зависимостей. Вы создаете класс, помечаете его декоратором `@Injectable()`, прописываете токеновые декораторы в параметрах конструктора и включаете `emitDecoratorMetadata` в `t\n[DI в TypeScript без декораторов: почему это будущее / Habr] https://habr.com/ru/amp/publications/1042290 — Title: DI в TypeScript без декораторов: почему это будущее / Habr ## DI в TypeScript без декораторов: почему это будущее. Если вы пишете на TypeScript больше пары лет, то наверняка привыкли к классическому паттерну внедрения зависимостей. Вы создаете класс, помечаете его декоратором `@Injectable()`, прописываете токеновые декораторы в параметрах конструктора и включаете `emitDecoratorMetadata` в `\n[DI в TypeScript без декораторов: почему это будущее / Комментарии / Хабр] https://habr.com/ru/articles/1042290/comments — Title: DI в TypeScript без декораторов: почему это будущее / Комментарии / Хабр # DI в TypeScript без декораторов: почему это будущее. Как вы относитесь к переходу от магии декораторов к строгой типизации? Правда, тут JSDoc вместо \"*строгой типизации*\", но для навигации по коду этого хватает, а в runtime JSDoc не используется точно так же, как и \"*строгая типиза"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_JwueqclawDac6a6mOtsTDsCW",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"InferDI bundle size\",\"max_results\":10}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_JwueqclawDac6a6mOtsTDsCW",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 16.06.2026] https://habr.com/ru/articles/1047986 — InferDI: типобезопасный DI для TypeScript: контейнер зависимостей обычно ловит ошибки на проде — не тот тип, забыли зарегистрировать, ресурс не закрыли, и сервер падает в три часа ночи. InferDI — опенсорсный DI для TypeScript с другим подходом: подавляющее большинство промахов отлавливается при сборке, а не после деплоя; ресурсы сами закрываются через новый стандарт `using`, без ручной возни; под \n[DI в TypeScript без декораторов: почему это будущее / Хабр] https://habr.com/ru/articles/1042290 — Title: DI в TypeScript без декораторов: почему это будущее / Хабр # DI в TypeScript без декораторов: почему это будущее. Если вы пишете на TypeScript больше пары лет, то наверняка привыкли к классическому паттерну внедрения зависимостей. Вы создаете класс, помечаете его декоратором `@Injectable()`, прописываете токеновые декораторы в параметрах конструктора и включаете `emitDecoratorMetadata` в `t\n[DI в TypeScript без декораторов: почему это будущее / Habr] https://habr.com/ru/amp/publications/1042290 — Title: DI в TypeScript без декораторов: почему это будущее / Habr ## DI в TypeScript без декораторов: почему это будущее. Если вы пишете на TypeScript больше пары лет, то наверняка привыкли к классическому паттерну внедрения зависимостей. Вы создаете класс, помечаете его декоратором `@Injectable()`, прописываете токеновые декораторы в параметрах конструктора и включаете `emitDecoratorMetadata` в `\n[DI в TypeScript без декораторов: почему это будущее / Комментарии / Хабр] https://habr.com/ru/articles/1042290/comments — Title: DI в TypeScript без декораторов: почему это будущее / Комментарии / Хабр # DI в TypeScript без декораторов: почему это будущее. Как вы относитесь к переходу от магии декораторов к строгой типизации? Правда, тут JSDoc вместо \"*строгой типизации*\", но для навигации по коду этого хватает, а в runtime JSDoc не используется точно так же, как и \"*строгая типиза"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_CJFOFz0iInsxMV4so7JhDGoo",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"InferDI bundle size\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_CJFOFz0iInsxMV4so7JhDGoo",
+   "content": "[Noether's theorem] Noether's theorem states that every continuous symmetry of the action of a physical system with conservative forces has a corresponding conservation law. This is the first of two theorems (see Noether's second theorem) published by the mathematician Emmy Noether in 1918. The action of a physical system is the integral over time of a Lagrangian function, from which the system's behavior can be determined by the principle of least action. This theorem applies to continuous and smooth symmetries of physical space. Noether's formulation is quite general and has been applied across classical mechanics, high energy physics, and recently statistical mechanics. Noether's theorem is used in theoretical physics and the calculus of variations. It reveals the fundamental relation between the symmetries of a physical system and the conservation laws. It also made modern theoretical physicists much more focused on symmetries of physical systems. A generalization of the formulations on constants of motion in Lagrangian and Hamiltonian mechanics (developed in 1788 and 1833, respectively), it does not apply to systems that cannot be modeled with a Lagrangian alone (e.g., systems with a Rayleigh dissipation function). In particular, dissipative systems with continuous symmetries need not have a corresponding conservation law."
+  },
+  {
+   "role": "user",
+   "content": "Инструменты больше недоступны. Ответь по тому, что уже известно, последней строкой FINAL: <ответ>."
+  },
+  {
+   "role": "assistant",
+   "content": "К сожалению, у меня нет актуальной информации о размере бандла InferDI. FINAL: размер бандла InferDI не известен.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

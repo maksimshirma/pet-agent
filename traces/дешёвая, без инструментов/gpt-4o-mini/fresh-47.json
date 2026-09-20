@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "fresh-47",
+  "source": "fresh",
+  "question": "Какой пример микрофронтендов в Angular 21 описан?",
+  "answer": "Native Federation",
+  "evidence": "пример микрофронтендов в Angular 21 с использованием Native Federation",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "FINAL: Микрофронтенды в Angular 21",
+ "final": "Микрофронтенды в Angular 21",
+ "correct": false,
+ "cost": 5.805000000000393e-05,
+ "seconds": 1.9877775409986498,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Какой пример микрофронтендов в Angular 21 описан?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\":\"Angular 21 представил примеры микрофронтендов, включая использование модуля фреймворка для интеграции нескольких приложений, таких как общие компоненты и библиотеки.\",\"final\":\"Микрофронтенды в Angular 21\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

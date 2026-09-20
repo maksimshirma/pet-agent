@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "fresh-29",
+  "source": "fresh",
+  "question": "Какая версия visx вышла с поддержкой React 19?",
+  "answer": "4.0",
+  "evidence": "Вышел visx 4.0 с полной поддержкой React 19",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "FINAL: 2.2.0",
+ "final": "2.2.0",
+ "correct": false,
+ "cost": 5.310000000000037e-05,
+ "seconds": 1.8321869170031277,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Какая версия visx вышла с поддержкой React 19?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\":\"Visx версия 2.2.0 включает поддержку React 18 и, следовательно, является совместимой с React 19, так как она основана на более поздней версии.\",\"final\":\"2.2.0\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

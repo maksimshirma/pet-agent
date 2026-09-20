@@ -1,0 +1,71 @@
+{
+ "task": {
+  "id": "fresh-25",
+  "source": "fresh",
+  "question": "Какие новые CSS-функции дают элементу номер и число соседей?",
+  "answer": "sibling-index() и sibling-count()",
+  "evidence": "новые CSS-функции `sibling-index()` и `sibling-count()`",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "Отлично! Я нашёл ответ. На основе поиска видно, что есть две новые CSS-функции:\n\n**`sibling-index()`** — возвращает номер (порядковый номер) текущего элемента среди его соседей (братьев).\n\n**`sibling-count()`** — возвращает общее количество соседних элементов (всех элементов на одном уровне иерархии).\n\nЭти функции позволяют:\n- Создавать каскадные анимации одной строкой: `.item { animation-delay: calc(sibling-index() * 60ms); }`\n- Распределять элементы по ширине: `.gallery-item { inline-size: calc(100% / sibling-count()); }`\n- Избежать написания отдельного правила для каждого `:nth-child()`\n\nFINAL: `sibling-index()` и `sibling-count()`",
+ "final": "`sibling-index()` и `sibling-count()`",
+ "correct": true,
+ "cost": 0.011743000000000059,
+ "seconds": 10.79387300000235,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какие новые CSS-функции дают элементу номер и число соседей?"
+  },
+  {
+   "role": "assistant",
+   "content": "Я помогу найти информацию о новых CSS-функциях для подсчёта элементов и соседей.",
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "toolu_bdrk_01KcegAqMqSYpMPPVvmPrG8A",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\": \"CSS функции номер элемента число соседей\", \"max_results\": 5}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 1,
+     "id": "toolu_bdrk_016kPuUgJ1YgF1MMpw4qLDa9",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"CSS sibling-count sibling-index functions\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01KcegAqMqSYpMPPVvmPrG8A",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 16.06.2026] https://habr.com/ru/articles/1047986 — Математические раскладки: подсчёт соседей в дереве: новые CSS-функции `sibling-index()` и `sibling-count()` дают элементу его номер и общее число соседей прямо в стилях, а значит, ступенчатую анимацию-каскад можно описать одной строкой через `calc()`, без препроцессорных циклов, плодящих по `:nth-child()`-правилу на каждый элемент, и даже без JS. `sibling-index()` `sibling-count()` `calc()` `:nth-\n[CSS в 2026 году: где JavaScript уже не обязателен - Habr] https://habr.com/ru/companies/vk/articles/1080386 — `:nth-child()` `sibling-index()` возвращает номер текущего элемента среди соседей, а `sibling-count()` — общее количество соседних элементов. `sibling-index()` `sibling-count()` `.item { animation-delay: calc(sibling-index() 60ms); }` Ещё один пример — распределение элементов по ширине: `.gallery-item { inline-size: calc(100% / sibling-count()); }` Это особенно полезно для декоративных списков, ка\n[Эти CSS-техники устарели / Комментарии / Хабр] https://habr.com/ru/companies/ruvds/articles/917204/comments — Однако дизайнеры сколько я помню просили разрешить селектор по потомку. Но это требует от алгоритма знания не только родителей, пройденных соседей и самого элемента, но вообще всего дерева. То есть для стилизации каждого элемента нужно пройти дерево ещё по разу, то есть сложность - страшное n² (но во времена react это уже не так и страшно, на самом деле), а если селектор по потомку вкладывать в се\n[Количественные CSS селекторы - Habr] https://habr.com/ru/articles/252181 — `<div class=\"container\"> <p>...</p> <p>...</p> <blockquote>...</blockquote> <figure>...</figure> <p>...</p> <p>...</p> </div>` `.container > :nth-last-child(n+3), .container > :nth-last-child(n+3) ~ { / здесь стили / }` `<div class=\"container\"> <div>...</div> <p>...</p> <p>...</p> <p>...</p> <p>...</p> <p>...</p> <p>...</p> <p>...</p> <blockquote>...</blockquote> </div>` `p:nth-last-of-type(n+6"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_016kPuUgJ1YgF1MMpw4qLDa9",
+   "content": "[XPath] XPath (XML Path Language) is an expression language designed to support the query or transformation of XML documents. It was defined by the World Wide Web Consortium (W3C) in 1999, and can be used to compute values (e.g., strings, numbers, or Boolean values) from the content of an XML document. Support for XPath exists in applications that support XML, such as web browsers, and many programming languages. The XPath language is based on a tree representation of the XML document, and provides the ability to navigate around the tree, selecting nodes by a variety of criteria. In popular use (though not in the official specification), an XPath expression is often referred to simply as \"an XPath\". Originally motivated by a desire to provide a common syntax and behavior model between XPointer and XSLT, subsets of the XPath query language are used in other W3C specifications such as XML Schema, XForms and the Internationalization Tag Set (ITS). XPath has been adopted by a number of XML processing libraries and tools, many of which also offer CSS Selectors, another W3C standard, as a simpler alternative to XPath."
+  },
+  {
+   "role": "assistant",
+   "content": "Отлично! Я нашёл ответ. На основе поиска видно, что есть две новые CSS-функции:\n\n**`sibling-index()`** — возвращает номер (порядковый номер) текущего элемента среди его соседей (братьев).\n\n**`sibling-count()`** — возвращает общее количество соседних элементов (всех элементов на одном уровне иерархии).\n\nЭти функции позволяют:\n- Создавать каскадные анимации одной строкой: `.item { animation-delay: calc(sibling-index() * 60ms); }`\n- Распределять элементы по ширине: `.gallery-item { inline-size: calc(100% / sibling-count()); }`\n- Избежать написания отдельного правила для каждого `:nth-child()`\n\nFINAL: `sibling-index()` и `sibling-count()`",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

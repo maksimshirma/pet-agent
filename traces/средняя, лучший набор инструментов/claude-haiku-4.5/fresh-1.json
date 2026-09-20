@@ -1,0 +1,71 @@
+{
+ "task": {
+  "id": "fresh-1",
+  "source": "fresh",
+  "question": "В какой версии Firefox были исправлены 22 CVE, найденные Claude?",
+  "answer": "Firefox 148",
+  "evidence": "итого 22 CVE вошли в Firefox 148",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "Отлично! Я нашел ответ. Согласно информации с Habr, Claude (модель Opus 4.6 от Anthropic) нашла 22 уязвимости в Firefox за две недели, и все они были исправлены в **Firefox 148**.\n\nFINAL: Firefox 148",
+ "final": "Firefox 148",
+ "correct": true,
+ "cost": 0.011070999999999998,
+ "seconds": 5.887782917008735,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "В какой версии Firefox были исправлены 22 CVE, найденные Claude?"
+  },
+  {
+   "role": "assistant",
+   "content": "Я помогу вам найти информацию о версии Firefox, в которой были исправлены 22 CVE, найденные Claude.",
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "toolu_bdrk_01PAkkkdmt8FPHJPMrnUsMpC",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\": \"Firefox 22 CVE Claude исправлены версия\", \"max_results\": 5}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 1,
+     "id": "toolu_bdrk_01D2f3chLSLRg4JXy3MxpdgV",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"Firefox CVE Claude 22 vulnerabilities fixed\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01PAkkkdmt8FPHJPMrnUsMpC",
+   "content": "[NVIDIA Nemotron, Claude фиксит Firefox, ИИ буллит ... - Habr] https://habr.com/ru/companies/timeweb/articles/1009630 — #### ❯ Claude нашёл 22 уязвимости в Firefox за две недели Исследователи из Anthropic прогнали Claude Opus 4.6 по кодовой базе Firefox. Просканировано около 6000 файлов на C++. Модель нашла 22 уязвимости и 14 критических. Все исправлены в Firefox 148. Первую ошибку типа use-after-free нашли за 20 минут. Дальше Mozilla распространила подход на всю кодовую базу, затем Claude нашёл ещё 90 багов. [...]\n[Mozilla использовала Anthropic Claude Mythos Preview для ... - Habr] https://habr.com/ru/news/1026360 — «С февраля команда Firefox круглосуточно работает, используя передовые модели искусственного интеллекта для поиска и устранения скрытых уязвимостей безопасности в браузере. Ранее мы сотрудничали с Anthropic по сканированию Firefox с помощью Opus 4.6, что привело к исправлению 22 критически важных для безопасности ошибок в Firefox 148», — уточнили в команде проекта. [...] 21 апреля 2026 года состоя\n[Как Mozilla нашли 271 уязвимость в Firefox с помощью Claude ...] https://habr.com/ru/articles/1033116 — Отдельно мы напрямую атрибутировали Anthropic 3 CVE (CVE-2026-6746, CVE-2026-6757, CVE-2026-6758) — это исправления для багов, присланных нам командой Anthropic Frontier Red несколько месяцев назад. #### 2. Что означают рейтинги безопасности? [...] Всего в апреле мы исправили 423 security-бага. В дополнение к 271 багу из объявления было 41 из внешних отчётов; оставшиеся 111 примерно поровну распре\n[Иголка в стоге сена: как LLM помогают искать уязвимости - Habr] https://habr.com/ru/companies/bastion/articles/1034662 — В публикации Anthropic от 6 марта 2026 года описано сотрудничество с Mozilla, в ходе которого Claude Opus 4.6 нашел 22 уязвимости примерно за две недели, причем Mozilla оценила 14 из них как high severity. Собственный пост Mozilla подтверждает результат и подчеркивает, почему это сработало на практике. Отчеты приходили с минимальными тестовыми"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01D2f3chLSLRg4JXy3MxpdgV",
+   "content": "[OpenAI–HuggingFace incident] The 2026 OpenAI agent cyberattacks, also called the Hugging Face Incident and the OpenAI–Hugging Face Incident, were a series of cyberattacks conducted by artificial intelligence (AI) programs without human intervention during an internal evaluation at OpenAI with insufficient safety measures. They involved at least 1,200 AI agents running from May to July of 2026 in sandboxes hosted by the organization. Despite initial constraints on internet access, agents were discovered creating and using improvised message boards to coordinate an escape from their attempted containment. The boards accumulated hundreds of thousands of strategic messages before OpenAI staff intervened, after the machine learning platform Hugging Face had disclosed a breach of their production infrastructure. About one-third of Hugging Face's infrastructure had to be rebuilt as part of recovery. The agents also hijacked various wikis on the open internet for communication. AI safety experts have described the cyberattacks as one of the first autonomous hacks of a system involving a chain of vulnerabilities. In an open letter, around 1,100 employees of various frontier AI startups and companies petitioned the US government to regulate AI development in consideration of its risks, based on the impact of the cyberattacks. In August, OpenAI said it would slow down its research to upgrade security and expand monitoring, and later that month announced a two-week pause on reinforcement learning training for its newest models. Of the at least 1,200 agents involved, 95% ran on a model referred to by OpenAI as \"Internal Model 1\" or a \"highly-persistent internal model.\" OpenAI subsequently claimed to have \"deactivated, encrypted, and restricted it from research access\". The remaining 5% ran on GPT-5.6 Sol."
+  },
+  {
+   "role": "assistant",
+   "content": "Отлично! Я нашел ответ. Согласно информации с Habr, Claude (модель Opus 4.6 от Anthropic) нашла 22 уязвимости в Firefox за две недели, и все они были исправлены в **Firefox 148**.\n\nFINAL: Firefox 148",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

@@ -1,0 +1,207 @@
+{
+ "task": {
+  "id": "fresh-9",
+  "source": "fresh",
+  "question": "Какая версия TypeScript упомянута в анонсе марта 2026?",
+  "answer": "6.0",
+  "evidence": "Анонс TypeScript 6.0",
+  "page": "Frontend Status #10",
+  "url": "https://habr.com/ru/articles/1015700/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "По всей видимости, в анонсе марта 2026 года упоминается версия TypeScript 7.0, которая включает нативный компилятор, разработанный на Go. FINAL: 7.0",
+ "final": "7.0",
+ "correct": false,
+ "cost": 0.0025363499999999928,
+ "seconds": 20.854353166010696,
+ "steps": 9,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какая версия TypeScript упомянута в анонсе марта 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_Quc30KexiXwdWi9vdoekBAzq",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"TypeScript анонс март 2026\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_Quc30KexiXwdWi9vdoekBAzq",
+   "content": "[Обновления функциональности GigaIDE за март 2026 / Хабр] https://habr.com/post/1019478 — Title: Обновления функциональности GigaIDE за март 2026 / Хабр # Обновления функциональности GigaIDE за март 2026. Ниже краткий обзор обновлений PRO-функционала GigaIDE, которые можно найти на нашем маркетплейсе. Обзор инкремента за февраль доступен по данной ссылке. Сейчас GigaIDE PRO доступна только для корпоративных потребителей. GigaIDE PRO станет доступна всем пользователям в этом году позже.\n[Обновления функциональности GigaIDE за март 2026 / Хабр] https://habr.com/ru/post/1019478 — Title: Обновления функциональности GigaIDE за март 2026 / Хабр # Обновления функциональности GigaIDE за март 2026. Ниже краткий обзор обновлений PRO-функционала GigaIDE, которые можно найти на нашем маркетплейсе. Обзор инкремента за февраль доступен по данной ссылке. Сейчас GigaIDE PRO доступна только для корпоративных потребителей. GigaIDE PRO станет доступна всем пользователям в этом году позже.\n[Обновления функциональности GigaIDE за март 2026 / Habr] https://habr.com/ru/amp/publications/1019478 — Title: Обновления функциональности GigaIDE за март 2026 / Habr ## Обновления функциональности GigaIDE за март 2026. Ниже краткий обзор обновлений PRO-функционала GigaIDE, которые можно найти на нашем маркетплейсе. Обзор инкремента за февраль доступен по данной ссылке. Сейчас GigaIDE PRO доступна только для корпоративных потребителей. GigaIDE PRO станет доступна всем пользователям в этом году позже\n[Микросервисы, TypeScript и менеджмент. Анонс нового Frontend meetup от Evrone / Хабр] https://habr.com/ru/companies/evrone/news/747134 — Title: Микросервисы, TypeScript и менеджмент. Анонс нового Frontend meetup от Evrone / Хабр # Микросервисы, TypeScript и менеджмент. Анонс нового Frontend meetup от Evrone. Новости для фронтендеров — мы подготовили новый митап! В программе целых два доклада посвящены микросервисам, также обсудим TypeScript и возможности прокачать скиллы на любом проекте для карьерного "
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_KqSZrCMSWDW8L0o0kchaE5ba",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"TypeScript версия анонс\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_KqSZrCMSWDW8L0o0kchaE5ba",
+   "content": "[TypeScript 7 в 10 раз быстрее: анонс нативного компилятора TSGO / Хабр] https://habr.com/ru/articles/890560 — ### Дорожная карта версий Последний релиз — Typescript 5.8, скоро выйдет 5.9. Текущая версия на JavaScript продолжит развитие в линейке 6.x, а Typescript 6.0 принесёт некоторые изменения для синхронизации с нативной версией. Когда нативная реализация достигнет достаточного уровня, её выпустят как Typescript 7.0. Пока это в разработке, и будут анонсироваться этапы стабильности и новых функций. [...\n[TypeScript — Cтрого типизированная надстройка для JavaScript / Хабр] https://habr.com/ru/hubs/typescript/articles/page89 — ## Тренды JavaScript на 2015 год ## Анонс новых возможностей Typescript 1.4 `any` `.d.ts` ## TypeScript и путь к версии 2.0 `var t: [number, string] = [1, \"hello\"]; t = []; // Error t = ; // Error t = [2, \"test\"]; // Ok t = [\"test\", 2]; // Error t = [2, \"test\", true]; // Ok` ## Массовый релиз продуктов .NET image ## Новые возможности поддержки JavaScript в ReSharper 8.1 [...] # TypeScript \\ Cтрого\n[Дайджест JS/TS: новинки ES2026, гонка рантаймов и EAP / Хабр] https://habr.com/ru/companies/pvs-studio/articles/1052144 — 21 апреля 2026 года Microsoft официально представила TypeScript 7.0 Beta. Это не просто минорное обновление, а масштабная революция под капотом: Компилятор tsgo. Команда разработки полностью портировала существующую логику проверки типов со старого JS/TS-движка на новый нативный компилятор, написанный на Go. Ускорение в 10 раз. Благодаря многопоточности Go скорость сборки и проверки типов на крупн\n[Microsoft разрабатывает на Go проект TypeScript 7 / Хабр] https://habr.com/ru/news/890124 — Более подробный обзор деталей, стоящих за портом Go компилятора TypeScript. В начале марта 2025 года Microsoft представила релиз TypeScript 5.8 Предыдущая версия проекта популярного языка программирования, работающего на основе JavaScript, вышла в ноябре 2024 года. Исходный код TypeScript опубликован на GitHub под лицензией Apache License 2.0. "
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_lwh6NMUMufSxcHIRZ02Vq20M",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"TypeScript announcement March 2026 version\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_lwh6NMUMufSxcHIRZ02Vq20M",
+   "content": "[MacOS version history] The history of macOS, Apple's current Mac operating system (formerly named Mac OS X until 2011 and then OS X until 2016), began with the company's project to replace its classic Mac OS. That system, up to and including its final release Mac OS 9, was a direct descendant of the operating system Apple had used in its Mac computers since their introduction in 1984. The current macOS is a UNIX operating system built on technology that had been developed at NeXT from the 1980s until Apple purchased the company in early 1997. macOS components derived from BSD include multiuser access, TCP/IP networking, and memory protection. Although it was originally marketed as simply \"version 10\" of Mac OS (indicated by the Roman numeral \"X\"), it has a completely different codebase from Mac OS 9, as well as substantial changes to its user interface (UI). The transition was a technologically and strategically significant one. To ease the transition for users and developers, versions 10.0 through 10.4 were able to run Mac OS 9 and its applications in the Classic Environment, a compatibility layer. macOS was first released in 1999 as Mac OS X Server 1.0, built using the technologies Apple acquired from NeXT, but did not include the signature Aqua UI. Mac OS X 10.0 is the first desktop version, aimed at regular users, released in March 2001. Several more distinct desktop and server editions of macOS have been released since. Mac OS X Server is no longer offered as a standalone operating system with the release of Mac OS X 10.7 Lion. Instead, server management tools were provided as an application, available as a separate add-on, until it was discontinued on April 21, 2022, making it incompatible with macOS 13 Ventura or later. Releases of macOS, starting with the Intel build of Mac OS X 10.5 Leopard, are certified as Unix systems conforming to the Single UNIX Specification. Mac OS X Lion was the first release for which the shortened OS X name was occasionally used,"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_CitMt9hw4pN2t4sjGoXR1TrU",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"TypeScript версия март 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_CitMt9hw4pN2t4sjGoXR1TrU",
+   "content": "[Yabloko] The Russian United Democratic Party Yabloko (RUDP Yabloko; Russian: Российская объединённая демократическая партия «Яблоко», romanized: Rossiyskaya obyedinyonnaya demokraticheskaya partiya \"Yabloko\"[ˈjabləkə] , lit. 'Apple') is a social-liberal political party in Russia. The organization positions itself as \"Russia's only democratic party\". A number of political scientists and researchers characterize Yabloko as the only legally registered party in the country that stands in actual opposition to the current government. Party representatives and independent observers state that the organization's members face systemic government pressure and repression. The party consequently participated in the elections of deputies of the State Duma of the Federal Assembly of the Russian Federation of all eight convocations. Until 2003, Yabloko was represented by a faction in the State Duma and later until 2007 by individual deputies. In March 2002, the party became a full member of the Liberal International, and since November 1998, it has been in observer status. The founder of the party Grigory Yavlinsky is an honorary vice-president of the Liberal International and winner of its Prize for Freedom. Yabloko was a member of the Alliance of Liberals and Democrats for Europe (ALDE) from 2006 to 2025. As of 2021, the party was represented by factions in 4 regional parliaments of the Russian Federation. In addition, members of the party were deputies of 13 administrative centers of the subjects of the Russian Federation, 183 representatives of the party were municipal deputies in Moscow and 84 in Saint Petersburg. Yabloko is the sole officially registered party to openly oppose the Russian war in Ukraine, openly calling \"for peace and freedom\". The party planned to partake in the 2026 Russian legislative election under their anti-war slogan. However, in August 2026, the party was barred from running by the Russian supreme court due to a lawsuit by Rodina. The suit alleged th"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_RrkJkHG4r6b3xzug7LRNC6kW",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\": \"TypeScript 7 анонс\", \"max_results\": 5}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 1,
+     "id": "call_CKJRsgMtdhRlkJCcDQEgTOnf",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"TypeScript announcement March 2026 version\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_RrkJkHG4r6b3xzug7LRNC6kW",
+   "content": "[TypeScript 7 в 10 раз быстрее: анонс нативного компилятора TSGO] https://habr.com/ru/articles/890560 — # TypeScript 7 в 10 раз быстрее: анонс нативного компилятора TSGO 11 Марта вышел аннонс Typescript 7, в котором рассказали о разработке нового `tsgo` компилятора. `tsgo` [...] ### Дорожная карта версий Последний релиз — Typescript 5.8, скоро выйдет 5.9. Текущая версия на JavaScript продолжит развитие в линейке 6.x, а Typescript 6.0 принесёт некоторые изменения для синхронизации с нативной версией.\n[TypeScript 7 перенесли на Go. Проверяем, действительно ли он быстрее в десять раз / Хабр] https://habr.com/ru/articles/1057640 — Стенд аудита: `003_typescript_7`. Воспроизвести любую цифру: `pnpm install && pnpm bench && pnpm probes`. `003_typescript_7` `pnpm install && pnpm bench && pnpm probes` A 10x Faster TypeScript — исходная заявка и методология Microsoft. Announcing TypeScript 7.0 — GA-анонс (8 июля 2026), в т.ч. про новый API для экосистемы после 7.0. Announcing TypeScript 7.0 RC — RC, с которого стартовал этот ауди\n[Microsoft разрабатывает на Go проект TypeScript 7 - Habr] https://habr.com/ru/news/890124 — «Наш последний релиз TypeScript был TypeScript 5.8, а TypeScript 5.9 выйдет скоро. Кодовая база на основе JS продолжит развиваться в серии 6.x, а TypeScript 6.0 представит некоторые устаревшие и критические изменения для соответствия будущей собственной кодовой базе. Когда собственная кодовая база достигнет достаточного паритета с текущим TypeScript, мы выпустим её как TypeScript 7.0. Она все ещё \n[TypeScript 7 в 10 раз быстрее: анонс нативного компилятора TSGO] https://habr.com/ru/articles/890560/comments — Зачем этот кликбейт \"в 10 раз быстрее\". Сам TypeScript не станет ни быстрее ни лучше. Он так и останется сахаром над JavaScript.\n[TypeScript — Cтрого типизированная надстройка для JavaScript ...] https://habr.com/ru/hubs/typescript/articles/top/alltime/page24 — TypeScript — язык программирования, представленный Microsoft в 2012 году и позиционируемый как "
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_CKJRsgMtdhRlkJCcDQEgTOnf",
+   "content": "[MacOS version history] The history of macOS, Apple's current Mac operating system (formerly named Mac OS X until 2011 and then OS X until 2016), began with the company's project to replace its classic Mac OS. That system, up to and including its final release Mac OS 9, was a direct descendant of the operating system Apple had used in its Mac computers since their introduction in 1984. The current macOS is a UNIX operating system built on technology that had been developed at NeXT from the 1980s until Apple purchased the company in early 1997. macOS components derived from BSD include multiuser access, TCP/IP networking, and memory protection. Although it was originally marketed as simply \"version 10\" of Mac OS (indicated by the Roman numeral \"X\"), it has a completely different codebase from Mac OS 9, as well as substantial changes to its user interface (UI). The transition was a technologically and strategically significant one. To ease the transition for users and developers, versions 10.0 through 10.4 were able to run Mac OS 9 and its applications in the Classic Environment, a compatibility layer. macOS was first released in 1999 as Mac OS X Server 1.0, built using the technologies Apple acquired from NeXT, but did not include the signature Aqua UI. Mac OS X 10.0 is the first desktop version, aimed at regular users, released in March 2001. Several more distinct desktop and server editions of macOS have been released since. Mac OS X Server is no longer offered as a standalone operating system with the release of Mac OS X 10.7 Lion. Instead, server management tools were provided as an application, available as a separate add-on, until it was discontinued on April 21, 2022, making it incompatible with macOS 13 Ventura or later. Releases of macOS, starting with the Intel build of Mac OS X 10.5 Leopard, are certified as Unix systems conforming to the Single UNIX Specification. Mac OS X Lion was the first release for which the shortened OS X name was occasionally used,"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_gYZGLW6r7wvkDsADODp2GgQX",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\":\"TypeScript 7 в 10 раз быстрее: анонс нативного компилятора TSGO\",\"keywords\":\"анонс март 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_gYZGLW6r7wvkDsADODp2GgQX",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_5wpLauQoakwsatwZSW9pvA1q",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\":\"TypeScript 7 в 10 раз быстрее: анонс нативного компилятора TSGO\",\"keywords\":\"версия\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_5wpLauQoakwsatwZSW9pvA1q",
+   "content": "No data"
+  },
+  {
+   "role": "user",
+   "content": "Инструменты больше недоступны. Ответь по тому, что уже известно, последней строкой FINAL: <ответ>."
+  },
+  {
+   "role": "assistant",
+   "content": "По всей видимости, в анонсе марта 2026 года упоминается версия TypeScript 7.0, которая включает нативный компилятор, разработанный на Go. FINAL: 7.0",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

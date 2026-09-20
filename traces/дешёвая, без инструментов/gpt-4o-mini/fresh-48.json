@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "fresh-48",
+  "source": "fresh",
+  "question": "Какой отчёт обновился в марте 2026?",
+  "answer": "WCAG 3",
+  "evidence": "Обновился Working Draft WCAG 3",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "FINAL: Неизвестно",
+ "final": "Неизвестно",
+ "correct": false,
+ "cost": 4.695000000001781e-05,
+ "seconds": 1.2327110420010285,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Какой отчёт обновился в марте 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\":\"На данный момент невозможно предсказать, какой отчёт обновится в марте 2026 года, так как данные о будущем отсутствуют.\",\"final\":\"Неизвестно\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

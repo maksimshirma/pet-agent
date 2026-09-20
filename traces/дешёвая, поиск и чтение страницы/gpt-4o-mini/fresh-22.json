@@ -1,0 +1,79 @@
+{
+ "task": {
+  "id": "fresh-22",
+  "source": "fresh",
+  "question": "Какой бинарный формат для Linked Data опубликовал W3C?",
+  "answer": "CBOR-LD 1.0",
+  "evidence": "W3C опубликовал FPWD CBOR-LD 1.0",
+  "page": "Frontend Status #15",
+  "url": "https://habr.com/ru/articles/1032276/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "W3C опубликовал бинарный формат для Linked Data, названный CBOR-LD 1.0. Этот формат основывается на CBOR и обеспечивает семантическое сжатие через JSON-LD контексты, что позволяет добиться выигрыша в размере данных более 60% по сравнению с gzip. IANA-тег для этого формата — 0xCB1D.\n\nFINAL: CBOR-LD 1.0",
+ "final": "CBOR-LD 1.0",
+ "correct": true,
+ "cost": 0.0004920000000000202,
+ "seconds": 8.037967208991176,
+ "steps": 3,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какой бинарный формат для Linked Data опубликовал W3C?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_wnhehayGD043LAnXFsifZ35X",
+     "function": {
+      "name": "web_search_ru",
+      "arguments": "{\"query\":\"бинарный формат Linked Data W3C\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_wnhehayGD043LAnXFsifZ35X",
+   "content": "[Список MIME-типов] Internet Media Types, также известные как MIME-типы (Multipurpose Internet Mail Extensions), представляют собой стандарты для обозначения типов данных, которые могут быть переданы посредством сети Интернет с применением стандарта MIME. MIME-типы используются для указания формата данных, отправляемых и получаемых в электронной почте, веб-браузерах и других интернет-приложениях. Каждый MIME-тип состоит из двух частей: основной тип и подтип, разделенные слешем. Например, `text/plain` указывает на простой текстовый файл, где `text` — это основной тип, а `plain` — подтип. Это позволяет клиентским приложениям и серверам корректно обрабатывать и интерпретировать данные файлы, предоставляя информацию о том, как с ними работать. MIME-типы играют ключевую роль в различных интернет-протоколах, таких как HTTP, SMTP и SIP, обеспечивая интероперабельность и совместимость между различными системами и приложениями. MIME-типы также используются для кодирования бинарных данных в текстовый формат, что особенно важно для передачи данных в электронной почте и других текстовых протоколах. Ниже приведён список MIME-заголовков и расширений файлов, которые соответствуют различным типам данных, используемым в интернете."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_CRdIlM50qGwuoUeKa2uym2lJ",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"бинарный формат Linked Data W3C\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_CRdIlM50qGwuoUeKa2uym2lJ",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 06.05.2026] https://habr.com/ru/articles/1032276 — W3C опубликовал FPWD CBOR-LD 1.0, бинарный формат для Linked Data поверх CBOR с семантическим сжатием через JSON-LD контексты, что даёт выигрыш над gzip больше 60%, IANA-тег 0xCB1D и реестр use-case словарей. Цель: IoT, wire-protocols и компактное хранилище. ### 🎨 UI|UX и дизайн\n[Как онтология помогает представить структуру данных и ...] https://habr.com/ru/companies/vktech/articles/948492 — `:Client a owl:Class ; rdfs:label \"Клиент\" ; rdfs:subClassOf :User ; # Все клиенты - пользователи # Клиент ДОЛЖЕН иметь хотя бы один заказ rdfs:subClassOf [ a owl:Restriction ; owl:onProperty :hasOrder ; owl:someValuesFrom :Order ; owl:minCardinality \"1\"^^xsd:nonNegativeInteger ] . :Order a owl:Class ; rdfs:label \"Заказ\" ; # Заказ ДОЛЖЕН содержать хотя бы один товар rdfs:subClassOf [ a owl:Restric\n[Сериализация данных: тест производительности и описание применения / Хабр] https://habr.com/ru/articles/319604 — Как уже видно из результата сохранение и восстановление объекта прошло успешно и, после восстановления, новый объект имеет точно такое же содержимое как сохраняемый. При выполнении программы был создан файл \"`out.bin`\" размером в 244 байта в бинарном формате. Описание формата можно найти во множестве источников, но, на мой взгляд, разбираться в нем не имеет никакого смысла, достаточно, чтобы его у\n[Средства парсинга XML в PHP / Хабр] https://habr.com/ru/articles/50668 — // для форматирования) мы опускаем за ненадобностью. if (is_array($GLOBALS['sax']['current_linksblock'])){ //Если открыт тег page то пишем в массив строки, склеивая их if($GLOBALS['sax']['page_r']) { $GLOBALS['sax']['current_linksblock']['page'][$GLOBALS['sax']['page_i']].= iconv(\"UTF-8\", \"windows-1251\", $data); } elseif($GLOBALS['sax']['link_r']) { //Если открыт тег link то пишем в массив строки,\n[Несколько интересностей и полезностей для веб-разработчика #44 / Хабр] https://habr.com/ru/articles/258977 — ##"
+  },
+  {
+   "role": "assistant",
+   "content": "W3C опубликовал бинарный формат для Linked Data, названный CBOR-LD 1.0. Этот формат основывается на CBOR и обеспечивает семантическое сжатие через JSON-LD контексты, что позволяет добиться выигрыша в размере данных более 60% по сравнению с gzip. IANA-тег для этого формата — 0xCB1D.\n\nFINAL: CBOR-LD 1.0",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

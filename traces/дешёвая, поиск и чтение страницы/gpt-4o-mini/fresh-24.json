@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "fresh-24",
+  "source": "fresh",
+  "question": "Какая уязвимость в Next.js описана в выпуске от 16 июня 2026?",
+  "answer": "CVE-2025-55182",
+  "evidence": "CVE-2025-55182 — RCE в Next.js через Server Actions",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "Уязвимость в Next.js, описанная 16 июня 2026 года, называется CVE-2025-55182. Это уязвимость удаленного выполнения кода (RCE) через Server Actions, затрагивающая все версии Next.js с дефолтным включением Server Actions, начиная с 14-й версии. Проблема возникает на этапе десериализации React Flight, еще до проверки хэша действия. \n\nFINAL: CVE-2025-55182",
+ "final": "CVE-2025-55182",
+ "correct": true,
+ "cost": 0.00032130000000002434,
+ "seconds": 4.730893875006586,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какая уязвимость в Next.js описана в выпуске от 16 июня 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_9NnAM18CuUb8T8jnZW5HzxOk",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"Next.js уязвимость 16 июня 2026\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_9NnAM18CuUb8T8jnZW5HzxOk",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 16.06.2026] https://habr.com/ru/articles/1047986 — CVE, Shell и побег из контейнера: испытываем возможности PT Cloud Application Firewall: Иван Чеботарёв из К2 разбирает свежую CVE-2025-55182 — RCE в Next.js через Server Actions, и главная неприятность в том, что уязвим любой Next.js с дефолтными настройками: Server Actions включены по умолчанию с 14-й версии, а срабатывает баг на этапе десериализации React Flight, ещё до проверки хэша действия, т\n[Главные игроки экосистемы JavaScript по состоянию на 2026 год] https://habr.com/ru/articles/1021182 — Если в вашем приложении Next.js активно используется ИИ, обратите внимание, что Vercel теперь предоставляет сервер MCP. При его подключении ИИ будет работать на вашем сайте намного умнее. Next.js 16 также работает на React 19, что означает поддержку компонента `<ViewTransition>`, о котором мы говорили здесь. `<ViewTransition>` #### Remix / React Router [...] Next.js вышел в версии 16, это первый р\n[LLM-пентест в 2026: что изменилось за год - Habr] https://habr.com/ru/articles/1031380 — | CVE-2025-54136 MCPoison | Подмена `.cursor/mcp.json` в репозитории, эскалация до RCE при открытии проекта (Check Point Research) | MCP config | | CVE-2025-49596 | CSRF в MCP Inspector с RCE при дефолтной конфигурации | Dev-tooling | | CVE-2025-55182 React2Shell | Уязвимость десериализации в React Server Components (затронуты Next.js 15.x/16.x). Использовалась сканером Bissa: десятки тысяч `.env`\n[Заморозка по fingerprint: как ТСПУ в июне 2026 ломает ... - Habr] https://habr.com/ru/articles/1047442 — Параллельные хендшейки. Тяжёлый сайт на Next.js/React при первой загрузке открывает десятки параллельных TLS-соединений. А legacy-эндпоинты на HTTP/1.1 до сих пор открывают по одному TCP на каждый запрос. Fingerprint клиента. Chrome — самый популярный браузер, и его профиль ровно тот, что массово имитировали прокси. [...] В феврале ТСПУ перешёл на поведенческий анализ, а в июне — на то, что в "
+  },
+  {
+   "role": "assistant",
+   "content": "Уязвимость в Next.js, описанная 16 июня 2026 года, называется CVE-2025-55182. Это уязвимость удаленного выполнения кода (RCE) через Server Actions, затрагивающая все версии Next.js с дефолтным включением Server Actions, начиная с 14-й версии. Проблема возникает на этапе десериализации React Flight, еще до проверки хэша действия. \n\nFINAL: CVE-2025-55182",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

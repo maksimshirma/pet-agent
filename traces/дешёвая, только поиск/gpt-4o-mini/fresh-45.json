@@ -1,0 +1,79 @@
+{
+ "task": {
+  "id": "fresh-45",
+  "source": "fresh",
+  "question": "Сколько часов длилась разведка перед атакой Shai-Hulud?",
+  "answer": "17 часов",
+  "evidence": "от взлома машины инженера и 17-часовой разведки",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "Разведка перед атакой Shai-Hulud длилась 17 часов. \n\nFINAL: 17 часов",
+ "final": "17 часов",
+ "correct": true,
+ "cost": 0.0002983500000000028,
+ "seconds": 5.541753666999284,
+ "steps": 3,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Сколько часов длилась разведка перед атакой Shai-Hulud?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_UeqA9kcuIGAk3M2ezM1VMDtt",
+     "function": {
+      "name": "web_search_ru",
+      "arguments": "{\"query\":\"разведка перед атакой Shai-Hulud\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_UeqA9kcuIGAk3M2ezM1VMDtt",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_W1NvkJSHFphhxR3RCvaWEz8K",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"разведка перед атакой Shai-Hulud\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_W1NvkJSHFphhxR3RCvaWEz8K",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 12.03.2026] https://habr.com/ru/articles/1009296 — npm-червь: компания Trigger.dev опубликовала постмортем об атаке Shai-Hulud. В этом посте компания Trigger.dev подробно рассказывает, как стала жертвой атаки через npm-червя Shai-Hulud: от взлома машины инженера и 17-часовой разведки до 10 минут разрушительных действий в GitHub-репозиториях, а также делится опытом восстановления, техническими деталями работы вредоноса и ключевыми уроками по усилен\n[Все посты подряд / Информационная безопасность / Хабр] https://habr.com/ru/flows/information_security/posts — OpenAPI React скомпрометирована в результате атаки на цепочку поставок npm от Mini Shai-Hulud. 28 августа 2026 года в npm появились десять вредоносных версий\n[Информационная безопасность — Защита данных / Хабр - Habr] https://habr.com/ru/hubs/infosecurity/posts/page5 — Это хорошо видно на примере Shai-Hulud и Shai-Hulud 2.0. В первой вредоносные версии пакетов в основном запускали код через postinstall, а во второй для\n[Дайджест ИБ, 1–7 сентября: GPT-6 Astra в проде, зарубежные ...] https://habr.com/ru/articles/1079912 — Червь Shai-Hulud расширил зону поиска секретов до 469 мест. Инфостилер, живущий за счёт учётных данных из окружений разработчиков, в новой\n[Топ новостей инфобеза за ноябрь 2025 года - Habr] https://habr.com/ru/companies/tomhunter/articles/973732 — Shai-Hulud 2: Червие наносит ответный удар. Если Shai-Hulud на npm был настолько хорош, то где Shai-Hulud 2? Так на npm. Снова. И в этот раз"
+  },
+  {
+   "role": "assistant",
+   "content": "Разведка перед атакой Shai-Hulud длилась 17 часов. \n\nFINAL: 17 часов",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "fresh-27",
+  "source": "fresh",
+  "question": "Кто создал библиотеку Geometric.js?",
+  "answer": "Harry Stevens",
+  "evidence": "Harry Stevens, график из New York Times, собрал Geometric.js",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "FINAL: L. Davis",
+ "final": "L. Davis",
+ "correct": false,
+ "cost": 4.1100000000016124e-05,
+ "seconds": 1.6114453339978354,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Кто создал библиотеку Geometric.js?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\":\"Biblitoeka Geometric.js byla sozdana développeurом po imeni L. Davis.\",\"final\":\"L. Davis\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

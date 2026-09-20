@@ -1,0 +1,101 @@
+{
+ "task": {
+  "id": "fresh-47",
+  "source": "fresh",
+  "question": "Какой пример микрофронтендов в Angular 21 описан?",
+  "answer": "Native Federation",
+  "evidence": "пример микрофронтендов в Angular 21 с использованием Native Federation",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "Не удалось найти конкретный пример микрофронтендов в Angular 21 в доступных статьях. Возможно, стоит ознакомиться со статьями по ссылкам, чтобы получить более подробную информацию о реализации: 1) [Micro Frontend Архитектура на примере Angular](https://habr.com/ru/companies/auriga/articles/659199) и 2) [Как микро-фронтенд меняет будущее Angular](https://habr.com/ru/companies/sberbank/articles/656811). \n\nFINAL: нет данных о примере.",
+ "final": "нет данных о примере.",
+ "correct": false,
+ "cost": 0.0005487000000000131,
+ "seconds": 9.036120749995462,
+ "steps": 4,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какой пример микрофронтендов в Angular 21 описан?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_bhFaoyXUQHkyGdF7FugXg0wM",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"микрофронтенды Angular 21\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_bhFaoyXUQHkyGdF7FugXg0wM",
+   "content": "[Micro Frontend Архитектура на примере Angular / Хабр] https://habr.com/ru/companies/auriga/articles/659199 — `// src/app/app.routes.ts import { Routes } from '@angular/router'; import { LoggedOnlyGuard } from './core/guards/logged-only.guard'; import { UnloggedOnlyGuard } from './core/guards/unlogged-only.guard'; import { Microfrontend } from './core/services/microfrontends/microfrontend.types'; import { environment } from 'src/environments/environment'; export const APP_ROUTES: Routes = []; export const\n[Как микро-фронтенд меняет будущее Angular? / Хабр] https://habr.com/ru/companies/sberbank/articles/656811 — Одна из сложнейших задач в архитектуре микро-фронтенда — это обмен данными. Данные могут быть различных типов, к примеру: статус, UI компоненты, сервисные функции. Убедитесь, что ваше микро-приложение не включает статусы дата-хранилища, оно должно содержаться в отдельном дата-слое, которым можно делиться. Это похоже на фронтенд — представьте бэкенд-коммуникацию, где фронтенд — это микро-приложение\n[Работа и свежие вакансии для IT специалистов ... - Хабр Карьера] https://career.habr.com/vacancies — Москва Работа в командеScrum Откликнуться РОСГОССТРАХ CRM-менеджер #### Зарплата не указана Похожие специалисты получают 100 000 - 200 000 ₽ Москва Организация работы с CRMSQLРабота в команде Откликнуться РОСГОССТРАХ Senior/Lead Frontend разработчик (React) #### Зарплата не указана Похожие специалисты получают 260 000 - 400 000 ₽ Senior Можно удалённо ReactJavaScriptTypeScriptWebpackMobXJest Откли\n[Валентин Климахин (soshroom) — Хабр Карьера - Habr] https://career.habr.com/soshroom — Все сервисы Хабра Сообщество IT-специалистовОтветы на любые вопросы об ITПрофессиональное развитие в ITОбучение для смены профессии, роста в карьере и саморазвития Войти через Хабр АккаунтЗарегистрироваться Войти через Хабр АккаунтЗарегистрироваться ВакансииСпециалистыКурсы и обучениеЭкспертыКомпанииРейтингЗарплатыЖурнал Валентин Климахин (soshroom), 23 года, Россия, Москва\") Валентин "
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_tscZlsu89rk2ufH47TO1oPgW",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\":\"Micro Frontend Архитектура на примере Angular\",\"keywords\":\"пример\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_tscZlsu89rk2ufH47TO1oPgW",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_qKlqFDZOHqfnlmtAN0hklVJF",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\":\"Как микро-фронтенд меняет будущее Angular?\",\"keywords\":\"пример\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_qKlqFDZOHqfnlmtAN0hklVJF",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": "Не удалось найти конкретный пример микрофронтендов в Angular 21 в доступных статьях. Возможно, стоит ознакомиться со статьями по ссылкам, чтобы получить более подробную информацию о реализации: 1) [Micro Frontend Архитектура на примере Angular](https://habr.com/ru/companies/auriga/articles/659199) и 2) [Как микро-фронтенд меняет будущее Angular](https://habr.com/ru/companies/sberbank/articles/656811). \n\nFINAL: нет данных о примере.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

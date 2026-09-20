@@ -1,0 +1,145 @@
+{
+ "task": {
+  "id": "fresh-1",
+  "source": "fresh",
+  "question": "В какой версии Firefox были исправлены 22 CVE, найденные Claude?",
+  "answer": "Firefox 148",
+  "evidence": "итого 22 CVE вошли в Firefox 148",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "Исправления для 22 уязвимостей, найденных Claude, были внесены в версии Firefox 148. FINAL: Firefox 148",
+ "final": "Firefox 148",
+ "correct": true,
+ "cost": 0.0009382500000000016,
+ "seconds": 10.861623250006232,
+ "steps": 6,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "В какой версии Firefox были исправлены 22 CVE, найденные Claude?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_wGuAP4Cqy94Neizi3tSF2u2A",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"Firefox 22 CVE Claude исправления\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_wGuAP4Cqy94Neizi3tSF2u2A",
+   "content": "[NVIDIA Nemotron, Claude фиксит Firefox, ИИ буллит ... - Habr] https://habr.com/ru/companies/timeweb/articles/1009630 — #### ❯ Claude нашёл 22 уязвимости в Firefox за две недели Исследователи из Anthropic прогнали Claude Opus 4.6 по кодовой базе Firefox. Просканировано около 6000 файлов на C++. Модель нашла 22 уязвимости и 14 критических. Все исправлены в Firefox 148. Первую ошибку типа use-after-free нашли за 20 минут. Дальше Mozilla распространила подход на всю кодовую базу, затем Claude нашёл ещё 90 багов. [...]\n[Frontend Status: свежий дайджест фронтенда и AI — 12.03.2026] https://habr.com/ru/articles/1009296 — Команда Anthropic прогнала Claude по кодовой базе Firefox и нашла 14 критических уязвимостей, о которых десятилетиями не подозревали, итого 22 CVE вошли в Firefox 148. ### 🎨 CSS [...] В этом выпуске — CodePen 2.0 и клон Loom на Next.js в видео; про AI: почему коллекция промптов не заменяет мышление, автоисследования на игровом PC и онбординг через Oncode. Безопасность в центре: Clinejection (4000 \n[Как Mozilla нашли 271 уязвимость в Firefox с помощью Claude ...] https://habr.com/ru/articles/1033116 — Отдельно мы напрямую атрибутировали Anthropic 3 CVE (CVE-2026-6746, CVE-2026-6757, CVE-2026-6758) — это исправления для багов, присланных нам командой Anthropic Frontier Red несколько месяцев назад. #### 2. Что означают рейтинги безопасности? [...] Всего в апреле мы исправили 423 security-бага. В дополнение к 271 багу из объявления было 41 из внешних отчётов; оставшиеся 111 примерно поровну распре\n[Топ новостей инфобеза за апрель 2026 года - Habr] https://habr.com/ru/articles/1032178 — Какие, собственно, цифры? Из опубликованного в тот же день бюллетеня по безопасности свежей версии: в нём 41 CVE, три из них отмечены как найденные Claude. При этом в Firefox 148 51 CVE, 22 от Anthropic со 112 баг‑репортов — отрицательный рост от 5:1 к 90:1. Где уязвимости, Клодовски? [...] Скептики рассуждают, что пока наиболее вероятное объяснение — в Mozilla перешли на альте"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_eCLO8PcrNsmHanZUHleu8cdb",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\":\"Mozilla\",\"keywords\":\"Firefox 148\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_eCLO8PcrNsmHanZUHleu8cdb",
+   "content": "Mozilla's current products include the Firefox web browser, Thunderbird e-mail client (now through a subsidiary), the Bugzilla bug tracking system, and the Gecko layout engine.\nMozilla originally aimed to be a technology provider for companies such as Netscape, who would commercialise their free software code. When Netscape's parent company AOL greatly reduced its involvement with Mozilla in July 2003, the Mozilla Foundation was designated the project's legal steward. Soon after, Mozilla deprecated the Mozilla Suite in favor of creating independent applications for each function, primarily the Firefox web browser and the Thunderbird email client, and moved to supply them directly to the public.\nMozilla's activities next expanded, and also experienced product terminations, with Firefox on mobile platforms (primarily Android), a mobile OS called Firefox OS (since cancelled), a web-based identity system called Mozilla Persona (since cancelled) and a marketplace for HTML5 applications.\nAt the end of 2013, Mozilla announced a deal with Cisco, whereby Firefox would download and use a Cisco-provided binary build of an open-source codec to play the proprietary H.264 video format. As part of the deal, Cisco would pay any patent licensing fees associated with the binaries that it distributed. Mozilla's CTO, Brendan Eich, acknowledged that it was \"not a complete solution\" and wasn't \"perfect\". An employee in Mozilla's video formats team, writing unofficially, justified it by the need to maintain their large user base, which would be necessary for future battles for truly free video formats.\nIn 2020 Mozilla announced it would cut 25% of its worldwide staff of nearly 1,000 to reduce costs. Firefox has fallen from 30% market share to 4% in 10 years. Despite this, executive pay increased 400%, with Mitchell Baker, Mozilla’s top executive, receiving $2.4m in 2018. In December 2020, Mozilla closed its Mountain View office.\nIn November 2025, Mozilla outlined a three-year strategy foc"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_H5YcKysUExmotVGuNva8MkL3",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Firefox 148 CVE исправления 2023\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_H5YcKysUExmotVGuNva8MkL3",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_T33gogUwLZgBOEFG9BtLHtrB",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Firefox 148 release notes security fixes CVE March 2023\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_T33gogUwLZgBOEFG9BtLHtrB",
+   "content": "[Adobe Flash Player] Adobe Flash Player (known in Internet Explorer, Firefox, and Google Chrome as Shockwave Flash) is a discontinued computer program for viewing multimedia content, executing rich Internet applications, and streaming audio and video content created on the Adobe Flash platform. It can run from a web browser as a browser plug-in or independently on supported devices. Originally created by FutureWave under the name FutureSplash Player, it was renamed to Macromedia Flash Player after Macromedia acquired FutureWave in 1996. After Adobe acquired Macromedia in 2005, it was developed and distributed by Adobe as Adobe Flash Player. It is currently developed and distributed by Zhongcheng for users in China, and by Harman International for enterprise users outside of China, in collaboration with Adobe. Flash Player runs SWF files that can be created using Adobe Flash Professional, Adobe Flash Builder, or third-party tools such as FlashDevelop. Flash Player supports video and raster graphics; vector graphics; 3D graphics; embedded audio; and an object-oriented scripting language called ActionScript, which is based on ECMAScript (similar to JavaScript). Internet Explorer 11 and Microsoft Edge Legacy since Windows 8, along with Google Chrome on all versions of Windows, came bundled with a sandboxed Adobe Flash Player plug-in. Flash Player once had a large user base, and was required to run many web games, animations, and graphical user interface (GUI) elements embedded in web pages. Adobe stated in 2013 that more than 400 million out of over 1 billion connected desktops updated to new versions of Flash Player within six weeks of release. However, Flash Player became increasingly criticized for poor performance, consumption of battery on mobile devices, the number of security vulnerabilities that had been discovered in the software, and its nature as a closed platform controlled by Adobe. Apple co-founder Steve Jobs was highly critical of Flash Player, having pub"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_FNpZffIOdPaDz054QRlSAZIp",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Mozilla Firefox 148 CVE March 2023 fixes\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_FNpZffIOdPaDz054QRlSAZIp",
+   "content": "[Adobe Flash Player] Adobe Flash Player (known in Internet Explorer, Firefox, and Google Chrome as Shockwave Flash) is a discontinued computer program for viewing multimedia content, executing rich Internet applications, and streaming audio and video content created on the Adobe Flash platform. It can run from a web browser as a browser plug-in or independently on supported devices. Originally created by FutureWave under the name FutureSplash Player, it was renamed to Macromedia Flash Player after Macromedia acquired FutureWave in 1996. After Adobe acquired Macromedia in 2005, it was developed and distributed by Adobe as Adobe Flash Player. It is currently developed and distributed by Zhongcheng for users in China, and by Harman International for enterprise users outside of China, in collaboration with Adobe. Flash Player runs SWF files that can be created using Adobe Flash Professional, Adobe Flash Builder, or third-party tools such as FlashDevelop. Flash Player supports video and raster graphics; vector graphics; 3D graphics; embedded audio; and an object-oriented scripting language called ActionScript, which is based on ECMAScript (similar to JavaScript). Internet Explorer 11 and Microsoft Edge Legacy since Windows 8, along with Google Chrome on all versions of Windows, came bundled with a sandboxed Adobe Flash Player plug-in. Flash Player once had a large user base, and was required to run many web games, animations, and graphical user interface (GUI) elements embedded in web pages. Adobe stated in 2013 that more than 400 million out of over 1 billion connected desktops updated to new versions of Flash Player within six weeks of release. However, Flash Player became increasingly criticized for poor performance, consumption of battery on mobile devices, the number of security vulnerabilities that had been discovered in the software, and its nature as a closed platform controlled by Adobe. Apple co-founder Steve Jobs was highly critical of Flash Player, having pub"
+  },
+  {
+   "role": "assistant",
+   "content": "Исправления для 22 уязвимостей, найденных Claude, были внесены в версии Firefox 148. FINAL: Firefox 148",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

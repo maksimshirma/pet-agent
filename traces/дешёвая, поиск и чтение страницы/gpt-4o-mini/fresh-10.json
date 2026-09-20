@@ -1,0 +1,79 @@
+{
+ "task": {
+  "id": "fresh-10",
+  "source": "fresh",
+  "question": "Какая минимальная версия Node.js требуется для pnpm v11 RC?",
+  "answer": "22",
+  "evidence": "минимальная версия Node.js теперь 22",
+  "page": "Frontend Status #15",
+  "url": "https://habr.com/ru/articles/1032276/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "Минимальная версия Node.js, необходимая для pnpm v11 RC, составляет 22. \n\nFINAL: 22",
+ "final": "22",
+ "correct": true,
+ "cost": 0.0004383000000000026,
+ "seconds": 6.441369084001053,
+ "steps": 3,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какая минимальная версия Node.js требуется для pnpm v11 RC?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_Ws93pzV2UlLGfmFkIaBvsbqd",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"pnpm v11 RC минимальная версия Node.js\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_Ws93pzV2UlLGfmFkIaBvsbqd",
+   "content": "[Монорепозиторий с pnpm и typescript для фронтенда на React и бэкенда на Node.js / Хабр] https://habr.com/ru/articles/798995 — March 9, 2024 - Устанавливаем pnpm, создаем воркспейсы для фронта и бека, импортируем что угодно из одного в другое, типизируем запросы и избавляемся от бойлерплейта. ... Создает единую глобальную папку node_modules на компьютере и используем символические ссылки на нее в проектах\n[Управление версиями Node.js и NPM с помощью NVM / Хабр] https://habr.com/ru/companies/timeweb/articles/541452 — February 8, 2021 - Наш прошлый перевод ... тему и рассказать, как настроить NVM с версией Node.js 15 и...\n[Что выбрать: Npm, Yarn или Pnpm? / Хабр] https://habr.com/ru/companies/domclick/articles/781780 — December 21, 2023 - А что же Pnpm? Он в этом случае ведёт себя как npm@2: ничего не поднимает на верхний уровень, просто устанавливает по semver каждую версию зависимости, но не копирует, как это делал npm@2, а создаёт hardlink'и, поэтому node_modules не раздувается.\n[Пожалуйста, начните использовать pnpm / Хабр] https://habr.com/ru/post/587254 — November 4, 2021 - После чего в папке node_modules он создает символические ссылки на эти файлы - вместо того чтобы их каждый раз копировать. В результате, если у вас 100 проектов с одинаковыми зависимости - pnpm полезет в интернет и сохранит пакеты на диске только 1 раз.\n[Что такое менеджер пакетов, и в чем разница YARN, NPM, PNPM? / Хабр] https://habr.com/ru/articles/726096 — May 31, 2023 - Это в свою очередь подтолкнуло разработчиков YARN к созданию Yarn Plug'n'Play (Yarn PnP). Он по умолчанию будет добавлен во вторую версию. PNPM выполняет все операции с пакетами атомарно."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_QocwJlkbKlN9jfXlw30LoBgi",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"pnpm v11 требования к Node.js\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_QocwJlkbKlN9jfXlw30LoBgi",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 06.05.2026] https://habr.com/ru/articles/1032276 — Вышел релиз-кандидат pnpm v11: минимальная версия Node.js теперь 22, сам pnpm стал чистым ESM, по безопасности дефолты затянули: minimumReleaseAge=1440 (новые пакеты резолвятся не раньше суток после публикации, прямой ответ на свежие supply-chain атаки) и blockExoticSubdeps=true. Команды publish, login, view, deprecate, unpublish, dist-tag, version больше не делегируют в npm CLI, а переписаны нати\n[Менеджмент зависимостей в Javascript / Хабр] https://habr.com/ru/companies/gazprombank/articles/725992 — PNPM в отличие от NPM и Yarn не пытается сделать структуру `node_modules` как можно более плоской, вместо этого он скорее нормализует граф зависимостей. После установки PNPM создаёт в `node_modules` директорию `.pnpm`, которая концептуально представляет собой хранилище ключ-значение, в котором ключом является название пакета и его версия, а значением — содержимое этой версии пакета. Такая структур\n[Что выбрать: Npm, Yarn или Pnpm? - Habr] https://habr.com/ru/companies/domclick/articles/781780 — Скорость. Фишки. Выделю strict‑peer‑dependencies, resolution‑mode, node‑linker и даже управление версиями Node.js. Pnpm интересный инструмент, он и про качество, и про возможности ## Рекомендации Дам свои рекомендации по работе с Pnpm: В `package.json`. Помогает в случаях, когда случайно вызвал Npm, особенно для новеньких. `package.json` `\"scripts\": { \"preinstall\": \"npx only-allow pnpm\", ... }` [.\n[Corepack в Node.js: возможности и перспективы / Хабр] https://habr.com/ru/companies/yoomoney/articles/816297 — Технический комитет Node.js подтвердил, что у проекта нет цели удалить npm из Node.js. Был достигнут консенсус, что Node.js должен поддерживать «особые отношения» с npm как с эталонной реализацией для npm-реестра. ### Заключение [...] Corepack ориентирован на альтернативные менеджеры пакетов, такие как yarn и pnpm. Его использование с npm может вызвать сложности, поскольку np"
+  },
+  {
+   "role": "assistant",
+   "content": "Минимальная версия Node.js, необходимая для pnpm v11 RC, составляет 22. \n\nFINAL: 22",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

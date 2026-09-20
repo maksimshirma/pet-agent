@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "fresh-46",
+  "source": "fresh",
+  "question": "Какой проект предлагает 50+ ретро-компонентов?",
+  "answer": "8bitcn/ui",
+  "evidence": "8bitcn/ui: 50+ Ретро компонентов",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "FINAL: NES.css",
+ "final": "NES.css",
+ "correct": false,
+ "cost": 0.0030929999999999985,
+ "seconds": 4.096176999999443,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Какой проект предлагает 50+ ретро-компонентов?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\":\"Речь идёт о библиотеке ретро-компонентов для веб-разработки. Наиболее известный проект, предлагающий 50+ ретро-компонентов — это '98.css' или 'NES.css', однако проект, специально позиционирующий себя как имеющий 50+ ретро-компонентов — это 'retro-ui' или 'NES.css'. Наиболее вероятный ответ — NES.css, который предлагает более 50 компонентов в стиле NES.\", \"final\": \"NES.css\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

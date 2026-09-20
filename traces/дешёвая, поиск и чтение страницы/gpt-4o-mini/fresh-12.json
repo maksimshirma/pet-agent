@@ -1,0 +1,181 @@
+{
+ "task": {
+  "id": "fresh-12",
+  "source": "fresh",
+  "question": "Сколько фейковых звёзд обнаружено на GitHub в ходе расследования?",
+  "answer": "более 6 миллионов",
+  "evidence": "более 6 миллионов фейковых отметок на 18 617 репозиториях",
+  "page": "Frontend Status #14",
+  "url": "https://habr.com/ru/articles/1028734/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "На данный момент, по результатам доступных источников, установлено, что на GitHub существует около 6 миллионов фейковых звёзд на более чем 18 тысячах репозиториев. \n\nFINAL: 6 миллионов",
+ "final": "6 миллионов",
+ "correct": false,
+ "cost": 0.0010813500000000087,
+ "seconds": 13.366045749993646,
+ "steps": 7,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Сколько фейковых звёзд обнаружено на GitHub в ходе расследования?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_ZauPTcS7IfGKGSiShY5JP4uo",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"фейковые звёзды GitHub расследование\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_ZauPTcS7IfGKGSiShY5JP4uo",
+   "content": "[Вышло обновление утилиты Shotstars для аналитики GitHub-репозиториев, включая детектирование фейковых звезд / Хабр] https://habr.com/ru/news/927434 — July 14, 2025 - Shotstars рассчитывает параметры: агрессивный маркетинг, тренд, фейковые звезды, пик популярности и его дата.\n[Теневой рынок GitHub звезд / Хабр] https://habr.com/ru/articles/1025032 — April 22, 2026 - Есть работа, в которой проанализировали динамику звёзд на GitHub за 2019–2024 гг и нашли около 6 миллионов фейковых на 18+ тысячах репозиториев.\n[Исследователи: на GitHub есть около 4,5 млн фейковых оценок, которые путают разработчиков / Хабр] https://habr.com/ru/news/868182 — December 20, 2024 - Исследователи ... Socket Inc выяснили, что на GitHub есть более 4,5 млн фейковых оценок репозиториев.\n[Изучаем чёрный рынок фальшивых звёзд GitHub / Хабр] https://habr.com/ru/articles/723648 — March 21, 2023 - В этом посте мы изучим тему фальшивых звёзд GitHub, поделимся своей методикой их выявления и покажем, как самостоятельно провести такой анализ любых репозиториев.\n[Чёрный рынок звёздочек на GitHub, который помогает читерить с ...] https://habr.com/ru/articles/769568 — Oct 24, 2023 · Когда поступает заказ на звезды GitHub или другой показатель, команда из 11 человек начинает кликать «с разных облачных устройств», — сказал Бадди, добавив, что это не спам, поскольку магазин"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_p3uBRubUOUc3U0zVpQy4ceG8",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\":\"Теневой рынок GitHub звезд\",\"keywords\":\"фейковые звёзды\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_p3uBRubUOUc3U0zVpQy4ceG8",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_OkGdlsURDGimywvdA7k7R1my",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\":\"Исследователи: на GitHub есть около 4,5 млн фейковых оценок, которые путают разработчиков\",\"keywords\":\"фейковые звёзды\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_OkGdlsURDGimywvdA7k7R1my",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_rYNIln5ik8rZMnr6lRVUW8lr",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\":\"Вышло обновление утилиты Shotstars для аналитики GitHub-репозиториев, включая детектирование фейковых звезд\",\"keywords\":\"фейковые звёзды\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_rYNIln5ik8rZMnr6lRVUW8lr",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_EJAfwBuCHNQkWebA8MeFYiQK",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\":\"Изучаем чёрный рынок фальшивых звёзд GitHub\",\"keywords\":\"фейковые звёзды\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_EJAfwBuCHNQkWebA8MeFYiQK",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_CkF30hsYCp6kVYVRVfDPGmAI",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\": \"Чёрный рынок звёздочек на GitHub, который помогает читерить с ...\", \"keywords\": \"фейковые звёзды\"}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 1,
+     "id": "call_zGVzPyGQeSwuLh6EZdGMIL00",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"фейковые звёзды на GitHub количество\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_CkF30hsYCp6kVYVRVfDPGmAI",
+   "content": "No data"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_zGVzPyGQeSwuLh6EZdGMIL00",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": "На данный момент, по результатам доступных источников, установлено, что на GitHub существует около 6 миллионов фейковых звёзд на более чем 18 тысячах репозиториев. \n\nFINAL: 6 миллионов",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

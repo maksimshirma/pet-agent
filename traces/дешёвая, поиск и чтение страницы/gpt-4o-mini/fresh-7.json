@@ -1,0 +1,79 @@
+{
+ "task": {
+  "id": "fresh-7",
+  "source": "fresh",
+  "question": "Сколько строк кода переписал Strawberry Browser с React на Svelte?",
+  "answer": "130 000 строк",
+  "evidence": "Strawberry Browser переписал 130 000 строк с React на Svelte за две недели",
+  "page": "Frontend Status #10",
+  "url": "https://habr.com/ru/articles/1015700/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "Strawberry Browser переписал 130 000 строк кода с React на Svelte за две недели. FINAL: 130000",
+ "final": "130000",
+ "correct": false,
+ "cost": 0.0004963499999999788,
+ "seconds": 8.102450540987775,
+ "steps": 3,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Сколько строк кода переписал Strawberry Browser с React на Svelte?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_MgDGupkUjtTcAL6MZm05Qh3R",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"Strawberry Browser Svelte React количество строк кода\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_MgDGupkUjtTcAL6MZm05Qh3R",
+   "content": "[Работа и свежие вакансии для IT специалистов ... - Хабр Карьера] https://career.habr.com/vacancies — Москва Работа в командеScrum Откликнуться РОСГОССТРАХ CRM-менеджер #### Зарплата не указана Похожие специалисты получают 100 000 - 200 000 ₽ Москва Организация работы с CRMSQLРабота в команде Откликнуться РОСГОССТРАХ Senior/Lead Frontend разработчик (React) #### Зарплата не указана Похожие специалисты получают 260 000 - 400 000 ₽ Senior Можно удалённо ReactJavaScriptTypeScriptWebpackMobXJest Откли\n[Валентин Климахин (soshroom) — Хабр Карьера - Habr] https://career.habr.com/soshroom — Ищу работу Написать ### Контакты Войти Возраст: 23 года Опыт работы: 4 года и 9 месяцев Регистрация: 16.02.2026 Последний визит: 1 день назад Гражданство: Россия Местоположение: Россия, Москва Дополнительно: готов к переезду и к удаленной работе Знание языков: Английский С1 • Русский родной язык Награды 15 откликовЗадает планкуЕсть опытЕсть контакт! Все награды Рекомендательные письма 0Друзья 0 ##\n[Интернет-магазин XCOM-SHOP] https://u.habr.com/busines_bundle_xcom_shop — main_slide_1272282 main_slide_1255925 main_slide_1255923 main_slide_1255926 main_slide_1249637 main_slide_1277484 main_slide_1272191 main_slide_1269472 main_slide_1265898 main_slide_1275552 main_slide_1157630 main_slide_1238358 main_slide_1182631 main_slide_41871 # Интернет-магазин компьютеров и компьютерных комплектующих Популярные категории [...] Мониторы для СВН Видеосерверы Видеорегистраторы К\n[Комплексные IT-решения для бизнеса | Обслуживание IT ...] https://u.habr.com/jetweb — Телеграм-чат Подробнее Защита АСУ ТП от APT‑атак как часть стратегии киберустойчивости ### Защита АСУ ТП от APT‑атак как часть стратегии киберустойчивости Исследование Подробнее Обзор рынка информационной безопасности 2024 ### Обзор рынка информационной безопасности 2024 Обзор Подробнее Анализ ландшафта угроз кибербезопасности 2024 ### Анализ ландшафта угроз кибербезопасности 2024 Исследование [..\n[Журнал — Хабр Карьера] https://career.habr."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_1WKRBKxZOPNzq5TPXfmBVrOC",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"Strawberry Browser переписка React Svelte\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_1WKRBKxZOPNzq5TPXfmBVrOC",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 27.03.2026] https://habr.com/ru/articles/1015700 — ⚡ TypeScript 6.0, обновления безопасности Node.js, петиция против AI-кода в ядре Node.js и Kafka из Node.js по-взрослому. ⚛️ TanStack улучшил пропускную способность SSR в 5 раз, а Strawberry Browser переписал 130 000 строк с React на Svelte за две недели. 🅰️ Angular выпустила официальные скиллы для AI-агентов. 💚 Компоненты визуализации звука для Vue.js на Web Audio API. …и многое другое. ### 📺 Мед"
+  },
+  {
+   "role": "assistant",
+   "content": "Strawberry Browser переписал 130 000 строк кода с React на Svelte за две недели. FINAL: 130000",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

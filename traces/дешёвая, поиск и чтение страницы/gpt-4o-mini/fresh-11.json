@@ -1,0 +1,167 @@
+{
+ "task": {
+  "id": "fresh-11",
+  "source": "fresh",
+  "question": "Кто представил State of Vue 2026?",
+  "answer": "Evan You",
+  "evidence": "Evan You представил State of Vue 2026",
+  "page": "Frontend Status #14",
+  "url": "https://habr.com/ru/articles/1028734/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "State of Vue 2026 представил Эван Ю. \n\nFINAL: Эван Ю",
+ "final": "Эван Ю",
+ "correct": false,
+ "cost": 0.0013321500000000042,
+ "seconds": 16.12187470799836,
+ "steps": 7,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Кто представил State of Vue 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_Vz3M1n8P9bxiQWp5Eb5wuQJi",
+     "function": {
+      "name": "web_search_ru",
+      "arguments": "{\"query\":\"State of Vue 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_Vz3M1n8P9bxiQWp5Eb5wuQJi",
+   "content": "[Vue.js] Vue.js (также Vue; /vjuː/) — JavaScript-фреймворк с открытым исходным кодом для создания пользовательских интерфейсов. Легко интегрируется в проекты с использованием других JavaScript-библиотек. Может функционировать как веб-фреймворк для разработки одностраничных приложений в реактивном стиле. На данный момент поддерживается создателем Эваном Ю и остальными активными членами основной команды из различных компаний, таких как Netlify, Netguru, Baidu, Livestorm. Опрос разработчиков о JavaScript, проведенный в 2022 году, показал, что Vue удовлетворяет 77,4 % сообщества. Vue версии 2 имеет 207 тысяч звезд на GitHub, версия 3 — 43.9 тысяч. Является третьим по величине проектом в истории GitHub."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_hpQAVSg7TfrdPXlVkUHwU7pG",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"State of Vue 2026\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_hpQAVSg7TfrdPXlVkUHwU7pG",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 05.03.2026] https://habr.com/ru/articles/1007014 — ### 💚 Vue.js Рекомендации по созданию доступных приложений на Vue.js — Можно ли использовать все возможности вашего приложения только с помощью клавиатуры? Все ли кнопки являются button элементами? Как пользователь узнает о динамических обновлениях? ### 🧡 Svelte State of Svelte: что нового во фреймворке. Кстати, судя по докладу State of JS 2025, Svelte продолжает занимать первое место среди реакти\n[Главные игроки экосистемы JavaScript по состоянию на 2026 год] https://habr.com/ru/articles/1021182 — В 2024 году у нас был хороший обзор всей экосистемы Vue. Но, будучи совершенно незнакомым с Vue человеком, мне немного сложно понять ситуацию в 2025/2026 годах. Очевидно, что Эван Ю — главный человек в этой сфере, но он руководит VoidZero (“компания по разработке инструментов JavaScript”), которая сейчас активно работает над Vite+ - целым рядом крупных проектов, таких как сам Vite, форматирование,\n[React vs Vue – подробное сравнение и перспективы - Habr] https://habr.com/ru/articles/904698 — Прогноз простыми словами: К 2026–2028 годам React, вероятно, останется наиболее мощным и распространенным инструментом, особенно в крупных проектах, при этом Vue укрепит позиции как более легковесная альтернатива, и в эру AI-ассистентов разница между ними в сложности освоения станет менее заметной, фокус сместится на требования конкретного проекта. [...] Сосуществование и конкуренция. По состоянию\n[Значение поменялось, а экран нет: где Vue теряет реактивность и почему это не баг / Хабр] https://habr.com/ru/companies/otus/articles/1072130 — Реальные истории IT‑найма 2026 ### Хабр проиграл войну с нейрослопом ### Не трогая веса модели: как мы построили исследовательского агента Алисы AI и в разы сократили потребление GPU ### Где HTTP/2 и HTTP/3 реально быстрее, а где не дают ничего ## Публикации ## Информация Ваш аккаунт Разделы Информация Услуги [...] 9 сентября в 20:00— «Создаём перво"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_lLHbnEIGRXxcgijULqOC0c6B",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\":\"Vue.js\",\"keywords\":\"State of Vue 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_lLHbnEIGRXxcgijULqOC0c6B",
+   "content": "Vue.js (commonly referred to as Vue; pronounced \"view\") is an open-source model–view–viewmodel front end JavaScript framework for building user interfaces and single-page applications. It was created by Evan You and is maintained by him and the rest of the active core team members.\nVue.js features an incrementally adaptable architecture that focuses on declarative rendering and component composition. The core library is focused on the view layer only. Advanced features required for complex applications such as routing, state management and build tooling are offered via officially maintained supporting libraries and packages.\nVue.js allows for extending HTML with HTML attributes called directives. The directives offer functionality to HTML applications, and come as either built-in or user defined directives.\nVue was created by Evan You after working for Google using AngularJS in several projects. He later summed up his thought process: \"I figured, what if I could just extract the part that I really liked about Angular and build something really lightweight.\" The first source code commit to the project was dated July 2013, at which time it was originally named \"Seed\". Vue was first publicly announced the following February, in 2014.\nVersion names are often derived from manga and anime series, with the first letters arranged in alphabetical order.\nVue 3 was officially released in September 2020. According to the State of Vue.js Report 2025, 96% of surveyed developers reported having used Vue 3.x. However, 35% also indicated that they used Vue 2.7.x in the past year, reflecting continued reliance on Vue 2 despite its end of support. The report also noted that more than a quarter of respondents encountered challenges when migrating from Vue 2 to Vue 3.\n=== State management evolution ===\n2015 - Vuex introduced as official state management solution\n2021 - Pinia development begins as Vuex 5 experiment\n2022 - Pinia becomes officially recommended for new projects\n2023 - Vue t"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_WGIsHSaod8K2EcedDeAIalgj",
+     "function": {
+      "name": "web_search_ru",
+      "arguments": "{\"query\":\"State of Vue 2026 кто выступал\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_WGIsHSaod8K2EcedDeAIalgj",
+   "content": "[Искусственный интеллект] Иску́сственный интелле́кт (англ. artificial intelligence; AI), также ИИ, искусственный ра́зум, в самом широком смысле — научно-технологическая область, занимающаяся изучением и созданием интеллектуальных сущностей (англ. intelligent entities), способных «вычислять, как им действовать эффективно и безопасно в самых разнообразных, в том числе незнакомых им, ситуациях», и решать задачи как минимум уровня человеческого интеллекта и реализованных машинами, в частности компьютерными системами. Это направление исследований в области компьютерных наук, которая разрабатывает и изучает методы и программное обеспечение, позволяющие машинам воспринимать окружающую среду и использовать обучение и интеллект для выполнения действий, которые максимально увеличивают их шансы на достижение поставленных целей. Такие машины можно назвать искусственным интеллектом. В то же время не следует путать понятия ИИ и больших языковых моделей (БЯМ/LLM): если ИИ — это область компьютерных наук, охватывающая решение широкого круга интеллектуальных задач, то БЯМ/LLM — это лишь один (хоть и самый популярный в середине 2020-х) из многих инструментов, который, даже развившись в мультимодальные системы с поддержкой изображений, видео и аудио (так называемые MLLM), остаётся, по сути, специализированным вероятностным алгоритмом предсказания последовательностей, а не универсальным интеллектом (AGI). Некоторые из наиболее известных приложений искусственного интеллекта включают в себя передовые поисковые системы (например, Google Search, Bing, Яндекс); рекомендательные системы (используемые на YouTube, Amazon и Netflix); взаимодействие посредством человеческой речи (например, Google Assistant, Siri, Alexa, Алиса); автономные транспортные средства (например, Waymo); генеративные и творческие инструменты (например, ChatGPT, Apple Intelligence и искусство искусственного интеллекта); а также сверхчеловеческую игру и анализ в стратегических играх (например, шахматы и го). Однако многие "
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_uAGX5QSZut5fmt77Go9hlBBC",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"State of Vue 2026 докладчик\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_uAGX5QSZut5fmt77Go9hlBBC",
+   "content": "[Фронтенд-2019: итоги года - Habr] https://habr.com/ru/companies/ruvds/articles/481576 — У Vue и Angular есть увлечённые своим делом сообщества пользователей. ... Том Оччино, ведущий докладчик конференции и менеджер команды\n[Сергей Макаркин (makarkinsv) - Хабр Карьера] https://career.habr.com/makarkinsv — • Разработал PR-план группы, в рамках которого регулярно пишу статьи, создаю кейсы, учувствую в качестве докладчика на различных совместных конференциях с\n[Учебный процесс в IT — Обсуждаем обучение, курсы ... - Habr] https://habr.com/ru/hubs/study/posts/page48 — Поговорим про улучшение Developer Experience с технической стороны, подходах к разработке в frontend, инфраструктуре проекта и др. В программе: Олег Сидоркин,\n[Skills для Claude Code: огромный гайд от инженера Anthropic / Хабр] https://habr.com/ru/articles/1011524 — Комментарии 6 ЕЖЕДНЕВНЫЙ ХАБР | 1 СЕНТ 2026 77K ## Vodka, или как мы планируем заменить Wine Всем привет! В этой статье я расскажу, почему у нас действительно получится заменить Wine, и что мы для этого делаем. Vodka, или как мы планируем заменить Wine ### Вы подменили User-Agent, и сервер всё равно знает, что это curl. Он понял это до того, как получил заголовки ### Куда девается свечение при сох\n[Теория и практика использования ClickHouse в реальных ... - Habr] https://habr.com/ru/articles/512304 — ClickHouse меняет правила игры и значительно снижает порог вхождения в мир аналитических DBMS. Доклад с BackEnd Conf 2018г и он опубликован с"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_2fXfLvKKLAIjreK420VAz4TM",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"State of Vue 2026 кто представил\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_2fXfLvKKLAIjreK420VAz4TM",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 27.04.2026] https://habr.com/ru/articles/1028734 — 🧪 Инструменты, которые сокращают путь до релиза: автогенерация E2E, Excel через WebAssembly и процедурный звук для живого интерфейса. …и многое другое. ### 📺 Медиа Evan You представил State of Vue 2026: ежегодный апдейт от создателя Vue с обзором дорожной карты, развития экосистемы, улучшений производительности и общего вектора развития фреймворка. ### 🤖 AI [...] # Frontend Status: свежий дайджест\n[Vue.js Amsterdam 2026: будущее экосистемы Vite / Хабр] https://habr.com/ru/companies/first/articles/1015150 — Судя по текущим заявлениям команды, стабильный релиз Vue 3.6 ожидается в ближайшее время. Подробно про Vapor мы писали в отдельной статье. ### Nuxt 4.4 На сцене Vue.js Amsterdam 2026 Дэниел Роу представил обновление Nuxt 4.4. Это один из тех зрелых релизов фреймворка, где происходит множество улучшений, но без кардинальных изменений архитектуры. Основной фокус версии — улучшение разработческого оп"
+  },
+  {
+   "role": "assistant",
+   "content": "State of Vue 2026 представил Эван Ю. \n\nFINAL: Эван Ю",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

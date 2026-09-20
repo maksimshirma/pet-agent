@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "fresh-2",
+  "source": "fresh",
+  "question": "Какой новый HTML-атрибут предложила команда Edge?",
+  "answer": "focusgroup",
+  "evidence": "Команда Edge предлагает новый HTML-атрибут `focusgroup`",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "FINAL: loading",
+ "final": "loading",
+ "correct": false,
+ "cost": 5.535000000000956e-05,
+ "seconds": 1.2456396659981692,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Какой новый HTML-атрибут предложила команда Edge?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\":\"Команда Edge предложила новый HTML-атрибут `loading`, который управляет отложенной загрузкой изображений и iframe элементов для оптимизации производительности. Это позволяет загружать контент только по мере его необходимости.\",\"final\":\"loading\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

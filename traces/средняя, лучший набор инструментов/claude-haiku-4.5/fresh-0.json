@@ -1,0 +1,71 @@
+{
+ "task": {
+  "id": "fresh-0",
+  "source": "fresh",
+  "question": "С какой даты максимальный срок жизни TLS-сертификатов сократился до 200 дней?",
+  "answer": "15 марта 2026",
+  "evidence": "Веб-индустрия сокращает максимальный срок жизни TLS-сертификатов — с 15 марта 2026 года лимит падает с 398 до 200 дней",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "Отлично! Найдена информация. Из результатов видно, что максимальный срок жизни TLS-сертификатов сократился до 200 дней с **15 марта 2026 года**.\n\nFINAL: 15 марта 2026 года",
+ "final": "15 марта 2026 года",
+ "correct": true,
+ "cost": 0.010954999999999993,
+ "seconds": 7.814497083003516,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "С какой даты максимальный срок жизни TLS-сертификатов сократился до 200 дней?"
+  },
+  {
+   "role": "assistant",
+   "content": "Я поищу информацию о сокращении максимального срока жизни TLS-сертификатов до 200 дней.",
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "toolu_bdrk_014vWE6f2An523cmdJH7ZvPR",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\": \"максимальный срок жизни TLS сертификатов 200 дней\", \"max_results\": 5}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 1,
+     "id": "toolu_bdrk_01CYKpufyiqTgPvFn4d8sCJp",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"TLS certificate maximum lifetime 200 days\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_014vWE6f2An523cmdJH7ZvPR",
+   "content": "[SSL certificate hell: как автоматизировать управление ... - Habr] https://habr.com/ru/companies/clearway/articles/1079786 — Сокращение сроков жизни публичных сертификатов. В апреле 2025 года ЦС/Browser Forum принял решение о поэтапном сокращении максимального срока действия TLS‑сертификатов: 398 дней (до февраля 2026) → 200 дней (март 2026) → 100 дней (март 2027) → 47 дней (март 2029), с параллельным ужесточением сроков переиспользования проверки владения доменом. Аналогичные сроки объявили GlobalSign и Let`s Encrypt (\n[Frontend Status: свежий дайджест фронтенда и AI — 12.03.2026] https://habr.com/ru/articles/1009296 — Веб-индустрия сокращает максимальный срок жизни TLS-сертификатов — с 15 марта 2026 года лимит падает с 398 до 200 дней, в 2027-м до 100, а к 2029-му до 47. Heroku напоминает о важности включения автообновления.\n[Срок действия сертификатов SSL/TLS сократят до 47 дней к ...] https://habr.com/ru/news/900894 — с 15 марта 2026 года — до 200 дней; с 15 марта 2027 года — до 100 дней; с 15 марта 2029 года срок действия сертификата будет сокращён до 47 дней, а DCV — до 10 дней. Такая мера приведёт к росту расходов на управление и добавит нагрузку для тех, кто работает с несколькими доменами. Однако ожидается, что это приведет к более частой повторной проверке компаний, запрашивающих сертификаты, поощрит авто\n[Вы отозвали сертификат. Браузер об этом не спросит - Habr] https://habr.com/ru/articles/1078142 — Календарь утверждён бюллетенем SC-081v3 в апреле 2025 года: до 14 марта 2026 года максимум 398 дней, с 15 марта 2026 года - 200 дней, с 15 марта 2027 года - 100 дней, с 15 марта 2029 года - 47 дней. Это видно уже сейчас, если посмотреть на даты в сертификатах: `letsencrypt.org: notBefore=Jul 6 15:24:34 2026 GMT notAfter=Oct 4 15:24:33 2026 GMT github.com: notBefore=Sep 1 00:00:00 2026 GMT notAfter\n[Какие есть российские аналоги Let's Encrypt? - Хабр Q&A] https://qna.habr.com/q/1408804 — ant-ares, То, что сертификат на 90 дней (а планируется на 45) - это хоро"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01CYKpufyiqTgPvFn4d8sCJp",
+   "content": "[Certificate authority] In cryptography, a certificate authority or certification authority (CA) is an entity that stores, signs, and issues digital certificates. A digital certificate certifies the ownership of a public key by the named subject of the certificate. This allows others (relying parties) to rely upon signatures or on assertions made about the private key that corresponds to the certified public key. A CA acts as a trusted third party—trusted both by the subject (owner) of the certificate and by the party relying upon the certificate. The format of these certificates is specified by the X.509 or EMV standard. One particularly common use for certificate authorities is to sign certificates used in HTTPS, the secure browsing protocol for the World Wide Web. Another common use is in issuing identity cards by national governments for use in electronically signing documents."
+  },
+  {
+   "role": "assistant",
+   "content": "Отлично! Найдена информация. Из результатов видно, что максимальный срок жизни TLS-сертификатов сократился до 200 дней с **15 марта 2026 года**.\n\nFINAL: 15 марта 2026 года",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

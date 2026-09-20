@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "fresh-2",
+  "source": "fresh",
+  "question": "Какой новый HTML-атрибут предложила команда Edge?",
+  "answer": "focusgroup",
+  "evidence": "Команда Edge предлагает новый HTML-атрибут `focusgroup`",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "Отлично! Я нашел информацию.\n\nFINAL: focusgroup",
+ "final": "focusgroup",
+ "correct": true,
+ "cost": 0.009961999999999999,
+ "seconds": 6.144043459004024,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какой новый HTML-атрибут предложила команда Edge?"
+  },
+  {
+   "role": "assistant",
+   "content": "Я поищу информацию о новом HTML-атрибуте, который предложила команда Edge.",
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "toolu_bdrk_01Va8zUJsTLgxe3Qu8uBrU4W",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\": \"Edge команда новый HTML атрибут\", \"max_results\": 5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01Va8zUJsTLgxe3Qu8uBrU4W",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 12.03.2026] https://habr.com/ru/articles/1009296 — Команда Edge предлагает новый HTML-атрибут `focusgroup`: добавляешь его на контейнер и браузер сам обрабатывает клавиши стрелок, пропускает скрытые/disabled-элементы, учитывает направление текста и восстанавливает фокус при возврате. Реализация уже в Edge и Chromium, идёт RFC-процесс для других браузеров. `focusgroup` ### 🛠️ Инструменты [...] и подводный камень Anchor Positioning; в JS — когда пор\n[7 советов, как улучшить работу вашего сайта в Microsoft Edge и ...] https://habr.com/ru/companies/microsoft/articles/265037 — ### Совет №5 (Обновленный). Отдавайте предпочтение стандартной версии без префиксов. `html { font-family: sans-serif; / 1 / -ms-text-size-adjust: 100%; / 2 / -webkit-text-size-adjust: 100%; / 2 / }` ## Обходитесь без плагинов там, где это возможно ### Совет №6: везде, где можно, старайтесь заменить использование плагинов на современные веб-стандарты. ## Тестируйте сайты в Microsoft Edge: напрямую \n[Мне плевать на твой браузер, я все равно открою ссылку в Edge! Боремся с новыми методами продвижения браузера MS / Хабр] https://habr.com/ru/articles/793164 — При выборе веб-ссылки в электронной почте Microsoft Outlook для Windows или в чате Microsoft Teams для Windows она откроется в Microsoft Edge. Когда ссылка откроется в Edge, рядом с ним откроется соответствующее сообщение электронной почты или чат на боковой панели Edge. Этот параллельный интерфейс функций предназначен для минимизации переключения между окнами, чтобы вы могли продолжать оставаться\n[Улучшение элементов управления в Microsoft Edge на Chromium / Хабр] https://habr.com/ru/companies/microsoft/articles/472268 — Хабр Карьера Курсы ## GPT-6 Astra помогла прочесть зашифрованную Enigma немецкую радиограмму 1941 года — над ней бились 21 год [...] Иногда эту историю уже пересказывают как «шифр не могли разгадать 83 года», но на самом деле неизвестно, пытался ли кто‑нибудь расшифровать именно э"
+  },
+  {
+   "role": "assistant",
+   "content": "Отлично! Я нашел информацию.\n\nFINAL: focusgroup",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

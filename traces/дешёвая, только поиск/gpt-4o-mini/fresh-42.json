@@ -1,0 +1,193 @@
+{
+ "task": {
+  "id": "fresh-42",
+  "source": "fresh",
+  "question": "Кто построил быстрый инструмент сравнения скриншотов и переписал ядро на Rust?",
+  "answer": "Теймур Гасанов",
+  "evidence": "Теймур Гасанов строит быстрый инструмент сравнения скриншотов",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "Информация по поводу конкретного инструмента сравнения скриншотов на Rust в данный момент отсутствует. Пожалуйста, уточните или переформулируйте вопрос. FINAL: отсутствует информация.",
+ "final": "отсутствует информация.",
+ "correct": false,
+ "cost": 0.002155199999999996,
+ "seconds": 22.834326041003806,
+ "steps": 9,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Кто построил быстрый инструмент сравнения скриншотов и переписал ядро на Rust?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_ZtbGiUvXeWdmWPeu1BJJxY4t",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"инструмент сравнения скриншотов на Rust\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_ZtbGiUvXeWdmWPeu1BJJxY4t",
+   "content": "[Сравнение одинакового проекта в Rust, Haskell, C++, Python ...] https://habr.com/ru/articles/456638 — Мы сделали наш компилятор на Rust, и сначала я сравнил его с проектом команды на Haskell. Я ожидал, что их программа будет намного короче, но\n[Скриншот-тестирование фронтенда: руководство по ...] https://habr.com/ru/articles/925162 — Я использую в своих проектах инструмент jest-image-snapshot, который под коробкой использует pixelmatch, плюс также имеет поддержку ssim\n[Как протестировать более 40 UI-компонентов за минуту: ускоряем скриншот-тесты / Хабр] https://habr.com/ru/companies/domclick/articles/1050424 — `z-index` `position: absolute` `flex-wrap` Нам был нужен инструмент, который за считанные секунды «сфотографирует» более 40 вариантов сниппетов в реальном headless-браузере и попиксельно сравнит их. Мы выбрали связку `@storybook/test-runner` + `playwright` + `jest-image-snapshot`. `@storybook/test-runner` `playwright` `jest-image-snapshot` ## Как это работает Мы сделали довольно простую, но устойч\n[Как я случайно написал что-то быстрое и декларативное (на Rust)] https://habr.com/ru/articles/1049432 — Для тестов у меня есть 3 конфигурации, две из которых - это фичи, завязанные на portable_simd (доступны только в nightly-версии Rust). Тулчейн\n[Ржавеем дальше. Как появился Rust и можно ли на нём WEB?] https://habr.com/ru/articles/538970/comments — В данном случае имелся в виду Template Haskell. Могли бы и сами догадаться зная написавшего…"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_Ruwl1CQeBlXeqVpa6dZ8CUSq",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"скриншоты сравнение Rust\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_Ruwl1CQeBlXeqVpa6dZ8CUSq",
+   "content": "[Сравнение одинакового проекта в Rust, Haskell, C++, Python ...] https://habr.com/ru/articles/456638 — Мы сделали наш компилятор на Rust, и сначала я сравнил его с проектом команды на Haskell. Я ожидал, что их программа будет намного короче, но\n[Rust для Java разработчиков - Habr] https://habr.com/ru/articles/501356 — Между ними есть некоторые отличия. Производительность в Rust является высокой, упоминается отсутствие среды времени выполнения, а также\n[Ответ на «Коротко о том, почему Rust лучше C/C++» или меня ...] https://habr.com/ru/articles/813645 — Производительность является одним из ключевых факторов при выборе языка программирования, и вокруг сравнения производительности Rust и других\n[Как я приложение с Go на Rust переписывал - Habr] https://habr.com/ru/articles/720382 — О плюсах и минусах Go и Rust в сравнении расскажу далее. Итак, для лёгкой реализации идиоматичного приложения на Rust нам нужны легковесные\n[C++ с точки зрения Rust-разработчика: достоинства и недостатки] https://habr.com/ru/articles/844988 — Сообщения об ошибках в C++ (при использовании Clang и Visual Studio) также отличаются шероховатостью по сравнению с аналогами из Rust."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_frdQ9NpOD4vDB04J0Dm6RRsO",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"сравнение скриншотов инструмент разработка Rust\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_frdQ9NpOD4vDB04J0Dm6RRsO",
+   "content": "[Сравнение одинакового проекта в Rust, Haskell, C++, Python ...] https://habr.com/ru/articles/456638 — Мы сделали наш компилятор на Rust, и сначала я сравнил его с проектом команды на Haskell. Я ожидал, что их программа будет намного короче\n[Скриншот-тестирование фронтенда: руководство по применению в 2025 году / Хабр] https://habr.com/ru/articles/925162 — Следующий, последний ингредиент в рецепте это то, как мы будем сравнивать различные изображения. Здесь существуют разные алгоритмы и инструменты того как это делать. Какие-то инструменты сравнивают хэши изображений, какие-то используют алгоритм SSIM (расшифровывается как “сравнение по структурному сходству”), но наиболее популярные до сих пор это инструменты реализующие простое попиксельное сравне\n[Экономика безопасности кода или почему Rust не нужен - Habr] https://habr.com/ru/articles/1019182/comments — Именно в сравнении Rust-а и Си. У Си код еще чище. Охотно верю, что кому-то типичный Си-шный код вроде вот такого кажется более чистым и\n[Rust в стартапе: поучительная история - Habr] https://habr.com/ru/articles/704362 — Rust прекрасен для определенных целей. Но подумайте дважды перед тем как внедрять его в стартап, который должен быстро развиваться.\n[Как я случайно написал что-то быстрое и декларативное (на Rust)] https://habr.com/ru/articles/1049432 — В первую очередь мне нужен был парсер md, и я решил посмотреть, какие крейты в Rust подходят под мою задачу. Конечно же, в первую очередь я"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_KPysANMARXA3Awky0Uk2Yg7x",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"инструмент сравнения скриншотов Rust\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_KPysANMARXA3Awky0Uk2Yg7x",
+   "content": "[Go (fiber) vs Rust (axum) JWT&DB / Comments / Habr] https://habr.com/en/articles/777072/comments — Результаты скриншотами мне показались красивее, чем просто текст с терминала копировать. Или вы про то, что нужно графики сделать? Данные бенчмарки сравнивают ваши две конкретные программы целиком, а не Rust vs Go или sqlx::postgres vs github.com/lib/pq - чем это поможет разработчику? Текстовая информация с картинки не копируется, не индексируется поисковиком. [...] Здесь же сравнивается одна конк\n[Скриншот-тестирование фронтенда: руководство по ...] https://habr.com/ru/articles/925162 — Следующий, последний ингредиент в рецепте это то, как мы будем сравнивать различные изображения. Здесь существуют разные алгоритмы и инструменты того как это делать. Какие-то инструменты сравнивают хэши изображений, какие-то используют алгоритм SSIM (расшифровывается как “сравнение по структурному сходству”), но наиболее популярные до сих пор это инструменты реализующие простое попиксельное сравне\n[Сравнение одинакового проекта в Rust, Haskell, C++, Python ...] https://habr.com/ru/articles/456638 — Одним из факторов дизайна в малого объёма стал другой подход к парсингу. Курс позволял использовать инструмент командной строки для генератора\n[Как я пишу RTS про Марс на Rust вместе с ИИ-агентами: архитектура, ошибки и 400+ тестов / Хабр] https://habr.com/ru/articles/1068148 — HRSC/MOLA особенно интересна тем, что это не художественная «карта Марса». USGS смешала более детальные участки стереокамеры HRSC с глобальной основой лазерного альтиметра MOLA. В основе MOLA лежат сотни миллионов измерений времени возврата лазерного импульса. Там, где доступна HRSC, переход в глобальную основу сглажен, чтобы не получить ступени на границах наборов данных. Исходные GeoTIFF нельзя \n[Как я случайно написал что-то быстрое и декларативное (на Rust) / Хабр] https://habr.com/ru/articles/1049432 — И тут я открыл для себя аббревиатуру SWAR. Это как SIMD, но без явного использования SIMD-инструкций — чистые б"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_dsIkHHv5taTXsukGtkNtEbVZ",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"скриншоты Rust инструмент\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_dsIkHHv5taTXsukGtkNtEbVZ",
+   "content": "[Оптическое распознавание символов с помощью Rust и WebAssembly / Хабр] https://habr.com/ru/companies/ruvds/articles/655995 — March 20, 2022 - Эта статья посвящена двум вещам: процессу извлечения результатов из JPG с помощью Rust и встраиванию этого функционала во фронтенд Cyberscore. Ссылка на исходный код и демо находится в конце. Обнаружение результатов сложностей не вызвало: поскольку мы обрабатываем скриншоты игры, то информация всегда находится в одних и тех же местах с минимальным отклонением в пикселях.\n[Опыт пользования отечественным магазином приложений Рустор, существующим при поддержке Минцифры / Хабр] https://habr.com/ru/articles/935668 — Я до сих пор размышляю, какой мотив был спрашивать \"скриншоты кода при разработке\".. готовы пойти на встречу По данным рекомендациям можно подумать, что шатилов - ближний родственник кого то из модераторов и сильно обижен \"схожестью\" моего приложения, а терпеливый родитель старается сгладить источник обиды отрока. при поддержке Минцифры РФ. Разумеется это не кумовство, а простая некомпетентность. \n[Сам себе сервис скриншотов / Хабр] https://habr.com/ru/articles/111188 — Я перестал пользоваться самыми умными ИИ‑моделями. Программировать стало быстрее и дешевле ### Отреверсили проприетарный gRPC и выложили в опенсорс 100% совместимый аналог их сервера, потом CLI ### Чем заменить top, ps и netstat в 2026 году, и когда их лучше не трогать ### «Лучшие» практики Rust, которые вас подведут. Часть 2 ## Публикации Ваш аккаунт Разделы Информация Услуги [...] # Сам себе сер\n[Скриншот-тестирование фронтенда: руководство по ...] https://habr.com/ru/articles/925162 — Можно использовать макеты из Figma как “ожидаемый результат” и писать компоненты до тех пор, пока они не совпадут со скриншотом. Это открывает путь к визуальному TDD, где результат виден сразу. Заключение Скриншот-тестирование закрывает ту зону, которую игнорируют юнит- и е2е-тесты — визуальное отображение интерфейса. Это мощный инструмент для регрессии, TDD и отказа от"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_T2ewtMJeriULPB5GpCzb6LJO",
+     "function": {
+      "name": "web_search_ru",
+      "arguments": "{\"query\":\"быстрый инструмент сравнения скриншотов на Rust\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_T2ewtMJeriULPB5GpCzb6LJO",
+   "content": "[Pop! OS] Pop!_OS — дистрибутив Linux с открытым исходным кодом, основанный на Ubuntu и содержащий настраиваемую среду рабочего стола COSMIC. Дистрибутив разработан американским производителем Linux-компьютеров System76. Pop!_OS в первую очередь предназначена для установки в комплекте с компьютерами, созданными System76, но её также можно загрузить и установить на большинстве компьютеров. Pop!_OS обеспечивает полную готовую поддержку графических процессоров AMD и Nvidia. Этот дистрибутив считается простым в настройке для игр, в основном благодаря встроенной поддержке графического процессора. Pop!_OS обеспечивает шифрование диска по умолчанию, оптимизированное управление окнами и рабочими пространствами, сочетания клавиш для навигации, а также встроенные профили управления питанием. В последних выпусках также есть пакеты, позволяющие легко настроить TensorFlow и CUDA. Pop!_OS в основном поддерживается System76, а исходный код релизной версии размещен в репозитории GitHub. В отличие от многих других дистрибутивов Linux, он не управляется сообществом, хотя сторонние программисты могут вносить свой вклад, просматривать и изменять исходный код. Они также могут создавать собственные образы ISO и распространять их под другим именем."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_HtJVr1senaPf5G4UhZY9EfP5",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"screenshot comparison tool Rust\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_HtJVr1senaPf5G4UhZY9EfP5",
+   "content": "[Proxmox Virtual Environment] Proxmox Virtual Environment (Proxmox VE or PVE) is a free and open-source server virtualization platform developed by Proxmox Server Solutions GmbH. It is based on Debian and combines Kernel-based Virtual Machine (KVM) for hardware-assisted virtual machines with LXC for Linux system containers in a single management environment. Management is available through a web interface, command-line tools and a REST API. The platform integrates clustering, high availability, software-defined networking, storage management, backup and restore, a distributed firewall and live migration. Proxmox VE uses a Proxmox-maintained Linux kernel based on the Ubuntu kernel. Builds were limited to x86-64 until August 2026, when Proxmox released Proxmox VE 9.2 for Arm64 as its first officially supported build on a second processor architecture. Proxmox VE is licensed under the GNU Affero General Public License, version 3. The complete feature set can be used without purchasing a commercial subscription; Proxmox sells optional subscriptions that provide access to its enterprise package repository and, depending on the plan, vendor technical support."
+  },
+  {
+   "role": "user",
+   "content": "Инструменты больше недоступны. Ответь по тому, что уже известно, последней строкой FINAL: <ответ>."
+  },
+  {
+   "role": "assistant",
+   "content": "Информация по поводу конкретного инструмента сравнения скриншотов на Rust в данный момент отсутствует. Пожалуйста, уточните или переформулируйте вопрос. FINAL: отсутствует информация.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

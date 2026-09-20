@@ -1,0 +1,145 @@
+{
+ "task": {
+  "id": "fresh-5",
+  "source": "fresh",
+  "question": "Какой фреймворк занял первое место в State of JS 2025 по позитивным отзывам?",
+  "answer": "Svelte",
+  "evidence": "Svelte продолжает занимать первое место среди реактивных фреймворков по позитивным отзывам",
+  "page": "Frontend Status #7",
+  "url": "https://habr.com/ru/articles/1007014/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "Первое место по позитивным отзывам в State of JS 2025 занял фреймворк Vite с показателем 98%. \n\nFINAL: Vite",
+ "final": "Vite",
+ "correct": false,
+ "cost": 0.0013245000000000062,
+ "seconds": 21.166491249998217,
+ "steps": 6,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какой фреймворк занял первое место в State of JS 2025 по позитивным отзывам?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_4MsRinxvAFWp8ZcrI4ByRUFl",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"State of JS 2025 фреймворк первое место позитивные отзывы\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_4MsRinxvAFWp8ZcrI4ByRUFl",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 05.03.2026] https://habr.com/ru/articles/1007014 — ### 💚 Vue.js Рекомендации по созданию доступных приложений на Vue.js — Можно ли использовать все возможности вашего приложения только с помощью клавиатуры? Все ли кнопки являются button элементами? Как пользователь узнает о динамических обновлениях? ### 🧡 Svelte State of Svelte: что нового во фреймворке. Кстати, судя по докладу State of JS 2025, Svelte продолжает занимать первое место среди реакти\n[Обзор на Astro JS: опыт боевого проекта на 500+ тысяч страниц / Хабр] https://habr.com/ru/articles/1061810 — Недавно вышел State of JS 2025 - ежегодный опрос разработчиков, который отслеживает тренды в JS-экосистеме. И Astro там выглядит очень уверенно. В общем Tier List по всем библиотекам Astro попал в высшую категорию - S-tier, с показателем удовлетворённости (satisfaction) 94%. В S-tier в этом году вообще попало всего 6 инструментов: Vite (98%), Vitest (97%), Hono (95%), Playwright (94%), Astro (94%)\n[Лучшие фреймворки для машинного обучения в 2025 году / Хабр] https://habr.com/ru/companies/kryptonite/articles/950236 — В 2025 году PyTorch занимает первое место по популярности в России (об этом подробнее ниже) и второе в США и ЕС ( Его динамический граф вычислений делает PyTorch любимцем исследователей, а поддержка облачных сервисов (например, Microsoft Azure) упрощает решение производственных задач ( Недавние улучшения PyTorch включают в себя расширенные возможности распределённого обучения и интеграцию с облачн\n[Почему JS (и TS) это плохой язык / Комментарии / Хабр] https://habr.com/ru/articles/905480/comments — системе). Цена ошибки в этом проекте была высока особенно в расчетах и отчетах. К слову проект этот работает до сих пор. Читая то что пишите Вы сейчас в 2025 когда чего только нет для JS и его экосистемы я чуть не подавился попкорном. [...] и да webpack это инструмент в первую очередь для бандлинга ресурсов а не швейцарский нож для всего на свете, и если вопр"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_Q3pzWWmDGmtaBTO09zqjnQ7Z",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"State of JS 2025 результаты отзывов\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_Q3pzWWmDGmtaBTO09zqjnQ7Z",
+   "content": "[Обзор на Astro JS: опыт боевого проекта на 500+ тысяч страниц] https://habr.com/ru/articles/1061810 — Недавно вышел State of JS 2025 - ежегодный опрос разработчиков, который отслеживает тренды в JS-экосистеме. И Astro там выглядит очень уверенно. В общем Tier List по всем библиотекам Astro попал в высшую категорию - S-tier, с показателем удовлетворённости (satisfaction) 94%. В S-tier в этом году вообще попало всего 6 инструментов: Vite (98%), Vitest (97%), Hono (95%), Playwright (94%), Astro (94%)\n[TypeScript vs JavaScript в 2026: почему TS обогнал JS и что это значит для разработчиков / Хабр] https://habr.com/ru/companies/netologyru/articles/1042346 — ### State of JavaScript и Stack Overflow: доля использования State of JavaScript 2025: около 40% разработчиков пишут исключительно на TypeScript (рост с 28% в 2022). Только 6% используют исключительно чистый JS. Stack Overflow Developer Survey 2025: JavaScript используют около 66% всех респондентов, TypeScript — около 44% (среди профессиональных разработчиков — 48,8%). [...] По наблюдениям редакци\n[Frontend Status: свежий дайджест фронтенда и AI — 05.03.2026] https://habr.com/ru/articles/1007014 — ### 💚 Vue.js Рекомендации по созданию доступных приложений на Vue.js — Можно ли использовать все возможности вашего приложения только с помощью клавиатуры? Все ли кнопки являются button элементами? Как пользователь узнает о динамических обновлениях? ### 🧡 Svelte State of Svelte: что нового во фреймворке. Кстати, судя по докладу State of JS 2025, Svelte продолжает занимать первое место среди реакти\n[Почему JS (и TS) это плохой язык / Комментарии / Хабр] https://habr.com/ru/articles/905480/comments — системе). Цена ошибки в этом проекте была высока особенно в расчетах и отчетах. К слову проект этот работает до сих пор. Читая то что пишите Вы сейчас в 2025 когда чего только нет для JS и его экосистемы я чуть не подавился попкорном. [...] жс сам по себе кривой и тс его не особо спасает, хоть и делает жизнь чуть лучше, экосистем"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_hGZ0xk28RvTZlpX5JYjPdebK",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"State of JS 2025 фреймворки рейтинг\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_hGZ0xk28RvTZlpX5JYjPdebK",
+   "content": "[Обзор на Astro JS: опыт боевого проекта на 500+ тысяч страниц] https://habr.com/ru/articles/1061810 — Недавно вышел State of JS 2025 - ежегодный опрос разработчиков, который отслеживает тренды в JS-экосистеме. И Astro там выглядит очень уверенно. В общем Tier List по всем библиотекам Astro попал в высшую категорию - S-tier, с показателем удовлетворённости (satisfaction) 94%. В S-tier в этом году вообще попало всего 6 инструментов: Vite (98%), Vitest (97%), Hono (95%), Playwright (94%), Astro (94%)\n[Frontend Status: свежий дайджест фронтенда и AI — 05.03.2026] https://habr.com/ru/articles/1007014 — ### 💚 Vue.js Рекомендации по созданию доступных приложений на Vue.js — Можно ли использовать все возможности вашего приложения только с помощью клавиатуры? Все ли кнопки являются button элементами? Как пользователь узнает о динамических обновлениях? ### 🧡 Svelte State of Svelte: что нового во фреймворке. Кстати, судя по докладу State of JS 2025, Svelte продолжает занимать первое место среди реакти\n[TypeScript vs JavaScript в 2026: почему TS обогнал JS и что это ...] https://habr.com/ru/companies/netologyru/articles/1042346 — ### State of JavaScript и Stack Overflow: доля использования State of JavaScript 2025: около 40% разработчиков пишут исключительно на TypeScript (рост с 28% в 2022). Только 6% используют исключительно чистый JS. Stack Overflow Developer Survey 2025: JavaScript используют около 66% всех респондентов, TypeScript — около 44% (среди профессиональных разработчиков — 48,8%). [...] В августе 2025 года Ty\n[Рассказываем о пользе и вреде FullStack-фреймворков на ... - Habr] https://habr.com/ru/companies/ncloudtech/articles/690464 — Если посмотреть на результаты The State of JS 2021 в разделе «Библиотеки — Бэкенд-фреймворки», то минимум 5 из них (возможно, больше) будут как раз FullStack. Отсортировав бэкенд-фреймворки по заинтересованности, в самом верху списка мы снова увидим именно FullStack. Это понятно — они востребованы и лежат в основе разных проектов. Од"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_1B0bKudCg9EGDgCvjNbT4rkO",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"State of JS 2025 фреймворки результаты\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_1B0bKudCg9EGDgCvjNbT4rkO",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 10.02.2026 / Хабр] https://habr.com/ru/articles/995086 — # Frontend Status: свежий дайджест фронтенда и AI — 10.02.2026 Frontend Status: Привет! Свежий дайджест фронтенда и AI Привет! Это четвертый выпуск Frontend Status — дайджеста по фронтенд-разработке. В этом выпуске: JS/TS: Evan You — Vite, Rust, VoidZero; State of JS 2025 и новый интерфейс npm (npmx). AI: Transformers.js v4 в NPM; тест «заменит ли ИИ опытного дебаггера». Фреймворки: React — ViewTr\n[Обзор на Astro JS: опыт боевого проекта на 500+ тысяч страниц] https://habr.com/ru/articles/1061810 — Недавно вышел State of JS 2025 - ежегодный опрос разработчиков, который отслеживает тренды в JS-экосистеме. И Astro там выглядит очень уверенно. В общем Tier List по всем библиотекам Astro попал в высшую категорию - S-tier, с показателем удовлетворённости (satisfaction) 94%. В S-tier в этом году вообще попало всего 6 инструментов: Vite (98%), Vitest (97%), Hono (95%), Playwright (94%), Astro (94%)\n[Frontend Status: свежий дайджест фронтенда и AI — 05.03.2026] https://habr.com/ru/articles/1007014 — ### 💚 Vue.js Рекомендации по созданию доступных приложений на Vue.js — Можно ли использовать все возможности вашего приложения только с помощью клавиатуры? Все ли кнопки являются button элементами? Как пользователь узнает о динамических обновлениях? ### 🧡 Svelte State of Svelte: что нового во фреймворке. Кстати, судя по докладу State of JS 2025, Svelte продолжает занимать первое место среди реакти\n[TypeScript vs JavaScript в 2026: почему TS обогнал JS и что это ...] https://habr.com/ru/companies/netologyru/articles/1042346 — ### State of JavaScript и Stack Overflow: доля использования State of JavaScript 2025: около 40% разработчиков пишут исключительно на TypeScript (рост с 28% в 2022). Только 6% используют исключительно чистый JS. Stack Overflow Developer Survey 2025: JavaScript используют около 66% всех респондентов, TypeScript — около 44% (среди профессиональных разраб"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_5wgdBWzSCsaatRKGSNuOdvEt",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"State of JS 2025\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_5wgdBWzSCsaatRKGSNuOdvEt",
+   "content": "[Обзор на Astro JS: опыт боевого проекта на 500+ тысяч страниц] https://habr.com/ru/articles/1061810 — Недавно вышел State of JS 2025 - ежегодный опрос разработчиков, который отслеживает тренды в JS-экосистеме. И Astro там выглядит очень уверенно. В общем Tier List по всем библиотекам Astro попал в высшую категорию - S-tier, с показателем удовлетворённости (satisfaction) 94%. В S-tier в этом году вообще попало всего 6 инструментов: Vite (98%), Vitest (97%), Hono (95%), Playwright (94%), Astro (94%)\n[TypeScript vs JavaScript в 2026: почему TS обогнал JS и что это ...] https://habr.com/ru/companies/netologyru/articles/1042346 — ### State of JavaScript и Stack Overflow: доля использования State of JavaScript 2025: около 40% разработчиков пишут исключительно на TypeScript (рост с 28% в 2022). Только 6% используют исключительно чистый JS. Stack Overflow Developer Survey 2025: JavaScript используют около 66% всех респондентов, TypeScript — около 44% (среди профессиональных разработчиков — 48,8%). [...] По наблюдениям редакци\n[Frontend Status: свежий дайджест фронтенда и AI — 10.02.2026] https://habr.com/ru/articles/995086 — # Frontend Status: свежий дайджест фронтенда и AI — 10.02.2026 Frontend Status: Привет! Свежий дайджест фронтенда и AI Привет! Это четвертый выпуск Frontend Status — дайджеста по фронтенд-разработке. В этом выпуске: JS/TS: Evan You — Vite, Rust, VoidZero; State of JS 2025 и новый интерфейс npm (npmx). AI: Transformers.js v4 в NPM; тест «заменит ли ИИ опытного дебаггера». Фреймворки: React — ViewTr\n[Frontend Status: свежий дайджест фронтенда и AI — 05.03.2026] https://habr.com/ru/articles/1007014 — ### 💚 Vue.js Рекомендации по созданию доступных приложений на Vue.js — Можно ли использовать все возможности вашего приложения только с помощью клавиатуры? Все ли кнопки являются button элементами? Как пользователь узнает о динамических обновлениях? ### 🧡 Svelte State of Svelte: что нового во фреймворке. Кстати, судя по докладу State of JS 2025, Svelte продол"
+  },
+  {
+   "role": "assistant",
+   "content": "Первое место по позитивным отзывам в State of JS 2025 занял фреймворк Vite с показателем 98%. \n\nFINAL: Vite",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

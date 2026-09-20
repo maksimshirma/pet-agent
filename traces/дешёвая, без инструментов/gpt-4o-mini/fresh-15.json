@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "fresh-15",
+  "source": "fresh",
+  "question": "Какая версия React Email вышла в апреле 2026?",
+  "answer": "6.0.0",
+  "evidence": "React Email выпустил версию 6.0.0",
+  "page": "Frontend Status #14",
+  "url": "https://habr.com/ru/articles/1028734/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "FINAL: Недоступно",
+ "final": "Недоступно",
+ "correct": false,
+ "cost": 5.489999999999662e-05,
+ "seconds": 2.5026794580044225,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Какая версия React Email вышла в апреле 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\":\"На данный момент достигнутый временной уровень данных заканчивается в октябре 2023 года, поэтому информация о версиях React Email, вышедших в апреле 2026 года, недоступна.\",\"final\":\"Недоступно\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

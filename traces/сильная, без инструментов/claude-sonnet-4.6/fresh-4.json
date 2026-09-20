@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "fresh-4",
+  "source": "fresh",
+  "question": "Какая уязвимость была исправлена в Angular SSR?",
+  "answer": "SSRF и инъекции заголовков",
+  "evidence": "2 серьезные уязвимости — SSRF и инъекции заголовков в Angular SSR",
+  "page": "Frontend Status #7",
+  "url": "https://habr.com/ru/articles/1007014/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "FINAL: Path Traversal (CVE-2024-21501)",
+ "final": "Path Traversal (CVE-2024-21501)",
+ "correct": false,
+ "cost": 0.002169000000000001,
+ "seconds": 3.486181000000215,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Какая уязвимость была исправлена в Angular SSR?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\": \"В Angular SSR была исправлена уязвимость, связанная с Path Traversal (обход пути). Конкретно, в версии Angular 19.x была исправлена уязвимость CVE-2024-21501, связанная с path traversal в серверном рендеринге (SSR).\", \"final\": \"Path Traversal (CVE-2024-21501)\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

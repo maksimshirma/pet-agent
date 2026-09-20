@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "fresh-26",
+  "source": "fresh",
+  "question": "Какая библиотека позволяет встроить PDF в React, Solid и Svelte?",
+  "answer": "PDFSlick",
+  "evidence": "PDFSlick подключает PDF к React, Solid, Svelte",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "FINAL: iframe",
+ "final": "iframe",
+ "correct": false,
+ "cost": 5.939999999998724e-05,
+ "seconds": 1.8059660410071956,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Какая библиотека позволяет встроить PDF в React, Solid и Svelte?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\":\"Существуют библиотеки, такие как 'react-pdf', которые могут использоваться в React, но для Solid и Svelte требуется адаптация или другие аналогичные библиотеки. Однако, наиболее универсальным решением может быть использование iframe для отображения PDF.\",\"final\":\"iframe\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

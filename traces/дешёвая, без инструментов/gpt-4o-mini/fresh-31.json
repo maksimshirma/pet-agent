@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "fresh-31",
+  "source": "fresh",
+  "question": "Какой инструмент собирает React-проект из коробки с SSR?",
+  "answer": "Rockpack",
+  "evidence": "Rockpack собирает всё одной командой",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "FINAL: Next.js",
+ "final": "Next.js",
+ "correct": false,
+ "cost": 4.4699999999980866e-05,
+ "seconds": 2.7560043330013286,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Какой инструмент собирает React-проект из коробки с SSR?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\":\"Next.js является инструментом, который из коробки поддерживает серверный рендеринг (SSR) для React-проектов.\",\"final\":\"Next.js\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

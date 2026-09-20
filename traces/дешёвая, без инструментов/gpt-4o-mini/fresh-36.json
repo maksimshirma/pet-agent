@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "fresh-36",
+  "source": "fresh",
+  "question": "Сколько времени занимает генерация приложения в Spark?",
+  "answer": "~20 минут",
+  "evidence": "Spark за ~20 минут генерирует фронтенд, бэкенд, модель данных",
+  "page": "habr — статья про AI-агентов",
+  "url": "https://habr.com/ru/articles/1003526/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "FINAL: Зависит от факторов",
+ "final": "Зависит от факторов",
+ "correct": false,
+ "cost": 5.310000000000037e-05,
+ "seconds": 1.8060759579966543,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Сколько времени занимает генерация приложения в Spark?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\":\"Время генерации приложения в Spark зависит от многих факторов, включая сложность приложения, размер данных и конфигурацию кластера. Обычно это может занять от нескольких минут до нескольких часов.\",\"final\":\"Зависит от факторов\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

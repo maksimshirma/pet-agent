@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "fresh-21",
+  "source": "fresh",
+  "question": "Какой API опубликован как First Public Working Draft в мае 2026?",
+  "answer": "Long Animation Frames API",
+  "evidence": "First Public Working Draft: Long Animation Frames API",
+  "page": "Frontend Status #15",
+  "url": "https://habr.com/ru/articles/1032276/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "В мае 2026 года был опубликован First Public Working Draft Long Animation Frames API. FINAL: Long Animation Frames API",
+ "final": "Long Animation Frames API",
+ "correct": true,
+ "cost": 0.0001975499999999908,
+ "seconds": 4.016052791004768,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какой API опубликован как First Public Working Draft в мае 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_FdSrtqx1tTHrMO2p1hlvfpJK",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"First Public Working Draft API May 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_FdSrtqx1tTHrMO2p1hlvfpJK",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 06.05.2026] https://habr.com/ru/articles/1032276 — `<search>` `isWellFormed()` `toWellFormed()` `element.ariaPressed` `aria-labelledby` First Public Working Draft: Long Animation Frames API. Long Animation Frames API позволяет обнаруживать длительные анимационные кадры, блокирующие UI-поток. Это помогает оптимизировать производительность веб-страниц, предотвращая задержки в выполнении критических задач. Это развитие идеи Long Tasks API. [...] W3C "
+  },
+  {
+   "role": "assistant",
+   "content": "В мае 2026 года был опубликован First Public Working Draft Long Animation Frames API. FINAL: Long Animation Frames API",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

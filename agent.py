@@ -379,6 +379,45 @@ def is_correct(item, answer):
 
 
 # --------------------------------------------------------------------------
+# Без инструментов: один вызов по JSON-схеме (честный ноль для замера, Шаг 3)
+# --------------------------------------------------------------------------
+
+class Answer(BaseModel):
+    reasoning: str = Field(description="ход решения в одно-два предложения")
+    final: str = Field(description="только короткий итоговый ответ: имя, число, дата или название")
+
+
+SCHEMA_PROMPT = ("Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, "
+                  "строки в одну линию, без лишних отступов, \\t, \\n:\n{schema}")
+
+
+def json_from(text):
+    m = re.search(r"\{.*\}", text or "", re.S)
+    if not m:
+        raise ValueError("в ответе нет JSON")
+    return json.loads(m.group(0), strict=False)
+
+
+def no_tools_answer(question, model, attempts=2):
+    """Один вызов без инструментов и без цикла: сколько модель знает сама."""
+    messages = [
+        {"role": "system", "content": SCHEMA_PROMPT.format(
+            schema=json.dumps(Answer.model_json_schema(), ensure_ascii=False))},
+        {"role": "user", "content": question},
+    ]
+    before, started = ledger.total, time.perf_counter()
+    for _ in range(attempts):
+        msg = chat(messages, model, tag="no_tools")
+        messages.append(msg)
+        try:
+            final = Answer.model_validate(json_from(msg["content"])).final
+            return Run(question, f"FINAL: {final}", 1, messages, ledger.total - before, time.perf_counter() - started)
+        except Exception as e:
+            messages.append({"role": "user", "content": f"Ответ не прошёл проверку: {e}. Верни ответ строго по JSON схеме"})
+    return Run(question, "FINAL: unknown", 1, messages, ledger.total - before, time.perf_counter() - started)
+
+
+# --------------------------------------------------------------------------
 # Демонстрация на датасете
 # --------------------------------------------------------------------------
 

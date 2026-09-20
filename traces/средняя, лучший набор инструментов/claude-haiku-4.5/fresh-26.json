@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "fresh-26",
+  "source": "fresh",
+  "question": "Какая библиотека позволяет встроить PDF в React, Solid и Svelte?",
+  "answer": "PDFSlick",
+  "evidence": "PDFSlick подключает PDF к React, Solid, Svelte",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "Отлично! Я нашел ответ.\n\n**PDFSlick** — это библиотека, которая позволяет встроить PDF в React, Solid и Svelte. Она подключает PDF к веб-приложениям как к собственным компонентам и предоставляет функционал от простого просмотра с зумом до аннотаций, комментариев и работы с несколькими документами одновременно. Также поддерживает обычный JavaScript.\n\nFINAL: PDFSlick",
+ "final": "PDFSlick",
+ "correct": true,
+ "cost": 0.01056199999999996,
+ "seconds": 6.860716958006378,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какая библиотека позволяет встроить PDF в React, Solid и Svelte?"
+  },
+  {
+   "role": "assistant",
+   "content": "Я поищу информацию о библиотеке для встраивания PDF в эти фреймворки.",
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "toolu_bdrk_019fq5suzDFjUWdGQTGrAESk",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\": \"PDF встроить React Solid Svelte библиотека\", \"max_results\": 5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_019fq5suzDFjUWdGQTGrAESk",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 16.06.2026] https://habr.com/ru/articles/1047986 — ### ⚡ JS / TS PDFSlick: PDF в React, Solid и Svelte: встроить PDF в веб-приложение — обычно это отдельный мир: чужой просмотрщик, мало контроля, боль с несколькими тяжёлыми файлами сразу. PDFSlick подключает PDF к React, Solid, Svelte и обычному JavaScript как к своим компонентам — от простого просмотра с зумом до аннотаций, комментариев и нескольких документов в одном окне. Если нужен полноценный\n[React stack 2026: карта лучших библиотек по категориям - Habr] https://habr.com/ru/articles/1032830 — Создание PDF из React компонентов. Отдельные элементы — Document, Page, View, Text. Может рендериться в browser или в Node. Хорошо для invoices, reports, certificates. Не для отображения existing PDFs. 🏆 PDF.js + react-pdf-viewer — Display existing PDFs PDF.js от Mozilla — стандарт для отображения PDFs в браузере. `react-pdf` (этот другой react-pdf, viewer не renderer) — React wrapper. Поддерживае\n[О книге «Фулстек JavaScript: Секреты, которые должен знать каждый миддл» / Хабр] https://habr.com/ru/articles/951496 — Автор также настоятельно рекомендует рассматривать помимо React и другие фреймворки (также см. рис. 4): «Svelte и Solid.js предлагают отличный DX и в некоторых случаях даже превосходят React», пробуйте по возможности внедрять эти решения, поскольку «наша профессия развивается только тогда, когда кто-то предлагает изменения, а другие видят преимущества этих изменений».\n[JavaScript-фреймворки и библиотеки, на которые стоит ... - Habr] https://habr.com/ru/companies/ru_mts/articles/864500 — ## Solid.js Solid.js впервые представлена в 2018 году Раяном Карниато как легковесная альтернатива React, сосредоточенная на максимальной производительности и простоте использования. Это JavaScript-библиотека для создания пользовательских интерфейсов без виртуального DOM. Возможности и функции: Реактивная архитектура: Solid.js использует систему сигналов и вычислений для автомат"
+  },
+  {
+   "role": "assistant",
+   "content": "Отлично! Я нашел ответ.\n\n**PDFSlick** — это библиотека, которая позволяет встроить PDF в React, Solid и Svelte. Она подключает PDF к веб-приложениям как к собственным компонентам и предоставляет функционал от простого просмотра с зумом до аннотаций, комментариев и работы с несколькими документами одновременно. Также поддерживает обычный JavaScript.\n\nFINAL: PDFSlick",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

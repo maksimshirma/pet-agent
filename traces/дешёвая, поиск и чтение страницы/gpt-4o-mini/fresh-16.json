@@ -1,0 +1,207 @@
+{
+ "task": {
+  "id": "fresh-16",
+  "source": "fresh",
+  "question": "Какая CVE была обнаружена на GitHub в мае 2026?",
+  "answer": "CVE-2026-3854",
+  "evidence": "CVE-2026-3854 на GitHub",
+  "page": "Frontend Status #15",
+  "url": "https://habr.com/ru/articles/1032276/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "Уязвимость, обнаруженная на GitHub в мае 2026 года, называется CVE-2026-48027. Эта уязвимость связана с вредоносной версией инструмента Nx Console, которая была запущена в официальном репозитории. FINAL: CVE-2026-48027",
+ "final": "CVE-2026-48027",
+ "correct": false,
+ "cost": 0.0018482999999999972,
+ "seconds": 20.309581667010207,
+ "steps": 9,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какая CVE была обнаружена на GitHub в мае 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_gmmYf2gpYQPnYL9ufy2tV4BF",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"CVE обнаружена на GitHub в мае 2026\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_gmmYf2gpYQPnYL9ufy2tV4BF",
+   "content": "[Теряет ли GitHub доверие индустрии? - Habr] https://habr.com/ru/articles/1029840 — ### CVE-2026-3854 В марте 2026 года исследователи из Wiz Research обнаружили критическую уязвимость во внутренней инфраструктуре GitHub. Любой авторизованный пользователь мог выполнить произвольный код на серверах, отправив обычный `git push` со специально сформированными опциями. `git push` #### Как это работало Когда вы делаете `git push`, запрос проходит через цепочку внутренних сервисов GitHub\n[45 лет тюрьмы за DROP TABLE и переход Карпатого в Anthropic] https://habr.com/ru/companies/haulmont/articles/1039790 — CVE-2026-48027. Nx Console — 2,2 млн установок на Marketplace, верифицированный издатель. GitHub подтвердил, что пользовательские репозитории инцидент не затронул — только внутренние. Вредоносная версия тянула обфусцированный payload из специально подготовленного коммита в официальном репозитории nrwl/nx на GitHub. Атакующие скомпрометировали аккаунт одного из мейнтейнеров и от его имени запушили \n[Уязвим не nginx, а две строки вашего конфига. Разбираю CVE-2026-42945 на живом стенде / Хабр] https://habr.com/ru/articles/1070120 — Активная эксплуатация: попытки зафиксированы, о них сообщал VulnCheck с 16 мая, через три дня после раскрытия, на своей сети приманок. Это именно попытки и сканирование, ни одного публично названного пострадавшего продакшена я не нашёл. В официальный каталог CISA KEV уязвимость не добавлена: я смотрел их фид от 11 августа, записи нет. При этом сторонний коммерческий трекер поставил ей статус подтв\n[GitHub подтвердил несанкционированный доступ к своим ... - Habr] https://habr.com/ru/news/1037148 — В начале марта 2026 года GitHub устранил критическую уязвимость удалённого выполнения кода (CVE-2026-3854), которая могла позволить злоумышленникам получить доступ к миллионам частных репозиториев. Уязвимость CVE-2026-3854 затрагивает GitHub.com, GitHub Enterprise Cloud, GitHub Enterprise Cloud с Data Residency, GitHub Enterprise Cloud с Enterprise Managed"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_d9l7jgY5yBJR4iCtCD0dHxAV",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\": \"GitHub\", \"keywords\": \"CVE-2026-3854\"}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 1,
+     "id": "call_SYLTEQcR6p4EfBSUY056TMC5",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\": \"GitHub\", \"keywords\": \"CVE-2026-48027\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_d9l7jgY5yBJR4iCtCD0dHxAV",
+   "content": "No data"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_SYLTEQcR6p4EfBSUY056TMC5",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_nZVVOjGJwZA3c7j7QHVJqyw0",
+     "function": {
+      "name": "web_search_ru",
+      "arguments": "{\"query\":\"CVE-2026 на GitHub\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_nZVVOjGJwZA3c7j7QHVJqyw0",
+   "content": "[Cloudflare] Cloudflare — американская компания, предоставляющая услуги CDN, защиту от DDoS-атак, безопасный доступ к ресурсам и серверы DNS. Сервисы Cloudflare работают как обратный прокси для сайта. Главный офис компании находится в Сан-Франциско, есть офисы в Лондоне, Сингапуре, Шампейне, Остине, Бостоне и Вашингтоне."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_TdLDl0owJ9Gp1rwkR3l3eTNx",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"CVE-2026 GitHub May\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_TdLDl0owJ9Gp1rwkR3l3eTNx",
+   "content": "[Git] Git ( ) is a distributed version control software system that is capable of managing versions of source code or data. It is often used to control source code by programmers who are developing software collaboratively. It was originally created by Linus Torvalds for version control in the development of the Linux kernel. Design goals of Git include speed, data integrity, and support for distributed, non-linear workflows—thousands of parallel branches running on different computers. As with most other distributed version control systems, and unlike most client–server systems, Git maintains a local copy of the entire repository, also known as the \"repo\", with history and version-tracking abilities, independent of network access or a central server. A repository is stored on each computer in a standard directory with additional, hidden files to provide version control capabilities. Git provides features to synchronize changes between repositories that share history; for asynchronous collaboration, this extends to repositories on remote machines. Although all repositories (with the same history) are peers, developers often use a central server to host a repository to hold an integrated copy. Today, Git is the version control system most commonly used by software developers. It is the most popular distributed version control system, with nearly 95% of developers reporting it as their primary version control system as of 2022. It is the most widely used source-code management tool among professional developers. Several different software forges offer Git repository services, including GitHub, SourceForge, Bitbucket and GitLab."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_9LiEExs7K0lHL34tk6SFJ8zl",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"CVE 2026 GitHub\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_9LiEExs7K0lHL34tk6SFJ8zl",
+   "content": "[Git] Git ( ) is a distributed version control software system that is capable of managing versions of source code or data. It is often used to control source code by programmers who are developing software collaboratively. It was originally created by Linus Torvalds for version control in the development of the Linux kernel. Design goals of Git include speed, data integrity, and support for distributed, non-linear workflows—thousands of parallel branches running on different computers. As with most other distributed version control systems, and unlike most client–server systems, Git maintains a local copy of the entire repository, also known as the \"repo\", with history and version-tracking abilities, independent of network access or a central server. A repository is stored on each computer in a standard directory with additional, hidden files to provide version control capabilities. Git provides features to synchronize changes between repositories that share history; for asynchronous collaboration, this extends to repositories on remote machines. Although all repositories (with the same history) are peers, developers often use a central server to host a repository to hold an integrated copy. Today, Git is the version control system most commonly used by software developers. It is the most popular distributed version control system, with nearly 95% of developers reporting it as their primary version control system as of 2022. It is the most widely used source-code management tool among professional developers. Several different software forges offer Git repository services, including GitHub, SourceForge, Bitbucket and GitLab."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_3jvzlKDRsvmSeerNRa5anqRW",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"CVE-2026-3854 CVE-2026-48027\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_3jvzlKDRsvmSeerNRa5anqRW",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_zHWETqHxOxVRpQk4MpjIB3Hb",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"CVE-2026\",\"max_results\":10}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_zHWETqHxOxVRpQk4MpjIB3Hb",
+   "content": "[Топ самых интересных CVE за февраль 2026 года / Хабр] https://habr.com/ru/companies/tomhunter/articles/1006514 — ▶ CVE-2026-21519 / CVSS:4.0 – 7.0: повышение привилегий до SYSTEM через «type confusion» в Desktop Window Manager. ▶ CVE-2026-21533 / CVSS:4.0 – 7.0: повышение привилегий до SYSTEM в Windows Remote Desktop Services. ▶ CVE-2026-21525 / CVSS:4.0 – 6.9: DoS в Windows Remote Access Connection Manager (RasMan). Непривилегированный пользователь может обрушить VPN-соединения всей организации. Рекомендаци\n[Топ самых интересных CVE за январь 2026 года / Хабр] https://habr.com/ru/companies/tomhunter/articles/992358 — ▶ CVE-2026-21264 / CVSS:4.0 — 9.3 CRITICAL Об уязвимости: Уязвимость позволяет неаутентифицированному злоумышленнику выполнить произвольный JavaScript-код в контексте страниц аутентификации Microsoft. Атака происходит на единую точку входа для Microsoft 365, Azure, Xbox и тысяч SaaS-приложений. Несмотря на необходимость взаимодействия с пользователем (переход по ссылке), низкая сложность эксплуата\n[Разбор уязвимости CVE-2026-1529 в Keycloak / Хабр] https://habr.com/ru/companies/deiteriylab/articles/1000382 — ### Введение Недавно была опубликована информация об уязвимости CVE-2026-1529 в ПО Keycloak. Суть уязвимости заключается в том, что токены приглашения в организацию обрабатываются без проверки криптографической подписи в процессе регистрации пользователя. Получив легитимное приглашение, злоумышленник может подменить идентификатор организации (`org_id`) и адрес электронной почты получателя (`eml`) \n[Уязвим не nginx, а две строки вашего конфига. Разбираю CVE-2026-42945 на живом стенде / Comments / Habr] https://habr.com/en/articles/1070120/comments — # Уязвим не nginx, а две строки вашего конфига. Разбираю CVE-2026-42945 на живом стенде ## Comments 2 классика жанра. у нас был похожий случай - выставили наружу порт для метрик без авторизации. какие именно строки в конфиге виноваты в этой уязвимости? Две строки в одном location. Первая это `rewrite`, "
+  },
+  {
+   "role": "user",
+   "content": "Инструменты больше недоступны. Ответь по тому, что уже известно, последней строкой FINAL: <ответ>."
+  },
+  {
+   "role": "assistant",
+   "content": "Уязвимость, обнаруженная на GitHub в мае 2026 года, называется CVE-2026-48027. Эта уязвимость связана с вредоносной версией инструмента Nx Console, которая была запущена в официальном репозитории. FINAL: CVE-2026-48027",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

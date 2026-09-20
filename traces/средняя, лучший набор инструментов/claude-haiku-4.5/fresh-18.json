@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "fresh-18",
+  "source": "fresh",
+  "question": "Какая версия SvelteKit получила поддержку TypeScript 6.0?",
+  "answer": "2.56",
+  "evidence": "TypeScript 6.0 в SvelteKit 2.56",
+  "page": "Frontend Status #15",
+  "url": "https://habr.com/ru/articles/1032276/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "Отлично! Я нашел ответ в первом результате. Согласно материалу на Habr, в SvelteKit версии **2.56** получила поддержку TypeScript 6.0.\n\nFINAL: SvelteKit 2.56",
+ "final": "SvelteKit 2.56",
+ "correct": true,
+ "cost": 0.010240999999999945,
+ "seconds": 5.666408541990677,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какая версия SvelteKit получила поддержку TypeScript 6.0?"
+  },
+  {
+   "role": "assistant",
+   "content": "Я поищу информацию о поддержке TypeScript 6.0 в SvelteKit.",
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "toolu_bdrk_01EUtoYutVKSRYYjSFmbQDWG",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\": \"SvelteKit TypeScript 6.0 поддержка версия\", \"max_results\": 5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01EUtoYutVKSRYYjSFmbQDWG",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 06.05.2026] https://habr.com/ru/articles/1032276 — ### 𝐒 Svelte Майский ченджлог Svelte: TypeScript 6.0 в SvelteKit 2.56, breaking changes в remote-функциях (разрешения на refresh, стабильный кеш, run()), community add-ons в sv CLI и попадание в ThoughtWorks Technology Radar. ### 🦮 A11y Доступность в React: распространённые ошибки и как их исправить: практический разбор типичных ошибок доступности в React-интерфейсах (семантика, формы, управление \n[TypeScript vs JavaScript в 2026: почему TS обогнал JS и что это ...] https://habr.com/ru/companies/netologyru/articles/1042346 — Рич Харрис, создатель фронтенд-фреймворка Svelte, перевёл ядро с .ts на JSDoc, сохранив проверку типов. «Типы великолепны, но TypeScript иногда усложняет процесс. Как только вы используете .ts-файл, вам нужен тулчейн для его поддержки». Разница важна: для библиотек лишний шаг сборки — это реальная проблема, для приложений — почти неизбежность. [...] Angular с 2016 года полностью написан на TypeScr\n[Главные игроки экосистемы JavaScript по состоянию на 2026 год] https://habr.com/ru/articles/1021182 — #### Экосистема Svelte Svelte уверенно движется вперед с версией 5. Это было крупное обновление в мире Svelte, включающее так называемый “Rune API”, который полностью изменил принцип работы реактивности, сделав ее более “мелкозернистой”, как они говорят, а значит, более эффективной и быстрой. Честно говоря, я не так уж много знаю о Svelte или SvelteKit, за исключением того, что они тоже являются ч\n[Frontend Status: свежий дайджест фронтенда и AI — 18.03.2026] https://habr.com/ru/articles/1012160 — Node Weekly #615: из важного — Temporal proposal дошёл до Stage 4 на TC39. Девять лет ждали. Node должен включить его по умолчанию в 26-й версии. TypeScript 6.0 RC вышел. Node переходит на один мажорный релиз в год начиная с Node 27. node-sqlite3 выпустил финальный 6.0 и уходит на пенсию — самое время переехать на `better-sqlite3` или встроенный `node:sqlite"
+  },
+  {
+   "role": "assistant",
+   "content": "Отлично! Я нашел ответ в первом результате. Согласно материалу на Habr, в SvelteKit версии **2.56** получила поддержку TypeScript 6.0.\n\nFINAL: SvelteKit 2.56",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

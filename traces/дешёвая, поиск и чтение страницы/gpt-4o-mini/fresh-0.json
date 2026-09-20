@@ -1,0 +1,207 @@
+{
+ "task": {
+  "id": "fresh-0",
+  "source": "fresh",
+  "question": "С какой даты максимальный срок жизни TLS-сертификатов сократился до 200 дней?",
+  "answer": "15 марта 2026",
+  "evidence": "Веб-индустрия сокращает максимальный срок жизни TLS-сертификатов — с 15 марта 2026 года лимит падает с 398 до 200 дней",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "Максимальный срок жизни TLS-сертификатов сократился до 200 дней с 15 марта 2026 года. FINAL: 15 марта 2026 года.",
+ "final": "15 марта 2026 года.",
+ "correct": true,
+ "cost": 0.0020054999999999934,
+ "seconds": 21.613758207997307,
+ "steps": 9,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "С какой даты максимальный срок жизни TLS-сертификатов сократился до 200 дней?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_a0mOQ4NeEsveRvOsoguDvf38",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"максимальный срок жизни TLS-сертификатов сократился до 200 дней\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_a0mOQ4NeEsveRvOsoguDvf38",
+   "content": "[Срок действия сертификатов SSL/TLS сократят до 47 дней к ...] https://habr.com/ru/news/900894 — с 15 марта 2026 года — до 200 дней; с 15 марта 2027 года — до 100 дней; с 15 марта 2029 года срок действия сертификата будет сокращён до 47 дней, а DCV — до 10 дней. Такая мера приведёт к росту расходов на управление и добавит нагрузку для тех, кто работает с несколькими доменами. Однако ожидается, что это приведет к более частой повторной проверке компаний, запрашивающих сертификаты, поощрит авто\n[Какие есть российские аналоги Let's Encrypt? - Хабр Q&A] https://qna.habr.com/q/1408804 — ant-ares, То, что сертификат на 90 дней (а планируется на 45) - это хорошо. Значит даже если произойдёт утечка ключа, то у злоумышленника будет меньше времени, чтобы им воспользоваться. Кроме того, разработчики браузеров планируют не доверять сертификатам со сроком жизни более 47 дней (с 15 марта 2026 срок сокращается с 365 до 200 дней, с 15 марта 2027 до 100 дней, с 15 марта 2029 до 47). [...] Le\n[45 дней вместо 90: новые правила Let's Encrypt - Habr] https://habr.com/ru/articles/972650 — Сначала новость кратко: Let's Encrypt собирается постепенно сократить срок жизни сертификатов с 90 до 45 дней. Это решение знаменует собой очередной этап в эволюции стандартов безопасности веба, в которой, да, изначально всё началось с гораздо более длительных сроков действия сертификатов. Еще в 2015 году сертификаты могли действовать до 5 лет, но по мере роста угроз и появления новых уязвимостей \n[Сертификат истёк, сайт лёг: как быстро вернуть HTTPS и ...] https://habr.com/ru/companies/netologyru/articles/1073074 — Команда `certbot renew` проверяет все сертификаты, но обновляет только те, для которых уже наступил срок продления. В актуальных версиях Certbot этот порог зависит от срока жизни сертификата: обычно продление начинается, когда остаётся меньше трети срока, а для сертификатов сроком десять дней или меньше — когда остаётся меньше половины. Универсального правила «обновлять за 30 дней» в новых в"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_oliGzAdsadABYrmWWyBStv8r",
+     "function": {
+      "name": "web_search_ru",
+      "arguments": "{\"query\":\"максимальный срок жизни TLS-сертификатов 200 дней дата\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_oliGzAdsadABYrmWWyBStv8r",
+   "content": "[Протесты в Беларуси (2020—2021)] Акции протеста в Беларуси начались в ночь с 9 на 10 августа 2020 года в связи с объявлением официальных итогов президентских выборов, согласно которым победу на них одержал действующий президент Александр Лукашенко. С этого дня акции приобрели общенациональные масштабы, а ситуация в стране стала характеризоваться как политический кризис. Массовые протесты прервались в марте 2021 года. Очередная вспышка демонстраций произошла в феврале 2022 года, но была короткой и на данный момент является их завершением."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_yaENH6wlRGru9GxoBl4bGyJD",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\":\"Срок действия сертификатов SSL/TLS\",\"keywords\":\"сократился до 200 дней\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_yaENH6wlRGru9GxoBl4bGyJD",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_SbdThOMfXlYyv8YTwLCaxVAb",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"max validity period of TLS certificates reduced to 200 days date\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_SbdThOMfXlYyv8YTwLCaxVAb",
+   "content": "[Certificate authority] In cryptography, a certificate authority or certification authority (CA) is an entity that stores, signs, and issues digital certificates. A digital certificate certifies the ownership of a public key by the named subject of the certificate. This allows others (relying parties) to rely upon signatures or on assertions made about the private key that corresponds to the certified public key. A CA acts as a trusted third party—trusted both by the subject (owner) of the certificate and by the party relying upon the certificate. The format of these certificates is specified by the X.509 or EMV standard. One particularly common use for certificate authorities is to sign certificates used in HTTPS, the secure browsing protocol for the World Wide Web. Another common use is in issuing identity cards by national governments for use in electronically signing documents."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_ZbVTE5eFzJIyBY9EcITBigMp",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\": \"дата сокращения срока действия TLS-сертификатов до 200 дней\", \"max_results\": 5}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 1,
+     "id": "call_JvETpEj4wajaAlZQQrJ8cUp7",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\": \"TLS certificates maximum validity period reduced\", \"max_results\": 5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_ZbVTE5eFzJIyBY9EcITBigMp",
+   "content": "[CSR для SSL: разбор частых ошибок в SAN и wildcard / Хабр] https://habr.com/ru/articles/1043106 — Если хотя бы один пункт не выполняется — генератор не подходит для production, и стоит вернуться к openssl на локальной машине. #### Почему команды переходят на CSR-генераторы В апреле 2025 года CA/B Forum (организация, объединяющая удостоверяющие центры и производителей браузеров) утвердил поэтапное сокращение максимального срока действия публичных SSL-сертификатов: 200 дней — с 15 марта 2026 100\n[Apple Pro Weekly News (14.10 – 20.10.24) / Хабр] https://habr.com/ru/articles/852300 — Apple предлагает сократить срок действия сертификатов безопасности для веб-сайтов до 45 дней к 2027 году, веб-разработчики в бешенстве от этой инициативы. Как сообщает портал The Register, план Apple по сокращению жизни сертификатов SSL/TLS (используемых для безопасного подключения пользователя к сайту в браузере) был выдвинут из-за стремительно растущей угрозы безопасности и прогнозируемого увели\n[От Root CA до User Authorization в nginx+apache. Часть 3. Вход по клиентскому сертификату: прокси или приложение / Хабр] https://habr.com/ru/articles/1073162 — `ssl_session_timeout` `ssl_session_tickets` `SessionTicketsDisabled`, `SetSessionTicketKeys` `SessionTicketsDisabled` `SetSessionTicketKeys` потолок жизни тикета — 7 суток, задаётся библиотекой Кэш выбора сертификата в браузере переносится на вариант без прокси один в один: ключ строится только из конечной точки TLS (Chromium — пара «хост:порт», Firefox — имя хоста без порта) и ничего не знает о т\n[«Сбер» после перехода на российские TLS-сертификаты просит ...] https://habr.com/en/news/688840/comments — Если вы не просто скользнули взглядом по скриншоту выше, а внимательно изучили его, то заметили, что это не тот сертификат, который доступен для загрузки на «Госуслугах». Заметить это можно только по дате начала и окончания срока действия сертификата – лень было переставлять часы на компьютере, на котором я его сгенерировал. [...] Лишь спу"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_JvETpEj4wajaAlZQQrJ8cUp7",
+   "content": "[Комплексные IT-решения для бизнеса | Обслуживание IT ...] https://u.habr.com/jetweb — Телеграм-чат Подробнее Защита АСУ ТП от APT‑атак как часть стратегии киберустойчивости ### Защита АСУ ТП от APT‑атак как часть стратегии киберустойчивости Исследование Подробнее Обзор рынка информационной безопасности 2024 ### Обзор рынка информационной безопасности 2024 Обзор Подробнее Анализ ландшафта угроз кибербезопасности 2024 ### Анализ ландшафта угроз кибербезопасности 2024 Исследование [..\n[Работа и свежие вакансии для IT специалистов ... - Хабр Карьера] https://career.habr.com/vacancies — Санкт-Петербург AWSLinuxVMwarePostgreSQLKubernetesAnsibleTerraformОбъектное хранилище S3Dockern8n Откликнуться Bell Integrator 4.55 Разработчик Scala (Blockchain, Москва) #### Зарплата не указана Похожие специалисты получают 300 000 - 442 000 ₽ Москва ScalaBlockchain Откликнуться Raft Digital Solutions 4.8 AI Security Researcher (строго вне РФ и вне РБ) #### Зарплата не указана Похожие специалисты\n[Журнал — Хабр Карьера] https://career.habr.com/journal — Все рубрики)СпецпроектыКейсы компанийГде работатьКем работатьАктивность наймаЗарплатыРейтинг работодателейИсследованияМероприятияНовости сервисаОбразованиеКак организовать стартап 14 сентября Почему зарплаты в IT перестали быстро расти и что это значит для карьеры [...] В статье разберём, почему детям нужно программирование, какой язык выбрать в зависимости от возраста ребёнка и где учиться. Читат\n[Валентин Климахин (soshroom) — Хабр Карьера - Habr] https://career.habr.com/soshroom — Все сервисы Хабра Сообщество IT-специалистовОтветы на любые вопросы об ITПрофессиональное развитие в ITОбучение для смены профессии, роста в карьере и саморазвития Войти через Хабр АккаунтЗарегистрироваться Войти через Хабр АккаунтЗарегистрироваться ВакансииСпециалистыКурсы и обучениеЭкспертыКомпанииРейтингЗарплатыЖурнал Валентин Климахин (soshroom), 23 года, Россия, Москва\") Валентин Климахин (so\n[Сделать ДНК-тест, цены на сайте — генетические исследования "
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_vyO2EAttEhzIxC0xuZWURQ8J",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"maximum validity period of TLS certificates reduced to 200 days announcement date\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_vyO2EAttEhzIxC0xuZWURQ8J",
+   "content": "[Debian] Debian () is a free, general-purpose operating system developed by the Debian Project, a worldwide volunteer association founded by Ian Murdock on August 16, 1993. It is the second-oldest Linux distribution still being developed (only Slackware is older) and forms the base of many others. It is deployed across servers, personal computers, and embedded devices. Among Linux distributions, it ranks second only to Ubuntu (a Debian derivative), with 16% of the overall market. According to the 2025 Stack Overflow Developer Survey, 11.4% of developers use it as their primary personal operating system and 10.4% professionally. Its emphasis on stability and long-term support over frequent package updates has made it prevalent in server and embedded deployments. Development is led by the Project Leader and guided by two foundational documents: the Debian Social Contract, a summary of the project's commitments that includes the Debian Free Software Guidelines (DFSG), and the Debian Constitution, which describes the organizational structure. The project publishes three concurrent development branches: stable, testing, and unstable, which correspond to different levels of software maturity. The current stable release, released on August 9, 2025 and codenamed \"Trixie\", includes tens of thousands of packages maintained by more than a thousand active contributors. Since 1997, the project has operated independently through Software in the Public Interest, a non-profit corporation founded by project members to hold its assets and trademarks. It previously received support from the Free Software Foundation between 1994 and 1995, with the sponsorship ending due to disagreements."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_RZkkqbmiUVrZK7WLmzeCEnFc",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"CA/B Forum 200 days TLS certificates announcement date\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_RZkkqbmiUVrZK7WLmzeCEnFc",
+   "content": "No data"
+  },
+  {
+   "role": "user",
+   "content": "Инструменты больше недоступны. Ответь по тому, что уже известно, последней строкой FINAL: <ответ>."
+  },
+  {
+   "role": "assistant",
+   "content": "Максимальный срок жизни TLS-сертификатов сократился до 200 дней с 15 марта 2026 года. FINAL: 15 марта 2026 года.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "fresh-9",
+  "source": "fresh",
+  "question": "Какая версия TypeScript упомянута в анонсе марта 2026?",
+  "answer": "6.0",
+  "evidence": "Анонс TypeScript 6.0",
+  "page": "Frontend Status #10",
+  "url": "https://habr.com/ru/articles/1015700/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "FINAL: Нет данных о событиях марта 2026 года",
+ "final": "Нет данных о событиях марта 2026 года",
+ "correct": false,
+ "cost": 0.0018959999999999984,
+ "seconds": 2.857105541988858,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Какая версия TypeScript упомянута в анонсе марта 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\": \"В вопросе упоминается анонс марта 2026 года, однако моя база знаний ограничена датой начала 2025 года, и у меня нет информации о событиях марта 2026 года.\", \"final\": \"Нет данных о событиях марта 2026 года\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

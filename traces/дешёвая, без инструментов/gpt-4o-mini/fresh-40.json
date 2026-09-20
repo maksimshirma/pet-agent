@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "fresh-40",
+  "source": "fresh",
+  "question": "Сколько CVE вошло в Firefox 148 после проверки Claude?",
+  "answer": "22",
+  "evidence": "итого 22 CVE вошли в Firefox 148",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "FINAL: 10 CVE",
+ "final": "10 CVE",
+ "correct": false,
+ "cost": 4.770000000001162e-05,
+ "seconds": 2.141633625011309,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Сколько CVE вошло в Firefox 148 после проверки Claude?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\":\"После проверки Claude в Firefox 148 было выявлено несколько уязвимостей, категории CVE, что подтверждает наличие исправлений в новой версии.\",\"final\":\"10 CVE\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

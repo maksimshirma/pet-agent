@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "fresh-2",
+  "source": "fresh",
+  "question": "Какой новый HTML-атрибут предложила команда Edge?",
+  "answer": "focusgroup",
+  "evidence": "Команда Edge предлагает новый HTML-атрибут `focusgroup`",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "FINAL: invoketarget",
+ "final": "invoketarget",
+ "correct": false,
+ "cost": 0.0035190000000000004,
+ "seconds": 4.8194050829915795,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Какой новый HTML-атрибут предложила команда Edge?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\": \"Команда Microsoft Edge предложила новый HTML-атрибут `interest` (или атрибут `interesttarget`), однако наиболее известное предложение от команды Edge — это атрибут `render` или атрибут `fetchpriority`. На самом деле команда Edge предложила атрибут `attributionsrc` или атрибут `crossorigin`... Точнее, команда Edge известна предложением атрибута `interest` для элементов. Но наиболее вероятный ответ — атрибут `popover` или атрибут `invoke`/`invoketarget`. Команда Edge предложила атрибут `invoketarget` (Invoke API).\", \"final\": \"invoketarget\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "fresh-6",
+  "source": "fresh",
+  "question": "Во сколько раз TanStack улучшил пропускную способность SSR?",
+  "answer": "5 раз",
+  "evidence": "TanStack улучшили производительность SSR в 5 раз",
+  "page": "Frontend Status #10",
+  "url": "https://habr.com/ru/articles/1015700/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "FINAL: 10 раз",
+ "final": "10 раз",
+ "correct": false,
+ "cost": 4.3949999999987055e-05,
+ "seconds": 1.2473933330038562,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Во сколько раз TanStack улучшил пропускную способность SSR?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\":\"TanStack улучшил пропускную способность SSR в 10 раз благодаря оптимизациям в архитектуре и использованию современных технологий.\",\"final\":\"10 раз\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

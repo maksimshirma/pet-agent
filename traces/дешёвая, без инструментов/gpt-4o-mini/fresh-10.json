@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "fresh-10",
+  "source": "fresh",
+  "question": "Какая минимальная версия Node.js требуется для pnpm v11 RC?",
+  "answer": "22",
+  "evidence": "минимальная версия Node.js теперь 22",
+  "page": "Frontend Status #15",
+  "url": "https://habr.com/ru/articles/1032276/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "FINAL: 14.18.0",
+ "final": "14.18.0",
+ "correct": false,
+ "cost": 4.3650000000006184e-05,
+ "seconds": 1.2043338749936083,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Какая минимальная версия Node.js требуется для pnpm v11 RC?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\":\"Для установки и использования pnpm v11 RC требуется минимальная версия Node.js 14.18.0.\",\"final\":\"14.18.0\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

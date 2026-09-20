@@ -1,0 +1,71 @@
+{
+ "task": {
+  "id": "fresh-31",
+  "source": "fresh",
+  "question": "Какой инструмент собирает React-проект из коробки с SSR?",
+  "answer": "Rockpack",
+  "evidence": "Rockpack собирает всё одной командой",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "Результаты ясно указывают на ответ. Согласно поисковым результатам, основные инструменты для React с SSR из коробки — это метафреймворки, в первую очередь **Next.js**.\n\nFINAL: Next.js",
+ "final": "Next.js",
+ "correct": false,
+ "cost": 0.010813000000000073,
+ "seconds": 7.365797750011552,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какой инструмент собирает React-проект из коробки с SSR?"
+  },
+  {
+   "role": "assistant",
+   "content": "Мне нужно найти информацию о том, какой инструмент собирает React-проект с SSR из коробки.",
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "toolu_bdrk_01Kf8rqryh6iBcCMEoXyzVoh",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\": \"React инструмент SSR из коробки сборка проекта\", \"max_results\": 5}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 1,
+     "id": "toolu_bdrk_01PESowxSXEqbcsk4v5DxCkz",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"React SSR server-side rendering tool build out of the box\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01Kf8rqryh6iBcCMEoXyzVoh",
+   "content": "[Собираем свою библиотеку для SSR на React / Хабр] https://habr.com/ru/companies/kts/articles/566176 — На следующем этапе нужно сформировать webpack-конфиг. Сразу забегая вперед, вспомним, что надо не просто собирать проект, а еще сделать серверный рендеринг, то есть собирать не только клиентский бандл, но еще и серверный. Поэтому сборки на самом деле нужно две и для каждой свой конфиг. Благо они мало чем различаются. По сути различия сводятся к следующим: В серверном бандле не нужно создавать файл\n[React stack 2026: карта лучших библиотек по категориям - Habr] https://habr.com/ru/articles/1032830 — React в 2013 году был только view library — вы сам собирал роутер, загрузку данных, SSR, бандлинг. Это давало свободу, но требовало собрать 10 библиотек и заставить их работать вместе. Через пару лет появились метафреймворки — готовые решения которые включают всё это из коробки. [...] React сам по себе — библиотека рендера. Метафреймворк добавляет роутинг, SSR, code splitting, image optimization. \n[React Server-Side Rendering (SSR) — руководство новичка - Habr] https://habr.com/ru/articles/551948 — `// package.json { \"name\": \"react-ssr\", \"description\": \"A React server-side rendering (SSR) sample project.\", \"version\": \"1.0.0\", \"scripts\": { \"start\": \"NODE_ENV=development webpack serve\", \"build\": \"NODE_ENV=production webpack\" }, \"dependencies\": { \"react\": \"^17.0.1\", \"react-dom\": \"^17.0.1\" }, \"devDependencies\": { \"@babel/core\": \"^7.12.9\", \"@babel/plugin-proposal-class-properties\": \"^7.12.1\", \"@b\n[Как мы сетапили монорепозиторий с SSR и SPA для Otus.ru / Хабр] https://habr.com/ru/companies/kts/articles/553806 — #### Gatsby Из плюсов можно выделить работу c GraphQL \"из коробки\". Подходит для Static Site Generation (SSG). Кастомизировать сборку по ощущениям не очень удобно. Как показала практика, Gatsby удобно использовать при разработке небольших проектов, состоящих из статичного контента, например, лендингов. Next.js [...] Next.js Умеет работать как в SSR, так и в SSG режиме."
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01PESowxSXEqbcsk4v5DxCkz",
+   "content": "[React (software)] React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library that aims to make building user interfaces based on components more \"seamless\". It is maintained by a community of individual developers and companies and governed by the React Foundation, an independent foundation hosted by the Linux Foundation. According to the 2025 Stack Overflow Developer Survey, React is one of the most commonly used web technologies. React can be used to develop single-page, mobile, or server-rendered applications with frameworks like Next.js and React Router. Because React is only concerned with the user interface and rendering components to the DOM, React applications often rely on libraries for routing and other client-side functionality. A key advantage of React is that it only re-renders those parts of the page that have changed, avoiding unnecessary re-rendering of unchanged DOM elements. React is used by an estimated 6.1% of all websites."
+  },
+  {
+   "role": "assistant",
+   "content": "Результаты ясно указывают на ответ. Согласно поисковым результатам, основные инструменты для React с SSR из коробки — это метафреймворки, в первую очередь **Next.js**.\n\nFINAL: Next.js",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

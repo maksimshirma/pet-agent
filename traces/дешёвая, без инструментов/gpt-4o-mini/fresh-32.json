@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "fresh-32",
+  "source": "fresh",
+  "question": "Сколько библиотек TanStack собрано в одном приложении Jack Herrington?",
+  "answer": "17",
+  "evidence": "Jack Herrington собрал все 17 библиотек TanStack в одном приложении",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "FINAL: 5",
+ "final": "5",
+ "correct": false,
+ "cost": 4.1399999999996995e-05,
+ "seconds": 1.529866500000935,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Сколько библиотек TanStack собрано в одном приложении Jack Herrington?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\":\"Jack Herrington собрал 5 библиотек TanStack в одном приложении для демонстрации их возможностей.\",\"final\":\"5\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "task": {
+  "id": "fresh-18",
+  "source": "fresh",
+  "question": "Какая версия SvelteKit получила поддержку TypeScript 6.0?",
+  "answer": "2.56",
+  "evidence": "TypeScript 6.0 в SvelteKit 2.56",
+  "page": "Frontend Status #15",
+  "url": "https://habr.com/ru/articles/1032276/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "Поддержка TypeScript 6.0 была добавлена в SvelteKit версии 2.56. \n\nFINAL: 2.56",
+ "final": "2.56",
+ "correct": true,
+ "cost": 0.0007378500000000121,
+ "seconds": 10.536104958009673,
+ "steps": 4,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какая версия SvelteKit получила поддержку TypeScript 6.0?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_sWKF7HB7jtJVVgOQwDCMmRHa",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"SvelteKit TypeScript 6.0 поддержка\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_sWKF7HB7jtJVVgOQwDCMmRHa",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 06.05.2026] https://habr.com/ru/articles/1032276 — ### 𝐒 Svelte Майский ченджлог Svelte: TypeScript 6.0 в SvelteKit 2.56, breaking changes в remote-функциях (разрешения на refresh, стабильный кеш, run()), community add-ons в sv CLI и попадание в ThoughtWorks Technology Radar. ### 🦮 A11y Доступность в React: распространённые ошибки и как их исправить: практический разбор типичных ошибок доступности в React-интерфейсах (семантика, формы, управление \n[TypeScript vs JavaScript в 2026: почему TS обогнал JS и что это ...] https://habr.com/ru/companies/netologyru/articles/1042346 — Рич Харрис, создатель фронтенд-фреймворка Svelte, перевёл ядро с .ts на JSDoc, сохранив проверку типов. «Типы великолепны, но TypeScript иногда усложняет процесс. Как только вы используете .ts-файл, вам нужен тулчейн для его поддержки». Разница важна: для библиотек лишний шаг сборки — это реальная проблема, для приложений — почти неизбежность. [...] Angular с 2016 года полностью написан на TypeScr\n[Главные игроки экосистемы JavaScript по состоянию на 2026 год] https://habr.com/ru/articles/1021182 — #### Экосистема Svelte Svelte уверенно движется вперед с версией 5. Это было крупное обновление в мире Svelte, включающее так называемый “Rune API”, который полностью изменил принцип работы реактивности, сделав ее более “мелкозернистой”, как они говорят, а значит, более эффективной и быстрой. Честно говоря, я не так уж много знаю о Svelte или SvelteKit, за исключением того, что они тоже являются ч\n[Фронтенд 2026: что умерло, что выжило и что взлетело ... - Habr] https://habr.com/ru/companies/alfa/articles/990118 — №5. TypeScript 6.0+ — ещё меньше ручных аннотаций. ## Почему так происходит? 1. Всеобщая мобильность и разнообразие устройств [...] Согласно опросу Stack Overflow Developer Survey 2024, более 55% разработчиков, идентифицирующих себя как «Frontend», также регулярно работают с бэкендом (API, базы данных). Этот тренд подпитывается фреймворками "
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_bQw6LtCXJXGl1LBWKy1FiclE",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\": \"SvelteKit\", \"keywords\": \"TypeScript 6.0\"}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 1,
+     "id": "call_2sPYWkjxxG5cAbngrtRB1IZA",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\": \"Svelte\", \"keywords\": \"TypeScript 6.0\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_bQw6LtCXJXGl1LBWKy1FiclE",
+   "content": "No data"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_2sPYWkjxxG5cAbngrtRB1IZA",
+   "content": "Version 3 of Svelte was written in TypeScript and was released on 21 April 2019. It rethought reactivity by using the compiler to instrument assignments behind the scenes.\nVersion 4 of Svelte was released on 22 June 2023. It was a maintenance release, smaller and faster than version 3. A part of this release was an internal rewrite from TypeScript back to JavaScript, with JSDoc type annotations. This was met with confusion from the developer community, which was addressed by the creator of Svelte, Rich Harris.\nThe Svelte maintainers also maintain a number of integrations for popular software projects under the Svelte organization including integrations for Vite, Rollup, Webpack, TypeScript, VS Code, Chrome Developer Tools, ESLint, and Prettier. A number of external projects such as Storybook have also created integrations with Svelte and SvelteKit."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_vnUL6x717gvs6DLa68YbnCtx",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"SvelteKit версия с поддержкой TypeScript 6.0\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_vnUL6x717gvs6DLa68YbnCtx",
+   "content": "[Релиз TypeScript 6.0 / Хабр] https://habr.com/ru/news/1014308 — для явного определения типов, а также поддержкой использования полноценных классов. Статическая типизация позволяет избежать многих ошибок в процессе разработки, даёт возможность задействовать дополнительные техники оптимизации, упрощает отладку, делает код более читаемым и простым для доработки и сопровождения. [...] значение target теперь включает актуальную версию ECMAScript (es2025). В поле ta\n[В среду выполнения JavaScript и TypeScript Bun 1.1.28 добавлена поддержка вызова кода на языке C / Хабр] https://habr.com/ru/news/845358 — Title: В среду выполнения JavaScript и TypeScript Bun 1.1.28 добавлена поддержка вызова кода на языке C / Хабр # В среду выполнения JavaScript и TypeScript Bun 1.1.28 добавлена поддержка вызова кода на языке C. В обновлении среды выполнения JavaScript и TypeScript Bun 1.1.28 разработчики проекта добавили экспериментальную возможность компиляции и выполнения обработчиков, написанных на языке C. Нов\n[Состоялся релиз Bun 1.2 — среды выполнения JavaScript и TypeScript / Хабр] https://habr.com/ru/news/875954 — Title: Состоялся релиз Bun 1.2 — среды выполнения JavaScript и TypeScript / Хабр # Состоялся релиз Bun 1.2 — среды выполнения JavaScript и TypeScript. 22 января 2025 года состоялся релиз Bun 1.2 — среды выполнения JavaScript и TypeScript с возможностью отладки кода и поддержкой популярных веб-фрейворков. Bun — это современная среда выполнения JS типа Node.js или Deno со встроенной поддержкой JSX и\n[Релиз TypeScript 7.0 / Хабр] https://habr.com/ru/news/1057656 — Ветка TypeScript 6.0 отмечена как последняя, поставляемая с компилятором на языке TypeScript, транслируемом в JavaScript. В ветке TypeScript 7.0 проект перешёл на новый компилятор typescript‑go (tsgo), разрабатываемый с 2024 года на языке Go. [...] # Релиз TypeScript 7.0 8 июля 2026 года Microsoft представила релиз TypeScript 7.0. Предыдущая стабильная ветка TypeScript 6.0 проекта популярного язык\n[TypeScript — Cт"
+  },
+  {
+   "role": "assistant",
+   "content": "Поддержка TypeScript 6.0 была добавлена в SvelteKit версии 2.56. \n\nFINAL: 2.56",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

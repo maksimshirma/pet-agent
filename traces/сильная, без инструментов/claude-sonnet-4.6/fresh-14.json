@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "fresh-14",
+  "source": "fresh",
+  "question": "В какой версии Chromium доступен экспериментальный API HTML in Canvas?",
+  "answer": "Chromium 146+",
+  "evidence": "Доступно пока только в Chromium 146+ за флагом",
+  "page": "Frontend Status #14",
+  "url": "https://habr.com/ru/articles/1028734/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "FINAL: Chromium 123",
+ "final": "Chromium 123",
+ "correct": false,
+ "cost": 0.0018360000000000043,
+ "seconds": 2.711415166995721,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "В какой версии Chromium доступен экспериментальный API HTML in Canvas?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\": \"HTML in Canvas (Declarative Shadow DOM in Canvas или HTMLCanvasElement) — экспериментальный API. Согласно информации из блога Chrome/Chromium, экспериментальный API 'HTML in Canvas' стал доступен начиная с Chromium 123.\", \"final\": \"Chromium 123\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

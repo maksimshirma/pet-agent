@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "fresh-44",
+  "source": "fresh",
+  "question": "Какая компания опубликовала постмортем об атаке Shai-Hulud?",
+  "answer": "Trigger.dev",
+  "evidence": "компания Trigger.dev опубликовала постмортем об атаке Shai-Hulud",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "FINAL: Thronebreaker",
+ "final": "Thronebreaker",
+ "correct": false,
+ "cost": 4.9199999999999244e-05,
+ "seconds": 1.7186441250087228,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Какая компания опубликовала постмортем об атаке Shai-Hulud?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\":\"Постмортем об атаке Shai-Hulud был опубликован компанией 'Thronebreaker', которая предоставила подробный анализ инцидента.\",\"final\":\"Thronebreaker\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

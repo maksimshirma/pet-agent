@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "fresh-8",
+  "source": "fresh",
+  "question": "За сколько дней была выполнена миграция на Svelte в Strawberry Browser?",
+  "answer": "за две недели",
+  "evidence": "переписал 130 000 строк с React на Svelte за две недели",
+  "page": "Frontend Status #10",
+  "url": "https://habr.com/ru/articles/1015700/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "Миграция на Svelte в Strawberry Browser заняла две недели. FINAL: 14 дней.",
+ "final": "14 дней.",
+ "correct": false,
+ "cost": 0.00023760000000000447,
+ "seconds": 3.74504337500548,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "За сколько дней была выполнена миграция на Svelte в Strawberry Browser?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_kOjqM31o0SAGPe6gZ88ILkGR",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"миграция на Svelte в Strawberry Browser\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_kOjqM31o0SAGPe6gZ88ILkGR",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 27.03.2026] https://habr.com/ru/articles/1015700 — Next.js 16.2 - в новой версии Next.js улучшения производительности: на 400% быстрее запуск, 50% быстрее рендеринг Как мы переписали 130 000 строк кода с React на Svelte за две недели - мигрировали на другой фреймворк с помощью ИИ и ускорили работу браузера Strawberry в два раза. ### 🅰️ Angular Angular выпустила официальные скиллы для AI-агентов - Создание приложений, написание компонентов и многое\n[Валентин Климахин (soshroom) — Хабр Карьера - Habr] https://career.habr.com/soshroom — Все сервисы Хабра Сообщество IT-специалистовОтветы на любые вопросы об ITПрофессиональное развитие в ITОбучение для смены профессии, роста в карьере и саморазвития Войти через Хабр АккаунтЗарегистрироваться Войти через Хабр АккаунтЗарегистрироваться ВакансииСпециалистыКурсы и обучениеЭкспертыКомпанииРейтингЗарплатыЖурнал Валентин Климахин (soshroom), 23 года, Россия, Москва\") Валентин Климахин (so\n[Интернет-магазин XCOM-SHOP] https://u.habr.com/busines_bundle_xcom_shop — main_slide_1272282 main_slide_1255925 main_slide_1255923 main_slide_1255926 main_slide_1249637 main_slide_1277484 main_slide_1272191 main_slide_1269472 main_slide_1265898 main_slide_1275552 main_slide_1157630 main_slide_1238358 main_slide_1182631 main_slide_41871 # Интернет-магазин компьютеров и компьютерных комплектующих Популярные категории [...] Все конфигураторы Изображение конфигуратора для О\n[Работа и свежие вакансии для IT специалистов ... - Хабр Карьера] https://career.habr.com/vacancies — Похожие специалисты получают 370 000 - 600 000 ₽ Москва LLMРабота в команде Откликнуться Bell Integrator 4.55 Разработчик backend (Java/Scala, Blockchain, Москва) #### Зарплата не указана Похожие специалисты получают 218 000 - 340 000 ₽ Middle Москва JavaApache KafkaBlockchain Откликнуться Лига Цифровой Экономики 4.24 Системный администратор (импортозамещение, Ред Софт) #### Зарплата не указана По\n[Комплексные IT-решения для б"
+  },
+  {
+   "role": "assistant",
+   "content": "Миграция на Svelte в Strawberry Browser заняла две недели. FINAL: 14 дней.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

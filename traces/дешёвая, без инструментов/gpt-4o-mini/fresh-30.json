@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "fresh-30",
+  "source": "fresh",
+  "question": "Кто обновил карту React-библиотек на 2026 год?",
+  "answer": "Robin Wieruch",
+  "evidence": "Robin Wieruch, который каждый год раскладывает этот зоопарк по полочкам, обновил карту на 2026-й",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "FINAL: Сообщество разработчиков React",
+ "final": "Сообщество разработчиков React",
+ "correct": false,
+ "cost": 5.460000000001575e-05,
+ "seconds": 1.809100791986566,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Кто обновил карту React-библиотек на 2026 год?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\":\"На обновление карты React-библиотек на 2026 год повлияли множество разработчиков и организаций в сообществе, работающих над улучшением экосистемы React.\",\"final\":\"Сообщество разработчиков React\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

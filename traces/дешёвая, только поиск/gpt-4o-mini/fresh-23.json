@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "fresh-23",
+  "source": "fresh",
+  "question": "Какой IANA-тег назначен для CBOR-LD?",
+  "answer": "0xCB1D",
+  "evidence": "IANA-тег 0xCB1D",
+  "page": "Frontend Status #15",
+  "url": "https://habr.com/ru/articles/1032276/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "IANA-тег, назначенный для CBOR-LD, составляет 0xCB1D. \n\nFINAL: 0xCB1D",
+ "final": "0xCB1D",
+ "correct": true,
+ "cost": 0.0002343000000000206,
+ "seconds": 3.871975249989191,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какой IANA-тег назначен для CBOR-LD?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_DzCzuZtdbQHlw8ZofMEiUIhg",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"CBOR-LD IANA tag\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_DzCzuZtdbQHlw8ZofMEiUIhg",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 06.05.2026] https://habr.com/ru/articles/1032276 — W3C опубликовал FPWD CBOR-LD 1.0, бинарный формат для Linked Data поверх CBOR с семантическим сжатием через JSON-LD контексты, что даёт выигрыш над gzip больше 60%, IANA-тег 0xCB1D и реестр use-case словарей. Цель: IoT, wire-protocols и компактное хранилище. ### 🎨 UI|UX и дизайн [...] `useHotkeys` 🌐 Стандарты и платформа двигаются вперёд: Baseline, Long Animation Frames, CBOR-LD и апдейты WebGPU м\n[Усложнение команд консоли, 1979−2020 / Комментарии / Хабр] https://habr.com/ru/articles/499090/comments — Обычно бывает как у ld: - ... Список зарегистрированных типов https://www.iana.org/assignments/cbor-tags/cbor-tags.xhtml уже довольно немаленький.\n[Данные на свободе: громкие утечки второй половины 2024 года / Хабр] https://habr.com/ru/companies/pt/articles/894780 — Благодаря повсеместной цифровой трансформации, объем данных, генерируемых и обрабатываемых человечеством, стремительно растет. Согласно прогнозу, в 2025 году он может достичь порядка 180 ЗБ (один зеттабайт (1 ЗБ) равен одному триллиону гигабайт.). К тому же за последние 10–15 лет инфраструктура данных претерпела значительные изменения. Конфиденциальные сведения в организациях представлены в самых \n[VK Tech, Москва - Разрабатываем софт для бизнеса / Посты / Хабр] https://habr.com/ru/companies/vktech/posts — В программе: почему простой — типичный сценарий при использовании open-source решений и как его избежать при переносе продуктивных данных; что переносится при миграции: объекты, версии, ACL, bucket-policy, lifecycle, теги, ссылки; что остаётся вне переноса (незавершённые multipart-загрузки); техническая схема переключения: минимальное окно на смену endpoint, параллельная работа приложений на обоих\n[Не рассказывай мне сказки: повышаем продуктивность команды ...] https://habr.com/ru/companies/outlines_tech/articles/868434 — Вовлеченность – главный ключ к продуктивности команды. Как ее добиться, когда финан"
+  },
+  {
+   "role": "assistant",
+   "content": "IANA-тег, назначенный для CBOR-LD, составляет 0xCB1D. \n\nFINAL: 0xCB1D",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

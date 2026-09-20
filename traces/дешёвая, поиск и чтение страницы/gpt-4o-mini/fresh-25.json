@@ -1,0 +1,137 @@
+{
+ "task": {
+  "id": "fresh-25",
+  "source": "fresh",
+  "question": "Какие новые CSS-функции дают элементу номер и число соседей?",
+  "answer": "sibling-index() и sibling-count()",
+  "evidence": "новые CSS-функции `sibling-index()` и `sibling-count()`",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "В CSS есть две новые функции, которые позволяют элементу получать информацию о количестве соседей и своем индексе среди них: `sibling-index()` и `sibling-count()`. Первая возвращает номер текущего элемента среди его соседей, а вторая — общее количество соседних элементов. \n\nFINAL: sibling-index(), sibling-count()",
+ "final": "sibling-index(), sibling-count()",
+ "correct": false,
+ "cost": 0.0006502499999999911,
+ "seconds": 10.122320708003826,
+ "steps": 5,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какие новые CSS-функции дают элементу номер и число соседей?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_yYfX587q0rdM1JsxjUKPEhKf",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"CSS функции количество соседей\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_yYfX587q0rdM1JsxjUKPEhKf",
+   "content": "[CSS в 2026 году: где JavaScript уже не обязателен - Habr] https://habr.com/ru/companies/vk/articles/1080386 — `:nth-child()` `sibling-index()` возвращает номер текущего элемента среди соседей, а `sibling-count()` — общее количество соседних элементов. `sibling-index()` `sibling-count()` `.item { animation-delay: calc(sibling-index() 60ms); }` Ещё один пример — распределение элементов по ширине: `.gallery-item { inline-size: calc(100% / sibling-count()); }` Это особенно полезно для декоративных списков, ка\n[Количественные CSS селекторы / Хабр] https://habr.com/ru/articles/252181 — # Количественные CSS селекторы ## Динамичный контент ## Счёт ### Считаем до одного `button { font-size: 1.25em; } button:only-of-type { font-size: 2em; }` `/ \"больше-чем-один\" будут иметь уменьшенный размер шрифта / button { font-size: 2em; } button:not(:only-of-type) { font-size: 1.25em; }` ### N элементов `li:nth-last-child(6):first-child { / зеленый кальмар / }` `li:nth-last-child(6):first-chil\n[CSS слайдер - Habr] https://habr.com/ru/articles/150030 — Переключить можно как стили соседа, так и стили потомков соседа, но в любом случае сосед должен находиться после радиокнопки. /* Стиль первого\n[CSS: полное руководство по функции calc() - Habr] https://habr.com/ru/companies/ruvds/articles/493660 — В CSS есть особая функция calc() , применяемая для выполнения простых вычислений. Вот пример её использования: .main-content { /* Вычесть\n[Как разыграть соседа по комнате - Habr] https://habr.com/ru/articles/417915 — DISPLAY=:0 zenity --info --text 'Привет!' DISPLAY=:0 нужно, так как в моей сессии нет дисплея, а я хочу показать сообщение на основном экране."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_ci9MG2IC2lU1q82OAtZds5oC",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\":\"CSS в 2026 году: где JavaScript уже не обязателен\",\"keywords\":\"sibling-index sibling-count\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_ci9MG2IC2lU1q82OAtZds5oC",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_oJ3TMopSpPtdlxUszEZInR1t",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\":\"Количественные CSS селекторы\",\"keywords\":\"сосед\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_oJ3TMopSpPtdlxUszEZInR1t",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_Zf2nQnBJ3ohI3bXdtlEeQ0ZZ",
+     "function": {
+      "name": "web_search_ru",
+      "arguments": "{\"query\": \"CSS функции sibling-index sibling-count\"}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 1,
+     "id": "call_0lHYJil946ljPUW9l88QyC93",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"CSS functions sibling-index sibling-count\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_Zf2nQnBJ3ohI3bXdtlEeQ0ZZ",
+   "content": "No data"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_0lHYJil946ljPUW9l88QyC93",
+   "content": "[XPath] XPath (XML Path Language) is an expression language designed to support the query or transformation of XML documents. It was defined by the World Wide Web Consortium (W3C) in 1999, and can be used to compute values (e.g., strings, numbers, or Boolean values) from the content of an XML document. Support for XPath exists in applications that support XML, such as web browsers, and many programming languages. The XPath language is based on a tree representation of the XML document, and provides the ability to navigate around the tree, selecting nodes by a variety of criteria. In popular use (though not in the official specification), an XPath expression is often referred to simply as \"an XPath\". Originally motivated by a desire to provide a common syntax and behavior model between XPointer and XSLT, subsets of the XPath query language are used in other W3C specifications such as XML Schema, XForms and the Internationalization Tag Set (ITS). XPath has been adopted by a number of XML processing libraries and tools, many of which also offer CSS Selectors, another W3C standard, as a simpler alternative to XPath."
+  },
+  {
+   "role": "assistant",
+   "content": "В CSS есть две новые функции, которые позволяют элементу получать информацию о количестве соседей и своем индексе среди них: `sibling-index()` и `sibling-count()`. Первая возвращает номер текущего элемента среди его соседей, а вторая — общее количество соседних элементов. \n\nFINAL: sibling-index(), sibling-count()",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

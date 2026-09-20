@@ -1,0 +1,123 @@
+{
+ "task": {
+  "id": "fresh-47",
+  "source": "fresh",
+  "question": "Какой пример микрофронтендов в Angular 21 описан?",
+  "answer": "Native Federation",
+  "evidence": "пример микрофронтендов в Angular 21 с использованием Native Federation",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "Пример микрофронтендов в Angular 21 описан с использованием Native Federation для создания независимых приложений в едином монорепозитории. FINAL: Native Federation.",
+ "final": "Native Federation.",
+ "correct": true,
+ "cost": 0.000742349999999975,
+ "seconds": 11.56915624999965,
+ "steps": 5,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какой пример микрофронтендов в Angular 21 описан?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_2FNKY0U4RTzpHUsK4IcGJit4",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"примеры микрофронтендов в Angular 21\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_2FNKY0U4RTzpHUsK4IcGJit4",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 12.03.2026] https://habr.com/ru/articles/1009296 — ### 🅰️ Angular Микрофронтенды Angular 21 и Native Federation — пример микрофронтендов в Angular 21 с использованием Native Federation для создания независимых приложений в едином монорепозитории. ### 🌐 Веб-стандарты Обновился Working Draft WCAG 3 — среди ключевых обновлений дополнена пояснительная записка и лучшие практики. [...] и подводный камень Anchor Positioning; в JS — когда пора переходить \n[Micro Frontend Architecture / Хабр] https://habr.com/ru/companies/spectr/articles/856266 — Реальный пример архитектуры микрофронтендов — это Netflix. Их веб-сайт разделен на разные секции — главная страница, поиск и настройки пользовательского профиля. Каждая из них управляется отдельным микрофронтендом. Этот подход помогает Netflix сократить время загрузки, так как каждая секция может кэшироваться независимо и обновляться по мере необходимости без влияния на весь веб-сайт. Это также по\n[Micro Frontend Архитектура на примере Angular - Habr] https://habr.com/ru/companies/auriga/articles/659199 — Прежде всего, нам нужно создать новое приложение и настроить angular builder, который позволит нам использовать пользовательские конфигурации\n[Переходите на микрофронтовую архитектуру - Habr] https://habr.com/ru/articles/721762 — Например, вы можете создать отдельный микрофронтенд для каждой страницы своего приложения и объединить их вместе, чтобы получить полноценное\n[Как DevSpace ускорил проверку микрофронтендов / Хабр] https://habr.com/ru/articles/1078234 — При одновременной сборке хоста и микрофронтенда нельзя их поднять на одном порту, а значит нужно поднимать их на разных портах. Нужно руками смапить реальные домены на локалхост, то есть прописать в hosts домены хоста и микрофронтенда. Например `127.0.0.1 frontend-host.test-12.dev #домен хоста на тестинге 127.0.0.1 frontend-remote.test-12.dev #домен микрофронтенда на тестинге` Без этого ломаются к"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_Z9dX3bCbP8m1z85rtbdUc2cp",
+     "function": {
+      "name": "web_search_ru",
+      "arguments": "{\"query\":\"пример микрофронтендов в Angular 21\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_Z9dX3bCbP8m1z85rtbdUc2cp",
+   "content": "[Веб-компоненты] Веб-компоненты (Web Components) — набор технологий, предоставляющий стандартную компонентную модель для веба, который позволяет создавать инкапсулированные и совместимые друг с другом HTML-элементы. Веб-компоненты — популярный подход при создании микрофронтендов."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_fWQdQQWVyqs95GsMKMsaOVgv",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"Angular 21 микрофронтенды Native Federation\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_fWQdQQWVyqs95GsMKMsaOVgv",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 12.03.2026] https://habr.com/ru/articles/1009296 — ### 🅰️ Angular Микрофронтенды Angular 21 и Native Federation — пример микрофронтендов в Angular 21 с использованием Native Federation для создания независимых приложений в едином монорепозитории. ### 🌐 Веб-стандарты Обновился Working Draft WCAG 3 — среди ключевых обновлений дополнена пояснительная записка и лучшие практики. [...] и подводный камень Anchor Positioning; в JS — когда пора переходить \n[Микрофронтенды в экосистеме Vue 3: практическое руководство для разработчика в 2026 году / Хабр] https://habr.com/ru/companies/simbirsoft/articles/1064080 — Native Federation — browser‑native реализация ментальной модели Module Federation, построенная вокруг стандартных ES Modules и Import Maps. В ее экосистеме `@softarc/native-federation` — core: он отвечает за build‑time часть и не привязан к конкретному фреймворку или сборщику. Интеграция со сборщиком выполняется через adapter layer. `@softarc/native-federation` [...] Размер shared‑зависимостей. Не\n[Павел Остапчук (pavel-ostapchuk1094) - Хабр Карьера] https://career.habr.com/pavel-ostapchuk1094 — - платформенная и архитектурная инженерия: монорепозитории, микрофронты (native federation для Angular «под ключ» с учётом k8s/nginx/апстримов), schema-driven\n[Микрофронтенд на пальцах с module federation 2.0 - Habr] https://habr.com/ru/companies/bft/articles/898278 — Микрофронтенды — это архитектурный подход к разработке фронтенд-приложений, который подразумевает разбиение пользовательского интерфейса\n[Что JS-разработчики смогут узнать на HolyJS 2023 Spring / Хабр] https://habr.com/ru/companies/jugru/articles/730534 — ## Архитектура «Коробочный» discovery для микрофронтендов на базе ModuleFederation ##### Иван Малюгин билайн Микрофронтенды — сложная схема взаимодействия отдельных модулей. Каждый новый модуль нужно тщательно конфигурировать, а локальный сервер дорабатывать для возможности подключать новый микрофронтенд... Стоп"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_xd8vrmVq77VLsk5bPCUZUX1t",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Angular 21 микрофронтенды пример Native Federation\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_xd8vrmVq77VLsk5bPCUZUX1t",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": "Пример микрофронтендов в Angular 21 описан с использованием Native Federation для создания независимых приложений в едином монорепозитории. FINAL: Native Federation.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

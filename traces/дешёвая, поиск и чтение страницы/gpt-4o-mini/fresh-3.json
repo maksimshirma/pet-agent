@@ -1,0 +1,193 @@
+{
+ "task": {
+  "id": "fresh-3",
+  "source": "fresh",
+  "question": "Кто был гостем подкаста о WebAssembly 3.0 20 января 2026?",
+  "answer": "Andreas Rossberg",
+  "evidence": "Гость — Andreas Rossberg, один из ключевых архитекторов WebAssembly с первых дней",
+  "page": "Frontend Status #7",
+  "url": "https://habr.com/ru/articles/1007014/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "Мне не удалось найти информацию о госте подкаста о WebAssembly 3.0 20 января 2026. Похоже, что данные о данном подкасте еще не опубликованы или отсутствуют в доступных источниках. FINAL: информация недоступна.",
+ "final": "информация недоступна.",
+ "correct": false,
+ "cost": 0.0019832999999999934,
+ "seconds": 25.023691540991422,
+ "steps": 9,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Кто был гостем подкаста о WebAssembly 3.0 20 января 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_5qCRO9UHr5AfILt1csX5IFlI",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"подкаст о WebAssembly 3.0 20 января 2026\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_5qCRO9UHr5AfILt1csX5IFlI",
+   "content": "[Отчёт о тенденциях Java от InfoQ за 2024 / Хабр] https://habr.com/ru/companies/otus/articles/872508 — не замечая, как WebAssembly используется в браузерах сегодня. Быстро растущая экосистема WebAssembly меняет правила игры, делая Java сильным выбором даже в областях, где традиционно доминируют другие языки. Я призываю всех изучить WebAssembly и новые захватывающие возможности, которые он предлагает! [...] Андреа Перуффо:В Java-пространстве наконец-то набирает популярность WebAssembly, догоняя таки\n[Старый компьютер, Windows XP, 512 Мб оперативки, Firefox и интернет / Хабр] https://habr.com/ru/articles/373803 — image image image image image image image image image image image image image image image image image image image image image image image image image image image image image image image image image image image image image image image image image image image image image image image image image image ### Блокировка рекламы и ненужных элементов на веб-странице [...] После очередного обновления Хабра \n[Go — Компилируемый, многопоточный язык программирования ...] https://habr.com/ru/hubs/GO/posts — Go (часто также Golang) — компилируемый, многопоточный язык программирования, разработанный компанией Google. Стоит ли в 2026 учить еще один язык?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_pPkpVJA6OQk63MrSPE2yz3iE",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"гость подкаста WebAssembly 3.0 20 января 2026\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_pPkpVJA6OQk63MrSPE2yz3iE",
+   "content": "[«Целимся в то, чтобы клиент приходил покупать продукты, а мы ему ещё и доплачивали» / Хабр] https://habr.com/ru/companies/X5Tech/news/858696 — #### Ведущие подкаста: ##### Дмитрий Прусов директор департамента монетизации данных Х5 Group ##### Тигран Саркисов CDO Х5 Group #### Гость выпуска: ##### Данила Наумов CDO сервиса «Апельсин» В подкасте отвечаем на вопросы: Как разрабатывался сервис лояльности «Апельсин»? Какие этапы он прошёл, прежде чем стать тем, чем является сейчас? Как сервис «Апельсин» интегрирован с другими партнёрами и пла\n[«Характер и амбиции сотрудников создают атмосферу для новых идей» / Хабр] https://habr.com/ru/companies/X5Tech/news/855238 — директор департамента монетизации данных Х5 Group ##### Тигран Саркисов CDO Х5 Group ## Гость выпуска: ##### Екатерина Борисоглебская сооснователь и руководитель сервиса Sell&Buy в Yango, сопродюсер программы «Управление бизнесом на данных» Сколково В подкасте отвечаем на вопросы: Когда предпринимательство внутри компаний получило распространение в России? Насколько этот подход оправдывает себя в \n[Представлен стандарт WebAssembly 3.0 / Хабр] https://habr.com/ru/news/948060 — WebAssembly (Wasm) — это современный бинарный формат инструкций, предназначенный для выполнения кода в веб‑браузерах с высокой производительностью. Например, кодирования видео, обработки звука, манипуляции с графикой и 3D, разработки игр, криптографических операций и математических вычислений через организацию выполнения в браузере кода, написанного на компилируемых языках, таких как C/C++. [...] \n[Вышел второй эпизод подкаста «Безопасно говоря» о миграции в облако / Хабр] https://habr.com/ru/news/751962 — Ведущие подкаста выступают руководитель группы продуктовой архитектуры Security & Compliance Алексей Миртов и менеджер продуктов безопасности Рами Мулейс и Developer Advocate Антон Черноусов. [...] Облачная платформа Yandex Cloudзаявила о выпуске второго эпизода подкаста «Безопасно говоря». В этом выпуске участники обсудили, какие кос"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_6Mm4cDJzjl51yvWYJLKjNcdT",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"WebAssembly 3.0 подкаст гость\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_6Mm4cDJzjl51yvWYJLKjNcdT",
+   "content": "[PHP-Дайджест № 144 (12 – 26 ноября 2018) - Habr] https://habr.com/ru/articles/431042 — Hywan/php-ext-wasm — Экспериментальное расширение, которое позволяет запускать бинарники WebAssembly прямо из PHP. ... Подкаст PHP Roundtable #80\n[Дайджест свежих материалов из мира фронтенда за последнюю неделю №392 (2 — 8 декабря 2019) / Хабр] https://habr.com/ru/articles/479262 — ### JavaScript habr en en en en en en en en en en video habr en en en en en habr en en en en en en en en en en en en podcast ### Браузеры en ### Занимательное Просим прощения за возможные опечатки или неработающие/дублирующиеся ссылки. Если вы заметили проблему — напишите пожалуйста в личку, мы стараемся оперативно их исправлять. Пользователь Хабр Карьера Курсы ## GPT-6 Astra помогла прочесть заши\n[Дайджест свежих материалов из мира фронтенда за последнюю неделю №254 (13 — 19 марта 2017) / Хабр] https://habr.com/ru/companies/zfort/articles/324330 — # Дайджест свежих материалов из мира фронтенда за последнюю неделю №254 (13 — 19 марта 2017) | | | Веб-разработка | | CSS | | Javascript | | Браузеры | | Занимательное | ### Веб-разработка habr en en en en en en en en en en en en en en en en en en en en en en ### CSS en en en en en en en en en en en ### JavaScript habr habr habr habr en en en en en en habr en en en habr en en en en en en en en en "
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_a8v5IebYXeA23kzzU513BuLB",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"WebAssembly 3.0 podcast guest January 20 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_a8v5IebYXeA23kzzU513BuLB",
+   "content": "[LeVar Burton] Levardis Robert Martyn Burton (born February 16, 1957) is an American actor, director, and television host. He played Geordi La Forge in Star Trek: The Next Generation (1987–1994) and Kunta Kinte in the ABC miniseries Roots (1977), and was the host of the PBS Kids educational television series Reading Rainbow for 23 years (1983–2006). Burton received 12 Daytime Emmy Awards and a Peabody Award as host and executive producer of Reading Rainbow. His other roles include Cap Jackson in Looking for Mr. Goodbar (1977), Donald Lang in Dummy (1979), Tommy Price in The Hunter (1980), which earned him an NAACP Image Award for Outstanding Actor in a Motion Picture, and Martin Luther King Jr. in Ali (2001). Burton received the Grammy Award for Best Spoken Word Album at the 42nd Annual Grammy Awards for his narration of the book The Autobiography of Martin Luther King Jr. In 1990, he was honored for his accomplishments in television with a star on the Hollywood Walk of Fame. From 2017 until 2024, Burton created and hosted the podcast LeVar Burton Reads, which has been described as \"Reading Rainbow for adults\". Since October 2024, Burton has hosted the Trivial Pursuit game show on The CW."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_7591DJF3CIL0tMlCMGtDO6CQ",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"гость подкаста WebAssembly 3.0 20 января 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_7591DJF3CIL0tMlCMGtDO6CQ",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_StzQusyzwXZWjNqhpGcIouz8",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\":\"WebAssembly 3.0\",\"keywords\":\"подкаст гость\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_StzQusyzwXZWjNqhpGcIouz8",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_zSDSld0YaoYCo0nypc2QiF4U",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"WebAssembly 3.0 подкаст\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_zSDSld0YaoYCo0nypc2QiF4U",
+   "content": "[Представлен стандарт WebAssembly 3.0 / Хабр] https://habr.com/ru/news/948060 — WebAssembly (Wasm) — это современный бинарный формат инструкций, предназначенный для выполнения кода в веб‑браузерах с высокой производительностью. Например, кодирования видео, обработки звука, манипуляции с графикой и 3D, разработки игр, криптографических операций и математических вычислений через организацию выполнения в браузере кода, написанного на компилируемых языках, таких как C/C++. [...] \n[WebAssembly: обзор технологии, эксперименты с числами и мечты о браузере без JS / Хабр] https://habr.com/ru/companies/psb/articles/1028368 — # WebAssembly: обзор технологии, эксперименты с числами и мечты о браузере без JS WebAssembly находится в разработке уже более 8 лет. Технология прошла долгий путь развития и недавно разработчики из Bytecode Alliance выкатили версию 3.0. [...] Но важно понимать: Blazor WebAssembly — это не попытка заменить JavaScript как платформу. Это попытка перенести в браузер экосистему .NET. Он не универсален\n[WebAssembly: обзор технологии, эксперименты с числами и мечты о браузере без JS / Habr] https://habr.com/ru/amp/publications/1028368 — ## WebAssembly: обзор технологии, эксперименты с числами и мечты о браузере без JS WebAssembly находится в разработке уже более 8 лет. Технология прошла долгий путь развития и недавно разработчики из Bytecode Alliance выкатили версию 3.0. [...] ### Тестовый стенд Для проверки будем использовать Docker. Соберем и поднимем два контейнера для теста. Первый контейнер - просто web-server на nginx, кото\n[WebAssembly — Низкоуровневый байт-код для исполнения в браузере / Хабр] https://habr.com/ru/hubs/webassembly/news — ## У Meta возникли проблемы с «вышедшими из-под контроля» ИИ-агентами ## «МойОфис» выпустил AI-инструмент для преобразования речи в структурированный текст ## Ближайшие события ## Мировой эксклюзив: мультиплеерный UT99 в браузере ## Представлен порт Doom и Doom II в Telegram ## Выпуск порта ядра Linux для WebAssembly, ко"
+  },
+  {
+   "role": "user",
+   "content": "Инструменты больше недоступны. Ответь по тому, что уже известно, последней строкой FINAL: <ответ>."
+  },
+  {
+   "role": "assistant",
+   "content": "Мне не удалось найти информацию о госте подкаста о WebAssembly 3.0 20 января 2026. Похоже, что данные о данном подкасте еще не опубликованы или отсутствуют в доступных источниках. FINAL: информация недоступна.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

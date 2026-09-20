@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "fresh-2",
+  "source": "fresh",
+  "question": "Какой новый HTML-атрибут предложила команда Edge?",
+  "answer": "focusgroup",
+  "evidence": "Команда Edge предлагает новый HTML-атрибут `focusgroup`",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "Команда Edge предложила новый HTML-атрибут `focusgroup`, который упрощает работу с фокусом на элементах внутри контейнера, обрабатывая клавиши стрелок и учитывая скрытые или отключенные элементы. \n\nFINAL: focusgroup",
+ "final": "focusgroup",
+ "correct": true,
+ "cost": 0.00024704999999999866,
+ "seconds": 5.737093333998928,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какой новый HTML-атрибут предложила команда Edge?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_nUqyOaSZ346sCLwrRvJoXDUf",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"новый HTML-атрибут команда Edge\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_nUqyOaSZ346sCLwrRvJoXDUf",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 12.03.2026] https://habr.com/ru/articles/1009296 — Команда Edge предлагает новый HTML-атрибут `focusgroup`: добавляешь его на контейнер и браузер сам обрабатывает клавиши стрелок, пропускает скрытые/disabled-элементы, учитывает направление текста и восстанавливает фокус при возврате. Реализация уже в Edge и Chromium, идёт RFC-процесс для других браузеров. `focusgroup` ### 🛠️ Инструменты [...] и подводный камень Anchor Positioning; в JS — когда пор\n[Frontend Status: свежий дайджест фронтенда и AI — 04.06.2026 / Хабр] https://habr.com/ru/articles/1043510 — Chrome и Edge тестируют новый HTML-элемент `<install>` для установки PWA без единой строки JavaScript: совместная работа команд Microsoft Edge и Google: браузер сам рисует кнопку установки и контролирует её текст и внешний вид, как это уже работает у `<geolocation>`, — это даёт высокий уровень доверия к клику пользователя. Через атрибут `installurl` одна страница может предлагать установку сразу н\n[Прокачиваем вёрстку ARIA-атрибутами. Атрибут role / Хабр] https://habr.com/ru/companies/ruvds/articles/790882 — Если используются скринридеры NVDA и VoiceOver в браузерах Google Chrome, Edge, Safari и Firefox, то всё происходит по плану. Пользователь услышит: «Заголовок уровня три. Это заголовок или нет?». А вот скринридер JAWS скажет так, только в Firefox. В Google Chrome и Edge будет озвучен только текст: «Это заголовок или нет?». Таким образом мы получаем, что скринридеры NVDA и VoiceOver игнорируют `rol\n[Прокачиваем вёрстку ARIA-атрибутами. Атрибут aria-hidden / Хабр] https://habr.com/ru/companies/ruvds/articles/784542 — Скринридеры ведут себя по-разному. JAWS в Google Chrome, Firefox и Edge будет озвучивать либо предыдущий, либо следующий элемент. Я не понял, от чего это зависит. NVDA в тех же браузерах скажет «Пусто». VoiceOver в Google Chrome и Safari вообще произнесут текст кнопки, как будто её не скрывали. А в Firefox она будет скрыта. В общем полный капут. Такие"
+  },
+  {
+   "role": "assistant",
+   "content": "Команда Edge предложила новый HTML-атрибут `focusgroup`, который упрощает работу с фокусом на элементах внутри контейнера, обрабатывая клавиши стрелок и учитывая скрытые или отключенные элементы. \n\nFINAL: focusgroup",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

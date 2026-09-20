@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "fresh-47",
+  "source": "fresh",
+  "question": "Какой пример микрофронтендов в Angular 21 описан?",
+  "answer": "Native Federation",
+  "evidence": "пример микрофронтендов в Angular 21 с использованием Native Federation",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "FINAL: Такой пример не описан — Angular 21 не существует в известных мне данных",
+ "final": "Такой пример не описан — Angular 21 не существует в известных мне данных",
+ "correct": false,
+ "cost": 0.0020850000000000035,
+ "seconds": 3.314001292004832,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Какой пример микрофронтендов в Angular 21 описан?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\": \"Angular 21 не существует на момент моего обучения (последняя известная версия — Angular 17-18). Конкретный «пример микрофронтендов в Angular 21» в моих данных не описан, так как такой версии нет.\", \"final\": \"Такой пример не описан — Angular 21 не существует в известных мне данных\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

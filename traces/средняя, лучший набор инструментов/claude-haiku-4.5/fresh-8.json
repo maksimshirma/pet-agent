@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "fresh-8",
+  "source": "fresh",
+  "question": "За сколько дней была выполнена миграция на Svelte в Strawberry Browser?",
+  "answer": "за две недели",
+  "evidence": "переписал 130 000 строк с React на Svelte за две недели",
+  "page": "Frontend Status #10",
+  "url": "https://habr.com/ru/articles/1015700/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "Отлично! Я нашел информацию. Согласно дайджесту на Habr, миграция 130 000 строк кода с React на Svelte в Strawberry Browser была выполнена за **две недели**, что соответствует 14 дням.\n\nFINAL: 14 дней (две недели)",
+ "final": "14 дней (две недели)",
+ "correct": false,
+ "cost": 0.009694000000000036,
+ "seconds": 5.835216292005498,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "За сколько дней была выполнена миграция на Svelte в Strawberry Browser?"
+  },
+  {
+   "role": "assistant",
+   "content": "Я поищу информацию о миграции на Svelte в Strawberry Browser.",
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "toolu_bdrk_01L45WJJrosKywJLZEeCPffB",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\": \"Strawberry Browser миграция Svelte\", \"max_results\": 5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01L45WJJrosKywJLZEeCPffB",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 27.03.2026] https://habr.com/ru/articles/1015700 — Next.js 16.2 - в новой версии Next.js улучшения производительности: на 400% быстрее запуск, 50% быстрее рендеринг Как мы переписали 130 000 строк кода с React на Svelte за две недели - мигрировали на другой фреймворк с помощью ИИ и ускорили работу браузера Strawberry в два раза. ### 🅰️ Angular Angular выпустила официальные скиллы для AI-агентов - Создание приложений, написание компонентов и многое"
+  },
+  {
+   "role": "assistant",
+   "content": "Отлично! Я нашел информацию. Согласно дайджесту на Habr, миграция 130 000 строк кода с React на Svelte в Strawberry Browser была выполнена за **две недели**, что соответствует 14 дням.\n\nFINAL: 14 дней (две недели)",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

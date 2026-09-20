@@ -1,3 +1,5 @@
 requests
 pydantic
 python-dotenv
+pandas
+matplotlib

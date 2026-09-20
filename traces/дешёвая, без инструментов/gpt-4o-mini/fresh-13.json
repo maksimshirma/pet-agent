@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "fresh-13",
+  "source": "fresh",
+  "question": "На скольких репозиториях обнаружены накрученные звёзды?",
+  "answer": "18 617",
+  "evidence": "более 6 миллионов фейковых отметок на 18 617 репозиториях",
+  "page": "Frontend Status #14",
+  "url": "https://habr.com/ru/articles/1028734/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "FINAL: 5000",
+ "final": "5000",
+ "correct": false,
+ "cost": 5.715000000000581e-05,
+ "seconds": 2.1374766250082757,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "На скольких репозиториях обнаружены накрученные звёзды?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\":\"По данным, имеющимся на момент октября 2023 года, накрученные звёзды были обнаружены на тысячи репозиториев, однако точное число может варьироваться в зависимости от исследования и его методологии.\",\"final\":\"5000\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

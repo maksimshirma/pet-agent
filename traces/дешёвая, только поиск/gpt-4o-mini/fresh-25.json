@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "fresh-25",
+  "source": "fresh",
+  "question": "Какие новые CSS-функции дают элементу номер и число соседей?",
+  "answer": "sibling-index() и sibling-count()",
+  "evidence": "новые CSS-функции `sibling-index()` и `sibling-count()`",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "Новыми CSS-функциями, которые определяют элементу его номер и общее число соседей, являются `sibling-index()` и `sibling-count()`. Эти функции позволяют упростить стилизацию элементов без необходимости использования JavaScript или сложных циклов в стилях.\n\nFINAL: `sibling-index()`, `sibling-count()`",
+ "final": "`sibling-index()`, `sibling-count()`",
+ "correct": false,
+ "cost": 0.0002706000000000097,
+ "seconds": 5.733986334002111,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какие новые CSS-функции дают элементу номер и число соседей?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_mn8MAcfnrfxycafLYw5eVKfq",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"новые CSS-функции номер числа соседей\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_mn8MAcfnrfxycafLYw5eVKfq",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 16.06.2026] https://habr.com/ru/articles/1047986 — Математические раскладки: подсчёт соседей в дереве: новые CSS-функции `sibling-index()` и `sibling-count()` дают элементу его номер и общее число соседей прямо в стилях, а значит, ступенчатую анимацию-каскад можно описать одной строкой через `calc()`, без препроцессорных циклов, плодящих по `:nth-child()`-правилу на каждый элемент, и даже без JS. `sibling-index()` `sibling-count()` `calc()` `:nth-\n[Задача со звёздочкой для фронтенда: выравниваем иконки с текстом / Хабр] https://habr.com/ru/companies/avito/articles/1080464 — `flex-shrink: 1` В общем, в большинстве случаев я бы не стал использовать flexbox для нашей задачи. #### text-box-trim и text-box-edge Относительно новые CSS-свойства `text-box-trim` и `text-box-edge` могут частично решить проблемы flexbox. `text-box-trim` `text-box-edge` `text-box-trim` позволяет убирать лишние вертикальные отступы над и под текстом, а `text-box-edge` задаёт, по каким визуальным \n[Валентин Климахин (soshroom) — Хабр Карьера - Habr] https://career.habr.com/soshroom — Ищу работу Написать ### Контакты Войти Возраст: 23 года Опыт работы: 4 года и 9 месяцев Регистрация: 16.02.2026 Последний визит: 1 день назад Гражданство: Россия Местоположение: Россия, Москва Дополнительно: готов к переезду и к удаленной работе Знание языков: Английский С1 • Русский родной язык Награды 15 откликовЗадает планкуЕсть опытЕсть контакт! Все награды Рекомендательные письма 0Друзья 0 ##\n[Интернет-магазин XCOM-SHOP] https://u.habr.com/busines_bundle_xcom_shop — main_slide_1272282 main_slide_1255925 main_slide_1255923 main_slide_1255926 main_slide_1249637 main_slide_1277484 main_slide_1272191 main_slide_1269472 main_slide_1265898 main_slide_1275552 main_slide_1157630 main_slide_1238358 main_slide_1182631 main_slide_41871 # Интернет-магазин компьютеров и компьютерных комплектующих Популярные категории [...] Зачем и как обновить BIOS: пошаговая инструкция д\n[К"
+  },
+  {
+   "role": "assistant",
+   "content": "Новыми CSS-функциями, которые определяют элементу его номер и общее число соседей, являются `sibling-index()` и `sibling-count()`. Эти функции позволяют упростить стилизацию элементов без необходимости использования JavaScript или сложных циклов в стилях.\n\nFINAL: `sibling-index()`, `sibling-count()`",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

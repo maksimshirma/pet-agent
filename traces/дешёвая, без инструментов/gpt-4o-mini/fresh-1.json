@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "fresh-1",
+  "source": "fresh",
+  "question": "В какой версии Firefox были исправлены 22 CVE, найденные Claude?",
+  "answer": "Firefox 148",
+  "evidence": "итого 22 CVE вошли в Firefox 148",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "FINAL: Firefox 117.0",
+ "final": "Firefox 117.0",
+ "correct": false,
+ "cost": 4.979999999998874e-05,
+ "seconds": 1.256203209006344,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "В какой версии Firefox были исправлены 22 CVE, найденные Claude?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\":\"22 уязвимости, найденные Claude, были исправлены в версии Firefox 117.0, выпущенной в сентябре 2023 года.\",\"final\":\"Firefox 117.0\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

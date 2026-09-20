@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "fresh-20",
+  "source": "fresh",
+  "question": "Какой новый элемент добавлен в Baseline апрель 2026?",
+  "answer": "<search>",
+  "evidence": "элемент `<search>`",
+  "page": "Frontend Status #15",
+  "url": "https://habr.com/ru/articles/1032276/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "FINAL: Нет данных",
+ "final": "Нет данных",
+ "correct": false,
+ "cost": 4.9650000000012184e-05,
+ "seconds": 1.3528272499970626,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Какой новый элемент добавлен в Baseline апрель 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\":\"На данный момент нет информации о новых элементах в Baseline, добавленных в апреле 2026 года, так как данные обновлены только до октября 2023.\",\"final\":\"Нет данных\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

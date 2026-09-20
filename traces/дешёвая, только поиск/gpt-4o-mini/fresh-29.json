@@ -1,0 +1,79 @@
+{
+ "task": {
+  "id": "fresh-29",
+  "source": "fresh",
+  "question": "Какая версия visx вышла с поддержкой React 19?",
+  "answer": "4.0",
+  "evidence": "Вышел visx 4.0 с полной поддержкой React 19",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "Версия visx, выпущенная с полной поддержкой React 19, — это visx 4.0. FINAL: 4.0",
+ "final": "4.0",
+ "correct": true,
+ "cost": 0.00047520000000000895,
+ "seconds": 9.269185041994206,
+ "steps": 3,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какая версия visx вышла с поддержкой React 19?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_KjCFvkjknqDukXJICOtoaBTN",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"visx версия поддержка React 19\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_KjCFvkjknqDukXJICOtoaBTN",
+   "content": "[Что нового в React 19 / Хабр] https://habr.com/ru/companies/timeweb/articles/843016 — ### Поддержка пользовательских элементов Пользовательские элементы (custom elements) позволяют разработчикам определять собственные HTML-элементы согласно спецификации Web Components. В предыдущих версиях React использовать пользовательские элементы было сложно, потому что React обрабатывал неизвестные пропы как атрибуты, а не как свойства. Теперь в React 19 реализована полноценная поддержка польз\n[Visx — коллекция графических примитивов для React-приложений, созданная в Airbnb / Хабр] https://habr.com/ru/companies/ruvds/articles/521068 — Title: Visx — коллекция графических примитивов для React-приложений, созданная в Airbnb / Хабр # Visx — коллекция графических примитивов для React-приложений, созданная в Airbnb. ## Задача: визуализация данных во фронтенд-разработке. ## Решение: низкоуровневые визуальные примитивы, основанные на React. ## Подробности о visx. ## Вопросы и ответы. ### ▍Как в visx используется D3? ### ▍Что такого уме\n[React и графики: 8 библиотек для визуализации данных / Хабр] https://habr.com/ru/companies/ru_mts/articles/885650 — Title: React и графики: 8 библиотек для визуализации данных / Хабр # React и графики: 8 библиотек для визуализации данных. Сегодня хочу поговорить о визуализации данных в React: какую библиотеку выбрать, чтобы было красиво и без проблем? Recharts, Visx, Nivo, ECharts или, может, что-то еще? ## Recharts. Библиотека для визуализации данных в React, построенная на базе D3.js. Ее разработали с упором \n[React Native 0.87: строгий TypeScript API по умолчанию, обновленный Metro, SwiftPM и поддержка AGP 9 / Хабр] https://habr.com/ru/companies/otus/news/1069696 — появилась экспериментальная поддержка Swift Package Manager для iOS; добавлена поддержка Android Gradle Plugin (AGP) версии 9. #### Строгий TypeScript API теперь используется по умолчанию Публичный JavaScript API React Native теперь основан на строгом TypeScript API. Впервые этот режим по"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_flQizcotDay3Q0o3X5nu4iSd",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"visx поддержка React 19 версия\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_flQizcotDay3Q0o3X5nu4iSd",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 16.06.2026] https://habr.com/ru/articles/1047986 — visx 4.0: примитивы визуализации для React: графики и диаграммы обычно живут в отдельном мире — чужой синтаксис, тяжёлые готовые библиотеки, борьба с тем, как у вас уже устроен React. Вышел visx 4.0 с полной поддержкой React 19: не «ещё один конструктор графиков», а набор кирпичиков, из которых вы сами собираете то, что нужно именно вам — со своей анимацией, стилями и логикой. Главная мысль проста\n[React stack 2026: карта лучших библиотек по категориям - Habr] https://habr.com/ru/articles/1032830 — Низкоуровневые primitives: visx (2017) от Airbnb — D3 расклеен на маленькие React компоненты (Scale, Axis, Shape). Собираете свой кастомный chart из блоков. Когда Recharts недостаточно — переходите на visx. Хорошо подходит для real-time data apps. Отдельно — Observable Plot (2022) от самого Mike Bostock для exploratory analysis, и Plotly.js для научных/финансовых графиков. [...] Готовые React-комп\n[React и графики: 8 библиотек для визуализации данных - Habr] https://habr.com/ru/companies/ru_mts/articles/885650 — Сегодня хочу поговорить о визуализации данных в React: какую библиотеку выбрать, чтобы было красиво и без проблем? Recharts, Visx, Nivo, ECharts\n[Рекомендуемые библиотеки для React - Habr] https://habr.com/ru/companies/timeweb/articles/888010 — Две альтернативы Next.js — TanStack Start (бета-версия) и React Router (на пути объединения с Remix), которые (пока) не поддерживают RSC.\n[Анализ данных в hippotable: графики и shareable URLs - Habr] https://habr.com/ru/articles/823502 — Это ядро, которое связывает данные с элементами (абстракция уровня между jQuery и React / Vue) и всякие полезные хелперы для данных типа d3-"
+  },
+  {
+   "role": "assistant",
+   "content": "Версия visx, выпущенная с полной поддержкой React 19, — это visx 4.0. FINAL: 4.0",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "fresh-23",
+  "source": "fresh",
+  "question": "Какой IANA-тег назначен для CBOR-LD?",
+  "answer": "0xCB1D",
+  "evidence": "IANA-тег 0xCB1D",
+  "page": "Frontend Status #15",
+  "url": "https://habr.com/ru/articles/1032276/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "FINAL: 1264",
+ "final": "1264",
+ "correct": false,
+ "cost": 0.0017399999999999985,
+ "seconds": 3.2599111250019632,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Какой IANA-тег назначен для CBOR-LD?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\": \"CBOR-LD (CBOR Linked Data) имеет назначенный IANA media type тег application/ld+cbor, однако для CBOR-тегов IANA назначила тег 1264 для CBOR-LD.\", \"final\": \"1264\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

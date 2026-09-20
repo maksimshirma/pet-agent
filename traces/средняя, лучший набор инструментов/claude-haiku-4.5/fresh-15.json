@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "fresh-15",
+  "source": "fresh",
+  "question": "Какая версия React Email вышла в апреле 2026?",
+  "answer": "6.0.0",
+  "evidence": "React Email выпустил версию 6.0.0",
+  "page": "Frontend Status #14",
+  "url": "https://habr.com/ru/articles/1028734/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "Отлично! Я нашел информацию. Согласно статье на Habr от 27 апреля 2026 года, в апреле 2026 вышла версия **React Email 6.0.0** — это было крупное обновление фреймворка для создания HTML-email-писем на React с улучшениями в экосистеме компонентов и процессе сборки шаблонов.\n\nFINAL: 6.0.0",
+ "final": "6.0.0",
+ "correct": true,
+ "cost": 0.010484999999999967,
+ "seconds": 4.613830291986233,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какая версия React Email вышла в апреле 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": "Я помогу вам найти информацию о версии React Email, которая вышла в апреле 2026.",
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "toolu_bdrk_01QpJ6rHscY1miorUW3PaUeV",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\": \"React Email версия апрель 2026\", \"max_results\": 5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01QpJ6rHscY1miorUW3PaUeV",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 27.04.2026] https://habr.com/ru/articles/1028734 — React Email выпустил версию 6.0.0: крупное обновление фреймворка для создания HTML-email-писем на React с улучшениями в экосистеме компонентов и процессе сборки шаблонов. ### 🅰️ Angular VoidZero ускорили Angular-компилятор с помощью AI: разработчики команды Oxc показывают, как использовали AI в инженерном цикле и получили заметный прирост скорости сборки Angular-проектов. ### 📦 Разное [...] Почему\n[React stack 2026: карта лучших библиотек по категориям - Habr] https://habr.com/ru/articles/1032830 — В 2023 Resend запустил react-email — компоненты email пишутся как React JSX. Это стало game changer — frontend devs могут писать emails в знакомом stack. К 2026 стандарт. 🏆 react-email — Default 2026 React components для email templates. Богатый набор готовых компонентов (Button, Heading, Container). Live preview в dev. Compiles в email-safe HTML. От компании Resend (создатели — ex-Vercel). 🏆 Rese\n[Откуда пришли пользователи: first-touch attribution для NestJS + React + Telegram Mini App в 100 строк кода / Хабр] https://habr.com/ru/articles/1030560 — Реальные истории IT‑найма 2026 ### Хабр проиграл войну с нейрослопом ### Не трогая веса модели: как мы построили исследовательского агента Алисы AI и в разы сократили потребление GPU ### Где HTTP/2 и HTTP/3 реально быстрее, а где не дают ничего ## Публикации ## Ближайшие события [...] acquisition\\_source | users | first\\_seen --------------------------------±------±---------- NULL | 47 | 2026-04-2\n[Бесплатный вайбкодинг с Qwen Code — установка, возможности / Хабр] https://habr.com/ru/companies/studyai/articles/1022332 — Recovery Mode Alibaba выпустила Qwen Code в 2025 году на базе исходников Google Gemini CLI. Собственно, форкнули, адаптировали под собственные модели Qwen-Coder и открыли под Apache-2.0. По умолчанию работает на Qwen3.6-Plus - самая свежая модель, т.к. вышла 2 апреля 2026. Актуальная версия агента на момент эт"
+  },
+  {
+   "role": "assistant",
+   "content": "Отлично! Я нашел информацию. Согласно статье на Habr от 27 апреля 2026 года, в апреле 2026 вышла версия **React Email 6.0.0** — это было крупное обновление фреймворка для создания HTML-email-писем на React с улучшениями в экосистеме компонентов и процессе сборки шаблонов.\n\nFINAL: 6.0.0",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "fresh-12",
+  "source": "fresh",
+  "question": "Сколько фейковых звёзд обнаружено на GitHub в ходе расследования?",
+  "answer": "более 6 миллионов",
+  "evidence": "более 6 миллионов фейковых отметок на 18 617 репозиториях",
+  "page": "Frontend Status #14",
+  "url": "https://habr.com/ru/articles/1028734/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "FINAL: 4,5 миллиона",
+ "final": "4,5 миллиона",
+ "correct": false,
+ "cost": 0.0019260000000000006,
+ "seconds": 2.644864999994752,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Сколько фейковых звёзд обнаружено на GitHub в ходе расследования?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\": \"Речь идёт о известном расследовании фейковых звёзд на GitHub. В исследовании 2024 года (работа «Fake Stars in GitHub») было обнаружено около 4,5 миллиона фейковых звёзд на GitHub.\", \"final\": \"4,5 миллиона\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

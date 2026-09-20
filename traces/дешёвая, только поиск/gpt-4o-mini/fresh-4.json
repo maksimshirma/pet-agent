@@ -1,0 +1,173 @@
+{
+ "task": {
+  "id": "fresh-4",
+  "source": "fresh",
+  "question": "Какая уязвимость была исправлена в Angular SSR?",
+  "answer": "SSRF и инъекции заголовков",
+  "evidence": "2 серьезные уязвимости — SSRF и инъекции заголовков в Angular SSR",
+  "page": "Frontend Status #7",
+  "url": "https://habr.com/ru/articles/1007014/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "В Angular SSR были исправлены две серьезные уязвимости: SSRF (Server-Side Request Forgery) и инъекции заголовков, а также открытый редирект через префикс X-Forwarded. \n\nFINAL: SSRF, инъекции заголовков",
+ "final": "SSRF, инъекции заголовков",
+ "correct": false,
+ "cost": 0.001249199999999978,
+ "seconds": 19.299104833989986,
+ "steps": 6,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какая уязвимость была исправлена в Angular SSR?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_DziIMiO7p4qNQSDHqdyPv4pB",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"Angular SSR уязвимость\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_DziIMiO7p4qNQSDHqdyPv4pB",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 05.03.2026 / Хабр] https://habr.com/ru/articles/1007014 — ### 🅰️ Angular Устранение недавних уязвимостей в Angular — Команда разработчиков Angular рассказала о том, как были исправлены 2 серьезные уязвимости — SSRF и инъекции заголовков в Angular SSR, а также открытый редирект через префикс X-Forwarded. Формы в Angular всегда были болью: FormGroup с nullable-контролами, ControlValueAccessor на 250 строк ради простого степпера, ошибки валидации, которые н\n[Особенности Angular с точки зрения безопасности / Хабр] https://habr.com/ru/companies/nspk/articles/597097 — Запуск стартового приложения Angular в SSR При использовании Angular Universal создаются новые файлы для работы на стороне сервера. Нас интересует файл сервера - server.ts. Созданные файлы сервера Это Express сервер (он используется по умолчанию) и в нем можно прописать дополнительные обработки маршрутов. [...] Обычное приложение Angular выполняется в браузере, отображая страницы в DOM в ответ на \n[XSS атакует! Краткий обзор XSS уязвимостей / Хабр] https://habr.com/ru/companies/alfa/articles/717896 — В нашем приложении на фронте активно использовались query параметры, на их основе мы понимали, какие именно данные нужно будет отобразить клиенту, какой это тип пользователя, через мобильное ли приложение он открыл нашу страницу или через обычный браузер, ну и т.д. В нашем приложении был SSR и все данные, полученные из query параметров мы просто складывали в стор. Он у нас вместе с другим самым не\n[Безопасность приложений на Typescript от А до Я: гайд по защите от очевидных и не очень уязвимостей / Хабр] https://habr.com/ru/articles/1029598 — Эту статью я построил вокруг простого принципа: типы - это не защита, а инструмент дисциплины. Мы рассмотрим атаки и защитные механизмы на двух ключевых платформах: Бэкенд (Node.js, Express/Fastify/NestJS): инъекции, прототипное загрязнение (Prototype Pollution), небезопасная десериализация, утечки данных через ошибки. Фрон"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_cgxBSkt7sY96ikty094EEPtJ",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Angular SSR vulnerability fix\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_cgxBSkt7sY96ikty094EEPtJ",
+   "content": "[AngularJS] AngularJS (also known as Angular 1) is a discontinued free and open-source JavaScript-based web framework for developing single-page applications. It was maintained mainly by Google and a community of individuals and corporations. It aimed to simplify both the development and the testing of such applications by providing a framework for client-side model–view–controller (MVC) and model–view–viewmodel (MVVM) architectures, along with components commonly used in web applications and progressive web applications. AngularJS was used as the frontend of the MEAN stack, that consisted of MongoDB database, Express.js web application server framework, AngularJS itself (or Angular), and Node.js server runtime environment. As of January 1, 2022, Google no longer updates AngularJS to fix security, browser compatibility, or jQuery issues. The Angular team recommends upgrading to Angular (v2+) as the best path forward, but they also provided some other options."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_BrzbcVJxMWe3lyO37CKhny8H",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\": \"удаление уязвимостей Angular SSR\", \"max_results\": 5}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 1,
+     "id": "call_HV9iZn8KanGgVfIic68jYiLM",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"Angular SSR уязвимости\"}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 2,
+     "id": "call_AEA8JGSTdhTMrfCjRG1un4te",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\": \"Angular SSR исправлены уязвимости\", \"max_results\": 5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_BrzbcVJxMWe3lyO37CKhny8H",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 25.05.2026 / Хабр] https://habr.com/ru/articles/1039126 — Svelte: исправлены ошибки в обработке батчей и асинхронных веток, улучшена стабильность SSR, исправлены проблемы с промисами и ошибками в итерациях, оптимизированы процессы обновления состояния. Angular: исправлены проблемы с абстрактными классами, добавлены возможности для inline-таблиц в шаблонах, возможность компилировать неэкспортированные классы в standalone, добавлен параметр allowedHosts дл\n[Frontend Status: свежий дайджест фронтенда и AI — 16.06.2026 / Хабр] https://habr.com/ru/articles/1047986 — Angular: исправлена уязвимость в доверии к JSDoc, добавлено подтверждение перед загрузкой рабочего пространства, улучшена производительность при обработке ошибок парсера, отключено ядро языка в ненадежных рабочих пространствах. #### Безопасность Transformers: Исправлена уязвимость в пути при сохранении шаблонов. Deno: улучшена обработка бsdiff delta в zstd-сжатии, восстановлен поддержка brotli в C\n[Исчезающие фреймворки / Комментарии / Хабр] https://habr.com/ru/articles/414869/comments — Дык можете подгружать куски страницы аяксом, для этого никаких СПА-фреймворков не надо :) Ну а что еще? Тот же реакт, как известно библиотека :) А в чем вы видите проблему? Так если вы поменяете значение на клиенте то ничего не произойдет, вам надо еще перерендерить вид. Что ничем не отличается от получения тех же кусков кода с сервера (что очевидно, ведь иначе SSR бы не мог работать ;)). `this.pu\n[Безопасность приложений на Typescript от А до Я - Habr] https://habr.com/ru/articles/1029598 — Хотя `<%= %>` экранирует HTML, в некоторых движках можно внедрить исполняемый код через параметры шаблонизатора (как в случае с `{ constructor: ... }`). Лучшая защита: никогда не передавать сырой ввод в шаблон без контекстной обработки и не включать продвинутые функции шаблонизатора (например, `eval`). `<%= %>` `{ constructor: ... }` `eval` Если вы используете Next.js или React для SSR, а"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_HV9iZn8KanGgVfIic68jYiLM",
+   "content": "No data"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_AEA8JGSTdhTMrfCjRG1un4te",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 05.03.2026] https://habr.com/ru/articles/1007014 — ### 🅰️ Angular Устранение недавних уязвимостей в Angular — Команда разработчиков Angular рассказала о том, как были исправлены 2 серьезные уязвимости — SSRF и инъекции заголовков в Angular SSR, а также открытый редирект через префикс X-Forwarded. Формы в Angular всегда были болью: FormGroup с nullable-контролами, ControlValueAccessor на 250 строк ради простого степпера, ошибки валидации, которые н\n[Frontend Status: свежий дайджест фронтенда и AI — 25.05.2026] https://habr.com/ru/articles/1039126 — Svelte: исправлены ошибки в обработке батчей и асинхронных веток, улучшена стабильность SSR, исправлены проблемы с промисами и ошибками в итерациях, оптимизированы процессы обновления состояния. Angular: исправлены проблемы с абстрактными классами, добавлены возможности для inline-таблиц в шаблонах, возможность компилировать неэкспортированные классы в standalone, добавлен параметр allowedHosts дл\n[Frontend Status: свежий дайджест фронтенда и AI — 16.06.2026] https://habr.com/ru/articles/1047986 — Angular: исправлена уязвимость в доверии к JSDoc, добавлено подтверждение перед загрузкой рабочего пространства, улучшена производительность при обработке ошибок парсера, отключено ядро языка в ненадежных рабочих пространствах. #### Безопасность Transformers: Исправлена уязвимость в пути при сохранении шаблонов. Deno: улучшена обработка бsdiff delta в zstd-сжатии, восстановлен поддержка brotli в C\n[Frontend Status: свежий дайджест фронтенда и AI — 04.06.2026] https://habr.com/ru/articles/1043510 — Angular 22.0.0: мажор от 3 июня 2026 — OnPush по умолчанию для новых компонентов, стабильный декоратор `@Service`, `injectAsync`, signal forms в public API (`reloadValidation`, debounce для async-валидации), `provideWebMcpTools` и экспериментальный `declareWebMcpTool` для AI-агентов, кеш ресурсов для SSR, поддержка Node.js 26. Из breaking changes: убраны `ComponentFactoryResolver`/`Comp"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_ReV7SNnKEzGCVI17eoRezpQ7",
+     "function": {
+      "name": "web_search_ru",
+      "arguments": "{\"query\":\"Angular SSR уязвимость\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_ReV7SNnKEzGCVI17eoRezpQ7",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_pIeKKTG76SbJDhf8ku3dL0zp",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"Angular уязвимости исправлены\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_pIeKKTG76SbJDhf8ku3dL0zp",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 05.03.2026] https://habr.com/ru/articles/1007014 — ### 🅰️ Angular Устранение недавних уязвимостей в Angular — Команда разработчиков Angular рассказала о том, как были исправлены 2 серьезные уязвимости — SSRF и инъекции заголовков в Angular SSR, а также открытый редирект через префикс X-Forwarded. Формы в Angular всегда были болью: FormGroup с nullable-контролами, ControlValueAccessor на 250 строк ради простого степпера, ошибки валидации, которые н\n[Frontend Status: свежий дайджест фронтенда и AI — 16.06.2026] https://habr.com/ru/articles/1047986 — Angular: исправлена уязвимость в доверии к JSDoc, добавлено подтверждение перед загрузкой рабочего пространства, улучшена производительность при обработке ошибок парсера, отключено ядро языка в ненадежных рабочих пространствах. #### Безопасность Transformers: Исправлена уязвимость в пути при сохранении шаблонов. Deno: улучшена обработка бsdiff delta в zstd-сжатии, восстановлен поддержка brotli в C\n[Frontend Status: свежий дайджест фронтенда и AI — 25.05.2026] https://habr.com/ru/articles/1039126 — Svelte: исправлены ошибки в обработке батчей и асинхронных веток, улучшена стабильность SSR, исправлены проблемы с промисами и ошибками в итерациях, оптимизированы процессы обновления состояния. Angular: исправлены проблемы с абстрактными классами, добавлены возможности для inline-таблиц в шаблонах, возможность компилировать неэкспортированные классы в standalone, добавлен параметр allowedHosts дл\n[Критическая уязвимость позволяет выполнить произвольный код ...] https://habr.com/ru/news/973252 — По информации OpenNET, Проблема вызвана небезопасной десериализацией данных, полученных в HTTP-запросах к серверным обработчикам. Исправление свелось к замене в функции requireModule выражения \"return moduleExports[metadata[NAME]];\", не исключавшего подстановку прототипа, на вариант с проверкой через hasOwnProperty: `if (hasOwnProperty.call(moduleExports, metadata[NAME])) { return moduleE"
+  },
+  {
+   "role": "assistant",
+   "content": "В Angular SSR были исправлены две серьезные уязвимости: SSRF (Server-Side Request Forgery) и инъекции заголовков, а также открытый редирект через префикс X-Forwarded. \n\nFINAL: SSRF, инъекции заголовков",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

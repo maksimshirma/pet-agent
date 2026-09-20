@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "fresh-25",
+  "source": "fresh",
+  "question": "Какие новые CSS-функции дают элементу номер и число соседей?",
+  "answer": "sibling-index() и sibling-count()",
+  "evidence": "новые CSS-функции `sibling-index()` и `sibling-count()`",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "FINAL: nth-child, nth-of-type, counter, counters",
+ "final": "nth-child, nth-of-type, counter, counters",
+ "correct": false,
+ "cost": 6.0000000000004494e-05,
+ "seconds": 1.3361142079957062,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Какие новые CSS-функции дают элементу номер и число соседей?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\":\"CSS-функции :nth-child() и :nth-of-type() позволяют получать элементы по их порядковому номеру, а также функции counter() и counters() могут использоваться для работы с числами соседей.\",\"final\":\"nth-child, nth-of-type, counter, counters\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

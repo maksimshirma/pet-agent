@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "fresh-24",
+  "source": "fresh",
+  "question": "Какая уязвимость в Next.js описана в выпуске от 16 июня 2026?",
+  "answer": "CVE-2025-55182",
+  "evidence": "CVE-2025-55182 — RCE в Next.js через Server Actions",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "FINAL: Нет информации",
+ "final": "Нет информации",
+ "correct": false,
+ "cost": 4.170000000000562e-05,
+ "seconds": 1.9541474589932477,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Какая уязвимость в Next.js описана в выпуске от 16 июня 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\":\"Данная дата находится в будущем, и информация о безопасности Next.js до нее пока недоступна.\",\"final\":\"Нет информации\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

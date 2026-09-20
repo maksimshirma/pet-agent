@@ -1,0 +1,193 @@
+{
+ "task": {
+  "id": "fresh-30",
+  "source": "fresh",
+  "question": "Кто обновил карту React-библиотек на 2026 год?",
+  "answer": "Robin Wieruch",
+  "evidence": "Robin Wieruch, который каждый год раскладывает этот зоопарк по полочкам, обновил карту на 2026-й",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "На данный момент конкретной информации о том, кто обновил карту React-библиотек на 2026 год, нет. Возможно, стоит обратить внимание на статьи на Habr, но авторы не указаны. FINAL: Неизвестно.",
+ "final": "Неизвестно.",
+ "correct": false,
+ "cost": 0.001316700000000004,
+ "seconds": 17.07328441599384,
+ "steps": 9,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Кто обновил карту React-библиотек на 2026 год?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_qeV01S7XFwTiTtcOjCzbQ5VN",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"карта React-библиотек 2026\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_qeV01S7XFwTiTtcOjCzbQ5VN",
+   "content": "[React stack 2026: карта лучших библиотек по категориям - Habr] https://habr.com/ru/articles/1032830 — React сам по себе — библиотека рендера. Метафреймворк добавляет роутинг, SSR, code splitting, image optimization. В 2026 это почти всегда Next.js или Vite-based решение с собственным роутером. 🏆 Next.js — Default для production Индустриальный стандарт. App Router + React Server Components + Turbopack. Vercel деплой нативен, но хостится везде. Пользуется ~70% React-команд для новых проектов. Минусы\n[React в 2026 году: вайб-кодинг, Next.js, рынок и фронтенд после прихода ИИ — интервью с Александром Ломковым / Хабр] https://habr.com/ru/articles/1081974 — React – библиотека JavaScript для создания пользовательских интерфейсов. На практике вокруг неё существует большая экосистема дополнительных инструментов. React Router – библиотека маршрутизации для React-приложений. Определяет, какой интерфейс должен отображаться по конкретному адресу. Redux – популярный инструмент для централизованного управления состоянием приложения. [...] «React-разработчик» \n[React Native в 2026 году: New Architecture, нативный код и AI в реальном проекте / Хабр] https://habr.com/ru/articles/1072522 — `node_modules` Полезно вести не просто список пакетов, а матрицу совместимости: версия React Native, React, Reanimated, Worklets, библиотек уведомлений, минимальные iOS/Android SDK и используемый Xcode. Обновлять по одному слою и собирать обе платформы после каждого значимого шага обычно быстрее, чем потом разбирать десятки взаимосвязанных ошибок. [...] Fabric отвечает за новый рендерер и согласов\n[React и графики: 8 библиотек для визуализации данных / Хабр] https://habr.com/ru/companies/ru_mts/articles/885650 — | BizCharts | Разработана Alibaba, подходит для бизнес-приложений, мощные шаблоны | 6,5K | 358 | 4.0.15 | | React-financial-charts | Ориентирована на финансовые диаграммы, поддержка временных рядов | 2,1K | 48 | 2.0.1 | | Victory | Гибкость и адаптируемость, декларативный подход, анимирован"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_rR6DMB5WQ8cysrVLDDmjGMYK",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\":\"React stack 2026: карта лучших библиотек по категориям\",\"keywords\":\"обновил карта\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_rR6DMB5WQ8cysrVLDDmjGMYK",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_N20UBReY0v0MZksg1iYVVUaJ",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\":\"React в 2026 году: вайб-кодинг, Next.js, рынок и фронтенд после прихода ИИ — интервью с Александром Ломковым / Хабр\",\"keywords\":\"обновил карта\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_N20UBReY0v0MZksg1iYVVUaJ",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_gUm6PPvZEup1TLoJuUkcjUAM",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\":\"React Native в 2026 году: New Architecture, нативный код и AI в реальном проекте / Хабр\",\"keywords\":\"обновил карта\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_gUm6PPvZEup1TLoJuUkcjUAM",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_bkhXqckO7siRlZ9IGAdSDt3Y",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\":\"React и графики: 8 библиотек для визуализации данных / Хабр\",\"keywords\":\"обновил карта\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_bkhXqckO7siRlZ9IGAdSDt3Y",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_BRufYLcKpjDlBicEshBlZur9",
+     "function": {
+      "name": "web_search_ru",
+      "arguments": "{\"query\":\"карта React-библиотек 2026 обновление\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_BRufYLcKpjDlBicEshBlZur9",
+   "content": "[ReactOS] ReactOS — международный проект свободной и бесплатной операционной системы с открытым кодом, совместимой с приложениями и драйверами Windows (Windows NT версии 5.x и выше — Windows 2000 и далее), при этом не являющейся точным клоном Windows. Разработчики ReactOS сотрудничают с разработчиками Wine и MinGW. Проект находится на незавершённой стадии альфа-тестирования с 1998 года. На сегодняшний момент многие приложения Windows (например, Adobe Reader 6.0, OpenOffice.org) в системе уже работают. Различные части системы лицензированы под GNU GPL, GNU LGPL и лицензией BSD. Элементы системы в основном созданы на языке программирования Си, а некоторые из них, такие как ReactOS File Explorer, написаны на C++. ReactOS частично покрывает возможности Windows API и имеет версию, портированную для архитектуры AMD64. Проект ReactOS, как часть экосистемы свободных программ, сотрудничает со многими другими FOSS-проектами, в первую очередь, с проектом Wine Project, который разрабатывает программу Wine для Unix-подобных операционных систем, которая могла бы открывать приложения Windows."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_xFwlFSfwMlj40nzoWfarscal",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"React libraries map 2026 update\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_xFwlFSfwMlj40nzoWfarscal",
+   "content": "[Liquid Glass] Liquid Glass is a design language developed by Apple as a unified visual theme for the graphical user interfaces for its suite of operating systems. It was announced on June 9, 2025, at the Worldwide Developers Conference (WWDC). Liquid Glass features a fluid, dynamic glass-like interface that reflects and refracts the background. It was introduced in iOS 26, iPadOS 26, macOS Tahoe, tvOS 26, visionOS 26, and watchOS 26."
+  },
+  {
+   "role": "user",
+   "content": "Инструменты больше недоступны. Ответь по тому, что уже известно, последней строкой FINAL: <ответ>."
+  },
+  {
+   "role": "assistant",
+   "content": "На данный момент конкретной информации о том, кто обновил карту React-библиотек на 2026 год, нет. Возможно, стоит обратить внимание на статьи на Habr, но авторы не указаны. FINAL: Неизвестно.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

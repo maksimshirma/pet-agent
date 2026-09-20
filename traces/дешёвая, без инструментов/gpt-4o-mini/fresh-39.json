@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "fresh-39",
+  "source": "fresh",
+  "question": "Сколько машин разработчиков скомпрометировано через GitHub-issue?",
+  "answer": "4000",
+  "evidence": "Злоумышленник скомпрометировал 4000 машин разработчиков через GitHub-issue",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "FINAL: неизвестно",
+ "final": "неизвестно",
+ "correct": false,
+ "cost": 6.0749999999998305e-05,
+ "seconds": 1.2684787920006784,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Сколько машин разработчиков скомпрометировано через GitHub-issue?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\":\"По состоянию на октябрь 2023 года нет точной информации о количестве машин разработчиков, скомпрометированных через GitHub-issue, но случаи уязвимостей и атак на разработки обсуждаются в сообществах безопасности.\",\"final\":\"неизвестно\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

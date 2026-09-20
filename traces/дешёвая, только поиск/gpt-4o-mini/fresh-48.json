@@ -1,0 +1,101 @@
+{
+ "task": {
+  "id": "fresh-48",
+  "source": "fresh",
+  "question": "Какой отчёт обновился в марте 2026?",
+  "answer": "WCAG 3",
+  "evidence": "Обновился Working Draft WCAG 3",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "Отчёт ActivTrak, основанный на данных о рабочей активности, был опубликован 11 марта 2026 года. FINAL: ActivTrak отчёт, 11 марта 2026.",
+ "final": "ActivTrak отчёт, 11 марта 2026.",
+ "correct": false,
+ "cost": 0.00041730000000000933,
+ "seconds": 9.828783749995637,
+ "steps": 4,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какой отчёт обновился в марте 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_bc9wDlpdPKYGYDhAGk4JWYT8",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"отчёт март 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_bc9wDlpdPKYGYDhAGk4JWYT8",
+   "content": "[List of deepest caves] This list of deepest caves includes the deepest known natural caves according to maximum surveyed depth as of 2025. The depth value is measured from the highest to the lowest accessible cave point."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_1rMnSAg2BxGkQkNpugsyGzvz",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"обновление отчёта март 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_1rMnSAg2BxGkQkNpugsyGzvz",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_bR8tpNDUBjtA9mrniZNhYpTz",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"отчёт март 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_bR8tpNDUBjtA9mrniZNhYpTz",
+   "content": "[Больше AI-инструментов — не всегда больше продуктивности. BCG и ActivTrak объясняют почему / Хабр] https://habr.com/ru/articles/1012888 — Я пошёл искать что-нибудь пообъективнее. Нашёл отчёт ActivTrak. Эти ребята не спрашивают людей - они замеряют. 443 миллиона часов рабочей активности, 1111 организаций, 163 638 сотрудников, данные за три года. Отчёт вышел 11 марта 2026. Две цифры из отчёта зацепили больше всего. Средняя сессия глубокой концентрации - 13 минут. Тринадцать. Это трёхлетний минимум, и тренд вниз. А работа на выходных в\n[Топ новостей инфобеза за март 2026 года / Хабр] https://habr.com/ru/articles/1020434 — По итогам это максимум давление на цепочку поставок и принуждение к прозрачности. Краткосрочно ничего не изменится, в долгосрочной перспективе подорожают роутеры. Поможет ли это с ИБ? Разве что самую малость — проблема штатовских сетей явно не в троянизированных китайских девайсах. Зато комиссия может нарисовать красивые отчёты. Затем и принимали, собственно. [...] # Топ новостей инфобеза за март \n[9 событий в мире ИИ, которые завирусились в соцсетях 24 февраля — 9 марта 2026 года / Хабр] https://habr.com/ru/articles/1008346 — 🔹 График из нового отчета Anthropic показывает, как ИИ может изменить рынок труда (7.1 млн просмотров). [...] 🔹 Доктор философии из Кембриджа получил письмо от ИИ-агента. Бот прочитал научные статьи ученого о сознании ИИ, и предложил обсудить свои мысли и заметки, которые он писал во время перерывов от работы. Скорее всего это был агент OpenClaw, который работает автономно, хранит память и сам нах\n[Цифровой Brand Day 2026 — Архитектура и эффективность рекламных систем] https://u.habr.com/cldr_digitalbrand2026 — В 2026 году для брендов ключевым становится не вопрос «куда уходит бюджет», а вопрос «какие технологии реально возвращают деньги». Российский AdTech-рынок вышел за пределы простого импортозамещения и предлагает инструменты, которые напрямую влияют на эффективность маркетинга и маржу. Инвестиции в MarTech сегодня — это не"
+  },
+  {
+   "role": "assistant",
+   "content": "Отчёт ActivTrak, основанный на данных о рабочей активности, был опубликован 11 марта 2026 года. FINAL: ActivTrak отчёт, 11 марта 2026.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

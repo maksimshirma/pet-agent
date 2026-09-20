@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "fresh-4",
+  "source": "fresh",
+  "question": "Какая уязвимость была исправлена в Angular SSR?",
+  "answer": "SSRF и инъекции заголовков",
+  "evidence": "2 серьезные уязвимости — SSRF и инъекции заголовков в Angular SSR",
+  "page": "Frontend Status #7",
+  "url": "https://habr.com/ru/articles/1007014/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "FINAL: Уязвимость инъекции кода",
+ "final": "Уязвимость инъекции кода",
+ "correct": false,
+ "cost": 5.835000000001256e-05,
+ "seconds": 1.3952072499960195,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Какая уязвимость была исправлена в Angular SSR?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\":\"В Angular SSR была исправлена уязвимость, связанная с возможностью атаки через инъекцию кода, которая могла привести к выполнению произвольного JavaScript-кода на сервере.\",\"final\":\"Уязвимость инъекции кода\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

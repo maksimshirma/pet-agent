@@ -1,0 +1,193 @@
+{
+ "task": {
+  "id": "fresh-30",
+  "source": "fresh",
+  "question": "Кто обновил карту React-библиотек на 2026 год?",
+  "answer": "Robin Wieruch",
+  "evidence": "Robin Wieruch, который каждый год раскладывает этот зоопарк по полочкам, обновил карту на 2026-й",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "Based on my search results, I found the article \"React stack 2026: карта лучших библиотек по категориям\" (React stack 2026: map of the best libraries by categories) on Habr. However, the search results do not explicitly show the author's name in the snippets I retrieved.\n\nThe article itself mentions that it is \"a subjective view based on npm download trends, GitHub stars, commit activity, and experience working with React projects of various sizes over the years\" and that the data was collected \"by the end of April 2026.\"\n\nUnfortunately, despite multiple searches, I was unable to find the specific author's name of this article in the search results. The article exists at habr.com/ru/articles/1032830, but the author information was not displayed in the search snippets returned.\n\nFINAL: Информация об авторе статьи \"React stack 2026: карта лучших библиотек по категориям\" не найдена в доступных результатах поиска.",
+ "final": "Информация об авторе статьи \"React stack 2026: карта лучших библиотек по категориям\" не найдена в доступных результатах поиска.",
+ "correct": false,
+ "cost": 0.061114,
+ "seconds": 33.76866870900267,
+ "steps": 9,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Кто обновил карту React-библиотек на 2026 год?"
+  },
+  {
+   "role": "assistant",
+   "content": "Я помогу вам найти информацию об обновлении карты React-библиотек на 2026 год.",
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "toolu_bdrk_01Kr6nBqyDSNYcfAu2doRq5x",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\": \"карта React-библиотек 2026 обновление\", \"max_results\": 5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01Kr6nBqyDSNYcfAu2doRq5x",
+   "content": "[React stack 2026: карта лучших библиотек по категориям - Habr] https://habr.com/ru/articles/1032830 — React сам по себе — библиотека рендера. Метафреймворк добавляет роутинг, SSR, code splitting, image optimization. В 2026 это почти всегда Next.js или Vite-based решение с собственным роутером. 🏆 Next.js — Default для production Индустриальный стандарт. App Router + React Server Components + Turbopack. Vercel деплой нативен, но хостится везде. Пользуется ~70% React-команд для новых проектов. Минусы\n[React stack 2026: карта лучших библиотек по категориям / Comments / Habr] https://habr.com/en/articles/1032830/comments — # React stack 2026: карта лучших библиотек по категориям ## Comments 4 хехе, актуально переходить на $mol ;) Мда-а-а, думал было что-то про React, попалась эта статья. Сижу, читаю, 10% осилил, офигел очень сильно. Всё-так хорошо, что я выбрал Angular, там и процента от подобного зоопарка нет. Что ж, пожалуй, пожелаю реактоводам удачи в поиске ориентиров при отсутствии каноничный решений, причём ис\n[React в 2026 году: вайб-кодинг, Next.js, рынок и фронтенд после ...] https://habr.com/ru/articles/1081974 — React – библиотека JavaScript для создания пользовательских интерфейсов. На практике вокруг неё существует большая экосистема дополнительных инструментов. React Router – библиотека маршрутизации для React-приложений. Определяет, какой интерфейс должен отображаться по конкретному адресу. Redux – популярный инструмент для централизованного управления состоянием приложения. [...] Angular – крупный фр\n[Как мы написали React Native библиотеку для Яндекс Карт за ...] https://habr.com/ru/articles/1004576 — Как бонус, теперь это приложение работает как страховка на будущее. Когда Яндекс выпустит новый SDK (а это случается регулярно), мы просто обновим библиотеку, запустим аппку и сразу увидим, что изменилось или сломалось. ### Что в итоге-то Библиотека полностью поддерживает новую архитектуру React Native Fabric и TurboModules, строгую типизацию через Codegen"
+  },
+  {
+   "role": "assistant",
+   "content": "Отлично! Я нашел статью. Теперь давайте получим более подробную информацию об авторе этой статьи.",
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "toolu_bdrk_01LVC4cr8rfLjDiYYcpdigkC",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\": \"React stack 2026: карта лучших библиотек по категориям\", \"keywords\": \"автор автору написал\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01LVC4cr8rfLjDiYYcpdigkC",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": "Давайте попробуем поискать информацию об авторе более напрямую:",
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "toolu_bdrk_01448HSjvPmfxndbVLuxcrgd",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\": \"\\\"React stack 2026\\\" habr автор\", \"max_results\": 5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01448HSjvPmfxndbVLuxcrgd",
+   "content": "[React vs Vue: Что выбрать в 2026? - Habr] https://habr.com/ru/companies/itfb/articles/974554 — # React vs Vue: Что выбрать в 2026? Привет, Хабр! Меня зовут Карлен, я Lead Fullstack разработчик в ITFB Group. В этой статье хочу поделиться своим мнением о том, как выбрать библиотеку или фреймворк для вашего следующего проекта. [...] React — это библиотека, разработанная компанией Facebook. Его философия — предоставить полную свободу в выборе инструментов. Сам React отвечает только за отрисовку\n[React stack 2026: карта лучших библиотек по категориям - Habr] https://habr.com/ru/articles/1032830 — CRDT (Conflict-free Replicated Data Type) — структура данных где операции коммутативны и ассоциативны. Математически гарантирует что при любом порядке применения операций результат одинаковый. Нет центрального сервера, работает offline. Исторически был impractical из-за размера метаданных — но в 2010-х исследователи (в т.ч. Martin Kleppmann) разработали эффективные реализации. [...] Эта статья — к\n[Глубокое погружение в React Fiber / Хабр] https://habr.com/ru/companies/timeweb/articles/1068626 — Как отмечает Andrew Clark, «Fiber — это реализация стека, специализированная для компонентов React. О волокне (fiber) можно думать как о виртуальном кадре стека (virtual stack frame). Преимущество собственной реализации стека заключается в том, что кадры стека можно хранить в памяти и выполнять как и когда угодно. Это критично для целей планирования, которых мы хотели достичь. Кроме планирования, \n[Frontend Status: свежий дайджест фронтенда и AI — 04.02.2026] https://habr.com/ru/articles/992558 — ### JS / TS JavaScript-фреймворки: тренды и будущее 2026 - В 2026 году JavaScript-фреймворки эволюционируют в сторону AI-first подхода, изоморфных архитектур и асинхронности как основы, где Remix 3 выделяется как радикальный перезапуск full-stack разработки с упором на простоту и генерацию кода ИИ, а SvelteKit, SolidStart и TanStack Start продвигают мощные изоморфные паттерны, в то время как Re"
+  },
+  {
+   "role": "assistant",
+   "content": "Я вижу статью \"React stack 2026: карта лучших библиотек по категориям\" на Habr, но информация об авторе пока не показывается в поисковых результатах. Давайте попробуем другой подход:",
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "toolu_bdrk_01AWsJZsULJrRtoL3kZcTDwD",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\": \"site:habr.com/ru/articles/1032830\", \"max_results\": 5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01AWsJZsULJrRtoL3kZcTDwD",
+   "content": "ошибка Tavily: HTTP 400 {\"detail\":{\"error\":\"Query cannot consist only of site: operators. Please provide search terms.\"}}"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "toolu_bdrk_01HGY47RHmCX3gdU9nwZor8G",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\": \"1032830 habr react stack 2026 автор\", \"max_results\": 5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01HGY47RHmCX3gdU9nwZor8G",
+   "content": "[React stack 2026: карта лучших библиотек по категориям - Habr] https://habr.com/ru/articles/1032830 — В 2023 Resend запустил react-email — компоненты email пишутся как React JSX. Это стало game changer — frontend devs могут писать emails в знакомом stack. К 2026 стандарт. 🏆 react-email — Default 2026 React components для email templates. Богатый набор готовых компонентов (Button, Heading, Container). Live preview в dev. Compiles в email-safe HTML. От компании Resend (создатели — ex-Vercel). 🏆 Rese\n[React stack 2026: карта лучших библиотек по категориям - Habr] https://habr.com/en/articles/1032830/comments — # React stack 2026: карта лучших библиотек по категориям ## Comments 4 хехе, актуально переходить на $mol ;) Мда-а-а, думал было что-то про React, попалась эта статья. Сижу, читаю, 10% осилил, офигел очень сильно. Всё-так хорошо, что я выбрал Angular, там и процента от подобного зоопарка нет. Что ж, пожалуй, пожелаю реактоводам удачи в поиске ориентиров при отсутствии каноничный решений, причём ис"
+  },
+  {
+   "role": "assistant",
+   "content": "Давайте поищем более конкретно информацию об авторе этой статьи:",
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "toolu_bdrk_01E7ekG47y427U7tzWwA3NSm",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\": \"\\\"React stack 2026\\\" \\\"карта лучших библиотек\\\" автор кто написал\", \"max_results\": 5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01E7ekG47y427U7tzWwA3NSm",
+   "content": "[React stack 2026: карта лучших библиотек по категориям - Habr] https://habr.com/ru/articles/1032830 — Дисклеймер. Это субъективный взгляд, основанный на трендах npm downloads, GitHub stars, активности commits, и опыте работы с React-проектами разных размеров за последние годы. Цифры по downloads — на момент конца апреля 2026. В вашем регионе или нише веса могут быть другими — например, Ant Design всё ещё доминирует в Китае, Mantine особенно популярен в Восточной Европе. Где это важно, я отмечаю. #\n[Frontend Status: свежий дайджест фронтенда и AI — 25.05.2026] https://habr.com/ru/articles/1039126 — React stack 2026: карта лучших библиотек по категориям. Большая карта React-стека 2026 года по 60+ категориям: победитель, runner-up и legacy в каждой с разбором что было стандартом, что им стало и почему. ### 🅰️ Angular [...] `.filter().map()` ⚛️ React-стек 2026 без ставки вслепую: патчи Next.js, local-first как data architecture, карта 60+ библиотек, Ant Design 6.4 и whisper.rn on-device — чтобы\n[React в 2026 году: вайб-кодинг, Next.js, рынок и фронтенд после ...] https://habr.com/ru/articles/1081974 — «React-разработчик» на практике знает не одну библиотеку, а целый набор инструментов. Next.js полезен и востребован, но выбирать его стоит из требований проекта, а не потому, что он стал модным стеком «по умолчанию». ### Что учить новичку: React, Angular или Vue Александр: Если человек начинает изучать фронтенд с нуля в 2026 году, стоит ли ему выбирать React? [...] Stack (стек) – совокупность техн\n[Взгляд из редакции: что зарубежные издатели предлагают в 2026 году? / Хабр] https://habr.com/ru/companies/bhv_publishing/articles/1075328 — Конечно, делать из этого вывод, что фронтэнды закончились, было бы примерно так же разумно, как объявить смерть Windows после исчезновения с полок самоучителей по винде. Фронтенд‑разработка никуда не денется из новых full‑stack книг: например, в июне 2026 года у O’Reilly вышло второе издание Full‑Stack React, TypeScript, and Node. Просто зд"
+  },
+  {
+   "role": "assistant",
+   "content": "В результатах поиска я вижу упоминание статьи в дайджесте \"Frontend Status\", который ссылается на нее. Давайте попробуем найти информацию об авторе прямым поиском в контексте Habr:",
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "toolu_bdrk_01RAJDLBQGWLWTen2KhwCt5f",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\": \"habr react stack 2026 подборка лучшие библиотеки разработчик\", \"max_results\": 5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01RAJDLBQGWLWTen2KhwCt5f",
+   "content": "[Петр Трипольский aka tripolskypetr - Backend разработчик / Habr] https://habr.com/en/users/tripolskypetr — All streams Login Global rating Петр Трипольский@tripolskypetr Backend разработчик ProfileArticles18PostsNewsComments74 Badges : * Habred Invited : by invitation from UFO : Молодой программист закалки времен библиотеки Qt от Nokia, адаптировавшийся к миру прогрессивных веб приложений. В этот момент времени занимаюсь разработкой frontend на React + Mobx, CSS-in-JS. Победитель Финала VII Национально\n[Ежемесячная подборка хакатонов — сентябрь 2026 / Comments / Habr] https://habr.com/post/1078648/comments — Corporate blogs Advertising Native advertising Education programs Startups SupportOn this platform we use recommendation systems © 2006–2026, Habr [...] All streams Login hackathons # Ежемесячная подборка хакатонов — сентябрь 2026 2 min 7.2K IT careerHackathonSport programming \\ +4 0 ## Comments There are no comments yet, you can be the first one! Sign up to leave a comment. ## Other news Your acc\n[Подключение единых правил eslint для проекта React + ... - Habr] https://habr.com/ru/articles/819847 — βКак стать авторомНе просто коммиты: как и почему нужно развивать open source Подключение единых правил eslint для проекта React + Typescript. Подключение Правил ESLint для React ESLint — это инструмент статического анализа кода, который помогает обнаруживать ошибки в JavaScript-кодах. Библиотеки и плагины для ESLint предназначены для улучшения качества кода при разработке на React и обеспечения с\n[Виктор aka niktomimo - Full-stack разработчик · React Native, FastAPI / Habr] https://habr.com/en/users/niktomimo — Title: Виктор aka niktomimo - Full-stack разработчик · React Native, FastAPI / Habr Full-stack разработчик · React Native, FastAPI. : Мобильная разработка, бэкенд, AI-агенты. Пишу про инженерные решения по ходу разработки. : ONEMIX — мессенджер со встроенной системой управления бизнесомMeIndustry — площадка православной предпринимательской общиныTelegram: Vi"
+  },
+  {
+   "role": "user",
+   "content": "Инструменты больше недоступны. Ответь по тому, что уже известно, последней строкой FINAL: <ответ>."
+  },
+  {
+   "role": "assistant",
+   "content": "Based on my search results, I found the article \"React stack 2026: карта лучших библиотек по категориям\" (React stack 2026: map of the best libraries by categories) on Habr. However, the search results do not explicitly show the author's name in the snippets I retrieved.\n\nThe article itself mentions that it is \"a subjective view based on npm download trends, GitHub stars, commit activity, and experience working with React projects of various sizes over the years\" and that the data was collected \"by the end of April 2026.\"\n\nUnfortunately, despite multiple searches, I was unable to find the specific author's name of this article in the search results. The article exists at habr.com/ru/articles/1032830, but the author information was not displayed in the search snippets returned.\n\nFINAL: Информация об авторе статьи \"React stack 2026: карта лучших библиотек по категориям\" не найдена в доступных результатах поиска.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

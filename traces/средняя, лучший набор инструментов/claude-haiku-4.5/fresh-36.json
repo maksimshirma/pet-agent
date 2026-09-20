@@ -1,0 +1,145 @@
+{
+ "task": {
+  "id": "fresh-36",
+  "source": "fresh",
+  "question": "Сколько времени занимает генерация приложения в Spark?",
+  "answer": "~20 минут",
+  "evidence": "Spark за ~20 минут генерирует фронтенд, бэкенд, модель данных",
+  "page": "habr — статья про AI-агентов",
+  "url": "https://habr.com/ru/articles/1003526/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "Отлично! Найдена информация. Согласно первому результату, GitHub Spark генерирует приложение примерно за **~20 минут**.\n\nFINAL: ~20 минут",
+ "final": "~20 минут",
+ "correct": true,
+ "cost": 0.04083400000000004,
+ "seconds": 29.285718792001717,
+ "steps": 6,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Сколько времени занимает генерация приложения в Spark?"
+  },
+  {
+   "role": "assistant",
+   "content": "Я поищу информацию о времени генерации приложения в Spark.",
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "toolu_bdrk_01TRwPF1GFNQG6nZ1h7rnDQe",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\": \"Spark генерация приложения время\", \"max_results\": 5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01TRwPF1GFNQG6nZ1h7rnDQe",
+   "content": "[GitHub запустил ИИ-модель Spark для генерации веб-приложений / Комментарии / Хабр] https://habr.com/ru/news/854542/comments — Интересна дата записи второго видеоролика: 9 января. То есть либо перед нами прототип без начинки, либо система вот так долго ждала запуска. Потрясающе, если первое. Чтобы прототип интерфейса за 9 месяцев (ой) не претерпел изменений на пути к реализации?! Да что там за сверхчеловеки работают тогда. В общем, мелкая загадка. [...] Ну да SQL тоже в своё время создавался для не программистов, как и 1С\n[Руководство для начинающих по Spark UI: Как отслеживать и ...] https://habr.com/ru/companies/slurm/articles/771036 — При открытии пользовательского интерфейса Spark UI отображаются все задания, как завершенные, так и находящиеся в процессе выполнения. Время выполнения нашего простого задания очень мало — всего 10 секунд, поэтому видны только завершенные задания и их этапы. Если бы были более длительные задания, то Spark UI показывал бы и их. Для каждого задания мы можем видеть количество этапов и время, которое \n[Apache Spark, объяснение ключевых терминов / Хабр] https://habr.com/ru/articles/592067 — Таким образом, вы можете создавать комплексные непрерывные приложения, в которых возможно выполнять те же запросы к пакетной обработке данных в режиме реального времени, выполнять ETL, генерировать отчеты, обновлять или отслеживать конкретные данные в потоке. Эта комбинированная пакетная обработка и возможность создания запросов в режиме реального времени к структурированному потоку является уника\n[Комплексные IT-решения для бизнеса | Обслуживание IT ...] https://u.habr.com/jetweb — 10 сен. 2026 Названы победители первой отраслевой премии «Инженерное искусство» 10 сен. 2026 В Москве стартовала главная ИТ‑конференция осени IT Elements 2026 9 сен. 2026 По данным «Инфосистемы Джет», каждая третья кибератака — взлом через подрядчика 7 сен. 2026 «Инфосистемы Джет» внедрила IDM‑систему JIM для управления правами доступа 2 сен. 2026 Сетевая инфраструктура в "
+  },
+  {
+   "role": "assistant",
+   "content": "Результаты относятся к GitHub Spark (AI-модель для генерации веб-приложений) и Apache Spark (фреймворк обработки данных). Позвольте уточнить - вы имеете в виду GitHub Spark? Давайте посмотрим более конкретно:",
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "toolu_bdrk_01LRVyantDYEQsden6LQhAwt",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\": \"GitHub Spark генерация веб-приложения сколько времени длится\", \"max_results\": 5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01LRVyantDYEQsden6LQhAwt",
+   "content": "[Секреты производительности Spark, или Почему важна компиляция запросов / Хабр] https://habr.com/ru/companies/otus/articles/529684 — Этот код выполняется в течение 43 секунд вместо исходных 2,1 секунды, при этом делая абсолютно то же самое. Явное переключение на RDD останавливает формирование кода всего этапа и запускает преобразование элементов наборов данных из примитивных типов в объекты Java, что оказывается очень затратным. Если мы сравним схемы этапов выполнения кода из листингов 3 и 6 (см. ниже), то увидим, что во втором\n[Подготовка приложений Spark Streaming к использованию в рабочей среде / Хабр] https://habr.com/ru/companies/otus/articles/557812 — В каждый момент времени обрабатывается только один микропакет. Поэтому, если обработка первого микропакета займет 40 секунд, то перед фактическим началом обработки второго пакета возникнет задержка. Если время обработки микропакетов постоянно будет составлять около 40 секунд, они будут прибывать быстрее, чем обрабатываться. В скором времени у вас скопятся десятки микропакетов, ожидающих обработки.\n[Как я собрал на DGX Spark приватный AI-сервер, и теперь рассказываю, что туда вошло / Хабр] https://habr.com/ru/articles/1030802 — Где это реально меняет уравнение: в задачах, где у тебя есть видение, опыт читать чужой код, понимание предметной области — но нет команды и нет физического времени. Раньше один человек с такими исходными мог сделать MVP за пару месяцев. Сейчас — production-grade продукт за 30 дней. У меня в репозитории 86 коммитов, 32 тысячи строк, 30 контейнеров, и это не маркетинговая фраза, а git log. Дисципли\n[GitHub запустил ИИ-модель Spark для генерации веб-приложений] https://habr.com/ru/news/854542 — GitHub Spark предлагает интерактивные предварительные просмотры, варианты ревизий, автоматическую историю и выбор модели для разработки. Его\n[Как и зачем разворачивать приложение на Apache Spark в Kubernetes / Хабр] https://habr.com/ru/companies/vk/articles/549052 — Иногда эту историю уже пересказывают"
+  },
+  {
+   "role": "assistant",
+   "content": "Найден полезный результат! Позвольте получить больше деталей из статьи про GitHub Spark:",
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "toolu_bdrk_012MxadDHpxUyPWxyyGV8SqD",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"GitHub Spark app generation time duration seconds\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_012MxadDHpxUyPWxyyGV8SqD",
+   "content": "[WhatsApp] WhatsApp Messenger, commonly known simply as WhatsApp, is an American social media, instant messaging (IM), and Voice over IP (VoIP) service accessible via desktop and mobile app. Owned by Meta Platforms, the service allows users to send text messages, voice messages, and video messages, make voice and video calls, and share images, documents, user locations, and other content. The service requires a cellular mobile telephone number to register. WhatsApp was launched in May 2009. In January 2018, WhatsApp released a standalone business app called WhatsApp Business which can communicate with the standard WhatsApp client. As of May 2025, the service had 3 billion monthly active users, making it the most popular messenger app. The name of the app is meant to sound like \"what's up\". The service was created by WhatsApp Inc. of Mountain View, California, which was acquired by Facebook in February 2014 for approximately US$19.3 billion. It became the world's most popular messaging application in 2015, with 900 million users, and had more than 2 billion active users worldwide in February 2020. WhatsApp Business had approximately 200 million monthly users in 2023. By 2016, it had become the primary means of Internet communication in regions including the Americas, the Indian subcontinent, and large parts of Europe and Africa."
+  },
+  {
+   "role": "assistant",
+   "content": "Это не то. Давайте поищу русскоязычное описание GitHub Spark с деталями:",
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "toolu_bdrk_01NQxo3a9ATpN46sdvJ9VT3m",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\": \"\\\"GitHub Spark\\\" \\\"время\\\" \\\"генерация\\\" приложение дни\", \"max_results\": 5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01NQxo3a9ATpN46sdvJ9VT3m",
+   "content": "[Вебинар «Разворачиваем приложение на Spark в Kubernetes» 4 февраля от Mail.ru Group / Хабр] https://habr.com/ru/companies/vk/news/538020 — Title: Вебинар «Разворачиваем приложение на Spark в Kubernetes» 4 февраля от Mail.ru Group / Хабр # Вебинар «Разворачиваем приложение на Spark в Kubernetes» 4 февраля от Mail.ru Group. Для частого запуска приложений на Spark, особенно в промышленной эксплуатации, необходимо максимально упростить сам процесс регулярного запуска Spark-задач, а также уметь гибко настраивать их конфигурации. В этом по\n[Подбираем параметры сессии в Apache Spark, чтобы не стоять в ...] https://habr.com/ru/companies/alfa/articles/772224 — `spark.dynamicAllocation.executorIdleTimeout` — определяет время в миллисекундах, в течение которого исполнитель (executor) может находиться без активности до его автоматической остановки и освобождения ресурсов. Обычно ставят 600 s — эквивалентно 10 минутам. `spark.dynamicAllocation.executorIdleTimeout` [...] .set(\"spark.dynamicAllocation.executorIdleTimeout\", \"360s\")` [...] .set(\"spark.dynamicAl\n[Как работает генерация видео в open source проекте Wunjo CE / Хабр] https://habr.com/ru/articles/828752 — Title: Как работает генерация видео в open source проекте Wunjo CE / Хабр # Как работает генерация видео в open source проекте Wunjo CE. **Генерация видео теперь open source?** Наконец-то я нашёл время, чтобы добавить генерацию видео из текста и изображений в свой open source проект Wunjo CE. В этой статье мы рассмотрим, как это работает, сравним его с похожими решениями, изучим основы подхода и е\n[Генерация кода: сокращаем рутину в разработке / Хабр] https://habr.com/ru/companies/T1Holding/articles/1070586 — Title: Генерация кода: сокращаем рутину в разработке / Хабр # Генерация кода: сокращаем рутину в разработке. В современной разработке автоматизация — это давно не «роскошь», а «базовый минимум». В прошлом году я выступал с этой темой на конференции Импульс Т1. В статье расскажу подробнее, как перейти к генерации ко"
+  },
+  {
+   "role": "assistant",
+   "content": "Позвольте поискать более конкретно про GitHub Spark и время:",
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "toolu_bdrk_01DHXmg3PTYMMdBNVHk8ARKV",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\": \"GitHub Spark AI приложение создание за минуты часы дней\", \"max_results\": 5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01DHXmg3PTYMMdBNVHk8ARKV",
+   "content": "[Open Source-джентльмены 2026: Обзор самых ярких GitHub-проектов, определивших начало года / Хабр] https://habr.com/ru/articles/1003526 — #### GitHub Spark Запущенный еще летом 2025, к 2026 году GitHub Spark окончательно оформился как главный инструмент для прототипирования. Вы описываете на английском идею приложения, а Spark за ~20 минут генерирует фронтенд, бэкенд, модель данных, настраивает репозиторий, CI/CD через Actions и даже разворачивает это в облаке. Да, качество кода пока не идеальное, но для проверки гипотез и MVP — это\n[GitHub запустил ИИ-модель Spark для генерации веб-приложений / Хабр] https://habr.com/ru/news/854542 — Леффен дал GPT-6 Astra в режиме Extra High довольно общую задачу — изучить оставшиеся нерасшифрованными сообщения из коллекции CryptoCellar и попробовать взломать одно из них. По рассказу самого Леффена, непосредственно работа модели до нахождения решения заняла около десяти часов. Всё исследование вместе с разбором источников, дополнительными проверками и воспроизведением результата шло 14 и 15 с\n[Как я собрал на DGX Spark приватный AI-сервер, и теперь ... - Habr] https://habr.com/ru/articles/1030802 — Где это реально меняет уравнение: в задачах, где у тебя есть видение, опыт читать чужой код, понимание предметной области — но нет команды и нет физического времени. Раньше один человек с такими исходными мог сделать MVP за пару месяцев. Сейчас — production-grade продукт за 30 дней. У меня в репозитории 86 коммитов, 32 тысячи строк, 30 контейнеров, и это не маркетинговая фраза, а git log. Дисципли\n[Запустили за 5 дней: как AI-агенты собрали полноценный SaaS-продукт / Хабр] https://habr.com/ru/articles/1005276 — Скорость. Это очевидно, но стоит сказать прямо. Параллельные воркеры, никаких затрат на координацию, никакого переключения контекста. Первый PR был открыт через 24 минуты после регистрации проекта. Консистентность. Каждый PR следовал одному и тому же паттерну: конвенциональные коммиты, описание PR с тем, что изменилось и почему, "
+  },
+  {
+   "role": "assistant",
+   "content": "Отлично! Найдена информация. Согласно первому результату, GitHub Spark генерирует приложение примерно за **~20 минут**.\n\nFINAL: ~20 минут",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

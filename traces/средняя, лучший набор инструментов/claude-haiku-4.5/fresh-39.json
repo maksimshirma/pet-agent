@@ -1,0 +1,79 @@
+{
+ "task": {
+  "id": "fresh-39",
+  "source": "fresh",
+  "question": "Сколько машин разработчиков скомпрометировано через GitHub-issue?",
+  "answer": "4000",
+  "evidence": "Злоумышленник скомпрометировал 4000 машин разработчиков через GitHub-issue",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "Отлично! Информация подтверждена из нескольких источников.\n\nFINAL: 4000 машин разработчиков",
+ "final": "4000 машин разработчиков",
+ "correct": true,
+ "cost": 0.01711599999999991,
+ "seconds": 13.090766917011933,
+ "steps": 3,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Сколько машин разработчиков скомпрометировано через GitHub-issue?"
+  },
+  {
+   "role": "assistant",
+   "content": "Я помогу вам найти информацию об инциденте с компрометированными машинами разработчиков через GitHub-issue.",
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "toolu_bdrk_01Qctb5RB1jRZQjR7MaKQLzE",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\": \"машины разработчиков скомпрометировано GitHub issue\", \"max_results\": 5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01Qctb5RB1jRZQjR7MaKQLzE",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 12.03.2026] https://habr.com/ru/articles/1009296 — Злоумышленник скомпрометировал 4000 машин разработчиков через GitHub-issue, собрав цепочку из пяти звеньев: prompt injection в AI-тайпере, затем выполнение произвольного npm install → отравление кеша → кража токенов → публикация версии Cline с трояном, которая молча ставила второй AI-агент с полным доступом к системе. Атака вскрыла архитектурную проблему: разработчик доверяет инструменту A, инстру\n[Как вредоносный код переписал мой Git-коммит и заразил десятки проектов и несколько рабочих машин / Хабр] https://habr.com/ru/articles/1040200 — Считать секреты скомпрометированными, если они были доступны на машине или в окружении. Ротировать GitHub tokens, SSH-ключи, deploy keys, cloud/API/payment secrets. Проверить GitHub Apps, OAuth Apps, personal access tokens и SSH keys. Проверить машины всех разработчиков, которые работали с зараженным проектом. После очистки пересканировать репозитории еще раз через день или два. [...] Сначала мы н\n[Пост @amaksimovv — Блог компании CodeScoring — 01.09 17:31] https://habr.com/ru/companies/codescoring/posts/1077354 — OpenAPI React скомпрометирована в результате атаки на цепочку поставок npm от Mini Shai-Hulud 28 августа 2026 года в npm появились десять вредоносных версий @7nohe/openapi-react-query-codegen. Согласно предупреждению проекта, при установке они запускали код атакующего на машине разработчика или CI-раннере. Под угрозой оказались секреты GitHub, облачных сервисов и реестров пакетов.\n[Shai-Hulud 2.0: 25 000 npm-репозиториев могут потерять свои данные / Хабр] https://habr.com/ru/companies/first/articles/969916 — Подобно атаке Shai-Hulud﻿, выявленной в сентябре 2025 года, нынешняя версия также публикует украденные секреты в GitHub﻿, но теперь с описанием репозитория «Sha1-Hulud: The Second Coming»﻿ — «Sha1-Hulud: Второе пришествие». Пример заражённых репозиториев В предыдущей волне атак злоумышленники компрометировали легити"
+  },
+  {
+   "role": "assistant",
+   "content": "Отлично! Я нашел информацию. Согласно статье на Habr от 12.03.2026, злоумышленник скомпрометировал машины разработчиков через GitHub-issue.\n\nДавайте получим более точные детали:",
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "toolu_bdrk_01MX4n38cm7DDdF5pTxBpU2i",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\": \"4000 машин разработчиков GitHub issue Cline\", \"max_results\": 5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01MX4n38cm7DDdF5pTxBpU2i",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 12.03.2026] https://habr.com/ru/articles/1009296 — Злоумышленник скомпрометировал 4000 машин разработчиков через GitHub-issue, собрав цепочку из пяти звеньев: prompt injection в AI-тайпере, затем выполнение произвольного npm install → отравление кеша → кража токенов → публикация версии Cline с трояном, которая молча ставила второй AI-агент с полным доступом к системе. Атака вскрыла архитектурную проблему: разработчик доверяет инструменту A, инстру\n[Вы пустили ИИ‑агента в репозиторий, теперь разбираемся, что ...] https://habr.com/ru/companies/pt/articles/1030532 — 15. Snyk — Cline supply chain attack — snyk.io/blog/cline‑supply‑chain‑attack‑prompt‑injection‑github‑actions 16. Cline post‑mortem 17. Securing Agents — Clinejection — securingagents.com/articles/clinejection‑how‑a-github‑issue‑title‑compromised-4000-developer‑machines 18. CVE-2026-29783 — nvd.nist.gov/vuln/detail/CVE-2026-29783 [...] прием: запись >10 ГБ мусора в actions/cache, чтобы вытеснить л\n[Лучшие посты за неделю / Хабр] https://habr.com/ru/posts/top/weekly — Вчерашние мои прогоны данной llm - сборка одной ветки: ТЗ на 28200 токенов входа, чтение проекта, генерация семи файлов, итерации правок, три боя. Типичная сессия Cline такого масштаба это единицы миллионов токенов, где большая часть является кэш чтение. Возьмём средние 3 млн. входных (80-85% кеша) и около 50 тысяч выходных и подставим прайс Pareto: вход без кеша: около 0,5 млн умножить на 2.50 у.\n[Свой луна-парк с блэкджеком и нейронками: Восстанавливаем доступ к AI-сервисам без VPN. Часть 1 / Хабр] https://habr.com/ru/articles/982070 — IP_ВАШЕГО_VPS mistral.ai: IP_ВАШЕГО_VPS musicgpt.com: IP_ВАШЕГО_VPS openai.com: IP_ВАШЕГО_VPS perplexity.ai: IP_ВАШЕГО_VPS pi.ai: IP_ВАШЕГО_VPS poe.com: IP_ВАШЕГО_VPS replicate.com: IP_ВАШЕГО_VPS stability.ai: IP_ВАШЕГО_VPS static.microsoft: IP_ВАШЕГО_VPS sydney.bing.com: IP_ВАШЕГО_VPS udio.com: IP_ВАШЕГО_VPS x.ai: IP_ВАШЕГО_VPS you.com: IP_ВАШЕГО_VPS # Порты д"
+  },
+  {
+   "role": "assistant",
+   "content": "Отлично! Информация подтверждена из нескольких источников.\n\nFINAL: 4000 машин разработчиков",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

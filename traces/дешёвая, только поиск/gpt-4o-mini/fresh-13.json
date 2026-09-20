@@ -1,0 +1,123 @@
+{
+ "task": {
+  "id": "fresh-13",
+  "source": "fresh",
+  "question": "На скольких репозиториях обнаружены накрученные звёзды?",
+  "answer": "18 617",
+  "evidence": "более 6 миллионов фейковых отметок на 18 617 репозиториях",
+  "page": "Frontend Status #14",
+  "url": "https://habr.com/ru/articles/1028734/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "Согласно исследованию, на GitHub имеется более 4,5 миллиона фейковых оценок репозиториев, однако точное число репозиториев с накрученными звёздами не указано. FINAL: 4,5 миллиона фейковых оценок.",
+ "final": "4,5 миллиона фейковых оценок.",
+ "correct": false,
+ "cost": 0.0005440499999999904,
+ "seconds": 9.571674250008073,
+ "steps": 5,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "На скольких репозиториях обнаружены накрученные звёзды?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_Hh1Y8dgGZaVDNk15mWdKObKV",
+     "function": {
+      "name": "web_search_ru",
+      "arguments": "{\"query\":\"накрученные звёзды репозитории\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_Hh1Y8dgGZaVDNk15mWdKObKV",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_7y2QAeC9sMXHnLBTQzIQn4LB",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"накрученные звёзды репозитории\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_7y2QAeC9sMXHnLBTQzIQn4LB",
+   "content": "[Вышла StarGuard — утилита, которая определяет накрученные звёзды в GitHub-репозиториях / Хабр] https://habr.com/ru/news/909184 — Автор StarGuard вдохновился исследователями Университета Карнеги — Меллона и компании Socket Inc, которые выяснили, что на GitHub есть более 4,5 млн фейковых оценок репозиториев. Злоумышленники создают фишинговые репозитории и накручивают звёзды. Также исследователи выяснили, что покупка фейковых оценок на специализированных площадках обойдётся в 0,1 доллара за одну звезду. [...] StarGuard позволя\n[Вышла StarGuard — утилита, которая определяет накрученные ...] https://habr.com/ru/news/909184/comments — StarGuard, которая определяет накрученные звёзды в GitHub-репозиториях, и ищет подозрительные зависимости. ... Очевидно, если проверять\n[210 тысяч звёзд за пять месяцев. Как отличить накрученный харнес от рабочего и при чём тут домашняя еда / Хабр] https://habr.com/ru/articles/1045028 — Я было сделал вывод, что все звёзды накручены, — и ошибся. Накрутка здесь выборочная, не сплошная. Я сверил `anthropics/claude-code`: 131 тысяча звёзд, и это совпадает с внешним аудит-отчётом конца мая. Число настоящее. А вот `superpowers` со своими 220 тысячами, как-то сильно выделяется. Значит, правило не «звёзды врут всегда», а тоньше: у крупных, известных репозиториев, за которыми следят со ст\n[Как получить более 3500 звезд на GitHub за неделю и зачем это нужно / Comments / Habr] https://habr.com/en/companies/productivity_inside/articles/342600/comments — Ничего не мешает это сделать, но другой разработчик (возможно потенциальный работодатель или контрибьютор) может посмотреть что на аккаунтах которые ставили вам звёзды нет активности, значит это фэйки, значит вы занимаетесь накруткой и вряд ли с вами захотят иметь дело. Нет. Звезда на гитхабе по сути просто лайк. Их число говорит только о популярности, ни о чём больше. [...] # Как получить более 3\n[Чего стоят звезды на GitHub? / Хабр] https://habr.com/ru/companies/productivity_inside/articles/740860 — #"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_zwKVeoEFYwHi0bynhASEAeai",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"сколько репозиториев на GitHub с накрученными звёздами\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_zwKVeoEFYwHi0bynhASEAeai",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_mr3SNosyVPux00x4Wvb1P2DF",
+     "function": {
+      "name": "web_search_ru",
+      "arguments": "{\"query\":\"репозитории с фейковыми звёздами\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_mr3SNosyVPux00x4Wvb1P2DF",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": "Согласно исследованию, на GitHub имеется более 4,5 миллиона фейковых оценок репозиториев, однако точное число репозиториев с накрученными звёздами не указано. FINAL: 4,5 миллиона фейковых оценок.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

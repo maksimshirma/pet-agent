@@ -1,0 +1,71 @@
+{
+ "task": {
+  "id": "fresh-40",
+  "source": "fresh",
+  "question": "Сколько CVE вошло в Firefox 148 после проверки Claude?",
+  "answer": "22",
+  "evidence": "итого 22 CVE вошли в Firefox 148",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "Отлично! Я нашел информацию. Согласно статьям на Habr, когда команда Anthropic прогнала Claude по кодовой базе Firefox:\n\n- **Claude нашел 22 уязвимости** (CVE), которые вошли в Firefox 148\n- Из них **14 были критическими**\n- Claude обнаружил эти уязвимости за две недели исследования\n- Просканировано около 6000 файлов на C++\n- Отправлено 112 уникальных bug-репортов\n\nFINAL: 22 CVE",
+ "final": "22 CVE",
+ "correct": true,
+ "cost": 0.011462000000000083,
+ "seconds": 8.326620332998573,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Сколько CVE вошло в Firefox 148 после проверки Claude?"
+  },
+  {
+   "role": "assistant",
+   "content": "Я помогу вам найти информацию о CVE в Firefox 148. Давайте поищем эту информацию.",
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "toolu_bdrk_01U9MLoHujHAHgi9eRsUcycH",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\": \"Firefox 148 CVE Claude проверка\", \"max_results\": 5}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 1,
+     "id": "toolu_bdrk_01QXyvSh1ric7CzB4YAEjPEF",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"Firefox 148 CVE vulnerabilities\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01U9MLoHujHAHgi9eRsUcycH",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 12.03.2026] https://habr.com/ru/articles/1009296 — Команда Anthropic прогнала Claude по кодовой базе Firefox и нашла 14 критических уязвимостей, о которых десятилетиями не подозревали, итого 22 CVE вошли в Firefox 148. ### 🎨 CSS [...] В этом выпуске — CodePen 2.0 и клон Loom на Next.js в видео; про AI: почему коллекция промптов не заменяет мышление, автоисследования на игровом PC и онбординг через Oncode. Безопасность в центре: Clinejection (4000 \n[Топ новостей инфобеза за апрель 2026 года - Habr] https://habr.com/ru/articles/1032178 — Какие, собственно, цифры? Из опубликованного в тот же день бюллетеня по безопасности свежей версии: в нём 41 CVE, три из них отмечены как найденные Claude. При этом в Firefox 148 51 CVE, 22 от Anthropic со 112 баг‑репортов — отрицательный рост от 5:1 к 90:1. Где уязвимости, Клодовски? [...] Скептики рассуждают, что пока наиболее вероятное объяснение — в Mozilla перешли на альтернативную метрическу\n[NVIDIA Nemotron, Claude фиксит Firefox, ИИ буллит ... - Habr] https://habr.com/ru/companies/timeweb/articles/1009630 — #### ❯ Claude нашёл 22 уязвимости в Firefox за две недели Исследователи из Anthropic прогнали Claude Opus 4.6 по кодовой базе Firefox. Просканировано около 6000 файлов на C++. Модель нашла 22 уязвимости и 14 критических. Все исправлены в Firefox 148. Первую ошибку типа use-after-free нашли за 20 минут. Дальше Mozilla распространила подход на всю кодовую базу, затем Claude нашёл ещё 90 багов. [...]\n[Иголка в стоге сена: как LLM помогают искать уязвимости - Habr] https://habr.com/ru/companies/bastion/articles/1034662 — Claude обнаружил уязвимость use-after-free примерно через 20 минут исследования, люди подтвердили находку, и команда отправила отчет в Bugzilla с патчем-кандидатом. Как только рабочий процесс доказал свою эффективность, его масштабировали. В итоге просканировали около 6000 файлов C++ и отправили 112 уникальных отчетов. Большинство исправлений вошло в Firefox 14"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01QXyvSh1ric7CzB4YAEjPEF",
+   "content": "[Adobe Flash Player] Adobe Flash Player (known in Internet Explorer, Firefox, and Google Chrome as Shockwave Flash) is a discontinued computer program for viewing multimedia content, executing rich Internet applications, and streaming audio and video content created on the Adobe Flash platform. It can run from a web browser as a browser plug-in or independently on supported devices. Originally created by FutureWave under the name FutureSplash Player, it was renamed to Macromedia Flash Player after Macromedia acquired FutureWave in 1996. After Adobe acquired Macromedia in 2005, it was developed and distributed by Adobe as Adobe Flash Player. It is currently developed and distributed by Zhongcheng for users in China, and by Harman International for enterprise users outside of China, in collaboration with Adobe. Flash Player runs SWF files that can be created using Adobe Flash Professional, Adobe Flash Builder, or third-party tools such as FlashDevelop. Flash Player supports video and raster graphics; vector graphics; 3D graphics; embedded audio; and an object-oriented scripting language called ActionScript, which is based on ECMAScript (similar to JavaScript). Internet Explorer 11 and Microsoft Edge Legacy since Windows 8, along with Google Chrome on all versions of Windows, came bundled with a sandboxed Adobe Flash Player plug-in. Flash Player once had a large user base, and was required to run many web games, animations, and graphical user interface (GUI) elements embedded in web pages. Adobe stated in 2013 that more than 400 million out of over 1 billion connected desktops updated to new versions of Flash Player within six weeks of release. However, Flash Player became increasingly criticized for poor performance, consumption of battery on mobile devices, the number of security vulnerabilities that had been discovered in the software, and its nature as a closed platform controlled by Adobe. Apple co-founder Steve Jobs was highly critical of Flash Player, having pub"
+  },
+  {
+   "role": "assistant",
+   "content": "Отлично! Я нашел информацию. Согласно статьям на Habr, когда команда Anthropic прогнала Claude по кодовой базе Firefox:\n\n- **Claude нашел 22 уязвимости** (CVE), которые вошли в Firefox 148\n- Из них **14 были критическими**\n- Claude обнаружил эти уязвимости за две недели исследования\n- Просканировано около 6000 файлов на C++\n- Отправлено 112 уникальных bug-репортов\n\nFINAL: 22 CVE",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

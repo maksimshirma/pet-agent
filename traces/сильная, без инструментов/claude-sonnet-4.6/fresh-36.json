@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "fresh-36",
+  "source": "fresh",
+  "question": "Сколько времени занимает генерация приложения в Spark?",
+  "answer": "~20 минут",
+  "evidence": "Spark за ~20 минут генерирует фронтенд, бэкенд, модель данных",
+  "page": "habr — статья про AI-агентов",
+  "url": "https://habr.com/ru/articles/1003526/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "FINAL: Около 2 минут",
+ "final": "Около 2 минут",
+ "correct": false,
+ "cost": 0.0022770000000000012,
+ "seconds": 3.6413195420027478,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Сколько времени занимает генерация приложения в Spark?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\": \"В документации Spark AR (или Apache Spark) нет стандартного параметра 'время генерации приложения'. Однако, судя по контексту, речь, скорее всего, идёт о Spark (платформа для создания AR-эффектов Meta/Facebook), где генерация/экспорт эффекта занимает около 2 минут.\", \"final\": \"Около 2 минут\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

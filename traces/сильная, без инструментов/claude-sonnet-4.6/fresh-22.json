@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "fresh-22",
+  "source": "fresh",
+  "question": "Какой бинарный формат для Linked Data опубликовал W3C?",
+  "answer": "CBOR-LD 1.0",
+  "evidence": "W3C опубликовал FPWD CBOR-LD 1.0",
+  "page": "Frontend Status #15",
+  "url": "https://habr.com/ru/articles/1032276/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "FINAL: HDT (Header Dictionary Triples)",
+ "final": "HDT (Header Dictionary Triples)",
+ "correct": false,
+ "cost": 0.0032909999999999953,
+ "seconds": 4.422613625007216,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Какой бинарный формат для Linked Data опубликовал W3C?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\": \"W3C опубликовал бинарный формат для Linked Data под названием EXI (Efficient XML Interchange), однако применительно именно к Linked Data/RDF — это HDT (Header Dictionary Triples). Но официально W3C опубликовал формат EXI для XML. Для RDF W3C стандартизировал RDF/EXI, но более известный бинарный формат для Linked Data от W3C — это HDT, представленный как Member Submission. Точнее, W3C опубликовал HDT (Header-Dictionary-Triples) как Member Submission в 2011 году.\", \"final\": \"HDT (Header Dictionary Triples)\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

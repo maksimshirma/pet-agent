@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "fresh-38",
+  "source": "fresh",
+  "question": "Какой инструмент решает проблему онбординга разработчиков?",
+  "answer": "Oncode",
+  "evidence": "Oncode решает одну из самых дорогих проблем в найме разработчиков — месяцы на онбординг",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "FINAL: Confluence",
+ "final": "Confluence",
+ "correct": false,
+ "cost": 4.8749999999986304e-05,
+ "seconds": 3.31591925000248,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Какой инструмент решает проблему онбординга разработчиков?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\":\"Инструмент, который часто используется для решения проблемы онбординга разработчиков, это документация и обучающие платформы, такие как Confluence или Notion.\",\"final\":\"Confluence\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

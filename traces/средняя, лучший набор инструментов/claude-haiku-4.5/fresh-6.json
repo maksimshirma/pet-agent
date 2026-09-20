@@ -1,0 +1,71 @@
+{
+ "task": {
+  "id": "fresh-6",
+  "source": "fresh",
+  "question": "Во сколько раз TanStack улучшил пропускную способность SSR?",
+  "answer": "5 раз",
+  "evidence": "TanStack улучшили производительность SSR в 5 раз",
+  "page": "Frontend Status #10",
+  "url": "https://habr.com/ru/articles/1015700/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "Отлично! Я нашел информацию. Согласно дайджесту на Habr от 27.03.2026:\n\n**TanStack улучшил пропускную способность SSR в 5 раз.**\n\nFINAL: 5 раз",
+ "final": "5 раз",
+ "correct": true,
+ "cost": 0.010832000000000008,
+ "seconds": 6.776781458000187,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Во сколько раз TanStack улучшил пропускную способность SSR?"
+  },
+  {
+   "role": "assistant",
+   "content": "Я не уверен, какой конкретный продукт или исследование TanStack вы имеете в виду. Давайте поищем информацию об улучшениях SSR (Server-Side Rendering) от TanStack.",
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "toolu_bdrk_01GpQU1mPpuuU7xisDvUHowi",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\": \"TanStack SSR пропускная способность улучшение\", \"max_results\": 5}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 1,
+     "id": "toolu_bdrk_01HTw8qK3sX4suHugRzx1rKT",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"TanStack SSR bandwidth improvement\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01GpQU1mPpuuU7xisDvUHowi",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 27.03.2026] https://habr.com/ru/articles/1015700 — ⚡ TypeScript 6.0, обновления безопасности Node.js, петиция против AI-кода в ядре Node.js и Kafka из Node.js по-взрослому. ⚛️ TanStack улучшил пропускную способность SSR в 5 раз, а Strawberry Browser переписал 130 000 строк с React на Svelte за две недели. 🅰️ Angular выпустила официальные скиллы для AI-агентов. 💚 Компоненты визуализации звука для Vue.js на Web Audio API. …и многое другое. ### 📺 Мед\n[Point0 — фулстек TypeScript-фреймворк на Bun и React, о котором я мечтал / Comments / Habr] https://habr.com/en/articles/1054310/comments — `fetch('/api/...')` Кстати, только сегодня доделал бенчмарки против Next.js и TanStack Start (там все цифры, скоро бует статья отдельная по бенчмаркам) Если коротко по скорости DX: HMR на клиенте у Point0 в 3 раза быстрее, чем у Next.js, и более чем в 10 раз быстрее, чем у TanStack Start (15 мс против 45 и 164), и етсь ещё преимущества, но и отставания тоже кое-где есть. [...] Ну у нас всё же не N\n[Эмиль Мустафин (bjlactelih) - Хабр Карьера] https://career.habr.com/bjlactelih — - Внедрил SSR для ключевых аналитических страниц — улучшил скорость первичной отрисовки - Оптимизировал CI/CD Docker BuildKit, кэширование зависимостей Инфоматика Казань Разработчик React+NodeJS Январь 2022 — Сентябрь 2024 (2 года и 9 месяцев) Проект: Digital Service Platform (Ticketing & Access Control) [...] Аналитический дашборд для мониторинга технологических процессов предприятия. Стек: Next.\n[Автоматическая виртуализация рендеринга произвольной вёрстки / Хабр] https://habr.com/ru/articles/537388 — Недавно я опубликовал статью, где рассказывал как можно ускорить Хабр раз в десять, отказавшись от SSR. Вырезаем SSR и ускоряем Хабр в 10 раз И там я собственно разобрал пример переписывания страницы дерева комментариев с применением виртуализации. ## Второй подопытный: Ченьжлог на GitLab На сей раз мы разберём новый кейс - страница коммита на GitLab. [...] Итог"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01HTw8qK3sX4suHugRzx1rKT",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": "Отлично! Я нашел информацию. Согласно дайджесту на Habr от 27.03.2026:\n\n**TanStack улучшил пропускную способность SSR в 5 раз.**\n\nFINAL: 5 раз",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

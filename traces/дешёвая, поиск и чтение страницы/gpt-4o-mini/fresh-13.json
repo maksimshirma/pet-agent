@@ -1,0 +1,193 @@
+{
+ "task": {
+  "id": "fresh-13",
+  "source": "fresh",
+  "question": "На скольких репозиториях обнаружены накрученные звёзды?",
+  "answer": "18 617",
+  "evidence": "более 6 миллионов фейковых отметок на 18 617 репозиториях",
+  "page": "Frontend Status #14",
+  "url": "https://habr.com/ru/articles/1028734/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "На данный момент известно, что на GitHub обнаружено более 4,5 миллионов фейковых оценок, однако точное количество репозиториев с накрученными звёздами не указано. FINAL: 4,5 миллиона фейковых оценок.",
+ "final": "4,5 миллиона фейковых оценок.",
+ "correct": false,
+ "cost": 0.001205700000000004,
+ "seconds": 15.050473541006795,
+ "steps": 9,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "На скольких репозиториях обнаружены накрученные звёзды?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_Yk5RIe8M3Hsg7nO4EjXqGZWP",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"накрученные звёзды на репозиториях\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_Yk5RIe8M3Hsg7nO4EjXqGZWP",
+   "content": "[утилита, которая определяет накрученные звёзды в GitHub ...] https://habr.com/ru/news/909184 — Автор StarGuard вдохновился исследователями Университета Карнеги — Меллона и компании Socket Inc, которые выяснили, что на GitHub есть более 4,5 млн фейковых оценок репозиториев. Злоумышленники создают фишинговые репозитории и накручивают звёзды. Также исследователи выяснили, что покупка фейковых оценок на специализированных площадках обойдётся в 0,1 доллара за одну звезду. [...] StarGuard позволя\n[Вышла StarGuard — утилита, которая определяет накрученные звёзды в GitHub-репозиториях / Комментарии / Хабр] https://habr.com/ru/news/909184/comments — Чтобы проверить репозиторий с 24 звёздами, сканирование заняло минуты (с обрывами и прерываниями)! Очевидно, если проверять репозитории с тысячами звёздами — уйдут часы, что собственно в issues кто-то уже и открыл жалобу. Какое же будет удивление пользователя (если он таки дождётся финала), когда вместо отчёта он получит \"репей в заднице мула\".! Очевидно, если проверять репозитории с тысячами звёз\n[210 тысяч звёзд за пять месяцев. Как отличить накрученный ...] https://habr.com/ru/articles/1045028 — Я было сделал вывод, что все звёзды накручены, — и ошибся. Накрутка здесь выборочная, не сплошная. Я сверил `anthropics/claude-code`: 131 тысяча звёзд, и это совпадает с внешним аудит-отчётом конца мая. Число настоящее. А вот `superpowers` со своими 220 тысячами, как-то сильно выделяется. Значит, правило не «звёзды врут всегда», а тоньше: у крупных, известных репозиториев, за которыми следят со ст\n[Теневой рынок GitHub звезд / Хабр] https://habr.com/ru/articles/1025032 — До 2022 года накрутка была нишевой историей — ею пользовались в основном откровенно скам-проекты, чтобы выглядеть легитимнее: варез, фишинговые утилиты, криптоботы, клоны популярных библиотек с вредоносной начинкой внутри. Звёзды тут играли роль социального доказательства: если у репозитория 5 тысяч stars, его скорее скачают и запустят без лишних вопросов. [...] Оказы"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_53bgj3QDnkLR4hdZTJybkxCi",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\":\"Вышла StarGuard — утилита, которая определяет накрученные звезды в GitHub-репозиториях\",\"keywords\":\"накрученные звёзды\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_53bgj3QDnkLR4hdZTJybkxCi",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_2c1SmftX0OBST6PjcmzhRH86",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\":\"Теневой рынок GitHub звезд\",\"keywords\":\"накрученные звёзды\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_2c1SmftX0OBST6PjcmzhRH86",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_NAUWI57ebLM2o5vy6WYgkcwD",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\":\"210 тысяч звёзд за пять месяцев. Как отличить накрученный ...\",\"keywords\":\"накрученные звёзды\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_NAUWI57ebLM2o5vy6WYgkcwD",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_0T8fPQPAoUGtJ6aYc35od567",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\":\"утилита, которая определяет накрученные звёзды в GitHub\",\"keywords\":\"репозитории\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_0T8fPQPAoUGtJ6aYc35od567",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_Wj2E7cciRp97VclyOIZVPRLr",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"сколько репозиториев с накрученными звёздами\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_Wj2E7cciRp97VclyOIZVPRLr",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_Wp0oQXoVbxLZ5pcQ54orQle0",
+     "function": {
+      "name": "web_search_ru",
+      "arguments": "{\"query\":\"сколько репозиториев с накрученными звёздами\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_Wp0oQXoVbxLZ5pcQ54orQle0",
+   "content": "No data"
+  },
+  {
+   "role": "user",
+   "content": "Инструменты больше недоступны. Ответь по тому, что уже известно, последней строкой FINAL: <ответ>."
+  },
+  {
+   "role": "assistant",
+   "content": "На данный момент известно, что на GitHub обнаружено более 4,5 миллионов фейковых оценок, однако точное количество репозиториев с накрученными звёздами не указано. FINAL: 4,5 миллиона фейковых оценок.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

@@ -1,0 +1,71 @@
+{
+ "task": {
+  "id": "fresh-21",
+  "source": "fresh",
+  "question": "Какой API опубликован как First Public Working Draft в мае 2026?",
+  "answer": "Long Animation Frames API",
+  "evidence": "First Public Working Draft: Long Animation Frames API",
+  "page": "Frontend Status #15",
+  "url": "https://habr.com/ru/articles/1032276/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "Отлично! Я нашел ответ. Согласно информации из дайджеста Frontend Status от 06.05.2026 на Habr, в мае 2026 года был опубликован **Long Animation Frames API** как First Public Working Draft.\n\nLong Animation Frames API позволяет обнаруживать длительные анимационные кадры, блокирующие UI-поток, что помогает оптимизировать производительность веб-страниц и предотвращать задержки в выполнении критических задач. Это развитие идеи Long Tasks API.\n\nFINAL: Long Animation Frames API",
+ "final": "Long Animation Frames API",
+ "correct": true,
+ "cost": 0.011230999999999991,
+ "seconds": 8.2662234169984,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какой API опубликован как First Public Working Draft в мае 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": "Я помогу вам найти информацию об API, который был опубликован как First Public Working Draft в мае 2026.",
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "toolu_bdrk_01H9HD3bmGBrqDoRDYxboro5",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\": \"First Public Working Draft API май 2026\", \"max_results\": 5}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 1,
+     "id": "toolu_bdrk_01HpfPvaKcE3wL4dYeyFDVkJ",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"First Public Working Draft API May 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01H9HD3bmGBrqDoRDYxboro5",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 06.05.2026] https://habr.com/ru/articles/1032276 — `<search>` `isWellFormed()` `toWellFormed()` `element.ariaPressed` `aria-labelledby` First Public Working Draft: Long Animation Frames API. Long Animation Frames API позволяет обнаруживать длительные анимационные кадры, блокирующие UI-поток. Это помогает оптимизировать производительность веб-страниц, предотвращая задержки в выполнении критических задач. Это развитие идеи Long Tasks API. [...] Иног\n[Финальная битва за календари. Первая битва за контекст для ИИ / Habr] https://habr.com/ru/amp/publications/1084412 — В мае — июле 2026 года Google внедрил протокол MCP (Model Context Protocol), чтобы сторонний ИИ‑агент мог одной командой получить доступ и к таблице, и к письму, минуя сложную интеграцию разных SDK. Google активно стандартизирует свои API под «инструменты для агентов» (Agent Tools). Платформа Apigee превращена в центральный узел управления доступами ИИ‑агентов к корпоративным данным, и обновил кво\n[React stack 2026: карта лучших библиотек по категориям - Habr] https://habr.com/ru/articles/1032830 — `contenteditable` Первые попытки — TinyMCE (2004), CKEditor (2003). Работали, но тяжёлые, неинтегрированные с React. В 2016 Facebook открыл Draft.js — первый serious React rich editor. Использовался в Facebook комментариях, Instagram captions. Но API был громоздким, extend — сложно. Meta прекратил поддержку в 2022. [...] Редакторы с форматированием, таблицами, изображениями, collaborative editing.\n[Saint HighLoad++ 2026: как крупный ИТ осваивает ИИ / Хабр] https://habr.com/ru/companies/oleg-bunin/articles/1053550 — Consilium – совет экспертов. Собирать можно в начале или в других реперных точках: api-designer, architect, devops, secirity и другие обсуждают задачу и дальше получается результат – задание, которое агенты делают индивидуально. Например, есть задача «добавь экран оплат» – собираете консилиум, они обсуждают и делают промпт – крутое ТЗ, план работы. Там"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01HpfPvaKcE3wL4dYeyFDVkJ",
+   "content": "[Microdata (HTML)] Microdata is a part of the WHATWG HTML specification that defines how to include metadata within existing web page content. Search engines, web crawlers, and browsers can extract and process Microdata from a web page and use it to provide a richer browsing experience for users. Search engines benefit greatly from direct access to Microdata because it allows them to understand the information on web pages and provide more relevant results to users. Microdata uses a supporting vocabulary to describe an item and name-value pairs to assign values to its properties. Microdata is an attempt to provide a simpler way of annotating HTML elements with machine-readable tags than the similar approaches of using RDFa and microformats. In 2013, because the W3C HTML Working Group failed to find someone to serve as an editor for the Microdata HTML specification, its development was terminated with a 'Note'. However, since that time, two new editors were selected, and five newer versions of the working draft have been published, the most recent being Working Draft 26 April 2018."
+  },
+  {
+   "role": "assistant",
+   "content": "Отлично! Я нашел ответ. Согласно информации из дайджеста Frontend Status от 06.05.2026 на Habr, в мае 2026 года был опубликован **Long Animation Frames API** как First Public Working Draft.\n\nLong Animation Frames API позволяет обнаруживать длительные анимационные кадры, блокирующие UI-поток, что помогает оптимизировать производительность веб-страниц и предотвращать задержки в выполнении критических задач. Это развитие идеи Long Tasks API.\n\nFINAL: Long Animation Frames API",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

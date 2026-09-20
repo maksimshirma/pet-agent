@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "fresh-0",
+  "source": "fresh",
+  "question": "С какой даты максимальный срок жизни TLS-сертификатов сократился до 200 дней?",
+  "answer": "15 марта 2026",
+  "evidence": "Веб-индустрия сокращает максимальный срок жизни TLS-сертификатов — с 15 марта 2026 года лимит падает с 398 до 200 дней",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "FINAL: 15 марта 2026 года",
+ "final": "15 марта 2026 года",
+ "correct": true,
+ "cost": 0.002016,
+ "seconds": 2.721024667000165,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "С какой даты максимальный срок жизни TLS-сертификатов сократился до 200 дней?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\": \"С 15 марта 2026 года максимальный срок действия TLS-сертификатов сократится до 200 дней согласно решению CA/Browser Forum (голосование SC-081). Это изменение вступает в силу 15 марта 2026 года.\", \"final\": \"15 марта 2026 года\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "fresh-21",
+  "source": "fresh",
+  "question": "Какой API опубликован как First Public Working Draft в мае 2026?",
+  "answer": "Long Animation Frames API",
+  "evidence": "First Public Working Draft: Long Animation Frames API",
+  "page": "Frontend Status #15",
+  "url": "https://habr.com/ru/articles/1032276/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "FINAL: Неизвестно",
+ "final": "Неизвестно",
+ "correct": false,
+ "cost": 5.039999999997824e-05,
+ "seconds": 1.6222522089956328,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Какой API опубликован как First Public Working Draft в мае 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\":\"На данный момент нет информации о том, какой API был опубликован как First Public Working Draft в мае 2026 года, так как данная дата находится в будущем.\",\"final\":\"Неизвестно\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

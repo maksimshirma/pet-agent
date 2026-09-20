@@ -1,0 +1,193 @@
+{
+ "task": {
+  "id": "fresh-41",
+  "source": "fresh",
+  "question": "Кто ошибался в CSS Anchor Positioning?",
+  "answer": "Крис Койер",
+  "evidence": "Крис Койер ошибался в CSS Anchor Positioning!",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "Основываясь на найденной информации из статьи \"Идеально размещённые тултипы: база\" на Хабре, там описывается проблема с CSS Anchor Positioning, где автор пытался использовать `anchor(--anchor center)` вместо `50%` для позиционирования тултипа относительно якоря, но \"Упс — не сработало\".\n\nОднако в поисковых результатах не было четко указано имя конкретного человека, который ошибался в CSS Anchor Positioning. Статья упоминает \"коварные проблемы Anchor Positioning\" как общую проблему, а также упоминается Темани Афиф (Temani Afif), который показывал примеры работы с CSS Anchor Positioning на Frontend Masters.\n\nК сожалению, из доступной информации я не могу точно определить, кто конкретно ошибался в CSS Anchor Positioning - это могла быть демонстрация частой ошибки при использовании этого API.\n\nFINAL: Невозможно определить конкретное имя из доступных источников. В статьях упоминается как общая проблема, а Темани Афиф показывал примеры использования CSS Anchor Positioning, но не описан как ошибающийся.",
+ "final": "Невозможно определить конкретное имя из доступных источников. В статьях упоминается как общая проблема, а Темани Афиф показывал примеры использования CSS Anchor Positioning, но не описан как ошибающийся.",
+ "correct": false,
+ "cost": 0.06525099999999995,
+ "seconds": 33.276607374995365,
+ "steps": 9,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Кто ошибался в CSS Anchor Positioning?"
+  },
+  {
+   "role": "assistant",
+   "content": "Я помогу вам найти информацию об ошибках в CSS Anchor Positioning.",
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "toolu_bdrk_01VLKEH2ebuhosUg32NjDgTU",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\": \"CSS Anchor Positioning ошибка\", \"max_results\": 5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01VLKEH2ebuhosUg32NjDgTU",
+   "content": "[CSS в 2026 году: где JavaScript уже не обязателен / Хабр] https://habr.com/ru/companies/vk/articles/1080386 — Тултипы, меню и превью обычно должны появляться рядом с конкретным элементом: кнопкой, аватаром, полем ввода. Раньше для этого часто считали координаты через JS, следили за прокруткой, изменением размеров окна и выходом элемента за границы экрана. CSS Anchor Positioning позволяет связать всплывающий элемент с якорем и описать позицию декларативно. `.trigger { anchor-name: --menu-trigger; } .menu {\n[CSS — Каскадные таблицы стилей / Хабр - Habr] https://habr.com/ru/hubs/css/articles/page9?hl=ru_RU&fl=en&mobile=no — Очень вероятно, что эти HTML- и CSS-ошибки есть в вашем коде ... CSS Anchor Positioning API. Средний. 10 мин. 7.9K ... CSS-медиазапросы без min- и max-. Как\n[CSS — Каскадные таблицы стилей / Хабр - Habr] https://habr.com/ru/hubs/css/articles/page9?fl=en — От CSS до Canvas и звука: анимируем что угодно с GSAP ... Очень вероятно, что эти HTML- и CSS-ошибки есть в вашем коде ... CSS Anchor Positioning API. Средний. 10\n[Frontend Status: свежий дайджест фронтенда и AI — 03.04.2026 / Хабр] https://habr.com/ru/articles/1018828 — Темани Афиф на Frontend Masters показал, как CSS Anchor Positioning позволяет связать два произвольных элемента стрелкой — с позицией, формой, измерением расстояния между ними и реакцией на сближение — всё без JavaScript (кроме drag). Ключевой трюк: `inset: min(anchor(--c1 inside), anchor(--c2 inside))` строит минимальный прямоугольник вокруг обоих элементов, который двигается вместе с ними. Дальш\n[CSS — Каскадные таблицы стилей / Хабр] https://habr.com/ru/hubs/css/articles/page10 — Очень вероятно, что эти HTML- и CSS-ошибки есть в вашем коде. Средний. 6 мин. 22K. Туториал. +64 ... CSS Anchor Positioning API. Средний. 10 мин. 8K. Обзор. +10."
+  },
+  {
+   "role": "assistant",
+   "content": "Найдено общее описание CSS Anchor Positioning. Давайте поищем более конкретную информацию об ошибке или проблеме с этим свойством.",
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "toolu_bdrk_011KR41sYtZvAeg8qqMhiRep",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\": \"CSS Anchor Positioning ошибка баг проблема\", \"max_results\": 5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_011KR41sYtZvAeg8qqMhiRep",
+   "content": "[Идеально размещённые тултипы: база - Habr] https://habr.com/ru/articles/965066 — Мы упираемся в одну из самых коварных проблем Anchor Positioning. В теории любой элемент на странице может быть якорем через `anchor-name`, а любой другой элемент — позиционироваться относительно этого якоря. В этом и смысл всей фичи. Но есть исключения, когда элемент не может сослаться на якорь. `anchor-name` [...] Я заменяю `50%`, которое ссылается на центр самого тултипа, на `anchor(--anchor ce\n[CSS — Каскадные таблицы стилей / Хабр] https://habr.com/ru/hubs/css/articles/page10 — На HTML и CSS очень сложно сделать критическую ошибку. Чтобы интерфейс не заработал. Но всё же я собрал список. Я постарался выделить только критические ошибки. Конечно, это субъективный список, поэтому не знаю, согласитесь ли вы с ним. Давайте посмотрим, что я вам подготовил. ## CSS Anchor Positioning API Большой обзор нового API для позиционирования элементов в CSS. [...] не уходит, она лишь изм\n[Frontend Status: свежий дайджест фронтенда и AI — 03.04.2026] https://habr.com/ru/articles/1018828 — 🎨 CSS Anchor Positioning: два круга, стрелка и ноль строк JS от Темани Афифа. ⚛️ Storybook MCP для React, `data-testid` как признак недоступности и пошаговые туры через React Joyride. `data-testid` 👁️ Vue Devtools не работает в продакшене? QA-инженер написал свой инспектор. 🌎 Chrome 147 с scoped view transitions, Safari TP 240 и дайджест веб-платформы за март. 🖌️ Осмысленное трение в UX, ARIA-роли\n[CSS в 2026 году: где JavaScript уже не обязателен - Habr] https://habr.com/ru/companies/vk/articles/1080386 — Тултипы, меню и превью обычно должны появляться рядом с конкретным элементом: кнопкой, аватаром, полем ввода. Раньше для этого часто считали координаты через JS, следили за прокруткой, изменением размеров окна и выходом элемента за границы экрана. CSS Anchor Positioning позволяет связать всплывающий элемент с якорем и описать позицию декларативно. `.trigger { anchor-name: --menu-trigger; } .menu {\n[Вышел Chrome "
+  },
+  {
+   "role": "assistant",
+   "content": "Отлично! Нашел статью про проблему Anchor Positioning. Давайте посмотрим подробнее о тултипах и ошибке.",
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "toolu_bdrk_01EeJorwYckFxQwmSWwEWR4Q",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\": \"\\\"Идеально размещённые тултипы: база\\\" Anchor Positioning ошибка якорь\", \"max_results\": 5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01EeJorwYckFxQwmSWwEWR4Q",
+   "content": "[Идеально размещённые тултипы: база - Habr] https://habr.com/ru/articles/965066 — Я заменяю `50%`, которое ссылается на центр самого тултипа, на `anchor(--anchor center)`, то есть на центр якорного элемента. `50%` `anchor(--anchor center)` Функция `anchor()` — ещё одна классная фича Anchor Positioning. Она позволяет получить координату из любого anchor-элемента и использовать её, чтобы позиционировать абсолютно позиционированный элемент. `anchor()` Упс — не сработало. Но я спец\n[Идеально размещённые тултипы: по углам - Habr] https://habr.com/ru/articles/972190 — Обратите внимание, что для управления зазором между тултипом и якорем я использую margin , а не inset . Оба варианта корректны, но позже вы\n[CSS в 2026 году: где JavaScript уже не обязателен - Habr] https://habr.com/ru/companies/vk/articles/1080386 — Тултипы, меню и превью обычно должны появляться рядом с конкретным элементом: кнопкой, аватаром, полем ввода. Раньше для этого часто считали координаты через JS, следили за прокруткой, изменением размеров окна и выходом элемента за границы экрана. CSS Anchor Positioning позволяет связать всплывающий элемент с якорем и описать позицию декларативно. `.trigger { anchor-name: --menu-trigger; } .menu {\n[Новинки CSS и UI: I/O 2023 / Хабр] https://habr.com/ru/articles/741914 — Для решения этой проблемы интерфейс позиционирования якоря предоставляет возможность кастомизации резервных (fallback) позиций. В следующем примере создается резервная позиция \"top-then-bottom\". Браузер сначала попытается позиционировать тултип сверху, а если он не помещается в область просмотра, браузер помещает его под элемент-якорь. [...] ### Позиционирование якоря Поповеры часто используются в\n[CSS Anchor Positioning API - Habr] https://habr.com/ru/articles/929564 — Для базового позиционирования при помощи Anchor Positioning API нам нужно всего лишь 2 элемента: статический (относительно которого происходит"
+  },
+  {
+   "role": "assistant",
+   "content": "Давайте возьмем полный текст статьи про тултипы, чтобы найти конкретную информацию об ошибке.",
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "toolu_bdrk_01SKjSy1ukXaiP3uZo3K1cxg",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\": \"Идеально размещённые тултипы: база\", \"keywords\": \"ошибка баг проблема якорь\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01SKjSy1ukXaiP3uZo3K1cxg",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": "Попробуем другой подход - поищем более конкретно про ошибку в Anchor Positioning:",
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "toolu_bdrk_01X3m773tHb63Q7B8udTZzR6",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\": \"CSS Anchor Positioning Chrome ошибка баг Firefox Safari\", \"max_results\": 5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01X3m773tHb63Q7B8udTZzR6",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 03.04.2026] https://habr.com/ru/articles/1018828 — 🎨 CSS Anchor Positioning: два круга, стрелка и ноль строк JS от Темани Афифа. ⚛️ Storybook MCP для React, `data-testid` как признак недоступности и пошаговые туры через React Joyride. `data-testid` 👁️ Vue Devtools не работает в продакшене? QA-инженер написал свой инспектор. 🌎 Chrome 147 с scoped view transitions, Safari TP 240 и дайджест веб-платформы за март. 🖌️ Осмысленное трение в UX, ARIA-роли\n[Настройка Firefox в Linux - Habr] https://habr.com/ru/articles/459880 — image image image image image image image image image image image image image image image image image image image image image image image image image image image image image image image image image image ### Неправильное отображение современных сайтов Пользователь Хабр Карьера Курсы ## Реальные истории IT‑найма 2026 Привет, Хабр! (И тебе, IT-шник, который хочет узнать, что вообще происходит с найм"
+  },
+  {
+   "role": "assistant",
+   "content": "Попробуем поиск на английской Википедии:",
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "toolu_bdrk_01KHFPuQLPHnvdVp4pn9Eh9L",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"CSS Anchor Positioning error bug\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01KHFPuQLPHnvdVp4pn9Eh9L",
+   "content": "[CSS] Cascading Style Sheets (CSS) is a style sheet language used for specifying the presentation and styling of a document written in a markup language, such as HTML or XML (including XML dialects such as SVG, MathML, or XHTML). CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript. CSS is designed to enable the separation of content and presentation, including layout, colors, and fonts. This separation can improve content accessibility, since the content can be written without concern for its presentation; provide more flexibility and control in the specification of presentation characteristics; enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file, which reduces complexity and repetition in the structural content; and enable the .css file to be cached to improve the page load speed between the pages that share the file and its formatting. Separation of formatting and content also makes it feasible to present the same markup page in different styles for different rendering methods, such as on-screen, in print, by voice (via speech-based browser or screen reader), and on Braille-based tactile devices. CSS also has rules for alternative formatting if the content is accessed on a mobile device. The name cascading comes from the specified priority scheme to determine which declaration applies if more than one declaration of a property match a particular element. This cascading priority scheme is predictable. The CSS specifications are maintained by the World Wide Web Consortium (W3C). Internet media type (MIME type) text/css is registered for use with CSS by RFC 2318 (March 1998). The W3C operates a free CSS validation service for CSS documents. In addition to HTML, other markup languages support the use of CSS including XHTML, plain XML, SVG, and XUL. CSS is also used in the GTK widget toolkit."
+  },
+  {
+   "role": "assistant",
+   "content": "Википедия не содержит конкретной информации об ошибке. Давайте поищем более конкретно на Хабре:",
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "toolu_bdrk_01Ci39EzYAUWMEWavZvy5516",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\": \"\\\"Anchor Positioning\\\" \\\"Хабр\\\" ошибка кто ошибался\", \"max_results\": 5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01Ci39EzYAUWMEWavZvy5516",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 03.04.2026] https://habr.com/ru/articles/1018828 — Темани Афиф на Frontend Masters показал, как CSS Anchor Positioning позволяет связать два произвольных элемента стрелкой — с позицией, формой, измерением расстояния между ними и реакцией на сближение — всё без JavaScript (кроме drag). Ключевой трюк: `inset: min(anchor(--c1 inside), anchor(--c2 inside))` строит минимальный прямоугольник вокруг обоих элементов, который двигается вместе с ними. Дальш\n[Habr.com - Дзен] https://u.habr.com/habr20_habr_socials_dz — If you have any problems, please use the feedback form 9440002038974019168:1789934435\n[Валентин Климахин (soshroom) — Хабр Карьера - Habr] https://career.habr.com/soshroom — О сервисеУслуги и цены Помощь Для соискателяДля работодателяAPI сервисаСлужба поддержки Все сервисы Хабра ХабрQ&AКарьераКурсы [...] — Участвовал в согласовании API-контрактов, форматов запросов и ответов и сценариев обработки ошибок. — Реализовывал асинхронные интеграционные процессы через RabbitMQ. — Работал с PostgreSQL: схемы данных, SQL-запросы, индексы и оптимизация производительности. — Разр\n[Журнал — Хабр Карьера] https://career.habr.com/journal — Ребёнок говорит: «Мам, пап, я хочу быть программистом» — и родители пугаются. Одни в спешке гуглят курсы и сравнивают отзывы на три школы сразу. Другие осторожничают: «подрастёшь — разберёмся». Обе реакции понятны, но обе промахиваются мимо главного. Если записать ребёнка на курс, не зная, что ему интересно, можно зря потратить деньги и отбить желание учиться. Да и ждать в быстро меняющейся сфере \n[Работа и свежие вакансии для IT специалистов ... - Хабр Карьера] https://career.habr.com/vacancies — Все сервисы Хабра Сообщество IT-специалистовОтветы на любые вопросы об ITПрофессиональное развитие в ITОбучение для смены профессии, роста в карьере и саморазвития Войти через Хабр АккаунтЗарегистрироваться Войти через Хабр АккаунтЗарегистрироваться ВакансииСпециалистыКурсы и обучениеЭкспертыКомпан"
+  },
+  {
+   "role": "user",
+   "content": "Инструменты больше недоступны. Ответь по тому, что уже известно, последней строкой FINAL: <ответ>."
+  },
+  {
+   "role": "assistant",
+   "content": "Основываясь на найденной информации из статьи \"Идеально размещённые тултипы: база\" на Хабре, там описывается проблема с CSS Anchor Positioning, где автор пытался использовать `anchor(--anchor center)` вместо `50%` для позиционирования тултипа относительно якоря, но \"Упс — не сработало\".\n\nОднако в поисковых результатах не было четко указано имя конкретного человека, который ошибался в CSS Anchor Positioning. Статья упоминает \"коварные проблемы Anchor Positioning\" как общую проблему, а также упоминается Темани Афиф (Temani Afif), который показывал примеры работы с CSS Anchor Positioning на Frontend Masters.\n\nК сожалению, из доступной информации я не могу точно определить, кто конкретно ошибался в CSS Anchor Positioning - это могла быть демонстрация частой ошибки при использовании этого API.\n\nFINAL: Невозможно определить конкретное имя из доступных источников. В статьях упоминается как общая проблема, а Темани Афиф показывал примеры использования CSS Anchor Positioning, но не описан как ошибающийся.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

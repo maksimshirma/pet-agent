@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "fresh-49",
+  "source": "fresh",
+  "question": "С какого заседания TC39 опубликован отчёт про ES2026?",
+  "answer": "113-го заседания",
+  "evidence": "Официальный отчёт PDF со 113-го заседания TC39",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "Отлично! Я нашел информацию. Согласно поиску, отчёт ES2026 был опубликован со **113-го заседания TC39**.\n\nFINAL: 113-го заседания TC39",
+ "final": "113-го заседания TC39",
+ "correct": true,
+ "cost": 0.01002000000000014,
+ "seconds": 6.041064083008678,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "С какого заседания TC39 опубликован отчёт про ES2026?"
+  },
+  {
+   "role": "assistant",
+   "content": "Я поищу информацию об отчёте ES2026 и заседании TC39, где он был опубликован.",
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "toolu_bdrk_019VuQpCaUYUJdZ5pCryoZWN",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\": \"ES2026 отчёт TC39 заседание опубликован\", \"max_results\": 5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_019VuQpCaUYUJdZ5pCryoZWN",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 12.03.2026] https://habr.com/ru/articles/1009296 — Официальный отчёт PDF со 113-го заседания TC39, посвящённый стандартизации ECMAScript — процесс стандартизации ECMAScript идёт по графику, ES2026 выйдет летом, а состав редакторов усилился для подготовки к будущим версиям. ### 🌎 Браузеры Google Chrome переходит на двухнедельные релизы с сентября 2026 — в целом это вся новость! [...] и подводный камень Anchor Positioning; в JS — когда пора переходи\n[Temporal: долгий процесс решения проблемы времени в JavaScript] https://habr.com/ru/companies/ruvds/articles/1009494 — Philip Chimento on the microphone requesting consensus for Temporal Stage 4 at plenary Temporal TC39 Champions at plenary, having achieved consensus! Left to right: Jason Williams, Justin Grant, Philip Chimento, Richard Gibson, Shane Carr, Adam Shaw Temporal уже достиг Этапа 4 в процессе подготовки TC39, то есть он станет частью следующей ежегодной спецификации ECMAScript (ES2026). Но вам не нужно\n[Temporal: 9-летний путь к исправлению времени в JavaScript - Habr] https://habr.com/ru/articles/1009474 — Ранее Temporal достиг 4-го этапа в процессе подготовки TC39, и это означает, что он будет частью следующей ежегодной спецификации ECMAScript (ES2026). Однако вам не нужно ждать этого — вы можете использовать его уже сегодня! Поддержка Temporal уже реализована в следующих средах: Firefox v139 (с мая 2025 г.) Chrome v144 (с января 2026 г.); Edge v144 (с января 2026 г.); TypeScript 6.0 Beta (с феврал"
+  },
+  {
+   "role": "assistant",
+   "content": "Отлично! Я нашел информацию. Согласно поиску, отчёт ES2026 был опубликован со **113-го заседания TC39**.\n\nFINAL: 113-го заседания TC39",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

@@ -1,0 +1,123 @@
+{
+ "task": {
+  "id": "fresh-18",
+  "source": "fresh",
+  "question": "Какая версия SvelteKit получила поддержку TypeScript 6.0?",
+  "answer": "2.56",
+  "evidence": "TypeScript 6.0 в SvelteKit 2.56",
+  "page": "Frontend Status #15",
+  "url": "https://habr.com/ru/articles/1032276/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "Поддержка TypeScript 6.0 была добавлена в SvelteKit версии 2.56. \n\nFINAL: 2.56",
+ "final": "2.56",
+ "correct": true,
+ "cost": 0.0008164499999999963,
+ "seconds": 11.38927691700519,
+ "steps": 5,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какая версия SvelteKit получила поддержку TypeScript 6.0?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_XGHDPOzZUz4cb9Dy9B9WuFHU",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"SvelteKit TypeScript 6.0 поддержка\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_XGHDPOzZUz4cb9Dy9B9WuFHU",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 06.05.2026] https://habr.com/ru/articles/1032276 — ### 𝐒 Svelte Майский ченджлог Svelte: TypeScript 6.0 в SvelteKit 2.56, breaking changes в remote-функциях (разрешения на refresh, стабильный кеш, run()), community add-ons в sv CLI и попадание в ThoughtWorks Technology Radar. ### 🦮 A11y Доступность в React: распространённые ошибки и как их исправить: практический разбор типичных ошибок доступности в React-интерфейсах (семантика, формы, управление \n[TypeScript vs JavaScript в 2026: почему TS обогнал JS и что это ...] https://habr.com/ru/companies/netologyru/articles/1042346 — Рич Харрис, создатель фронтенд-фреймворка Svelte, перевёл ядро с .ts на JSDoc, сохранив проверку типов. «Типы великолепны, но TypeScript иногда усложняет процесс. Как только вы используете .ts-файл, вам нужен тулчейн для его поддержки». Разница важна: для библиотек лишний шаг сборки — это реальная проблема, для приложений — почти неизбежность. [...] Angular с 2016 года полностью написан на TypeScr\n[Главные игроки экосистемы JavaScript по состоянию на 2026 год] https://habr.com/ru/articles/1021182 — #### Экосистема Svelte Svelte уверенно движется вперед с версией 5. Это было крупное обновление в мире Svelte, включающее так называемый “Rune API”, который полностью изменил принцип работы реактивности, сделав ее более “мелкозернистой”, как они говорят, а значит, более эффективной и быстрой. Честно говоря, я не так уж много знаю о Svelte или SvelteKit, за исключением того, что они тоже являются ч\n[Фронтенд 2026: что умерло, что выжило и что взлетело ... - Habr] https://habr.com/ru/companies/alfa/articles/990118 — №5. TypeScript 6.0+ — ещё меньше ручных аннотаций. ## Почему так происходит? 1. Всеобщая мобильность и разнообразие устройств [...] Согласно опросу Stack Overflow Developer Survey 2024, более 55% разработчиков, идентифицирующих себя как «Frontend», также регулярно работают с бэкендом (API, базы данных). Этот тренд подпитывается фреймворками "
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_8o7ZbP3NzEvLoeesUBA77rib",
+     "function": {
+      "name": "web_search_ru",
+      "arguments": "{\"query\":\"SvelteKit TypeScript 6.0\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_8o7ZbP3NzEvLoeesUBA77rib",
+   "content": "[Svelte] Svelte — свободный и открытый компонентный фронтенд-фреймворк и язык программирования, созданный Ричем Харрисом и поддерживаемый основной командой Svelte. Svelte — не монолитная библиотека JavaScript, импортируемая приложениями. Вместо этого Svelte компилирует HTML-шаблоны в специализированный код, который напрямую манипулирует DOM, что позволяет уменьшить размер передаваемых файлов и повысить производительность на стороне клиента. Код приложения также обрабатывается компилятором, который вставляет вызовы для автоматического пересчёта данных и повторной отрисовки элементов пользовательского интерфейса при изменении данных, от которых они зависят. Это также позволяет избежать накладных расходов, связанных с промежуточными представлениями во время выполнения (runtime), такими как виртуальный DOM, в отличие от традиционных фреймворков (таких как React и Vue.js), которые выполняют основную часть своей работы во время выполнения, то есть в браузере. Сам компилятор написан на JavaScript. Его исходный код распространяется под лицензией MIT и размещён на GitHub. Среди сопоставимых фронтенд-библиотек Svelte имеет один из самых маленьких размеров итоговой сборки (bundle) — всего 2 КБ."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_zeuQJcR7q4Pzexteg9p7kPyM",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"SvelteKit 2.56 TypeScript 6.0\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_zeuQJcR7q4Pzexteg9p7kPyM",
+   "content": "[Android version history] The version history of the Android mobile operating system began with the public release of its first beta on November 5, 2007. The first commercial version, Android 1.0, was released on September 23, 2008. The operating system has been developed by Google on a yearly schedule since at least 2011. New major releases are usually announced at Google I/O in May, along with beta testing, with the stable version released to the public between August and October. From 2025, new versions were announced in the first quarter and shipped in the second quarter."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_eC6DUA3DMU90ypMxNhn80feX",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"SvelteKit 2.56 поддержка TypeScript 6.0\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_eC6DUA3DMU90ypMxNhn80feX",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 06.05.2026] https://habr.com/ru/articles/1032276 — ### 𝐒 Svelte Майский ченджлог Svelte: TypeScript 6.0 в SvelteKit 2.56, breaking changes в remote-функциях (разрешения на refresh, стабильный кеш, run()), community add-ons в sv CLI и попадание в ThoughtWorks Technology Radar. ### 🦮 A11y Доступность в React: распространённые ошибки и как их исправить: практический разбор типичных ошибок доступности в React-интерфейсах (семантика, формы, управление \n[Интернет-магазин XCOM-SHOP] https://u.habr.com/busines_bundle_xcom_shop — main_slide_1272282 main_slide_1255925 main_slide_1255923 main_slide_1255926 main_slide_1249637 main_slide_1277484 main_slide_1272191 main_slide_1269472 main_slide_1265898 main_slide_1275552 main_slide_1157630 main_slide_1238358 main_slide_1182631 main_slide_41871 # Интернет-магазин компьютеров и компьютерных комплектующих Популярные категории [...] Корзина Сравнение Избранное Конфигураторы Бренды \n[Работа и свежие вакансии для IT специалистов ... - Хабр Карьера] https://career.habr.com/vacancies — #### Зарплата не указана Похожие специалисты получают 90 000 - 130 000 ₽ Middle Можно удалённо LinuxPostgreSQLТехническая поддержкаZabbixSQLOracleDockerBashNginxPython Откликнуться Directum 4.62 Fullstack-разработчик (React, .Net) #### Зарплата не указана Похожие специалисты получают 280 000 - 363 000 ₽ Senior Можно удалённо React.NET CoreC# Откликнуться ИнфоТеКС 4.09 Интеграционный архитектор ###\n[Комплексные IT-решения для бизнеса | Обслуживание IT ...] https://u.habr.com/jetweb — Телеграм-чат Подробнее Защита АСУ ТП от APT‑атак как часть стратегии киберустойчивости ### Защита АСУ ТП от APT‑атак как часть стратегии киберустойчивости Исследование Подробнее Обзор рынка информационной безопасности 2024 ### Обзор рынка информационной безопасности 2024 Обзор Подробнее Анализ ландшафта угроз кибербезопасности 2024 ### Анализ ландшафта угроз кибербезопасности 2024 Исследование [..\n[Журнал — Хабр Карьера] https:"
+  },
+  {
+   "role": "assistant",
+   "content": "Поддержка TypeScript 6.0 была добавлена в SvelteKit версии 2.56. \n\nFINAL: 2.56",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

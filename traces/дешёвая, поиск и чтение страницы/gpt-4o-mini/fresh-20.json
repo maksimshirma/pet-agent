@@ -1,0 +1,79 @@
+{
+ "task": {
+  "id": "fresh-20",
+  "source": "fresh",
+  "question": "Какой новый элемент добавлен в Baseline апрель 2026?",
+  "answer": "<search>",
+  "evidence": "элемент `<search>`",
+  "page": "Frontend Status #15",
+  "url": "https://habr.com/ru/articles/1032276/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "В Baseline апреля 2026 года был добавлен новый HTML-элемент `<search>`. FINAL: <search>",
+ "final": "<search>",
+ "correct": true,
+ "cost": 0.0003813000000000011,
+ "seconds": 4.222935291996691,
+ "steps": 3,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какой новый элемент добавлен в Baseline апрель 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_uCPrlgyk9XEVsC4qDWq5wQod",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"Baseline апрель 2026 новый элемент\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_uCPrlgyk9XEVsC4qDWq5wQod",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 06.05.2026] https://habr.com/ru/articles/1032276 — Baseline: апрель 2026 от @nikolayshabalin. В браузерах внедрены новые API, включая элемент `<search>`, улучшенный WebAuthn для passkey, методы `isWellFormed()` и `toWellFormed()` для работы с UTF-16, а также расширенную поддержку ARIA-атрибутов. ARIA-атрибуты теперь доступны как свойства DOM-элементов (например, `element.ariaPressed`), что позволяет синхронизировать значения между HTML-атрибутами \n[Baseline: апрель 2026 / Хабр] https://habr.com/ru/articles/1028616 — # Baseline: апрель 2026 Обзор на браузерные API, которые стали Widely available в апреле 2026. Раз в месяц я буду вам напоминать, что вы уже можете использовать в проде. Каждый месяц выходят новые CSS-свойства, HTML-атрибуты, JavaScript-методы и WebAPI, но применять в проде мы их конечно же не будем. 2.5 года назад также каждый месяц выходили новые фичи в браузере, а вот их уже пора начинать приме\n[ИТ-возможности апреля 2026 / Хабр] https://habr.com/ru/news/1024226 — ## Стажировки в апреле 2026 Новая волна стажировок в Билайне, приём заявок до 17 апреля; Стажировка в ОТП Банке, приём заявок до 30 апреля; Стажировки в Банке России, приём заявок до 3 мая; MidSprint — стажировка в VK, приём заявок до 30 апреля. Постоянно открытые наборы на стажировки в Самолете, T2, OZON, МТС, Яндексе, Сбере, Strategy Partners, Норникеле, X5, Level Group, КРОК, Вкусно - и точка, \n[Топ новостей инфобеза за апрель 2026 года - Habr] https://habr.com/ru/articles/1032178 — Фреймворк получил кодовое название Fast16 и имеет отличную от Stuxnet модель саботажа: патчит специализированный софт из тех лет, чтобы он выдавал неправильные результаты — а это ядерка, проектирование, гидродинамика. Инструмент продвинутый даже по современным стандартам: патчинг в памяти, LUA VM, перехват файловой системы на уровня ядра и прочее. [...] Дикий мини Шаи‑Хулуд объявился под конец апр\n[В Госдуме РФ прокомментировали информацию о якобы полной блоки"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_MMNXmI761Us700EipIQwCq0t",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\":\"Baseline: апрель 2026\",\"keywords\":\"новый элемент\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_MMNXmI761Us700EipIQwCq0t",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": "В Baseline апреля 2026 года был добавлен новый HTML-элемент `<search>`. FINAL: <search>",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "fresh-38",
+  "source": "fresh",
+  "question": "Какой инструмент решает проблему онбординга разработчиков?",
+  "answer": "Oncode",
+  "evidence": "Oncode решает одну из самых дорогих проблем в найме разработчиков — месяцы на онбординг",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "FINAL: Dev Containers (или GitHub Codespaces / Gitpod)",
+ "final": "Dev Containers (или GitHub Codespaces / Gitpod)",
+ "correct": false,
+ "cost": 0.003050999999999998,
+ "seconds": 4.32956945800106,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Какой инструмент решает проблему онбординга разработчиков?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\": \"Вопрос общий, но в контексте DevOps/разработки наиболее распространённый ответ — это инструменты автоматизации среды разработки, такие как Dev Containers (или Docker/Vagrant), либо платформы типа Gitpod/GitHub Codespaces. Классический ответ на вопрос 'что решает проблему онбординга разработчиков' — это Dev Containers или, в более широком смысле, Infrastructure as Code / автоматизация настройки окружения.\", \"final\": \"Dev Containers (или GitHub Codespaces / Gitpod)\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

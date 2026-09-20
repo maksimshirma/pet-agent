@@ -1,0 +1,123 @@
+{
+ "task": {
+  "id": "fresh-49",
+  "source": "fresh",
+  "question": "С какого заседания TC39 опубликован отчёт про ES2026?",
+  "answer": "113-го заседания",
+  "evidence": "Официальный отчёт PDF со 113-го заседания TC39",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "Отчёт о стандартизации ES2026 был опубликован на 113-м заседании TC39. \n\nFINAL: 113-е заседание",
+ "final": "113-е заседание",
+ "correct": false,
+ "cost": 0.0007968000000000142,
+ "seconds": 13.514940375011065,
+ "steps": 5,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "С какого заседания TC39 опубликован отчёт про ES2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_ZZsizAN2YiUvkOAXAAsyGOuO",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"TC39 ES2026 meeting report\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_ZZsizAN2YiUvkOAXAAsyGOuO",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_f188tTF2jihJvTCXScJzWxa5",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"TC39 ES2026 заседание отчет\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_f188tTF2jihJvTCXScJzWxa5",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 12.03.2026] https://habr.com/ru/articles/1009296 — Официальный отчёт PDF со 113-го заседания TC39, посвящённый стандартизации ECMAScript — процесс стандартизации ECMAScript идёт по графику, ES2026 выйдет летом, а состав редакторов усилился для подготовки к будущим версиям. ### 🌎 Браузеры Google Chrome переходит на двухнедельные релизы с сентября 2026 — в целом это вся новость! [...] и подводный камень Anchor Positioning; в JS — когда пора переходи\n[Temporal: долгий процесс решения проблемы времени в JavaScript / Хабр] https://habr.com/ru/companies/ruvds/articles/1009494 — Philip Chimento on the microphone requesting consensus for Temporal Stage 4 at plenary Temporal TC39 Champions at plenary, having achieved consensus! Left to right: Jason Williams, Justin Grant, Philip Chimento, Richard Gibson, Shane Carr, Adam Shaw Temporal уже достиг Этапа 4 в процессе подготовки TC39, то есть он станет частью следующей ежегодной спецификации ECMAScript (ES2026). Но вам не нужно\n[Temporal: 9-летний путь к исправлению времени в JavaScript / Хабр] https://habr.com/ru/articles/1009474 — Ранее Temporal достиг 4-го этапа в процессе подготовки TC39, и это означает, что он будет частью следующей ежегодной спецификации ECMAScript (ES2026). Однако вам не нужно ждать этого — вы можете использовать его уже сегодня! Поддержка Temporal уже реализована в следующих средах: Firefox v139 (с мая 2025 г.) Chrome v144 (с января 2026 г.); Edge v144 (с января 2026 г.); TypeScript 6.0 Beta (с феврал\n[Комплексные IT-решения для бизнеса | Обслуживание IT ...] https://u.habr.com/jetweb — 10 сен. 2026 Названы победители первой отраслевой премии «Инженерное искусство» 10 сен. 2026 В Москве стартовала главная ИТ‑конференция осени IT Elements 2026 9 сен. 2026 По данным «Инфосистемы Джет», каждая третья кибератака — взлом через подрядчика 7 сен. 2026 «Инфосистемы Джет» внедрила IDM‑систему JIM для управления правами доступа 2 сен. 2026 Сетевая инфраструктура в"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_4yFAvB90C4h3HZwKLGNCNrko",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"TC39 meeting report ES2026\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_4yFAvB90C4h3HZwKLGNCNrko",
+   "content": "[Дайджест JS/TS: новинки ES2026, гонка рантаймов и EAP / Хабр] https://habr.com/ru/companies/pvs-studio/articles/1052144 — # Дайджест JS/TS: новинки ES2026, гонка рантаймов и EAP Пока фронтенд-инженеры продолжают пересобирать свои проекты на новых сборщиках, JavaScript как язык становится всё более зрелым, быстрым и безопасным. Мы собрали самые интересные новости из мира JS и TS за последние месяцы, мимо которых нельзя пройти. ### Встречаем ES2026: что нового в стандарте? Комитет TC39 согласовал список фич, которые оф\n[Frontend Status: свежий дайджест фронтенда и AI — 04.06.2026] https://habr.com/ru/articles/1043510 — 🌎 Браузер снова забирает вёрстку у хаков: `column-rule` и `row-rule` в зазорах grid/flex и HTML внутри canvas за флагом — чтобы меньше DOM-обходов и проще UI поверх 3D. `column-rule` `row-rule` 🌐 Стандарты без костылей: сравнение объектов по значению (Composites в TC39) и элемент `<install>` для PWA без своего JavaScript — чтобы меньше полагаться на ссылки и самописные кнопки установки. `<install>\n[Temporal: долгий процесс решения проблемы времени в JavaScript] https://habr.com/ru/companies/ruvds/articles/1009494 — Philip Chimento on the microphone requesting consensus for Temporal Stage 4 at plenary Temporal TC39 Champions at plenary, having achieved consensus! Left to right: Jason Williams, Justin Grant, Philip Chimento, Richard Gibson, Shane Carr, Adam Shaw Temporal уже достиг Этапа 4 в процессе подготовки TC39, то есть он станет частью следующей ежегодной спецификации ECMAScript (ES2026). Но вам не нужно\n[Temporal: 9-летний путь к исправлению времени в JavaScript - Habr] https://habr.com/ru/articles/1009474 — Ранее Temporal достиг 4-го этапа в процессе подготовки TC39, и это означает, что он будет частью следующей ежегодной спецификации ECMAScript (ES2026). Однако вам не нужно ждать этого — вы можете использовать его уже сегодня! Поддержка Temporal уже реализована в следующих средах: Firefox v139 (с мая 2025 г.) Chrome v144 (с января 2026 г.); Edge"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_c1fPCU4ApFUTHv4sA8rTgAng",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"заседание TC39 отчет\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_c1fPCU4ApFUTHv4sA8rTgAng",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 12.03.2026] https://habr.com/ru/articles/1009296 — Официальный отчёт PDF со 113-го заседания TC39, посвящённый стандартизации ECMAScript — процесс стандартизации ECMAScript идёт по графику, ES2026 выйдет летом, а состав редакторов усилился для подготовки к будущим версиям. ### 🌎 Браузеры Google Chrome переходит на двухнедельные релизы с сентября 2026 — в целом это вся новость! [...] и подводный камень Anchor Positioning; в JS — когда пора переходи\n[Temporal: 9-летний путь к исправлению времени в JavaScript - Habr] https://habr.com/ru/articles/1009474 — Bloomberg, возможно, не первая компания, которая приходит вам на ум, когда речь заходит о JavaScript. Для меня это точно не было так в 2018 году, до того, как я начал здесь работать. Тогда я впервые посетил заседание TC39 в Лондоне, где познакомился с инженерами Bloomberg, которые обсуждали Realms, WebAssembly, поля классов и другие темы. Компания уже много лет занимается стандартизацией JavaScrip\n[Temporal: долгий процесс решения проблемы времени в JavaScript] https://habr.com/ru/companies/ruvds/articles/1009494 — # Temporal: долгий процесс решения проблемы времени в JavaScript ### Как меняется JavaScript? JavaScript уникален тем, что работает во всех браузерах. У него нет какого-то одного «владельца», поэтому нельзя внести изолированное изменение и ждать, что оно будет применено везде. Эволюция происходит через TC39 — Технический комитет, отвечающий за ECMAScript. TC39 Plenary hosted at Bloomberg's NY offi\n[Frontend Status: свежий дайджест фронтенда и AI — 18.03.2026] https://habr.com/ru/articles/1012160 — Node Weekly #615: из важного — Temporal proposal дошёл до Stage 4 на TC39. Девять лет ждали. Node должен включить его по умолчанию в 26-й версии. TypeScript 6.0 RC вышел. Node переходит на один мажорный релиз в год начиная с Node 27. node-sqlite3 выпустил финальный 6.0 и уходит на пенсию — самое время переехать на `better-sqlite3` или встроенный `node:sqlite`. Mik"
+  },
+  {
+   "role": "assistant",
+   "content": "Отчёт о стандартизации ES2026 был опубликован на 113-м заседании TC39. \n\nFINAL: 113-е заседание",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

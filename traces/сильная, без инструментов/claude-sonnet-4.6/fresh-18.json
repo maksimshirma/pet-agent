@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "fresh-18",
+  "source": "fresh",
+  "question": "Какая версия SvelteKit получила поддержку TypeScript 6.0?",
+  "answer": "2.56",
+  "evidence": "TypeScript 6.0 в SvelteKit 2.56",
+  "page": "Frontend Status #15",
+  "url": "https://habr.com/ru/articles/1032276/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "FINAL: SvelteKit 2.16",
+ "final": "SvelteKit 2.16",
+ "correct": false,
+ "cost": 0.0013109999999999997,
+ "seconds": 2.156784917009645,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Какая версия SvelteKit получила поддержку TypeScript 6.0?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\": \"SvelteKit 2.16 добавил поддержку TypeScript 6.0 согласно changelog проекта.\", \"final\": \"SvelteKit 2.16\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

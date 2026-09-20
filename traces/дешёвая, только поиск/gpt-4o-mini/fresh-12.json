@@ -1,0 +1,115 @@
+{
+ "task": {
+  "id": "fresh-12",
+  "source": "fresh",
+  "question": "Сколько фейковых звёзд обнаружено на GitHub в ходе расследования?",
+  "answer": "более 6 миллионов",
+  "evidence": "более 6 миллионов фейковых отметок на 18 617 репозиториях",
+  "page": "Frontend Status #14",
+  "url": "https://habr.com/ru/articles/1028734/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "По результатам расследования, на GitHub обнаружено около 6 миллионов фейковых звезд, распределённых по более чем 18 тысячам репозиториев. \n\nFINAL: 6 миллионов",
+ "final": "6 миллионов",
+ "correct": false,
+ "cost": 0.0005876999999999966,
+ "seconds": 9.37475462500879,
+ "steps": 4,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Сколько фейковых звёзд обнаружено на GitHub в ходе расследования?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_s5RiebRiVUDTs0FxFgswP6ZU",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"фейковые звёзды GitHub расследование\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_s5RiebRiVUDTs0FxFgswP6ZU",
+   "content": "[Вышло обновление утилиты Shotstars для аналитики GitHub-репозиториев, включая детектирование фейковых звезд / Хабр] https://habr.com/ru/news/927434 — July 14, 2025 - Shotstars рассчитывает параметры: агрессивный маркетинг, тренд, фейковые звезды, пик популярности и его дата.\n[Теневой рынок GitHub звезд / Хабр] https://habr.com/ru/articles/1025032 — April 22, 2026 - Есть работа, в которой проанализировали динамику звёзд на GitHub за 2019–2024 гг и нашли около 6 миллионов фейковых на 18+ тысячах репозиториев.\n[Исследователи: на GitHub есть около 4,5 млн фейковых оценок, которые путают разработчиков / Хабр] https://habr.com/ru/news/868182 — December 20, 2024 - Исследователи ... Socket Inc выяснили, что на GitHub есть более 4,5 млн фейковых оценок репозиториев.\n[Изучаем чёрный рынок фальшивых звёзд GitHub / Хабр] https://habr.com/ru/articles/723648 — March 21, 2023 - В этом посте мы изучим тему фальшивых звёзд GitHub, поделимся своей методикой их выявления и покажем, как самостоятельно провести такой анализ любых репозиториев.\n[Чёрный рынок звёздочек на GitHub, который помогает читерить с ...] https://habr.com/ru/articles/769568 — Oct 24, 2023 · Когда поступает заказ на звезды GitHub или другой показатель, команда из 11 человек начинает кликать «с разных облачных устройств», — сказал Бадди, добавив, что это не спам, поскольку магазин"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_UWQE1MXYxNKrIElmizXlLLTH",
+     "function": {
+      "name": "web_search_ru",
+      "arguments": "{\"query\":\"фейковые звёзды GitHub расследование\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_UWQE1MXYxNKrIElmizXlLLTH",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_dqCzO9nWz09FnOZDfQydLNcY",
+     "function": {
+      "name": "web_search_ru",
+      "arguments": "{\"query\": \"GitHub фейковые звёзды расследование\"}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 1,
+     "id": "call_fhq3BUcNlV5Otc5CyBT7mSpm",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"fake stars GitHub investigation\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_dqCzO9nWz09FnOZDfQydLNcY",
+   "content": "No data"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_fhq3BUcNlV5Otc5CyBT7mSpm",
+   "content": "[Deepfake] Deepfakes (a portmanteau of 'deep learning' and 'fake') are images, videos, or audio that have been edited or generated using artificial intelligence, AI-based tools or audio-video editing software. They may depict real or fictional people and are considered a form of synthetic media, that is media that is usually created by artificial intelligence systems by combining various media elements into a new media artifact. While the act of creating fake content is not new, deepfakes uniquely leverage machine learning and artificial intelligence techniques, including facial recognition algorithms and artificial neural networks such as variational autoencoders and generative adversarial networks (GANs). In turn, the field of image forensics has worked to develop techniques to detect manipulated images. Deepfakes have garnered widespread attention for their potential use in creating child sexual abuse material, celebrity pornographic videos, revenge porn, fake news, hoaxes, bullying, and financial fraud. Academics have raised concerns about the potential for deepfakes to promote disinformation and hate speech, as well as interfere with elections. In response, the information technology industry and governments have proposed recommendations and methods to detect and mitigate their use. Academic research has also delved deeper into the factors driving deepfake engagement online as well as potential countermeasures to malicious application of deepfakes. From traditional entertainment to gaming, deepfake technology has evolved to be increasingly convincing and available to the public, allowing for the disruption of the entertainment and media industries."
+  },
+  {
+   "role": "assistant",
+   "content": "По результатам расследования, на GitHub обнаружено около 6 миллионов фейковых звезд, распределённых по более чем 18 тысячам репозиториев. \n\nFINAL: 6 миллионов",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

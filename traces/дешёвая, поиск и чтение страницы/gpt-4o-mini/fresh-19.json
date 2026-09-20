@@ -1,0 +1,115 @@
+{
+ "task": {
+  "id": "fresh-19",
+  "source": "fresh",
+  "question": "Какая версия useHotkeys вышла в мае 2026?",
+  "answer": "5.3",
+  "evidence": "useHotkeys 5.3",
+  "page": "Frontend Status #15",
+  "url": "https://habr.com/ru/articles/1032276/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "Версия библиотеки useHotkeys, выпущенная в мае 2026 года, называется 5.3. FINAL: 5.3",
+ "final": "5.3",
+ "correct": true,
+ "cost": 0.0007031999999999872,
+ "seconds": 12.214251290992252,
+ "steps": 4,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какая версия useHotkeys вышла в мае 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_Bxhqg9nB0hRpuF7F3nMY9g4E",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\": \"useHotkeys версия май 2026\"}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 1,
+     "id": "call_LutBTBtCQet6Bx8xIZfB9K43",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\": \"changelog useHotkeys\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_Bxhqg9nB0hRpuF7F3nMY9g4E",
+   "content": "[10 перспективных российских стартапов – май 2026 года / Хабр] https://habr.com/ru/companies/productradar/articles/1041978 — Решение:Простой и легкий для входа в разработку игр для начинающих, движок на языке JS, одновременно позволяющий делать полноценные игровые проекты, своя платформа для общения, звонков и публикации игр. Преимущества:Отечественный движок на распространенном языке JavaScript, легкий для старта в геймдеве, библиотека из 2000+ подробных видеоуроков, своя независимая платформа для общения, блоггинга и \n[Обновления GigaIDE за май 2026 / Комментарии / Хабр] https://habr.com/ru/companies/sberbank/articles/1042606/comments — Title: Обновления GigaIDE за май 2026 / Комментарии / Хабр # Обновления GigaIDE за май 2026. ## Комментарии 4. Никак не могу понять для чего эти посты выходят: доступная версия - 2025.1, т.е. Получать дистрибутив через заявку - идиотизм. Особенно в свете того, что можно тупо пойти и взять Open IDE, которая не так отстаёт от источника. А если ты не юрлицо, то вообще идёшь лесом сразу. Что тоже не д\n[ЯНДЕКС ПУТЕШЕСТВИЯ (TRAVEL YANDEX) промокоды май 2026: промокод Яндекс Путешествия скидка 1000₽ на бронирование / Хабр] https://habr.com/ru/companies/ranvik/articles/1033292 — промокоды Островок #### Где чаще всего возникают ошибки Первая ошибка — пытаться применить код после оплаты. В большинстве случаев сделать это задним числом нельзя. Вторая ошибка — использовать промокод Яндекс Путешествия май без проверки даты действия. У майских предложений срок может быть ограничен конкретным числом, поэтому лучше не откладывать применение на последний момент. [...] Промокод Янд\n[Библиотека EMX Controls для Avalonia UI — Версия 1.3 — Январь 2026 / Хабр] https://habr.com/ru/post/988314 — Title: Библиотека EMX Controls для Avalonia UI — Версия 1.3 — Январь 2026 / Хабр # Библиотека EMX Controls для Avalonia UI — Версия 1.3 — Январь 2026. Друзья, от лица нашей команды EMX Controls и всей компании Эремекс поздравляем вас с прошедшими праздниками. Букв"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_LutBTBtCQet6Bx8xIZfB9K43",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 06.05.2026] https://habr.com/ru/articles/1032276 — useHotkeys 5.3: хук для keyboard shortcuts в компонентах: библиотека позволяет декларативно навешивать сочетания клавиш прямо в компонентах (например, `useHotkeys('ctrl+k', callback)`), управлять областями действия и держать горячие клавиши рядом с UI-логикой. `useHotkeys('ctrl+k', callback)` [...] `useHotkeys` 🌐 Стандарты и платформа двигаются вперёд: Baseline, Long Animation Frames, CBOR-LD и ап\n[Time-Travel Debugging: почему Ctrl+Z это только начало / Хабр] https://habr.com/ru/articles/1008222 — `src/hooks/useHotkeys.ts` `import { useEffect } from 'react'; import { useTimeTravel } from './useTimeTravel'; export function useHotkeys() { const { undo, redo, jumpToFirst, jumpToLast } = useTimeTravel(); useEffect(() => { const handleKeyDown = (e: KeyboardEvent) => { // Проверка на модификаторы (Ctrl/Cmd) const isModifierPressed = e.ctrlKey || e.metaKey; // Undo: Ctrl+Z или Cmd+Z if (isModifier"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_TNkeIRDdYtKCvpT0YBoMnxC4",
+     "function": {
+      "name": "page_find",
+      "arguments": "{\"title\":\"useHotkeys\",\"keywords\":\"версия, релиз, май 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_TNkeIRDdYtKCvpT0YBoMnxC4",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_EOTfoJqIvL0NF4OLAF1MJf8x",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"useHotkeys 2026 обновления\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_EOTfoJqIvL0NF4OLAF1MJf8x",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 06.05.2026] https://habr.com/ru/articles/1032276 — useHotkeys 5.3: хук для keyboard shortcuts в компонентах: библиотека позволяет декларативно навешивать сочетания клавиш прямо в компонентах (например, `useHotkeys('ctrl+k', callback)`), управлять областями действия и держать горячие клавиши рядом с UI-логикой. `useHotkeys('ctrl+k', callback)` [...] `useHotkeys` 🌐 Стандарты и платформа двигаются вперёд: Baseline, Long Animation Frames, CBOR-LD и ап\n[React stack 2026: карта лучших библиотек по категориям - Habr] https://habr.com/ru/articles/1032830 — Hook-based API. `useHotkeys('cmd+k', callback)`. Cross-platform автоматически (cmd на Mac, ctrl на Windows). Scoped hotkeys для разных частей UI. Стандарт 2024-2026. `useHotkeys('cmd+k', callback)` 🥈 tinykeys — Минимальный, framework-agnostic ~500 байт. Pure JS, работает в любом фреймворке. Подходит когда не нужны React-specific features. ⚠️ Mousetrap — Legacy Старый стандарт. Не активно разрабаты\n[Time-Travel Debugging: почему Ctrl+Z это только начало - Habr] https://habr.com/ru/articles/1008222 — `src/hooks/useHotkeys.ts` `import { useEffect } from 'react'; import { useTimeTravel } from './useTimeTravel'; export function useHotkeys() { const { undo, redo, jumpToFirst, jumpToLast } = useTimeTravel(); useEffect(() => { const handleKeyDown = (e: KeyboardEvent) => { // Проверка на модификаторы (Ctrl/Cmd) const isModifierPressed = e.ctrlKey || e.metaKey; // Undo: Ctrl+Z или Cmd+Z if (isModifier\n[React Router Hooks: Изучение принципов их работы / Хабр] https://habr.com/ru/companies/otus/articles/574428 — <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non p"
+  },
+  {
+   "role": "assistant",
+   "content": "Версия библиотеки useHotkeys, выпущенная в мае 2026 года, называется 5.3. FINAL: 5.3",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

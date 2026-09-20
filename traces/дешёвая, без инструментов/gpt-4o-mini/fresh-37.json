@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "fresh-37",
+  "source": "fresh",
+  "question": "Кто обсуждал запуск CodePen 2.0?",
+  "answer": "Крис Койер и Алекс",
+  "evidence": "Крис Койер и Алекс обсуждают запуск CodePen 2.0",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "FINAL: Алекс Крев и Инман Уодделл",
+ "final": "Алекс Крев и Инман Уодделл",
+ "correct": false,
+ "cost": 6.180000000000074e-05,
+ "seconds": 2.073221915998147,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Кто обсуждал запуск CodePen 2.0?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\":\"Запуск CodePen 2.0 обсуждали основатели проекта, включая Алекса Крева и Инмана Уодделла, а также различные пользователи и разработчики на форумах и в социальных сетях.\",\"final\":\"Алекс Крев и Инман Уодделл\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

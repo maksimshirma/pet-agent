@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "fresh-6",
+  "source": "fresh",
+  "question": "Во сколько раз TanStack улучшил пропускную способность SSR?",
+  "answer": "5 раз",
+  "evidence": "TanStack улучшили производительность SSR в 5 раз",
+  "page": "Frontend Status #10",
+  "url": "https://habr.com/ru/articles/1015700/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "TanStack улучшил пропускную способность SSR в 5 раз. FINAL: 5",
+ "final": "5",
+ "correct": false,
+ "cost": 0.00019020000000000148,
+ "seconds": 4.2238282920006895,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Во сколько раз TanStack улучшил пропускную способность SSR?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_1uhoP4n7f6NqVw2OGYd88D7h",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"TanStack улучшил пропускную способность SSR\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_1uhoP4n7f6NqVw2OGYd88D7h",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 27.03.2026 / Хабр] https://habr.com/ru/articles/1015700 — ⚡ TypeScript 6.0, обновления безопасности Node.js, петиция против AI-кода в ядре Node.js и Kafka из Node.js по-взрослому. ⚛️ TanStack улучшил пропускную способность SSR в 5 раз, а Strawberry Browser переписал 130 000 строк с React на Svelte за две недели. 🅰️ Angular выпустила официальные скиллы для AI-агентов. 💚 Компоненты визуализации звука для Vue.js на Web Audio API. …и многое другое. ### 📺 Мед\n[Эмиль Мустафин (bjlactelih) — Хабр Карьера] https://career.habr.com/bjlactelih — - Внедрил SSR для ключевых аналитических страниц — улучшил скорость первичной отрисовки - Оптимизировал CI/CD Docker BuildKit, кэширование зависимостей Инфоматика Казань Разработчик React+NodeJS Январь 2022 — Сентябрь 2024 (2 года и 9 месяцев) Проект: Digital Service Platform (Ticketing & Access Control) [...] Аналитический дашборд для мониторинга технологических процессов предприятия. Стек: Next."
+  },
+  {
+   "role": "assistant",
+   "content": "TanStack улучшил пропускную способность SSR в 5 раз. FINAL: 5",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

@@ -1,0 +1,101 @@
+{
+ "task": {
+  "id": "fresh-5",
+  "source": "fresh",
+  "question": "Какой фреймворк занял первое место в State of JS 2025 по позитивным отзывам?",
+  "answer": "Svelte",
+  "evidence": "Svelte продолжает занимать первое место среди реактивных фреймворков по позитивным отзывам",
+  "page": "Frontend Status #7",
+  "url": "https://habr.com/ru/articles/1007014/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "Это результаты Stack Overflow, а не State of JS. Вернемся к первому найденному результату, который четко указывает на Svelte.\n\nBased on the search results I found, particularly from the Habr article mentioning State of JS 2025: \"судя по докладу State of JS 2025, Svelte продолжает занимать первое место среди реакти[вных фреймворков]\" (according to the State of JS 2025 report, Svelte continues to occupy the first place among reactive frameworks).\n\nFINAL: Svelte",
+ "final": "Svelte",
+ "correct": true,
+ "cost": 0.024791000000000007,
+ "seconds": 14.980034082997008,
+ "steps": 4,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какой фреймворк занял первое место в State of JS 2025 по позитивным отзывам?"
+  },
+  {
+   "role": "assistant",
+   "content": "Мне нужно найти информацию о результатах State of JS 2025.",
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "toolu_bdrk_01R2nJRJCbxaRC7JctqRAVhn",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\": \"State of JS 2025 позитивные отзывы фреймворк первое место\", \"max_results\": 5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01R2nJRJCbxaRC7JctqRAVhn",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 05.03.2026] https://habr.com/ru/articles/1007014 — ### 💚 Vue.js Рекомендации по созданию доступных приложений на Vue.js — Можно ли использовать все возможности вашего приложения только с помощью клавиатуры? Все ли кнопки являются button элементами? Как пользователь узнает о динамических обновлениях? ### 🧡 Svelte State of Svelte: что нового во фреймворке. Кстати, судя по докладу State of JS 2025, Svelte продолжает занимать первое место среди реакти\n[Обзор на Astro JS: опыт боевого проекта на 500+ тысяч страниц] https://habr.com/ru/articles/1061810 — Недавно вышел State of JS 2025 - ежегодный опрос разработчиков, который отслеживает тренды в JS-экосистеме. И Astro там выглядит очень уверенно. В общем Tier List по всем библиотекам Astro попал в высшую категорию - S-tier, с показателем удовлетворённости (satisfaction) 94%. В S-tier в этом году вообще попало всего 6 инструментов: Vite (98%), Vitest (97%), Hono (95%), Playwright (94%), Astro (94%)\n[Лучшие фреймворки для машинного обучения в 2025 году - Habr] https://habr.com/ru/companies/kryptonite/articles/950236 — В 2025 году PyTorch занимает первое место по популярности в России (об этом подробнее ниже) и второе в США и ЕС ( Его динамический граф вычислений делает PyTorch любимцем исследователей, а поддержка облачных сервисов (например, Microsoft Azure) упрощает решение производственных задач ( Недавние улучшения PyTorch включают в себя расширенные возможности распределённого обучения и интеграцию с облачн\n[Почему JS (и TS) это плохой язык / Комментарии / Хабр] https://habr.com/ru/articles/905480/comments — системе). Цена ошибки в этом проекте была высока особенно в расчетах и отчетах. К слову проект этот работает до сих пор. Читая то что пишите Вы сейчас в 2025 когда чего только нет для JS и его экосистемы я чуть не подавился попкорном. [...] и да webpack это инструмент в первую очередь для бандлинга ресурсов а не швейцарский нож для всего на свете, и если вопрос с ба"
+  },
+  {
+   "role": "assistant",
+   "content": "Из результатов видно, что Svelte занимает первое место по позитивным отзывам в State of JS 2025. Давайте проверим это более подробно.",
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "toolu_bdrk_012ox7DZfUa4jFStqDVX1BkA",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\": \"State of JS 2025 Svelte первое место satisfaction\", \"max_results\": 5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_012ox7DZfUa4jFStqDVX1BkA",
+   "content": "[Svelte 5 здесь / Хабр] https://habr.com/ru/articles/854480 — Что касается самого Svelte, то сначала мы расскажем о причинах. Мы не любители перемен ради перемен — на самом деле Svelte изменился меньше, чем любой другой крупный фреймворк в период с 2019 года (когда мы запустили Svelte 3) по настоящее время, а это целая эпоха в разработке фронт-энда. И людям действительно нравится Svelte 3 и 4 — он регулярно занимает верхние строчки в опросах разработчиков о \n[Пришло ли время забыть о React и перейти на Svelte? / Хабр] https://habr.com/ru/companies/ruvds/articles/488660 — February 20, 2020 - Рейтинг фронтенд-фреймворков по результатам исследования State of JavaScript Знаю, что многие из вас могут тут возмутиться и сказать, что React и Svelte — это, всё же, не фреймворки, а библиотеки.\n[JavaScript-фреймворки и библиотеки, на которые стоит ... - Habr] https://habr.com/ru/companies/ru_mts/articles/864500 — Ограниченная экосистема: меньше готовых библиотек и инструментов по сравнению с более популярными фреймворками. К тому же сложнее найти документацию и курсы, особенно для начинающих. Отсутствие крупной корпоративной поддержки: Svelte развивается силами энтузиастов, а не корпорации. Узнать подробности и начать работу со Svelte можно на официальном сайте. ## Nuxt.js [...] Модульный подход. Каждый ко\n[Почему SvelteJS возможно лучший фреймворк для новых веб-разработчиков / Комментарии / Хабр] https://habr.com/ru/articles/446026/comments — Но даже после компиляции, мы можете совершенно свободно открыть итоговый компонент и прочитать его как есть, без проблем, потому что внутри все тот же ванильный хорошо читаемый JS. Так что тут я не согласен. Svelte не привносит ничего нового в синтаксис, просто дополняет его новыми возможностями о которых мы всегда мечтали.\n[Собери Svelte 5 в своей голове / Хабр] https://habr.com/ru/companies/first/articles/936988 — `$state` Чтобы использовать реактивное состояние в шаблоне, мы можем указать его внутри фигурных скобок `{}`. Внутри них мы"
+  },
+  {
+   "role": "assistant",
+   "content": "Из первого результата есть четкое указание: \"судя по докладу State of JS 2025, Svelte продолжает занимать первое место среди реактивных фреймворков\". Давайте это подтвердим еще одним поиском для получения точной информации о метрике \"позитивные отзывы\".",
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "toolu_bdrk_01XiyJ94AXte8Tw3wryHPwQU",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\": \"\\\"State of JS 2025\\\" results satisfaction rating фреймворки\", \"max_results\": 5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "toolu_bdrk_01XiyJ94AXte8Tw3wryHPwQU",
+   "content": "[Результаты ежегодного опроса Stack Overflow Developer Survey / Хабр] https://habr.com/ru/news/932518 — Популярные веб-фреймворки и технологии: Node.js (48%), React (44%), jQuery (23%), Next.js (20%) и ASP.NET Core (19%). IDE и редакторы кода: VS Code (75%), Visual Studio (29%), Notepad++ (27%), IntelliJ IDEA (27%), Vim (24%), Cursor (17%), PyCharm (15%) и Android Studio (15%). Популярные LLM: OpenAI GPT (81%), Claude Sonnet (42%), Gemini Flash (35%), OpenAI Reasoning (34%) и OpenAI Image (26%). Поп"
+  },
+  {
+   "role": "assistant",
+   "content": "Это результаты Stack Overflow, а не State of JS. Вернемся к первому найденному результату, который четко указывает на Svelte.\n\nBased on the search results I found, particularly from the Habr article mentioning State of JS 2025: \"судя по докладу State of JS 2025, Svelte продолжает занимать первое место среди реакти[вных фреймворков]\" (according to the State of JS 2025 report, Svelte continues to occupy the first place among reactive frameworks).\n\nFINAL: Svelte",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

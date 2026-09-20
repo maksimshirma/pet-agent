@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "fresh-3",
+  "source": "fresh",
+  "question": "Кто был гостем подкаста о WebAssembly 3.0 20 января 2026?",
+  "answer": "Andreas Rossberg",
+  "evidence": "Гость — Andreas Rossberg, один из ключевых архитекторов WebAssembly с первых дней",
+  "page": "Frontend Status #7",
+  "url": "https://habr.com/ru/articles/1007014/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "FINAL: Неизвестно",
+ "final": "Неизвестно",
+ "correct": false,
+ "cost": 5.8499999999989116e-05,
+ "seconds": 1.9091095000039786,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Кто был гостем подкаста о WebAssembly 3.0 20 января 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\":\"На данный момент информации о подкасте о WebAssembly 3.0, который состоится 20 января 2026 года, не существует, так как это будущее. Поэтому нельзя определить, кто будет его гостем.\",\"final\":\"Неизвестно\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

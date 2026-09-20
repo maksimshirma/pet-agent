@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "fresh-9",
+  "source": "fresh",
+  "question": "Какая версия TypeScript упомянута в анонсе марта 2026?",
+  "answer": "6.0",
+  "evidence": "Анонс TypeScript 6.0",
+  "page": "Frontend Status #10",
+  "url": "https://habr.com/ru/articles/1015700/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "FINAL: Недоступно",
+ "final": "Недоступно",
+ "correct": false,
+ "cost": 5.310000000000037e-05,
+ "seconds": 1.280764208000619,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Какая версия TypeScript упомянута в анонсе марта 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\":\"Я не имею доступа к информации после октября 2023 года, и, следовательно, не могу знать о будущем анонсе или версии TypeScript в марте 2026 года.\",\"final\":\"Недоступно\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

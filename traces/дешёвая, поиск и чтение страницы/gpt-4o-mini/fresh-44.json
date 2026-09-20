@@ -1,0 +1,79 @@
+{
+ "task": {
+  "id": "fresh-44",
+  "source": "fresh",
+  "question": "Какая компания опубликовала постмортем об атаке Shai-Hulud?",
+  "answer": "Trigger.dev",
+  "evidence": "компания Trigger.dev опубликовала постмортем об атаке Shai-Hulud",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "Постмортем об атаке Shai-Hulud опубликовала компания Trigger.dev. FINAL: Trigger.dev",
+ "final": "Trigger.dev",
+ "correct": true,
+ "cost": 0.0003267000000000131,
+ "seconds": 5.62920758400287,
+ "steps": 3,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какая компания опубликовала постмортем об атаке Shai-Hulud?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_ojIR7DlingO7i2sxrGxf7jVi",
+     "function": {
+      "name": "web_search_ru",
+      "arguments": "{\"query\":\"Shai-Hulud постмортем компания\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_ojIR7DlingO7i2sxrGxf7jVi",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_O9QQppHxkWNjvybjcZmGvlYN",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"Shai-Hulud постмортем атака\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_O9QQppHxkWNjvybjcZmGvlYN",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 12.03.2026] https://habr.com/ru/articles/1009296 — npm-червь: компания Trigger.dev опубликовала постмортем об атаке Shai-Hulud. В этом посте компания Trigger.dev подробно рассказывает, как стала жертвой атаки через npm-червя Shai-Hulud: от взлома машины инженера и 17-часовой разведки до 10 минут разрушительных действий в GitHub-репозиториях, а также делится опытом восстановления, техническими деталями работы вредоноса и ключевыми уроками по усилен\n[Информационная безопасность — Защита данных / Хабр] https://habr.com/ru/hubs/infosecurity/posts/page3 — Опознать волну было несложно. Червь складывал краденое в публичные репозитории с описанием «Shai-Hulud: Here We Go Again». Wiz относит образец к тому же семейству, что и прошлогодние. Атакующий получил доступ к учетной записи мейнтейнера и выпустил зараженные версии от его имени. В них он добавил загрузчик `setup.mjs`, файл с замаскированным вредоносным кодом и настройку preinstall в `package.json"
+  },
+  {
+   "role": "assistant",
+   "content": "Постмортем об атаке Shai-Hulud опубликовала компания Trigger.dev. FINAL: Trigger.dev",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

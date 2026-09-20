@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "fresh-19",
+  "source": "fresh",
+  "question": "Какая версия useHotkeys вышла в мае 2026?",
+  "answer": "5.3",
+  "evidence": "useHotkeys 5.3",
+  "page": "Frontend Status #15",
+  "url": "https://habr.com/ru/articles/1032276/",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "answer": "FINAL: Неизвестно",
+ "final": "Неизвестно",
+ "correct": false,
+ "cost": 5.189999999999362e-05,
+ "seconds": 1.5915887090086471,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Какая версия useHotkeys вышла в мае 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\":\"На момент окончания моего обучения в октябре 2023 года информация о версиях useHotkeys за пределами этого срока недоступна, поэтому я не могу предоставить точного ответа.\",\"final\":\"Неизвестно\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}
