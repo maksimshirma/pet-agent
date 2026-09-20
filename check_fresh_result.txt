@@ -1,0 +1,9 @@
+maksim@MacBook-Pro-Maksim pet-agent % python check_fresh.py data/my_fresh_2026.jsonl --sonnet
+записей: 72, проблем: 0
+
+Sonnet без инструментов: 4 из 72 верно, 6%. Потрачено $0.233
+критерий свежести пройден
+  fresh-0: С какой даты максимальный срок жизни TLS-сертификатов сократился до 200 дней? -> 15 марта 2026 года
+  fresh-25: Какие новые CSS-функции дают элементу номер и число соседей? -> Это функции `sibling-index()` и `sibling
+  fresh-26: Какая библиотека позволяет встроить PDF в React, Solid и Svelte? -> PDFSlick
+  fresh-27: Кто создал библиотеку Geometric.js? -> Библиотека Geometric.js была создана Гар
