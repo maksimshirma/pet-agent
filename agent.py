@@ -348,8 +348,8 @@ def agent_loop(messages, model, tool_names, max_steps):
         messages += [run_tool(c) for c in calls]
 
 
-def agent(question, model, tool_names, max_steps=8):
-    messages = [{"role": "system", "content": SYSTEM}, {"role": "user", "content": question}]
+def agent(question, model, tool_names, max_steps=8, system=SYSTEM):
+    messages = [{"role": "system", "content": system}, {"role": "user", "content": question}]
     before, started = ledger.total, time.perf_counter()
     answer, steps = agent_loop(messages, model, tool_names, max_steps)
     return Run(question, answer, steps, messages, ledger.total - before, time.perf_counter() - started)
