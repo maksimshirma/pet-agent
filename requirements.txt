@@ -3,3 +3,7 @@ pydantic
 python-dotenv
 pandas
 matplotlib
+numpy
+pymilvus
+beautifulsoup4
+lxml
