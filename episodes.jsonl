@@ -1,0 +1,170 @@
+{"session": "bench-full", "time": "2026-09-26 18:27:33", "role": "user", "text": "С какой даты максимальный срок жизни TLS-сертификатов сократился до 200 дней?"}
+{"session": "bench-full", "time": "2026-09-26 18:27:35", "role": "assistant", "text": "Максимальный срок жизни TLS-сертификатов сократился до 200 дней с 15 марта 2026 года [1]."}
+{"session": "bench-window", "time": "2026-09-26 18:27:35", "role": "user", "text": "С какой даты максимальный срок жизни TLS-сертификатов сократился до 200 дней?"}
+{"session": "bench-window", "time": "2026-09-26 18:27:36", "role": "assistant", "text": "Максимальный срок жизни TLS-сертификатов сократился до 200 дней с 15 марта 2026 года [1]."}
+{"session": "bench-full", "time": "2026-09-26 18:27:36", "role": "user", "text": "В какой версии Firefox были исправлены 22 CVE, найденные Claude?"}
+{"session": "bench-full", "time": "2026-09-26 18:27:37", "role": "assistant", "text": "22 CVE, найденные Claude, были исправлены в Firefox версии 148 [1]."}
+{"session": "bench-window", "time": "2026-09-26 18:27:37", "role": "user", "text": "В какой версии Firefox были исправлены 22 CVE, найденные Claude?"}
+{"session": "bench-window", "time": "2026-09-26 18:27:38", "role": "assistant", "text": "22 CVE, найденные Claude, были исправлены в версии Firefox 148 [1]."}
+{"session": "s1", "time": "2026-09-26 18:27:48", "role": "user", "text": "Привет! Меня зовут Макс, я фронтенд-разработчик, живу в Калининграде и увлекаюсь хоккеем. Кстати, какой новый HTML-атрибут предложила команда Edge?"}
+{"session": "s1", "time": "2026-09-26 18:27:51", "role": "assistant", "text": "Привет, Макс! Команда Edge предложила новый HTML-атрибут `focusgroup`. Он позволяет обрабатывать клавиши стрелок на контейнере, игнорировать скрытые и отключенные элементы, а также учитывать направление текста и восстанавливать фокус при возврате. Реализация уже доступна в Edge и Chromium, сейчас идет процесс RFC для других браузеров [1]."}
+{"session": "s2", "time": "2026-09-26 18:27:56", "role": "user", "text": "Напомни, где я живу и чем увлекаюсь?"}
+{"session": "s2", "time": "2026-09-26 18:27:59", "role": "assistant", "text": "Ты живешь в Калининграде и увлекаешься фронтенд-разработкой."}
+{"session": "s2", "time": "2026-09-26 18:27:59", "role": "user", "text": "Кстати, я переехал в Санкт-Петербург и теперь увлекаюсь футболом, а не хоккеем."}
+{"session": "s2", "time": "2026-09-26 18:28:01", "role": "assistant", "text": "Понял! Теперь ты живешь в Санкт-Петербурге и увлекаешься футболом. Если нужны советы по фронтенду или AI, не стесняйся спрашивать!"}
+{"session": "bench-full", "time": "2026-09-26 18:28:07", "role": "user", "text": "С какой даты максимальный срок жизни TLS-сертификатов сократился до 200 дней?"}
+{"session": "bench-full", "time": "2026-09-26 18:28:09", "role": "assistant", "text": "Максимальный срок жизни TLS-сертификатов сократится до 200 дней с 15 марта 2026 года [1]."}
+{"session": "bench-window", "time": "2026-09-26 18:28:09", "role": "user", "text": "С какой даты максимальный срок жизни TLS-сертификатов сократился до 200 дней?"}
+{"session": "bench-window", "time": "2026-09-26 18:28:11", "role": "assistant", "text": "Максимальный срок жизни TLS-сертификатов сократился до 200 дней с 15 марта 2026 года [1]."}
+{"session": "bench-full", "time": "2026-09-26 18:28:11", "role": "user", "text": "В какой версии Firefox были исправлены 22 CVE, найденные Claude?"}
+{"session": "bench-full", "time": "2026-09-26 18:28:12", "role": "assistant", "text": "22 CVE, найденные Claude, были исправлены в версии Firefox 148 [1]."}
+{"session": "bench-window", "time": "2026-09-26 18:28:12", "role": "user", "text": "В какой версии Firefox были исправлены 22 CVE, найденные Claude?"}
+{"session": "bench-window", "time": "2026-09-26 18:28:14", "role": "assistant", "text": "22 CVE, найденные Claude, были исправлены в Firefox версии 148 [1]."}
+{"session": "bench-full", "time": "2026-09-26 18:28:14", "role": "user", "text": "Какой новый HTML-атрибут предложила команда Edge?"}
+{"session": "bench-full", "time": "2026-09-26 18:28:16", "role": "assistant", "text": "Команда Edge предложила новый HTML-атрибут `focusgroup`. Он позволяет обрабатывать клавиши стрелок на контейнере, пропуская скрытые или отключенные элементы и учитывая направление текста [1]."}
+{"session": "bench-window", "time": "2026-09-26 18:28:16", "role": "user", "text": "Какой новый HTML-атрибут предложила команда Edge?"}
+{"session": "bench-window", "time": "2026-09-26 18:28:18", "role": "assistant", "text": "Команда Edge предложила новый HTML-атрибут `focusgroup`, который позволяет браузеру обрабатывать клавиши стрелок, пропускать скрытые и отключенные элементы, учитывать направление текста и восстанавливать фокус при возврате [1]."}
+{"session": "bench-full", "time": "2026-09-26 18:28:18", "role": "user", "text": "Кто был гостем подкаста о WebAssembly 3.0 20 января 2026?"}
+{"session": "bench-full", "time": "2026-09-26 18:28:19", "role": "assistant", "text": "Гостем подкаста о WebAssembly 3.0 20 января 2026 года был Andreas Rossberg, один из ключевых архитекторов WebAssembly [1]."}
+{"session": "bench-window", "time": "2026-09-26 18:28:19", "role": "user", "text": "Кто был гостем подкаста о WebAssembly 3.0 20 января 2026?"}
+{"session": "bench-window", "time": "2026-09-26 18:28:21", "role": "assistant", "text": "Гостем подкаста о WebAssembly 3.0 20 января 2026 года был Andreas Rossberg, один из ключевых архитекторов WebAssembly [1]."}
+{"session": "bench-full", "time": "2026-09-26 18:28:21", "role": "user", "text": "Какая уязвимость была исправлена в Angular SSR?"}
+{"session": "bench-full", "time": "2026-09-26 18:28:22", "role": "assistant", "text": "В Angular SSR была исправлена уязвимость типа SSRF (Server-Side Request Forgery) и инъекции заголовков, а также открытый редирект через префикс X-Forwarded [1]."}
+{"session": "bench-window", "time": "2026-09-26 18:28:22", "role": "user", "text": "Какая уязвимость была исправлена в Angular SSR?"}
+{"session": "bench-window", "time": "2026-09-26 18:28:24", "role": "assistant", "text": "В Angular SSR были исправлены две серьезные уязвимости: SSRF (Server-Side Request Forgery) и инъекции заголовков, а также открытый редирект через префикс X-Forwarded [1]."}
+{"session": "bench-full", "time": "2026-09-26 18:28:24", "role": "user", "text": "Какой фреймворк занял первое место в State of JS 2025 по позитивным отзывам?"}
+{"session": "bench-full", "time": "2026-09-26 18:28:26", "role": "assistant", "text": "В State of JS 2025 первое место по позитивным отзывам занял фреймворк Svelte [1][2]."}
+{"session": "bench-window", "time": "2026-09-26 18:28:26", "role": "user", "text": "Какой фреймворк занял первое место в State of JS 2025 по позитивным отзывам?"}
+{"session": "bench-window", "time": "2026-09-26 18:28:28", "role": "assistant", "text": "Первое место в State of JS 2025 по позитивным отзывам занял фреймворк Svelte [1][2]."}
+{"session": "bench-full", "time": "2026-09-26 18:28:28", "role": "user", "text": "Во сколько раз TanStack улучшил пропускную способность SSR?"}
+{"session": "bench-full", "time": "2026-09-26 18:28:28", "role": "assistant", "text": "TanStack улучшил пропускную способность SSR в 5 раз [1][2]."}
+{"session": "bench-window", "time": "2026-09-26 18:28:28", "role": "user", "text": "Во сколько раз TanStack улучшил пропускную способность SSR?"}
+{"session": "bench-window", "time": "2026-09-26 18:28:31", "role": "assistant", "text": "TanStack улучшил пропускную способность SSR в 5 раз [1][2]."}
+{"session": "bench-full", "time": "2026-09-26 18:28:31", "role": "user", "text": "Сколько строк кода переписал Strawberry Browser с React на Svelte?"}
+{"session": "bench-full", "time": "2026-09-26 18:28:32", "role": "assistant", "text": "Strawberry Browser переписал 130 000 строк кода с React на Svelte за две недели [1][2]."}
+{"session": "bench-window", "time": "2026-09-26 18:28:32", "role": "user", "text": "Сколько строк кода переписал Strawberry Browser с React на Svelte?"}
+{"session": "bench-window", "time": "2026-09-26 18:28:34", "role": "assistant", "text": "Strawberry Browser переписал 130 000 строк кода с React на Svelte за две недели [1][2]."}
+{"session": "bench-full", "time": "2026-09-26 18:28:34", "role": "user", "text": "За сколько дней была выполнена миграция на Svelte в Strawberry Browser?"}
+{"session": "bench-full", "time": "2026-09-26 18:28:36", "role": "assistant", "text": "Миграция на Svelte в Strawberry Browser была выполнена за две недели [1][2]."}
+{"session": "bench-window", "time": "2026-09-26 18:28:36", "role": "user", "text": "За сколько дней была выполнена миграция на Svelte в Strawberry Browser?"}
+{"session": "bench-window", "time": "2026-09-26 18:28:37", "role": "assistant", "text": "Миграция на Svelte в Strawberry Browser была выполнена за две недели [1][2]."}
+{"session": "bench-full", "time": "2026-09-26 18:28:37", "role": "user", "text": "Какая версия TypeScript упомянута в анонсе марта 2026?"}
+{"session": "bench-full", "time": "2026-09-26 18:28:38", "role": "assistant", "text": "В анонсе марта 2026 упоминается версия TypeScript 6.0 [1][3]."}
+{"session": "bench-window", "time": "2026-09-26 18:28:38", "role": "user", "text": "Какая версия TypeScript упомянута в анонсе марта 2026?"}
+{"session": "bench-window", "time": "2026-09-26 18:28:40", "role": "assistant", "text": "В анонсе марта 2026 года упомянута версия TypeScript 6.0 [1][4]."}
+{"session": "bench-full", "time": "2026-09-26 18:28:40", "role": "user", "text": "Какая минимальная версия Node.js требуется для pnpm v11 RC?"}
+{"session": "bench-full", "time": "2026-09-26 18:28:41", "role": "assistant", "text": "Минимальная версия Node.js, требуемая для pnpm v11 RC, теперь составляет 22 [1]."}
+{"session": "bench-window", "time": "2026-09-26 18:28:41", "role": "user", "text": "Какая минимальная версия Node.js требуется для pnpm v11 RC?"}
+{"session": "bench-window", "time": "2026-09-26 18:28:44", "role": "assistant", "text": "Для pnpm v11 RC требуется минимальная версия Node.js 22 [1]."}
+{"session": "bench-full", "time": "2026-09-26 18:28:44", "role": "user", "text": "Кто представил State of Vue 2026?"}
+{"session": "bench-full", "time": "2026-09-26 18:28:45", "role": "assistant", "text": "State of Vue 2026 был представлен Evan You, создателем Vue [1]."}
+{"session": "bench-window", "time": "2026-09-26 18:28:45", "role": "user", "text": "Кто представил State of Vue 2026?"}
+{"session": "bench-window", "time": "2026-09-26 18:28:47", "role": "assistant", "text": "State of Vue 2026 представил Evan You, создатель Vue, в рамках ежегодного обновления о развитии фреймворка и его экосистемы [1]."}
+{"session": "s1", "time": "2026-09-26 18:57:57", "role": "user", "text": "Привет! Меня зовут Макс, я фронтенд-разработчик, живу в Калининграде и увлекаюсь хоккеем. Кстати, какой новый HTML-атрибут предложила команда Edge?"}
+{"session": "s1", "time": "2026-09-26 18:57:59", "role": "assistant", "text": "Привет, Макс! Команда Edge предложила новый HTML-атрибут `focusgroup`. Он позволяет обрабатывать клавиши стрелок на контейнере, игнорируя скрытые или отключенные элементы, и восстанавливать фокус при возврате. Реализация уже доступна в Edge и Chromium, и в настоящее время идет процесс RFC для других браузеров [1]."}
+{"session": "s2", "time": "2026-09-26 18:58:05", "role": "user", "text": "Напомни, где я живу и чем увлекаюсь?"}
+{"session": "s2", "time": "2026-09-26 18:58:06", "role": "assistant", "text": "Ты живешь в Калининграде и работаешь фронтенд-разработчиком."}
+{"session": "s2", "time": "2026-09-26 18:58:06", "role": "user", "text": "Кстати, я переехал в Санкт-Петербург и теперь увлекаюсь футболом, а не хоккеем."}
+{"session": "s2", "time": "2026-09-26 18:58:08", "role": "assistant", "text": "Отлично! Теперь ты в Санкт-Петербурге и увлекаешься футболом. Если будут вопросы по фронтенду или AI, дай знать!"}
+{"session": "bench-full", "time": "2026-09-26 18:58:14", "role": "user", "text": "С какой даты максимальный срок жизни TLS-сертификатов сократился до 200 дней?"}
+{"session": "bench-full", "time": "2026-09-26 18:58:16", "role": "assistant", "text": "Максимальный срок жизни TLS-сертификатов сократился до 200 дней с 15 марта 2026 года [1]."}
+{"session": "bench-window", "time": "2026-09-26 18:58:16", "role": "user", "text": "С какой даты максимальный срок жизни TLS-сертификатов сократился до 200 дней?"}
+{"session": "bench-window", "time": "2026-09-26 18:58:17", "role": "assistant", "text": "Максимальный срок жизни TLS-сертификатов сократился до 200 дней с 15 марта 2026 года [1]."}
+{"session": "bench-full", "time": "2026-09-26 18:58:17", "role": "user", "text": "В какой версии Firefox были исправлены 22 CVE, найденные Claude?"}
+{"session": "bench-full", "time": "2026-09-26 18:58:19", "role": "assistant", "text": "22 CVE, найденные Claude, были исправлены в Firefox версии 148 [1]."}
+{"session": "bench-window", "time": "2026-09-26 18:58:19", "role": "user", "text": "В какой версии Firefox были исправлены 22 CVE, найденные Claude?"}
+{"session": "bench-window", "time": "2026-09-26 18:58:20", "role": "assistant", "text": "22 CVE, найденные Claude, были исправлены в версии Firefox 148 [1]."}
+{"session": "bench-full", "time": "2026-09-26 18:58:20", "role": "user", "text": "Какой новый HTML-атрибут предложила команда Edge?"}
+{"session": "bench-full", "time": "2026-09-26 18:58:22", "role": "assistant", "text": "Команда Edge предложила новый HTML-атрибут `focusgroup`, который обрабатывает клавиши стрелок и учитывает скрытые или отключенные элементы, а также восстанавливает фокус при возврате [1]."}
+{"session": "bench-window", "time": "2026-09-26 18:58:22", "role": "user", "text": "Какой новый HTML-атрибут предложила команда Edge?"}
+{"session": "bench-window", "time": "2026-09-26 18:58:24", "role": "assistant", "text": "Команда Edge предложила новый HTML-атрибут `focusgroup`. Его добавляют на контейнер, и браузер сам обрабатывает клавиши стрелок, пропуская скрытые и отключенные элементы, учитывая направление текста и восстанавливая фокус при возврате [1]."}
+{"session": "bench-full", "time": "2026-09-26 18:58:24", "role": "user", "text": "Кто был гостем подкаста о WebAssembly 3.0 20 января 2026?"}
+{"session": "bench-full", "time": "2026-09-26 18:58:26", "role": "assistant", "text": "Гостем подкаста о WebAssembly 3.0 20 января 2026 года был Andreas Rossberg, один из ключевых архитекторов WebAssembly [1]."}
+{"session": "bench-window", "time": "2026-09-26 18:58:26", "role": "user", "text": "Кто был гостем подкаста о WebAssembly 3.0 20 января 2026?"}
+{"session": "bench-window", "time": "2026-09-26 18:58:27", "role": "assistant", "text": "Гостем подкаста о WebAssembly 3.0 20 января 2026 года был Andreas Rossberg, один из ключевых архитекторов WebAssembly с первых дней [1]."}
+{"session": "bench-full", "time": "2026-09-26 18:58:27", "role": "user", "text": "Какая уязвимость была исправлена в Angular SSR?"}
+{"session": "bench-full", "time": "2026-09-26 18:58:29", "role": "assistant", "text": "В Angular SSR была исправлена уязвимость SSRF (Server Side Request Forgery) и инъекции заголовков, а также открытый редирект через префикс X-Forwarded [1]."}
+{"session": "bench-window", "time": "2026-09-26 18:58:29", "role": "user", "text": "Какая уязвимость была исправлена в Angular SSR?"}
+{"session": "bench-window", "time": "2026-09-26 18:58:31", "role": "assistant", "text": "В Angular SSR были исправлены две серьезные уязвимости: SSRF (Server-Side Request Forgery) и инъекции заголовков. Также устранен открытый редирект через префикс X-Forwarded [1]."}
+{"session": "bench-full", "time": "2026-09-26 18:58:31", "role": "user", "text": "Какой фреймворк занял первое место в State of JS 2025 по позитивным отзывам?"}
+{"session": "bench-full", "time": "2026-09-26 18:58:33", "role": "assistant", "text": "Первое место в State of JS 2025 по позитивным отзывам занял фреймворк Svelte [1][2]."}
+{"session": "bench-window", "time": "2026-09-26 18:58:33", "role": "user", "text": "Какой фреймворк занял первое место в State of JS 2025 по позитивным отзывам?"}
+{"session": "bench-window", "time": "2026-09-26 18:58:34", "role": "assistant", "text": "В State of JS 2025 первое место по позитивным отзывам среди фреймворков занял Svelte [1][2]."}
+{"session": "bench-full", "time": "2026-09-26 18:58:34", "role": "user", "text": "Во сколько раз TanStack улучшил пропускную способность SSR?"}
+{"session": "bench-full", "time": "2026-09-26 18:58:35", "role": "assistant", "text": "TanStack улучшил пропускную способность SSR в 5 раз [1][2]."}
+{"session": "bench-window", "time": "2026-09-26 18:58:35", "role": "user", "text": "Во сколько раз TanStack улучшил пропускную способность SSR?"}
+{"session": "bench-window", "time": "2026-09-26 18:58:36", "role": "assistant", "text": "TanStack улучшил пропускную способность SSR в 5 раз [1][2]."}
+{"session": "bench-full", "time": "2026-09-26 18:58:36", "role": "user", "text": "Сколько строк кода переписал Strawberry Browser с React на Svelte?"}
+{"session": "bench-full", "time": "2026-09-26 18:58:37", "role": "assistant", "text": "Strawberry Browser переписал 130 000 строк кода с React на Svelte за две недели [1][2]."}
+{"session": "bench-window", "time": "2026-09-26 18:58:37", "role": "user", "text": "Сколько строк кода переписал Strawberry Browser с React на Svelte?"}
+{"session": "bench-window", "time": "2026-09-26 18:58:39", "role": "assistant", "text": "Strawberry Browser переписал 130 000 строк кода с React на Svelte за две недели [1][2]."}
+{"session": "bench-full", "time": "2026-09-26 18:58:39", "role": "user", "text": "За сколько дней была выполнена миграция на Svelte в Strawberry Browser?"}
+{"session": "bench-full", "time": "2026-09-26 18:58:40", "role": "assistant", "text": "Миграция на Svelte в Strawberry Browser была выполнена за две недели [1][2]."}
+{"session": "bench-window", "time": "2026-09-26 18:58:40", "role": "user", "text": "За сколько дней была выполнена миграция на Svelte в Strawberry Browser?"}
+{"session": "bench-window", "time": "2026-09-26 18:58:42", "role": "assistant", "text": "Миграция на Svelte в Strawberry Browser была выполнена за две недели [1][2]."}
+{"session": "bench-full", "time": "2026-09-26 18:58:42", "role": "user", "text": "Какая версия TypeScript упомянута в анонсе марта 2026?"}
+{"session": "bench-full", "time": "2026-09-26 18:58:43", "role": "assistant", "text": "В анонсе марта 2026 упомянута версия TypeScript 6.0 [1][3]."}
+{"session": "bench-window", "time": "2026-09-26 18:58:43", "role": "user", "text": "Какая версия TypeScript упомянута в анонсе марта 2026?"}
+{"session": "bench-window", "time": "2026-09-26 18:58:45", "role": "assistant", "text": "В анонсе марта 2026 упомянута версия TypeScript 6.0 [1][4]."}
+{"session": "bench-full", "time": "2026-09-26 18:58:45", "role": "user", "text": "Какая минимальная версия Node.js требуется для pnpm v11 RC?"}
+{"session": "bench-full", "time": "2026-09-26 18:58:46", "role": "assistant", "text": "Минимальная версия Node.js, необходимая для pnpm v11 RC, теперь составляет 22 [1]."}
+{"session": "bench-window", "time": "2026-09-26 18:58:46", "role": "user", "text": "Какая минимальная версия Node.js требуется для pnpm v11 RC?"}
+{"session": "bench-window", "time": "2026-09-26 18:58:48", "role": "assistant", "text": "Минимальная версия Node.js, требуемая для pnpm v11 RC, составляет 22 [1]."}
+{"session": "bench-full", "time": "2026-09-26 18:58:48", "role": "user", "text": "Кто представил State of Vue 2026?"}
+{"session": "bench-full", "time": "2026-09-26 18:58:50", "role": "assistant", "text": "State of Vue 2026 представил Evan You, создатель Vue [1]."}
+{"session": "bench-window", "time": "2026-09-26 18:58:50", "role": "user", "text": "Кто представил State of Vue 2026?"}
+{"session": "bench-window", "time": "2026-09-26 18:58:50", "role": "assistant", "text": "State of Vue 2026 был представлен Эваном Ю, создателем Vue [1]."}
+{"session": "s1", "time": "2026-09-26 21:18:48", "role": "user", "text": "Привет! Меня зовут Макс, я фронтенд-разработчик, живу в Калининграде и увлекаюсь хоккеем. Кстати, какой новый HTML-атрибут предложила команда Edge?"}
+{"session": "s1", "time": "2026-09-26 21:18:52", "role": "assistant", "text": "Привет, Макс! Команда Edge предложила новый HTML-атрибут `focusgroup`. Он позволяет добавлять его на контейнер, что упрощает обработку клавиш стрелок, пропускает скрытые и отключенные элементы, учитывает направление текста и восстанавливает фокус при возврате. Реализация уже доступна в Edge и Chromium [1]."}
+{"session": "s2", "time": "2026-09-26 21:18:58", "role": "user", "text": "Напомни, где я живу и чем увлекаюсь?"}
+{"session": "s2", "time": "2026-09-26 21:19:01", "role": "assistant", "text": "Ты живешь в Калининграде и увлекаешься фронтенд-разработкой."}
+{"session": "s2", "time": "2026-09-26 21:19:01", "role": "user", "text": "Кстати, я переехал в Санкт-Петербург и теперь увлекаюсь футболом, а не хоккеем."}
+{"session": "s2", "time": "2026-09-26 21:19:03", "role": "assistant", "text": "Понял, ты теперь живешь в Санкт-Петербурге и увлекаешься футболом."}
+{"session": "bench-full", "time": "2026-09-26 21:19:12", "role": "user", "text": "С какой даты максимальный срок жизни TLS-сертификатов сократился до 200 дней?"}
+{"session": "bench-full", "time": "2026-09-26 21:19:14", "role": "assistant", "text": "Максимальный срок жизни TLS-сертификатов сократился до 200 дней с 15 марта 2026 года [1]."}
+{"session": "bench-window", "time": "2026-09-26 21:19:14", "role": "user", "text": "С какой даты максимальный срок жизни TLS-сертификатов сократился до 200 дней?"}
+{"session": "bench-window", "time": "2026-09-26 21:19:16", "role": "assistant", "text": "Максимальный срок жизни TLS-сертификатов сократился до 200 дней с 15 марта 2026 года [1]."}
+{"session": "bench-full", "time": "2026-09-26 21:19:16", "role": "user", "text": "В какой версии Firefox были исправлены 22 CVE, найденные Claude?"}
+{"session": "bench-full", "time": "2026-09-26 21:19:18", "role": "assistant", "text": "22 CVE, найденные Claude, были исправлены в Firefox версии 148 [1]."}
+{"session": "bench-window", "time": "2026-09-26 21:19:18", "role": "user", "text": "В какой версии Firefox были исправлены 22 CVE, найденные Claude?"}
+{"session": "bench-window", "time": "2026-09-26 21:19:20", "role": "assistant", "text": "22 CVE, найденные Claude, были исправлены в версии Firefox 148 [1]."}
+{"session": "bench-full", "time": "2026-09-26 21:19:20", "role": "user", "text": "Какой новый HTML-атрибут предложила команда Edge?"}
+{"session": "bench-full", "time": "2026-09-26 21:19:23", "role": "assistant", "text": "Команда Edge предложила новый HTML-атрибут `focusgroup`, который позволяет контейнеру обрабатывать клавиши стрелок, пропускать скрытые или отключенные элементы, учитывать направление текста и восстанавливать фокус при возврате [1]."}
+{"session": "bench-window", "time": "2026-09-26 21:19:23", "role": "user", "text": "Какой новый HTML-атрибут предложила команда Edge?"}
+{"session": "bench-window", "time": "2026-09-26 21:19:25", "role": "assistant", "text": "Команда Edge предложила новый HTML-атрибут `focusgroup`, который позволяет контейнеру обрабатывать клавиши стрелок, игнорируя скрытые и отключенные элементы, а также восстанавливать фокус при возврате [1]."}
+{"session": "bench-full", "time": "2026-09-26 21:19:25", "role": "user", "text": "Кто был гостем подкаста о WebAssembly 3.0 20 января 2026?"}
+{"session": "bench-full", "time": "2026-09-26 21:19:27", "role": "assistant", "text": "Гостем подкаста о WebAssembly 3.0 20 января 2026 года был Andreas Rossberg, один из ключевых архитекторов WebAssembly с первых дней [1]."}
+{"session": "bench-window", "time": "2026-09-26 21:19:27", "role": "user", "text": "Кто был гостем подкаста о WebAssembly 3.0 20 января 2026?"}
+{"session": "bench-window", "time": "2026-09-26 21:19:29", "role": "assistant", "text": "Гостем подкаста о WebAssembly 3.0 20 января 2026 года был Andreas Rossberg, один из ключевых архитекторов WebAssembly [1]."}
+{"session": "bench-full", "time": "2026-09-26 21:19:29", "role": "user", "text": "Какая уязвимость была исправлена в Angular SSR?"}
+{"session": "bench-full", "time": "2026-09-26 21:19:32", "role": "assistant", "text": "В Angular SSR была исправлена уязвимость SSRF (Server-Side Request Forgery) и инъекции заголовков, а также открытый редирект через префикс X-Forwarded [1]."}
+{"session": "bench-window", "time": "2026-09-26 21:19:32", "role": "user", "text": "Какая уязвимость была исправлена в Angular SSR?"}
+{"session": "bench-window", "time": "2026-09-26 21:19:35", "role": "assistant", "text": "В Angular SSR была исправлена уязвимость типа SSRF (Server-Side Request Forgery) и инъекции заголовков, а также открытый редирект через префикс X-Forwarded [1]."}
+{"session": "bench-full", "time": "2026-09-26 21:19:35", "role": "user", "text": "Какой фреймворк занял первое место в State of JS 2025 по позитивным отзывам?"}
+{"session": "bench-full", "time": "2026-09-26 21:19:37", "role": "assistant", "text": "Первое место в State of JS 2025 по позитивным отзывам занял фреймворк Svelte [1][2]."}
+{"session": "bench-window", "time": "2026-09-26 21:19:37", "role": "user", "text": "Какой фреймворк занял первое место в State of JS 2025 по позитивным отзывам?"}
+{"session": "bench-window", "time": "2026-09-26 21:19:39", "role": "assistant", "text": "Первое место по позитивным отзывам в State of JS 2025 занял фреймворк Svelte [1][2]."}
+{"session": "bench-full", "time": "2026-09-26 21:19:39", "role": "user", "text": "Во сколько раз TanStack улучшил пропускную способность SSR?"}
+{"session": "bench-full", "time": "2026-09-26 21:19:41", "role": "assistant", "text": "TanStack улучшил пропускную способность SSR в 5 раз [1][2]."}
+{"session": "bench-window", "time": "2026-09-26 21:19:41", "role": "user", "text": "Во сколько раз TanStack улучшил пропускную способность SSR?"}
+{"session": "bench-window", "time": "2026-09-26 21:19:43", "role": "assistant", "text": "TanStack улучшил пропускную способность SSR в 5 раз [1][2]."}
+{"session": "bench-full", "time": "2026-09-26 21:19:43", "role": "user", "text": "Сколько строк кода переписал Strawberry Browser с React на Svelte?"}
+{"session": "bench-full", "time": "2026-09-26 21:19:45", "role": "assistant", "text": "Strawberry Browser переписал 130 000 строк кода с React на Svelte [1][2]."}
+{"session": "bench-window", "time": "2026-09-26 21:19:45", "role": "user", "text": "Сколько строк кода переписал Strawberry Browser с React на Svelte?"}
+{"session": "bench-window", "time": "2026-09-26 21:19:47", "role": "assistant", "text": "Strawberry Browser переписал 130 000 строк кода с React на Svelte за две недели [1][2]."}
+{"session": "bench-full", "time": "2026-09-26 21:19:47", "role": "user", "text": "За сколько дней была выполнена миграция на Svelte в Strawberry Browser?"}
+{"session": "bench-full", "time": "2026-09-26 21:19:48", "role": "assistant", "text": "Миграция на Svelte в Strawberry Browser была выполнена за две недели [1][2]."}
+{"session": "bench-window", "time": "2026-09-26 21:19:48", "role": "user", "text": "За сколько дней была выполнена миграция на Svelte в Strawberry Browser?"}
+{"session": "bench-window", "time": "2026-09-26 21:19:50", "role": "assistant", "text": "Миграция на Svelte в Strawberry Browser была выполнена за две недели [1][2]."}
+{"session": "bench-full", "time": "2026-09-26 21:19:50", "role": "user", "text": "Какая версия TypeScript упомянута в анонсе марта 2026?"}
+{"session": "bench-full", "time": "2026-09-26 21:19:52", "role": "assistant", "text": "В анонсе марта 2026 упоминается версия TypeScript 6.0 [1][3]."}
+{"session": "bench-window", "time": "2026-09-26 21:19:52", "role": "user", "text": "Какая версия TypeScript упомянута в анонсе марта 2026?"}
+{"session": "bench-window", "time": "2026-09-26 21:19:53", "role": "assistant", "text": "В анонсе марта 2026 года упомянута версия TypeScript 6.0 [1][4]."}
+{"session": "bench-full", "time": "2026-09-26 21:19:53", "role": "user", "text": "Какая минимальная версия Node.js требуется для pnpm v11 RC?"}
+{"session": "bench-full", "time": "2026-09-26 21:19:55", "role": "assistant", "text": "Минимальная версия Node.js, требуемая для pnpm v11 RC, теперь составляет 22 [1]."}
+{"session": "bench-window", "time": "2026-09-26 21:19:55", "role": "user", "text": "Какая минимальная версия Node.js требуется для pnpm v11 RC?"}
+{"session": "bench-window", "time": "2026-09-26 21:19:57", "role": "assistant", "text": "Минимальная версия Node.js, требуемая для pnpm v11 RC, теперь составляет 22 [1]."}
+{"session": "bench-full", "time": "2026-09-26 21:19:57", "role": "user", "text": "Кто представил State of Vue 2026?"}
+{"session": "bench-full", "time": "2026-09-26 21:19:59", "role": "assistant", "text": "State of Vue 2026 представил Evan You, создатель Vue [1]."}
+{"session": "bench-window", "time": "2026-09-26 21:19:59", "role": "user", "text": "Кто представил State of Vue 2026?"}
+{"session": "bench-window", "time": "2026-09-26 21:20:02", "role": "assistant", "text": "State of Vue 2026 представил Эван Ю, создатель Vue. Этот ежегодный апдейт включает обзор дорожной карты, развития экосистемы и улучшений производительности фреймворка [1]."}
