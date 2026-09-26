@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-31",
+  "source": "habr",
+  "question": "Какой инструмент собирает React-проект из коробки с SSR?",
+  "answer": "Rockpack",
+  "evidence": "Rockpack собирает всё одной командой",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "answerable": true
+ },
+ "answer": "Инструмент, который собирает React-проект из коробки с SSR, называется Rockpack [1]. FINAL: Rockpack.",
+ "final": "Rockpack.",
+ "correct": true,
+ "refused": false,
+ "cost": 0.00012224999999999042,
+ "seconds": 1.687835708988132,
+ "steps": 1,
+ "messages": []
+}

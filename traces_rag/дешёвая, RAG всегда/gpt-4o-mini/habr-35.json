@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-35",
+  "source": "habr",
+  "question": "Сколько инженеров опросили для техрадара HolyJS 2026?",
+  "answer": "120+",
+  "evidence": "опросил 120+ инженеров",
+  "page": "Инженерная зрелость в JS",
+  "url": "https://lawebbox.com/articles/inzhenernaya-zrelost-v-js-pochemu/",
+  "answerable": true
+ },
+ "answer": "В техрадар HolyJS Spring 2026 было опрошено 120+ инженеров [1]. \n\nFINAL: 120+ инженеров.",
+ "final": "120+ инженеров.",
+ "correct": true,
+ "refused": false,
+ "cost": 0.00010575000000001555,
+ "seconds": 1.8011345420090947,
+ "steps": 1,
+ "messages": []
+}

@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "habr-11",
+  "source": "habr",
+  "question": "Кто представил State of Vue 2026?",
+  "answer": "Evan You",
+  "evidence": "Evan You представил State of Vue 2026",
+  "page": "Frontend Status #14",
+  "url": "https://habr.com/ru/articles/1028734/",
+  "answerable": true
+ },
+ "answer": "State of Vue 2026 представил Evan You, создатель Vue. Это ежегодный апдейт с обзором дорожной карты, развития экосистемы и общего вектора развития фреймворка. \n\nFINAL: Evan You.",
+ "final": "Evan You.",
+ "correct": true,
+ "refused": false,
+ "cost": 0.0001918199999999537,
+ "seconds": 3.0480498330143746,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы по локальной базе знаний (статьи Habr/lawebbox про фронтенд и AI в 2026 году). Всегда сначала вызови knowledge_base, при необходимости — с уточнённым запросом или фильтром по странице. Если после поиска в базе знаний нет ответа на вопрос, ответь ровно NOT_FOUND. Последняя строка ответа всегда FINAL: <короткий ответ или NOT_FOUND>."
+  },
+  {
+   "role": "user",
+   "content": "Кто представил State of Vue 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_sqzN8dz6gcWeUYDVzaTFTtBm",
+     "function": {
+      "name": "knowledge_base",
+      "arguments": "{\"query\":\"State of Vue 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_sqzN8dz6gcWeUYDVzaTFTtBm",
+   "content": "[Frontend Status #14 / 📺 Медиа] Evan You представил State of Vue 2026 : ежегодный апдейт от создателя Vue с обзором дорожной карты, развития экосистемы, улучшений производительности и общего вектора развития фреймворка.\n[Frontend Status #14 / Frontend Status: свежий дайджест фронтенда и AI — 27.04.2026] 📺 Vue на развилке роста: разбираем State of Vue 2026, чтобы понять, куда вложить время сегодня и не чинить стек завтра.\n[Frontend Status #10 / 💚 Vue js] ООП для управления состоянием во Vue - Интеграция паттернов domain-driven дизайна с системой реактивности Vue через жизненный цикл моделей. Действия как первоклассные объекты, управление состоянием и обработка ошибок без зависимости от глобальных хранилищ.\n[Frontend Status #10 / 📦 Разное] Малоизвестные, но мощные функции Vue - Vue часто хвалят за простоту и понятный API. Большинство разработчиков знакомы и работают с ref(), reactive(), computed(), watch(), v-if/v-for, но Vue также включает в себя несколько менее известных функций, которые могут значительно улучшить производительность, ясность кода, архитектуру и удобство работы разработчиков.\n[Frontend Status #7 / 🎨 CSS] CSS 2026: что нового и уже работает в браузерах — В 2026 году CSS стал ещё мощнее благодаря Interop 2026 и Baseline 2026, обеспечив кросс-браузерную поддержку многих фич: cross-document view transitions для плавных переходов между страницами, scroll-driven animations, @starting-style для анимаций появления, relative color syntax и color-mix() на baseline, улучшенный @scope , reading flow для доступности, gap decorations в grid/flex, Custom Highlight API и contrast-color(). Появляются или близки к релизу @mixin (с параметрами, пока в Chrome ~146), masonry layout (теперь через grid-lanes), делая CSS самостоятельнее и избавляя от хаков/JS в сложных интерфейсах."
+  },
+  {
+   "role": "assistant",
+   "content": "State of Vue 2026 представил Evan You, создатель Vue. Это ежегодный апдейт с обзором дорожной карты, развития экосистемы и общего вектора развития фреймворка. \n\nFINAL: Evan You.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

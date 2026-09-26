@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "habr-39",
+  "source": "habr",
+  "question": "Сколько машин разработчиков скомпрометировано через GitHub-issue?",
+  "answer": "4000",
+  "evidence": "Злоумышленник скомпрометировал 4000 машин разработчиков через GitHub-issue",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "answerable": true
+ },
+ "answer": "FINAL: 3",
+ "final": "3",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0027390000000000053,
+ "seconds": 4.167385165987071,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Сколько машин разработчиков скомпрометировано через GitHub-issue?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\": \"Речь идёт об атаке на разработчиков через вредоносный GitHub issue (например, атака 2024 года на разработчиков через поддельные issues в репозиториях — известный инцидент, связанный с «GH Fake Issue» / Lazarus). В известном инциденте (сентябрь 2024, атака через GitHub issues на разработчиков криптовалютных проектов) было скомпрометировано 3 машины разработчиков.\", \"final\": \"3\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

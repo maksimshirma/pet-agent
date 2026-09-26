@@ -1,0 +1,149 @@
+{
+ "task": {
+  "id": "habr-35",
+  "source": "habr",
+  "question": "Сколько инженеров опросили для техрадара HolyJS 2026?",
+  "answer": "120+",
+  "evidence": "опросил 120+ инженеров",
+  "page": "Инженерная зрелость в JS",
+  "url": "https://lawebbox.com/articles/inzhenernaya-zrelost-v-js-pochemu/",
+  "answerable": true
+ },
+ "answer": "Извините, я не нашел информации о количестве инженеров, опрошенных для техрадара HolyJS 2026. FINAL: данные отсутствуют.",
+ "final": "данные отсутствуют.",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0010123499999999952,
+ "seconds": 18.104598000005353,
+ "steps": 7,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Сколько инженеров опросили для техрадара HolyJS 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_TUbkLuev4oFQghPZqG9eJE3j",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"HolyJS 2026 техрадар инженеры опрос\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_TUbkLuev4oFQghPZqG9eJE3j",
+   "content": "[C++-техрадар: что разработчики действительно готовы ...] https://habr.com/ru/companies/kaspersky/articles/1067982 — В мае на конференциях C++ Russia и HolyJS мы предложили участникам оценить технологии, инструменты и инженерные практики, с которыми они"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_kJ3bfMALzHhiVfOa4qnqBeRi",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"HolyJS 2026 техрадар опрос\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_kJ3bfMALzHhiVfOa4qnqBeRi",
+   "content": "[C++-техрадар: что разработчики действительно готовы брать в работу / Хабр] https://habr.com/ru/companies/kaspersky/articles/1067982 — В мае на конференциях C++ Russia и HolyJS мы предложили участникам оценить технологии, инструменты и инженерные практики, с которыми они работают или за которыми следят. Так появились данные для двух технических радаров: по экосистеме C++ и по JavaScript. [...] РЕКЛАМА Большая витрина: от крупнейших школ до частных авторов. Сравнивайте по цене, длительности, формату и выбирайте самый подходящий ку"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_LRXUraK7ew1kfIFvZGI3dXJB",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"HolyJS 2026 техрадар опрос инженеров\",\"max_results\":10}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_LRXUraK7ew1kfIFvZGI3dXJB",
+   "content": "[C++-техрадар: что разработчики действительно готовы ...] https://habr.com/ru/companies/kaspersky/articles/1067982 — В мае на конференциях C++ Russia и HolyJS мы предложили участникам оценить технологии, инструменты и инженерные практики, с которыми они работают или за которыми следят. Так появились данные для двух технических радаров: по экосистеме C++ и по JavaScript. [...] Fuzzing и динамический анализ ушли ближе к Assess: у фаззинга 27 голосов Adopt, 16 — Trial, 23 — Assess и 45 — Hold, у динамического анали"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_AonRmoa7fXg7mZcriGVxzyzN",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"HolyJS 2026 опрос участников\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_AonRmoa7fXg7mZcriGVxzyzN",
+   "content": "[HolyJS: с первой попытки / Хабр] https://habr.com/ru/companies/jugru/articles/304086 — 1. Алексей Симоненко — Как я перестал верить технологиям 2. Вячеслав Егоров — Производительность JavaScript через подзорную трубу 3. Денис Мишунов — В погоне за производительностью: психология пользователя 4. Виктор Грищенко — Swarm: синхронизируем рой устройств 5. Николай Рыжиков — JаvaScriрt внутри PostgreSQL 6. Алексей Охрименко — Парсеры — это Спарта 7. Василика Климова — Практическое применен\n[What's Next in JS? От Nuxt до Web3: всё, о чём расскажут на HolyJS 2024 Autumn / Хабр] https://habr.com/ru/companies/jugru/articles/852448 — Code in the Dark Code in the Dark — это соревнование по верстке (HTML, CSS), где 4 участника одновременно стараются повторить реализацию дизайна, имея только макет. Обратите внимание, что во время раунда нельзя предварительно просматривать результаты и использовать какие-либо измерительные инструменты. Победителя определят зрители. В ходе нетворкинга проведем 4 раунда по 15 минут и финальный раунд\n[Слушать и говорить: анонс HolyJS 2018 Moscow / Хабр] https://habr.com/ru/companies/jugru/articles/419289 — GPT-6 Astra помогла прочесть зашифрованную Enigma немецкую радиограмму 1941 года — над ней бились 21 год ### Rewrite It in Rust: когда переписывание действительно оправдано ### Релиз языка программирования Mojo 1.1 ### А какое у вас нишевое хобби? Я вот сделала курс по архитектуре мессенджера, пока готовилась к собесу ## Публикации [...] # Слушать и говорить: анонс HolyJS 2018 Moscow ## Программа \n[JPoint 2026 | Конференция по разработке на Java. Крупнейшая в России] https://u.habr.com/jpoint — Центр Научного Програмирования ### Егор Куликов Veai ### Илья Муравьев Veai ### Данил Кислов VK ### Егор Булычев Сбербанк ### Сергей Луговой Koronatech ### Евгений Сулейманов ПрозиТех ### Владимир Ярославский Сбер ### Ольга Бачище 2GIS ### Михаил Богданов VK ### Илья Сазонов Axiom JDK ### Андрей Кулешов Yandex Infrastructure ### Кирилл Толкачёв JUG Ru Group "
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_o2yNPKckkhjpIlilnUrU12wg",
+     "function": {
+      "name": "web_search_ru",
+      "arguments": "{\"query\":\"HolyJS 2026 техрадар количество опрошенных инженеров\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_o2yNPKckkhjpIlilnUrU12wg",
+   "content": "No data"
+  },
+  {
+   "role": "user",
+   "content": "Инструменты больше недоступны. Ответь по тому, что уже известно, последней строкой FINAL: <ответ>."
+  },
+  {
+   "role": "assistant",
+   "content": "Извините, я не нашел информации о количестве инженеров, опрошенных для техрадара HolyJS 2026. FINAL: данные отсутствуют.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

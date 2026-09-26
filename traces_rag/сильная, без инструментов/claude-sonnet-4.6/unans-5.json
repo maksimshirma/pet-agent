@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "unans-5",
+  "source": "habr",
+  "question": "Какая мажорная версия Tailwind CSS анонсирована в 2026 году?",
+  "answer": null,
+  "evidence": null,
+  "page": null,
+  "url": null,
+  "answerable": false
+ },
+ "answer": "FINAL: Информация об анонсах Tailwind CSS в 2026 году недоступна в моих данных.",
+ "final": "Информация об анонсах Tailwind CSS в 2026 году недоступна в моих данных.",
+ "correct": false,
+ "refused": false,
+ "cost": 0.002370000000000011,
+ "seconds": 3.0488713340018876,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Какая мажорная версия Tailwind CSS анонсирована в 2026 году?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\": \"По состоянию на дату моих знаний (до начала 2025 года), Tailwind CSS v4 был анонсирован и выпущен в начале 2025 года. Информации об анонсах в 2026 году у меня нет, так как мои данные ограничены.\", \"final\": \"Информация об анонсах Tailwind CSS в 2026 году недоступна в моих данных.\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

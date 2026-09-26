@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "unans-5",
+  "source": "habr",
+  "question": "Какая мажорная версия Tailwind CSS анонсирована в 2026 году?",
+  "answer": null,
+  "evidence": null,
+  "page": null,
+  "url": null,
+  "answerable": false
+ },
+ "answer": "В базе знаний не найдено информации о мажорной версии Tailwind CSS, анонсированной в 2026 году. FINAL: NOT_FOUND",
+ "final": "NOT_FOUND",
+ "correct": false,
+ "refused": true,
+ "cost": 0.00019220999999997046,
+ "seconds": 3.420851375005441,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы по локальной базе знаний (статьи Habr/lawebbox про фронтенд и AI в 2026 году). Всегда сначала вызови knowledge_base, при необходимости — с уточнённым запросом или фильтром по странице. Если после поиска в базе знаний нет ответа на вопрос, ответь ровно NOT_FOUND. Последняя строка ответа всегда FINAL: <короткий ответ или NOT_FOUND>."
+  },
+  {
+   "role": "user",
+   "content": "Какая мажорная версия Tailwind CSS анонсирована в 2026 году?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_fVPsUWjmeqa06e90X2U3awUj",
+     "function": {
+      "name": "knowledge_base",
+      "arguments": "{\"query\":\"Tailwind CSS\",\"page\":\"\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_fVPsUWjmeqa06e90X2U3awUj",
+   "content": "[Frontend Status #18 / Фронтенд] Tailwind CSS : исправлена проблема с sourcemaps, добавлено --silent для CLI, исправлен парсинг селекторов, добавлены новые узлы селекторов, улучшен парсинг shadow-значений.\n[Frontend Status #14 / Frontend Status: свежий дайджест фронтенда и AI — 27.04.2026] 🎨 Новый CSS вместо старых костылей: sizes=\"auto\" и HTML в <canvas> показывают, как делать богаче интерфейсы и проще поддержку.\n[Frontend Status #7 / 🎨 CSS] CSS 2026: что нового и уже работает в браузерах — В 2026 году CSS стал ещё мощнее благодаря Interop 2026 и Baseline 2026, обеспечив кросс-браузерную поддержку многих фич: cross-document view transitions для плавных переходов между страницами, scroll-driven animations, @starting-style для анимаций появления, relative color syntax и color-mix() на baseline, улучшенный @scope , reading flow для доступности, gap decorations в grid/flex, Custom Highlight API и contrast-color(). Появляются или близки к релизу @mixin (с параметрами, пока в Chrome ~146), masonry layout (теперь через grid-lanes), делая CSS самостоятельнее и избавляя от хаков/JS в сложных интерфейсах.\n[Frontend Status #9 / 🎨 CSS] Дэниел Шварц строит toggletips на anchored container queries, поповерах и corner-shape : подсказка появляется справа от кнопки, не хватает места — переворачивается влево, и стрелочка-каретка переезжает вместе с ней. Всё это без единой строки JS. Механика: position-try: flip-inline переворачивает тултип, container-type: anchored превращает его в контейнер, а @container anchored(fallback: flip-inline) позволяет каретке узнать, что тултип перевернулся. Сверху — прогрессивные улучшения через corner-shape: scoop для скруглённых стрелок и modern attr() для декларативных якорей. Поддержка пока только Chrome 143+.\n[Frontend Status #11 / Frontend Status: свежий дайджест фронтенда и AI — 03.04.2026] 🎨 CSS Anchor Positioning: два круга, стрелка и ноль строк JS от Темани Афифа."
+  },
+  {
+   "role": "assistant",
+   "content": "В базе знаний не найдено информации о мажорной версии Tailwind CSS, анонсированной в 2026 году. FINAL: NOT_FOUND",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

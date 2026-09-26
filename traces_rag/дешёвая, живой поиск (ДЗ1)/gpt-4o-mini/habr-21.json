@@ -1,0 +1,163 @@
+{
+ "task": {
+  "id": "habr-21",
+  "source": "habr",
+  "question": "Какой API опубликован как First Public Working Draft в мае 2026?",
+  "answer": "Long Animation Frames API",
+  "evidence": "First Public Working Draft: Long Animation Frames API",
+  "page": "Frontend Status #15",
+  "url": "https://habr.com/ru/articles/1032276/",
+  "answerable": true
+ },
+ "answer": "В мае 2026 года был опубликован Первоначальный рабочий черновик Long Animation Frames API. FINAL: Long Animation Frames API.",
+ "final": "Long Animation Frames API.",
+ "correct": true,
+ "refused": false,
+ "cost": 0.0014786999999999995,
+ "seconds": 17.73586179097765,
+ "steps": 7,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какой API опубликован как First Public Working Draft в мае 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_XiExAWJvKuYO4vMabAWwTsOi",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"First Public Working Draft May 2026 API\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_XiExAWJvKuYO4vMabAWwTsOi",
+   "content": "[Microdata (HTML)] Microdata is a part of the WHATWG HTML specification that defines how to include metadata within existing web page content. Search engines, web crawlers, and browsers can extract and process Microdata from a web page and use it to provide a richer browsing experience for users. Search engines benefit greatly from direct access to Microdata because it allows them to understand the information on web pages and provide more relevant results to users. Microdata uses a supporting vocabulary to describe an item and name-value pairs to assign values to its properties. Microdata is an attempt to provide a simpler way of annotating HTML elements with machine-readable tags than the similar approaches of using RDFa and microformats. In 2013, because the W3C HTML Working Group failed to find someone to serve as an editor for the Microdata HTML specification, its development was terminated with a 'Note'. However, since that time, two new editors were selected, and five newer versions of the working draft have been published, the most recent being Working Draft 26 April 2018."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_JhI8BxDb9tH2sUpcTKUBv4Hf",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"First Public Working Draft API May 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_JhI8BxDb9tH2sUpcTKUBv4Hf",
+   "content": "[Microdata (HTML)] Microdata is a part of the WHATWG HTML specification that defines how to include metadata within existing web page content. Search engines, web crawlers, and browsers can extract and process Microdata from a web page and use it to provide a richer browsing experience for users. Search engines benefit greatly from direct access to Microdata because it allows them to understand the information on web pages and provide more relevant results to users. Microdata uses a supporting vocabulary to describe an item and name-value pairs to assign values to its properties. Microdata is an attempt to provide a simpler way of annotating HTML elements with machine-readable tags than the similar approaches of using RDFa and microformats. In 2013, because the W3C HTML Working Group failed to find someone to serve as an editor for the Microdata HTML specification, its development was terminated with a 'Note'. However, since that time, two new editors were selected, and five newer versions of the working draft have been published, the most recent being Working Draft 26 April 2018."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_XJ6CDlkJCw8CNTc5AK8hlb2q",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"First Public Working Draft API May 2026\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_XJ6CDlkJCw8CNTc5AK8hlb2q",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI] https://habr.com/ru/articles/1032276 — `<search>` `isWellFormed()` `toWellFormed()` `element.ariaPressed` `aria-labelledby` First Public Working Draft: Long Animation Frames API. Long Animation Frames API позволяет обнаруживать длительные анимационные кадры, блокирующие UI-поток. Это помогает оптимизировать производительность веб-страниц, предотвращая задержки в выполнении критических задач. Это развитие идеи Long Tasks API. [...] Base\n[Из-за критической уязвимости VLESS клиентов скоро ...] https://habr.com/ru/articles/1020080/comments — Но на сейчас 26.04.2026 на версии 3.18.1(1767) inbound авторизация реально \"сломалась\" и при ее включении у меня соединение с VPN сервером как бы выполняется.. но при попытке его проверить, пишет ошибка TLS. И по сути VPN просто не работает. Если отключить inbound авторизацию, то сразу все начинает работать. Ждем обновы или какой то реации разработчиков. [...] LXST-CODE > 10 марта 2026 года я разо\n[Машинное обучение — Основа искусственного интеллекта / Хабр] https://habr.com/ru/hubs/machine_learning/posts — Техническая поддержкаНа информационном ресурсе применяются рекомендательные технологии © 2006–2026, Habr [...] 4.2K Блог компании Cloud.ruМашинное обучение \\ DevOps \\ Облачные сервисы \\ Дайджест: новости за август 2026 Рассказываем, какие изменения произошли на платформах Cloud.ru в августе и чем это может быть полезно. [...] Провайдер Terraform — добавили управление кластерами Evolution Data Plat\n[Немного об отладке. Часть 1] https://habr.com/ru/articles/867478 — В TIS определили 28 типов записи. Например, запись PUBDEF (PUBlic DEFinitions) определяет список экспортируемых (глобальных) символов. Но пока\n[Делаем любой объект потокобезопасным] https://habr.com/ru/articles/328348 — В этих 3-ех статьях я детально расскажу об атомарных операциях, барьерах памяти и о быстром обмене данными между потоками,"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_e6cjqFF5pLpShvMkCCDW7a4s",
+     "function": {
+      "name": "web_search_ru",
+      "arguments": "{\"query\": \"Первый публичный рабочий черновик API Май 2026\"}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 1,
+     "id": "call_wPCvVAaBYqzHu8lb0b6nECz5",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\": \"API Первый публичный рабочий черновик Май 2026\", \"max_results\": 5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_e6cjqFF5pLpShvMkCCDW7a4s",
+   "content": "[Бродский, Иосиф Александрович] Ио́сиф Алекса́ндрович Бро́дский (24 мая 1940, Ленинград, СССР — 28 января 1996, Нью-Йорк, США) — русский и американский поэт, эссеист, драматург, переводчик, педагог. Лауреат Нобелевской премии по литературе 1987 года. Стихи писал преимущественно на русском языке, эссе — на английском. Почётный гражданин Санкт-Петербурга (1995) и Флоренции (1996)."
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_wPCvVAaBYqzHu8lb0b6nECz5",
+   "content": "[Финальная битва за календари. Первая битва за контекст для ИИ / Хабр] https://habr.com/ru/articles/1084412 — В мае — июле 2026 года Google внедрил протокол MCP (Model Context Protocol), чтобы сторонний ИИ‑агент мог одной командой получить доступ и к таблице, и к письму, минуя сложную интеграцию разных SDK. Google активно стандартизирует свои API под «инструменты для агентов» (Agent Tools). Платформа Apigee превращена в центральный узел управления доступами ИИ‑агентов к корпоративным данным, и обновил кво\n[Как пользоваться Claude AI в России в 2026 году] https://habr.com/ru/companies/study_ai/articles/1051470 — Рабочий шаблон запроса: ``` Задача: [что нужно сделать] Контекст: [кто я, что за проект, какая ситуация] Аудитория: [кто будет читать результат] Формат: [как должен выглядеть результат] Ограничения: [чего избегать] Пример: [образец стиля или структуры, если есть] ``` ### Плюсы и минусы: где нейросеть Claude AI выигрывает, а где уступает [...] 5. Работайте итерациями. Не пытайтесь получить идеал с \n[Grok 4.7, GPT-6 Astra, Claude и китайские модели, кто эффективнее? / Habr] https://habr.com/ru/amp/publications/1086496 — Claude Opus 5 вышла 24 июля. Миллион токенов контекста, 128 тысяч на выход, обрезка знаний — май 2026. Цена $5 и $25. Claude Fable 5.1 вышла 1 сентября: тот же размер окна, цена $10 и $50, обрезка — июнь 2026. «Думание» у Fable включено всегда, глубину крутят параметром effort. Mythos 5.1 — те же веса с другими ограничениями, только для закрытых программ. В открытый доступ её нет. [...] Grok 4.7 в\n[Мы два года строили информационную систему, думая, что пишем телеграм бота / Habr] https://habr.com/ru/amp/publications/1085620 — Нам было тяжело думать о том, что бот теперь должен сам получать данные из БД и обсчитывать их, чтобы собрать итоги периодов или месяца. Но в процессе работы над страницей отчёта мы поняли, что ничего боту считать не надо! Нужные методы готовы и работают на таблицах. Ничего не помешает нам пользоваться ими. Мы, конечно, нач"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_mBHp66q27v18LmB4ZbIdfZZQ",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Long Animation Frames API\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_mBHp66q27v18LmB4ZbIdfZZQ",
+   "content": "[Pixar] Pixar (), doing business as Pixar Animation Studios, is an American animation studio based in Emeryville, California, known for its commercially successful computer-animated feature films. Pixar is a subsidiary of Walt Disney Studios, a division of the Disney Entertainment segment of the Walt Disney Company. It is one of Disney's three feature animation studios, alongside Walt Disney Animation Studios and 20th Century Animation. The studio started in 1979 as part of the Lucasfilm computer division. It was known as the Graphics Group before its spin-off as a corporation in 1986, with funding from Apple co-founder Steve Jobs, who became its majority shareholder. The studio's mascot is Luxo Jr., a desk lamp from the studio's 1986 short film of the same name. Disney announced its acquisition of Pixar in January 2006, and completed it in May 2006. Pixar is best known for its feature films, technologically powered by its RenderMan software. RenderMan began as Pixar's implementation of the industry-standard RenderMan Interface Specification (RISpec) image-rendering API, which came out in 1988; support for RISpec was dropped in 2016. RenderMan became fully path-traced and physically based (PBR). In addition to producing short films, Pixar has produced 31 feature films, beginning with Toy Story (1995), which is also the first fully computer-animated feature film; its most recent film is Toy Story 5 (2026). As of July 2023, its feature films have earned over $17 billion at the worldwide box office with an average gross of $589 million per film. Toy Story 3 (2010), Finding Dory (2016), Incredibles 2 (2018), Toy Story 4 (2019), Inside Out 2 (2024) and Toy Story 5 (2026) all grossed over $1 billion and are among the 50 highest-grossing films of all time. Moreover, 13 of Pixar's films are in the 50 highest-grossing animated films of all time. As of 2026, Inside Out 2 is the third highest-grossing animated film of all time, previously being the first-highest before being s"
+  },
+  {
+   "role": "user",
+   "content": "Инструменты больше недоступны. Ответь по тому, что уже известно, последней строкой FINAL: <ответ>."
+  },
+  {
+   "role": "assistant",
+   "content": "В мае 2026 года был опубликован Первоначальный рабочий черновик Long Animation Frames API. FINAL: Long Animation Frames API.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

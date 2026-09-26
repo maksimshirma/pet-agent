@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-58",
+  "source": "habr",
+  "question": "Какие ошибки исправлены в Next.js в июне 2026?",
+  "answer": "ошибки в merge driver",
+  "evidence": "Next.js: Исправлены ошибки в merge driver",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "answerable": true
+ },
+ "answer": "NOT_FOUND\n\nИсточники не содержат информации о конкретной дате (июне 2026). Хотя в источниках упоминаются исправления ошибок в Next.js [1], они не привязаны к какому-либо конкретному месяцу или году.\n\nFINAL: Информация о исправлениях ошибок в Next.js в июне 2026 не найдена в источниках.",
+ "final": "Информация о исправлениях ошибок в Next.js в июне 2026 не найдена в источниках.",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0010900000000000354,
+ "seconds": 1.9452608750143554,
+ "steps": 1,
+ "messages": []
+}

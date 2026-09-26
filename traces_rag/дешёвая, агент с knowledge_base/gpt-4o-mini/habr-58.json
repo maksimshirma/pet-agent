@@ -1,0 +1,101 @@
+{
+ "task": {
+  "id": "habr-58",
+  "source": "habr",
+  "question": "Какие ошибки исправлены в Next.js в июне 2026?",
+  "answer": "ошибки в merge driver",
+  "evidence": "Next.js: Исправлены ошибки в merge driver",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "answerable": true
+ },
+ "answer": "Информация о конкретных ошибках, которые были исправлены в Next.js в июне 2026 года, не найдена в базе знаний. Однако имеются упоминания о других обновлениях и улучшениях в последних версиях Next.js.\n\nFINAL: NOT_FOUND",
+ "final": "NOT_FOUND",
+ "correct": false,
+ "refused": true,
+ "cost": 0.000314189999999992,
+ "seconds": 6.42304162500659,
+ "steps": 4,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы по локальной базе знаний (статьи Habr/lawebbox про фронтенд и AI в 2026 году). Всегда сначала вызови knowledge_base, при необходимости — с уточнённым запросом или фильтром по странице. Если после поиска в базе знаний нет ответа на вопрос, ответь ровно NOT_FOUND. Последняя строка ответа всегда FINAL: <короткий ответ или NOT_FOUND>."
+  },
+  {
+   "role": "user",
+   "content": "Какие ошибки исправлены в Next.js в июне 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_7N6yJf1dOzaoGDGCumO9j9tS",
+     "function": {
+      "name": "knowledge_base",
+      "arguments": "{\"query\":\"ошибки исправленные в Next.js\",\"page\":\"Frontend Status #12\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_7N6yJf1dOzaoGDGCumO9j9tS",
+   "content": "ничего не найдено"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_Nqxop4tCoCU8FxYbjc9jg6sT",
+     "function": {
+      "name": "knowledge_base",
+      "arguments": "{\"query\":\"Next.js\",\"page\":\"Frontend Status #12\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_Nqxop4tCoCU8FxYbjc9jg6sT",
+   "content": "ничего не найдено"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_H16IjEL3glfSz4yMlmm5jsSt",
+     "function": {
+      "name": "knowledge_base",
+      "arguments": "{\"query\":\"Next.js\",\"page\":\"\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_H16IjEL3glfSz4yMlmm5jsSt",
+   "content": "[Frontend Status #11 / Frontend Status: свежий дайджест фронтенда и AI — 03.04.2026] ⚛️ Storybook MCP для React, data-testid как признак недоступности и пошаговые туры через React Joyride.\n[Frontend Status #10 / ⚛️ React] вышел next-forge 6.0 - Шаблон Turborepo от Vercel для монорепозитория приложений Next.js.\n[Frontend Status #10 / ⚛️ React] Next.js 16.2 - в новой версии Next.js улучшения производительности: на 400% быстрее запуск, 50% быстрее рендеринг\n[Frontend Status #10 / ⚡ JS / TS] Три года в одиночку: как я строил бэкенд-фреймворк поверх Next.js и что из этого вышло — разбор фреймворка Vovk.ts: двухэтапное разрешение типов через паттерн procedure().handle() , которое решает проблемы с рекурсивными и условными типами в крупных системах.\n[Frontend Status #18 / ⚛️ React] Серверные компоненты React в TanStack : Адам Ракис разбирает реализацию RSC в TanStack Start с нуля и считает её устроенной иначе и удачнее, чем в Next.js — компоненты выполняются server-only, их код никогда не уезжает в клиентские бандлы, они могут await -ить что угодно от стороннего fetch до прямого запроса к Postgres без утечки connection strings, но за это лишены state и обработчиков вроде onClick."
+  },
+  {
+   "role": "assistant",
+   "content": "Информация о конкретных ошибках, которые были исправлены в Next.js в июне 2026 года, не найдена в базе знаний. Однако имеются упоминания о других обновлениях и улучшениях в последних версиях Next.js.\n\nFINAL: NOT_FOUND",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

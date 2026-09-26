@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "habr-8",
+  "source": "habr",
+  "question": "За сколько дней была выполнена миграция на Svelte в Strawberry Browser?",
+  "answer": "за две недели",
+  "evidence": "переписал 130 000 строк с React на Svelte за две недели",
+  "page": "Frontend Status #10",
+  "url": "https://habr.com/ru/articles/1015700/",
+  "answerable": true
+ },
+ "answer": "Миграция на Svelte в Strawberry Browser была выполнена за две недели. FINAL: 14 дней.",
+ "final": "14 дней.",
+ "correct": false,
+ "refused": false,
+ "cost": 0.00015904999999999392,
+ "seconds": 3.027663457993185,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы по локальной базе знаний (статьи Habr/lawebbox про фронтенд и AI в 2026 году). Всегда сначала вызови knowledge_base, при необходимости — с уточнённым запросом или фильтром по странице. Если после поиска в базе знаний нет ответа на вопрос, ответь ровно NOT_FOUND. Последняя строка ответа всегда FINAL: <короткий ответ или NOT_FOUND>."
+  },
+  {
+   "role": "user",
+   "content": "За сколько дней была выполнена миграция на Svelte в Strawberry Browser?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_EGAEwnyfnZoRSuALdJTH2lo0",
+     "function": {
+      "name": "knowledge_base",
+      "arguments": "{\"query\":\"миграция на Svelte в Strawberry Browser\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_EGAEwnyfnZoRSuALdJTH2lo0",
+   "content": "[Frontend Status #10 / Frontend Status: свежий дайджест фронтенда и AI — 27.03.2026] ⚛️ TanStack улучшил пропускную способность SSR в 5 раз, а Strawberry Browser переписал 130 000 строк с React на Svelte за две недели.\n[Frontend Status #10 / ⚛️ React] Как мы переписали 130 000 строк кода с React на Svelte за две недели - мигрировали на другой фреймворк с помощью ИИ и ускорили работу браузера Strawberry в два раза.\n[Frontend Status #15 / 𝐒 Svelte] Майский ченджлог Svelte : TypeScript 6.0 в SvelteKit 2.56, breaking changes в remote-функциях (разрешения на refresh, стабильный кеш, run()), community add-ons в sv CLI и попадание в ThoughtWorks Technology Radar.\n[Frontend Status #18 / Фронтенд] Svelte : исправлены ошибки в асинхронных эффектах, улучшена обработка батчей, оптимизирована гидрация, исправлены ошибки в асинхронных зависимостях, улучшена обработка символов.\n[Frontend Status #18 / Frontend Status: свежий дайджест фронтенда и AI — 16.06.2026] 🌎 Chrome подставляет тяжёлые блоки по ходу стрима, Firefox говорит с железом через Web Serial, canvas наконец принимает DOM — чтобы меньше костылей в вёрстке и проще UI поверх графики."
+  },
+  {
+   "role": "assistant",
+   "content": "Миграция на Svelte в Strawberry Browser была выполнена за две недели. FINAL: 14 дней.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

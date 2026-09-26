@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-39",
+  "source": "habr",
+  "question": "Сколько машин разработчиков скомпрометировано через GitHub-issue?",
+  "answer": "4000",
+  "evidence": "Злоумышленник скомпрометировал 4000 машин разработчиков через GitHub-issue",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "answerable": true
+ },
+ "answer": "[1] Через GitHub-issue скомпрометировано 4000 машин разработчиков.\n\nFINAL: 4000 машин разработчиков были скомпрометированы через GitHub-issue в атаке \"Clinejection\".",
+ "final": "4000 машин разработчиков были скомпрометированы через GitHub-issue в атаке \"Clinejection\".",
+ "correct": true,
+ "refused": false,
+ "cost": 0.0014969999999999706,
+ "seconds": 1.9332752089831047,
+ "steps": 1,
+ "messages": []
+}

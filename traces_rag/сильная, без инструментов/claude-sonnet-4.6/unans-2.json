@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "unans-2",
+  "source": "habr",
+  "question": "Какую версию Deno представили в 2026 году?",
+  "answer": null,
+  "evidence": null,
+  "page": null,
+  "url": null,
+  "answerable": false
+ },
+ "answer": "FINAL: Нет данных о версии Deno, представленной в 2026 году",
+ "final": "Нет данных о версии Deno, представленной в 2026 году",
+ "correct": false,
+ "refused": false,
+ "cost": 0.002240999999999993,
+ "seconds": 3.022965334006585,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Какую версию Deno представили в 2026 году?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\": \"По моим данным, у меня нет информации о событиях 2026 года, так как мои знания ограничены датой отсечки. Deno 2.0 был выпущен в 2024 году, но о версиях 2026 года я не располагаю сведениями.\", \"final\": \"Нет данных о версии Deno, представленной в 2026 году\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "habr-32",
+  "source": "habr",
+  "question": "Сколько библиотек TanStack собрано в одном приложении Jack Herrington?",
+  "answer": "17",
+  "evidence": "Jack Herrington собрал все 17 библиотек TanStack в одном приложении",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "answerable": true
+ },
+ "answer": "FINAL: 6",
+ "final": "6",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0022199999999999998,
+ "seconds": 2.9772421249945182,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Сколько библиотек TanStack собрано в одном приложении Jack Herrington?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\": \"Джек Херрингтон (Jack Herrington) известен своим проектом/видео, где он собрал все библиотеки TanStack в одном приложении. По его материалам, он использовал 6 библиотек TanStack: TanStack Query, TanStack Router, TanStack Table, TanStack Form, TanStack Virtual и TanStack Store.\", \"final\": \"6\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

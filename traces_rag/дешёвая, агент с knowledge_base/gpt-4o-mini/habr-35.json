@@ -1,0 +1,79 @@
+{
+ "task": {
+  "id": "habr-35",
+  "source": "habr",
+  "question": "Сколько инженеров опросили для техрадара HolyJS 2026?",
+  "answer": "120+",
+  "evidence": "опросил 120+ инженеров",
+  "page": "Инженерная зрелость в JS",
+  "url": "https://lawebbox.com/articles/inzhenernaya-zrelost-v-js-pochemu/",
+  "answerable": true
+ },
+ "answer": "Для техрадара HolyJS 2026 было опрошено более 120 инженеров. FINAL: 120+ инженеров.",
+ "final": "120+ инженеров.",
+ "correct": true,
+ "refused": false,
+ "cost": 0.0002610800000000246,
+ "seconds": 5.0606272500008345,
+ "steps": 3,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы по локальной базе знаний (статьи Habr/lawebbox про фронтенд и AI в 2026 году). Всегда сначала вызови knowledge_base, при необходимости — с уточнённым запросом или фильтром по странице. Если после поиска в базе знаний нет ответа на вопрос, ответь ровно NOT_FOUND. Последняя строка ответа всегда FINAL: <короткий ответ или NOT_FOUND>."
+  },
+  {
+   "role": "user",
+   "content": "Сколько инженеров опросили для техрадара HolyJS 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_cDUSyGIUusrbnRWox0YRmTcF",
+     "function": {
+      "name": "knowledge_base",
+      "arguments": "{\"query\":\"инженеры опросили HolyJS 2026\",\"page\":\"HolyJS 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_cDUSyGIUusrbnRWox0YRmTcF",
+   "content": "ничего не найдено"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_k4jz7W5xZJgPu5zsWtyTtC1w",
+     "function": {
+      "name": "knowledge_base",
+      "arguments": "{\"query\":\"HolyJS 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_k4jz7W5xZJgPu5zsWtyTtC1w",
+   "content": "[Инженерная зрелость в JS / Инженерная зрелость в JS: почему фронтенд-сообщество выбирает предсказуемость вместо хайпа] По данным Хабра, архитектор веб-направления «Лаборатории Касперского» Паша Востриков собрал на HolyJS Spring 2026 техрадар по JS-стеку: опросил 120+ инженеров и разложил их ответы по зонам Adopt, Trial, Assess и Hold.\n[Frontend Status #15 / Frontend Status: свежий дайджест фронтенда и AI — 06.05.2026] ⚡ JavaScript и React на новом витке: ES2025/ES2026, типизированные контракты, React Compiler, TanStack Form и useHotkeys как база для масштабируемой фронтенд-разработки.\n[Frontend Status #7 / 🎨 CSS] CSS 2026: что нового и уже работает в браузерах — В 2026 году CSS стал ещё мощнее благодаря Interop 2026 и Baseline 2026, обеспечив кросс-браузерную поддержку многих фич: cross-document view transitions для плавных переходов между страницами, scroll-driven animations, @starting-style для анимаций появления, relative color syntax и color-mix() на baseline, улучшенный @scope , reading flow для доступности, gap decorations в grid/flex, Custom Highlight API и contrast-color(). Появляются или близки к релизу @mixin (с параметрами, пока в Chrome ~146), masonry layout (теперь через grid-lanes), делая CSS самостоятельнее и избавляя от хаков/JS в сложных интерфейсах.\n[Frontend Status #9 / 🌎 Браузеры] Chrome 146 : три заметных новинки. Scroll-triggered animations — декларативное управление анимациями на основе позиции скролла без JavaScript, то, что раньше делали через IntersectionObserver и ручной старт. Scoped custom element registry — несколько реестров кастомных элементов на одной странице, конфликты имён между библиотеками больше не проблема. Sanitizer API — наконец стабильный способ очистить произвольный HTML от потенциально опасного кода без сторонних библиотек, теперь и в Firefox тоже.\n[Frontend Status #15 / ⚡ JS / TS] Что нового в JavaScript (и что будет дальше) : обзор того, что уже приехало в ES2025, что близко в ES2026 и какие новые возможности JavaScrip"
+  },
+  {
+   "role": "assistant",
+   "content": "Для техрадара HolyJS 2026 было опрошено более 120 инженеров. FINAL: 120+ инженеров.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

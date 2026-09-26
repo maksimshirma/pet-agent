@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-52",
+  "source": "habr",
+  "question": "Кто всю карьеру ненавидел тесты, но перешёл на TDD?",
+  "answer": "Крис Фердинанди",
+  "evidence": "Крис Фердинанди всю карьеру ненавидел тесты",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "answerable": true
+ },
+ "answer": "Крис Фердинанди всю карьеру ненавидел тесты, но перешёл на TDD [1]. FINAL: Крис Фердинанди.",
+ "final": "Крис Фердинанди.",
+ "correct": true,
+ "refused": false,
+ "cost": 0.00015119999999999023,
+ "seconds": 1.1960261670174077,
+ "steps": 1,
+ "messages": []
+}

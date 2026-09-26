@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "habr-57",
+  "source": "habr",
+  "question": "Какая проблема исправлена в Tailwind CSS в июне 2026?",
+  "answer": "проблема с sourcemaps",
+  "evidence": "Tailwind CSS: исправлена проблема с sourcemaps",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "answerable": true
+ },
+ "answer": "FINAL: Нет данных — июнь 2026 года выходит за пределы моих знаний",
+ "final": "Нет данных — июнь 2026 года выходит за пределы моих знаний",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0021059999999999968,
+ "seconds": 2.721172874997137,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Какая проблема исправлена в Tailwind CSS в июне 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\": \"Tailwind CSS в июне 2026 года — это будущая дата, которая ещё не наступила на момент моих знаний (до начала 2025 года). У меня нет информации о событиях июня 2026 года.\", \"final\": \"Нет данных — июнь 2026 года выходит за пределы моих знаний\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

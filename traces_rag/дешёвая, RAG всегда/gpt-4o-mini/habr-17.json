@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-17",
+  "source": "habr",
+  "question": "Сколько уязвимостей закрыли в Firefox 150?",
+  "answer": "271",
+  "evidence": "В Firefox 150 закрыли 271 уязвимость",
+  "page": "Frontend Status #15",
+  "url": "https://habr.com/ru/articles/1032276/",
+  "answerable": true
+ },
+ "answer": "271 уязвимость [1]. \n\nFINAL: 271.",
+ "final": "271.",
+ "correct": true,
+ "refused": false,
+ "cost": 7.20000000000165e-05,
+ "seconds": 1.6925764159823302,
+ "steps": 1,
+ "messages": []
+}

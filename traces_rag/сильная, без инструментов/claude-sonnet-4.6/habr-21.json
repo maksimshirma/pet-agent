@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "habr-21",
+  "source": "habr",
+  "question": "Какой API опубликован как First Public Working Draft в мае 2026?",
+  "answer": "Long Animation Frames API",
+  "evidence": "First Public Working Draft: Long Animation Frames API",
+  "page": "Frontend Status #15",
+  "url": "https://habr.com/ru/articles/1032276/",
+  "answerable": true
+ },
+ "answer": "FINAL: Нет данных",
+ "final": "Нет данных",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0018899999999999958,
+ "seconds": 2.570170874998439,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Какой API опубликован как First Public Working Draft в мае 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\": \"Вопрос касается события в мае 2026 года, которое ещё не наступило на момент моих знаний (до начала 2025 года). У меня нет информации о публикациях W3C или других организаций в мае 2026 года.\", \"final\": \"Нет данных\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "habr-14",
+  "source": "habr",
+  "question": "В какой версии Chromium доступен экспериментальный API HTML in Canvas?",
+  "answer": "Chromium 146+",
+  "evidence": "Доступно пока только в Chromium 146+ за флагом",
+  "page": "Frontend Status #14",
+  "url": "https://habr.com/ru/articles/1028734/",
+  "answerable": true
+ },
+ "answer": "Экспериментальный API HTML in Canvas доступен в Chromium начиная с версии 146. Для его активации необходимо использовать флаг chrome://flags/#canvas-draw-element.\n\nFINAL: Chromium 146",
+ "final": "Chromium 146",
+ "correct": true,
+ "refused": false,
+ "cost": 0.0001805100000000226,
+ "seconds": 3.241530583007261,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы по локальной базе знаний (статьи Habr/lawebbox про фронтенд и AI в 2026 году). Всегда сначала вызови knowledge_base, при необходимости — с уточнённым запросом или фильтром по странице. Если после поиска в базе знаний нет ответа на вопрос, ответь ровно NOT_FOUND. Последняя строка ответа всегда FINAL: <короткий ответ или NOT_FOUND>."
+  },
+  {
+   "role": "user",
+   "content": "В какой версии Chromium доступен экспериментальный API HTML in Canvas?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_78f4un461akxkrQj78ZCDBca",
+     "function": {
+      "name": "knowledge_base",
+      "arguments": "{\"query\":\"HTML in Canvas\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_78f4un461akxkrQj78ZCDBca",
+   "content": "[Frontend Status #18 / 🌐 Веб-стандарты] HTML внутри canvas: origin trial в Chrome : многолетний выбор «DOM ради семантики и доступности или canvas ради графической производительности» Chrome предлагает больше не делать — новый HTML-in-Canvas API рисует DOM-контент прямо в 2D-canvas или WebGL/WebGPU-текстуру, и при этом текст остаётся выделяемым, доступным скринридерам, ищется через Ctrl+F и индексируется краулерами и AI-агентами.\n[Frontend Status #14 / 🛡️ Безопасность] The Web Is Fun Again: First Experiments with HTML in Canvas . Амит Шин разбирает свежий экспериментальный API, который позволяет рендерить настоящий HTML внутри <canvas> и применять к пикселям эффекты через 2D Canvas, WebGL или WebGPU — при этом DOM-элементы остаются интерактивными, форма работает, инпут принимает ввод, всё доступно для скринридеров. Доступно пока только в Chromium 146+ за флагом chrome://flags/#canvas-draw-element .\n[Frontend Status #14 / Frontend Status: свежий дайджест фронтенда и AI — 27.04.2026] 🎨 Новый CSS вместо старых костылей: sizes=\"auto\" и HTML в <canvas> показывают, как делать богаче интерфейсы и проще поддержку.\n[Frontend Status #18 / Frontend Status: свежий дайджест фронтенда и AI — 16.06.2026] 🌎 Chrome подставляет тяжёлые блоки по ходу стрима, Firefox говорит с железом через Web Serial, canvas наконец принимает DOM — чтобы меньше костылей в вёрстке и проще UI поверх графики.\n[Frontend Status #11 / Frontend Status: свежий дайджест фронтенда и AI — 03.04.2026] 🎨 CSS Anchor Positioning: два круга, стрелка и ноль строк JS от Темани Афифа."
+  },
+  {
+   "role": "assistant",
+   "content": "Экспериментальный API HTML in Canvas доступен в Chromium начиная с версии 146. Для его активации необходимо использовать флаг chrome://flags/#canvas-draw-element.\n\nFINAL: Chromium 146",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

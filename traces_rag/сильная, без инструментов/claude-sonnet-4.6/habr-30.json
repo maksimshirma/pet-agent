@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "habr-30",
+  "source": "habr",
+  "question": "Кто обновил карту React-библиотек на 2026 год?",
+  "answer": "Robin Wieruch",
+  "evidence": "Robin Wieruch, который каждый год раскладывает этот зоопарк по полочкам, обновил карту на 2026-й",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "answerable": true
+ },
+ "answer": "FINAL: Робин Вирух (Robin Wieruch)",
+ "final": "Робин Вирух (Robin Wieruch)",
+ "correct": true,
+ "refused": false,
+ "cost": 0.0024330000000000046,
+ "seconds": 3.562693041982129,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Кто обновил карту React-библиотек на 2026 год?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\": \"Речь идёт о карте (roadmap/landscape) React-библиотек. Известный ресурс — «React ecosystem» или «React libraries» map. Наиболее известная карта экосистемы React на 2026 год была обновлена Робином Вирухом (Robin Wieruch) в его ежегодной статье «React Libraries for 2026».\", \"final\": \"Робин Вирух (Robin Wieruch)\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

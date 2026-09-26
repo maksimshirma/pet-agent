@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "habr-29",
+  "source": "habr",
+  "question": "Какая версия visx вышла с поддержкой React 19?",
+  "answer": "4.0",
+  "evidence": "Вышел visx 4.0 с полной поддержкой React 19",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "answerable": true
+ },
+ "answer": "Версия visx, вышедшая с поддержкой React 19, — это visx 4.0. Эта версия предоставляет примитивы визуализации для React, позволяя создавать графики и диаграммы с индивидуальной анимацией, стилями и логикой. \n\nFINAL: visx 4.0",
+ "final": "visx 4.0",
+ "correct": true,
+ "refused": false,
+ "cost": 0.00020790999999997783,
+ "seconds": 3.297051083005499,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы по локальной базе знаний (статьи Habr/lawebbox про фронтенд и AI в 2026 году). Всегда сначала вызови knowledge_base, при необходимости — с уточнённым запросом или фильтром по странице. Если после поиска в базе знаний нет ответа на вопрос, ответь ровно NOT_FOUND. Последняя строка ответа всегда FINAL: <короткий ответ или NOT_FOUND>."
+  },
+  {
+   "role": "user",
+   "content": "Какая версия visx вышла с поддержкой React 19?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_2pJAst0yopBZe3lhlNQq18zX",
+     "function": {
+      "name": "knowledge_base",
+      "arguments": "{\"query\":\"visx версия React 19\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_2pJAst0yopBZe3lhlNQq18zX",
+   "content": "[Frontend Status #18 / ⚛️ React] visx 4.0: примитивы визуализации для React : графики и диаграммы обычно живут в отдельном мире — чужой синтаксис, тяжёлые готовые библиотеки, борьба с тем, как у вас уже устроен React. Вышел visx 4.0 с полной поддержкой React 19: не «ещё один конструктор графиков», а набор кирпичиков, из которых вы сами собираете то, что нужно именно вам — со своей анимацией, стилями и логикой. Главная мысль простая: если вы умеете React, вы умеете рисовать данные; на сайте можно посмотреть все компоненты в деле, для тех, кто на третьей версии — есть гайд по переходу.\n[Frontend Status #9 / Frontend Status: свежий дайджест фронтенда и AI — 18.03.2026] ⚛️ React получает shadcn/cli v4 с режимом для агентов, SvelteKit ловит FOWL, Astro v6 подтягивает данные из API прямо в content collections.\n[Frontend Status #15 / Frontend Status: свежий дайджест фронтенда и AI — 06.05.2026] ⚡ JavaScript и React на новом витке: ES2025/ES2026, типизированные контракты, React Compiler, TanStack Form и useHotkeys как база для масштабируемой фронтенд-разработки.\n[Frontend Status #11 / ⚛️ React] React Joyride — библиотека для пошаговых туров по интерфейсу : подсвечивает элементы, ведёт пользователя по шагам и объясняет, что где находится. Заточена под современный React с хуками и улучшенным рендерингом.\n[Frontend Status #18 / Frontend Status: свежий дайджест фронтенда и AI — 16.06.2026] ⚛️ React-зоопарк, неделя конфигов и ручная мемоизация: карта Robin Wieruch на 2026-й, Rockpack из коробки, TanStack AI без вендорного замка, visx 4.0, RSC в TanStack Start и React Compiler — чтобы собирать стек без споров и вычистить лишний шум из кодбейза."
+  },
+  {
+   "role": "assistant",
+   "content": "Версия visx, вышедшая с поддержкой React 19, — это visx 4.0. Эта версия предоставляет примитивы визуализации для React, позволяя создавать графики и диаграммы с индивидуальной анимацией, стилями и логикой. \n\nFINAL: visx 4.0",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

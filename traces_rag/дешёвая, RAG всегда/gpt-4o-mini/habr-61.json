@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-61",
+  "source": "habr",
+  "question": "Какие оптимизации добавлены в llama.cpp в июне 2026?",
+  "answer": "оптимизации CUDA",
+  "evidence": "llama.cpp: исправлены уязвимости в ggml-alloc, добавлены оптимизации CUDA",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "answerable": true
+ },
+ "answer": "NOT_FOUND  \nFINAL: NOT_FOUND",
+ "final": "NOT_FOUND",
+ "correct": false,
+ "refused": true,
+ "cost": 8.130000000000637e-05,
+ "seconds": 0.9851189999899361,
+ "steps": 1,
+ "messages": []
+}

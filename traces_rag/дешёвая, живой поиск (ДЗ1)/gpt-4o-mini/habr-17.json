@@ -1,0 +1,163 @@
+{
+ "task": {
+  "id": "habr-17",
+  "source": "habr",
+  "question": "Сколько уязвимостей закрыли в Firefox 150?",
+  "answer": "271",
+  "evidence": "В Firefox 150 закрыли 271 уязвимость",
+  "page": "Frontend Status #15",
+  "url": "https://habr.com/ru/articles/1032276/",
+  "answerable": true
+ },
+ "answer": "В версии Firefox 150 было закрыто 359 уязвимостей. FINAL: 359",
+ "final": "359",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0014671500000000004,
+ "seconds": 21.154911333025666,
+ "steps": 7,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Сколько уязвимостей закрыли в Firefox 150?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_EoHZHGdXgZMNtZcG2HRiAIqI",
+     "function": {
+      "name": "web_search_ru",
+      "arguments": "{\"query\":\"Firefox 150 уязвимости закрыли\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_EoHZHGdXgZMNtZcG2HRiAIqI",
+   "content": "[Google+] Google+ — социальная сеть, которая принадлежала компании Google и позволявшая выстраивать социальные взаимоотношения в интернете. Компания Google при анонсировании социальной сети заявила, что основополагающими принципами действия сервиса являются: пользователи, приватность и живое общение. Информация, которой делились участники сети, влияла на персонализированные результаты поиска Google. Сервис прекратил свою работу 2 апреля 2019 года в 20:00 по GMT+3 для обычных аккаунтов Google, поддержка продолжалась для аккаунтов G Suite, но Currents (который заменил Google+) был закрыт 5 июля 2023 года."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_4yNH1hxr8GqT9m8mEDvTLxnI",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Firefox 150 security vulnerabilities fixed\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_4yNH1hxr8GqT9m8mEDvTLxnI",
+   "content": "[Firefox] Mozilla Firefox, or simply Firefox, is a free and open-source web browser developed by the Mozilla Foundation and its subsidiary, the Mozilla Corporation. It uses the Gecko rendering engine to display web pages, which implements current and anticipated web standards. The software is available for Windows, macOS, and Linux systems, as well as a mobile version for Android (see Firefox for Android) and iOS, with unofficial ports for other platforms such as Oracle Solaris and OpenIndiana. Firefox is the spiritual successor of Netscape Navigator, as the Mozilla community was created by Netscape in 1998, before Netscape's acquisition by AOL. Firefox was created in 2002 under the codename \"Phoenix\" by members of the Mozilla community who desired a standalone browser rather than the Mozilla Application Suite bundle. During its beta phase, it proved to be popular with its testers and was praised for its speed, security, and add-ons compared to Microsoft's then-dominant Internet Explorer 6. It was released on November 9, 2004, and challenged Internet Explorer's dominance with 60 million downloads within nine months. In November 2017, Firefox began incorporating new technology under the code name \"Quantum\" to promote parallelism and a more intuitive user interface. The current version of Firefox is available for Windows 10 or later versions of Windows, as well as macOS, and Linux. Its unofficial ports are available for various Unix systems such as Oracle Solaris and OpenIndiana, as well as for Unix-like operating systems, including FreeBSD, OpenBSD, NetBSD, and other operating systems, such as ReactOS. It is the default, pre-installed browser on Debian, Ubuntu, and some other Linux distros. Firefox is also available for Android and iOS. However, as with all other iOS web browsers, the iOS version uses the WebKit layout engine instead of Gecko due to platform requirements. An optimized version was also available on the Amazon Fire TV as one of the two main browsers av"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_RduvPQMMdveTrKYk6bXyFn8Y",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"Firefox 150 уязвимости\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_RduvPQMMdveTrKYk6bXyFn8Y",
+   "content": "[Знакомство с одним прогоном Mythos применительно к Firefox: а разговоров-то было? / Хабр] https://habr.com/ru/articles/1028114 — По сообщению Mozilla, в браузере Firefox 150 удалось найти 271 уязвимость, вооружившись моделью Mythos. В то же время, аудит безопасности Firefox 150 не позволяет подкрепить этот тезис чётким списком, в котором содержались бы ID 271 бага, характерного только для 271. Если составить такой список, то в нём будет множество отдельных CVE, о которых сообщалось из разных источников. В том числе, есть не\n[Mozilla использовала Anthropic Claude Mythos Preview ...] https://habr.com/ru/news/1026360 — 21 апреля 2026 года состоялся релиз стабильной версии Firefox 150.0 с улучшениями и обновлениями, а также с исправлениями ошибок и багов. В этой сборке устранено 359 уязвимостей (56 уязвимостей отсортированы под CVE-2026-6784, 155 проблем под CVE-2026-6785, 110 ошибок под CVE-2026-6786, а остальные под отдельными CVE). Оказалось, что 345 уязвимостей вызваны проблемами работы с памятью, такими как \n[Как Mozilla нашли 271 уязвимость в Firefox с помощью ...] https://habr.com/ru/articles/1033116 — На странице advisories все внутренне обнаруженные баги группируются в «сводные» CVE с несколькими багами под каждым. Страница строится на основе yaml в репозитории foundation-security-advisories — это каноническое место для CVE-назначений. В Firefox 150 было три внутренних сводки: CVE-2026-6784 (154 бага), CVE-2026-6785 (55 багов) и CVE-2026-6786 (107 багов). [...] Из 271 бага для Firefox 150: 180\n[Security Week 2620: эффект от ИИ для поиска уязвимостей в Firefox / Хабр] https://habr.com/ru/companies/kaspersky/articles/1034144 — В новой публикации приведены конкретные примеры в виде 12 уязвимостей. Всего в релизе Firefox 150 была закрыта 271 проблема, все они были найдены с применением Claude Mythos. Если добавить уязвимости, найденные и закрытые другими методами (в том числе обнаруженные с помощью других ИИ-моделей), всего за апрель получится 423 патча, в то врем"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_C5OhYICa6HoDgxgFkAwQcYad",
+     "function": {
+      "name": "web_search_ru",
+      "arguments": "{\"query\": \"Firefox 150 уязвимости закрыли 359\"}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 1,
+     "id": "call_ZI4PMcBM3mRfwNdQ3piFtUL6",
+     "function": {
+      "name": "web_search_ru",
+      "arguments": "{\"query\": \"Firefox 150 патчи\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_C5OhYICa6HoDgxgFkAwQcYad",
+   "content": "No data"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_ZI4PMcBM3mRfwNdQ3piFtUL6",
+   "content": "[FreeBSD] FreeBSD — свободная Unix-подобная операционная система, потомок AT&T Unix по линии BSD, созданной в Калифорнийском университете в Беркли. FreeBSD разрабатывается как целостная операционная система. Исходный код ядра, драйверов устройств и базовых пользовательских программ, таких как командные оболочки и т. п., содержится в одном дереве системы управления версиями (до 31 мая 2008 — CVS, позже — SVN, а сейчас — Git). Это отличает FreeBSD от GNU/Linux — другой свободной UNIX-подобной операционной системы, в которой ядро разрабатывается одной группой разработчиков, набор пользовательских программ — другими (например, проект GNU), а многочисленные группы собирают это всё в единое целое и выпускают в виде различных дистрибутивов. FreeBSD хорошо зарекомендовала себя как система для построения интранет- и интернет-сетей и серверов. Она предоставляет надёжные сетевые службы и эффективное управление памятью. Помимо своей стабильности, FreeBSD популярна и благодаря своей лицензии, которая существенно отличается от широко известной лицензии GNU GPL. Лицензия BSD позволяет использовать код не только в свободном ПО, но и в проприетарном. В отличие от LGPL, которая требует раскрытия исходных кодов, лицензия BSD является более простой и непритязательной, требуя лишь упоминания заимствования, авторства и отказ от навязывания ответственности (нельзя отсылать пользователей своего продукта к авторам заимствованного кода)."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_WqPDt6Szx8LPeYoo8WAM5037",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"Firefox 150 security vulnerabilities fixed\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_WqPDt6Szx8LPeYoo8WAM5037",
+   "content": "[Mozilla использовала Anthropic Claude Mythos Preview ...] https://habr.com/ru/news/1026360 — 21 апреля 2026 года состоялся релиз стабильной версии Firefox 150.0 с улучшениями и обновлениями, а также с исправлениями ошибок и багов. В этой сборке устранено 359 уязвимостей (56 уязвимостей отсортированы под CVE-2026-6784, 155 проблем под CVE-2026-6785, 110 ошибок под CVE-2026-6786, а остальные под отдельными CVE). Оказалось, что 345 уязвимостей вызваны проблемами работы с памятью, такими как \n[Надежный обход блокировок в 2024: протоколы, клиенты и настройка сервера от простого к сложному / Comments / Habr] https://habr.com/en/articles/799751/comments — У меня похожая бурда была одно время при просмотре страниц в режиме Reader View из FF. Потом, вроде, стало лучше. Это должно лечиться правильной вёрсткой, статья (и комментарии, которых в Reader View до сих пор не видно) должны быть при упрощённом просмотре текста с утюгов не умеющих в js, всяких инстапаперов, е-книг и прочих медиа-реквестах типа `@media print`, но все забивают `@media print` [...\n[Критическая уязвимость VLESS клиентов? Подержите ...] https://habr.com/en/articles/1022422/comments — Но имейте в виду что прокси открывается на 127.0.0.1:[ПОРТ] и если вы этот адрес-порт не заблокируете то вредоносный JS код с вредоносных страничек может его определить и найти куда он ведет. Для того чтобы этого не произошло, нужно создать специальные правила настройки прокси в браузере firefox. Выглядит это примерно так: в этом файле прописано примерно такое правило: ну а все что не попадает под\n[Настраиваем MTProto прокси с Fake TLS за 5 минут / Комментарии / Хабр] https://habr.com/ru/articles/1010942/comments — Хм. Но ip сервера не палится же? А то я слышал, некоторые программы специально \"ходят\" на что-то вроде myip.com, чтобы оттуда получить инфу об ip пользователя, каким его видят зарубежные ресурсы. Собственно, ip vpn-сервера. Но из флага его же не получить? Не палится. Если включен VPN и настроено раздельное, например"
+  },
+  {
+   "role": "user",
+   "content": "Инструменты больше недоступны. Ответь по тому, что уже известно, последней строкой FINAL: <ответ>."
+  },
+  {
+   "role": "assistant",
+   "content": "В версии Firefox 150 было закрыто 359 уязвимостей. FINAL: 359",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

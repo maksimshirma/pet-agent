@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "habr-62",
+  "source": "habr",
+  "question": "Какая уязвимость исправлена в Angular в июне 2026?",
+  "answer": "уязвимость в доверии к JSDoc",
+  "evidence": "Angular: исправлена уязвимость в доверии к JSDoc",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "answerable": true
+ },
+ "answer": "FINAL: Неизвестно — эта дата находится за пределами моих знаний.",
+ "final": "Неизвестно — эта дата находится за пределами моих знаний.",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0021780000000000133,
+ "seconds": 2.9225432079983875,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Какая уязвимость исправлена в Angular в июне 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\": \"По состоянию на дату моих знаний (начало 2025 года), июнь 2026 года ещё не наступил, поэтому информация об уязвимостях, исправленных в Angular в июне 2026 года, мне недоступна.\", \"final\": \"Неизвестно — эта дата находится за пределами моих знаний.\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

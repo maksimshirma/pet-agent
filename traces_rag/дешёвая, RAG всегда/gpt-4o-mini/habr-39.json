@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-39",
+  "source": "habr",
+  "question": "Сколько машин разработчиков скомпрометировано через GitHub-issue?",
+  "answer": "4000",
+  "evidence": "Злоумышленник скомпрометировал 4000 машин разработчиков через GitHub-issue",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "answerable": true
+ },
+ "answer": "Скомпрометировано 4000 машин разработчиков через GitHub-issue [1]. \n\nFINAL: 4000.",
+ "final": "4000.",
+ "correct": true,
+ "refused": false,
+ "cost": 0.00014385000000000092,
+ "seconds": 1.87280200002715,
+ "steps": 1,
+ "messages": []
+}

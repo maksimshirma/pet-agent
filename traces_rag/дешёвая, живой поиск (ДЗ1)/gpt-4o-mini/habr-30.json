@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "habr-30",
+  "source": "habr",
+  "question": "Кто обновил карту React-библиотек на 2026 год?",
+  "answer": "Robin Wieruch",
+  "evidence": "Robin Wieruch, который каждый год раскладывает этот зоопарк по полочкам, обновил карту на 2026-й",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "answerable": true
+ },
+ "answer": "Карту React-библиотек на 2026 год обновил Robin Wieruch. \n\nFINAL: Robin Wieruch",
+ "final": "Robin Wieruch",
+ "correct": true,
+ "refused": false,
+ "cost": 0.00023655000000000204,
+ "seconds": 5.279074082995066,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Кто обновил карту React-библиотек на 2026 год?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_A0x8WAhp6mCmrbcjBxIzGrVZ",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"карту React-библиотек 2026 год\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_A0x8WAhp6mCmrbcjBxIzGrVZ",
+   "content": "[React stack 2026: карта лучших библиотек по категориям / Хабр] https://habr.com/ru/articles/1032830 — React сам по себе — библиотека рендера. Метафреймворк добавляет роутинг, SSR, code splitting, image optimization. В 2026 это почти всегда Next.js или Vite-based решение с собственным роутером. 🏆 Next.js — Default для production Индустриальный стандарт. App Router + React Server Components + Turbopack. Vercel деплой нативен, но хостится везде. Пользуется ~70% React-команд для новых проектов. Минусы\n[Frontend Status: свежий дайджест фронтенда и AI] https://habr.com/ru/articles/1047986 — React-библиотеки на 2026 год: пришли в React — а там не одна библиотека, а целый рынок на каждый шаг: с чего собрать проект, как жить с сервером, чем красить интерфейс, где хранить логин. Robin Wieruch, который каждый год раскладывает этот зоопарк по полочкам, обновил карту на 2026-й: не каталог из сотни названий, а один рабочий ответ на типичный вопрос. Его совет — начинать с самого React и докла\n[Frontend Status: свежий дайджест фронтенда и AI] https://habr.com/ru/articles/1039126 — React stack 2026: карта лучших библиотек по категориям. Большая карта React-стека 2026 года по 60+ категориям: победитель, runner-up и legacy в каждой с разбором что было стандартом, что им стало и почему. ### 🅰️ Angular [...] `.filter().map()` ⚛️ React-стек 2026 без ставки вслепую: патчи Next.js, local-first как data architecture, карта 60+ библиотек, Ant Design 6.4 и whisper.rn on-device — чтобы\n[React vs Vue – подробное сравнение и перспективы] https://habr.com/ru/articles/904698 — Прогноз простыми словами: К 2026–2028 годам React, вероятно, останется наиболее мощным и распространенным инструментом, особенно в крупных проектах, при этом Vue укрепит позиции как более легковесная альтернатива, и в эру AI-ассистентов разница между ними в сложности освоения станет менее заметной, фокус сместится на требования конкретного проекта. [...] Сосуществование и конкуренция. По состоянию\n[TypeScript vs JavaScript "
+  },
+  {
+   "role": "assistant",
+   "content": "Карту React-библиотек на 2026 год обновил Robin Wieruch. \n\nFINAL: Robin Wieruch",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

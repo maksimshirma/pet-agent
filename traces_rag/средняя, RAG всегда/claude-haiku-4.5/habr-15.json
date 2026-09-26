@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-15",
+  "source": "habr",
+  "question": "Какая версия React Email вышла в апреле 2026?",
+  "answer": "6.0.0",
+  "evidence": "React Email выпустил версию 6.0.0",
+  "page": "Frontend Status #14",
+  "url": "https://habr.com/ru/articles/1028734/",
+  "answerable": true
+ },
+ "answer": "[1] React Email выпустил версию 6.0.0 — крупное обновление фреймворка для создания HTML-email-писем на React.\n\nОднако в источнике не указана конкретная дата выпуска этой версии (апрель 2026 или другой месяц).\n\nFINAL: NOT_FOUND",
+ "final": "NOT_FOUND",
+ "correct": false,
+ "refused": true,
+ "cost": 0.0011960000000000304,
+ "seconds": 2.1921146249806043,
+ "steps": 1,
+ "messages": []
+}

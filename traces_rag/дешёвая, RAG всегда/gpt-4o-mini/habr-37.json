@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-37",
+  "source": "habr",
+  "question": "Кто обсуждал запуск CodePen 2.0?",
+  "answer": "Крис Койер и Алекс",
+  "evidence": "Крис Койер и Алекс обсуждают запуск CodePen 2.0",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "answerable": true
+ },
+ "answer": "Запуск CodePen 2.0 обсуждали Крис Койер и Алекс в выпуске CodePen Radio [1]. \n\nFINAL: Крис Койер и Алекс.",
+ "final": "Крис Койер и Алекс.",
+ "correct": true,
+ "refused": false,
+ "cost": 0.00015060000000000073,
+ "seconds": 1.126351250015432,
+ "steps": 1,
+ "messages": []
+}

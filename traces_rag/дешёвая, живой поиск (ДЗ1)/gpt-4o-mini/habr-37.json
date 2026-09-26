@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "habr-37",
+  "source": "habr",
+  "question": "Кто обсуждал запуск CodePen 2.0?",
+  "answer": "Крис Койер и Алекс",
+  "evidence": "Крис Койер и Алекс обсуждают запуск CodePen 2.0",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "answerable": true
+ },
+ "answer": "Запуск CodePen 2.0 обсуждали Крис Койер и Алекс в подкасте CodePen Radio, где они делились деталями разработки, важностью пользовательского опыта и ролью AI на платформе. \n\nFINAL: Крис Койер и Алекс",
+ "final": "Крис Койер и Алекс",
+ "correct": true,
+ "refused": false,
+ "cost": 0.00025364999999999416,
+ "seconds": 4.40311237500282,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Кто обсуждал запуск CodePen 2.0?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_xEnKYvPTuKfHN42EWwtEpUOn",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"запуск CodePen 2.0\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_xEnKYvPTuKfHN42EWwtEpUOn",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI] https://habr.com/ru/articles/1009296 — `<html>` `focusgroup` `<geolocation>` ### 🎬 Видео Выход Codepen 2.0: Крис Койер размышляет о пути сервиса. В этом выпуске CodePen Radio Крис Койер и Алекс обсуждают запуск CodePen 2.0, рассказывая о пути его разработки, необходимости создания расширяемой системы, важности пользовательского опыта, новом компиляторе и блоках, а также о потенциальной роли AI в улучшении платформы. [...] В этом выпуск\n[Почему не срабатывает JS в visual code? — Хабр Q&A] https://qna.habr.com/q/648400 — UPD. В codepen работает, а вот на локалке через синхронизацию браузера с VS code кидает на ссылку. Сталкивались с таким? Может в VS code нужно чтот включить? UPD 2.0. Установил отладчик в VS code и он выдал такое. > var login = document.querySelector('.login-link'); > ^ > > ReferenceError: document is not defined > at Object. (h:\\barbershop\\modal.js:1:13) > at Module.\\_compile (internal/modules/cj\n[Vue.js для сомневающихся. Все, что нужно знать / Хабр] https://habr.com/ru/articles/329452 — Новый компонент объявляется с помощью Vue.component, и в первый аргумент мы передаем имя нового тега (в нашем случае simple-counter) `//codepen.io/Demetrius/embed/ObgyQP/?height=468&theme-id=16150&default-tab=result` Коммуникация между vue-компонентами осуществляется по принципу “Props in, Events out”. То есть от родительского элемента к дочернему информация передается через пропсы, а обратно — вы\n[Как работает watchOverflow в Swiper на react? — Хабр Q&A] https://qna.habr.com/q/1257736 — Вопрос задан 458 просмотров 1 комментарий Подписаться Простой 1 комментарий Facebook Вконтакте Twitter MrDecoy Вадим @MrDecoy демку на codepen или codesandbox иначе что Вы предлагаете? В угадайку играть? Написано Помогут разобраться в теме Все курсы Нетология Frontend-разработка на React 10 недель Далее Академия Эдюсон React-разработчик + ИИ 2 месяца Далее Яндекс Практикум React-разработчик 3 меся\n[История о CSS-сбросах и все, что о "
+  },
+  {
+   "role": "assistant",
+   "content": "Запуск CodePen 2.0 обсуждали Крис Койер и Алекс в подкасте CodePen Radio, где они делились деталями разработки, важностью пользовательского опыта и ролью AI на платформе. \n\nFINAL: Крис Койер и Алекс",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

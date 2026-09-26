@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-17",
+  "source": "habr",
+  "question": "Сколько уязвимостей закрыли в Firefox 150?",
+  "answer": "271",
+  "evidence": "В Firefox 150 закрыли 271 уязвимость",
+  "page": "Frontend Status #15",
+  "url": "https://habr.com/ru/articles/1032276/",
+  "answerable": true
+ },
+ "answer": "Согласно источнику [1], в Firefox 150 закрыли 271 уязвимость, найденную ранней версией Claude Mythos Preview.\n\nFINAL: 271 уязвимость.",
+ "final": "271 уязвимость.",
+ "correct": true,
+ "refused": false,
+ "cost": 0.0008719999999999839,
+ "seconds": 3.522794000018621,
+ "steps": 1,
+ "messages": []
+}

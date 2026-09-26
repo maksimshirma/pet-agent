@@ -1,0 +1,149 @@
+{
+ "task": {
+  "id": "unans-9",
+  "source": "habr",
+  "question": "Сколько разработчиков используют Astro по данным опроса State of JS 2026?",
+  "answer": null,
+  "evidence": null,
+  "page": null,
+  "url": null,
+  "answerable": false
+ },
+ "answer": "К сожалению, у меня нет информации о том, сколько разработчиков используют Astro по данным опроса State of JS 2026. FINAL: <данные отсутствуют>.",
+ "final": "<данные отсутствуют>.",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0015875999999999946,
+ "seconds": 19.074024082976393,
+ "steps": 7,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Сколько разработчиков используют Astro по данным опроса State of JS 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_621ViFf5U2rnccw0sHKFMBvP",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"State of JS 2026 Astro\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_621ViFf5U2rnccw0sHKFMBvP",
+   "content": "[Главные игроки экосистемы JavaScript по состоянию на 2026 год / Хабр] https://habr.com/ru/articles/1021182 — Последняя версия Astro — 6.0, в которой появились расширенные функции, такие как настройка используемой среды выполнения в процессе разработки, политика безопасности контента и экспериментальный более быстрый компилятор. Вскоре за ней последовал релиз 6.1 с множеством небольших приятных улучшений конфигурации и т.п., что доказывает стремление команды создать хороший фреймворк. ### npm [...] Если в\n[Эра инженерной зрелости: как выглядит стек JS-разработки в 2026 году глазами сообщества / Хабр] https://habr.com/ru/companies/kaspersky/articles/1074966 — Радар показывает растущий скепсис и высокий Hold. Сообщество наелось микрофронтендами в 2023–2024 годах, и сейчас заметен откат к модульным монолитам. Микрофронтенды выглядят как архитектурный налог: без десятка независимых команд, которым нужно деплоиться без оглядки друг на друга, вы получите проблемы с оркестрацией, версионностью библиотек и производительностью, но почти ничего не выиграете. [.\n[Главные изменения JavaScript в 2026 году] https://habr.com/ru/companies/first/articles/990840 — Хочется верить, что это лишь временное затишье перед бурей. Возможно, ECMAScript 2026 станет тем самым спокойным годом, который подготовит почву для более смелых идей, и уже в следующем цикле мы наконец увидим давно обсуждаемые сигналы и другие фундаментальные механизмы прямо в ядре языка. НЛО прилетело и оставило здесь промокод для читателей нашего блога: -15% на заказ нового VDS — HABRFIRSTVDS. \n[Тренды JS-разработки 2026: отказ от хайпа в пользу] https://lawebbox.com/articles/inzhenernaya-zrelost-v-js-pochemu — ## Лид Главный вывод радара — хайп-цикл фронтенда выдохся, и команды массово возвращаются к предсказуемости вместо охоты за очередным «убийцей React». Для бэкенда и DevOps это не праздная новость: когда у соседей наконец перестаёт гореть прод из-за очередного модного билдера, у нас становится меньше интеграционных"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_lcSHu1m5skTJuD7Bsfo3vjYF",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"State of JS 2026 опрос разработчиков Astro\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_lcSHu1m5skTJuD7Bsfo3vjYF",
+   "content": "[TypeScript vs JavaScript в 2026: почему TS обогнал JS и ...] https://habr.com/ru/companies/netologyru/articles/1042346 — State of JavaScript 2025: около 40% разработчиков пишут исключительно на TypeScript (рост с 28% в 2022). Только 6% используют исключительно чистый JS. Stack Overflow Developer Survey 2025: JavaScript используют около 66% всех респондентов, TypeScript — около 44% (среди профессиональных разработчиков — 48,8%). [...] На чём вы пишете сейчас? 29.63%Только TS24 16.05%В основном TS13 9.88%Поровну: TS и\n[Обзор на Astro JS: опыт боевого проекта на 500+ тысяч страниц / Хабр] https://habr.com/ru/articles/1061810 — В общем Tier List по всем библиотекам Astro попал в высшую категорию - S-tier, с показателем удовлетворённости (satisfaction) 94%. В S-tier в этом году вообще попало всего 6 инструментов: Vite (98%), Vitest (97%), Hono (95%), Playwright (94%), Astro (94%) и Bun (91%). Next.js для сравнения оказался в C-tier с показателем 55%. [...] Суммарная доля всех отрицательных отзывов о NextJS - 30%, в то вре\n[Открыт бесплатный доступ к обучающему опросу для веб-разработчиков State of HTML 2023, его можно проходить анонимно / Хабр] https://habr.com/ru/news/762952 — Title: Открыт бесплатный доступ к обучающему опросу для веб-разработчиков State of HTML 2023, его можно проходить анонимно / Хабр # Открыт бесплатный доступ к обучающему опросу для веб-разработчиков State of HTML 2023, его можно проходить анонимно. Открыт бесплатный доступ к обучающему опросу для веб-разработчиков под названием State of HTML 2023. Автор текущей версии проекта программист Леа Веру \n[TechRadar для Java-разработчиков возвращается / Habr] https://habr.com/ru/amp/publications/1026146 — Title: TechRadar для Java-разработчиков возвращается / Habr ## TechRadar для Java-разработчиков возвращается. 77% разработчиков используют Spring Boot 3, Cursor — всего у 2%, а средняя желаемая зарплата — 500 000 ₽ в месяц. Это были цифры за прошлый год. Сейчас картина уже другая: появились новые IDE, в"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_yYU0fx5Ej7h5w1WS3fogerbK",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"State of JS 2026 Astro usage statistics\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_yYU0fx5Ej7h5w1WS3fogerbK",
+   "content": "[Главные игроки экосистемы JavaScript по состоянию на 2026 год / Хабр] https://habr.com/ru/articles/1021182 — В настоящее время почти все фреймворки используют Vite: Astro, SolidStart, SvelteKit, Nuxt и т.д. Заметным исключением является Next.js, который использует webpack и переходит на Turbopack (см. следующий раздел). Но недавно Cloudflare перенесла Next.js AI на Vite, что является довольно спорным шагом. #### Turbopack [...] Последняя версия Astro — 6.0, в которой появились расширенные функции, такие \n[Обзор на Astro JS: опыт боевого проекта на 500+ тысяч страниц / Хабр] https://habr.com/ru/articles/1061810 — В общем Tier List по всем библиотекам Astro попал в высшую категорию - S-tier, с показателем удовлетворённости (satisfaction) 94%. В S-tier в этом году вообще попало всего 6 инструментов: Vite (98%), Vitest (97%), Hono (95%), Playwright (94%), Astro (94%) и Bun (91%). Next.js для сравнения оказался в C-tier с показателем 55%. [...] Использование Так что цифры в целом подтверждают то, что мы наблюд\n[TypeScript vs JavaScript в 2026: почему TS обогнал JS и ...] https://habr.com/ru/companies/netologyru/articles/1042346 — State of JavaScript 2025: около 40% разработчиков пишут исключительно на TypeScript (рост с 28% в 2022). Только 6% используют исключительно чистый JS. Stack Overflow Developer Survey 2025: JavaScript используют около 66% всех респондентов, TypeScript — около 44% (среди профессиональных разработчиков — 48,8%). [...] ### GitHub Octoverse 2025: TypeScript обгоняет Python с минимальным отрывом | | | |\n[Open Source-джентльмены 2026: Обзор самых ярких GitHub-проектов, определивших начало года / Хабр] https://habr.com/ru/articles/1003526 — ### 5. Рост «Малых» Языков и Специализированных Инструментов Статистика GitHub за 2025 год показала взрывной рост нишевых языков: Luau (язык от Roblox) вырос на 194%. Typst (LaTeX-подобная система верстки) поднялся на 108%. Astro (фреймворк для статических сайтов) прибавил 78%. Это говорит о том, что разработчики ищ"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_hwxuQCnzuR1FMXyOkaJpz2F4",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"State of JS 2026 Astro statistics\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_hwxuQCnzuR1FMXyOkaJpz2F4",
+   "content": "[Timeline of the far future] While, due to indeterminacy and possibly free will, the future cannot be predicted with certainty, present understanding in various scientific fields allows for the prediction of some far-future events, if only in the broadest outline. These fields include astrophysics, which studies how planets and stars form, interact and die; particle physics, which has revealed how matter behaves at the smallest scales; evolutionary biology, which studies how life evolves over time; plate tectonics, which shows how continents shift over millennia; and sociology, which examines how human societies and cultures evolve. These timelines begin at the start of the 4th millennium in 3001 CE, and continue until the furthest and most remote reaches of future time. They include alternative future events that address unresolved scientific questions, such as whether humans will become extinct, whether the Earth survives when the Sun expands to become a red giant and whether proton decay will be the eventual end of all matter in the universe."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_fQEyukbRQCJG04r6lEb3n17S",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"State of JS 2026 survey results Astro developers\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_fQEyukbRQCJG04r6lEb3n17S",
+   "content": "[Timeline of the far future] While, due to indeterminacy and possibly free will, the future cannot be predicted with certainty, present understanding in various scientific fields allows for the prediction of some far-future events, if only in the broadest outline. These fields include astrophysics, which studies how planets and stars form, interact and die; particle physics, which has revealed how matter behaves at the smallest scales; evolutionary biology, which studies how life evolves over time; plate tectonics, which shows how continents shift over millennia; and sociology, which examines how human societies and cultures evolve. These timelines begin at the start of the 4th millennium in 3001 CE, and continue until the furthest and most remote reaches of future time. They include alternative future events that address unresolved scientific questions, such as whether humans will become extinct, whether the Earth survives when the Sun expands to become a red giant and whether proton decay will be the eventual end of all matter in the universe."
+  },
+  {
+   "role": "user",
+   "content": "Инструменты больше недоступны. Ответь по тому, что уже известно, последней строкой FINAL: <ответ>."
+  },
+  {
+   "role": "assistant",
+   "content": "К сожалению, у меня нет информации о том, сколько разработчиков используют Astro по данным опроса State of JS 2026. FINAL: <данные отсутствуют>.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

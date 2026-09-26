@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "habr-2",
+  "source": "habr",
+  "question": "Какой новый HTML-атрибут предложила команда Edge?",
+  "answer": "focusgroup",
+  "evidence": "Команда Edge предлагает новый HTML-атрибут `focusgroup`",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "answerable": true
+ },
+ "answer": "Команда Edge предложила новый HTML-атрибут `focusgroup`, который позволяет обрабатывать клавиши стрелок и управлять фокусом на элементах, игнорируя скрытые и отключенные элементы. FINAL: focusgroup",
+ "final": "focusgroup",
+ "correct": true,
+ "refused": false,
+ "cost": 0.0002455499999999833,
+ "seconds": 4.968026207992807,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какой новый HTML-атрибут предложила команда Edge?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_2ppx3OECmnV9RfA8qiIIk6j7",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"новый HTML-атрибут команда Edge\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_2ppx3OECmnV9RfA8qiIIk6j7",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI] https://habr.com/ru/articles/1009296 — Команда Edge предлагает новый HTML-атрибут `focusgroup`: добавляешь его на контейнер и браузер сам обрабатывает клавиши стрелок, пропускает скрытые/disabled-элементы, учитывает направление текста и восстанавливает фокус при возврате. Реализация уже в Edge и Chromium, идёт RFC-процесс для других браузеров. `focusgroup` ### 🛠️ Инструменты [...] и подводный камень Anchor Positioning; в JS — когда пор\n[Новый способ стилизации отступов в CSS / Хабр] https://habr.com/ru/articles/918084 — Команда разработчиков Microsoft Edge рада сообщить, что CSS gap decorations - новый способ стилизации отступов между элементами flex, grid и многоколоночных макетах - теперь доступны для пробного использования разработчиками в Chrome и Edge 139! Попробуйте его и поделитесь своими отзывами, чтобы помочь сформировать будущее этого API. ## Проблема [...] Неинтуитивно: Они вводят структурные зависимос\n[Красавица и HTML Injection. Почему HTMLi не только про дефейс / Хабр] https://habr.com/ru/articles/804863 — value=\"Submit\"> --> </fieldset> <datalist id=\"browsers\"> <!-- <option value=\"Edge\"> <option value=\"Firefox\"> <option value=\"Chrome\"> <option value=\"Opera\"> <option value=\"Safari\"> --> </datalist> <output name=\"x\" for=\"a b\">output</output> </form> </code> [...] <p>Здесь создается скрытое поле ввода (<code><input></code>), которое имеет атрибут <code>name</code> со значением <code>x</code>, атрибут \n[Microsoft запретила перехват ссылок microsoft-edge:// в превью-сборках Windows 11 / Комментарии / Хабр] https://habr.com/ru/news/588945/comments — Что новый вид протокола MS запилила - не особо хорошо, но если вопрос в том, чтобы виджеты работали (и обрабатывались конкретным браузером/движком), то это решение как решение. Ну а мечта каждого вендора, чтобы его браузер был в системе по-умолчанию - это вообще классика. [...] ну это уже злоупотребление монопольным положением Например, из-за нестандартных тегов "
+  },
+  {
+   "role": "assistant",
+   "content": "Команда Edge предложила новый HTML-атрибут `focusgroup`, который позволяет обрабатывать клавиши стрелок и управлять фокусом на элементах, игнорируя скрытые и отключенные элементы. FINAL: focusgroup",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

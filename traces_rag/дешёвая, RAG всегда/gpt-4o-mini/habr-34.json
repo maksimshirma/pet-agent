@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-34",
+  "source": "habr",
+  "question": "Кто собрал техрадар HolyJS Spring 2026?",
+  "answer": "Паша Востриков",
+  "evidence": "архитектор веб-направления «Лаборатории Касперского» Паша Востриков собрал на HolyJS Spring 2026 техрадар",
+  "page": "Инженерная зрелость в JS",
+  "url": "https://lawebbox.com/articles/inzhenernaya-zrelost-v-js-pochemu/",
+  "answerable": true
+ },
+ "answer": "Техрадар HolyJS Spring 2026 собрал Паша Востриков, архитектор веб-направления «Лаборатории Касперского» [1]. \n\nFINAL: Паша Востриков.",
+ "final": "Паша Востриков.",
+ "correct": true,
+ "refused": false,
+ "cost": 7.634999999997505e-05,
+ "seconds": 1.0270078750036191,
+ "steps": 1,
+ "messages": []
+}

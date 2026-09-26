@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-15",
+  "source": "habr",
+  "question": "Какая версия React Email вышла в апреле 2026?",
+  "answer": "6.0.0",
+  "evidence": "React Email выпустил версию 6.0.0",
+  "page": "Frontend Status #14",
+  "url": "https://habr.com/ru/articles/1028734/",
+  "answerable": true
+ },
+ "answer": "NOT_FOUND.  \nFINAL: NOT_FOUND.",
+ "final": "NOT_FOUND.",
+ "correct": false,
+ "refused": true,
+ "cost": 8.700000000000374e-05,
+ "seconds": 1.7450946670142002,
+ "steps": 1,
+ "messages": []
+}

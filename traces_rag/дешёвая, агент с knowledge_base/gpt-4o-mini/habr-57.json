@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "habr-57",
+  "source": "habr",
+  "question": "Какая проблема исправлена в Tailwind CSS в июне 2026?",
+  "answer": "проблема с sourcemaps",
+  "evidence": "Tailwind CSS: исправлена проблема с sourcemaps",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "answerable": true
+ },
+ "answer": "В июне 2026 года в Tailwind CSS была исправлена проблема с sourcemaps, добавлено флаг --silent для CLI, исправлен парсинг селекторов и добавлены новые узлы селекторов, а также улучшен парсинг shadow-значений. \n\nFINAL: Исправлены sourcemaps, добавлен --silent, улучшен парсинг селекторов и shadow-значений.",
+ "final": "Исправлены sourcemaps, добавлен --silent, улучшен парсинг селекторов и shadow-значений.",
+ "correct": false,
+ "refused": false,
+ "cost": 0.00021394999999996278,
+ "seconds": 3.6095554170024116,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы по локальной базе знаний (статьи Habr/lawebbox про фронтенд и AI в 2026 году). Всегда сначала вызови knowledge_base, при необходимости — с уточнённым запросом или фильтром по странице. Если после поиска в базе знаний нет ответа на вопрос, ответь ровно NOT_FOUND. Последняя строка ответа всегда FINAL: <короткий ответ или NOT_FOUND>."
+  },
+  {
+   "role": "user",
+   "content": "Какая проблема исправлена в Tailwind CSS в июне 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_WUueQwd37M1Gq33lMmgoEApd",
+     "function": {
+      "name": "knowledge_base",
+      "arguments": "{\"query\":\"Tailwind CSS июнь 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_WUueQwd37M1Gq33lMmgoEApd",
+   "content": "[Frontend Status #18 / Фронтенд] Tailwind CSS : исправлена проблема с sourcemaps, добавлено --silent для CLI, исправлен парсинг селекторов, добавлены новые узлы селекторов, улучшен парсинг shadow-значений.\n[Frontend Status #7 / 🎨 CSS] CSS 2026: что нового и уже работает в браузерах — В 2026 году CSS стал ещё мощнее благодаря Interop 2026 и Baseline 2026, обеспечив кросс-браузерную поддержку многих фич: cross-document view transitions для плавных переходов между страницами, scroll-driven animations, @starting-style для анимаций появления, relative color syntax и color-mix() на baseline, улучшенный @scope , reading flow для доступности, gap decorations в grid/flex, Custom Highlight API и contrast-color(). Появляются или близки к релизу @mixin (с параметрами, пока в Chrome ~146), masonry layout (теперь через grid-lanes), делая CSS самостоятельнее и избавляя от хаков/JS в сложных интерфейсах.\n[Frontend Status #14 / Frontend Status: свежий дайджест фронтенда и AI — 27.04.2026] 🎨 Новый CSS вместо старых костылей: sizes=\"auto\" и HTML в <canvas> показывают, как делать богаче интерфейсы и проще поддержку.\n[Frontend Status #11 / Frontend Status: свежий дайджест фронтенда и AI — 03.04.2026] 🎨 CSS Anchor Positioning: два круга, стрелка и ноль строк JS от Темани Афифа.\n[Frontend Status #18 / 🎨 CSS] Центрирование в CSS в 2026 году : Темани Афиф пересобирает вечную тему «как отцентрировать элемент» вокруг простой мысли — универсального ответа нет, техника зависит от контекста (элемент в потоке или вынесен из него), и важно понимать, почему выбранный код работает, а не подбирать рабочую комбинацию методом тыка."
+  },
+  {
+   "role": "assistant",
+   "content": "В июне 2026 года в Tailwind CSS была исправлена проблема с sourcemaps, добавлено флаг --silent для CLI, исправлен парсинг селекторов и добавлены новые узлы селекторов, а также улучшен парсинг shadow-значений. \n\nFINAL: Исправлены sourcemaps, добавлен --silent, улучшен парсинг селекторов и shadow-значений.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

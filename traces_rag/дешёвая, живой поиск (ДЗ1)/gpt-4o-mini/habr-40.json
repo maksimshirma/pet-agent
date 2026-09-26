@@ -1,0 +1,123 @@
+{
+ "task": {
+  "id": "habr-40",
+  "source": "habr",
+  "question": "Сколько CVE вошло в Firefox 148 после проверки Claude?",
+  "answer": "22",
+  "evidence": "итого 22 CVE вошли в Firefox 148",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "answerable": true
+ },
+ "answer": "В Firefox 148 было исправлено 51 уязвимость (CVE), из которых 22 были обнаружены с помощью Claude. FINAL: 51",
+ "final": "51",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0009629999999999916,
+ "seconds": 18.910383834008826,
+ "steps": 5,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Сколько CVE вошло в Firefox 148 после проверки Claude?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_flrHenSZDSEbG8Th0rIMOrqv",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"CVE Firefox 148 Claude\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_flrHenSZDSEbG8Th0rIMOrqv",
+   "content": "[Топ новостей инфобеза за апрель 2026 года] https://habr.com/ru/articles/1032178 — Какие, собственно, цифры? Из опубликованного в тот же день бюллетеня по безопасности свежей версии: в нём 41 CVE, три из них отмечены как найденные Claude. При этом в Firefox 148 51 CVE, 22 от Anthropic со 112 баг‑репортов — отрицательный рост от 5:1 к 90:1. Где уязвимости, Клодовски? [...] Скептики рассуждают, что пока наиболее вероятное объяснение — в Mozilla перешли на альтернативную метрическу\n[Frontend Status: свежий дайджест фронтенда и AI] https://habr.com/ru/articles/1009296 — Команда Anthropic прогнала Claude по кодовой базе Firefox и нашла 14 критических уязвимостей, о которых десятилетиями не подозревали, итого 22 CVE вошли в Firefox 148. ### 🎨 CSS [...] В этом выпуске — CodePen 2.0 и клон Loom на Next.js в видео; про AI: почему коллекция промптов не заменяет мышление, автоисследования на игровом PC и онбординг через Oncode. Безопасность в центре: Clinejection (4000 \n[NVIDIA Nemotron, Claude фиксит Firefox, ИИ буллит ...] https://habr.com/ru/companies/timeweb/articles/1009630 — #### ❯ Claude нашёл 22 уязвимости в Firefox за две недели Исследователи из Anthropic прогнали Claude Opus 4.6 по кодовой базе Firefox. Просканировано около 6000 файлов на C++. Модель нашла 22 уязвимости и 14 критических. Все исправлены в Firefox 148. Первую ошибку типа use-after-free нашли за 20 минут. Дальше Mozilla распространила подход на всю кодовую базу, затем Claude нашёл ещё 90 багов. [...]\n[Иголка в стоге сена: как LLM помогают искать уязвимости] https://habr.com/ru/companies/bastion/articles/1034662 — Claude обнаружил уязвимость use-after-free примерно через 20 минут исследования, люди подтвердили находку, и команда отправила отчет в Bugzilla с патчем-кандидатом. Как только рабочий процесс доказал свою эффективность, его масштабировали. В итоге просканировали около 6000 файлов C++ и отправили 112 уникальных отчетов. Большинство исправлений вошло в Firefox 148.0 (выпущен 24 февраля 2026 года)"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_UiIqrpNPyLe7NiPvSKyHhXnz",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"Firefox 148 CVE\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_UiIqrpNPyLe7NiPvSKyHhXnz",
+   "content": "[Топ новостей инфобеза за апрель 2026 года] https://habr.com/ru/articles/1032178 — Какие, собственно, цифры? Из опубликованного в тот же день бюллетеня по безопасности свежей версии: в нём 41 CVE, три из них отмечены как найденные Claude. При этом в Firefox 148 51 CVE, 22 от Anthropic со 112 баг‑репортов — отрицательный рост от 5:1 к 90:1. Где уязвимости, Клодовски? [...] Mozilla присоединилась к хайпу вокруг нашумевшего продукта от Anthropic. В блог‑посте с громким заголовком «\n[Frontend Status: свежий дайджест фронтенда и AI] https://habr.com/ru/articles/1009296 — Команда Anthropic прогнала Claude по кодовой базе Firefox и нашла 14 критических уязвимостей, о которых десятилетиями не подозревали, итого 22 CVE вошли в Firefox 148. ### 🎨 CSS [...] В этом выпуске — CodePen 2.0 и клон Loom на Next.js в видео; про AI: почему коллекция промптов не заменяет мышление, автоисследования на игровом PC и онбординг через Oncode. Безопасность в центре: Clinejection (4000 \n[NVIDIA Nemotron, Claude фиксит Firefox, ИИ буллит ...] https://habr.com/ru/companies/timeweb/articles/1009630 — #### ❯ Claude нашёл 22 уязвимости в Firefox за две недели Исследователи из Anthropic прогнали Claude Opus 4.6 по кодовой базе Firefox. Просканировано около 6000 файлов на C++. Модель нашла 22 уязвимости и 14 критических. Все исправлены в Firefox 148. Первую ошибку типа use-after-free нашли за 20 минут. Дальше Mozilla распространила подход на всю кодовую базу, затем Claude нашёл ещё 90 багов. [...]\n[Anthropic помогла обнаружить более десятка серьёзных ...] https://habr.com/ru/news/1008306 — Все потоки Войти darya\\_kiwi # Anthropic помогла обнаружить более десятка серьёзных уязвимостей в Firefox 2 мин 9.2K Информационная безопасность \\ FirefoxБраузерыИскусственный интеллект Несколько недель назад команда из Anthropic поделилась с Mozilla результатами нового метода обнаружения уязвимостей с помощью искусственного интеллекта. Он позволил выявить более десятка ошибок в системе безопаснос\n[Mozilla использо"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_CUAmqHhKQPVmnpbcYpiaEDBP",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"Firefox 148 безопасный бюллетень\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_CUAmqHhKQPVmnpbcYpiaEDBP",
+   "content": "[Топ новостей инфобеза за апрель 2026 года] https://habr.com/ru/articles/1032178 — Какие, собственно, цифры? Из опубликованного в тот же день бюллетеня по безопасности свежей версии: в нём 41 CVE, три из них отмечены как найденные Claude. При этом в Firefox 148 51 CVE, 22 от Anthropic со 112 баг‑репортов — отрицательный рост от 5:1 к 90:1. Где уязвимости, Клодовски? [...] Mozilla присоединилась к хайпу вокруг нашумевшего продукта от Anthropic. В блог‑посте с громким заголовком «\n[Иголка в стоге сена: как LLM помогают искать уязвимости] https://habr.com/ru/companies/bastion/articles/1034662 — ### Источники Anthropic: Partnering with Mozilla to improve Firefox's security Mozilla: Hardening Firefox with Anthropic's Red Team OpenAI: Codex Security: now in research preview Mozilla: Security Vulnerabilities fixed in Firefox 148, MFSA-2026-13 Chroma Research: Context Rot: How Increasing Input Tokens Impacts LLM Performance arXiv: Lost in the Middle: How Language Models Use Long Contexts Deva\n[Сэм Альтман раскрыл, что техно-олигархи на самом ...] https://habr.com/ru/companies/bothub/articles/1003996/comments — Сэм Альтман не просто защищает бизнес-модель OpenAI. Он предлагает нам сделку: признать себя устаревшим софтом в обмен на иллюзию эффективности."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_SAvxucOdaQSZtx0FTJfxK7f9",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"CVE Firefox 148\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_SAvxucOdaQSZtx0FTJfxK7f9",
+   "content": "[Топ новостей инфобеза за апрель 2026 года] https://habr.com/ru/articles/1032178 — Какие, собственно, цифры? Из опубликованного в тот же день бюллетеня по безопасности свежей версии: в нём 41 CVE, три из них отмечены как найденные Claude. При этом в Firefox 148 51 CVE, 22 от Anthropic со 112 баг‑репортов — отрицательный рост от 5:1 к 90:1. Где уязвимости, Клодовски? [...] Mozilla присоединилась к хайпу вокруг нашумевшего продукта от Anthropic. В блог‑посте с громким заголовком «\n[Frontend Status: свежий дайджест фронтенда и AI] https://habr.com/ru/articles/1009296 — Команда Anthropic прогнала Claude по кодовой базе Firefox и нашла 14 критических уязвимостей, о которых десятилетиями не подозревали, итого 22 CVE вошли в Firefox 148. ### 🎨 CSS [...] В этом выпуске — CodePen 2.0 и клон Loom на Next.js в видео; про AI: почему коллекция промптов не заменяет мышление, автоисследования на игровом PC и онбординг через Oncode. Безопасность в центре: Clinejection (4000 \n[Anthropic помогла обнаружить более десятка серьёзных ...] https://habr.com/ru/news/1008306 — Все потоки Войти darya\\_kiwi # Anthropic помогла обнаружить более десятка серьёзных уязвимостей в Firefox 2 мин 9.2K Информационная безопасность \\ FirefoxБраузерыИскусственный интеллект Несколько недель назад команда из Anthropic поделилась с Mozilla результатами нового метода обнаружения уязвимостей с помощью искусственного интеллекта. Он позволил выявить более десятка ошибок в системе безопаснос\n[NVIDIA Nemotron, Claude фиксит Firefox, ИИ буллит ...] https://habr.com/ru/companies/timeweb/articles/1009630 — #### ❯ Claude нашёл 22 уязвимости в Firefox за две недели Исследователи из Anthropic прогнали Claude Opus 4.6 по кодовой базе Firefox. Просканировано около 6000 файлов на C++. Модель нашла 22 уязвимости и 14 критических. Все исправлены в Firefox 148. Первую ошибку типа use-after-free нашли за 20 минут. Дальше Mozilla распространила подход на всю кодовую базу, затем Claude нашёл ещё 90 багов. [...]\n[Mozilla использо"
+  },
+  {
+   "role": "assistant",
+   "content": "В Firefox 148 было исправлено 51 уязвимость (CVE), из которых 22 были обнаружены с помощью Claude. FINAL: 51",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

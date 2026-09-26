@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "habr-34",
+  "source": "habr",
+  "question": "Кто собрал техрадар HolyJS Spring 2026?",
+  "answer": "Паша Востриков",
+  "evidence": "архитектор веб-направления «Лаборатории Касперского» Паша Востриков собрал на HolyJS Spring 2026 техрадар",
+  "page": "Инженерная зрелость в JS",
+  "url": "https://lawebbox.com/articles/inzhenernaya-zrelost-v-js-pochemu/",
+  "answerable": true
+ },
+ "answer": "Техрадар HolyJS Spring 2026 собрал Паша Востриков, архитектор веб-направления «Лаборатории Касперского». Он опросил более 120 инженеров и разложил их ответы по зонам Adopt, Trial, Assess и Hold. \n\nFINAL: Паша Востриков.",
+ "final": "Паша Востриков.",
+ "correct": true,
+ "refused": false,
+ "cost": 0.0001922199999999652,
+ "seconds": 3.3172626250016037,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы по локальной базе знаний (статьи Habr/lawebbox про фронтенд и AI в 2026 году). Всегда сначала вызови knowledge_base, при необходимости — с уточнённым запросом или фильтром по странице. Если после поиска в базе знаний нет ответа на вопрос, ответь ровно NOT_FOUND. Последняя строка ответа всегда FINAL: <короткий ответ или NOT_FOUND>."
+  },
+  {
+   "role": "user",
+   "content": "Кто собрал техрадар HolyJS Spring 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_232aycvVvjruFMY8SNU08G1N",
+     "function": {
+      "name": "knowledge_base",
+      "arguments": "{\"query\":\"техрадар HolyJS Spring 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_232aycvVvjruFMY8SNU08G1N",
+   "content": "[Инженерная зрелость в JS / Инженерная зрелость в JS: почему фронтенд-сообщество выбирает предсказуемость вместо хайпа] По данным Хабра, архитектор веб-направления «Лаборатории Касперского» Паша Востриков собрал на HolyJS Spring 2026 техрадар по JS-стеку: опросил 120+ инженеров и разложил их ответы по зонам Adopt, Trial, Assess и Hold.\n[Frontend Status #15 / Frontend Status: свежий дайджест фронтенда и AI — 06.05.2026] ⚡ JavaScript и React на новом витке: ES2025/ES2026, типизированные контракты, React Compiler, TanStack Form и useHotkeys как база для масштабируемой фронтенд-разработки.\n[Frontend Status #14 / Frontend Status: свежий дайджест фронтенда и AI — 27.04.2026] ⚡ JS/TS и фреймворки под давлением масштаба: читаемость кода, ускорение Angular и обновления React/Vue как ориентиры для технических решений.\n[Frontend Status #10 / ⚛️ React] вышел next-forge 6.0 - Шаблон Turborepo от Vercel для монорепозитория приложений Next.js.\n[Frontend Status #15 / 𝐒 Svelte] Майский ченджлог Svelte : TypeScript 6.0 в SvelteKit 2.56, breaking changes в remote-функциях (разрешения на refresh, стабильный кеш, run()), community add-ons в sv CLI и попадание в ThoughtWorks Technology Radar."
+  },
+  {
+   "role": "assistant",
+   "content": "Техрадар HolyJS Spring 2026 собрал Паша Востриков, архитектор веб-направления «Лаборатории Касперского». Он опросил более 120 инженеров и разложил их ответы по зонам Adopt, Trial, Assess и Hold. \n\nFINAL: Паша Востриков.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

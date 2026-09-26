@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-9",
+  "source": "habr",
+  "question": "Какая версия TypeScript упомянута в анонсе марта 2026?",
+  "answer": "6.0",
+  "evidence": "Анонс TypeScript 6.0",
+  "page": "Frontend Status #10",
+  "url": "https://habr.com/ru/articles/1015700/",
+  "answerable": true
+ },
+ "answer": "Согласно источнику [1], в анонсе (Frontend Status #10) упомянута **TypeScript 6.0** - описывается как последняя версия, основанная на базе JavaScript.\n\nFINAL: TypeScript 6.0",
+ "final": "TypeScript 6.0",
+ "correct": true,
+ "refused": false,
+ "cost": 0.0010410000000000141,
+ "seconds": 1.8462226670235395,
+ "steps": 1,
+ "messages": []
+}

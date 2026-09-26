@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-29",
+  "source": "habr",
+  "question": "Какая версия visx вышла с поддержкой React 19?",
+  "answer": "4.0",
+  "evidence": "Вышел visx 4.0 с полной поддержкой React 19",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "answerable": true
+ },
+ "answer": "[1] Вышла **visx 4.0** с полной поддержкой React 19.\n\nFINAL: visx 4.0 получила полную поддержку React 19.",
+ "final": "visx 4.0 получила полную поддержку React 19.",
+ "correct": true,
+ "refused": false,
+ "cost": 0.0009210000000000051,
+ "seconds": 1.5235773329914082,
+ "steps": 1,
+ "messages": []
+}

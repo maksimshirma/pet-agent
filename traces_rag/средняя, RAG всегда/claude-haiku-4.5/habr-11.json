@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-11",
+  "source": "habr",
+  "question": "Кто представил State of Vue 2026?",
+  "answer": "Evan You",
+  "evidence": "Evan You представил State of Vue 2026",
+  "page": "Frontend Status #14",
+  "url": "https://habr.com/ru/articles/1028734/",
+  "answerable": true
+ },
+ "answer": "Согласно источнику [1], **State of Vue 2026** представил **Evan You** — создатель Vue. Это ежегодный апдейт с обзором дорожной карты, развития экосистемы, улучшений производительности и общего вектора развития фреймворка.\n\nFINAL: Evan You представил State of Vue 2026.",
+ "final": "Evan You представил State of Vue 2026.",
+ "correct": true,
+ "refused": false,
+ "cost": 0.0011510000000000131,
+ "seconds": 1.8514763340062927,
+ "steps": 1,
+ "messages": []
+}

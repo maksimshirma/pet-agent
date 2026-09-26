@@ -1,0 +1,123 @@
+{
+ "task": {
+  "id": "habr-39",
+  "source": "habr",
+  "question": "Сколько машин разработчиков скомпрометировано через GitHub-issue?",
+  "answer": "4000",
+  "evidence": "Злоумышленник скомпрометировал 4000 машин разработчиков через GitHub-issue",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "answerable": true
+ },
+ "answer": "Информации о количестве скомпрометированных машин разработчиков через GitHub-issue не найдено. Однако, согласно последним новостям, обсуждаются случаи компрометации, но точные цифры не указаны. \n\nFINAL: нет данных",
+ "final": "нет данных",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0006690000000000029,
+ "seconds": 13.661806332995184,
+ "steps": 5,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Сколько машин разработчиков скомпрометировано через GitHub-issue?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_evNCIMlbCVmfimXBF7HxOra9",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"GitHub issue компрометация машин разработчиков\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_evNCIMlbCVmfimXBF7HxOra9",
+   "content": "[Как вредоносный код переписал мой Git-коммит и заразил десятки проектов и несколько рабочих машин / Хабр] https://habr.com/ru/articles/1040200 — Считать секреты скомпрометированными, если они были доступны на машине или в окружении. Ротировать GitHub tokens, SSH-ключи, deploy keys, cloud/API/payment secrets. Проверить GitHub Apps, OAuth Apps, personal access tokens и SSH keys. Проверить машины всех разработчиков, которые работали с зараженным проектом. После очистки пересканировать репозитории еще раз через день или два. [...] Так цепочка \n[Вы пустили ИИ‑агента в репозиторий, теперь разбираемся, что он может сломать / Хабр] https://habr.com/ru/companies/pt/articles/1030532 — 15. Snyk — Cline supply chain attack — snyk.io/blog/cline‑supply‑chain‑attack‑prompt‑injection‑github‑actions 16. Cline post‑mortem 17. Securing Agents — Clinejection — securingagents.com/articles/clinejection‑how‑a-github‑issue‑title‑compromised-4000-developer‑machines 18. CVE-2026-29783 — nvd.nist.gov/vuln/detail/CVE-2026-29783 [...] Исследователи из HiddenLayer продемонстрировали промпт‑инъекци\n[«Fix typo»: как в PHP закоммитили бэкдор и почему composer install — это акт доверия / Хабр] https://habr.com/ru/articles/1048056 — #### Звено 3. CI/CD: атакуют конвейер Раз артефакт собирает CI, то компрометация CI — это компрометация артефакта. Показательный случай — tj-actions/changed-files (CVE-2025-30066, март 2025), популярный GitHub Action, использовавшийся в более чем 23 000 репозиториев. [...] Доверие смещается, а не исчезает. Важно быть честным: «нет ключей ни у кого» — неправда. Ключи есть у Fulcio, у Rekor, у корня\n[ChainDrop: как взлом Keyv превратил npm в конвейер заражённых пакетов / Хабр] https://habr.com/ru/articles/1067402 — 5. Модуль искал на машине ключи, токены, конфигурационные файлы и учётные данные. 6. Найденные права публикации использовались для добавления червя в другие npm‑пакеты, доступные скомпрометированному разработчику. 7. Собранные данные отправлялись через GitHub и "
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_UrY30C9NFMTWQAw5mR0ZFxiO",
+     "function": {
+      "name": "web_search_ru",
+      "arguments": "{\"query\":\"GitHub compromise developer machines\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_UrY30C9NFMTWQAw5mR0ZFxiO",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_6RAlG17ZOyLxFqlkY4wia4DJ",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"GitHub issue compromise developer machines 2023\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_6RAlG17ZOyLxFqlkY4wia4DJ",
+   "content": "[Microsoft Azure] Microsoft Azure, sometimes stylized Azure, and formerly Windows Azure, is the cloud computing platform developed by Microsoft. It offers management, access and development of applications and services to individuals, companies, and governments through its global infrastructure. Microsoft Azure supports multiple programming languages, tools, and frameworks, including Microsoft-specific and third-party software and systems. Azure was first introduced at the Professional Developers Conference (PDC) in October 2008 under the code name \"Project Red Dog\". It was officially launched as Windows Azure in February 2010 and later renamed to Microsoft Azure on March 25, 2014."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_vzTZdfQSJX7mg2H0AVNKpIz9",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"компрометация машин разработчиков GitHub 2023\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_vzTZdfQSJX7mg2H0AVNKpIz9",
+   "content": "[Инструменты атакующих в 2023–2024 годах / Хабр] https://habr.com/ru/companies/bastion/articles/862168 — #### Базовый подход к анализу open-source инструментов Если вы имеете дело с open-source, то можно закинуть пару скриптов в ChatGPT и с помощью промпта получить какие-нибудь индикаторы компрометации. Работает хорошо и не требует времени, разве что на подключение VPN. Да, сам инструмент вы таким образом не заметите, но можете быстро идентифицировать результат его выполнения. Первый пример — из рабо\n[Топ новостей инфобеза за сентябрь 2025 года] https://habr.com/ru/companies/tomhunter/articles/954244 — В прошлом месяце на npm отметились две крупных компрометации пакетов, включая первого самореплицирующегося червя. ... GitHub откажется от\n[Настраиваем Git server hook в GitLab On-Premise для ...] https://habr.com/ru/companies/pt/articles/771022/comments — Использование того же yubikey позволит решить проблему компрометации рабочего места с ключом + безопасность секретного ключа (в том числе от\n[Прохождение OffSec Certified Professional+ (OSCP+): мой путь, ошибки и лайфхаки / Хабр] https://habr.com/ru/articles/905260 — Полной компрометации сетапа Active Directory (40 баллов). Получения полного доступа (user + root) на двух из изолированных машин (20 баллов). Получения пользовательского доступа (user) на второй изолированной машине (10 баллов). [...] После третьей неудачи я наконец понял: проблема была не в количестве пройденных машин, а в том, как я с ними работал и какие выводы делал. Нужна была коренная смена \n[Обзор утилиты для поиска секретов TruffleHog] https://habr.com/ru/companies/first/articles/770898 — Большая поддержка различных систем — поиск секретов в таких системах как Git, GitHub, GitLab, Docker, Amazon S3, syslog, circleci (с полным"
+  },
+  {
+   "role": "assistant",
+   "content": "Информации о количестве скомпрометированных машин разработчиков через GitHub-issue не найдено. Однако, согласно последним новостям, обсуждаются случаи компрометации, но точные цифры не указаны. \n\nFINAL: нет данных",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

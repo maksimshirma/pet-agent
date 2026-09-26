@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-3",
+  "source": "habr",
+  "question": "Кто был гостем подкаста о WebAssembly 3.0 20 января 2026?",
+  "answer": "Andreas Rossberg",
+  "evidence": "Гость — Andreas Rossberg, один из ключевых архитекторов WebAssembly с первых дней",
+  "page": "Frontend Status #7",
+  "url": "https://habr.com/ru/articles/1007014/",
+  "answerable": true
+ },
+ "answer": "Гостем подкаста о WebAssembly 3.0 20 января 2026 был Andreas Rossberg, один из ключевых архитекторов WebAssembly [1]. \n\nFINAL: Andreas Rossberg.",
+ "final": "Andreas Rossberg.",
+ "correct": true,
+ "refused": false,
+ "cost": 0.00014190000000000036,
+ "seconds": 1.5169307500182185,
+ "steps": 1,
+ "messages": []
+}

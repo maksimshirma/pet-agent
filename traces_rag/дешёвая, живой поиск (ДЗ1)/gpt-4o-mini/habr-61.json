@@ -1,0 +1,159 @@
+{
+ "task": {
+  "id": "habr-61",
+  "source": "habr",
+  "question": "Какие оптимизации добавлены в llama.cpp в июне 2026?",
+  "answer": "оптимизации CUDA",
+  "evidence": "llama.cpp: исправлены уязвимости в ggml-alloc, добавлены оптимизации CUDA",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "answerable": true
+ },
+ "answer": "К июню 2026 года в проекте llama.cpp были добавлены следующие оптимизации:\n- Оптимизации для CUDA, которые улучшили производительность на GPU.\n- Поддержка NVFP4 для сжатых тензоров, что улучшило обработку данных.\n- Исправленные уязвимости в ggml-alloc и улучшения пользовательского интерфейса.\n\nЭто делает llama.cpp более эффективным для локального инференса. \n\nFINAL: Оптимизации CUDA, NVFP4 для сжатых тензоров.",
+ "final": "Оптимизации CUDA, NVFP4 для сжатых тензоров.",
+ "correct": true,
+ "refused": false,
+ "cost": 0.0013723500000000222,
+ "seconds": 22.405422207986703,
+ "steps": 6,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какие оптимизации добавлены в llama.cpp в июне 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_akfOU6gKtjbqTNhwX88pxkC4",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"llama.cpp оптимизации июнь 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_akfOU6gKtjbqTNhwX88pxkC4",
+   "content": "[Выжать больше из локальных LLM. Ollama медленнее llama.cpp в 3 раза. UD_Q4_K_XL лучше чем Q4_K_M, а вес тот же и т.д / Comments / Habr] https://habr.com/en/articles/1025132/comments — Актуален ли этот тезис в июне 2026? Вроде там в ollama какие-то тектонические сдвиги в сторону llama.cpp произошли... Sign up to leave a comment. Your account Log in Sign up Articles News Hubs Authors Sandbox How it works For authors For companies Documents Agreement Confidential Corporate blogs Advertising Native advertising Education programs Startups Support © 2006–2026, Habr [...] Shannon В ll\n[Друзья не дают друзьям пользоваться Ollama] https://habr.com/ru/articles/1085032 — Это, однако, не полностью снимает вопрос об отставании от upstream. Ollama использует не текущий HEAD llama.cpp, а зафиксированную версию. Весной 2026 года это, например, приводило к заметной разнице в производительности Vulkan на AMD из‑за отсутствующих upstream‑оптимизаций. Сейчас версии обновляются гораздо регулярнее: например, 15 сентября Ollama обновила llama.cpp до b10969. Сам механизм возмо\n[Голосовой ввод на русско-английском в 2026: WisprFlow ...] https://habr.com/ru/articles/1024634 — whisper.cpp — полная переписка Whisper на C++, автор — Георги Герганов (он же создал llama.cpp). Работает без Python, запускается на чём угодно — от десктопа до телефона. Именно whisper.cpp используется под капотом в OpenWhispr. В январе 2026 получил 12-кратное ускорение на встроенных GPU через Vulkan. [...] Причина: CUDA-поддержка Blackwell (compute capability `sm_120`, под которую бинарники ещё \n[Frontend Status: свежий дайджест фронтенда и AI] https://habr.com/ru/articles/1047986 — #### AI / ML Transformers: Исправлена уязвимость в пути при сохранении шаблонов, добавлена поддержка XPU для FlashAttention, добавлена новая модель cohere2\\_moe, исправлены ошибки в проверке модели и в MaskGenerationPipeline. llama.cpp: исправлены уязвимости в ggml-alloc, добавлены оптимизации CUDA, исправлены ошибки в UI и управлении кон"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_3R39l7Hyrfp93Q6BlKUq6caQ",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"llama.cpp июнь 2026 обновления оптимизации\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_3R39l7Hyrfp93Q6BlKUq6caQ",
+   "content": "[Друзья не дают друзьям пользоваться Ollama] https://habr.com/ru/articles/1085032 — Это, однако, не полностью снимает вопрос об отставании от upstream. Ollama использует не текущий HEAD llama.cpp, а зафиксированную версию. Весной 2026 года это, например, приводило к заметной разнице в производительности Vulkan на AMD из‑за отсутствующих upstream‑оптимизаций. Сейчас версии обновляются гораздо регулярнее: например, 15 сентября Ollama обновила llama.cpp до b10969. Сам механизм возмо\n[Frontend Status: свежий дайджест фронтенда и AI] https://habr.com/ru/articles/1047986 — #### AI / ML Transformers: Исправлена уязвимость в пути при сохранении шаблонов, добавлена поддержка XPU для FlashAttention, добавлена новая модель cohere2\\_moe, исправлены ошибки в проверке модели и в MaskGenerationPipeline. llama.cpp: исправлены уязвимости в ggml-alloc, добавлены оптимизации CUDA, исправлены ошибки в UI и управлении контекстом, добавлена поддержка NVFP4 для сжатых тензоров, расш\n[Выжать больше из локальных LLM. Ollama медленнее ...] https://habr.com/en/articles/1025132/comments — Актуален ли этот тезис в июне 2026? Вроде там в ollama какие-то тектонические сдвиги в сторону llama.cpp произошли... Sign up to leave a comment. Your account Log in Sign up Articles News Hubs Authors Sandbox How it works For authors For companies Documents Agreement Confidential Corporate blogs Advertising Native advertising Education programs Startups Support © 2006–2026, Habr [...] Shannon В ll\n[Голосовой ввод на русско-английском в 2026: WisprFlow ...] https://habr.com/ru/articles/1024634 — whisper.cpp — полная переписка Whisper на C++, автор — Георги Герганов (он же создал llama.cpp). Работает без Python, запускается на чём угодно — от десктопа до телефона. Именно whisper.cpp используется под капотом в OpenWhispr. В январе 2026 получил 12-кратное ускорение на встроенных GPU через Vulkan. [...] Причина: CUDA-поддержка Blackwell (compute capability `sm_120`, под которую бинарники ещё \n[Обновление открытого"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_Imyh85fZ8AB2vNAGDV7bFpNq",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"llama.cpp обновление июнь 2026\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_Imyh85fZ8AB2vNAGDV7bFpNq",
+   "content": "[Друзья не дают друзьям пользоваться Ollama] https://habr.com/ru/articles/1085032 — Это, однако, не полностью снимает вопрос об отставании от upstream. Ollama использует не текущий HEAD llama.cpp, а зафиксированную версию. Весной 2026 года это, например, приводило к заметной разнице в производительности Vulkan на AMD из‑за отсутствующих upstream‑оптимизаций. Сейчас версии обновляются гораздо регулярнее: например, 15 сентября Ollama обновила llama.cpp до b10969. Сам механизм возмо\n[Полезности по нейросетям за 18-25 июня 2026 г / Хабр] https://habr.com/ru/articles/1051710 — Local LLM Optimization, англ - гайд по выжиманию скорости из локальных LLM: какие модели выбрать, как настроить llama.cpp и как не упереться в VRAM, RAM и KV-кэш (13 тыс просмотров).\n[Выжать больше из локальных LLM. Ollama медленнее ...] https://habr.com/en/articles/1025132/comments — Актуален ли этот тезис в июне 2026? Вроде там в ollama какие-то тектонические сдвиги в сторону llama.cpp произошли... Sign up to leave a comment. Your account Log in Sign up Articles News Hubs Authors Sandbox How it works For authors For companies Documents Agreement Confidential Corporate blogs Advertising Native advertising Education programs Startups Support © 2006–2026, Habr [...] Shannon В ll\n[Переоценённый король] https://habr.com/ru/articles/1055592 — llama.cpp. В марте 2023 года Георгий Герганов выложил движок LLM-инференса на чистом C/C++ — без Python в рантайме вовсе. К июлю 2026-го — 119 тыс. звёзд GitHub и статус фундамента всей экосистемы локального ИИ: на нём работают Ollama (175 тыс. звёзд — больше, чем у самого PyTorch; сам Ollama написан на Go), LM Studio и десятки других инструментов, а формат GGUF стал отраслевым стандартом — только\n[Frontend Status: свежий дайджест фронтенда и AI] https://habr.com/ru/articles/1047986 — #### AI / ML Transformers: Исправлена уязвимость в пути при сохранении шаблонов, добавлена поддержка XPU для FlashAttention, добавлена новая модель cohere2\\_moe, исправлены ошибки в "
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_rr1crUAjXuqkiw2NJ4tSz1ie",
+     "function": {
+      "name": "web_search_ru",
+      "arguments": "{\"query\": \"llama.cpp июнь 2026 оптимизации\"}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 1,
+     "id": "call_baSO0GuvZg8CppSIMXMdin83",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"llama.cpp optimizations June 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_rr1crUAjXuqkiw2NJ4tSz1ie",
+   "content": "[Большая языковая модель] Больша́я языкова́я моде́ль (БЯМ; англ. large language model, LLM) — языковая модель, основанная на нейронной сети с множеством параметров (миллиарды весовых коэффициентов и более), которая проходит предварительное обучение на обширных массивах неразмеченного текста методами самообучения (обучения c псевдометками, созданными самой моделью, а не внешним учителем), а затем подвергается тонкой настройке (fine-tuning) с применением обучения с подкреплением на основе отзывов людей (RLHF) для согласования результатов генерации с человеческими предпочтениями (alignment problem) и инструкциями. Большие языковые модели возникли и стали популярны после 2017 года, во время очередного бума искусственного интеллекта, поскольку именно эти модели начали эффективно справляться с широким спектром современных интеллектуальных задач. Это сместило фокус исследований обработки естественного языка с предыдущей парадигмы обучения специализированных контролируемых моделей для конкретных задач. В то же время не следует путать понятия ИИ и больших языковых моделей: если ИИ — это область компьютерных наук, охватывающая решение широкого круга интеллектуальных задач, то БЯМ/LLM — это лишь один (хоть и самый популярный в середине 2020-х) из многих инструментов, который, даже развившись в мультимодальные системы с поддержкой изображений, видео и аудио (так называемые MLLM), остаётся, по сути, специализированным вероятностным алгоритмом предсказания последовательностей, а не универсальным интеллектом (AGI). Термин «большой» в названии больших языковых моделей характеризует два ключевых аспекта: количество параметров и объём обучающих данных. Параметры представляют собой переменные и веса, используемые моделью для формирования прогнозов при обработке языка. Размерность современных языковых моделей варьируется от сотен миллионов до более чем триллиона параметров. Второй аспект термина «большой» касается беспрецедентного объёма данных для обучения, достигающего нескольких пет"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_baSO0GuvZg8CppSIMXMdin83",
+   "content": "[Llama.cpp] llama.cpp is an open-source software library that performs inference on various large language models such as Meta's Llama model. It is co-developed alongside the GGML project, a general-purpose tensor library. Command-line tools are included with the library, alongside a server with a simple web interface. llama.cpp has been considered as the de facto standard as the core of almost all local inference tools, including Ollama and LM Studio."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_oQ0Yuylj76ry6nq3BjyMxi1e",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"llama.cpp июнь 2026\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_oQ0Yuylj76ry6nq3BjyMxi1e",
+   "content": "[Полезности по нейросетям за 18-25 июня 2026 г] https://habr.com/ru/articles/1051710 — Local LLM Optimization, англ - гайд по выжиманию скорости из локальных LLM: какие модели выбрать, как настроить llama.cpp и как не упереться в VRAM, RAM и KV-кэш (13 тыс просмотров).\n[Выжать больше из локальных LLM. Ollama медленнее ...] https://habr.com/en/articles/1025132/comments — Актуален ли этот тезис в июне 2026? Вроде там в ollama какие-то тектонические сдвиги в сторону llama.cpp произошли... Sign up to leave a comment. Your account Log in Sign up Articles News Hubs Authors Sandbox How it works For authors For companies Documents Agreement Confidential Corporate blogs Advertising Native advertising Education programs Startups Support © 2006–2026, Habr [...] Shannon В ll\n[Переоценённый король] https://habr.com/ru/articles/1055592 — llama.cpp. В марте 2023 года Георгий Герганов выложил движок LLM-инференса на чистом C/C++ — без Python в рантайме вовсе. К июлю 2026-го — 119 тыс. звёзд GitHub и статус фундамента всей экосистемы локального ИИ: на нём работают Ollama (175 тыс. звёзд — больше, чем у самого PyTorch; сам Ollama написан на Go), LM Studio и десятки других инструментов, а формат GGUF стал отраслевым стандартом — только\n[Друзья не дают друзьям пользоваться Ollama] https://habr.com/ru/articles/1085032 — Это, однако, не полностью снимает вопрос об отставании от upstream. Ollama использует не текущий HEAD llama.cpp, а зафиксированную версию. Весной 2026 года это, например, приводило к заметной разнице в производительности Vulkan на AMD из‑за отсутствующих upstream‑оптимизаций. Сейчас версии обновляются гораздо регулярнее: например, 15 сентября Ollama обновила llama.cpp до b10969. Сам механизм возмо\n[Голосовой ввод на русско-английском в 2026: WisprFlow ...] https://habr.com/ru/articles/1024634 — whisper.cpp — полная переписка Whisper на C++, автор — Георги Герганов (он же создал llama.cpp). Работает без Python, запускается на чём угодно — от десктопа до телефона. Именно w"
+  },
+  {
+   "role": "assistant",
+   "content": "К июню 2026 года в проекте llama.cpp были добавлены следующие оптимизации:\n- Оптимизации для CUDA, которые улучшили производительность на GPU.\n- Поддержка NVFP4 для сжатых тензоров, что улучшило обработку данных.\n- Исправленные уязвимости в ggml-alloc и улучшения пользовательского интерфейса.\n\nЭто делает llama.cpp более эффективным для локального инференса. \n\nFINAL: Оптимизации CUDA, NVFP4 для сжатых тензоров.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

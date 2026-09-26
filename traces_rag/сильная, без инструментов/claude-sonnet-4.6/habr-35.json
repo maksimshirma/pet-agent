@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "habr-35",
+  "source": "habr",
+  "question": "Сколько инженеров опросили для техрадара HolyJS 2026?",
+  "answer": "120+",
+  "evidence": "опросил 120+ инженеров",
+  "page": "Инженерная зрелость в JS",
+  "url": "https://lawebbox.com/articles/inzhenernaya-zrelost-v-js-pochemu/",
+  "answerable": true
+ },
+ "answer": "FINAL: Нет данных",
+ "final": "Нет данных",
+ "correct": false,
+ "refused": false,
+ "cost": 0.001691999999999999,
+ "seconds": 2.2218896659906022,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Сколько инженеров опросили для техрадара HolyJS 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\": \"У меня нет информации о техрадаре HolyJS 2026, так как это событие либо ещё не состоялось, либо данные о нём отсутствуют в моей базе знаний.\", \"final\": \"Нет данных\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

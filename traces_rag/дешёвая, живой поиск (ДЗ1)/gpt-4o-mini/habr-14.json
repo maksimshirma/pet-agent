@@ -1,0 +1,101 @@
+{
+ "task": {
+  "id": "habr-14",
+  "source": "habr",
+  "question": "В какой версии Chromium доступен экспериментальный API HTML in Canvas?",
+  "answer": "Chromium 146+",
+  "evidence": "Доступно пока только в Chromium 146+ за флагом",
+  "page": "Frontend Status #14",
+  "url": "https://habr.com/ru/articles/1028734/",
+  "answerable": true
+ },
+ "answer": "Экспериментальный API HTML в Canvas доступен в Chromium версии 146 и выше. FINAL: 146",
+ "final": "146",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0006031499999999967,
+ "seconds": 8.900323624984594,
+ "steps": 4,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "В какой версии Chromium доступен экспериментальный API HTML in Canvas?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_OwZJqi3eY8RUN4YqYAo7vodw",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"experimental HTML in Canvas API Chromium version\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_OwZJqi3eY8RUN4YqYAo7vodw",
+   "content": "[Google Chrome] Google Chrome is a cross-platform web browser developed by Google. It was launched in September 2008 for Microsoft Windows and was built with free software components from Apple WebKit and Mozilla Firefox. Versions for Linux, macOS, iOS, iPadOS, and Android were later released, becoming the default browser on Android devices. The browser is also the main component of ChromeOS, on which it serves as the platform for web applications. Most of Chrome's source code comes from Google's free and open-source software project known as Chromium, but Chrome is licensed as a proprietary freeware. WebKit was the original rendering engine for chrome, but Google eventually forked it to create the Blink engine; every version of Chrome uses Blink as of 2017, except for the version on IOS. As of March 2026, StatCounter estimates that Chrome has a 75.23% worldwide browser market share on personal computers. It is the most used browser on tablets having an estimated 48% market share. Chrome is also dominant on smartphones with around 67% market share. With a market share of 71.22% across all platforms combined as of December 2025, Chrome is the most used web browser in the world. Chrome has approximately 3.62 billion users as of March 2026. Google chief executive Eric Schmidt was previously involved in the \"browser wars\" (a part of U.S. corporate history) and was against the expansion of the company into such a new area. However, Google co-founders, Sergey Brin and Larry Page, spearheaded a software demonstration that pushed Schmidt into making Chrome a core business priority, which resulted in it becoming a commercial success. Because of the proliferation of Chrome, Google has expanded the \"Chrome\" brand name to other products. This includes ChromeOS, Chromecast, Chromebook, Chromebit, Chromebox, and Chromebase."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_8XZVF5I7xgo096eVFxHHHbN1",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"HTML in Canvas API Chromium version\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_8XZVF5I7xgo096eVFxHHHbN1",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 27.04.2026 / Хабр] https://habr.com/ru/articles/1028734 — The Web Is Fun Again: First Experiments with HTML in Canvas. Амит Шин разбирает свежий экспериментальный API, который позволяет рендерить настоящий HTML внутри `<canvas>` и применять к пикселям эффекты через 2D Canvas, WebGL или WebGPU — при этом DOM-элементы остаются интерактивными, форма работает, инпут принимает ввод, всё доступно для скринридеров. Доступно пока только в Chromium 146+ за флагом\n[Мы измерили платный антидетект‑браузер: canvas совпадал с чистой машиной байт в байт. Потом сделали свой, открытый / Хабр] https://habr.com/ru/articles/1081984 — Шум применяется при чтении, а не при рисовании. Canvas продолжает рендерить ровно то, что попросила страница; возмущение добавляется в `getImageData()` и `toDataURL()`/`toBlob()`. Эти два пути в Chromium идут через разный код, но у нас вызывают одну функцию с теми же абсолютными координатами, поэтому пиксель, прочитанный одним способом, совпадает с прочитанным другим. [...] Что оставляет нетронуты\n[Программная генерация изображений с помощью API CSS Painting / Хабр] https://habr.com/ru/companies/otus/articles/546170 — Большинство браузеров, включая Firefox, не поддерживают CSS Paint API. Только браузеры на основе Chrome и Chromium пока что имеют полную поддержку. Будем надеяться, что поддержка браузеров улучшится в ближайшем будущем. ### Резюме CSS Paint API чрезвычайно полезен для сокращения времени отклика сетевых запросов. Это достигается путем генерации некоторых изображений программно, а не путем их получе\n[Leaflet. Дружим Image с Canvas / Комментарии / Хабр] https://habr.com/ru/articles/485698/comments — Если нужно отобразить например 10 000 маркеров, то будет создаваться 10 000 html элементов, но они на самом деле не нужны, так как это не маркер, а исходная картинка для canvas. Я бы может не обратил внимания, но firefox похоже не может обработать 10-20 тысяч созданий таких элементов, он просто висне"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_pFCfEmeQ0Ju4QjVUK5rLU8KF",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"HTML in Canvas API Chromium 146\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_pFCfEmeQ0Ju4QjVUK5rLU8KF",
+   "content": "[Firefox] Mozilla Firefox, or simply Firefox, is a free and open-source web browser developed by the Mozilla Foundation and its subsidiary, the Mozilla Corporation. It uses the Gecko rendering engine to display web pages, which implements current and anticipated web standards. The software is available for Windows, macOS, and Linux systems, as well as a mobile version for Android (see Firefox for Android) and iOS, with unofficial ports for other platforms such as Oracle Solaris and OpenIndiana. Firefox is the spiritual successor of Netscape Navigator, as the Mozilla community was created by Netscape in 1998, before Netscape's acquisition by AOL. Firefox was created in 2002 under the codename \"Phoenix\" by members of the Mozilla community who desired a standalone browser rather than the Mozilla Application Suite bundle. During its beta phase, it proved to be popular with its testers and was praised for its speed, security, and add-ons compared to Microsoft's then-dominant Internet Explorer 6. It was released on November 9, 2004, and challenged Internet Explorer's dominance with 60 million downloads within nine months. In November 2017, Firefox began incorporating new technology under the code name \"Quantum\" to promote parallelism and a more intuitive user interface. The current version of Firefox is available for Windows 10 or later versions of Windows, as well as macOS, and Linux. Its unofficial ports are available for various Unix systems such as Oracle Solaris and OpenIndiana, as well as for Unix-like operating systems, including FreeBSD, OpenBSD, NetBSD, and other operating systems, such as ReactOS. It is the default, pre-installed browser on Debian, Ubuntu, and some other Linux distros. Firefox is also available for Android and iOS. However, as with all other iOS web browsers, the iOS version uses the WebKit layout engine instead of Gecko due to platform requirements. An optimized version was also available on the Amazon Fire TV as one of the two main browsers av"
+  },
+  {
+   "role": "assistant",
+   "content": "Экспериментальный API HTML в Canvas доступен в Chromium версии 146 и выше. FINAL: 146",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

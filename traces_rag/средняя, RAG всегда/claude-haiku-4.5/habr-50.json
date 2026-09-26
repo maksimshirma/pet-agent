@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-50",
+  "source": "habr",
+  "question": "Какая версия VS Code вышла с инфраструктурой для Copilot-агентов?",
+  "answer": "1.111",
+  "evidence": "VS Code 1.111 — Copilot-агенты обрастают инфраструктурой",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "answerable": true
+ },
+ "answer": "[1] VS Code 1.111 вышла с инфраструктурой для Copilot-агентов, включающей рекурсивный поиск *.instructions.md, agent-scoped chat hooks в frontmatter, команду /troubleshoot для дебага агента и OpenTelemetry-трейсинг чата.\n\nFINAL: VS Code 1.111",
+ "final": "VS Code 1.111",
+ "correct": true,
+ "refused": false,
+ "cost": 0.001395000000000035,
+ "seconds": 2.297875832999125,
+ "steps": 1,
+ "messages": []
+}

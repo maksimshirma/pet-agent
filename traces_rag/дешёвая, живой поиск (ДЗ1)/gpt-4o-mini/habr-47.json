@@ -1,0 +1,149 @@
+{
+ "task": {
+  "id": "habr-47",
+  "source": "habr",
+  "question": "Какой пример микрофронтендов в Angular 21 описан?",
+  "answer": "Native Federation",
+  "evidence": "пример микрофронтендов в Angular 21 с использованием Native Federation",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "answerable": true
+ },
+ "answer": "В Angular 21 примеры микрофронтендов могут включать использование фреймворка Single-SPA, который позволяет объединять несколько приложений на разных фреймворках (например, Angular, React, Vue) в одно фронтенд-приложение. Кроме того, можно использовать веб-компоненты для создания инкапсулированных и совместимых элементов, что также соответствует принципам микрофронтенд-архитектуры.\n\nFINAL: Single-SPA, веб-компоненты.",
+ "final": "Single-SPA, веб-компоненты.",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0011353499999999794,
+ "seconds": 17.911897833022522,
+ "steps": 7,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какой пример микрофронтендов в Angular 21 описан?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_vtr2a7id36Ve0naK0yStKriQ",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"микрофронтенды Angular 21\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_vtr2a7id36Ve0naK0yStKriQ",
+   "content": "[Как микро-фронтенд меняет будущее Angular? / Хабр] https://habr.com/ru/companies/sberbank/articles/656811 — Одна из сложнейших задач в архитектуре микро-фронтенда — это обмен данными. Данные могут быть различных типов, к примеру: статус, UI компоненты, сервисные функции. Убедитесь, что ваше микро-приложение не включает статусы дата-хранилища, оно должно содержаться в отдельном дата-слое, которым можно делиться. Это похоже на фронтенд — представьте бэкенд-коммуникацию, где фронтенд — это микро-приложение\n[Готовим микрофронтенды на чистом JS без фреймворков / Комментарии / Хабр] https://habr.com/ru/companies/ru_mts/articles/754842/comments — # Готовим микрофронтенды на чистом JS без фреймворков ## Комментарии 21 Вы начинаете статью с тезиса, что не используете библиотеки, фреймворки и прочие jquery. Мол, достаточно чистого js из коробки. И тут же подцепляете тонну всего. Ну, или я неправильно понял. Ведь все необходимое для разработки и работы Микрофронтендов уже встроено во все современные браузеры. `import ReactDOM from \"react-dom\";\n[Micro Frontend Архитектура на примере Angular] https://habr.com/ru/companies/auriga/articles/659199 — Прежде всего, нам нужно создать новое приложение и настроить angular builder, который позволит нам использовать пользовательские конфигурации\n[Гайд по микрофронтендам на single-spa, или Как уже наконец-то уйти от монолита во фронтенде / Хабр] https://habr.com/ru/companies/ecom_tech/articles/766978 — Наша команда разрабатывает Личный кабинет мерчанта (ЛКМ) — это интерфейс для продавцов, которые приходят торговать на маркетплейс. В ЛКМ огромное количество разделов: склады, ассортимент, заказы, промо и другие. Это довольно большое приложение в стадии активного развития: нужно не только поддерживать кодовую базу, но и регулярно добавлять новые фичи. В плане технологий сначала мы использовали Angu\n[Объединение микрофронтов на Nx в один проект / Хабр] https://habr.com/ru/articles/745614 — `nx/react` - это модуль, с помощью которого мы создаё"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_ALIvO90RDoqVMYaxd1cxfARO",
+     "function": {
+      "name": "web_search_ru",
+      "arguments": "{\"query\":\"микрофронтенды Angular 21\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_ALIvO90RDoqVMYaxd1cxfARO",
+   "content": "[Веб-компоненты] Веб-компоненты (Web Components) — набор технологий, предоставляющий стандартную компонентную модель для веба, который позволяет создавать инкапсулированные и совместимые друг с другом HTML-элементы. Веб-компоненты — популярный подход при создании микрофронтендов."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_wTvEeTJjfaBTGNBGhknt0iYD",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Angular 21 micro frontends example\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_wTvEeTJjfaBTGNBGhknt0iYD",
+   "content": "[SPICE] SPICE (Simulation Program with Integrated Circuit Emphasis) is a general-purpose, open-source analog electronic circuit simulator. It is a program used in integrated circuit and board-level design to check the integrity of circuit designs and to predict circuit behavior."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_PuNZmoi48pFbEeO5cUzqNZQi",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"example micro frontends Angular\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_PuNZmoi48pFbEeO5cUzqNZQi",
+   "content": "[SPICE] SPICE (Simulation Program with Integrated Circuit Emphasis) is a general-purpose, open-source analog electronic circuit simulator. It is a program used in integrated circuit and board-level design to check the integrity of circuit designs and to predict circuit behavior."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_PHdyTt39xNt0NX1MCn08eB5j",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"пример микрофронтенды Angular\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_PHdyTt39xNt0NX1MCn08eB5j",
+   "content": "[Как микро-фронтенд меняет будущее Angular?] https://habr.com/ru/companies/sberbank/articles/656811 — Одна из сложнейших задач в архитектуре микро-фронтенда — это обмен данными. Данные могут быть различных типов, к примеру: статус, UI компоненты, сервисные функции. Убедитесь, что ваше микро-приложение не включает статусы дата-хранилища, оно должно содержаться в отдельном дата-слое, которым можно делиться. Это похоже на фронтенд — представьте бэкенд-коммуникацию, где фронтенд — это микро-приложение\n[Micro Frontend Архитектура на примере Angular] https://habr.com/ru/companies/auriga/articles/659199 — Этот модуль будет содержать всю логику для страницы входа / регистрации. Также создаем приложение и устанавливаем пользовательский сборщик для\n[Микрофронтенды — универсальное решение всех проблем или просто удобный подход? / Хабр] https://habr.com/ru/companies/vk/articles/730504 — Второй подход самый популярный — это фреймворк Single-SPA. О нём сейчас очень много говорят и пишут, а на его официальном сайте есть обучающие видео для новичков и профессионалов. Этот фреймворк объединяет несколько JavaScript-микрофронтендов в одно фронтенд-приложение. Он позволяет использовать на одной странице несколько фреймворков: например, AngularJS, Angular, Ember.js или другие. И разворачи\n[Микрофронтенды. Стабильная интеграция нескольких SPA-приложений. Часть 1 / Хабр] https://habr.com/ru/companies/infowatch/articles/1053506 — Это проблема, и её надо решать. Один из способов — стабильный внешний контракт, который как раз и уберёт все эти сложности и изолирует наши фреймворки. В роли такого контракта у нас выступает веб-компонент, стандартный API для браузера, предлагающий нам создавать свои собственные HTML-теги. Получается, что для внешнего мира это обычный DOM-узел, а вот внутри мы вольны инкапсулировать эту реализаци\n[Гайд по микрофронтендам на single-spa, или Как уже ...] https://habr.com/ru/companies/ecom_tech/articles/766978 — Если же мы захотим подписываться на изменения (наприме"
+  },
+  {
+   "role": "user",
+   "content": "Инструменты больше недоступны. Ответь по тому, что уже известно, последней строкой FINAL: <ответ>."
+  },
+  {
+   "role": "assistant",
+   "content": "В Angular 21 примеры микрофронтендов могут включать использование фреймворка Single-SPA, который позволяет объединять несколько приложений на разных фреймворках (например, Angular, React, Vue) в одно фронтенд-приложение. Кроме того, можно использовать веб-компоненты для создания инкапсулированных и совместимых элементов, что также соответствует принципам микрофронтенд-архитектуры.\n\nFINAL: Single-SPA, веб-компоненты.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

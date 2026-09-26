@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-38",
+  "source": "habr",
+  "question": "Какой инструмент решает проблему онбординга разработчиков?",
+  "answer": "Oncode",
+  "evidence": "Oncode решает одну из самых дорогих проблем в найме разработчиков — месяцы на онбординг",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "answerable": true
+ },
+ "answer": "Инструмент Oncode решает проблему онбординга разработчиков, генерируя карту архитектуры и предлагая структурированные задачи для освоения кода [1]. \n\nFINAL: Oncode.",
+ "final": "Oncode.",
+ "correct": true,
+ "refused": false,
+ "cost": 9.989999999998611e-05,
+ "seconds": 1.8092561670055147,
+ "steps": 1,
+ "messages": []
+}

@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "unans-4",
+  "source": "habr",
+  "question": "Какая версия Vite вышла вслед за Vite 7?",
+  "answer": null,
+  "evidence": null,
+  "page": null,
+  "url": null,
+  "answerable": false
+ },
+ "answer": "FINAL: На момент последнего обновления моих данных версия после Vite 7 не выпущена",
+ "final": "На момент последнего обновления моих данных версия после Vite 7 не выпущена",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0019829999999999848,
+ "seconds": 3.266396708000684,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Какая версия Vite вышла вслед за Vite 7?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\":\"Vite 7 — это текущая последняя мажорная версия (вышла в 2025 году). Версии, следующей за Vite 7, пока не существует на момент моих знаний.\", \"final\":\"На момент последнего обновления моих данных версия после Vite 7 не выпущена\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

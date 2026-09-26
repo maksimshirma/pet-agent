@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "unans-8",
+  "source": "habr",
+  "question": "Какой браузер первым внедрил поддержку CSS if()?",
+  "answer": null,
+  "evidence": null,
+  "page": null,
+  "url": null,
+  "answerable": false
+ },
+ "answer": "NOT_FOUND\n\nFINAL: В предоставленных источниках нет информации о CSS if() и о том, какой браузер первым внедрил его поддержку.",
+ "final": "В предоставленных источниках нет информации о CSS if() и о том, какой браузер первым внедрил его поддержку.",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0015049999999999786,
+ "seconds": 1.4711470829788595,
+ "steps": 1,
+ "messages": []
+}

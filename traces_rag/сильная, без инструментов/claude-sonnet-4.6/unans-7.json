@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "unans-7",
+  "source": "habr",
+  "question": "Что показала Apple на WWDC 2026 для веб-разработчиков?",
+  "answer": null,
+  "evidence": null,
+  "page": null,
+  "url": null,
+  "answerable": false
+ },
+ "answer": "FINAL: Нет данных — WWDC 2026 не входит в период моих знаний.",
+ "final": "Нет данных — WWDC 2026 не входит в период моих знаний.",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0018239999999999923,
+ "seconds": 2.503282209014287,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Что показала Apple на WWDC 2026 для веб-разработчиков?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\": \"WWDC 2026 ещё не состоялась (моя дата знаний — начало 2025 года), поэтому у меня нет информации об этом событии.\", \"final\": \"Нет данных — WWDC 2026 не входит в период моих знаний.\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-13",
+  "source": "habr",
+  "question": "На скольких репозиториях обнаружены накрученные звёзды?",
+  "answer": "18 617",
+  "evidence": "более 6 миллионов фейковых отметок на 18 617 репозиториях",
+  "page": "Frontend Status #14",
+  "url": "https://habr.com/ru/articles/1028734/",
+  "answerable": true
+ },
+ "answer": "На 18 617 репозиториях обнаружены накрученные звёзды [1]. \n\nFINAL: 18617.",
+ "final": "18617.",
+ "correct": false,
+ "refused": false,
+ "cost": 0.00011579999999999924,
+ "seconds": 1.8744639170181472,
+ "steps": 1,
+ "messages": []
+}

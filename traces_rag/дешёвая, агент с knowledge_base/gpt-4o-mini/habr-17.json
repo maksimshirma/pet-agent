@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "habr-17",
+  "source": "habr",
+  "question": "Сколько уязвимостей закрыли в Firefox 150?",
+  "answer": "271",
+  "evidence": "В Firefox 150 закрыли 271 уязвимость",
+  "page": "Frontend Status #15",
+  "url": "https://habr.com/ru/articles/1032276/",
+  "answerable": true
+ },
+ "answer": "В Firefox 150 закрыли 271 уязвимость, найденную ранней версией Claude Mythos Preview. FINAL: 271 уязвимость.",
+ "final": "271 уязвимость.",
+ "correct": true,
+ "refused": false,
+ "cost": 0.00017363999999997493,
+ "seconds": 4.075940665992675,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы по локальной базе знаний (статьи Habr/lawebbox про фронтенд и AI в 2026 году). Всегда сначала вызови knowledge_base, при необходимости — с уточнённым запросом или фильтром по странице. Если после поиска в базе знаний нет ответа на вопрос, ответь ровно NOT_FOUND. Последняя строка ответа всегда FINAL: <короткий ответ или NOT_FOUND>."
+  },
+  {
+   "role": "user",
+   "content": "Сколько уязвимостей закрыли в Firefox 150?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_nL9ZcNakszuHwwUSagiclkcy",
+     "function": {
+      "name": "knowledge_base",
+      "arguments": "{\"query\":\"уязвимости закрыли в Firefox 150\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_nL9ZcNakszuHwwUSagiclkcy",
+   "content": "[Frontend Status #15 / 🛡️ Безопасность] В Firefox 150 закрыли 271 уязвимость , найденную ранней версией Claude Mythos Preview, и в Mozilla утверждают, что модели теперь находят то, что раньше требовало месяцев работы элитного ресёрчера, причём ничего принципиально нового, все баги в пределах человеческого понимания.\n[Frontend Status #9 / Frontend Status: свежий дайджест фронтенда и AI — 18.03.2026] 🌎 Chrome 146, Mozilla за анонимность в вебе.\n[Frontend Status #8 / 🛡️ Безопасность] Команда Anthropic прогнала Claude по кодовой базе Firefox и нашла 14 критических уязвимостей, о которых десятилетиями не подозревали, итого 22 CVE вошли в Firefox 148.\n[Frontend Status #9 / 🌎 Браузеры] Chrome 146 : три заметных новинки. Scroll-triggered animations — декларативное управление анимациями на основе позиции скролла без JavaScript, то, что раньше делали через IntersectionObserver и ручной старт. Scoped custom element registry — несколько реестров кастомных элементов на одной странице, конфликты имён между библиотеками больше не проблема. Sanitizer API — наконец стабильный способ очистить произвольный HTML от потенциально опасного кода без сторонних библиотек, теперь и в Firefox тоже.\n[Frontend Status #15 / Frontend Status: свежий дайджест фронтенда и AI — 06.05.2026] 🛡️ Безопасность больше не факультатив: кейс критической уязвимости в GitHub и массовый багхант в Firefox напоминают, как быстро один пропуск превращается в инцидент."
+  },
+  {
+   "role": "assistant",
+   "content": "В Firefox 150 закрыли 271 уязвимость, найденную ранней версией Claude Mythos Preview. FINAL: 271 уязвимость.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

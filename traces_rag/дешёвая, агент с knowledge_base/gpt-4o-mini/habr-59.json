@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "habr-59",
+  "source": "habr",
+  "question": "Какая уязвимость исправлена в Transformers в июне 2026?",
+  "answer": "уязвимость в пути при сохранении шаблонов",
+  "evidence": "Transformers: Исправлена уязвимость в пути при сохранении шаблонов",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "answerable": true
+ },
+ "answer": "В июне 2026 года в библиотеке Transformers была исправлена уязвимость в пути при сохранении шаблонов. FINAL: исправлена уязвимость в пути при сохранении шаблонов.",
+ "final": "исправлена уязвимость в пути при сохранении шаблонов.",
+ "correct": true,
+ "refused": false,
+ "cost": 0.0001657100000000411,
+ "seconds": 3.2976980000094045,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы по локальной базе знаний (статьи Habr/lawebbox про фронтенд и AI в 2026 году). Всегда сначала вызови knowledge_base, при необходимости — с уточнённым запросом или фильтром по странице. Если после поиска в базе знаний нет ответа на вопрос, ответь ровно NOT_FOUND. Последняя строка ответа всегда FINAL: <короткий ответ или NOT_FOUND>."
+  },
+  {
+   "role": "user",
+   "content": "Какая уязвимость исправлена в Transformers в июне 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_yA8HanqaqlJXNn7TPACJtsbA",
+     "function": {
+      "name": "knowledge_base",
+      "arguments": "{\"query\":\"уязвимость Transformers июнь 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_yA8HanqaqlJXNn7TPACJtsbA",
+   "content": "[Frontend Status #18 / AI / ML] Transformers : Исправлена уязвимость в пути при сохранении шаблонов, добавлена поддержка XPU для FlashAttention, добавлена новая модель cohere2_moe, исправлены ошибки в проверке модели и в MaskGenerationPipeline.\n[Frontend Status #18 / Безопасность] Transformers : Исправлена уязвимость в пути при сохранении шаблонов.\n[habr — статья про AI-агентов / Open Source-джентльмены 2026: Обзор самых ярких GitHub-проектов, определивших начало года] Мы вступили в 2026 год, и тренд на «агентность» и «интеграцию с ИИ» перестал быть просто хайпом. В этой статье я собрал проекты, которые буквально «взорвали» GitHub в конце 2025 и начале 2026 года. Это не просто игрушки, а реальные инструменты, меняющие ландшафт разработки.\n[habr — статья про AI-агентов / Ссылки] Astro framework: 2025 year in review\n[Frontend Status #15 / ⚡ JS / TS] anime.js: Enhanced transforms : в библиотеке появился композиционный API для плавного смешивания отдельных CSS-трансформаций, включая individual transforms, function-based values и blend composition."
+  },
+  {
+   "role": "assistant",
+   "content": "В июне 2026 года в библиотеке Transformers была исправлена уязвимость в пути при сохранении шаблонов. FINAL: исправлена уязвимость в пути при сохранении шаблонов.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

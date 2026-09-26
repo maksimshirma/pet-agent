@@ -1,0 +1,149 @@
+{
+ "task": {
+  "id": "unans-0",
+  "source": "habr",
+  "question": "Какая мажорная версия Vue.js вышла в 2026 году?",
+  "answer": null,
+  "evidence": null,
+  "page": null,
+  "url": null,
+  "answerable": false
+ },
+ "answer": "На данный момент не существовало мажорной версии Vue.js, выпущенной в 2026 году. Версия 3.5 была последней известной мажорной версией. FINAL: 3.5.",
+ "final": "3.5.",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0013240499999999933,
+ "seconds": 17.33539504199871,
+ "steps": 7,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какая мажорная версия Vue.js вышла в 2026 году?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_PRd7Mr127JtfxQpirEeDzUe9",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"Vue.js major version release 2026\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_PRd7Mr127JtfxQpirEeDzUe9",
+   "content": "[Главные игроки экосистемы JavaScript по состоянию на 2026 год / Хабр] https://habr.com/ru/articles/1021182 — Пожалуй, основной метафреймворк Vue — это Nuxt, который вышел в версии 4.0. “Хранителями” Nuxt являются NuxtLabs, недавно приобретенные Vercel. Vercel не хочет “владеть” Nuxt… вроде. Часть меня радуется, что у Nuxt есть теоретически стабильное будущее, а другая часть меня удивляется, что VoidZero использует практически все свои инструменты JavaScript, кроме метафреймворка на своем родном языке. Pi\n[Frontend Status: свежий дайджест фронтенда и AI — 27.04.2026 / Хабр] https://habr.com/ru/articles/1028734 — 🧪 Инструменты, которые сокращают путь до релиза: автогенерация E2E, Excel через WebAssembly и процедурный звук для живого интерфейса. …и многое другое. ### 📺 Медиа Evan You представил State of Vue 2026: ежегодный апдейт от создателя Vue с обзором дорожной карты, развития экосистемы, улучшений производительности и общего вектора развития фреймворка. ### 🤖 AI [...] # Frontend Status: свежий дайджест\n[React vs Vue: Что выбрать в 2026? / Хабр] https://habr.com/ru/companies/itfb/articles/974554 — В 2025 году с выходом Vue 3 и его оптимизацией на основе Proxy, Vue демонстрирует впечатляющую скорость в рендеринге больших объемов данных, опережая React на ~20% в синхронных операциях, например, при отрисовке тысяч строк в таблицах. [...] Свобода в выборе архитектуры: React не навязывает готовых решений, предоставляя разработчикам полную свободу в выборе инструментов для построения проекта, что\n[React stack 2026: карта лучших библиотек по категориям / Хабр] https://habr.com/ru/articles/1032830 — Evan You (автор Vue) запустил Vite — использовал native ES modules в dev-режиме (не нужно бандлить, браузер сам грузит модули по запросу) + esbuild (Go, быстрый) для prebundling + Rollup для production. Cold start упал до < 1 секунды. Потом пошли Rust-based альтернативы: Turbopack (Vercel) и Rspack (ByteDance). К 2026 webpack остался только в legacy. Почему мы здесь: требовани"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_1pgPxeMTHTchsxKUTtOvcoLL",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Vue.js 2026 release version\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_1pgPxeMTHTchsxKUTtOvcoLL",
+   "content": "[Vue.js] Vue.js (commonly referred to as Vue; pronounced \"view\") is an open-source model–view–viewmodel front end JavaScript framework for building user interfaces and single-page applications. It was created by Evan You and is maintained by him and the rest of the active core team members. Vue features an incrementally adaptable architecture that focuses on declarative rendering and component composition."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_Hwy3H6lldCzN2wVN0wrTDjrh",
+     "function": {
+      "name": "web_search_ru",
+      "arguments": "{\"query\":\"Vue.js мажорная версия 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_Hwy3H6lldCzN2wVN0wrTDjrh",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_Wi6uJ2EccUBHxHwmZl7v0tV0",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"выпуск Vue.js\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_Wi6uJ2EccUBHxHwmZl7v0tV0",
+   "content": "[Вышла Vue 3.2 / Хабр] https://habr.com/ru/articles/572250 — ## Вступление Мы рады объявить о выпуске Vue.js 3.2 \"Quintessential Quintuplets\"! Этот релиз включает в себя множество значительных новых функций и улучшений производительности и не содержит критических изменений. ## Новые фичи SFC Две новые функции для однофайловых компонентов (SFC, также известные как файлы .vue) вышли из экспериментального статуса и теперь считаются стабильными: []( Попробуйте \n[Frontend Status: свежий дайджест фронтенда и AI — 27.04.2026 / Хабр] https://habr.com/ru/articles/1028734 — # Frontend Status: свежий дайджест фронтенда и AI — 27.04.2026 Frontend Status: Привет! Свежий дайджест фронтенда и AI Привет! Это четырнадцатый выпуск Frontend Status — дайджеста по фронтенд-разработке. В этом выпуске: 📺 Vue на развилке роста: разбираем State of Vue 2026, чтобы понять, куда вложить время сегодня и не чинить стек завтра. 🤖 AI без иллюзий, но с результатом: от генеративных UI и rea\n[Вышел Vue 3.5 / Хабр] https://habr.com/ru/articles/840806 — Все потоки Войти qmzik # Вышел Vue 3.5 Простой 5 мин 30K Веб-разработка \\ JavaScript \\ VueJS \\ Обзор Перевод Автор оригинала: Evan You Эта статья — перевод оригинальной статьи «Announcing Vue 3.5». Также я веду телеграм канал «Frontend по‑флотски», где рассказываю про интересные вещи из мира разработки интерфейсов. ## Вступление Сегодня мы рады сообщить о выходе Vue 3.5 \"Tengen Toppa Gurren Lagann\n[Разработка более быстрых приложений на Vue.js / Хабр] https://habr.com/ru/companies/ruvds/articles/487684 — Vue.js — это прогрессивный фреймворк, предназначенный для создания пользовательских интерфейсов. Его базовая библиотека направлена, в основном, на создание видимой части интерфейсов. В проект, основанный на Vue, при необходимости легко интегрировать и другие библиотеки. Кроме того, с помощью Vue.js и с привлечением современных инструментов и вспомогательных библиотек, можно создавать сложные однос\n[Vue.js Amsterdam 2026: будущее экосистемы Vite] https:/"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_EVVFlZnivyiiCupdQOAXHL35",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"релиз Vue.js 2026\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_EVVFlZnivyiiCupdQOAXHL35",
+   "content": "[Vue.js Amsterdam 2026: будущее экосистемы Vite] https://habr.com/ru/companies/first/articles/1015150 — Судя по текущим заявлениям команды, стабильный релиз Vue 3.6 ожидается в ближайшее время. Подробно про Vapor мы писали в отдельной статье. ### Nuxt 4.4 На сцене Vue.js Amsterdam 2026 Дэниел Роу представил обновление Nuxt 4.4. Это один из тех зрелых релизов фреймворка, где происходит множество улучшений, но без кардинальных изменений архитектуры. Основной фокус версии — улучшение разработческого оп\n[Vue.js Amsterdam 2026: будущее экосистемы Vite / Habr] https://habr.com/ru/amp/publications/1015150 — Title: Vue.js Amsterdam 2026: будущее экосистемы Vite / Habr ## Vue.js Amsterdam 2026: будущее экосистемы Vite. Недавно в Амстердаме прошла конференция Vue.js Amsterdam 2026 — ежегодное мероприятие, посвящённое экосистеме **Vite** и современным инструментам фронтенд-разработки. Команда экосистемы показала сразу несколько направлений развития: обновления ключевых инструментов, новые эксперименты в \n[Релиз открытой платформы обмена файлами OpenCloud 8.0 / Хабр] https://habr.com/ru/news/1083090 — Title: Релиз открытой платформы обмена файлами OpenCloud 8.0 / Хабр # Релиз открытой платформы обмена файлами OpenCloud 8.0. 15 сентября 2026 года состоялся восьмой мажорный релиз открытой платформы обмена файлами OpenCloud. Решение позволяет развернуть на локальном сервере систему для обмена файлами и организации совместной работы над контентом. Версия OpenCloud 1.0 вышла в феврале 2025 года. Пре\n[Vue.js для сомневающихся. Все, что нужно знать] https://habr.com/ru/articles/329452 — Техническая поддержкаНа информационном ресурсе применяются рекомендательные технологии © 2006–2026, Habr [...] ### Если все правила оформления есть в ЕСКД, почему программу так трудно научить чертить? ### Реальные истории IT‑найма 2026: продолжение Ещё ## Публикации Ваш аккаунт Войти Регистрация Статьи Новости Хабы Компании Авторы Песочница Устройство сайта Для авторов Для компаний Документы Согла\n[Сос"
+  },
+  {
+   "role": "user",
+   "content": "Инструменты больше недоступны. Ответь по тому, что уже известно, последней строкой FINAL: <ответ>."
+  },
+  {
+   "role": "assistant",
+   "content": "На данный момент не существовало мажорной версии Vue.js, выпущенной в 2026 году. Версия 3.5 была последней известной мажорной версией. FINAL: 3.5.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

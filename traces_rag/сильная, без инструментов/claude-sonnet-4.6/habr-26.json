@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "habr-26",
+  "source": "habr",
+  "question": "Какая библиотека позволяет встроить PDF в React, Solid и Svelte?",
+  "answer": "PDFSlick",
+  "evidence": "PDFSlick подключает PDF к React, Solid, Svelte",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "answerable": true
+ },
+ "answer": "FINAL: PDFSlick",
+ "final": "PDFSlick",
+ "correct": true,
+ "refused": false,
+ "cost": 0.00213,
+ "seconds": 2.855675208993489,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Какая библиотека позволяет встроить PDF в React, Solid и Svelte?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\":\"Существует библиотека react-pdf, но для всех трёх фреймворков (React, Solid, Svelte) подходит библиотека @pdfslick/react, @pdfslick/solid и @pdfslick/svelte — это PDFSlick. Она предоставляет обёртки для разных фреймворков.\", \"final\":\"PDFSlick\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

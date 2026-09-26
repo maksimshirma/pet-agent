@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-57",
+  "source": "habr",
+  "question": "Какая проблема исправлена в Tailwind CSS в июне 2026?",
+  "answer": "проблема с sourcemaps",
+  "evidence": "Tailwind CSS: исправлена проблема с sourcemaps",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "answerable": true
+ },
+ "answer": "[1] В Tailwind CSS исправлена проблема с sourcemaps, исправлен парсинг селекторов и парсинг shadow-значений. Также добавлено --silent для CLI и добавлены новые узлы селекторов.\n\nFINAL: В Tailwind CSS исправлена проблема с sourcemaps, парсингом селекторов и shadow-значений.",
+ "final": "В Tailwind CSS исправлена проблема с sourcemaps, парсингом селекторов и shadow-значений.",
+ "correct": true,
+ "refused": false,
+ "cost": 0.00142099999999995,
+ "seconds": 2.238999416003935,
+ "steps": 1,
+ "messages": []
+}

@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "unans-2",
+  "source": "habr",
+  "question": "Какую версию Deno представили в 2026 году?",
+  "answer": null,
+  "evidence": null,
+  "page": null,
+  "url": null,
+  "answerable": false
+ },
+ "answer": "NOT_FOUND.  \nFINAL: NOT_FOUND.",
+ "final": "NOT_FOUND.",
+ "correct": false,
+ "refused": true,
+ "cost": 0.00010664999999998592,
+ "seconds": 1.0546551250154153,
+ "steps": 1,
+ "messages": []
+}

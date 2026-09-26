@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-43",
+  "source": "habr",
+  "question": "Какой прирост дал двухпроходный алгоритм на TypeScript?",
+  "answer": "72–88%",
+  "evidence": "двухпроходный алгоритм дал 72–88% прироста на чистом TypeScript",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "answerable": true
+ },
+ "answer": "Согласно источнику [1], двухпроходный алгоритм дал **72–88% прироста** на чистом TypeScript.\n\nFINAL: 72–88% прироста.",
+ "final": "72–88% прироста.",
+ "correct": true,
+ "refused": false,
+ "cost": 0.0008040000000000269,
+ "seconds": 1.392313375021331,
+ "steps": 1,
+ "messages": []
+}

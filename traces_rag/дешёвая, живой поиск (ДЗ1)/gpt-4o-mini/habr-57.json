@@ -1,0 +1,101 @@
+{
+ "task": {
+  "id": "habr-57",
+  "source": "habr",
+  "question": "Какая проблема исправлена в Tailwind CSS в июне 2026?",
+  "answer": "проблема с sourcemaps",
+  "evidence": "Tailwind CSS: исправлена проблема с sourcemaps",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "answerable": true
+ },
+ "answer": "В июне 2026 года в Tailwind CSS была исправлена проблема с sourcemaps, добавлено --silent для CLI, исправлен парсинг селекторов, добавлены новые узлы селекторов и улучшен парсинг значений shadow. \n\nFINAL: исправление проблемы с sourcemaps.",
+ "final": "исправление проблемы с sourcemaps.",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0007562999999999875,
+ "seconds": 11.060293249989627,
+ "steps": 4,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какая проблема исправлена в Tailwind CSS в июне 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_ivMW7SyBcXSDfW41l6yKzVIV",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"Tailwind CSS июнь 2026\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_ivMW7SyBcXSDfW41l6yKzVIV",
+   "content": "[Олег Лозовой (orionthebest) - Хабр Карьера] https://career.habr.com/orionthebest — Июнь 2026 (3 года и 1 месяц). Инновационный центр КАМАЗ — центр ... CSS, SCSS, SASS, Tailwind css, Webpack, html, css. Ключевые результаты: 1\n[Первый сайт на Next.js за день: архитектура, а не ...] https://habr.com/ru/amp/publications/1084262 — Интерактивный CLI предложит выбрать TypeScript, ESLint, Tailwind CSS, App Router и Turbopack. Это рекомендуемый набор для нового проекта в 2026\n[Сергей Краснопольский (darckshot) — Хабр Карьера] https://career.habr.com/darckshot — Next.js • TypeScript • TailwindCSS • Адаптивная верстка • Кроссбраузерная верстка • Семантическая верстка • HTML • CSS • JavaScript • Jest • Storybook • WebSockets • Веб-разработка • Vite • Webpack ## Высшее образование ### Университет ИТМО Санкт-Петербург • 6797 выпускников Компьютерных технологий и управления Август 2026 — По настоящее время (2 месяца) Магистратура Веб-технологии (09.04.04 Прогр\n[Дебаты по Tailwind CSS: ещё один классный ...] https://habr.com/ru/articles/756242 — Tailwind CSS — как фреймворк для разработчиков довольно прост в понимании. По сути, он позволяет вам встраивать код CSS в ваш HTML код. Чтобы,\n[Анти‑кейс. Как создать технически идеальный сайт на Next.js про ИИ и нейросети и остаться без поискового трафика / Хабр] https://habr.com/ru/articles/1052836 — Результат работы с техничкой отлично виден на графике индексации. В июне 2026 года робот Яндекса разом проглотил всё ядро сайта: 1679 страниц промптов и около сотни страниц рейтинга и гайдов послушно улетели в индекс. ### «Великий штиль». Результаты года работы Казалось бы, вот он успех. 1700 страниц уникального, полезного контента с интерактивными фишками и чистым кодом в индексе главного поисков"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_IdMaxADnUCGmNKjhD9z9vYza",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"Tailwind CSS обновление июнь 2026\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_IdMaxADnUCGmNKjhD9z9vYza",
+   "content": "[Петр Копьев (baggio91) - Хабр Карьера - Habr] https://career.habr.com/baggio91 — TailwindCSS. WebSockets. Опыт работы. Правотех. Frontend-разработчик. Июнь 2026 — Сентябрь 2026 (4 месяца). Система взыскания задолженности. Внутренняя\n[Frontend Status: свежий дайджест фронтенда и AI] https://habr.com/ru/articles/1047986 — Svelte: исправлены ошибки в асинхронных эффектах, улучшена обработка батчей, оптимизирована гидрация, исправлены ошибки в асинхронных зависимостях, улучшена обработка символов. Tailwind CSS: исправлена проблема с sourcemaps, добавлено --silent для CLI, исправлен парсинг селекторов, добавлены новые узлы селекторов, улучшен парсинг shadow-значений. #### Бэкенд [...] ### 🎨 CSS Центрирование в CSS в 2\n[Сергей Краснопольский (darckshot) - Хабр Карьера] https://career.habr.com/darckshot — Next.js • TypeScript • TailwindCSS • Адаптивная верстка • Кроссбраузерная верстка • Семантическая верстка • HTML • CSS • JavaScript • Jest • Storybook • WebSockets • Веб-разработка • Vite • Webpack ## Высшее образование ### Университет ИТМО Санкт-Петербург • 6797 выпускников Компьютерных технологий и управления Август 2026 — По настоящее время (2 месяца) Магистратура Веб-технологии (09.04.04 Прогр\n[antonkuvshinov — Хабр Карьера] https://career.habr.com/antonkuvshinov — Все сервисы Хабра Сообщество IT-специалистовQ&A Ответы на любые вопросы об ITКарьера Профессиональное развитие в ITКурсы Обучение для смены профессии, роста в карьере и саморазвития Войти через Хабр АккаунтЗарегистрироваться Войти через Хабр АккаунтЗарегистрироваться ВакансииСпециалистыКурсы и обучениеЭкспертыКомпанииРейтингЗарплатыЖурнал antonkuvshinov antonkuvshinov # antonkuvshinov Информация с\n[maxgre — Хабр Карьера] https://career.habr.com/maxgre — ЗарегистрироватьсяВойти О сервисеУслуги и цены Помощь Для соискателяДля работодателяAPI сервисаСлужба поддержки Все сервисы Хабра ХабрQ&AКарьераКурсы [...] Все сервисы Хабра Сообщество IT-специалистовQ&A Ответы на любые вопросы об ITКарьера Профессиональное"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_53r26i0DYMr97P7rD5YqBC2K",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"Tailwind CSS обновление изменения июнь 2026\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_53r26i0DYMr97P7rD5YqBC2K",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI] https://habr.com/ru/articles/1047986 — Svelte: исправлены ошибки в асинхронных эффектах, улучшена обработка батчей, оптимизирована гидрация, исправлены ошибки в асинхронных зависимостях, улучшена обработка символов. Tailwind CSS: исправлена проблема с sourcemaps, добавлено --silent для CLI, исправлен парсинг селекторов, добавлены новые узлы селекторов, улучшен парсинг shadow-значений. #### Бэкенд [...] ### 🎨 CSS Центрирование в CSS в 2\n[Сергей Краснопольский (darckshot) - Хабр Карьера] https://career.habr.com/darckshot — Next.js • TypeScript • TailwindCSS • Адаптивная верстка • Кроссбраузерная верстка • Семантическая верстка • HTML • CSS • JavaScript • Jest • Storybook • WebSockets • Веб-разработка • Vite • Webpack ## Высшее образование ### Университет ИТМО Санкт-Петербург • 6797 выпускников Компьютерных технологий и управления Август 2026 — По настоящее время (2 месяца) Магистратура Веб-технологии (09.04.04 Прогр\n[Зарплаты IT-специалистов в первой половине 2026 года: рост ниже инфляции / Комментарии / Хабр] https://habr.com/ru/companies/habr_career/articles/1060148/comments — — элементы формы брал и некоторые компонентики, а сетку и прочее руками верстал), Vue router (никогда не пользовался так, чтобы самому его ставить, обычно он уже был, я просто добавлял маршруты в конфиг), БЭМ (даже не пытался изучать, ибо зачем, если есть scoped-стили?), tailwind (презираю и не хочу даже в перчатках трогать), тесты (пару раз пробовал писать для самых-самых элементарных вещей из се\n[Антон Медведев (tony_dot_style) - Хабр Карьера - Habr] https://career.habr.com/tony_dot_style — ## Навыки Выберите навык, чтобы посмотреть, какие тесты специалист уже прошел. Sass PostgreSQL Английский язык Next.js Effector React Git Docker БЭМ Адаптивная верстка GraphQL HTML JavaScript SQL TypeScript Node.js TailwindCSS Express Vite Jest Redux Storybook Webpack CSS ## Опыт работы Wink TV Frontend-разработчик Апрель 2023 — Февраль 2026 (2 года и 11 м"
+  },
+  {
+   "role": "assistant",
+   "content": "В июне 2026 года в Tailwind CSS была исправлена проблема с sourcemaps, добавлено --silent для CLI, исправлен парсинг селекторов, добавлены новые узлы селекторов и улучшен парсинг значений shadow. \n\nFINAL: исправление проблемы с sourcemaps.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

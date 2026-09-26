@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "habr-50",
+  "source": "habr",
+  "question": "Какая версия VS Code вышла с инфраструктурой для Copilot-агентов?",
+  "answer": "1.111",
+  "evidence": "VS Code 1.111 — Copilot-агенты обрастают инфраструктурой",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "answerable": true
+ },
+ "answer": "Версия VS Code, которая вышла с инфраструктурой для Copilot-агентов, — это VS Code 1.111. Основные нововведения включают рекурсивный поиск в *.instructions.md, agent-scoped chat hooks, новую команду для дебага агента и OpenTelemetry-трейсинг. \n\nFINAL: VS Code 1.111",
+ "final": "VS Code 1.111",
+ "correct": true,
+ "refused": false,
+ "cost": 0.000222969999999989,
+ "seconds": 3.837273749988526,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы по локальной базе знаний (статьи Habr/lawebbox про фронтенд и AI в 2026 году). Всегда сначала вызови knowledge_base, при необходимости — с уточнённым запросом или фильтром по странице. Если после поиска в базе знаний нет ответа на вопрос, ответь ровно NOT_FOUND. Последняя строка ответа всегда FINAL: <короткий ответ или NOT_FOUND>."
+  },
+  {
+   "role": "user",
+   "content": "Какая версия VS Code вышла с инфраструктурой для Copilot-агентов?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_inwaZ84rnmpD34KkLnteZHps",
+     "function": {
+      "name": "knowledge_base",
+      "arguments": "{\"query\":\"версия VS Code Copilot-агенты\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_inwaZ84rnmpD34KkLnteZHps",
+   "content": "[Frontend Status #8 / 🛠️ Инструменты] VS Code 1.111 — Copilot-агенты обрастают инфраструктурой — рекурсивный поиск *.instructions.md, agent-scoped chat hooks в frontmatter, новая команда /troubleshoot для дебага самого агента (сколько токенов, какие кастомизации загружены), OpenTelemetry-трейсинг чата. Из не-AI: Go to Definition на строки локализации %config.settingName% в package.json, корректный рендер CJK-пунктуации, vim-like foldedLine для cursorMove.\n[habr — статья про AI-агентов / Ссылки] GPT Pilot: AI companion for VS Code\n[Frontend Status #9 / 🤖 AI] GitHub Copilot SDK открывает агентный движок Copilot для встраивания в собственные приложения : тот же цикл планирования и выполнения, что работает в Copilot CLI, теперь можно запускать программно из своего кода. Три паттерна: делегировать агенту многошаговые задачи вместо хрупких скриптов, подключать реальные инструменты через MCP вместо набивания контекста в промпты, и встраивать выполнение не в IDE, а прямо в десктопные приложения, сервисы и event-driven системы. Суть сдвига простая: AI перестаёт быть текстовым ответом на вопрос и становится слоем исполнения внутри архитектуры продукта.\n[Frontend Status #9 / 🤖 AI] Как команда VS Code перешла на еженедельные релизы с помощью AI-агентов : десять лет — ежемесячный цикл, потом взяли и сделали еженедельный. Пирс Богган и менеджер Пэн Лю рассказывают, за счёт чего это стало возможным: агенты запускаются параллельно во время митингов, тикеты триажируются автоматически через GitHub Actions, PM пишет не спеки, а сразу PR с прототипом. Отдельно про качество: Playwright MCP делает скриншоты и сам правит, если что-то сломалось, а код-ревью от Copilot стало обязательным перед тем, как звать живого человека. Статья не про то, что AI крут, а про конкретную инфраструктуру, которую команда построила под скорость.\n[Frontend Status #9 / Frontend Status: свежий дайджест фронтенда и AI — 18.03.2026] 🤖 VS Code переходит на еженедельные релизы благодаря AI-агентам, Chrome объясняет "
+  },
+  {
+   "role": "assistant",
+   "content": "Версия VS Code, которая вышла с инфраструктурой для Copilot-агентов, — это VS Code 1.111. Основные нововведения включают рекурсивный поиск в *.instructions.md, agent-scoped chat hooks, новую команду для дебага агента и OpenTelemetry-трейсинг. \n\nFINAL: VS Code 1.111",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

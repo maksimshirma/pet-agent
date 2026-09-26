@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-48",
+  "source": "habr",
+  "question": "Какой отчёт обновился в марте 2026?",
+  "answer": "WCAG 3",
+  "evidence": "Обновился Working Draft WCAG 3",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "answerable": true
+ },
+ "answer": "NOT_FOUND\n\nВ источниках нет информации об отчёте, который обновился в марте 2026. Хотя источник [3] упоминает \"дайджест веб-платформы за март\", он не указывает, какой конкретно отчёт обновился и в каком году происходило это обновление.\n\nFINAL: NOT_FOUND",
+ "final": "NOT_FOUND",
+ "correct": false,
+ "refused": true,
+ "cost": 0.0009220000000000339,
+ "seconds": 2.0103861670068,
+ "steps": 1,
+ "messages": []
+}

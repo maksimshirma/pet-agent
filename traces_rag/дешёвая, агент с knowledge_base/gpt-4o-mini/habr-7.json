@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "habr-7",
+  "source": "habr",
+  "question": "Сколько строк кода переписал Strawberry Browser с React на Svelte?",
+  "answer": "130 000 строк",
+  "evidence": "Strawberry Browser переписал 130 000 строк с React на Svelte за две недели",
+  "page": "Frontend Status #10",
+  "url": "https://habr.com/ru/articles/1015700/",
+  "answerable": true
+ },
+ "answer": "Strawberry Browser переписал 130 000 строк кода с React на Svelte за две недели. \n\nFINAL: 130 000 строк.",
+ "final": "130 000 строк.",
+ "correct": true,
+ "refused": false,
+ "cost": 0.0001618400000000242,
+ "seconds": 2.9530192500096746,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы по локальной базе знаний (статьи Habr/lawebbox про фронтенд и AI в 2026 году). Всегда сначала вызови knowledge_base, при необходимости — с уточнённым запросом или фильтром по странице. Если после поиска в базе знаний нет ответа на вопрос, ответь ровно NOT_FOUND. Последняя строка ответа всегда FINAL: <короткий ответ или NOT_FOUND>."
+  },
+  {
+   "role": "user",
+   "content": "Сколько строк кода переписал Strawberry Browser с React на Svelte?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_JlM3ZcOohGFEEyagD9ehATa2",
+     "function": {
+      "name": "knowledge_base",
+      "arguments": "{\"query\":\"Strawberry Browser React Svelte\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_JlM3ZcOohGFEEyagD9ehATa2",
+   "content": "[Frontend Status #10 / Frontend Status: свежий дайджест фронтенда и AI — 27.03.2026] ⚛️ TanStack улучшил пропускную способность SSR в 5 раз, а Strawberry Browser переписал 130 000 строк с React на Svelte за две недели.\n[Frontend Status #10 / ⚛️ React] Как мы переписали 130 000 строк кода с React на Svelte за две недели - мигрировали на другой фреймворк с помощью ИИ и ускорили работу браузера Strawberry в два раза.\n[Frontend Status #9 / Frontend Status: свежий дайджест фронтенда и AI — 18.03.2026] ⚛️ React получает shadcn/cli v4 с режимом для агентов, SvelteKit ловит FOWL, Astro v6 подтягивает данные из API прямо в content collections.\n[Frontend Status #15 / 𝐒 Svelte] Майский ченджлог Svelte : TypeScript 6.0 в SvelteKit 2.56, breaking changes в remote-функциях (разрешения на refresh, стабильный кеш, run()), community add-ons в sv CLI и попадание в ThoughtWorks Technology Radar.\n[Frontend Status #18 / Фронтенд] Svelte : исправлены ошибки в асинхронных эффектах, улучшена обработка батчей, оптимизирована гидрация, исправлены ошибки в асинхронных зависимостях, улучшена обработка символов."
+  },
+  {
+   "role": "assistant",
+   "content": "Strawberry Browser переписал 130 000 строк кода с React на Svelte за две недели. \n\nFINAL: 130 000 строк.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

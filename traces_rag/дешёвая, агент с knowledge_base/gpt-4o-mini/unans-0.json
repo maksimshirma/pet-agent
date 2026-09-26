@@ -1,0 +1,101 @@
+{
+ "task": {
+  "id": "unans-0",
+  "source": "habr",
+  "question": "Какая мажорная версия Vue.js вышла в 2026 году?",
+  "answer": null,
+  "evidence": null,
+  "page": null,
+  "url": null,
+  "answerable": false
+ },
+ "answer": "NOT_FOUND  \nFINAL: NOT_FOUND",
+ "final": "NOT_FOUND",
+ "correct": false,
+ "refused": true,
+ "cost": 0.0004854800000000381,
+ "seconds": 6.8519841660163365,
+ "steps": 4,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы по локальной базе знаний (статьи Habr/lawebbox про фронтенд и AI в 2026 году). Всегда сначала вызови knowledge_base, при необходимости — с уточнённым запросом или фильтром по странице. Если после поиска в базе знаний нет ответа на вопрос, ответь ровно NOT_FOUND. Последняя строка ответа всегда FINAL: <короткий ответ или NOT_FOUND>."
+  },
+  {
+   "role": "user",
+   "content": "Какая мажорная версия Vue.js вышла в 2026 году?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_c8T5kh9MLDBRY5FtZ6ZcydOq",
+     "function": {
+      "name": "knowledge_base",
+      "arguments": "{\"query\":\"мажорная версия Vue.js 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_c8T5kh9MLDBRY5FtZ6ZcydOq",
+   "content": "[Frontend Status #14 / Frontend Status: свежий дайджест фронтенда и AI — 27.04.2026] 📺 Vue на развилке роста: разбираем State of Vue 2026, чтобы понять, куда вложить время сегодня и не чинить стек завтра.\n[Frontend Status #14 / 📺 Медиа] Evan You представил State of Vue 2026 : ежегодный апдейт от создателя Vue с обзором дорожной карты, развития экосистемы, улучшений производительности и общего вектора развития фреймворка.\n[Frontend Status #10 / 📦 Разное] Малоизвестные, но мощные функции Vue - Vue часто хвалят за простоту и понятный API. Большинство разработчиков знакомы и работают с ref(), reactive(), computed(), watch(), v-if/v-for, но Vue также включает в себя несколько менее известных функций, которые могут значительно улучшить производительность, ясность кода, архитектуру и удобство работы разработчиков.\n[Frontend Status #10 / 💚 Vue js] Компоненты визуализации звука VueJS - Красивые аудио-визуализаторы для Vue 3: бары, круг, волна, линия и live с микрофона — всё на Web Audio API в одном лёгком пакете vue-audio-visual\n[Frontend Status #18 / Frontend Status: свежий дайджест фронтенда и AI — 16.06.2026] 👁️ TanStack Table почти убил типы и автокомплит во Vue — честный разбор на Habr — чтобы брать библиотеку только под ту боль, которую не решить за час на чистом Vue."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_PUBeMeD5UL1G0eds5wdWqPZr",
+     "function": {
+      "name": "knowledge_base",
+      "arguments": "{\"query\":\"Vue.js\",\"page\":\"Frontend Status #14\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_PUBeMeD5UL1G0eds5wdWqPZr",
+   "content": "[Frontend Status #14 / 📺 Медиа] Evan You представил State of Vue 2026 : ежегодный апдейт от создателя Vue с обзором дорожной карты, развития экосистемы, улучшений производительности и общего вектора развития фреймворка.\n[Frontend Status #14 / Frontend Status: свежий дайджест фронтенда и AI — 27.04.2026] 📺 Vue на развилке роста: разбираем State of Vue 2026, чтобы понять, куда вложить время сегодня и не чинить стек завтра.\n[Frontend Status #14 / Frontend Status: свежий дайджест фронтенда и AI — 27.04.2026] ⚡ JS/TS и фреймворки под давлением масштаба: читаемость кода, ускорение Angular и обновления React/Vue как ориентиры для технических решений.\n[Frontend Status #14 / ⚛️ React] Animata — коллекция готовых анимированных компонентов для React : на сайте собраны UI-блоки с эффектами, которые можно быстро вставлять в проект и адаптировать под свой дизайн.\n[Frontend Status #14 / Frontend Status: свежий дайджест фронтенда и AI — 27.04.2026] 🎨 Новый CSS вместо старых костылей: sizes=\"auto\" и HTML в <canvas> показывают, как делать богаче интерфейсы и проще поддержку."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_MbyFxtxaIz6blTG0zh8fSCMr",
+     "function": {
+      "name": "knowledge_base",
+      "arguments": "{\"query\":\"версия Vue.js\",\"page\":\"State of Vue 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_MbyFxtxaIz6blTG0zh8fSCMr",
+   "content": "ничего не найдено"
+  },
+  {
+   "role": "assistant",
+   "content": "NOT_FOUND  \nFINAL: NOT_FOUND",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

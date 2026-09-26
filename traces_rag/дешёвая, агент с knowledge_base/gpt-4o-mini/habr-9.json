@@ -1,0 +1,79 @@
+{
+ "task": {
+  "id": "habr-9",
+  "source": "habr",
+  "question": "Какая версия TypeScript упомянута в анонсе марта 2026?",
+  "answer": "6.0",
+  "evidence": "Анонс TypeScript 6.0",
+  "page": "Frontend Status #10",
+  "url": "https://habr.com/ru/articles/1015700/",
+  "answerable": true
+ },
+ "answer": "NOT_FOUND. \n\nFINAL: NOT_FOUND",
+ "final": "NOT_FOUND",
+ "correct": false,
+ "refused": true,
+ "cost": 0.00023917000000001076,
+ "seconds": 5.152393000025768,
+ "steps": 3,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы по локальной базе знаний (статьи Habr/lawebbox про фронтенд и AI в 2026 году). Всегда сначала вызови knowledge_base, при необходимости — с уточнённым запросом или фильтром по странице. Если после поиска в базе знаний нет ответа на вопрос, ответь ровно NOT_FOUND. Последняя строка ответа всегда FINAL: <короткий ответ или NOT_FOUND>."
+  },
+  {
+   "role": "user",
+   "content": "Какая версия TypeScript упомянута в анонсе марта 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_GNu2a6nfT1HFRTH8TkfxtjLj",
+     "function": {
+      "name": "knowledge_base",
+      "arguments": "{\"query\":\"анонс марта 2026\",\"page\":\"\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_GNu2a6nfT1HFRTH8TkfxtjLj",
+   "content": "[Frontend Status #8 / 🌎 Браузеры] Google Chrome переходит на двухнедельные релизы с сентября 2026 — в целом это вся новость!\n[Frontend Status #7 / 🎧 Аудиоподкаст] WebAssembly 3.0 с Andreas Rossberg — Эпизод от 20 января 2026. Гость — Andreas Rossberg, один из ключевых архитекторов WebAssembly с первых дней (V8/Google), участник создания спецификации 3.0.\n[Frontend Status #8 / 🛡️ Безопасность] Веб-индустрия сокращает максимальный срок жизни TLS-сертификатов — с 15 марта 2026 года лимит падает с 398 до 200 дней, в 2027-м до 100, а к 2029-му до 47. Heroku напоминает о важности включения автообновления.\n[habr — статья про AI-агентов / Ссылки] Luau language growth 2025\n[habr — статья про AI-агентов / Ссылки] GitHub Octoverse 2025: The state of open source"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_9B6XQYCYgHQmeF4wAJMxIE2t",
+     "function": {
+      "name": "knowledge_base",
+      "arguments": "{\"query\":\"TypeScript\",\"page\":\"анонс марта 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_9B6XQYCYgHQmeF4wAJMxIE2t",
+   "content": "ничего не найдено"
+  },
+  {
+   "role": "assistant",
+   "content": "NOT_FOUND. \n\nFINAL: NOT_FOUND",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

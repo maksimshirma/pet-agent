@@ -1,0 +1,105 @@
+{
+ "task": {
+  "id": "unans-6",
+  "source": "habr",
+  "question": "Какие изменения принесла новая версия ESLint в 2026 году?",
+  "answer": null,
+  "evidence": null,
+  "page": null,
+  "url": null,
+  "answerable": false
+ },
+ "answer": "Извините, но в доступной базе знаний нет информации об изменениях ESLint в 2026 году. FINAL: NOT_FOUND.",
+ "final": "NOT_FOUND.",
+ "correct": false,
+ "refused": true,
+ "cost": 0.0009045799999999882,
+ "seconds": 9.385725416999776,
+ "steps": 5,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы по локальной базе знаний (статьи Habr/lawebbox про фронтенд и AI в 2026 году). Всегда сначала вызови knowledge_base, при необходимости — с уточнённым запросом или фильтром по странице. Если после поиска в базе знаний нет ответа на вопрос, ответь ровно NOT_FOUND. Последняя строка ответа всегда FINAL: <короткий ответ или NOT_FOUND>."
+  },
+  {
+   "role": "user",
+   "content": "Какие изменения принесла новая версия ESLint в 2026 году?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_kdBRAa8nGAckxKzl3GEtY9yY",
+     "function": {
+      "name": "knowledge_base",
+      "arguments": "{\"query\":\"новая версия ESLint 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_kdBRAa8nGAckxKzl3GEtY9yY",
+   "content": "[Frontend Status #15 / ⚡ JS / TS] Что нового в JavaScript (и что будет дальше) : обзор того, что уже приехало в ES2025, что близко в ES2026 и какие новые возможности JavaScript можно применять уже сейчас — в том числе в связке с AI-ассистентами при генерации кода.\n[Frontend Status #18 / Фронтенд] Tailwind CSS : исправлена проблема с sourcemaps, добавлено --silent для CLI, исправлен парсинг селекторов, добавлены новые узлы селекторов, улучшен парсинг shadow-значений.\n[Frontend Status #10 / ⚡ JS / TS] Анонс TypeScript 6.0 - TypeScript 6.0 последняя версия основанная на базе JavaScript\n[Frontend Status #8 / 🛠️ Инструменты] VS Code 1.111 — Copilot-агенты обрастают инфраструктурой — рекурсивный поиск *.instructions.md, agent-scoped chat hooks в frontmatter, новая команда /troubleshoot для дебага самого агента (сколько токенов, какие кастомизации загружены), OpenTelemetry-трейсинг чата. Из не-AI: Go to Definition на строки локализации %config.settingName% в package.json, корректный рендер CJK-пунктуации, vim-like foldedLine для cursorMove.\n[Frontend Status #7 / 🎨 CSS] CSS 2026: что нового и уже работает в браузерах — В 2026 году CSS стал ещё мощнее благодаря Interop 2026 и Baseline 2026, обеспечив кросс-браузерную поддержку многих фич: cross-document view transitions для плавных переходов между страницами, scroll-driven animations, @starting-style для анимаций появления, relative color syntax и color-mix() на baseline, улучшенный @scope , reading flow для доступности, gap decorations в grid/flex, Custom Highlight API и contrast-color(). Появляются или близки к релизу @mixin (с параметрами, пока в Chrome ~146), masonry layout (теперь через grid-lanes), делая CSS самостоятельнее и избавляя от хаков/JS в сложных интерфейсах."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_U5QQu23Gi7XfmuJAFOMYUmSN",
+     "function": {
+      "name": "knowledge_base",
+      "arguments": "{\"query\":\"ESLint\",\"page\":\"Frontend Status #8\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_U5QQu23Gi7XfmuJAFOMYUmSN",
+   "content": "[Frontend Status #8 / 🌐 Веб-стандарты] Официальный отчёт PDF со 113-го заседания TC39, посвящённый стандартизации ECMAScript — процесс стандартизации ECMAScript идёт по графику, ES2026 выйдет летом, а состав редакторов усилился для подготовки к будущим версиям.\n[Frontend Status #8 / 🎨 CSS] Сколько существует способов выбрать <html> в CSS и зачем это вообще знать ? Дэниел Шварц разбирает все варианты от очевидного html {} и привычного :root {} до экзотических :has(body) , :not(* *) и даже голого & вне вложенности. Большинство выглядят курьёзно, но по дороге мы узнаем, чем отличается специфичность псевдоклассов, что :scope семантически точнее, чем :root для CSS-переменных, и вспомним Lobotomized Owl паттерн: :not(* > *) .\n[Frontend Status #8 / 🛠️ Инструменты] VS Code 1.111 — Copilot-агенты обрастают инфраструктурой — рекурсивный поиск *.instructions.md, agent-scoped chat hooks в frontmatter, новая команда /troubleshoot для дебага самого агента (сколько токенов, какие кастомизации загружены), OpenTelemetry-трейсинг чата. Из не-AI: Go to Definition на строки локализации %config.settingName% в package.json, корректный рендер CJK-пунктуации, vim-like foldedLine для cursorMove.\n[Frontend Status #8 / ⚛️ React] Компонент для создания выражений cron — бесплатный визуальный конструктор cron-выражений с открытым исходным кодом, поддерживающий форматы Unix и Quartz, с предпросмотром в реальном времени и доступный в виде React-компонента.\n[Frontend Status #8 / Frontend Status: свежий дайджест фронтенда и AI — 12.03.2026] В этом выпуске — CodePen 2.0 и клон Loom на Next.js в видео; про AI: почему коллекция промптов не заменяет мышление, автоисследования на игровом PC и онбординг через Oncode. Безопасность в центре: Clinejection (4000 машин через GitHub-issue), как GitHub защищает агентские воркфлоу, укорочение срока жизни TLS-сертификатов, веб-агенты, сливающие данные пользователей, и 22 CVE в Firefox после проверки кодовой базы Claude. В CSS — все способы выбрать <html> , война z"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_hCDgZdA2VhzaN6RpcAVdq1Qk",
+     "function": {
+      "name": "knowledge_base",
+      "arguments": "{\"query\":\"ESLint изменения 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_hCDgZdA2VhzaN6RpcAVdq1Qk",
+   "content": "[Frontend Status #18 / Фронтенд] Tailwind CSS : исправлена проблема с sourcemaps, добавлено --silent для CLI, исправлен парсинг селекторов, добавлены новые узлы селекторов, улучшен парсинг shadow-значений.\n[Frontend Status #8 / 🌐 Веб-стандарты] Официальный отчёт PDF со 113-го заседания TC39, посвящённый стандартизации ECMAScript — процесс стандартизации ECMAScript идёт по графику, ES2026 выйдет летом, а состав редакторов усилился для подготовки к будущим версиям.\n[Frontend Status #15 / 𝐒 Svelte] Майский ченджлог Svelte : TypeScript 6.0 в SvelteKit 2.56, breaking changes в remote-функциях (разрешения на refresh, стабильный кеш, run()), community add-ons в sv CLI и попадание в ThoughtWorks Technology Radar.\n[Frontend Status #11 / 🛡️ Безопасность] Злоумышленники из кампании GlassWorm скомпрометировали как минимум 151 GitHub-репозиторий, npm-пакеты и расширения VS Code и сделали это незаметно, спрятав полезную нагрузку в Unicode variation selectors (диапазоны 0xFE00–0xFE0F), которые рендерятся как пустое пространство во всех редакторах. Открываешь файл, а видишь пустые строки. JavaScript-интерпретатор же видит исполняемый код, который через eval() крадёт токены и секреты. Атрибуция коммитов убедительная: исследователи Aikido полагают, что все 151 изменение сгенерированы LLM, т.к. вручную это нереально. Последняя эволюция атаки — злоупотребление полями extensionPack и extensionDependencies в VS Code: безобидное расширение получает доверие, затем тихо тянет GlassWorm-загрузчик как зависимость. Автор в конце описывает конкретные шаги, которые сделал сам и советует применять: проверил lockfile по списку скомпрометированных пакетов, удалил неиспользуемые зависимости, ужесточил диапазоны версий в package.json, перепроверил расширения VS Code, ограничил область видимости секретов в CI/CD.\n[Frontend Status #7 / 🎨 CSS] CSS 2026: что нового и уже работает в браузерах — В 2026 году CSS стал ещё мощнее благодаря Interop 2026 и Baseline 2026, обеспечив кросс-браузерную поддержку мно"
+  },
+  {
+   "role": "user",
+   "content": "Инструменты больше недоступны. Ответь по тому, что уже известно, последней строкой FINAL: <ответ>."
+  },
+  {
+   "role": "assistant",
+   "content": "Извините, но в доступной базе знаний нет информации об изменениях ESLint в 2026 году. FINAL: NOT_FOUND.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

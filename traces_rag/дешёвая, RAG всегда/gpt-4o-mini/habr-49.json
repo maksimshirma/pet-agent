@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-49",
+  "source": "habr",
+  "question": "С какого заседания TC39 опубликован отчёт про ES2026?",
+  "answer": "113-го заседания",
+  "evidence": "Официальный отчёт PDF со 113-го заседания TC39",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "answerable": true
+ },
+ "answer": "Отчёт про ES2026 опубликован со 113-го заседания TC39 [1]. FINAL: 113-е заседание.",
+ "final": "113-е заседание.",
+ "correct": false,
+ "refused": false,
+ "cost": 0.00012704999999998967,
+ "seconds": 2.288589875010075,
+ "steps": 1,
+ "messages": []
+}

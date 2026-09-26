@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-24",
+  "source": "habr",
+  "question": "Какая уязвимость в Next.js описана в выпуске от 16 июня 2026?",
+  "answer": "CVE-2025-55182",
+  "evidence": "CVE-2025-55182 — RCE в Next.js через Server Actions",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "answerable": true
+ },
+ "answer": "В выпуске от 16 июня 2026 года описана уязвимость RCE в Next.js через Server Actions, которая касается всех версий Next.js с дефолтными настройками, начиная с 14-й версии [1][2]. FINAL: Уязвимость RCE через Server Actions в Next.js.",
+ "final": "Уязвимость RCE через Server Actions в Next.js.",
+ "correct": false,
+ "refused": false,
+ "cost": 0.00014819999999998723,
+ "seconds": 1.257019125012448,
+ "steps": 1,
+ "messages": []
+}

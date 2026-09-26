@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-37",
+  "source": "habr",
+  "question": "Кто обсуждал запуск CodePen 2.0?",
+  "answer": "Крис Койер и Алекс",
+  "evidence": "Крис Койер и Алекс обсуждают запуск CodePen 2.0",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "answerable": true
+ },
+ "answer": "Согласно источнику [1], запуск CodePen 2.0 обсуждали **Крис Койер и Алекс** в выпуске CodePen Radio. Они говорили о пути разработки, расширяемой системе, пользовательском опыте, новом компиляторе и блоках, а также о потенциальной роли AI в улучшении платформы.\n\nFINAL: Крис Койер и Алекс обсуждали запуск CodePen 2.0 в выпуске CodePen Radio.",
+ "final": "Крис Койер и Алекс обсуждали запуск CodePen 2.0 в выпуске CodePen Radio.",
+ "correct": true,
+ "refused": false,
+ "cost": 0.0019269999999999565,
+ "seconds": 2.6068294169963337,
+ "steps": 1,
+ "messages": []
+}

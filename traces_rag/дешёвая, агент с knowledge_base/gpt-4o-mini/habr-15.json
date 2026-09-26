@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "habr-15",
+  "source": "habr",
+  "question": "Какая версия React Email вышла в апреле 2026?",
+  "answer": "6.0.0",
+  "evidence": "React Email выпустил версию 6.0.0",
+  "page": "Frontend Status #14",
+  "url": "https://habr.com/ru/articles/1028734/",
+  "answerable": true
+ },
+ "answer": "В апреле 2026 года вышла версия 6.0.0 React Email. Это крупное обновление фреймворка для создания HTML-email-писем на React, содержащее улучшения в экосистеме компонентов и процессе сборки шаблонов. \n\nFINAL: версия 6.0.0",
+ "final": "версия 6.0.0",
+ "correct": true,
+ "refused": false,
+ "cost": 0.00020897999999996975,
+ "seconds": 3.7246187920100056,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы по локальной базе знаний (статьи Habr/lawebbox про фронтенд и AI в 2026 году). Всегда сначала вызови knowledge_base, при необходимости — с уточнённым запросом или фильтром по странице. Если после поиска в базе знаний нет ответа на вопрос, ответь ровно NOT_FOUND. Последняя строка ответа всегда FINAL: <короткий ответ или NOT_FOUND>."
+  },
+  {
+   "role": "user",
+   "content": "Какая версия React Email вышла в апреле 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_5EgdvINCAuEaH3LosugcLyLN",
+     "function": {
+      "name": "knowledge_base",
+      "arguments": "{\"query\":\"React Email апрель 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_5EgdvINCAuEaH3LosugcLyLN",
+   "content": "[Frontend Status #14 / ⚛️ React] React Email выпустил версию 6.0.0 : крупное обновление фреймворка для создания HTML-email-писем на React с улучшениями в экосистеме компонентов и процессе сборки шаблонов.\n[Frontend Status #15 / Frontend Status: свежий дайджест фронтенда и AI — 06.05.2026] ⚡ JavaScript и React на новом витке: ES2025/ES2026, типизированные контракты, React Compiler, TanStack Form и useHotkeys как база для масштабируемой фронтенд-разработки.\n[Frontend Status #9 / Frontend Status: свежий дайджест фронтенда и AI — 18.03.2026] ⚛️ React получает shadcn/cli v4 с режимом для агентов, SvelteKit ловит FOWL, Astro v6 подтягивает данные из API прямо в content collections.\n[Frontend Status #7 / ⚛️ React] open-source headless rich-text редактор для React — Yoopta: мощный open-source React-редактор в стиле Notion с блочной системой, готовыми плагинами и темами, коллаборация на CRDT (Yjs), AI-инструменты приближаются к релизу.\n[Frontend Status #15 / 🌐 Веб-стандарты] Baseline: апрель 2026 от @nikolayshabalin . В браузерах внедрены новые API, включая элемент <search> , улучшенный WebAuthn для passkey, методы isWellFormed() и toWellFormed() для работы с UTF-16, а также расширенную поддержку ARIA-атрибутов. ARIA-атрибуты теперь доступны как свойства DOM-элементов (например, element.ariaPressed ), что позволяет синхронизировать значения между HTML-атрибутами и JS-свойствами в обоих направлениях. Добавлены массивы для атрибутов типа IDREF (например, aria-labelledby ), но массивы, возвращаемые свойствами, не идентичны исходным объектам, поэтому требуется сравнение содержимого. Функции упрощают клиентскую обработку данных, но не заменяют серверную проверку. В следующем месяце ожидается пять новых функций."
+  },
+  {
+   "role": "assistant",
+   "content": "В апреле 2026 года вышла версия 6.0.0 React Email. Это крупное обновление фреймворка для создания HTML-email-писем на React, содержащее улучшения в экосистеме компонентов и процессе сборки шаблонов. \n\nFINAL: версия 6.0.0",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

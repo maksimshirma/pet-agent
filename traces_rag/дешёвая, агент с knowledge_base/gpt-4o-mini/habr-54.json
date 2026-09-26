@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "habr-54",
+  "source": "habr",
+  "question": "Какой инструмент позволяет запускать агентов Cursor через Telegram?",
+  "answer": "cursor-tg",
+  "evidence": "Агенты Cursor через Telegram с помощью cursor-tg!",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "answerable": true
+ },
+ "answer": "Инструмент, позволяющий запускать агентов Cursor через Telegram, называется cursor-tg. \n\nFINAL: cursor-tg",
+ "final": "cursor-tg",
+ "correct": true,
+ "refused": false,
+ "cost": 0.00012149000000000187,
+ "seconds": 3.234048292011721,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы по локальной базе знаний (статьи Habr/lawebbox про фронтенд и AI в 2026 году). Всегда сначала вызови knowledge_base, при необходимости — с уточнённым запросом или фильтром по странице. Если после поиска в базе знаний нет ответа на вопрос, ответь ровно NOT_FOUND. Последняя строка ответа всегда FINAL: <короткий ответ или NOT_FOUND>."
+  },
+  {
+   "role": "user",
+   "content": "Какой инструмент позволяет запускать агентов Cursor через Telegram?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_1Dl7sJNlXn7QrZ4ugV9xPfIq",
+     "function": {
+      "name": "knowledge_base",
+      "arguments": "{\"query\":\"агенты Cursor через Telegram\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_1Dl7sJNlXn7QrZ4ugV9xPfIq",
+   "content": "[Frontend Status #8 / 📦 Разное] Агенты Cursor через Telegram с помощью cursor-tg !\n[habr — статья про AI-агентов / Ссылки] agentic workflows\n[habr — статья про AI-агентов / Ссылки] Agentic Workflows: Technical Preview Documentation\n[habr — статья про AI-агентов / Ссылки] LangExtract by Google\n[habr — статья про AI-агентов / Ссылки] Программирование"
+  },
+  {
+   "role": "assistant",
+   "content": "Инструмент, позволяющий запускать агентов Cursor через Telegram, называется cursor-tg. \n\nFINAL: cursor-tg",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

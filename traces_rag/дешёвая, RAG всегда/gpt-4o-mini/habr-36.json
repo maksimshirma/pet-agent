@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-36",
+  "source": "habr",
+  "question": "Сколько времени занимает генерация приложения в Spark?",
+  "answer": "~20 минут",
+  "evidence": "Spark за ~20 минут генерирует фронтенд, бэкенд, модель данных",
+  "page": "habr — статья про AI-агентов",
+  "url": "https://habr.com/ru/articles/1003526/",
+  "answerable": true
+ },
+ "answer": "Генерация приложения в GitHub Spark занимает около 20 минут [1]. \n\nFINAL: 20 минут.",
+ "final": "20 минут.",
+ "correct": true,
+ "refused": false,
+ "cost": 0.00012585000000001068,
+ "seconds": 1.4712644169921987,
+ "steps": 1,
+ "messages": []
+}

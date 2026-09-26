@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "habr-16",
+  "source": "habr",
+  "question": "Какая CVE была обнаружена на GitHub в мае 2026?",
+  "answer": "CVE-2026-3854",
+  "evidence": "CVE-2026-3854 на GitHub",
+  "page": "Frontend Status #15",
+  "url": "https://habr.com/ru/articles/1032276/",
+  "answerable": true
+ },
+ "answer": "FINAL: Неизвестно — данные о событиях в мае 2026 года отсутствуют в моей базе знаний.",
+ "final": "Неизвестно — данные о событиях в мае 2026 года отсутствуют в моей базе знаний.",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0021749999999999964,
+ "seconds": 3.036855332989944,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Какая CVE была обнаружена на GitHub в мае 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\": \"Май 2026 года ещё не наступил (мои знания ограничены определённой датой), поэтому информация о CVE, обнаруженных в мае 2026 года, мне недоступна.\", \"final\": \"Неизвестно — данные о событиях в мае 2026 года отсутствуют в моей базе знаний.\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

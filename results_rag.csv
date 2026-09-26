@@ -1,0 +1,366 @@
+config,model,id,answerable,correct,refused,steps,cost,seconds,answer,gold
+"сильная, без инструментов",claude-sonnet-4.6,habr-0,True,True,False,1,0.002316,3.12,15 марта 2026 года,15 марта 2026
+"сильная, без инструментов",claude-sonnet-4.6,habr-1,True,False,False,1,0.001656,2.25,Firefox 130,Firefox 148
+"сильная, без инструментов",claude-sonnet-4.6,habr-2,True,False,False,1,0.0036089999999999994,4.71,interesttarget,focusgroup
+"сильная, без инструментов",claude-sonnet-4.6,habr-3,True,False,False,1,0.002124000000000001,3.02,Нет данных,Andreas Rossberg
+"сильная, без инструментов",claude-sonnet-4.6,habr-4,True,False,False,1,0.0029189999999999997,3.51,CVE-2024-21490 (XSS-уязвимость в Angular SSR),SSRF и инъекции заголовков
+"сильная, без инструментов",claude-sonnet-4.6,habr-5,True,False,False,1,0.0019830000000000004,2.71,Vite,Svelte
+"сильная, без инструментов",claude-sonnet-4.6,habr-6,True,False,False,1,0.001658999999999999,2.15,В 2 раза,5 раз
+"сильная, без инструментов",claude-sonnet-4.6,habr-7,True,False,False,1,0.0018810000000000007,2.71,6000 строк,130 000 строк
+"сильная, без инструментов",claude-sonnet-4.6,habr-8,True,False,False,1,0.0015419999999999982,1.96,3 дня,за две недели
+"сильная, без инструментов",claude-sonnet-4.6,habr-9,True,False,False,1,0.0020010000000000028,2.71,Нет данных,6.0
+"сильная, без инструментов",claude-sonnet-4.6,habr-10,True,False,False,1,0.0013319999999999999,1.76,Node.js 18.12,22
+"сильная, без инструментов",claude-sonnet-4.6,habr-11,True,True,False,1,0.0027209999999999977,3.83,Эван Ю (Evan You),Evan You
+"сильная, без инструментов",claude-sonnet-4.6,habr-12,True,False,False,1,0.0021360000000000025,2.84,"4,5 миллиона",более 6 миллионов
+"сильная, без инструментов",claude-sonnet-4.6,habr-13,True,False,False,1,0.006399000000000002,8.72,Без уточнения источника/исследования точный ответ неизвестен,18 617
+"сильная, без инструментов",claude-sonnet-4.6,habr-14,True,False,False,1,0.0017009999999999942,2.4,Chromium 132,Chromium 146+
+"сильная, без инструментов",claude-sonnet-4.6,habr-15,True,False,False,1,0.0015390000000000056,2.07,Нет данных,6.0.0
+"сильная, без инструментов",claude-sonnet-4.6,habr-16,True,False,False,1,0.0021749999999999964,3.04,Неизвестно — данные о событиях в мае 2026 года отсутствуют в моей базе знаний.,CVE-2026-3854
+"сильная, без инструментов",claude-sonnet-4.6,habr-17,True,False,False,1,0.0016470000000000026,2.53,11,271
+"сильная, без инструментов",claude-sonnet-4.6,habr-18,True,False,False,1,0.0022109999999999977,2.78,SvelteKit 2.16.0,2.56
+"сильная, без инструментов",claude-sonnet-4.6,habr-19,True,False,False,1,0.0015570000000000028,1.95,Нет данных,5.3
+"сильная, без инструментов",claude-sonnet-4.6,habr-20,True,False,False,1,0.0023159999999999986,2.9,Информация об апреле 2026 года недоступна в моих данных.,<search>
+"сильная, без инструментов",claude-sonnet-4.6,habr-21,True,False,False,1,0.0018899999999999958,2.57,Нет данных,Long Animation Frames API
+"сильная, без инструментов",claude-sonnet-4.6,habr-22,True,False,False,1,0.0025260000000000005,3.76,HDT (Header Dictionary Triples),CBOR-LD 1.0
+"сильная, без инструментов",claude-sonnet-4.6,habr-23,True,False,False,1,0.0021000000000000046,3.59,1111,0xCB1D
+"сильная, без инструментов",claude-sonnet-4.6,habr-24,True,False,False,1,0.0026519999999999946,3.29,Информация о выпуске от 16 июня 2026 года недоступна — эта дата выходит за преде,CVE-2025-55182
+"сильная, без инструментов",claude-sonnet-4.6,habr-25,True,True,False,1,0.0022860000000000033,3.09,sibling-index() и sibling-count(),sibling-index() и sibling-count()
+"сильная, без инструментов",claude-sonnet-4.6,habr-26,True,True,False,1,0.00213,2.86,PDFSlick,PDFSlick
+"сильная, без инструментов",claude-sonnet-4.6,habr-27,True,True,False,1,0.0037649999999999975,5.12,Harry Stevens (HarryStevens),Harry Stevens
+"сильная, без инструментов",claude-sonnet-4.6,habr-28,True,False,False,1,0.0020820000000000005,2.63,~1.4 kB (minified + gzipped),около 2 КБ
+"сильная, без инструментов",claude-sonnet-4.6,habr-29,True,False,False,1,0.0016199999999999964,2.08,3.12.0,4.0
+"сильная, без инструментов",claude-sonnet-4.6,habr-30,True,True,False,1,0.0024330000000000046,3.56,Робин Вирух (Robin Wieruch),Robin Wieruch
+"сильная, без инструментов",claude-sonnet-4.6,habr-31,True,False,False,1,0.0014009999999999995,1.93,Next.js,Rockpack
+"сильная, без инструментов",claude-sonnet-4.6,habr-32,True,False,False,1,0.0022199999999999998,2.98,6,17
+"сильная, без инструментов",claude-sonnet-4.6,habr-33,True,False,False,1,0.0024330000000000046,3.13,Gameforge,Poki
+"сильная, без инструментов",claude-sonnet-4.6,habr-34,True,False,False,1,0.0021120000000000028,2.57,Информация о техрадаре HolyJS Spring 2026 недоступна,Паша Востриков
+"сильная, без инструментов",claude-sonnet-4.6,habr-35,True,False,False,1,0.001691999999999999,2.22,Нет данных,120+
+"сильная, без инструментов",claude-sonnet-4.6,habr-36,True,False,False,1,0.0014069999999999916,1.99,Около 10 минут,~20 минут
+"сильная, без инструментов",claude-sonnet-4.6,habr-37,True,False,False,1,0.002801999999999999,3.76,"Крис Койер, Алекс Василе и Тим Сабат (основатели CodePen)",Крис Койер и Алекс
+"сильная, без инструментов",claude-sonnet-4.6,habr-38,True,False,False,1,0.0025410000000000016,3.42,Backstage,Oncode
+"сильная, без инструментов",claude-sonnet-4.6,habr-39,True,False,False,1,0.0027390000000000053,4.17,3,4000
+"сильная, без инструментов",claude-sonnet-4.6,habr-40,True,False,False,1,0.0020999999999999908,3.11,2,22
+"сильная, без инструментов",claude-sonnet-4.6,habr-41,True,False,False,1,0.0026520000000000016,3.44,Роман Дворнов,Крис Койер
+"сильная, без инструментов",claude-sonnet-4.6,habr-42,True,False,False,1,0.0063539999999999985,8.34,Дмитрий Малахов (проект odiff),Теймур Гасанов
+"сильная, без инструментов",claude-sonnet-4.6,habr-43,True,False,False,1,0.0021840000000000054,2.73,Недостаточно контекста для ответа,72–88%
+"сильная, без инструментов",claude-sonnet-4.6,habr-44,True,False,False,1,0.006483000000000003,8.16,Cloudflare,Trigger.dev
+"сильная, без инструментов",claude-sonnet-4.6,habr-45,True,False,False,1,0.004004999999999995,5.85,Недостаточно контекста для ответа на этот вопрос,17 часов
+"сильная, без инструментов",claude-sonnet-4.6,habr-46,True,False,False,1,0.0012780000000000014,1.85,RetroUI,8bitcn/ui
+"сильная, без инструментов",claude-sonnet-4.6,habr-47,True,False,False,1,0.002835000000000004,3.82,Angular 21 не существует в моей базе знаний — такой версии нет в доступных мне д,Native Federation
+"сильная, без инструментов",claude-sonnet-4.6,habr-48,True,False,False,1,0.0024209999999999926,2.96,Не могу ответить — эта дата выходит за пределы моих знаний (после июля 2025 года,WCAG 3
+"сильная, без инструментов",claude-sonnet-4.6,habr-49,True,False,False,1,0.004071000000000005,5.05,106,113-го заседания
+"сильная, без инструментов",claude-sonnet-4.6,habr-50,True,False,False,1,0.0016140000000000043,2.43,1.98,1.111
+"сильная, без инструментов",claude-sonnet-4.6,habr-51,True,False,False,1,0.0028559999999999974,3.72,Б. Дж. Фогг (BJ Fogg),Андерс Токсбо
+"сильная, без инструментов",claude-sonnet-4.6,habr-52,True,False,False,1,0.003591000000000011,4.95,Роберт Мартин (Uncle Bob),Крис Фердинанди
+"сильная, без инструментов",claude-sonnet-4.6,habr-53,True,False,False,1,0.005948999999999982,8.4,AT Protocol разрабатывается и описывается командой Bluesky PBC (ключевые архитек,Дэвид Бушелл
+"сильная, без инструментов",claude-sonnet-4.6,habr-54,True,False,False,1,0.005694000000000005,7.13,cursor-telegram,cursor-tg
+"сильная, без инструментов",claude-sonnet-4.6,habr-55,True,False,False,1,0.0022139999999999938,3.47,Нет данных — эти события выходят за пределы моих знаний.,баг с генерацией лишних импортов
+"сильная, без инструментов",claude-sonnet-4.6,habr-56,True,False,False,1,0.002135999999999999,2.66,Нет данных — июнь 2026 года выходит за пределы моих знаний.,ошибки в асинхронных эффектах
+"сильная, без инструментов",claude-sonnet-4.6,habr-57,True,False,False,1,0.0021059999999999968,2.72,Нет данных — июнь 2026 года выходит за пределы моих знаний,проблема с sourcemaps
+"сильная, без инструментов",claude-sonnet-4.6,habr-58,True,False,False,1,0.002135999999999999,2.76,Нет данных: июнь 2026 года выходит за пределы моих знаний.,ошибки в merge driver
+"сильная, без инструментов",claude-sonnet-4.6,habr-59,True,False,False,1,0.002049000000000023,2.69,Информация об уязвимостях в Transformers в июне 2026 года недоступна в моих обуч,уязвимость в пути при сохранении шаблонов
+"сильная, без инструментов",claude-sonnet-4.6,habr-60,True,False,False,1,0.001895999999999981,2.44,Нет данных — этот период выходит за рамки моих знаний.,cohere2_moe
+"сильная, без инструментов",claude-sonnet-4.6,habr-61,True,False,False,1,0.001917000000000002,2.89,Нет данных — июнь 2026 года находится за пределами моих знаний.,оптимизации CUDA
+"сильная, без инструментов",claude-sonnet-4.6,habr-62,True,False,False,1,0.0021780000000000133,2.92,Неизвестно — эта дата находится за пределами моих знаний.,уязвимость в доверии к JSDoc
+"сильная, без инструментов",claude-sonnet-4.6,unans-0,False,False,False,1,0.0025409999999999877,3.74,Нет данных о выходе мажорной версии Vue.js в 2026 году — это выходит за рамки мо,
+"сильная, без инструментов",claude-sonnet-4.6,unans-1,False,False,False,1,0.002367000000000008,2.85,Svelte 6 не существует на момент моих знаний; последняя версия — Svelte 5 (октяб,
+"сильная, без инструментов",claude-sonnet-4.6,unans-2,False,False,False,1,0.002240999999999993,3.02,"Нет данных о версии Deno, представленной в 2026 году",
+"сильная, без инструментов",claude-sonnet-4.6,unans-3,False,False,False,1,0.0022050000000000125,2.66,Bun 2.0 не был выпущен на дату последнего обновления моих знаний — актуальной яв,
+"сильная, без инструментов",claude-sonnet-4.6,unans-4,False,False,False,1,0.0019829999999999848,3.27,На момент последнего обновления моих данных версия после Vite 7 не выпущена,
+"сильная, без инструментов",claude-sonnet-4.6,unans-5,False,False,False,1,0.002370000000000011,3.05,Информация об анонсах Tailwind CSS в 2026 году недоступна в моих данных.,
+"сильная, без инструментов",claude-sonnet-4.6,unans-6,False,False,False,1,0.0023340000000000027,3.51,Информация о версиях ESLint 2026 года недоступна — она выходит за рамки моих зна,
+"сильная, без инструментов",claude-sonnet-4.6,unans-7,False,False,False,1,0.0018239999999999923,2.5,Нет данных — WWDC 2026 не входит в период моих знаний.,
+"сильная, без инструментов",claude-sonnet-4.6,unans-8,False,False,False,1,0.003150000000000014,4.34,Firefox,
+"сильная, без инструментов",claude-sonnet-4.6,unans-9,False,False,False,1,0.0020459999999999923,2.87,Данные опроса State of JS 2026 недоступны — этот опрос ещё не проводился.,
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-0,True,True,False,2,0.0002524499999999874,5.9,15 марта 2026 года,15 марта 2026
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-1,True,True,False,2,0.00023310000000001385,4.82,Firefox 148,Firefox 148
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-2,True,True,False,2,0.0002455499999999833,4.97,focusgroup,focusgroup
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-3,True,False,False,7,0.0011559000000000152,12.17,Неизвестно.,Andreas Rossberg
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-4,True,False,False,7,0.0012215999999999894,15.27,"SSRF, инъекции заголовков.",SSRF и инъекции заголовков
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-5,True,False,False,7,0.0013063500000000117,14.11,информация отсутствует.,Svelte
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-6,True,False,False,2,0.00022710000000000785,5.48,5,5 раз
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-7,True,False,False,2,0.00017774999999997654,4.39,130000,130 000 строк
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-8,True,False,False,5,0.0006168000000000007,12.28,14 дней.,за две недели
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-9,True,False,False,5,0.0009700500000000001,16.55,TypeScript 7,6.0
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-10,True,False,False,7,0.001494300000000004,14.91,16.9,22
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-11,True,False,False,3,0.0003571500000000005,7.3,Эван Ю,Evan You
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-12,True,False,False,3,0.0003495000000000026,6.63,6 миллионов,более 6 миллионов
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-13,True,False,False,2,0.00024255000000000804,4.13,15835,18 617
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-14,True,False,False,4,0.0006031499999999967,8.9,146,Chromium 146+
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-15,True,True,False,4,0.0006047999999999887,13.79,6.0.0,6.0.0
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-16,True,True,False,2,0.0002725500000000103,5.95,CVE-2026-3854,CVE-2026-3854
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-17,True,False,False,7,0.0014671500000000004,21.15,359,271
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-18,True,True,False,2,0.0002317500000000028,4.62,2.56,2.56
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-19,True,False,False,6,0.0007996499999999851,16.9,информация недоступна.,5.3
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-20,True,True,False,4,0.0005236500000000144,8.02,<search>,<search>
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-21,True,True,False,7,0.0014786999999999995,17.74,Long Animation Frames API.,Long Animation Frames API
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-22,True,True,False,3,0.0004297500000000065,8.61,CBOR-LD 1.0,CBOR-LD 1.0
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-23,True,True,False,2,0.00023339999999999472,3.94,0xCB1D,0xCB1D
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-24,True,False,False,7,0.0018019499999999966,21.06,нет данных.,CVE-2025-55182
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-25,True,False,False,2,0.00027735000000000953,5.16,"sibling-index(), sibling-count()",sibling-index() и sibling-count()
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-26,True,True,False,2,0.00023745000000000016,4.33,PDFSlick,PDFSlick
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-27,True,False,False,2,0.00022919999999998497,6.09,Гарри Стивенс,Harry Stevens
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-28,True,False,False,7,0.001890900000000001,20.82,размер бандла InferDI не указан.,около 2 КБ
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-29,True,True,False,4,0.0005384999999999973,7.38,4.0,4.0
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-30,True,True,False,2,0.00023655000000000204,5.28,Robin Wieruch,Robin Wieruch
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-31,True,False,False,2,0.00023234999999999228,4.76,Next.js,Rockpack
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-32,True,True,False,2,0.0001815000000000011,4.2,17,17
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-33,True,False,False,7,0.001719300000000007,17.2,Яндекс.,Poki
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-34,True,False,False,7,0.0012580500000000105,17.62,нет информации.,Паша Востриков
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-35,True,False,False,7,0.0010123499999999952,18.1,данные отсутствуют.,120+
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-36,True,False,False,5,0.0007111499999999937,11.84,неизвестно.,~20 минут
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-37,True,True,False,2,0.00025364999999999416,4.4,Крис Койер и Алекс,Крис Койер и Алекс
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-38,True,False,False,2,0.0002544000000000157,5.46,Программы адаптации и обучения.,Oncode
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-39,True,False,False,5,0.0006690000000000029,13.66,нет данных,4000
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-40,True,False,False,5,0.0009629999999999916,18.91,51,22
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-41,True,False,False,5,0.0008173499999999945,24.97,"ошибок много, конкретных имен нет.",Крис Койер
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-42,True,True,False,7,0.0014454000000000133,20.87,Теймур Гасанов.,Теймур Гасанов
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-43,True,True,False,2,0.00025664999999999716,4.61,72–88%,72–88%
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-44,True,True,False,3,0.0002618999999999816,5.63,Trigger.dev,Trigger.dev
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-45,True,True,False,4,0.00039300000000000446,6.9,17 часов.,17 часов
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-46,True,True,False,4,0.0006339000000000206,10.49,8bitcn/ui,8bitcn/ui
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-47,True,False,False,7,0.0011353499999999794,17.91,"Single-SPA, веб-компоненты.",Native Federation
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-48,True,False,False,4,0.0005833500000000102,9.99,"""Operation TrueChaos""",WCAG 3
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-49,True,False,False,7,0.001105350000000005,13.96,113-е заседание.,113-го заседания
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-50,True,False,False,3,0.0003091499999999803,6.89,1.106,1.111
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-51,True,True,False,6,0.0008758500000000113,15.18,Андерс Токсбо,Андерс Токсбо
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-52,True,True,False,2,0.0002458499999999919,4.56,Крис Фердинанди,Крис Фердинанди
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-53,True,False,False,7,0.001130550000000008,13.63,Джек Дорси.,Дэвид Бушелл
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-54,True,False,False,6,0.0012891000000000152,18.89,Telegram-боты с вебхуками.,cursor-tg
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-55,True,False,False,4,0.00073514999999999,12.68,"Потеря данных в FormData, вызов конструктора в классовых компонентах",баг с генерацией лишних импортов
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-56,True,True,False,3,0.0005038500000000001,9.38,"Исправлены ошибки в асинхронных эффектах, обработке батчей, гидрации, асинхронны",ошибки в асинхронных эффектах
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-57,True,False,False,4,0.0007562999999999875,11.06,исправление проблемы с sourcemaps.,проблема с sourcemaps
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-58,True,False,False,7,0.0013746000000000036,18.56,"исправления в merge driver, новые утилиты, обновления метаданных, эксперименталь",ошибки в merge driver
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-59,True,True,False,6,0.0013566000000000134,20.72,Уязвимость в пути при сохранении шаблонов.,уязвимость в пути при сохранении шаблонов
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-60,True,True,False,7,0.0013718999999999815,15.0,cohere2_moe,cohere2_moe
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-61,True,True,False,6,0.0013723500000000222,22.41,"Оптимизации CUDA, NVFP4 для сжатых тензоров.",оптимизации CUDA
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,habr-62,True,False,False,7,0.0015827999999999953,20.93,неизвестно.,уязвимость в доверии к JSDoc
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,unans-0,False,False,False,7,0.0013240499999999933,17.34,3.5.,
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,unans-1,False,False,False,7,0.0013218000000000119,16.18,информация недоступна.,
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,unans-2,False,False,False,3,0.00029549999999997634,6.01,2,
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,unans-3,False,False,False,7,0.0018148500000000067,21.45,"улучшения производительности, поддержка новых возможностей JS, исправления ошибо",
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,unans-4,False,False,False,2,0.00022995000000000654,5.74,Vite 8,
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,unans-5,False,False,False,3,0.0004912499999999986,8.4,4.0,
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,unans-6,False,False,False,7,0.0014987999999999946,21.56,"поддержка TSLint и Prettier, команда Fix All.",
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,unans-7,False,False,False,7,0.0011868000000000156,15.72,улучшения UI для Swift и SwiftUI.,
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,unans-8,False,False,False,7,0.0013007999999999909,14.62,Google Chrome.,
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,unans-9,False,False,False,7,0.0015875999999999946,19.07,<данные отсутствуют>.,
+"дешёвая, RAG всегда",gpt-4o-mini,habr-0,True,True,False,1,0.0001009500000000163,1.27,15 марта 2026 года.,15 марта 2026
+"дешёвая, RAG всегда",gpt-4o-mini,habr-1,True,True,False,1,7.934999999997805e-05,2.17,Firefox 148.,Firefox 148
+"дешёвая, RAG всегда",gpt-4o-mini,habr-2,True,True,False,1,0.00013604999999999867,1.91,focusgroup,focusgroup
+"дешёвая, RAG всегда",gpt-4o-mini,habr-3,True,True,False,1,0.00014190000000000036,1.52,Andreas Rossberg.,Andreas Rossberg
+"дешёвая, RAG всегда",gpt-4o-mini,habr-4,True,True,False,1,9.19500000000073e-05,2.17,Исправлены уязвимости SSRF и инъекции заголовков.,SSRF и инъекции заголовков
+"дешёвая, RAG всегда",gpt-4o-mini,habr-5,True,True,False,1,0.0001303500000000013,1.03,Svelte.,Svelte
+"дешёвая, RAG всегда",gpt-4o-mini,habr-6,True,True,False,1,8.715000000000805e-05,1.49,5 раз.,5 раз
+"дешёвая, RAG всегда",gpt-4o-mini,habr-7,True,True,False,1,7.469999999998311e-05,1.03,130 000 строк.,130 000 строк
+"дешёвая, RAG всегда",gpt-4o-mini,habr-8,True,False,False,1,7.845000000000768e-05,1.11,14 дней.,за две недели
+"дешёвая, RAG всегда",gpt-4o-mini,habr-9,True,False,True,1,8.625000000000993e-05,0.98,NOT_FOUND,6.0
+"дешёвая, RAG всегда",gpt-4o-mini,habr-10,True,True,False,1,0.00012270000000000336,1.31,22.,22
+"дешёвая, RAG всегда",gpt-4o-mini,habr-11,True,True,False,1,8.264999999998968e-05,1.48,Evan You.,Evan You
+"дешёвая, RAG всегда",gpt-4o-mini,habr-12,True,True,False,1,0.0001309499999999908,1.2,Более 6 миллионов.,более 6 миллионов
+"дешёвая, RAG всегда",gpt-4o-mini,habr-13,True,False,False,1,0.00011579999999999924,1.87,18617.,18 617
+"дешёвая, RAG всегда",gpt-4o-mini,habr-14,True,True,False,1,0.00011640000000001649,1.4,Chromium 146+.,Chromium 146+
+"дешёвая, RAG всегда",gpt-4o-mini,habr-15,True,False,True,1,8.700000000000374e-05,1.75,NOT_FOUND.,6.0.0
+"дешёвая, RAG всегда",gpt-4o-mini,habr-16,True,True,False,1,0.00014039999999998498,1.37,CVE-2026-3854,CVE-2026-3854
+"дешёвая, RAG всегда",gpt-4o-mini,habr-17,True,True,False,1,7.20000000000165e-05,1.69,271.,271
+"дешёвая, RAG всегда",gpt-4o-mini,habr-18,True,False,True,1,5.969999999999587e-05,0.9,NOT_FOUND,2.56
+"дешёвая, RAG всегда",gpt-4o-mini,habr-19,True,False,True,1,9.404999999998442e-05,1.25,NOT_FOUND,5.3
+"дешёвая, RAG всегда",gpt-4o-mini,habr-20,True,True,False,1,0.00012090000000000711,1.08,<element <search> добавлен в Baseline апрель 2026>.,<search>
+"дешёвая, RAG всегда",gpt-4o-mini,habr-21,True,True,False,1,0.00013679999999999248,1.57,Long Animation Frames API.,Long Animation Frames API
+"дешёвая, RAG всегда",gpt-4o-mini,habr-22,True,True,False,1,0.00014775000000000205,2.47,CBOR-LD 1.0.,CBOR-LD 1.0
+"дешёвая, RAG всегда",gpt-4o-mini,habr-23,True,True,False,1,8.83500000000148e-05,2.05,0xCB1D.,0xCB1D
+"дешёвая, RAG всегда",gpt-4o-mini,habr-24,True,False,False,1,0.00014819999999998723,1.26,Уязвимость RCE через Server Actions в Next.js.,CVE-2025-55182
+"дешёвая, RAG всегда",gpt-4o-mini,habr-25,True,True,False,1,0.00011549999999999061,1.07,sibling-index() и sibling-count().,sibling-index() и sibling-count()
+"дешёвая, RAG всегда",gpt-4o-mini,habr-26,True,True,False,1,0.0001069500000000223,1.02,PDFSlick.,PDFSlick
+"дешёвая, RAG всегда",gpt-4o-mini,habr-27,True,True,False,1,0.00010499999999999399,1.14,Harry Stevens.,Harry Stevens
+"дешёвая, RAG всегда",gpt-4o-mini,habr-28,True,False,False,1,0.00011354999999999005,0.89,2 КБ.,около 2 КБ
+"дешёвая, RAG всегда",gpt-4o-mini,habr-29,True,True,False,1,8.774999999999755e-05,1.65,visx 4.0.,4.0
+"дешёвая, RAG всегда",gpt-4o-mini,habr-30,True,True,False,1,0.00012000000000000899,1.59,Robin Wieruch.,Robin Wieruch
+"дешёвая, RAG всегда",gpt-4o-mini,habr-31,True,True,False,1,0.00012224999999999042,1.69,Rockpack.,Rockpack
+"дешёвая, RAG всегда",gpt-4o-mini,habr-32,True,True,False,1,9.43500000000208e-05,1.09,17.,17
+"дешёвая, RAG всегда",gpt-4o-mini,habr-33,True,True,False,1,0.0001593000000000011,1.14,Poki.,Poki
+"дешёвая, RAG всегда",gpt-4o-mini,habr-34,True,True,False,1,7.634999999997505e-05,1.03,Паша Востриков.,Паша Востриков
+"дешёвая, RAG всегда",gpt-4o-mini,habr-35,True,True,False,1,0.00010575000000001555,1.8,120+ инженеров.,120+
+"дешёвая, RAG всегда",gpt-4o-mini,habr-36,True,True,False,1,0.00012585000000001068,1.47,20 минут.,~20 минут
+"дешёвая, RAG всегда",gpt-4o-mini,habr-37,True,True,False,1,0.00015060000000000073,1.13,Крис Койер и Алекс.,Крис Койер и Алекс
+"дешёвая, RAG всегда",gpt-4o-mini,habr-38,True,True,False,1,9.989999999998611e-05,1.81,Oncode.,Oncode
+"дешёвая, RAG всегда",gpt-4o-mini,habr-39,True,True,False,1,0.00014385000000000092,1.87,4000.,4000
+"дешёвая, RAG всегда",gpt-4o-mini,habr-40,True,True,False,1,0.00011249999999998761,1.99,22 CVE.,22
+"дешёвая, RAG всегда",gpt-4o-mini,habr-41,True,True,False,1,0.00011850000000002137,1.42,Крис Койер.,Крис Койер
+"дешёвая, RAG всегда",gpt-4o-mini,habr-42,True,True,False,1,8.71499999999803e-05,1.2,Теймур Гасанов.,Теймур Гасанов
+"дешёвая, RAG всегда",gpt-4o-mini,habr-43,True,True,False,1,7.755000000000956e-05,1.6,72–88% прироста.,72–88%
+"дешёвая, RAG всегда",gpt-4o-mini,habr-44,True,True,False,1,9.105000000000918e-05,1.21,Trigger.dev.,Trigger.dev
+"дешёвая, RAG всегда",gpt-4o-mini,habr-45,True,True,False,1,0.00011729999999998686,1.52,17 часов.,17 часов
+"дешёвая, RAG всегда",gpt-4o-mini,habr-46,True,True,False,1,0.0001363500000000073,1.83,8bitcn/ui.,8bitcn/ui
+"дешёвая, RAG всегда",gpt-4o-mini,habr-47,True,True,False,1,0.00010964999999998892,1.86,Пример микрофронтендов в Angular 21 с использованием Native Federation.,Native Federation
+"дешёвая, RAG всегда",gpt-4o-mini,habr-48,True,False,True,1,5.235000000000656e-05,1.3,NOT_FOUND.,WCAG 3
+"дешёвая, RAG всегда",gpt-4o-mini,habr-49,True,False,False,1,0.00012704999999998967,2.29,113-е заседание.,113-го заседания
+"дешёвая, RAG всегда",gpt-4o-mini,habr-50,True,False,True,1,0.0001002000000000225,1.12,NOT_FOUND,1.111
+"дешёвая, RAG всегда",gpt-4o-mini,habr-51,True,True,False,1,0.00010394999999999155,1.71,Андерс Токсбо.,Андерс Токсбо
+"дешёвая, RAG всегда",gpt-4o-mini,habr-52,True,True,False,1,0.00015119999999999023,1.2,Крис Фердинанди.,Крис Фердинанди
+"дешёвая, RAG всегда",gpt-4o-mini,habr-53,True,True,False,1,9.105000000000918e-05,1.09,Дэвид Бушелл.,Дэвид Бушелл
+"дешёвая, RAG всегда",gpt-4o-mini,habr-54,True,True,False,1,7.709999999999662e-05,1.28,cursor-tg.,cursor-tg
+"дешёвая, RAG всегда",gpt-4o-mini,habr-55,True,False,False,1,9.750000000000036e-05,1.49,Баг с лишними импортами.,баг с генерацией лишних импортов
+"дешёвая, RAG всегда",gpt-4o-mini,habr-56,True,True,False,1,0.00011910000000001086,1.71,Ошибки в асинхронных эффектах и зависимостях исправлены.,ошибки в асинхронных эффектах
+"дешёвая, RAG всегда",gpt-4o-mini,habr-57,True,False,True,1,0.00010649999999998161,0.94,NOT_FOUND.,проблема с sourcemaps
+"дешёвая, RAG всегда",gpt-4o-mini,habr-58,True,False,True,1,5.760000000001875e-05,0.86,NOT_FOUND,ошибки в merge driver
+"дешёвая, RAG всегда",gpt-4o-mini,habr-59,True,True,False,1,8.069999999998911e-05,1.36,Уязвимость в пути при сохранении шаблонов.,уязвимость в пути при сохранении шаблонов
+"дешёвая, RAG всегда",gpt-4o-mini,habr-60,True,True,False,1,4.6949999999990055e-05,1.04,cohere2_moe.,cohere2_moe
+"дешёвая, RAG всегда",gpt-4o-mini,habr-61,True,False,True,1,8.130000000000637e-05,0.99,NOT_FOUND,оптимизации CUDA
+"дешёвая, RAG всегда",gpt-4o-mini,habr-62,True,False,True,1,5.910000000000637e-05,0.77,NOT_FOUND,уязвимость в доверии к JSDoc
+"дешёвая, RAG всегда",gpt-4o-mini,unans-0,False,False,True,1,9.660000000000224e-05,0.83,NOT_FOUND,
+"дешёвая, RAG всегда",gpt-4o-mini,unans-1,False,False,True,1,6.164999999999643e-05,1.19,NOT_FOUND.,
+"дешёвая, RAG всегда",gpt-4o-mini,unans-2,False,False,True,1,0.00010664999999998592,1.05,NOT_FOUND.,
+"дешёвая, RAG всегда",gpt-4o-mini,unans-3,False,False,True,1,7.995000000002306e-05,1.6,NOT_FOUND,
+"дешёвая, RAG всегда",gpt-4o-mini,unans-4,False,False,True,1,7.004999999998818e-05,1.1,NOT_FOUND,
+"дешёвая, RAG всегда",gpt-4o-mini,unans-5,False,False,True,1,8.879999999999999e-05,0.97,NOT_FOUND.,
+"дешёвая, RAG всегда",gpt-4o-mini,unans-6,False,False,True,1,0.00010650000000000936,1.44,NOT_FOUND.,
+"дешёвая, RAG всегда",gpt-4o-mini,unans-7,False,False,True,1,0.00014639999999999098,1.51,NOT_FOUND.,
+"дешёвая, RAG всегда",gpt-4o-mini,unans-8,False,False,True,1,0.00014339999999998798,1.82,NOT_FOUND.,
+"дешёвая, RAG всегда",gpt-4o-mini,unans-9,False,False,True,1,8.295000000002606e-05,0.91,NOT_FOUND,
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-0,True,True,False,2,0.00018647999999998888,3.66,15 марта 2026 года.,15 марта 2026
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-1,True,True,False,2,0.00018635999999999653,4.13,Firefox 148,Firefox 148
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-2,True,True,False,2,0.00022104000000000568,3.85,focusgroup,focusgroup
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-3,True,True,False,2,0.00022498999999998048,3.77,Andreas Rossberg,Andreas Rossberg
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-4,True,False,False,2,0.0001813400000000298,3.38,Исправлены уязвимости SSRF и инъекций заголовков.,SSRF и инъекции заголовков
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-5,True,True,False,2,0.00021283999999999192,3.28,Svelte,Svelte
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-6,True,True,False,2,0.00016583999999997268,3.08,5 раз,5 раз
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-7,True,True,False,2,0.0001618400000000242,2.95,130 000 строк.,130 000 строк
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-8,True,False,False,2,0.00015904999999999392,3.03,14 дней.,за две недели
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-9,True,False,True,3,0.00023917000000001076,5.15,NOT_FOUND,6.0
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-10,True,True,False,2,0.00019560000000001798,3.71,22,22
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-11,True,True,False,2,0.0001918199999999537,3.05,Evan You.,Evan You
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-12,True,False,False,2,0.00020092000000004884,3.44,6 миллионов фейковых звёзд.,более 6 миллионов
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-13,True,False,False,2,0.00021455999999997477,3.51,18617,18 617
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-14,True,True,False,2,0.0001805100000000226,3.24,Chromium 146,Chromium 146+
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-15,True,True,False,2,0.00020897999999996975,3.72,версия 6.0.0,6.0.0
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-16,True,True,False,2,0.0002524400000000204,3.75,CVE-2026-3854,CVE-2026-3854
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-17,True,True,False,2,0.00017363999999997493,4.08,271 уязвимость.,271
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-18,True,True,False,2,0.00016073999999999256,3.14,SvelteKit 2.56.,2.56
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-19,True,True,False,2,0.00019482000000003996,3.73,useHotkeys 5.3,5.3
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-20,True,False,False,3,0.00037241999999998443,6.67,Новый элемент — HTML-атрибут `focusgroup`.,<search>
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-21,True,False,False,2,0.0002494799999999686,4.31,CBOR-LD 1.0,Long Animation Frames API
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-22,True,True,False,2,0.00023874000000001505,3.97,FPWD CBOR-LD 1.0,CBOR-LD 1.0
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-23,True,True,False,2,0.0001680299999999857,3.62,0xCB1D,0xCB1D
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-24,True,False,True,5,0.0008920400000000384,7.87,NOT_FOUND.,CVE-2025-55182
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-25,True,True,False,2,0.00022934999999996153,3.7,новые CSS-функции `sibling-index()` и `sibling-count()`,sibling-index() и sibling-count()
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-26,True,True,False,2,0.00019413000000001457,3.23,PDFSlick,PDFSlick
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-27,True,False,False,2,0.0001968600000000209,3.32,Гарри Стивенс.,Harry Stevens
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-28,True,False,False,2,0.00019142999999999244,2.77,2 КБ,около 2 КБ
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-29,True,True,False,2,0.00020790999999997783,3.3,visx 4.0,4.0
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-30,True,True,False,2,0.00022153000000002532,3.45,Robin Wieruch обновил карту.,Robin Wieruch
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-31,True,True,False,2,0.00021518999999997623,3.83,Rockpack,Rockpack
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-32,True,True,False,2,0.00020349000000002837,3.6,17 библиотек TanStack.,17
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-33,True,True,False,2,0.00021208000000000338,3.64,Poki,Poki
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-34,True,True,False,2,0.0001922199999999652,3.32,Паша Востриков.,Паша Востриков
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-35,True,True,False,3,0.0002610800000000246,5.06,120+ инженеров.,120+
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-36,True,True,False,2,0.00017447999999997688,3.37,20 минут,~20 минут
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-37,True,True,False,2,0.0002243000000000106,3.97,Обсуждение запустили Крис Койер и Алекс.,Крис Койер и Алекс
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-38,True,True,False,2,0.00020567999999998587,3.39,Oncode.,Oncode
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-39,True,False,False,2,0.00022207000000001864,3.29,151.,4000
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-40,True,True,False,2,0.00019689999999999985,3.12,22 CVE,22
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-41,True,True,False,2,0.0002036300000000102,3.54,Крис Койер ошибался в CSS Anchor Positioning.,Крис Койер
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-42,True,True,False,2,0.00019898000000001526,3.59,Теймур Гасанов.,Теймур Гасанов
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-43,True,True,False,2,0.00022126999999999564,3.88,72–88% прирост на чистом TypeScript.,72–88%
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-44,True,True,False,2,0.00016551999999997458,2.65,Trigger.dev,Trigger.dev
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-45,True,True,False,2,0.00018985999999998615,3.36,17 часов.,17 часов
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-46,True,True,False,2,0.00020936000000004729,3.53,8bitcn/ui,8bitcn/ui
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-47,True,True,False,2,0.00017380999999999647,3.75,Микрофронтенды с использованием Native Federation.,Native Federation
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-48,True,False,False,2,0.00021644999999997916,3.73,GitHub о системе обработки отчётов об accessibility-проблемах.,WCAG 3
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-49,True,False,False,2,0.00019876000000002003,3.18,113-е заседание TC39.,113-го заседания
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-50,True,True,False,2,0.000222969999999989,3.84,VS Code 1.111,1.111
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-51,True,True,False,2,0.00019082999999997519,3.34,Андерс Токсбо,Андерс Токсбо
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-52,True,True,False,2,0.00022805000000003517,3.68,Крис Фердинанди.,Крис Фердинанди
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-53,True,True,False,2,0.00022402999999998618,3.8,Дэвид Бушелл разбирает AT Protocol.,Дэвид Бушелл
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-54,True,True,False,2,0.00012149000000000187,3.23,cursor-tg,cursor-tg
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-55,True,True,False,2,0.00017782999999998994,3.3,исправлен баг с генерацией лишних импортов в React компиляторе.,баг с генерацией лишних импортов
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-56,True,True,False,2,0.00020117000000002827,3.56,"Ошибки в асинхронных эффектах, улучшение обработки батчей, оптимизация гидрации ",ошибки в асинхронных эффектах
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-57,True,False,False,2,0.00021394999999996278,3.61,"Исправлены sourcemaps, добавлен --silent, улучшен парсинг селекторов и shadow-зн",проблема с sourcemaps
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-58,True,False,True,4,0.000314189999999992,6.42,NOT_FOUND,ошибки в merge driver
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-59,True,True,False,2,0.0001657100000000411,3.3,исправлена уязвимость в пути при сохранении шаблонов.,уязвимость в пути при сохранении шаблонов
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-60,True,True,False,2,0.00017078999999997624,2.96,новая модель cohere2_moe.,cohere2_moe
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-61,True,False,False,2,0.00022484000000000393,3.73,Информация о оптимизациях llama.cpp в июне 2026 года предоставлена.,оптимизации CUDA
+"дешёвая, агент с knowledge_base",gpt-4o-mini,habr-62,True,True,False,2,0.00018100999999998146,3.46,Исправлена уязвимость в доверии к JSDoc.,уязвимость в доверии к JSDoc
+"дешёвая, агент с knowledge_base",gpt-4o-mini,unans-0,False,False,True,4,0.0004854800000000381,6.85,NOT_FOUND,
+"дешёвая, агент с knowledge_base",gpt-4o-mini,unans-1,False,False,False,2,0.00021667999999996912,3.63,обновления и улучшения в Svelte 6.,
+"дешёвая, агент с knowledge_base",gpt-4o-mini,unans-2,False,False,True,2,0.00021780999999998496,3.18,NOT_FOUND,
+"дешёвая, агент с knowledge_base",gpt-4o-mini,unans-3,False,False,False,4,0.000578970000000012,7.19,"улучшения в Bun 2.0 включают поддержку декораторов, оптимизации в обработке, без",
+"дешёвая, агент с knowledge_base",gpt-4o-mini,unans-4,False,False,False,5,0.000694510000000037,9.07,Vite 8.,
+"дешёвая, агент с knowledge_base",gpt-4o-mini,unans-5,False,False,True,2,0.00019220999999997046,3.42,NOT_FOUND,
+"дешёвая, агент с knowledge_base",gpt-4o-mini,unans-6,False,False,True,5,0.0009045799999999882,9.39,NOT_FOUND.,
+"дешёвая, агент с knowledge_base",gpt-4o-mini,unans-7,False,False,True,4,0.0007028300000000431,7.76,NOT_FOUND,
+"дешёвая, агент с knowledge_base",gpt-4o-mini,unans-8,False,False,True,4,0.0005887499999999712,5.95,NOT_FOUND,
+"дешёвая, агент с knowledge_base",gpt-4o-mini,unans-9,False,False,True,4,0.0005880699999999961,7.83,NOT_FOUND,
+"средняя, RAG всегда",claude-haiku-4.5,habr-0,True,True,False,1,0.0011749999999999816,1.87,С 15 марта 2026 года максимальный срок жизни TLS-сертификатов сократился до 200 ,15 марта 2026
+"средняя, RAG всегда",claude-haiku-4.5,habr-1,True,True,False,1,0.0007540000000000324,4.29,Firefox 148,Firefox 148
+"средняя, RAG всегда",claude-haiku-4.5,habr-2,True,True,False,1,0.0015199999999999658,2.32,focusgroup,focusgroup
+"средняя, RAG всегда",claude-haiku-4.5,habr-3,True,True,False,1,0.001513000000000042,2.07,Andreas Rossberg,Andreas Rossberg
+"средняя, RAG всегда",claude-haiku-4.5,habr-4,True,False,False,1,0.0010969999999999591,2.06,"В Angular SSR исправлены уязвимости SSRF, инъекции заголовков и открытый редирек",SSRF и инъекции заголовков
+"средняя, RAG всегда",claude-haiku-4.5,habr-5,True,True,False,1,0.0014149999999999996,1.71,Svelte занял первое место в State of JS 2025 по позитивным отзывам.,Svelte
+"средняя, RAG всегда",claude-haiku-4.5,habr-6,True,True,False,1,0.0008800000000000474,1.54,В 5 раз.,5 раз
+"средняя, RAG всегда",claude-haiku-4.5,habr-7,True,True,False,1,0.0007889999999999842,1.48,130 000 строк кода.,130 000 строк
+"средняя, RAG всегда",claude-haiku-4.5,habr-8,True,False,False,1,0.0008889999999999731,1.59,Две недели (14 дней).,за две недели
+"средняя, RAG всегда",claude-haiku-4.5,habr-9,True,True,False,1,0.0010410000000000141,1.85,TypeScript 6.0,6.0
+"средняя, RAG всегда",claude-haiku-4.5,habr-10,True,True,False,1,0.0011780000000000124,1.43,Node.js 22,22
+"средняя, RAG всегда",claude-haiku-4.5,habr-11,True,True,False,1,0.0011510000000000131,1.85,Evan You представил State of Vue 2026.,Evan You
+"средняя, RAG всегда",claude-haiku-4.5,habr-12,True,True,False,1,0.001322999999999963,1.71,Более 6 миллионов фейковых звёзд.,более 6 миллионов
+"средняя, RAG всегда",claude-haiku-4.5,habr-13,True,True,False,1,0.0012370000000000436,1.65,18 617 репозиториях обнаружены накрученные звёзды.,18 617
+"средняя, RAG всегда",claude-haiku-4.5,habr-14,True,True,False,1,0.001214999999999966,1.53,Chromium 146+,Chromium 146+
+"средняя, RAG всегда",claude-haiku-4.5,habr-15,True,False,True,1,0.0011960000000000304,2.19,NOT_FOUND,6.0.0
+"средняя, RAG всегда",claude-haiku-4.5,habr-16,True,False,False,1,0.0017459999999999698,2.19,Информация о дате обнаружения CVE не найдена в источниках.,CVE-2026-3854
+"средняя, RAG всегда",claude-haiku-4.5,habr-17,True,True,False,1,0.0008719999999999839,3.52,271 уязвимость.,271
+"средняя, RAG всегда",claude-haiku-4.5,habr-18,True,True,False,1,0.0008080000000000309,1.87,SvelteKit 2.56 получила поддержку TypeScript 6.0.,2.56
+"средняя, RAG всегда",claude-haiku-4.5,habr-19,True,True,False,1,0.0011680000000000024,3.08,"В источниках нет информации о версии useHotkeys, вышедшей в мае 2026. Источник [",5.3
+"средняя, RAG всегда",claude-haiku-4.5,habr-20,True,True,False,1,0.0012320000000000109,1.52,Элемент `<search>` был добавлен в Baseline апрель 2026.,<search>
+"средняя, RAG всегда",claude-haiku-4.5,habr-21,True,True,False,1,0.0015009999999999746,2.08,Long Animation Frames API опубликован как First Public Working Draft.,Long Animation Frames API
+"средняя, RAG всегда",claude-haiku-4.5,habr-22,True,True,False,1,0.0015109999999999846,3.65,CBOR-LD 1.0,CBOR-LD 1.0
+"средняя, RAG всегда",claude-haiku-4.5,habr-23,True,True,False,1,0.0009379999999999944,1.43,IANA-тег для CBOR-LD — 0xCB1D.,0xCB1D
+"средняя, RAG всегда",claude-haiku-4.5,habr-24,True,False,False,1,0.0015450000000000186,2.09,"Информация о дате выпуска ""16 июня 2026"" отсутствует в предоставленных источника",CVE-2025-55182
+"средняя, RAG всегда",claude-haiku-4.5,habr-25,True,True,False,1,0.0011869999999999936,1.7,sibling-index() и sibling-count(),sibling-index() и sibling-count()
+"средняя, RAG всегда",claude-haiku-4.5,habr-26,True,True,False,1,0.0012429999999999941,1.87,PDFSlick,PDFSlick
+"средняя, RAG всегда",claude-haiku-4.5,habr-27,True,True,False,1,0.0010710000000000441,1.72,"Harry Stevens, график из New York Times.",Harry Stevens
+"средняя, RAG всегда",claude-haiku-4.5,habr-28,True,False,False,1,0.0011489999999999556,1.62,Around 2 KB,около 2 КБ
+"средняя, RAG всегда",claude-haiku-4.5,habr-29,True,True,False,1,0.0009210000000000051,1.52,visx 4.0 получила полную поддержку React 19.,4.0
+"средняя, RAG всегда",claude-haiku-4.5,habr-30,True,True,False,1,0.0015149999999999886,1.85,Robin Wieruch обновил карту React-библиотек на 2026 год.,Robin Wieruch
+"средняя, RAG всегда",claude-haiku-4.5,habr-31,True,True,False,1,0.00149100000000002,1.97,Rockpack — инструмент для React-проекта из коробки с SSR.,Rockpack
+"средняя, RAG всегда",claude-haiku-4.5,habr-32,True,True,False,1,0.0010399999999999854,1.97,17 библиотек TanStack.,17
+"средняя, RAG всегда",claude-haiku-4.5,habr-33,True,True,False,1,0.0018569999999999975,1.98,Poki,Poki
+"средняя, RAG всегда",claude-haiku-4.5,habr-34,True,True,False,1,0.0008870000000000267,1.61,"Паша Востриков, архитектор веб-направления «Лаборатории Касперского».",Паша Востриков
+"средняя, RAG всегда",claude-haiku-4.5,habr-35,True,True,False,1,0.0010890000000000066,1.54,120+ инженеров опросили для техрадара HolyJS Spring 2026.,120+
+"средняя, RAG всегда",claude-haiku-4.5,habr-36,True,True,False,1,0.001487000000000016,2.34,"GitHub Spark генерирует полное приложение (фронтенд, бэкенд, модель данных, CI/C",~20 минут
+"средняя, RAG всегда",claude-haiku-4.5,habr-37,True,True,False,1,0.0019269999999999565,2.61,Крис Койер и Алекс обсуждали запуск CodePen 2.0 в выпуске CodePen Radio.,Крис Койер и Алекс
+"средняя, RAG всегда",claude-haiku-4.5,habr-38,True,True,False,1,0.0017000000000000348,3.44,Oncode — инструмент для ускорения онбординга разработчиков через автоматическое ,Oncode
+"средняя, RAG всегда",claude-haiku-4.5,habr-39,True,True,False,1,0.0014969999999999706,1.93,"4000 машин разработчиков были скомпрометированы через GitHub-issue в атаке ""Clin",4000
+"средняя, RAG всегда",claude-haiku-4.5,habr-40,True,True,False,1,0.0011090000000000266,1.36,22 CVE вошли в Firefox 148.,22
+"средняя, RAG всегда",claude-haiku-4.5,habr-41,True,True,False,1,0.0015129999999999866,2.46,Крис Койер ошибался в CSS Anchor Positioning относительно требований к расположе,Крис Койер
+"средняя, RAG всегда",claude-haiku-4.5,habr-42,True,True,False,1,0.0011729999999999796,2.69,Теймур Гасанов построил инструмент сравнения скриншотов и переписал его ядро на ,Теймур Гасанов
+"средняя, RAG всегда",claude-haiku-4.5,habr-43,True,True,False,1,0.0008040000000000269,1.39,72–88% прироста.,72–88%
+"средняя, RAG всегда",claude-haiku-4.5,habr-44,True,True,False,1,0.0010469999999999646,1.79,Trigger.dev опубликовала постмортем об атаке npm-червя Shai-Hulud.,Trigger.dev
+"средняя, RAG всегда",claude-haiku-4.5,habr-45,True,True,False,1,0.0010280000000000289,1.64,17 часов.,17 часов
+"средняя, RAG всегда",claude-haiku-4.5,habr-46,True,True,False,1,0.0015020000000000033,1.97,8bitcn/ui — проект с 50+ ретро 8-битными компонентами.,8bitcn/ui
+"средняя, RAG всегда",claude-haiku-4.5,habr-47,True,True,False,1,0.0010629999999999806,1.85,Native Federation для создания независимых приложений в едином монорепозитории.,Native Federation
+"средняя, RAG всегда",claude-haiku-4.5,habr-48,True,False,True,1,0.0009220000000000339,2.01,NOT_FOUND,WCAG 3
+"средняя, RAG всегда",claude-haiku-4.5,habr-49,True,True,False,1,0.00120899999999996,2.42,113-го заседания TC39.,113-го заседания
+"средняя, RAG всегда",claude-haiku-4.5,habr-50,True,True,False,1,0.001395000000000035,2.3,VS Code 1.111,1.111
+"средняя, RAG всегда",claude-haiku-4.5,habr-51,True,True,False,1,0.0010409999999999586,1.38,Андерс Токсбо.,Андерс Токсбо
+"средняя, RAG всегда",claude-haiku-4.5,habr-52,True,True,False,1,0.001835000000000031,3.74,Крис Фердинанди перешёл на TDD.,Крис Фердинанди
+"средняя, RAG всегда",claude-haiku-4.5,habr-53,True,True,False,1,0.0013170000000000126,2.3,Дэвид Бушелл разбирает AT Protocol под капотом Bluesky.,Дэвид Бушелл
+"средняя, RAG всегда",claude-haiku-4.5,habr-54,True,True,False,1,0.0007989999999999942,1.46,cursor-tg,cursor-tg
+"средняя, RAG всегда",claude-haiku-4.5,habr-55,True,True,False,1,0.0010259999999999714,1.44,Исправлен баг с генерацией лишних импортов в компиляторе React.,баг с генерацией лишних импортов
+"средняя, RAG всегда",claude-haiku-4.5,habr-56,True,True,False,1,0.0013720000000000399,1.99,"Исправлены ошибки в асинхронных эффектах и асинхронных зависимостях, улучшены об",ошибки в асинхронных эффектах
+"средняя, RAG всегда",claude-haiku-4.5,habr-57,True,True,False,1,0.00142099999999995,2.24,"В Tailwind CSS исправлена проблема с sourcemaps, парсингом селекторов и shadow-з",проблема с sourcemaps
+"средняя, RAG всегда",claude-haiku-4.5,habr-58,True,False,False,1,0.0010900000000000354,1.95,Информация о исправлениях ошибок в Next.js в июне 2026 не найдена в источниках.,ошибки в merge driver
+"средняя, RAG всегда",claude-haiku-4.5,habr-59,True,False,False,1,0.0010689999999999866,2.08,Дата исправления уязвимости в Transformers в источниках не указана.,уязвимость в пути при сохранении шаблонов
+"средняя, RAG всегда",claude-haiku-4.5,habr-60,True,False,False,1,0.0008719999999999839,1.95,Нет информации о месяце добавления новой модели в Transformers.,cohere2_moe
+"средняя, RAG всегда",claude-haiku-4.5,habr-61,True,True,False,1,0.0016520000000000423,2.69,"В llama.cpp добавлены оптимизации CUDA, поддержка NVFP4 для сжатых тензоров и ра",оптимизации CUDA
+"средняя, RAG всегда",claude-haiku-4.5,habr-62,True,False,False,1,0.0012379999999999614,1.98,"Информация о уязвимости, исправленной в Angular в июне 2026, не найдена в предос",уязвимость в доверии к JSDoc
+"средняя, RAG всегда",claude-haiku-4.5,unans-0,False,False,False,1,0.0013230000000000186,1.96,В предоставленных источниках нет информации о выходе какой-либо мажорной версии ,
+"средняя, RAG всегда",claude-haiku-4.5,unans-1,False,False,False,1,0.0017730000000000246,2.5,"В Svelte 6 были исправлены ошибки асинхронных эффектов и зависимостей, улучшена ",
+"средняя, RAG всегда",claude-haiku-4.5,unans-2,False,False,False,1,0.0016120000000000023,2.28,"Информация о версии Deno, представленной в 2026 году, в источниках не найдена.",
+"средняя, RAG всегда",claude-haiku-4.5,unans-3,False,False,False,1,0.0011859999999999649,2.16,В источниках нет информации об изменениях в Bun 2.0.,
+"средняя, RAG всегда",claude-haiku-4.5,unans-4,False,False,False,1,0.0011340000000000239,1.82,"Информация о версии Vite, вышедшей после Vite 7, в предоставленных источниках от",
+"средняя, RAG всегда",claude-haiku-4.5,unans-5,False,False,False,1,0.0011279999999999624,3.66,"В источниках не указана информация о мажорной версии Tailwind CSS, анонсированно",
+"средняя, RAG всегда",claude-haiku-4.5,unans-6,False,False,False,1,0.0010890000000000066,1.48,В предоставленных источниках нет информации об изменениях в ESLint в 2026 году.,
+"средняя, RAG всегда",claude-haiku-4.5,unans-7,False,False,False,1,0.0018850000000000255,3.67,Информация о презентациях Apple на WWDC 2026 не найдена в источниках.,
+"средняя, RAG всегда",claude-haiku-4.5,unans-8,False,False,False,1,0.0015049999999999786,1.47,"В предоставленных источниках нет информации о CSS if() и о том, какой браузер пе",
+"средняя, RAG всегда",claude-haiku-4.5,unans-9,False,False,True,1,0.001393000000000033,2.17,NOT_FOUND,

@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "habr-25",
+  "source": "habr",
+  "question": "Какие новые CSS-функции дают элементу номер и число соседей?",
+  "answer": "sibling-index() и sibling-count()",
+  "evidence": "новые CSS-функции `sibling-index()` и `sibling-count()`",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "answerable": true
+ },
+ "answer": "Новые CSS-функции `sibling-index()` и `sibling-count()` предоставляют возможность получить номер элемента и общее число его соседей непосредственно в стилях. Это позволяет более эффективно управлять анимациями и стилями, избегая использования `:nth-child()` и JavaScript для создания сложных визуальных эффектов.\n\nFINAL: новые CSS-функции `sibling-index()` и `sibling-count()`",
+ "final": "новые CSS-функции `sibling-index()` и `sibling-count()`",
+ "correct": true,
+ "refused": false,
+ "cost": 0.00022934999999996153,
+ "seconds": 3.6964897500001825,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы по локальной базе знаний (статьи Habr/lawebbox про фронтенд и AI в 2026 году). Всегда сначала вызови knowledge_base, при необходимости — с уточнённым запросом или фильтром по странице. Если после поиска в базе знаний нет ответа на вопрос, ответь ровно NOT_FOUND. Последняя строка ответа всегда FINAL: <короткий ответ или NOT_FOUND>."
+  },
+  {
+   "role": "user",
+   "content": "Какие новые CSS-функции дают элементу номер и число соседей?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_DUYkML9QKNLdBBrEDMzauFqs",
+     "function": {
+      "name": "knowledge_base",
+      "arguments": "{\"query\":\"новые CSS-функции элемент номер и число соседей\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_DUYkML9QKNLdBBrEDMzauFqs",
+   "content": "[Frontend Status #18 / 🎨 CSS] Математические раскладки: подсчёт соседей в дереве : новые CSS-функции sibling-index() и sibling-count() дают элементу его номер и общее число соседей прямо в стилях, а значит, ступенчатую анимацию-каскад можно описать одной строкой через calc() , без препроцессорных циклов, плодящих по :nth-child() -правилу на каждый элемент, и даже без JS.\n[Frontend Status #7 / 🎨 CSS] Одометр из автомобиля теперь на чистом CSS , без единой строки JavaScript. Статья показывает, как с помощью attr(), mod(), sibling-index() и @property автоматически раскидать цифры числа по отдельным элементам и заставить их крутиться вертикально при смене значения.\n[Frontend Status #18 / Frontend Status: свежий дайджест фронтенда и AI — 16.06.2026] 🎨 Центрирование всё ещё ломает голову, а каскадные анимации плодят сотни :nth-child — честный разбор центрирования и новые sibling-index() / sibling-count() — чтобы понимать, почему код работает, а не подбирать методом тыка.\n[Frontend Status #7 / 🎨 CSS] Подробное руководство по настройке списков с помощью CSS — Современный CSS даёт полный контроль над списками: от list-style-type с эмодзи/изображениями и ::marker (цвет/шрифт) до @counter-style для кастомных циклов и list-style:none + li::before для любых иконок, чекбоксов, позиционирования и анимаций.\n[Frontend Status #7 / 🎨 CSS] CSS 2026: что нового и уже работает в браузерах — В 2026 году CSS стал ещё мощнее благодаря Interop 2026 и Baseline 2026, обеспечив кросс-браузерную поддержку многих фич: cross-document view transitions для плавных переходов между страницами, scroll-driven animations, @starting-style для анимаций появления, relative color syntax и color-mix() на baseline, улучшенный @scope , reading flow для доступности, gap decorations в grid/flex, Custom Highlight API и contrast-color(). Появляются или близки к релизу @mixin (с параметрами, пока в Chrome ~146), masonry layout (теперь через grid-lanes), делая CSS самостоятельнее и избавляя от хаков/JS в сложных инте"
+  },
+  {
+   "role": "assistant",
+   "content": "Новые CSS-функции `sibling-index()` и `sibling-count()` предоставляют возможность получить номер элемента и общее число его соседей непосредственно в стилях. Это позволяет более эффективно управлять анимациями и стилями, избегая использования `:nth-child()` и JavaScript для создания сложных визуальных эффектов.\n\nFINAL: новые CSS-функции `sibling-index()` и `sibling-count()`",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

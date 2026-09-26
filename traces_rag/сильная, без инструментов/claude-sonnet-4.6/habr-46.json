@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "habr-46",
+  "source": "habr",
+  "question": "Какой проект предлагает 50+ ретро-компонентов?",
+  "answer": "8bitcn/ui",
+  "evidence": "8bitcn/ui: 50+ Ретро компонентов",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "answerable": true
+ },
+ "answer": "FINAL: RetroUI",
+ "final": "RetroUI",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0012780000000000014,
+ "seconds": 1.8530970829888247,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Какой проект предлагает 50+ ретро-компонентов?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\":\"Проект Retro UI (или RetroUI) предлагает 50+ ретро-компонентов для веб-разработки.\", \"final\":\"RetroUI\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

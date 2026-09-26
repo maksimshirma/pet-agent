@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "habr-54",
+  "source": "habr",
+  "question": "Какой инструмент позволяет запускать агентов Cursor через Telegram?",
+  "answer": "cursor-tg",
+  "evidence": "Агенты Cursor через Telegram с помощью cursor-tg!",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "answerable": true
+ },
+ "answer": "FINAL: cursor-telegram",
+ "final": "cursor-telegram",
+ "correct": false,
+ "refused": false,
+ "cost": 0.005694000000000005,
+ "seconds": 7.129959334008163,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Какой инструмент позволяет запускать агентов Cursor через Telegram?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\": \"Вопрос о инструменте, позволяющем запускать агентов Cursor через Telegram. Речь идёт о проекте/инструменте 'cursor-telegram' или подобном. Наиболее известный инструмент для этого — 'Cursor Agent' через Telegram-бота, но конкретный известный проект называется 'cursoragent' или же речь идёт о проекте 'telegram-cursor-agent'. Также существует инструмент под названием 'CursorTelegram' или 'agents-cursor-telegram'. Наиболее вероятный ответ — это инструмент/проект 'Cursor Agent Telegram' или конкретно пакет 'cursor-telegram'. Вспоминая актуальные проекты: есть проект 'TelegramCursorAgent' и инструмент называемый 'cursor-agent-telegram'. Наиболее известный ответ на этот вопрос — инструмент называется 'Telegram Bot для Cursor' или конкретно проект 'cursoragent'. Однако, судя по специфике вопроса, речь может идти о конкретном инструменте 'cursor-telegram' от определённого разработчика на GitHub.\", \"final\": \"cursor-telegram\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

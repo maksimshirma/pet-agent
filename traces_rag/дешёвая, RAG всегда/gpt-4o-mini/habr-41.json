@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-41",
+  "source": "habr",
+  "question": "Кто ошибался в CSS Anchor Positioning?",
+  "answer": "Крис Койер",
+  "evidence": "Крис Койер ошибался в CSS Anchor Positioning!",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "answerable": true
+ },
+ "answer": "В CSS Anchor Positioning ошибался Крис Койер, который считал, что якорь и позиционируемый элемент могут находиться где угодно в DOM, но это не так [1]. \n\nFINAL: Крис Койер.",
+ "final": "Крис Койер.",
+ "correct": true,
+ "refused": false,
+ "cost": 0.00011850000000002137,
+ "seconds": 1.4228344169969205,
+ "steps": 1,
+ "messages": []
+}

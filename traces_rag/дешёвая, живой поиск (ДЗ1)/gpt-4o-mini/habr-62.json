@@ -1,0 +1,149 @@
+{
+ "task": {
+  "id": "habr-62",
+  "source": "habr",
+  "question": "Какая уязвимость исправлена в Angular в июне 2026?",
+  "answer": "уязвимость в доверии к JSDoc",
+  "evidence": "Angular: исправлена уязвимость в доверии к JSDoc",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "answerable": true
+ },
+ "answer": "К сожалению, у меня нет информации о конкретных уязвимостях, которые были исправлены в Angular в июне 2026 года. Для получения актуальных данных об исправлениях и уязвимостях рекомендуется обратиться к официальным источникам или обновлениям безопасности Angular. FINAL: неизвестно.",
+ "final": "неизвестно.",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0015827999999999953,
+ "seconds": 20.934024249989307,
+ "steps": 7,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какая уязвимость исправлена в Angular в июне 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_NSalpu8KH03AVRJZfLXIwF7L",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"Angular уязвимости июнь 2026\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_NSalpu8KH03AVRJZfLXIwF7L",
+   "content": "[Обновление Patch Tuesday за июнь 2026 года с исправлениями более 200 уязвимостей не устанавливается на некоторых ПК / Хабр] https://habr.com/ru/news/1047724 — Title: Обновление Patch Tuesday за июнь 2026 года с исправлениями более 200 уязвимостей не устанавливается на некоторых ПК / Хабр # Обновление Patch Tuesday за июнь 2026 года с исправлениями более 200 уязвимостей не устанавливается на некоторых ПК. Microsoft выпустила обновление Patch Tuesday за июнь 2026 года. В него вошли исправления более 200 уязвимостей, включая пять уязвимостей нулевого дня, \n[Обновление Patch Tuesday за июнь 2026 года с исправлениями более 200 уязвимостей не устанавливается на некоторых ПК / Habr] https://habr.com/ru/amp/publications/1047724 — Title: Обновление Patch Tuesday за июнь 2026 года с исправлениями более 200 уязвимостей не устанавливается на некоторых ПК / Habr ## Обновление Patch Tuesday за июнь 2026 года с исправлениями более 200 уязвимостей не устанавливается на некоторых ПК. Microsoft выпустила обновление Patch Tuesday за июнь 2026 года. В него вошли исправления более 200 уязвимостей, включая пять уязвимостей нулевого дня,\n[Киберугрозы 2025-2026: какие уязвимости были и будут в тренде / Хабр] https://habr.com/ru/companies/pt/articles/1001672 — 2 трендовые уязвимости касаются Linux-систем. Это уязвимости повышения привилегий в Sudo (CVE-2025-32463) и Linux Kernel (CVE-2025-38001). 3 трендовые уязвимости касаются широко используемых библиотек и фреймворков. Это уязвимости выполнения произвольного кода в React Server Components (CVE-2025-55182), expr-eval (CVE-2025-12735) и уязвимость межсайтового скриптинга в Django (CVE-2025-64459). [...\n[Топ самых интересных CVE за июнь 2022 года / Хабр] https://habr.com/ru/companies/tomhunter/articles/674594 — Title: Топ самых интересных CVE за июнь 2022 года / Хабр # Топ самых интересных CVE за июнь 2022 года. В популярной вики-системе Confluence компании Atlassian обнаружили критическую уязвимость (10 баллов из 10 возможных по шкале CVS"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_5ZKKgrfAaGJ6kHmdEgARzti4",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"Angular уязвимость CVE июнь 2026\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_5ZKKgrfAaGJ6kHmdEgARzti4",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI] https://habr.com/ru/articles/1043510 — Angular 22.0.0: мажор от 3 июня 2026 — OnPush по умолчанию для новых компонентов, стабильный декоратор `@Service`, `injectAsync`, signal forms в public API (`reloadValidation`, debounce для async-валидации), `provideWebMcpTools` и экспериментальный `declareWebMcpTool` для AI-агентов, кеш ресурсов для SSR, поддержка Node.js 26. Из breaking changes: убраны `ComponentFactoryResolver`/`ComponentFactor\n[Frontend Status: свежий дайджест фронтенда и AI] https://habr.com/ru/articles/1047986 — Angular: исправлена уязвимость в доверии к JSDoc, добавлено подтверждение перед загрузкой рабочего пространства, улучшена производительность при обработке ошибок парсера, отключено ядро языка в ненадежных рабочих пространствах. #### Безопасность Transformers: Исправлена уязвимость в пути при сохранении шаблонов. Deno: улучшена обработка бsdiff delta в zstd-сжатии, восстановлен поддержка brotli в C\n[Специалисты – Хабр Карьера] https://career.habr.com/resumes?page=1&q=Angular — Стек: React, Angular, RxJs, NgXs, TypeScript, Material UI, consta UI, Micro Frontend (MFE), Nexus, Keycloak … Обязанности: - Разработка и поддержка frontend-части сервиса на Angular и React. … исправление уязвимостей CVE и NIST - Разработка shared библиотек для согласования работы реакт и ангуляр … частей - Поднятие версий ангуляра с 13 до 18 - Выполнение релизов: планирование, сбор релизов … \\_\\_\n[Владислав Богданов (bagdanovvladislav) - Хабр Карьера] https://career.habr.com/bagdanovvladislav — ... мажорные миграции Angular и закрывал уязвимости ИБ (CVE/NIST). Настраивал CI/CD пайплайны, внедрял E2E-тестирование и мониторинг ошибок"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_yfoV4jsBARuHClPkyvql99I9",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"Angular исправление уязвимостей\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_yfoV4jsBARuHClPkyvql99I9",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI] https://habr.com/ru/articles/1007014 — ### 🅰️ Angular Устранение недавних уязвимостей в Angular — Команда разработчиков Angular рассказала о том, как были исправлены 2 серьезные уязвимости — SSRF и инъекции заголовков в Angular SSR, а также открытый редирект через префикс X-Forwarded. Формы в Angular всегда были болью: FormGroup с nullable-контролами, ControlValueAccessor на 250 строк ради простого степпера, ошибки валидации, которые н\n[Избавляемся от предупреждений и уязвимостей при установке пакетов с помощью yarn / Хабр] https://habr.com/ru/articles/739296 — В yarn.lock можно увидеть, что ngx-build-plus содержит такую зависимость: \"@angular-devkit/build-angular\" \">=15.0.0\" Yarn почему-то решил, что ему мало уже установленной библиотеки @angular-devkit/build-angular@15.0.0 и скачал последнюю доступную @angular-devkit/build-angular@16.0.3, а у нас Αngular 15, а не 16. Чтобы это исправить можно добавить в блок resolutions следующее: `\"resolutions\": { \"@a\n[Специалисты - Хабр Карьера] https://career.habr.com/resumes?page=1&q=Angular — Стек: React, Angular, RxJs, NgXs, TypeScript, Material UI, consta UI, Micro Frontend (MFE), Nexus, Keycloak … Обязанности: - Разработка и поддержка frontend-части сервиса на Angular и React. … исправление уязвимостей CVE и NIST - Разработка shared библиотек для согласования работы реакт и ангуляр … частей - Поднятие версий ангуляра с 13 до 18 - Выполнение релизов: планирование, сбор релизов … \\_\\_\n[Особенности Angular с точки зрения безопасности / Хабр] https://habr.com/ru/companies/nspk/articles/597097 — Собираем все запросы и начинаем искать уязвимости на стороне backend-а. Тут можно сказать: \"Это же проблемы backend, при чем здесь frontend?\". Да, это проблемы backend-а, но упростил исследование приложения для неаутентифицированного пользователя frontend. Вместо перебора запросов у нас теперь есть определенные точки входа, некоторые из которых могут быть не защищены. Тем самым, информац"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_LW7tR7Dyt6lGuOPzg3mm32GD",
+     "function": {
+      "name": "web_search_ru",
+      "arguments": "{\"query\":\"уязвимость Angular июнь 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_LW7tR7Dyt6lGuOPzg3mm32GD",
+   "content": "[Petal (песня)] «Petal» (стилизовано строчными буквами)(с англ. — «Лепесток») — песня американской певицы и автора песен Арианы Гранде, ставшая вторым синглом из её восьмого студийного альбома Petal (2026). Она была выпущена 31 июля 2026 года на её собственном лейбле BabyDoll Music по эксклюзивной лицензии Republic Records. Гранде написала слова песни, а также сочинила музыку и спродюсировала её вместе с соавторами Ильёй Салманзаде и Максом Мартином. В тексте песни «Petal» исследуются эмоциональные последствия славы, творческая уязвимость и дерзкая реакция Гранде на общественное внимание. Музыкальные критики высоко оценили амбициозное продюсирование и вокальное исполнение песни, многие из них назвали её одним из лучших треков альбома. Гранде представила «Petal» во время своего тура Eternal Sunshine Tour, а затем выпустила сопровождающий её музыкальный видеоклип, снятый на VistaVision, в котором она играет начинающую исполнительницу по имени Пеппер."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_Qrag3AEpaPMaOnUvAcFuqoxH",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Angular security vulnerabilities June 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_Qrag3AEpaPMaOnUvAcFuqoxH",
+   "content": "[JavaScript] JavaScript (JS) is a programming language and core technology of the Web, alongside HTML and CSS. Created by Brendan Eich in 1995, it is maintained by Ecma International's TC39 technical committee, with related Web APIs maintained by W3C and WHATWG. As of 2025, JavaScript is the most widely used programming language on GitHub. However, TypeScript, which is a version of JavaScript that is strict about types and is statically typed, overtook JavaScript on GitHub by August 2025. Web browsers have a dedicated JavaScript engine that executes the client code. These engines are also utilized in some servers and a variety of apps. The most popular runtime system for non-browser usage is Node.js. JavaScript is a high-level, often just-in-time–compiled language that conforms to the ECMAScript standard. It has dynamic typing, prototype-based object-orientation, and first-class functions. It is multi-paradigm, supporting event-driven, functional, and imperative programming styles. It has application programming interfaces (APIs) for working with text, dates, regular expressions, standard data structures, and the Document Object Model (DOM). The ECMAScript standard does not include any input/output (I/O), such as networking, storage, or graphics facilities. In practice, the web browser or other runtime system provides JavaScript APIs for I/O. Although Java and JavaScript are similar in name and syntax, the two languages are distinct and differ greatly in design."
+  },
+  {
+   "role": "user",
+   "content": "Инструменты больше недоступны. Ответь по тому, что уже известно, последней строкой FINAL: <ответ>."
+  },
+  {
+   "role": "assistant",
+   "content": "К сожалению, у меня нет информации о конкретных уязвимостях, которые были исправлены в Angular в июне 2026 года. Для получения актуальных данных об исправлениях и уязвимостях рекомендуется обратиться к официальным источникам или обновлениям безопасности Angular. FINAL: неизвестно.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

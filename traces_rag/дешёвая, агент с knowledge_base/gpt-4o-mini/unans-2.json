@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "unans-2",
+  "source": "habr",
+  "question": "Какую версию Deno представили в 2026 году?",
+  "answer": null,
+  "evidence": null,
+  "page": null,
+  "url": null,
+  "answerable": false
+ },
+ "answer": "В 2026 году в Deno были исправлены ошибки конфигурации при неудачном преобразовании пути в URL, улучшена обработка bsdiff delta в zstd-сжатии и восстановлена поддержка brotli в CompressionFormat. Также были оптимизированы TLS-провайдер и обработка позиционных аргументов в fs.promises. \n\nFINAL: NOT_FOUND",
+ "final": "NOT_FOUND",
+ "correct": false,
+ "refused": true,
+ "cost": 0.00021780999999998496,
+ "seconds": 3.1823619169881567,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы по локальной базе знаний (статьи Habr/lawebbox про фронтенд и AI в 2026 году). Всегда сначала вызови knowledge_base, при необходимости — с уточнённым запросом или фильтром по странице. Если после поиска в базе знаний нет ответа на вопрос, ответь ровно NOT_FOUND. Последняя строка ответа всегда FINAL: <короткий ответ или NOT_FOUND>."
+  },
+  {
+   "role": "user",
+   "content": "Какую версию Deno представили в 2026 году?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_t7Q53tYglajb1W45CJFrDsbt",
+     "function": {
+      "name": "knowledge_base",
+      "arguments": "{\"query\":\"версия Deno 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_t7Q53tYglajb1W45CJFrDsbt",
+   "content": "[Frontend Status #18 / Бэкенд] Deno : исправлена ошибка конфигурации при неудачном преобразовании пути в URL, улучшена обработка бsdiff delta в zstd-сжатии, восстановлен поддержка brotli в CompressionFormat, улучшена обработка позиционных аргументов в fs.promises, оптимизирован TLS-провайдер Quinn и ServerResponse.\n[Frontend Status #18 / Безопасность] Deno : улучшена обработка бsdiff delta в zstd-сжатии, восстановлен поддержка brotli в CompressionFormat.\n[Frontend Status #10 / ⚛️ React] вышел next-forge 6.0 - Шаблон Turborepo от Vercel для монорепозитория приложений Next.js.\n[Frontend Status #10 / ⚡ JS / TS] Анонс TypeScript 6.0 - TypeScript 6.0 последняя версия основанная на базе JavaScript\n[Frontend Status #11 / 🛡️ Безопасность] Злоумышленники из кампании GlassWorm скомпрометировали как минимум 151 GitHub-репозиторий, npm-пакеты и расширения VS Code и сделали это незаметно, спрятав полезную нагрузку в Unicode variation selectors (диапазоны 0xFE00–0xFE0F), которые рендерятся как пустое пространство во всех редакторах. Открываешь файл, а видишь пустые строки. JavaScript-интерпретатор же видит исполняемый код, который через eval() крадёт токены и секреты. Атрибуция коммитов убедительная: исследователи Aikido полагают, что все 151 изменение сгенерированы LLM, т.к. вручную это нереально. Последняя эволюция атаки — злоупотребление полями extensionPack и extensionDependencies в VS Code: безобидное расширение получает доверие, затем тихо тянет GlassWorm-загрузчик как зависимость. Автор в конце описывает конкретные шаги, которые сделал сам и советует применять: проверил lockfile по списку скомпрометированных пакетов, удалил неиспользуемые зависимости, ужесточил диапазоны версий в package.json, перепроверил расширения VS Code, ограничил область видимости секретов в CI/CD."
+  },
+  {
+   "role": "assistant",
+   "content": "В 2026 году в Deno были исправлены ошибки конфигурации при неудачном преобразовании пути в URL, улучшена обработка bsdiff delta в zstd-сжатии и восстановлена поддержка brotli в CompressionFormat. Также были оптимизированы TLS-провайдер и обработка позиционных аргументов в fs.promises. \n\nFINAL: NOT_FOUND",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

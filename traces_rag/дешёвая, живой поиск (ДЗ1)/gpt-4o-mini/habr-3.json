@@ -1,0 +1,149 @@
+{
+ "task": {
+  "id": "habr-3",
+  "source": "habr",
+  "question": "Кто был гостем подкаста о WebAssembly 3.0 20 января 2026?",
+  "answer": "Andreas Rossberg",
+  "evidence": "Гость — Andreas Rossberg, один из ключевых архитекторов WebAssembly с первых дней",
+  "page": "Frontend Status #7",
+  "url": "https://habr.com/ru/articles/1007014/",
+  "answerable": true
+ },
+ "answer": "FINAL: Неизвестно.",
+ "final": "Неизвестно.",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0011559000000000152,
+ "seconds": 12.170766165974783,
+ "steps": 7,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Кто был гостем подкаста о WebAssembly 3.0 20 января 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_IH5imvO13L6GdT2IHIT0KNc9",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"WebAssembly 3.0 podcast guest January 20 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_IH5imvO13L6GdT2IHIT0KNc9",
+   "content": "[LeVar Burton] Levardis Robert Martyn Burton (born February 16, 1957) is an American actor, director, and television host. He played Geordi La Forge in Star Trek: The Next Generation (1987–1994) and Kunta Kinte in the ABC miniseries Roots (1977), and was the host of the PBS Kids educational television series Reading Rainbow for 23 years (1983–2006). Burton received 12 Daytime Emmy Awards and a Peabody Award as host and executive producer of Reading Rainbow. His other roles include Cap Jackson in Looking for Mr. Goodbar (1977), Donald Lang in Dummy (1979), Tommy Price in The Hunter (1980), which earned him an NAACP Image Award for Outstanding Actor in a Motion Picture, and Martin Luther King Jr. in Ali (2001). Burton received the Grammy Award for Best Spoken Word Album at the 42nd Annual Grammy Awards for his narration of the book The Autobiography of Martin Luther King Jr. In 1990, he was honored for his accomplishments in television with a star on the Hollywood Walk of Fame. From 2017 until 2024, Burton created and hosted the podcast LeVar Burton Reads, which has been described as \"Reading Rainbow for adults\". Since October 2024, Burton has hosted the Trivial Pursuit game show on The CW."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_vqtNTzeIcdidCJ3I8zsnKNpT",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"WebAssembly 3.0 podcast guest January 20 2026 details\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_vqtNTzeIcdidCJ3I8zsnKNpT",
+   "content": "[LeVar Burton] Levardis Robert Martyn Burton (born February 16, 1957) is an American actor, director, and television host. He played Geordi La Forge in Star Trek: The Next Generation (1987–1994) and Kunta Kinte in the ABC miniseries Roots (1977), and was the host of the PBS Kids educational television series Reading Rainbow for 23 years (1983–2006). Burton received 12 Daytime Emmy Awards and a Peabody Award as host and executive producer of Reading Rainbow. His other roles include Cap Jackson in Looking for Mr. Goodbar (1977), Donald Lang in Dummy (1979), Tommy Price in The Hunter (1980), which earned him an NAACP Image Award for Outstanding Actor in a Motion Picture, and Martin Luther King Jr. in Ali (2001). Burton received the Grammy Award for Best Spoken Word Album at the 42nd Annual Grammy Awards for his narration of the book The Autobiography of Martin Luther King Jr. In 1990, he was honored for his accomplishments in television with a star on the Hollywood Walk of Fame. From 2017 until 2024, Burton created and hosted the podcast LeVar Burton Reads, which has been described as \"Reading Rainbow for adults\". Since October 2024, Burton has hosted the Trivial Pursuit game show on The CW."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_z4JzS7RiCXxIQbzCYZE4fI4F",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"WebAssembly 3.0 podcast guest January 20 2026 summary\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_z4JzS7RiCXxIQbzCYZE4fI4F",
+   "content": "[GraalVM] GraalVM is a Java Development Kit (JDK) written in Java. The open-source distribution of GraalVM is based on OpenJDK, and the enterprise distribution is based on Oracle JDK. Along with just-in-time (JIT) compilation, GraalVM can also compile a Java application ahead-of-time (AOT). This allows for faster initialization, greater runtime performance, and decreased resource consumption, but the resulting executable can only run on the platform it was compiled for. It provides additional programming languages and execution modes. The first production-ready release, GraalVM 19.0, was distributed in May 2019. The most recent release is GraalVM 25.2.4, made available in July 2026. Major differentiators of GraalVM compared to the base JDK include: Graal Compiler, a JIT compiler. GraalVM Native Image, a technology for AOT compilation of Java applications. Truffle Language Implementation Framework and GraalVM SDK, a Java-based framework and a collection of APIs for developing high-performance language runtimes. GraalVM Polyglot API, an API to embed guest language code in a Java-based host application. JavaScript Runtime, an ECMAScript 2023-compliant JavaScript runtime, as well as Node.js. LLVM Runtime is a runtime to execute languages that can be transformed into LLVM bitcode."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_6B4ax2oNgr543Yiws3sOXAgG",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"WebAssembly 3.0 podcast\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_6B4ax2oNgr543Yiws3sOXAgG",
+   "content": "[World Wide Web] The World Wide Web (also known as WWW, W3, or simply the Web) is a global interconnected information system that enables content sharing over the Internet. It facilitates access to documents and other web resources according to specific rules of the Hypertext Transfer Protocol (HTTP). The Web was invented by English computer scientist Tim Berners-Lee while at CERN in 1989 and opened to the public in 1993. It was conceived as a \"universal linked information system\". Documents and other media content are made available to the network through web servers and can be accessed by programs such as web browsers. Servers and resources on the World Wide Web are identified and located through a character string called a uniform resource locator (URL). The original and still very common document type is a web page formatted in Hypertext Markup Language (HTML). This markup language supports plain text, images, embedded video and audio contents, and scripts (short programs) that implement complex user interaction. The HTML language also supports hyperlinks (embedded URLs), which provide immediate access to other web resources. Web navigation, or web surfing, is the common practice of following such hyperlinks across multiple websites. Web applications are web pages that function as application software. The information on the Web is transferred across the Internet using HTTP. Multiple web resources with a common theme and usually a common domain name make up a website. A single web server may provide multiple websites, while some websites, especially the most popular ones, may be provided by multiple servers. Website content is provided by a myriad of companies, organisations, government agencies, and individual users; and comprises an enormous amount of educational, entertainment, commercial, and government information. The World Wide Web has become the world's dominant information systems platform. It is the primary tool that billions of people worldwide use to"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_vBPeQCwRci4OMP1jabgRxnSR",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"WebAssembly podcast January 20 2026 guest\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_vBPeQCwRci4OMP1jabgRxnSR",
+   "content": "[LeVar Burton] Levardis Robert Martyn Burton (born February 16, 1957) is an American actor, director, and television host. He played Geordi La Forge in Star Trek: The Next Generation (1987–1994) and Kunta Kinte in the ABC miniseries Roots (1977), and was the host of the PBS Kids educational television series Reading Rainbow for 23 years (1983–2006). Burton received 12 Daytime Emmy Awards and a Peabody Award as host and executive producer of Reading Rainbow. His other roles include Cap Jackson in Looking for Mr. Goodbar (1977), Donald Lang in Dummy (1979), Tommy Price in The Hunter (1980), which earned him an NAACP Image Award for Outstanding Actor in a Motion Picture, and Martin Luther King Jr. in Ali (2001). Burton received the Grammy Award for Best Spoken Word Album at the 42nd Annual Grammy Awards for his narration of the book The Autobiography of Martin Luther King Jr. In 1990, he was honored for his accomplishments in television with a star on the Hollywood Walk of Fame. From 2017 until 2024, Burton created and hosted the podcast LeVar Burton Reads, which has been described as \"Reading Rainbow for adults\". Since October 2024, Burton has hosted the Trivial Pursuit game show on The CW."
+  },
+  {
+   "role": "user",
+   "content": "Инструменты больше недоступны. Ответь по тому, что уже известно, последней строкой FINAL: <ответ>."
+  },
+  {
+   "role": "assistant",
+   "content": "FINAL: Неизвестно.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

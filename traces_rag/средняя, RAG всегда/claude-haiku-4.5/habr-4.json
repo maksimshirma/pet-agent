@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-4",
+  "source": "habr",
+  "question": "Какая уязвимость была исправлена в Angular SSR?",
+  "answer": "SSRF и инъекции заголовков",
+  "evidence": "2 серьезные уязвимости — SSRF и инъекции заголовков в Angular SSR",
+  "page": "Frontend Status #7",
+  "url": "https://habr.com/ru/articles/1007014/",
+  "answerable": true
+ },
+ "answer": "На основе источников в Angular SSR были исправлены следующие уязвимости [1]:\n\n1. SSRF (Server-Side Request Forgery)\n2. Инъекции заголовков\n3. Открытый редирект через префикс X-Forwarded\n\nFINAL: В Angular SSR исправлены уязвимости SSRF, инъекции заголовков и открытый редирект через префикс X-Forwarded.",
+ "final": "В Angular SSR исправлены уязвимости SSRF, инъекции заголовков и открытый редирект через префикс X-Forwarded.",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0010969999999999591,
+ "seconds": 2.0637176249874756,
+ "steps": 1,
+ "messages": []
+}

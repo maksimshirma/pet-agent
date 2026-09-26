@@ -1,0 +1,149 @@
+{
+ "task": {
+  "id": "habr-4",
+  "source": "habr",
+  "question": "Какая уязвимость была исправлена в Angular SSR?",
+  "answer": "SSRF и инъекции заголовков",
+  "evidence": "2 серьезные уязвимости — SSRF и инъекции заголовков в Angular SSR",
+  "page": "Frontend Status #7",
+  "url": "https://habr.com/ru/articles/1007014/",
+  "answerable": true
+ },
+ "answer": "В Angular SSR была исправлена уязвимость, связанная с Server-Side Request Forgery (SSRF) и инъекциями заголовков, а также открытый редирект через префикс X-Forwarded. FINAL: SSRF, инъекции заголовков.",
+ "final": "SSRF, инъекции заголовков.",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0012215999999999894,
+ "seconds": 15.268648083991138,
+ "steps": 7,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какая уязвимость была исправлена в Angular SSR?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_JxADsktdJQwbAeeQI94WTh9f",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"Angular SSR уязвимость исправлена\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_JxADsktdJQwbAeeQI94WTh9f",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 05.03.2026 / Хабр] https://habr.com/ru/articles/1007014 — ### 🅰️ Angular Устранение недавних уязвимостей в Angular — Команда разработчиков Angular рассказала о том, как были исправлены 2 серьезные уязвимости — SSRF и инъекции заголовков в Angular SSR, а также открытый редирект через префикс X-Forwarded. Формы в Angular всегда были болью: FormGroup с nullable-контролами, ControlValueAccessor на 250 строк ради простого степпера, ошибки валидации, которые н\n[Frontend Status: свежий дайджест фронтенда и AI — 25.05.2026 / Хабр] https://habr.com/ru/articles/1039126 — Svelte: исправлены ошибки в обработке батчей и асинхронных веток, улучшена стабильность SSR, исправлены проблемы с промисами и ошибками в итерациях, оптимизированы процессы обновления состояния. Angular: исправлены проблемы с абстрактными классами, добавлены возможности для inline-таблиц в шаблонах, возможность компилировать неэкспортированные классы в standalone, добавлен параметр allowedHosts дл\n[Frontend Status: свежий дайджест фронтенда и AI — 16.06.2026 / Хабр] https://habr.com/ru/articles/1047986 — Angular: исправлена уязвимость в доверии к JSDoc, добавлено подтверждение перед загрузкой рабочего пространства, улучшена производительность при обработке ошибок парсера, отключено ядро языка в ненадежных рабочих пространствах. #### Безопасность Transformers: Исправлена уязвимость в пути при сохранении шаблонов. Deno: улучшена обработка бsdiff delta в zstd-сжатии, восстановлен поддержка brotli в C\n[Как мы изобрели PHP, но в 10 раз медленнее: почему React Server Components – это архитектурный тупик / Comments / Habr] https://habr.com/en/articles/1005838/comments — Забудьте про СЕО - впереди ИИ-поисковики, пользователь получает ответ на поисковой вопрос в ИИ-чате. Кто хочет тупеть - пусть пользуется. Меня по старинке всё устраивает. Утки вперёд! GEO сейчас как раз работает над SEO, так что SSR все ещё необходим Это не отменяет того, что парсеру нужен готовый HT"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_dmCSfdKSHhwhisrdYA2m7PtB",
+     "function": {
+      "name": "web_search_ru",
+      "arguments": "{\"query\":\"уязвимость исправлена Angular SSR\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_dmCSfdKSHhwhisrdYA2m7PtB",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_JnKIxmxgoS85lNa7qo3UjLc5",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Angular SSR vulnerability fixed\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_JnKIxmxgoS85lNa7qo3UjLc5",
+   "content": "[React (software)] React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library that aims to make building user interfaces based on components more \"seamless\". It is maintained by a community of individual developers and companies and governed by the React Foundation, an independent foundation hosted by the Linux Foundation. According to the 2025 Stack Overflow Developer Survey, React is one of the most commonly used web technologies. React can be used to develop single-page, mobile, or server-rendered applications with frameworks like Next.js and React Router. Because React is only concerned with the user interface and rendering components to the DOM, React applications often rely on libraries for routing and other client-side functionality. A key advantage of React is that it only re-renders those parts of the page that have changed, avoiding unnecessary re-rendering of unchanged DOM elements. React is used by an estimated 6.1% of all websites."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_BsVGALlk7Yrg2fQ4XiOwk7Qz",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Angular SSR vulnerabilities fixed 2023\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_BsVGALlk7Yrg2fQ4XiOwk7Qz",
+   "content": "[React (software)] React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library that aims to make building user interfaces based on components more \"seamless\". It is maintained by a community of individual developers and companies and governed by the React Foundation, an independent foundation hosted by the Linux Foundation. According to the 2025 Stack Overflow Developer Survey, React is one of the most commonly used web technologies. React can be used to develop single-page, mobile, or server-rendered applications with frameworks like Next.js and React Router. Because React is only concerned with the user interface and rendering components to the DOM, React applications often rely on libraries for routing and other client-side functionality. A key advantage of React is that it only re-renders those parts of the page that have changed, avoiding unnecessary re-rendering of unchanged DOM elements. React is used by an estimated 6.1% of all websites."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_IB8Xg2XThhPXlSPNwkJWGM3I",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"Angular SSR security vulnerability\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_IB8Xg2XThhPXlSPNwkJWGM3I",
+   "content": "[Безопасность приложений на Typescript от А до Я: гайд по защите от очевидных и не очень уязвимостей / Хабр] https://habr.com/ru/articles/1029598 — Эту статью я построил вокруг простого принципа: типы - это не защита, а инструмент дисциплины. Мы рассмотрим атаки и защитные механизмы на двух ключевых платформах: Бэкенд (Node.js, Express/Fastify/NestJS): инъекции, прототипное загрязнение (Prototype Pollution), небезопасная десериализация, утечки данных через ошибки. Фронтенд (React, Next.js, Angular): XSS, CSRF, отравление прототипов через зави\n[Как настроить Server Side Rendering для индексации ...] https://habr.com/ru/articles/1017642 — Для статической генерации замените ssr: true на ssr: false и добавьте команду npm run generate . Настройка SSR для Angular: Angular Universal.\n[Критическая уязвимость позволяет выполнить ...] https://habr.com/ru/news/973252 — Подверженность систем уязвимости CVE-2025-55182 зависит от применения на них уязвимых серверных компонентов react‑server‑dom‑webpack, react‑server‑dom‑parcel и react‑server‑dom‑turbopack (среди прочего, web‑приложение может не использовать их, но установить на сервере). Приложения не использующие react‑server уязвимость не затрагивает. Степень охвата уязвимостью рабочих систем, в которых используе"
+  },
+  {
+   "role": "user",
+   "content": "Инструменты больше недоступны. Ответь по тому, что уже известно, последней строкой FINAL: <ответ>."
+  },
+  {
+   "role": "assistant",
+   "content": "В Angular SSR была исправлена уязвимость, связанная с Server-Side Request Forgery (SSRF) и инъекциями заголовков, а также открытый редирект через префикс X-Forwarded. FINAL: SSRF, инъекции заголовков.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

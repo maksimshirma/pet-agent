@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-19",
+  "source": "habr",
+  "question": "Какая версия useHotkeys вышла в мае 2026?",
+  "answer": "5.3",
+  "evidence": "useHotkeys 5.3",
+  "page": "Frontend Status #15",
+  "url": "https://habr.com/ru/articles/1032276/",
+  "answerable": true
+ },
+ "answer": "NOT_FOUND\n\nFINAL: В источниках нет информации о версии useHotkeys, вышедшей в мае 2026. Источник [1] упоминает useHotkeys 5.3, но не указывает дату выхода этой версии.",
+ "final": "В источниках нет информации о версии useHotkeys, вышедшей в мае 2026. Источник [1] упоминает useHotkeys 5.3, но не указывает дату выхода этой версии.",
+ "correct": true,
+ "refused": false,
+ "cost": 0.0011680000000000024,
+ "seconds": 3.077296249975916,
+ "steps": 1,
+ "messages": []
+}

@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-31",
+  "source": "habr",
+  "question": "Какой инструмент собирает React-проект из коробки с SSR?",
+  "answer": "Rockpack",
+  "evidence": "Rockpack собирает всё одной командой",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "answerable": true
+ },
+ "answer": "[1] Rockpack собирает React-проект из коробки с SSR. Он включает TypeScript, SSR, проверки качества и структуру проекта, позволяя сразу писать фичи вместо недели настройки конфигов.\n\nFINAL: Rockpack — инструмент для React-проекта из коробки с SSR.",
+ "final": "Rockpack — инструмент для React-проекта из коробки с SSR.",
+ "correct": true,
+ "refused": false,
+ "cost": 0.00149100000000002,
+ "seconds": 1.9692706250061747,
+ "steps": 1,
+ "messages": []
+}

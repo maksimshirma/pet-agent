@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "habr-5",
+  "source": "habr",
+  "question": "Какой фреймворк занял первое место в State of JS 2025 по позитивным отзывам?",
+  "answer": "Svelte",
+  "evidence": "Svelte продолжает занимать первое место среди реактивных фреймворков по позитивным отзывам",
+  "page": "Frontend Status #7",
+  "url": "https://habr.com/ru/articles/1007014/",
+  "answerable": true
+ },
+ "answer": "FINAL: Vite",
+ "final": "Vite",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0019830000000000004,
+ "seconds": 2.7070522920112126,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Какой фреймворк занял первое место в State of JS 2025 по позитивным отзывам?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\": \"В опросе State of JS 2025 (результаты которого были опубликованы в 2025 году) по категории позитивных отзывов (retention/positivity) первое место занял Vite — он стабильно лидирует в этой категории несколько лет подряд.\", \"final\": \"Vite\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

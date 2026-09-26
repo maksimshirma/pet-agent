@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-5",
+  "source": "habr",
+  "question": "Какой фреймворк занял первое место в State of JS 2025 по позитивным отзывам?",
+  "answer": "Svelte",
+  "evidence": "Svelte продолжает занимать первое место среди реактивных фреймворков по позитивным отзывам",
+  "page": "Frontend Status #7",
+  "url": "https://habr.com/ru/articles/1007014/",
+  "answerable": true
+ },
+ "answer": "Согласно источнику [1], Svelte занимает первое место среди реактивных фреймворков по позитивным отзывам в State of JS 2025.\n\nFINAL: Svelte занял первое место в State of JS 2025 по позитивным отзывам.",
+ "final": "Svelte занял первое место в State of JS 2025 по позитивным отзывам.",
+ "correct": true,
+ "refused": false,
+ "cost": 0.0014149999999999996,
+ "seconds": 1.7115662500145845,
+ "steps": 1,
+ "messages": []
+}

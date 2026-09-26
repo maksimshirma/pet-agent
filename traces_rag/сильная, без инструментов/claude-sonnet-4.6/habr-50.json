@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "habr-50",
+  "source": "habr",
+  "question": "Какая версия VS Code вышла с инфраструктурой для Copilot-агентов?",
+  "answer": "1.111",
+  "evidence": "VS Code 1.111 — Copilot-агенты обрастают инфраструктурой",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "answerable": true
+ },
+ "answer": "FINAL: 1.98",
+ "final": "1.98",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0016140000000000043,
+ "seconds": 2.4253989169956185,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Какая версия VS Code вышла с инфраструктурой для Copilot-агентов?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\":\"В феврале 2025 года вышла версия VS Code 1.98, которая включала инфраструктуру для Copilot-агентов (agent mode и связанную инфраструктуру).\", \"final\":\"1.98\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

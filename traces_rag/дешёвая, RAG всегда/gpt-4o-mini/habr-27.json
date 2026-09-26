@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-27",
+  "source": "habr",
+  "question": "Кто создал библиотеку Geometric.js?",
+  "answer": "Harry Stevens",
+  "evidence": "Harry Stevens, график из New York Times, собрал Geometric.js",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "answerable": true
+ },
+ "answer": "Harry Stevens является создателем Geometric.js [1]. FINAL: Harry Stevens.",
+ "final": "Harry Stevens.",
+ "correct": true,
+ "refused": false,
+ "cost": 0.00010499999999999399,
+ "seconds": 1.14436254100292,
+ "steps": 1,
+ "messages": []
+}

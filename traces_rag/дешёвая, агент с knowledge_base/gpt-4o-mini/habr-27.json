@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "habr-27",
+  "source": "habr",
+  "question": "Кто создал библиотеку Geometric.js?",
+  "answer": "Harry Stevens",
+  "evidence": "Harry Stevens, график из New York Times, собрал Geometric.js",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "answerable": true
+ },
+ "answer": "Библиотеку Geometric.js создал Гарри Стивенс (Harry Stevens), график из New York Times. FINAL: Гарри Стивенс.",
+ "final": "Гарри Стивенс.",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0001968600000000209,
+ "seconds": 3.3205688749731053,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы по локальной базе знаний (статьи Habr/lawebbox про фронтенд и AI в 2026 году). Всегда сначала вызови knowledge_base, при необходимости — с уточнённым запросом или фильтром по странице. Если после поиска в базе знаний нет ответа на вопрос, ответь ровно NOT_FOUND. Последняя строка ответа всегда FINAL: <короткий ответ или NOT_FOUND>."
+  },
+  {
+   "role": "user",
+   "content": "Кто создал библиотеку Geometric.js?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_PpQNFrpVz05H2HlUTT9Zh6S6",
+     "function": {
+      "name": "knowledge_base",
+      "arguments": "{\"query\":\"Geometric.js\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_PpQNFrpVz05H2HlUTT9Zh6S6",
+   "content": "[Frontend Status #18 / ⚡ JS / TS] Geometric.js: геометрия для канвы и вёрстки : нарисовать фигуру на экране — легко, а вот ответить «пересекаются ли два многоугольника?» или «точка внутри области?» — и вы снова в школьной геометрии с формулами и костылями. Harry Stevens, график из New York Times, собрал Geometric.js: аккуратная библиотека, которая берёт на себя повороты, отражения, обводки, интерполяцию и все эти вопросы «да или нет» между фигурами. На сайте — десятки живых примеров, от простых до булевых операций над многоугольниками. Если нужна геометрия на канве или в интерактивной вёрстке, а не очередной переписанный со школьной парты sin и cos — вот готовый ответ.\n[Frontend Status #10 / 📦 Разное] Собираем красивые 3D переходы на Webflow, GSAP и Three.js — Связка Three.js, Barba.js и GSAP для плавных переходов между 3D-сценами. Автор подробно разбирает data -атрибуты как точки управления анимацией и оптимизацию резонансного движения камеры.\n[Frontend Status #18 / Frontend Status: свежий дайджест фронтенда и AI — 16.06.2026] ⚡ Зелёные async-тесты врут, PDF застревает в iframe, геометрия — в sin/cos, DI падает на проде — PDFSlick, Geometric.js, InferDI и разбор ловушек Jest — чтобы ловить ошибки до деплоя, а не в три часа ночи.\n[Frontend Status #9 / 🎨 CSS] Брехт де Рёйте показывает corner-shape на пяти примерах : карточки товаров с ленточными бейджами, кнопки с анимацией при ховере от bevel к squircle (ох уж эти названия) и другие. Преимущество свойства в том, что corner-shape работает с border, box-shadow и background в отличие от clip-path , который всё это обрезает. Каждое демо устроено через @layer с прогрессивным улучшением: базовый слой выглядит хорошо везде, @supports (corner-shape: bevel) добавляет улучшение только там, где поддерживается. Пока только Chrome 139+.\n[Frontend Status #10 / 🎨 CSS] Flexbox Masonry Layout (Explained with Math) — Математическая модель masonry-раскладки на Flexbox: как распределить элементы с разными соотношениями сторон так, чтоб"
+  },
+  {
+   "role": "assistant",
+   "content": "Библиотеку Geometric.js создал Гарри Стивенс (Harry Stevens), график из New York Times. FINAL: Гарри Стивенс.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

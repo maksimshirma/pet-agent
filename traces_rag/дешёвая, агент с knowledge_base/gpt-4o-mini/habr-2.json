@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "habr-2",
+  "source": "habr",
+  "question": "Какой новый HTML-атрибут предложила команда Edge?",
+  "answer": "focusgroup",
+  "evidence": "Команда Edge предлагает новый HTML-атрибут `focusgroup`",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "answerable": true
+ },
+ "answer": "Команда Edge предложила новый HTML-атрибут `focusgroup`. Он добавляется на контейнер, и браузер сам обрабатывает клавиши стрелок, пропускает скрытые или отключённые элементы, учитывает направление текста и восстанавливает фокус при возврате. Реализация этой функции уже внедрена в Edge и Chromium, а RFC-процесс идёт для других браузеров.\n\nFINAL: focusgroup",
+ "final": "focusgroup",
+ "correct": true,
+ "refused": false,
+ "cost": 0.00022104000000000568,
+ "seconds": 3.8513302080100402,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы по локальной базе знаний (статьи Habr/lawebbox про фронтенд и AI в 2026 году). Всегда сначала вызови knowledge_base, при необходимости — с уточнённым запросом или фильтром по странице. Если после поиска в базе знаний нет ответа на вопрос, ответь ровно NOT_FOUND. Последняя строка ответа всегда FINAL: <короткий ответ или NOT_FOUND>."
+  },
+  {
+   "role": "user",
+   "content": "Какой новый HTML-атрибут предложила команда Edge?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_jp9h65dkNaGOlohxqFpPTyM6",
+     "function": {
+      "name": "knowledge_base",
+      "arguments": "{\"query\":\"новый HTML-атрибут команда Edge\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_jp9h65dkNaGOlohxqFpPTyM6",
+   "content": "[Frontend Status #8 / 🌎 Браузеры] Команда Edge предлагает новый HTML-атрибут focusgroup : добавляешь его на контейнер и браузер сам обрабатывает клавиши стрелок, пропускает скрытые/disabled-элементы, учитывает направление текста и восстанавливает фокус при возврате. Реализация уже в Edge и Chromium, идёт RFC-процесс для других браузеров.\n[Frontend Status #11 / Frontend Status: свежий дайджест фронтенда и AI — 03.04.2026] 🎨 CSS Anchor Positioning: два круга, стрелка и ноль строк JS от Темани Афифа.\n[Frontend Status #9 / 🌎 Браузеры] Chrome 146 : три заметных новинки. Scroll-triggered animations — декларативное управление анимациями на основе позиции скролла без JavaScript, то, что раньше делали через IntersectionObserver и ручной старт. Scoped custom element registry — несколько реестров кастомных элементов на одной странице, конфликты имён между библиотеками больше не проблема. Sanitizer API — наконец стабильный способ очистить произвольный HTML от потенциально опасного кода без сторонних библиотек, теперь и в Firefox тоже.\n[Frontend Status #9 / 🌎 Браузеры] DevTools в Chrome 146 : Adopted Style Sheets теперь видны в дереве Elements как отдельный узел #adopted-style-sheets — их можно инспектировать и редактировать прямо в Styles, как обычные <style> . Console перестал терять правки при навигации по истории команд. Панель «Privacy and Security» переименована в «Security», а все предупреждения о куки и приватности переехали в Console. DevTools MCP server обновился до 0.19.0: Lighthouse прямо из агентских воркфлоу, --slim режим для экономии токенов, новые скиллы для отладки LCP и доступности.\n[Frontend Status #14 / Frontend Status: свежий дайджест фронтенда и AI — 27.04.2026] 🎨 Новый CSS вместо старых костылей: sizes=\"auto\" и HTML в <canvas> показывают, как делать богаче интерфейсы и проще поддержку."
+  },
+  {
+   "role": "assistant",
+   "content": "Команда Edge предложила новый HTML-атрибут `focusgroup`. Он добавляется на контейнер, и браузер сам обрабатывает клавиши стрелок, пропускает скрытые или отключённые элементы, учитывает направление текста и восстанавливает фокус при возврате. Реализация этой функции уже внедрена в Edge и Chromium, а RFC-процесс идёт для других браузеров.\n\nFINAL: focusgroup",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

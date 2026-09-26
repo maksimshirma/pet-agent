@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "unans-6",
+  "source": "habr",
+  "question": "Какие изменения принесла новая версия ESLint в 2026 году?",
+  "answer": null,
+  "evidence": null,
+  "page": null,
+  "url": null,
+  "answerable": false
+ },
+ "answer": "NOT_FOUND\n\nFINAL: В предоставленных источниках нет информации об изменениях в ESLint в 2026 году.",
+ "final": "В предоставленных источниках нет информации об изменениях в ESLint в 2026 году.",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0010890000000000066,
+ "seconds": 1.4759721250156872,
+ "steps": 1,
+ "messages": []
+}

@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-10",
+  "source": "habr",
+  "question": "Какая минимальная версия Node.js требуется для pnpm v11 RC?",
+  "answer": "22",
+  "evidence": "минимальная версия Node.js теперь 22",
+  "page": "Frontend Status #15",
+  "url": "https://habr.com/ru/articles/1032276/",
+  "answerable": true
+ },
+ "answer": "[1] Минимальная версия Node.js для pnpm v11 RC — **22**.\n\nFINAL: Node.js 22",
+ "final": "Node.js 22",
+ "correct": true,
+ "refused": false,
+ "cost": 0.0011780000000000124,
+ "seconds": 1.4348912079876754,
+ "steps": 1,
+ "messages": []
+}

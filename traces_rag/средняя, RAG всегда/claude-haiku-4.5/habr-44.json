@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-44",
+  "source": "habr",
+  "question": "Какая компания опубликовала постмортем об атаке Shai-Hulud?",
+  "answer": "Trigger.dev",
+  "evidence": "компания Trigger.dev опубликовала постмортем об атаке Shai-Hulud",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "answerable": true
+ },
+ "answer": "Согласно источнику [1], компания **Trigger.dev** опубликовала постмортем об атаке Shai-Hulud.\n\nFINAL: Trigger.dev опубликовала постмортем об атаке npm-червя Shai-Hulud.",
+ "final": "Trigger.dev опубликовала постмортем об атаке npm-червя Shai-Hulud.",
+ "correct": true,
+ "refused": false,
+ "cost": 0.0010469999999999646,
+ "seconds": 1.7941372919885907,
+ "steps": 1,
+ "messages": []
+}

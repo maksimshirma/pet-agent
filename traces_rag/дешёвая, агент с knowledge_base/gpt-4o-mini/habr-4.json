@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "habr-4",
+  "source": "habr",
+  "question": "Какая уязвимость была исправлена в Angular SSR?",
+  "answer": "SSRF и инъекции заголовков",
+  "evidence": "2 серьезные уязвимости — SSRF и инъекции заголовков в Angular SSR",
+  "page": "Frontend Status #7",
+  "url": "https://habr.com/ru/articles/1007014/",
+  "answerable": true
+ },
+ "answer": "В Angular SSR была исправлена уязвимость, связанная с SSRF (Server-Side Request Forgery) и инъекциями заголовков, а также открытый редирект через префикс X-Forwarded. \n\nFINAL: Исправлены уязвимости SSRF и инъекций заголовков.",
+ "final": "Исправлены уязвимости SSRF и инъекций заголовков.",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0001813400000000298,
+ "seconds": 3.3797865840024315,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы по локальной базе знаний (статьи Habr/lawebbox про фронтенд и AI в 2026 году). Всегда сначала вызови knowledge_base, при необходимости — с уточнённым запросом или фильтром по странице. Если после поиска в базе знаний нет ответа на вопрос, ответь ровно NOT_FOUND. Последняя строка ответа всегда FINAL: <короткий ответ или NOT_FOUND>."
+  },
+  {
+   "role": "user",
+   "content": "Какая уязвимость была исправлена в Angular SSR?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_R8v0ZkB8fcWxKTiUkvpMgDnr",
+     "function": {
+      "name": "knowledge_base",
+      "arguments": "{\"query\":\"Angular SSR уязвимость\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_R8v0ZkB8fcWxKTiUkvpMgDnr",
+   "content": "[Frontend Status #7 / 🅰️ Angular] Устранение недавних уязвимостей в Angular — Команда разработчиков Angular рассказала о том, как были исправлены 2 серьезные уязвимости — SSRF и инъекции заголовков в Angular SSR, а также открытый редирект через префикс X-Forwarded.\n[Frontend Status #18 / Frontend Status: свежий дайджест фронтенда и AI — 16.06.2026] 🛡️ Next.js с дефолтными настройками уязвим к RCE через Server Actions — даже если «серверных функций у нас нет» — чтобы не жить с иллюзией безопасности.\n[Frontend Status #18 / Безопасность] Angular : исправлена уязвимость в доверии к JSDoc.\n[Frontend Status #15 / Frontend Status: свежий дайджест фронтенда и AI — 06.05.2026] ⚛️ React Server Components и кеширование страниц: разбираем partial page caching, чтобы ускорять загрузку и снижать стоимость рендеринга без потери актуальности контента.\n[Frontend Status #18 / Бэкенд] Angular : исправлена уязвимость в доверии к JSDoc, добавлено подтверждение перед загрузкой рабочего пространства, улучшена производительность при обработке ошибок парсера, отключено ядро языка в ненадежных рабочих пространствах."
+  },
+  {
+   "role": "assistant",
+   "content": "В Angular SSR была исправлена уязвимость, связанная с SSRF (Server-Side Request Forgery) и инъекциями заголовков, а также открытый редирект через префикс X-Forwarded. \n\nFINAL: Исправлены уязвимости SSRF и инъекций заголовков.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

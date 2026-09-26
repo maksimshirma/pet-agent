@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-6",
+  "source": "habr",
+  "question": "Во сколько раз TanStack улучшил пропускную способность SSR?",
+  "answer": "5 раз",
+  "evidence": "TanStack улучшили производительность SSR в 5 раз",
+  "page": "Frontend Status #10",
+  "url": "https://habr.com/ru/articles/1015700/",
+  "answerable": true
+ },
+ "answer": "TanStack улучшил пропускную способность SSR в 5 раз [1][2]. \n\nFINAL: 5 раз.",
+ "final": "5 раз.",
+ "correct": true,
+ "refused": false,
+ "cost": 8.715000000000805e-05,
+ "seconds": 1.491554916021414,
+ "steps": 1,
+ "messages": []
+}

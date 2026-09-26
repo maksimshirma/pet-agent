@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "habr-1",
+  "source": "habr",
+  "question": "В какой версии Firefox были исправлены 22 CVE, найденные Claude?",
+  "answer": "Firefox 148",
+  "evidence": "итого 22 CVE вошли в Firefox 148",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "answerable": true
+ },
+ "answer": "22 CVE, найденные Claude, были исправлены в Firefox версии 148. FINAL: Firefox 148",
+ "final": "Firefox 148",
+ "correct": true,
+ "refused": false,
+ "cost": 0.00018635999999999653,
+ "seconds": 4.12997379200533,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы по локальной базе знаний (статьи Habr/lawebbox про фронтенд и AI в 2026 году). Всегда сначала вызови knowledge_base, при необходимости — с уточнённым запросом или фильтром по странице. Если после поиска в базе знаний нет ответа на вопрос, ответь ровно NOT_FOUND. Последняя строка ответа всегда FINAL: <короткий ответ или NOT_FOUND>."
+  },
+  {
+   "role": "user",
+   "content": "В какой версии Firefox были исправлены 22 CVE, найденные Claude?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_aWG2s13dwXjkRpEyItU7ZmeC",
+     "function": {
+      "name": "knowledge_base",
+      "arguments": "{\"query\":\"Firefox CVE Claude\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_aWG2s13dwXjkRpEyItU7ZmeC",
+   "content": "[Frontend Status #8 / 🛡️ Безопасность] Команда Anthropic прогнала Claude по кодовой базе Firefox и нашла 14 критических уязвимостей, о которых десятилетиями не подозревали, итого 22 CVE вошли в Firefox 148.\n[Frontend Status #15 / 🛡️ Безопасность] В Firefox 150 закрыли 271 уязвимость , найденную ранней версией Claude Mythos Preview, и в Mozilla утверждают, что модели теперь находят то, что раньше требовало месяцев работы элитного ресёрчера, причём ничего принципиально нового, все баги в пределах человеческого понимания.\n[Frontend Status #10 / 🤖 AI] Как я перестал бояться Claude Code и научил его не ломать мои проекты — Практические настройки CLAUDE.md: расширение контекстного окна до миллиона токенов, оптимизация компакции, правила для предотвращения деструктивных изменений. Статья для тех, кто уже пробовал Claude Code, но столкнулся с тем, что агент начинает «фантазировать».\n[Frontend Status #15 / 🤖 AI] Десять настроек Claude Code , которые превращают “работает, но странно” в “работает как отдел”. CLAUDE.md на 30 строк вместо 300 (если убрать строку и Claude не начнёт ошибаться, удаляй), settings.json с deny-побеждает-allow, acceptEdits через Shift+Tab, хуки-guardrails с exit code 2 для блокировки опасных команд, совещание агентов из Codex и Gemini как второе мнение когда Claude залип, новый /effort xhigh на свежем Opus 4.7, борьба с context rot по правилу “сжимай на 60–65%, не жди auto-compaction”, правило двух коррекций (если объяснил дважды и не помогло — /clear, а не /compact), sandbox-режим со снижением permission-промптов на 84% и lazy-loading инструкций через .claude/skills/ вместо раздутого CLAUDE.md - можно брать и вставлять в свои проекты.\n[Frontend Status #9 / 🌎 Браузеры] Chrome 146 : три заметных новинки. Scroll-triggered animations — декларативное управление анимациями на основе позиции скролла без JavaScript, то, что раньше делали через IntersectionObserver и ручной старт. Scoped custom element registry — несколько реестров кастомных элементов на одной"
+  },
+  {
+   "role": "assistant",
+   "content": "22 CVE, найденные Claude, были исправлены в Firefox версии 148. FINAL: Firefox 148",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

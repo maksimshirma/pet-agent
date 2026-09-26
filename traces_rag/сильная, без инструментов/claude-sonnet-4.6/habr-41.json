@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "habr-41",
+  "source": "habr",
+  "question": "Кто ошибался в CSS Anchor Positioning?",
+  "answer": "Крис Койер",
+  "evidence": "Крис Койер ошибался в CSS Anchor Positioning!",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "answerable": true
+ },
+ "answer": "FINAL: Роман Дворнов",
+ "final": "Роман Дворнов",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0026520000000000016,
+ "seconds": 3.43650162499398,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Кто ошибался в CSS Anchor Positioning?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\": \"Вопрос, скорее всего, относится к статье или обсуждению об ошибках в спецификации/реализации CSS Anchor Positioning. Известна статья Романа Дворнова (Roman Dvornov), в которой он описывал ошибки или проблемы с CSS Anchor Positioning. Также возможно речь идёт о конкретном человеке, который допустил ошибку в понимании или реализации.\", \"final\": \"Роман Дворнов\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

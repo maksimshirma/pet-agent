@@ -1,0 +1,123 @@
+{
+ "task": {
+  "id": "habr-9",
+  "source": "habr",
+  "question": "Какая версия TypeScript упомянута в анонсе марта 2026?",
+  "answer": "6.0",
+  "evidence": "Анонс TypeScript 6.0",
+  "page": "Frontend Status #10",
+  "url": "https://habr.com/ru/articles/1015700/",
+  "answerable": true
+ },
+ "answer": "В анонсе марта 2026 года упоминается версия TypeScript 7. FINAL: TypeScript 7",
+ "final": "TypeScript 7",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0009700500000000001,
+ "seconds": 16.54798450000817,
+ "steps": 5,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какая версия TypeScript упомянута в анонсе марта 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_26MO6JH8xfZjgc5uQ1I60LjP",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"TypeScript анонс март 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_26MO6JH8xfZjgc5uQ1I60LjP",
+   "content": "[История JavaScript: браузерные войны, ECMAScript, Node.js, TypeScript, React / Хабр] https://habr.com/ru/companies/pvs-studio/articles/1057734 — ### 2026. Анализатор PVS-Studio для JavaScript и TypeScript 6 апреля 2026 года в PVS-Studio открыли программу раннего тестирования (EAP) для новых анализаторов. PVS-Studio — это статический анализатор кода, который уже много лет помогает находить ошибки и уязвимости в проектах на C, C++, C# и Java. Теперь очередь за JavaScript и TypeScript. [...] К середине 2020-х Vite стал одним из самых скачивае\n[TypeScript 7 в 10 раз быстрее: анонс нативного компилятора TSGO / Хабр] https://habr.com/ru/articles/890560 — # TypeScript 7 в 10 раз быстрее: анонс нативного компилятора TSGO 11 Марта вышел аннонс Typescript 7, в котором рассказали о разработке нового `tsgo` компилятора. `tsgo` [...] ### Дорожная карта версий Последний релиз — Typescript 5.8, скоро выйдет 5.9. Текущая версия на JavaScript продолжит развитие в линейке 6.x, а Typescript 6.0 принесёт некоторые изменения для синхронизации с нативной версией.\n[Gemma 4 от Google, утечка Claude Code, Cursor 3.0, нейросеть от Netflix и исследование эмоций Claude / Хабр] https://habr.com/ru/companies/timeweb/articles/1019292 — Сроки публичной беты — «март–апрель 2026». Пока ни дата, ни точный размер модели официально не объявлены, поэтому ждём. 🔗 Разбор Grok 5 и 6 трлн параметров #### ❯ Утечка Claude Mythos и Capybara — модели мощнее Opus В конце марта в сеть утёк черновой блог Anthropic с описанием новой модели. Компания подтвердила: да, такая модель существует и сейчас проходит закрытое тестирование. [...] При релизе \n[Zed 1.0: эпоха Electron-редакторов — всё / Хабр] https://habr.com/ru/articles/1029854 — # Zed 1.0: эпоха Electron-редакторов — всё Вчера вышел Zed 1.0. Пять лет работы, миллион с лишним строк на Rust, публичная превьюшка, которой ежедневно пользовались сотни тысяч разработчиков, и вот команда Zed Industries во главе с Натаном Собо запостила релиз 29 апреля 2026 года. Я "
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_Suu0AK18t9Q67RgD817p5ZU4",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"TypeScript 7 анонс март 2026\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_Suu0AK18t9Q67RgD817p5ZU4",
+   "content": "[TypeScript 7 в 10 раз быстрее: анонс нативного ...] https://habr.com/ru/articles/890560 — # TypeScript 7 в 10 раз быстрее: анонс нативного компилятора TSGO 11 Марта вышел аннонс Typescript 7, в котором рассказали о разработке нового `tsgo` компилятора. `tsgo` [...] ### Дорожная карта версий Последний релиз — Typescript 5.8, скоро выйдет 5.9. Текущая версия на JavaScript продолжит развитие в линейке 6.x, а Typescript 6.0 принесёт некоторые изменения для синхронизации с нативной версией.\n[Gemma 4 от Google, утечка Claude Code, Cursor 3.0, ...] https://habr.com/ru/companies/timeweb/articles/1019292 — Сроки публичной беты — «март–апрель 2026». Пока ни дата, ни точный размер модели официально не объявлены, поэтому ждём. 🔗 Разбор Grok 5 и 6 трлн параметров #### ❯ Утечка Claude Mythos и Capybara — модели мощнее Opus В конце марта в сеть утёк черновой блог Anthropic с описанием новой модели. Компания подтвердила: да, такая модель существует и сейчас проходит закрытое тестирование. [...] Попробовать\n[Zed 1.0: эпоха Electron-редакторов — всё] https://habr.com/ru/articles/1029854 — Читать это надо как роадмап, а не как ship-list. Что-то прилетит в 2026-м, что-то проскользнёт на следующий год, что-то тихо исчезнет. Что вынесу из роадмапа: команда не считает редактор готовым. На 1.0 фундамент стал твёрдым. Интересное то, что начнут строить на этом фундаменте. ### Честные оговорки Переезд на новый редактор посреди проекта обычно плохая идея, и Zed не идеальная замена всему, что\n[Все посты подряд / Хабр] https://habr.com/ru/posts — Все потоки Войти # Все потоки СтатьиПостыНовостиХабыАвторыКомпании Сначала показывать Порог рейтинга ЕЖЕДНЕВНЫЙ ХАБР | 26 СЕНТ 2026 14K ## «Сбер» представил SberJDK — собственную промышленную Java-платформу на базе OpenJDK [...] ### Если все правила оформления есть в ЕСКД, почему программу так трудно научить чертить? ### Реальные истории IT‑найма 2026: продолжение Ещё codecity 1 Искусственный инте\n[Rust: зачем он появился, что умеет и почему компании ."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_ecuqzz4XCKeV7A1P9PA0WmRg",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"TypeScript 7 анонс\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_ecuqzz4XCKeV7A1P9PA0WmRg",
+   "content": "[TypeScript 7 в 10 раз быстрее: анонс нативного ...] https://habr.com/ru/articles/890560 — # TypeScript 7 в 10 раз быстрее: анонс нативного компилятора TSGO 11 Марта вышел аннонс Typescript 7, в котором рассказали о разработке нового `tsgo` компилятора. `tsgo` [...] ### Дорожная карта версий Последний релиз — Typescript 5.8, скоро выйдет 5.9. Текущая версия на JavaScript продолжит развитие в линейке 6.x, а Typescript 6.0 принесёт некоторые изменения для синхронизации с нативной версией.\n[TypeScript 7 перенесли на Go. Проверяем, действительно ли он быстрее в десять раз / Хабр] https://habr.com/ru/articles/1057640 — Стенд аудита: `003_typescript_7`. Воспроизвести любую цифру: `pnpm install && pnpm bench && pnpm probes`. `003_typescript_7` `pnpm install && pnpm bench && pnpm probes` A 10x Faster TypeScript — исходная заявка и методология Microsoft. Announcing TypeScript 7.0 — GA-анонс (8 июля 2026), в т.ч. про новый API для экосистемы после 7.0. Announcing TypeScript 7.0 RC — RC, с которого стартовал этот ауди\n[TypeScript 7 в 10 раз быстрее: анонс нативного компилятора TSGO / Комментарии / Хабр] https://habr.com/ru/articles/890560/comments — # TypeScript 7 в 10 раз быстрее: анонс нативного компилятора TSGO Хабр Карьера Курсы ## Комментарии 13 Зачем этот кликбейт \"в 10 раз быстрее\". Сам TypeScript не станет ни быстрее ни лучше. Он так и останется сахаром над JavaScript. Быстрее станет сборка проекта. До которой 99% пользователям абсолютно все равно. Пока настрочат 1.5 млн. строк кода уже столько поменяется. До которой 99% пользователям\n[TypeScript — Cтрого типизированная надстройка для JavaScript / Хабр] https://habr.com/ru/hubs/typescript/articles/top/alltime/page24 — Вдохновившись этим анонсом, я внимательно стал следить за проектом и пробовать реализовывать на нем различные проекты. ## Локализация React приложении Всем привет! До нового года остаются считанные дни. Наткнулся на свой список дел, которые собирался сделать в 2019-м, среди них оказалось и написать статью"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_2WIqxiyqvE7KKBM1zJOZocsg",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"TypeScript 7.0 анонс\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_2WIqxiyqvE7KKBM1zJOZocsg",
+   "content": "[TypeScript 7 перенесли на Go. Проверяем ...] https://habr.com/ru/articles/1057640 — Стенд аудита: `003_typescript_7`. Воспроизвести любую цифру: `pnpm install && pnpm bench && pnpm probes`. `003_typescript_7` `pnpm install && pnpm bench && pnpm probes` A 10x Faster TypeScript — исходная заявка и методология Microsoft. Announcing TypeScript 7.0 — GA-анонс (8 июля 2026), в т.ч. про новый API для экосистемы после 7.0. Announcing TypeScript 7.0 RC — RC, с которого стартовал этот ауди\n[TypeScript 7 в 10 раз быстрее: анонс нативного ...] https://habr.com/ru/articles/890560 — ### Дорожная карта версий Последний релиз — Typescript 5.8, скоро выйдет 5.9. Текущая версия на JavaScript продолжит развитие в линейке 6.x, а Typescript 6.0 принесёт некоторые изменения для синхронизации с нативной версией. Когда нативная реализация достигнет достаточного уровня, её выпустят как Typescript 7.0. Пока это в разработке, и будут анонсироваться этапы стабильности и новых функций. [...\n[Вышел TypeScript 7.0 / Хабр] https://habr.com/ru/articles/1057560 — Все потоки Войти qmzik # Вышел TypeScript 7.0 Средний 17 мин 13K TypeScript \\ Веб-разработка \\ Автор оригинала: Daniel Rosenwasser Эта статья — перевод оригинальной статьи «Announcing TypeScript 7.0». Также я веду телеграм канал «Frontend по‑флотски», где рассказываю про интересные вещи из мира разработки интерфейсов. ## Вступление Сегодня мы с гордостью объявляем о выходе TypeScript 7 — нативной \n[Релиз TypeScript 6.0 / Хабр] https://habr.com/ru/news/1014308 — Ветка TypeScript 6.0 отмечена как последняя, поставляемая с компилятором на языке TypeScript, транслируемом в JavaScript. В ветке TypeScript 7.0 проект перейдёт на новый компилятор typescript‑go (tsgo), разрабатываемый с 2024 года на языке Go. Новый компилятор существенно увеличит скорость сборки, уменьшит потребление памяти и сократит время запуска редакторов кода, что решит наблюдаемые ныне проб\n[Главные игроки экосистемы JavaScript по состоянию на 2026 год / Хабр] https://habr.co"
+  },
+  {
+   "role": "assistant",
+   "content": "В анонсе марта 2026 года упоминается версия TypeScript 7. FINAL: TypeScript 7",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "habr-6",
+  "source": "habr",
+  "question": "Во сколько раз TanStack улучшил пропускную способность SSR?",
+  "answer": "5 раз",
+  "evidence": "TanStack улучшили производительность SSR в 5 раз",
+  "page": "Frontend Status #10",
+  "url": "https://habr.com/ru/articles/1015700/",
+  "answerable": true
+ },
+ "answer": "TanStack улучшил пропускную способность SSR в 5 раз. FINAL: 5 раз",
+ "final": "5 раз",
+ "correct": true,
+ "refused": false,
+ "cost": 0.00016583999999997268,
+ "seconds": 3.075769708986627,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы по локальной базе знаний (статьи Habr/lawebbox про фронтенд и AI в 2026 году). Всегда сначала вызови knowledge_base, при необходимости — с уточнённым запросом или фильтром по странице. Если после поиска в базе знаний нет ответа на вопрос, ответь ровно NOT_FOUND. Последняя строка ответа всегда FINAL: <короткий ответ или NOT_FOUND>."
+  },
+  {
+   "role": "user",
+   "content": "Во сколько раз TanStack улучшил пропускную способность SSR?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_6RyAlHL34X6bjbKRATd6kwtG",
+     "function": {
+      "name": "knowledge_base",
+      "arguments": "{\"query\":\"TanStack пропускная способность SSR\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_6RyAlHL34X6bjbKRATd6kwtG",
+   "content": "[Frontend Status #10 / ⚛️ React] Пятикратное увеличение пропускной способности SSR - TanStack улучшили производительность SSR в 5 раз.\n[Frontend Status #18 / ⚛️ React] Серверные компоненты React в TanStack : Адам Ракис разбирает реализацию RSC в TanStack Start с нуля и считает её устроенной иначе и удачнее, чем в Next.js — компоненты выполняются server-only, их код никогда не уезжает в клиентские бандлы, они могут await -ить что угодно от стороннего fetch до прямого запроса к Postgres без утечки connection strings, но за это лишены state и обработчиков вроде onClick.\n[Frontend Status #10 / Frontend Status: свежий дайджест фронтенда и AI — 27.03.2026] ⚛️ TanStack улучшил пропускную способность SSR в 5 раз, а Strawberry Browser переписал 130 000 строк с React на Svelte за две недели.\n[Frontend Status #18 / 👁️ Vue] @tanstack/vue-table: почему я почти отказался от этого : почему @Pnym выкинул FlexRender (рушит автокомплит и типы, тянет магию с h() и component :is ) и рендерит таблицу обычным v-for со слотами для кастомных ячеек. Алексей даёт совет перед подключением — лучше собрать таблицу на чистом Vue за час, а TanStack брать только под серверную сортировку, пагинацию и группировку.\n[Frontend Status #18 / Frontend Status: свежий дайджест фронтенда и AI — 16.06.2026] 👁️ TanStack Table почти убил типы и автокомплит во Vue — честный разбор на Habr — чтобы брать библиотеку только под ту боль, которую не решить за час на чистом Vue."
+  },
+  {
+   "role": "assistant",
+   "content": "TanStack улучшил пропускную способность SSR в 5 раз. FINAL: 5 раз",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

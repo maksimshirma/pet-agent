@@ -1,0 +1,149 @@
+{
+ "task": {
+  "id": "habr-58",
+  "source": "habr",
+  "question": "Какие ошибки исправлены в Next.js в июне 2026?",
+  "answer": "ошибки в merge driver",
+  "evidence": "Next.js: Исправлены ошибки в merge driver",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "answerable": true
+ },
+ "answer": "В июне 2026 года в рамках обновления Next.js была исправлена ошибка в механизме объединения (merge driver), добавлены утилиты next-dev-loop и next-ppr-optimizer, а также обновлены метаданные для динамических сегментов. Включены экспериментальные функции cachedNavigations, optimisticRouting и varyParams. FINAL: исправления в merge driver, новые утилиты, обновления метаданных, экспериментальные функции.",
+ "final": "исправления в merge driver, новые утилиты, обновления метаданных, экспериментальные функции.",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0013746000000000036,
+ "seconds": 18.557109125016723,
+ "steps": 7,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какие ошибки исправлены в Next.js в июне 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_bK0pq5smuuTfZpiNG1mGXxJm",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"Next.js ошибки исправлены июнь 2026\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_bK0pq5smuuTfZpiNG1mGXxJm",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI] https://habr.com/ru/articles/1047986 — #### Бэкенд Next.js: Исправлены ошибки в merge driver, добавлены утилиты next-dev-loop и next-ppr-optimizer, обновлены метаданные для динамических сегментов, включены экспериментальные фичи cachedNavigations, optimisticRouting и varyParams. [...] 🤖 Старые приёмы промптинга режут точность reasoning-моделей, а закрытая вкладка не останавливает счёт — токены и GPU крутятся впустую — чтобы перестроить\n[Главные игроки экосистемы JavaScript по состоянию на 2026 год / Хабр] https://habr.com/ru/articles/1021182 — Next.js вышел в версии 16, это первый релиз с Turbopack в качестве сборщика по умолчанию. Лично мне нравится такой прогресс, но я отключил его в своих проектах, так как миграция оказалась сложной. Однако заметный шаг вперед — это улучшения в логировании и обработке ошибок. Эта версия Next.js по умолчанию использует компилятор и серверные компоненты React, что теоретически обеспечивает повышение пр\n[Frontend Status: свежий дайджест фронтенда и AI] https://habr.com/ru/articles/1043510 — OpenAI Cookbook: добавлены новые примеры для Codex и GPT5.5, добавлен цикл улучшения агента с трейсами и оценками, добавлен цикл итеративного ремейка Codex. React: исправлен баг с потерей данных в FormData, исправлен вызов конструктора в классовых компонентах. Svelte: исправлено поведение `$state.eager`/`pending`, батчи как связный список, `null` для `pending` в типах. `$state.eager` `pending` `nu\n[Ускоряем drop in replace Next.js в 100 раз. Часть 1 / Хабр] https://habr.com/ru/companies/t2/articles/1066044 — #### Ошибка #3: Incomplete SSR [...] Три архитектурные ошибки, которые убивают производительность даже на быстром runtime: #### Ошибка #1: Неправильные defaults для RSC [...] Статьи Новости Хабы Компании Авторы Песочница Информация Устройство сайта Для авторов Для компаний Документы Соглашение Конфиденциальность Корпоративный блог Медийная реклама Нативные проекты Образовательные программы Ста"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_Qkr94olvvKEWXdn0bdHfYWYj",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"Next.js обновления июнь 2026\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_Qkr94olvvKEWXdn0bdHfYWYj",
+   "content": "[Главные игроки экосистемы JavaScript по состоянию на 2026 год / Хабр] https://habr.com/ru/articles/1021182 — Next.js вышел в версии 16, это первый релиз с Turbopack в качестве сборщика по умолчанию. Лично мне нравится такой прогресс, но я отключил его в своих проектах, так как миграция оказалась сложной. Однако заметный шаг вперед — это улучшения в логировании и обработке ошибок. Эта версия Next.js по умолчанию использует компилятор и серверные компоненты React, что теоретически обеспечивает повышение пр\n[Юрий Самохвалов (samakhvalau) — Хабр Карьера] https://career.habr.com/samakhvalau — ## Навыки Выберите навык, чтобы посмотреть, какие тесты специалист уже прошел. Git HTML JavaScript React SCSS TypeScript Webpack CSS Адаптивная верстка Redux TailwindCSS Next.js SQL ## Опыт работы Фриланс Частная практика, работа без зачисления в штат Июнь 2026 — По настоящее время (4 месяца) PostgreSQL • Next.js • Node.js • TailwindCSS • Микросервисная архитектура • Git • Docker • Kubernetes • Gr\n[Заморозка по fingerprint: как ТСПУ в июне 2026 ломает ...] https://habr.com/ru/articles/1047442 — Параллельные хендшейки. Тяжёлый сайт на Next.js/React при первой загрузке открывает десятки параллельных TLS-соединений. А legacy-эндпоинты на HTTP/1.1 до сих пор открывают по одному TCP на каждый запрос. Fingerprint клиента. Chrome — самый популярный браузер, и его профиль ровно тот, что массово имитировали прокси. [...] В феврале ТСПУ перешёл на поведенческий анализ, а в июне — на то, что в чата\n[Frontend Status: свежий дайджест фронтенда и AI] https://habr.com/ru/articles/1043510 — Angular 22.0.0: мажор от 3 июня 2026 — OnPush по умолчанию для новых компонентов, стабильный декоратор `@Service`, `injectAsync`, signal forms в public API (`reloadValidation`, debounce для async-валидации), `provideWebMcpTools` и экспериментальный `declareWebMcpTool` для AI-агентов, кеш ресурсов для SSR, поддержка Node.js 26. Из breaking changes: убраны `ComponentFactoryResolver`/`ComponentFactor\n[Frontend Sta"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_eYrv7rvmrNKyeVeKQY2BR3pw",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Next.js June 2026 updates fixes\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_eYrv7rvmrNKyeVeKQY2BR3pw",
+   "content": "[Next.js] Next.js is an open-source full-stack web development framework created by the private company Vercel providing React-based web applications with server-side rendering and static rendering. React documentation mentions Next.js among \"Recommended Toolchains\" advising it to developers when \"building a server-rendered website with Node.js\". Where traditional React apps can only render their content in the client-side browser, Next.js extends this functionality to include applications rendered on the server-side. The copyright and trademarks for Next.js are owned by Vercel, which also maintains and leads its open-source development."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_qkWxreiOk9ZMWndijXWQOarM",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Next.js 16 release notes June 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_qkWxreiOk9ZMWndijXWQOarM",
+   "content": "[Node.js] Node.js is a cross-platform, open-source JavaScript runtime environment that can run on Windows, Linux, Unix, macOS, and more. Node.js runs on the V8 JavaScript engine, and executes JavaScript code outside a web browser. According to the Stack Overflow Developer Survey, Node.js is one of the most commonly used web technologies. Node.js allows developers to use JavaScript for writing command line tools and server-side scripting. Running Javascript on the server is commonly used to generate dynamic web page content before the page is sent to the user's web browser. Consequently, Node.js represents a \"JavaScript everywhere\" paradigm, unifying web-application development around a single programming language, as opposed to using different languages for the server- versus client-side programming. Node.js has an event-driven architecture capable of asynchronous I/O. These design choices aim to optimize throughput and scalability in web applications with many input/output operations, as well as for real-time Web applications (e.g., real-time communication programs and browser games). The Node.js distributed development project was previously governed by the Node.js Foundation, and has now merged with the JS Foundation to form the OpenJS Foundation. OpenJS Foundation is facilitated by the Linux Foundation's Collaborative Projects program."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_u7ImGUWlQU8mRbdYg3jMJRAj",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Next.js 16 fixes June 2026 release\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_u7ImGUWlQU8mRbdYg3jMJRAj",
+   "content": "[Next.js] Next.js is an open-source full-stack web development framework created by the private company Vercel providing React-based web applications with server-side rendering and static rendering. React documentation mentions Next.js among \"Recommended Toolchains\" advising it to developers when \"building a server-rendered website with Node.js\". Where traditional React apps can only render their content in the client-side browser, Next.js extends this functionality to include applications rendered on the server-side. The copyright and trademarks for Next.js are owned by Vercel, which also maintains and leads its open-source development."
+  },
+  {
+   "role": "user",
+   "content": "Инструменты больше недоступны. Ответь по тому, что уже известно, последней строкой FINAL: <ответ>."
+  },
+  {
+   "role": "assistant",
+   "content": "В июне 2026 года в рамках обновления Next.js была исправлена ошибка в механизме объединения (merge driver), добавлены утилиты next-dev-loop и next-ppr-optimizer, а также обновлены метаданные для динамических сегментов. Включены экспериментальные функции cachedNavigations, optimisticRouting и varyParams. FINAL: исправления в merge driver, новые утилиты, обновления метаданных, экспериментальные функции.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

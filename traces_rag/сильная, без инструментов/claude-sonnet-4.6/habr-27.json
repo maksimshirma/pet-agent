@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "habr-27",
+  "source": "habr",
+  "question": "Кто создал библиотеку Geometric.js?",
+  "answer": "Harry Stevens",
+  "evidence": "Harry Stevens, график из New York Times, собрал Geometric.js",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "answerable": true
+ },
+ "answer": "FINAL: Harry Stevens (HarryStevens)",
+ "final": "Harry Stevens (HarryStevens)",
+ "correct": true,
+ "refused": false,
+ "cost": 0.0037649999999999975,
+ "seconds": 5.121755917003611,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Кто создал библиотеку Geometric.js?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\":\"Geometric.js — это JavaScript-библиотека для геометрических операций, созданная Хобертом Пелисье (Heydon Pickering? нет). Geometric.js создана Робертом Лесли (Robert Leslie)? Нет. Geometric.js создана Хобертом Пелисье... Дам точный ответ: библиотека Geometric.js создана Хобертом Пелисье (нет). На самом деле Geometric.js создана разработчиком по имени Стриттматтер? Нет. Geometric.js — библиотека, созданная Хобертом... Проверю: Geometric.js на GitHub создана пользователем HarryStevens (Harry Stevens).\", \"final\":\"Harry Stevens (HarryStevens)\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

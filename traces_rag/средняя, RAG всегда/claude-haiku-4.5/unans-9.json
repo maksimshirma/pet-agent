@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "unans-9",
+  "source": "habr",
+  "question": "Сколько разработчиков используют Astro по данным опроса State of JS 2026?",
+  "answer": null,
+  "evidence": null,
+  "page": null,
+  "url": null,
+  "answerable": false
+ },
+ "answer": "Я изучил все предоставленные источники, но в них нет информации о количестве разработчиков, использующих Astro по данным опроса State of JS 2026.\n\nИсточники упоминают Astro только в контексте обновлений фреймворка (Astro v6 в [5] и обзор года в [4]), но не содержат данных из опроса State of JS 2026 о числе пользователей Astro.\n\nFINAL: NOT_FOUND",
+ "final": "NOT_FOUND",
+ "correct": false,
+ "refused": true,
+ "cost": 0.001393000000000033,
+ "seconds": 2.1732345419877674,
+ "steps": 1,
+ "messages": []
+}

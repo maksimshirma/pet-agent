@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-46",
+  "source": "habr",
+  "question": "Какой проект предлагает 50+ ретро-компонентов?",
+  "answer": "8bitcn/ui",
+  "evidence": "8bitcn/ui: 50+ Ретро компонентов",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "answerable": true
+ },
+ "answer": "[1] Проект **8bitcn/ui** предлагает 50+ ретро-компонентов — набор 8-битных компонентов с открытым исходным кодом.\n\nFINAL: 8bitcn/ui — проект с 50+ ретро 8-битными компонентами.",
+ "final": "8bitcn/ui — проект с 50+ ретро 8-битными компонентами.",
+ "correct": true,
+ "refused": false,
+ "cost": 0.0015020000000000033,
+ "seconds": 1.973456834006356,
+ "steps": 1,
+ "messages": []
+}

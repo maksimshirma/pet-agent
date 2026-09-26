@@ -1,0 +1,163 @@
+{
+ "task": {
+  "id": "habr-60",
+  "source": "habr",
+  "question": "Какая новая модель добавлена в Transformers в июне 2026?",
+  "answer": "cohere2_moe",
+  "evidence": "добавлена новая модель cohere2_moe",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "answerable": true
+ },
+ "answer": "В июне 2026 года в Transformers была добавлена новая модель под названием \"cohere2_moe\". FINAL: cohere2_moe",
+ "final": "cohere2_moe",
+ "correct": true,
+ "refused": false,
+ "cost": 0.0013718999999999815,
+ "seconds": 15.003115374973277,
+ "steps": 7,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какая новая модель добавлена в Transformers в июне 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_zkKnkPSt9S2goz53S5n3OPdy",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"новая модель Transformers июнь 2026\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_zkKnkPSt9S2goz53S5n3OPdy",
+   "content": "[Переоценённый король / Хабр] https://habr.com/ru/articles/1055592 — Во-вторых, изменился контекст. В 2018-м Swift в ML был чужаком без железа и без ниши. В 2026-м у него есть и то и другое: вся линейка Apple Silicon с единой памятью, MLX с полноценным Swift API , `swift-transformers` 1.0 от Hugging Face и Foundation Models framework — представленный на WWDC 2025 системный Swift API к on-device LLM, где макрос `@Generable` гарантирует структурно корректный вывод мо\n[Frontend Status: свежий дайджест фронтенда и AI] https://habr.com/ru/articles/1047986 — #### AI / ML Transformers: Исправлена уязвимость в пути при сохранении шаблонов, добавлена поддержка XPU для FlashAttention, добавлена новая модель cohere2\\_moe, исправлены ошибки в проверке модели и в MaskGenerationPipeline. llama.cpp: исправлены уязвимости в ggml-alloc, добавлены оптимизации CUDA, исправлены ошибки в UI и управлении контекстом, добавлена поддержка NVFP4 для сжатых тензоров, расш\n[NLP-инженер 2026: курсы обработки языка и спрос на рынке / Habr] https://habr.com/ru/amp/publications/1084852 — Описание одной из вакансий хорошо показывает, как выглядит работа в 2026 году. Инженеру предстоит дообучать доменные LLM, проектировать LLM-агентов для внутренних процессов, выводить модели в продакшен через REST и gRPC, а еще ускорять и удешевлять их квантованием, дистилляцией и распределенным обучением на FSDP и DeepSpeed. Стек включает Python от версии 3.10, PyTorch, PyTorch Lightning и библиот\n[Голосовой ввод на русско-английском в 2026: WisprFlow ...] https://habr.com/ru/articles/1024634 — > UPD, июнь 2026: этот вывод не пережил строгой проверки. Здесь я сравнивал две модели «на глаз» на паре файлов, а потом прогнал десяток-другой раз на каждое условие на размеченном корпусе — и всё перевернулось. Whisper Turbo с пунктуационным промптом обходит Large v3 почти по всем осям — и по словам, и по английским терминам — да ещё и заметно быстрее (в 3–6 раз, в зависимости от реализации). А л\n[Сканер prompt injection б"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_3siSwqZuAtqeaGFx4wUlklqh",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"новая модель Transformers июнь 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_3siSwqZuAtqeaGFx4wUlklqh",
+   "content": "[Переоценённый король / Хабр] https://habr.com/ru/articles/1055592 — Во-вторых, изменился контекст. В 2018-м Swift в ML был чужаком без железа и без ниши. В 2026-м у него есть и то и другое: вся линейка Apple Silicon с единой памятью, MLX с полноценным Swift API , `swift-transformers` 1.0 от Hugging Face и Foundation Models framework — представленный на WWDC 2025 системный Swift API к on-device LLM, где макрос `@Generable` гарантирует структурно корректный вывод мо\n[Frontend Status: свежий дайджест фронтенда и AI] https://habr.com/ru/articles/1047986 — #### AI / ML Transformers: Исправлена уязвимость в пути при сохранении шаблонов, добавлена поддержка XPU для FlashAttention, добавлена новая модель cohere2\\_moe, исправлены ошибки в проверке модели и в MaskGenerationPipeline. llama.cpp: исправлены уязвимости в ggml-alloc, добавлены оптимизации CUDA, исправлены ошибки в UI и управлении контекстом, добавлена поддержка NVFP4 для сжатых тензоров, расш\n[NLP-инженер 2026: курсы обработки языка и спрос на рынке / Habr] https://habr.com/ru/amp/publications/1084852 — Описание одной из вакансий хорошо показывает, как выглядит работа в 2026 году. Инженеру предстоит дообучать доменные LLM, проектировать LLM-агентов для внутренних процессов, выводить модели в продакшен через REST и gRPC, а еще ускорять и удешевлять их квантованием, дистилляцией и распределенным обучением на FSDP и DeepSpeed. Стек включает Python от версии 3.10, PyTorch, PyTorch Lightning и библиот\n[Голосовой ввод на русско-английском в 2026: WisprFlow ...] https://habr.com/ru/articles/1024634 — > UPD, июнь 2026: этот вывод не пережил строгой проверки. Здесь я сравнивал две модели «на глаз» на паре файлов, а потом прогнал десяток-другой раз на каждое условие на размеченном корпусе — и всё перевернулось. Whisper Turbo с пунктуационным промптом обходит Large v3 почти по всем осям — и по словам, и по английским терминам — да ещё и заметно быстрее (в 3–6 раз, в зависимости от реализации). А л\n[Сканер prompt injection б"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_HABx9RBY67NFQcxRtrkuCVgq",
+     "function": {
+      "name": "web_search_ru",
+      "arguments": "{\"query\": \"новая модель Transformers июнь 2026\"}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 1,
+     "id": "call_HB99vE9LX0zZo51fQsZp42s0",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"новая модель Transformers июнь 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_HABx9RBY67NFQcxRtrkuCVgq",
+   "content": "[Трансформеры (мультфильм, 1986)] «Трансформеры» (англ. Transformers: The Movie) — американско-японский мультипликационный фильм, созданный Hasbro и Toei Animation в 1986 году. Является прямым продолжением мультсериала 1984—1985 годов. Сюжетная линия получает развитие в 3 сезоне. Заглавный трек — песня «Transformers» в исполнении группы «Lion». Но хитом стал «The Touch» Стэна Буша. Фильм оказался последним в карьере Орсона Уэллса и Скэтмэна Крозерса."
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_HB99vE9LX0zZo51fQsZp42s0",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_Lab2ShqTMYNy9fMkUbJKN33a",
+     "function": {
+      "name": "web_search_ru",
+      "arguments": "{\"query\":\"новая модель Transformers июнь 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_Lab2ShqTMYNy9fMkUbJKN33a",
+   "content": "[Трансформеры (мультфильм, 1986)] «Трансформеры» (англ. Transformers: The Movie) — американско-японский мультипликационный фильм, созданный Hasbro и Toei Animation в 1986 году. Является прямым продолжением мультсериала 1984—1985 годов. Сюжетная линия получает развитие в 3 сезоне. Заглавный трек — песня «Transformers» в исполнении группы «Lion». Но хитом стал «The Touch» Стэна Буша. Фильм оказался последним в карьере Орсона Уэллса и Скэтмэна Крозерса."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_AKXoi2dhduY9IW9GijFO1j3P",
+     "function": {
+      "name": "web_search_ru",
+      "arguments": "{\"query\":\"Transformers модель cohere2_moe\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_AKXoi2dhduY9IW9GijFO1j3P",
+   "content": "No data"
+  },
+  {
+   "role": "user",
+   "content": "Инструменты больше недоступны. Ответь по тому, что уже известно, последней строкой FINAL: <ответ>."
+  },
+  {
+   "role": "assistant",
+   "content": "В июне 2026 года в Transformers была добавлена новая модель под названием \"cohere2_moe\". FINAL: cohere2_moe",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

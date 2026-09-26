@@ -1,0 +1,149 @@
+{
+ "task": {
+  "id": "unans-8",
+  "source": "habr",
+  "question": "Какой браузер первым внедрил поддержку CSS if()?",
+  "answer": null,
+  "evidence": null,
+  "page": null,
+  "url": null,
+  "answerable": false
+ },
+ "answer": "Первые браузеры, внедрившие поддержку CSS if(), являются Google Chrome и браузеры на его основе, такие как Opera и Microsoft Edge. FINAL: Google Chrome.",
+ "final": "Google Chrome.",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0013007999999999909,
+ "seconds": 14.624165916990023,
+ "steps": 7,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какой браузер первым внедрил поддержку CSS if()?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_P9t7vRIo6cn92TfqemaJ1x2C",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"CSS if() поддержка браузер\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_P9t7vRIo6cn92TfqemaJ1x2C",
+   "content": "[CSS в 2026 году: где JavaScript уже не обязателен] https://habr.com/ru/companies/vk/articles/1080386 — ### if(): условные значения внутри CSS-свойств Поддержка:только Chrome `if()` добавляет в CSS возможность выбирать значение свойства по условию. Это не заменяет медиазапросы, `@supports` или состояние приложения, но позволяет держать часть локальной логики рядом со свойством. `media()` внутри `if()` проверяет условия среды, например ширину экрана или тип устройства ввода. А `@supports` внутри `if(\n[Что новенького есть в CSS в 2025 году?] https://habr.com/ru/companies/ruvds/articles/933484 — Мы можем использовать свойство в браузерах Google Chrome, Opera, Edge и Samsung Internet. Функция if(). Многие разработчики хейтили CSS, называя\n[Стоит ли пользоваться функцией If() в CSS?] https://habr.com/ru/articles/954738 — Функция CSS if() вводит настоящую условную логику в CSS. Она позволяет писать условия в строке, вместо того чтобы полагаться на @media запросы\n[Проверяем браузер на поддержку определённого CSS ...] https://habr.com/ru/articles/336466 — В этой статье я расскажу, как можно проверить, поддерживает ли браузер то или иное CSS свойство. CSS проверка на поддержку. Долгое время\n[Стоит ли пользоваться функцией If() в CSS?] https://habr.com/ru/articles/954738/comments — Войти · Aulon8 10 окт 2025 в 23:48. Стоит ли пользоваться функцией If() в CSS? Средний. 21 мин. 9.8K. CSS * HTML * JavaScript *. Туториал. Перевод."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_bPOvPVDUefbnNOZIVIV730Ec",
+     "function": {
+      "name": "web_search_ru",
+      "arguments": "{\"query\":\"поддержка CSS if() первый браузер\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_bPOvPVDUefbnNOZIVIV730Ec",
+   "content": "[Opera] Opera (МФА: [ˈɑp(ə)ɹə]) — браузер и пакет прикладных программ для работы в Интернете, выпускаемый компанией Opera Software. Разработан в 1994 году группой исследователей из норвежской компании Telenor. С 1995 года — продукт компании Opera Software, образованной авторами первой версии браузера. Суммарная рыночная доля браузеров Opera в январе 2021 года составила 2,17 % — шестое место в мире. В России процент пользователей браузера выше среднемирового. В январе 2021 года доля браузеров Opera в Рунете составила 5,55 %. Браузер Opera портирован под множество операционных систем (включая Windows, macOS, Linux; ранее имелись версии для FreeBSD, Solaris). Также существуют версии браузера для мобильных платформ на основе Symbian OS, MeeGo, Java, Android, Windows Mobile, bada, iOS. Opera для PC и Opera Mini распространяются бесплатно с 2005 года, Opera Mobile — с 2010 (бета-версии с 2009). 13 февраля 2013 года разработчики заявили о переводе всей линейки продуктов Opera Software на движок Blink и V8. В 2021 году возможность использования VPN в браузере была заблокирована на территории Российской Федерации."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_Vr9IVuIgGhTGMn1bTSEsX68l",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"first browser support CSS if()\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_Vr9IVuIgGhTGMn1bTSEsX68l",
+   "content": "[CSS] Cascading Style Sheets (CSS) is a style sheet language used for specifying the presentation and styling of a document written in a markup language, such as HTML or XML (including XML dialects such as SVG, MathML, or XHTML). CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript. CSS is designed to enable the separation of content and presentation, including layout, colors, and fonts. This separation can improve content accessibility, since the content can be written without concern for its presentation; provide more flexibility and control in the specification of presentation characteristics; enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file, which reduces complexity and repetition in the structural content; and enable the .css file to be cached to improve the page load speed between the pages that share the file and its formatting. Separation of formatting and content also makes it feasible to present the same markup page in different styles for different rendering methods, such as on-screen, in print, by voice (via speech-based browser or screen reader), and on Braille-based tactile devices. CSS also has rules for alternative formatting if the content is accessed on a mobile device. The name cascading comes from the specified priority scheme to determine which declaration applies if more than one declaration of a property match a particular element. This cascading priority scheme is predictable. The CSS specifications are maintained by the World Wide Web Consortium (W3C). Internet media type (MIME type) text/css is registered for use with CSS by RFC 2318 (March 1998). The W3C operates a free CSS validation service for CSS documents. In addition to HTML, other markup languages support the use of CSS including XHTML, plain XML, SVG, and XUL. CSS is also used in the GTK widget toolkit."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_ezF93IXYGIgRRoVjL6r30Tqv",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"CSS if() browser implementation history\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_ezF93IXYGIgRRoVjL6r30Tqv",
+   "content": "[CSS] Cascading Style Sheets (CSS) is a style sheet language used for specifying the presentation and styling of a document written in a markup language, such as HTML or XML (including XML dialects such as SVG, MathML, or XHTML). CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript. CSS is designed to enable the separation of content and presentation, including layout, colors, and fonts. This separation can improve content accessibility, since the content can be written without concern for its presentation; provide more flexibility and control in the specification of presentation characteristics; enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file, which reduces complexity and repetition in the structural content; and enable the .css file to be cached to improve the page load speed between the pages that share the file and its formatting. Separation of formatting and content also makes it feasible to present the same markup page in different styles for different rendering methods, such as on-screen, in print, by voice (via speech-based browser or screen reader), and on Braille-based tactile devices. CSS also has rules for alternative formatting if the content is accessed on a mobile device. The name cascading comes from the specified priority scheme to determine which declaration applies if more than one declaration of a property match a particular element. This cascading priority scheme is predictable. The CSS specifications are maintained by the World Wide Web Consortium (W3C). Internet media type (MIME type) text/css is registered for use with CSS by RFC 2318 (March 1998). The W3C operates a free CSS validation service for CSS documents. In addition to HTML, other markup languages support the use of CSS including XHTML, plain XML, SVG, and XUL. CSS is also used in the GTK widget toolkit."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_Bi37vQwZNPpeU8ysdFBPq1mJ",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"which browser first implemented CSS if()\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_Bi37vQwZNPpeU8ysdFBPq1mJ",
+   "content": "[CSS] Cascading Style Sheets (CSS) is a style sheet language used for specifying the presentation and styling of a document written in a markup language, such as HTML or XML (including XML dialects such as SVG, MathML, or XHTML). CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript. CSS is designed to enable the separation of content and presentation, including layout, colors, and fonts. This separation can improve content accessibility, since the content can be written without concern for its presentation; provide more flexibility and control in the specification of presentation characteristics; enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file, which reduces complexity and repetition in the structural content; and enable the .css file to be cached to improve the page load speed between the pages that share the file and its formatting. Separation of formatting and content also makes it feasible to present the same markup page in different styles for different rendering methods, such as on-screen, in print, by voice (via speech-based browser or screen reader), and on Braille-based tactile devices. CSS also has rules for alternative formatting if the content is accessed on a mobile device. The name cascading comes from the specified priority scheme to determine which declaration applies if more than one declaration of a property match a particular element. This cascading priority scheme is predictable. The CSS specifications are maintained by the World Wide Web Consortium (W3C). Internet media type (MIME type) text/css is registered for use with CSS by RFC 2318 (March 1998). The W3C operates a free CSS validation service for CSS documents. In addition to HTML, other markup languages support the use of CSS including XHTML, plain XML, SVG, and XUL. CSS is also used in the GTK widget toolkit."
+  },
+  {
+   "role": "user",
+   "content": "Инструменты больше недоступны. Ответь по тому, что уже известно, последней строкой FINAL: <ответ>."
+  },
+  {
+   "role": "assistant",
+   "content": "Первые браузеры, внедрившие поддержку CSS if(), являются Google Chrome и браузеры на его основе, такие как Opera и Microsoft Edge. FINAL: Google Chrome.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

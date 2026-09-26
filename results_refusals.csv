@@ -1,0 +1,6 @@
+config,model,честно_отклонил_из_10,ложно_отклонил_из_answerable,answerable_n
+"сильная, без инструментов",claude-sonnet-4.6,0,0,63
+"дешёвая, живой поиск (ДЗ1)",gpt-4o-mini,0,0,63
+"дешёвая, RAG всегда",gpt-4o-mini,10,10,63
+"дешёвая, агент с knowledge_base",gpt-4o-mini,7,3,63
+"средняя, RAG всегда",claude-haiku-4.5,1,2,63

@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "habr-25",
+  "source": "habr",
+  "question": "Какие новые CSS-функции дают элементу номер и число соседей?",
+  "answer": "sibling-index() и sibling-count()",
+  "evidence": "новые CSS-функции `sibling-index()` и `sibling-count()`",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "answerable": true
+ },
+ "answer": "FINAL: sibling-index() и sibling-count()",
+ "final": "sibling-index() и sibling-count()",
+ "correct": true,
+ "refused": false,
+ "cost": 0.0022860000000000033,
+ "seconds": 3.090533750015311,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Какие новые CSS-функции дают элементу номер и число соседей?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\": \"В CSS появились функции counter-sibling и sibling-count (или sibling-index и sibling-count). Речь идёт о функциях `sibling-index()` и `sibling-count()`, введённых в CSS Values and Units Level 5, которые возвращают порядковый номер элемента среди соседей и общее количество соседей.\", \"final\": \"sibling-index() и sibling-count()\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

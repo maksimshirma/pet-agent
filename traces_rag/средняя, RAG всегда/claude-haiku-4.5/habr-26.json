@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-26",
+  "source": "habr",
+  "question": "Какая библиотека позволяет встроить PDF в React, Solid и Svelte?",
+  "answer": "PDFSlick",
+  "evidence": "PDFSlick подключает PDF к React, Solid, Svelte",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "answerable": true
+ },
+ "answer": "[1] PDFSlick позволяет встроить PDF в React, Solid и Svelte как компоненты — от простого просмотра с зумом до аннотаций, комментариев и нескольких документов в одном окне.\n\nFINAL: PDFSlick",
+ "final": "PDFSlick",
+ "correct": true,
+ "refused": false,
+ "cost": 0.0012429999999999941,
+ "seconds": 1.8695151669962797,
+ "steps": 1,
+ "messages": []
+}

@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-25",
+  "source": "habr",
+  "question": "Какие новые CSS-функции дают элементу номер и число соседей?",
+  "answer": "sibling-index() и sibling-count()",
+  "evidence": "новые CSS-функции `sibling-index()` и `sibling-count()`",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "answerable": true
+ },
+ "answer": "Новые CSS-функции, которые дают элементу его номер и общее число соседей, это sibling-index() и sibling-count() [1]. \n\nFINAL: sibling-index() и sibling-count().",
+ "final": "sibling-index() и sibling-count().",
+ "correct": true,
+ "refused": false,
+ "cost": 0.00011549999999999061,
+ "seconds": 1.0749265409831423,
+ "steps": 1,
+ "messages": []
+}

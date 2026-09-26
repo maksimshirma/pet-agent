@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "habr-33",
+  "source": "habr",
+  "question": "Какая компания представлена в подкасте о браузерных играх?",
+  "answer": "Poki",
+  "evidence": "Software Engineering Daily с Эриком Дабилбором, principal engineer в Poki",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "answerable": true
+ },
+ "answer": "FINAL: Gameforge",
+ "final": "Gameforge",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0024330000000000046,
+ "seconds": 3.1277372910117265,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Какая компания представлена в подкасте о браузерных играх?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\": \"Вопрос о подкасте про браузерные игры. Наиболее известный подкаст о браузерных играх — это подкаст компании Bigpoint, либо речь идёт о подкасте 'Browser Game Podcast', связанном с компанией Gameforge. Gameforge — известная компания, занимающаяся браузерными играми, и имеет свой подкаст.\", \"final\": \"Gameforge\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

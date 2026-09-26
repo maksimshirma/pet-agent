@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-30",
+  "source": "habr",
+  "question": "Кто обновил карту React-библиотек на 2026 год?",
+  "answer": "Robin Wieruch",
+  "evidence": "Robin Wieruch, который каждый год раскладывает этот зоопарк по полочкам, обновил карту на 2026-й",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "answerable": true
+ },
+ "answer": "[1] Robin Wieruch обновил карту React-библиотек на 2026 год. Он каждый год раскладывает зоопарк библиотек по полочкам и предоставляет готовые рабочие ответы на типичные вопросы разработчиков.\n\nFINAL: Robin Wieruch обновил карту React-библиотек на 2026 год.",
+ "final": "Robin Wieruch обновил карту React-библиотек на 2026 год.",
+ "correct": true,
+ "refused": false,
+ "cost": 0.0015149999999999886,
+ "seconds": 1.8524275420058984,
+ "steps": 1,
+ "messages": []
+}

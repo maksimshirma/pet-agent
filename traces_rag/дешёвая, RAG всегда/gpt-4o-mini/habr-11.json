@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-11",
+  "source": "habr",
+  "question": "Кто представил State of Vue 2026?",
+  "answer": "Evan You",
+  "evidence": "Evan You представил State of Vue 2026",
+  "page": "Frontend Status #14",
+  "url": "https://habr.com/ru/articles/1028734/",
+  "answerable": true
+ },
+ "answer": "State of Vue 2026 представил Evan You [1]. \n\nFINAL: Evan You.",
+ "final": "Evan You.",
+ "correct": true,
+ "refused": false,
+ "cost": 8.264999999998968e-05,
+ "seconds": 1.4826787500060163,
+ "steps": 1,
+ "messages": []
+}

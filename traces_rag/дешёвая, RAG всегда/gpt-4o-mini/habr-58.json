@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-58",
+  "source": "habr",
+  "question": "Какие ошибки исправлены в Next.js в июне 2026?",
+  "answer": "ошибки в merge driver",
+  "evidence": "Next.js: Исправлены ошибки в merge driver",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "answerable": true
+ },
+ "answer": "NOT_FOUND  \nFINAL: NOT_FOUND",
+ "final": "NOT_FOUND",
+ "correct": false,
+ "refused": true,
+ "cost": 5.760000000001875e-05,
+ "seconds": 0.8567188339948189,
+ "steps": 1,
+ "messages": []
+}

@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-23",
+  "source": "habr",
+  "question": "Какой IANA-тег назначен для CBOR-LD?",
+  "answer": "0xCB1D",
+  "evidence": "IANA-тег 0xCB1D",
+  "page": "Frontend Status #15",
+  "url": "https://habr.com/ru/articles/1032276/",
+  "answerable": true
+ },
+ "answer": "Согласно источнику [1], для CBOR-LD назначен IANA-тег **0xCB1D**.\n\nFINAL: IANA-тег для CBOR-LD — 0xCB1D.",
+ "final": "IANA-тег для CBOR-LD — 0xCB1D.",
+ "correct": true,
+ "refused": false,
+ "cost": 0.0009379999999999944,
+ "seconds": 1.4294998750265222,
+ "steps": 1,
+ "messages": []
+}

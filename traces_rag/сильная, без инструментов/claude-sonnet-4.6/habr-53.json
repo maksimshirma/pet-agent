@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "habr-53",
+  "source": "habr",
+  "question": "Кто разбирает AT Protocol под капотом Bluesky?",
+  "answer": "Дэвид Бушелл",
+  "evidence": "Дэвид Бушелл разбирает AT Protocol",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "answerable": true
+ },
+ "answer": "FINAL: AT Protocol разрабатывается и описывается командой Bluesky PBC (ключевые архитекторы — Paul Frazee и Bryan Newbold)",
+ "final": "AT Protocol разрабатывается и описывается командой Bluesky PBC (ключевые архитекторы — Paul Frazee и Bryan Newbold)",
+ "correct": false,
+ "refused": false,
+ "cost": 0.005948999999999982,
+ "seconds": 8.395004292018712,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Кто разбирает AT Protocol под капотом Bluesky?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\": \"Вопрос о том, кто разбирает (анализирует/изучает) AT Protocol под капотом Bluesky. Скорее всего речь идёт о известном разборе/анализе протокола. Есть известный технический разбор AT Protocol от Ильи Клейнера (или возможно речь о команде Bluesky PBC). Но чаще всего в контексте 'разбирает под капотом' имеется в виду конкретный автор статьи или видео. Вероятно, речь идёт о Максиме Дорофееве или другом русскоязычном авторе, либо об английском авторе. Также возможно речь идёт о статье от самой команды Bluesky. Без более конкретного контекста, наиболее вероятный ответ — это команда Bluesky PBC (Protocol Development). Но если речь о конкретном человеке, который написал разбор, это может быть различные авторы. Возможно имеется в виду статья от Paul Frazee или Bryan Newbold из команды Bluesky.\", \"final\": \"AT Protocol разрабатывается и описывается командой Bluesky PBC (ключевые архитекторы — Paul Frazee и Bryan Newbold)\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

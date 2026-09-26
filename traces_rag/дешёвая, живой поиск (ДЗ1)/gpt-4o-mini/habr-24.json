@@ -1,0 +1,149 @@
+{
+ "task": {
+  "id": "habr-24",
+  "source": "habr",
+  "question": "Какая уязвимость в Next.js описана в выпуске от 16 июня 2026?",
+  "answer": "CVE-2025-55182",
+  "evidence": "CVE-2025-55182 — RCE в Next.js через Server Actions",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "answerable": true
+ },
+ "answer": "На данный момент нет информации о конкретной уязвимости в Next.js, описанной 16 июня 2026 года. FINAL: нет данных.",
+ "final": "нет данных.",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0018019499999999966,
+ "seconds": 21.064432500017574,
+ "steps": 7,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какая уязвимость в Next.js описана в выпуске от 16 июня 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_vhgvcdZGU1pSDeeM9sgLnCgb",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"Next.js уязвимость 16 июня 2026\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_vhgvcdZGU1pSDeeM9sgLnCgb",
+   "content": "[Главные игроки экосистемы JavaScript по состоянию на 2026 год / Хабр] https://habr.com/ru/articles/1021182 — Если в вашем приложении Next.js активно используется ИИ, обратите внимание, что Vercel теперь предоставляет сервер MCP. При его подключении ИИ будет работать на вашем сайте намного умнее. Next.js 16 также работает на React 19, что означает поддержку компонента `<ViewTransition>`, о котором мы говорили здесь. `<ViewTransition>` #### Remix / React Router [...] Next.js вышел в версии 16, это первый р\n[LLM-пентест в 2026: что изменилось за год / Хабр] https://habr.com/ru/articles/1031380 — | CVE-2025-54136 MCPoison | Подмена `.cursor/mcp.json` в репозитории, эскалация до RCE при открытии проекта (Check Point Research) | MCP config | | CVE-2025-49596 | CSRF в MCP Inspector с RCE при дефолтной конфигурации | Dev-tooling | | CVE-2025-55182 React2Shell | Уязвимость десериализации в React Server Components (затронуты Next.js 15.x/16.x). Использовалась сканером Bissa: десятки тысяч `.env`\n[Заморозка по fingerprint: как ТСПУ в июне 2026 ломает ...] https://habr.com/ru/articles/1047442 — Параллельные хендшейки. Тяжёлый сайт на Next.js/React при первой загрузке открывает десятки параллельных TLS-соединений. А legacy-эндпоинты на HTTP/1.1 до сих пор открывают по одному TCP на каждый запрос. Fingerprint клиента. Chrome — самый популярный браузер, и его профиль ровно тот, что массово имитировали прокси. [...] В феврале ТСПУ перешёл на поведенческий анализ, а в июне — на то, что в чата\n[Frontend Status: свежий дайджест фронтенда и AI] https://habr.com/ru/articles/1047986 — 🤖 Старые приёмы промптинга режут точность reasoning-моделей, а закрытая вкладка не останавливает счёт — токены и GPU крутятся впустую — чтобы перестроить работу с ИИ и не платить за отменённую работу. 🛡️ Next.js с дефолтными настройками уязвим к RCE через Server Actions — даже если «серверных функций у нас нет» — чтобы не жить с иллюзией безопасности. [...] CVE, Shell и побег из контейнера: испыты\n[‑$200 з"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_omaOag4IJLUZ3psvx3gH2Npm",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"Next.js уязвимости выпуски\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_omaOag4IJLUZ3psvx3gH2Npm",
+   "content": "[Топ самых интересных CVE за декабрь 2025 года / Хабр] https://habr.com/ru/companies/tomhunter/articles/980578 — Об уязвимости: В компонентах React Server Components (RSC) веб-приложений,используемых в веб‑приложениях на базе библиотеки React, версий 19.0.0, 19.1.0, 19.1.1 и 19.2.0, в том числе и в фреймворке Next.js, обнаружена уязвимость, связанная с небезопасной десериализацией. Опубликована проверка концепции, которая доступна по ссылке. [...] Эксплуатация: Уязвимость позволяет удаленному злоумышленнику,\n[Эксперты UserGate Factor выпустили сигнатуру для защиты популярного веб-фреймворка Next.js на ОС Windows / Habr] https://habr.com/ru/amp/publications/1076706 — Title: Эксперты UserGate Factor выпустили сигнатуру для защиты популярного веб-фреймворка Next.js на ОС Windows / Habr ## Эксперты UserGate Factor выпустили сигнатуру для защиты популярного веб-фреймворка Next.js на ОС Windows. Эксперты UserGate Factor (uFactor) добавили в систему обнаружения вторжений (СОВ) вендора новую сигнатуру для детектирования и блокировки атак, эксплуатирующих критическую \n[Результаты поиска по запросу «[CVE-2025-55182]» / Хабр] https://habr.com/ru/search?target_type=posts&order=relevance&q=%5BCVE-2025-55182%5D — Title: Результаты поиска по запросу «[CVE-2025-55182]» / Хабр ## Критическая уязвимость позволяет выполнить произвольный код на серверных компонентах React 19.0.0/19.1.0/19.1.1/19.2.0. В серверных компонентах веб-фреймворка React (RSC, React Server Components) обнаружена и устранена критическая уязвимость CVE-2025-55182, позволявшая через отправку запроса к серверному обработчику выполнить произво\n[В фокусе RVD: трендовые уязвимости декабря / Хабр] https://habr.com/ru/companies/rvision/articles/980724 — Блог компании R-VisionИсследования и прогнозы в IT \\* СофтИнформационная безопасность \\* В начале декабря была раскрыта критическая уязвимость в механизме React Server Components (RSC). Аналитики Google Threat Intelligence Group подтвердили, что по крайней мере пять китай"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_R9jjI3bqzTOtzKQl2Jrjf3kR",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"Next.js уязвимость RCE\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_R9jjI3bqzTOtzKQl2Jrjf3kR",
+   "content": "[Эксперты UserGate Factor выпустили сигнатуру для защиты популярного веб-фреймворка Next.js на ОС Windows / Habr] https://habr.com/ru/amp/publications/1076706 — Title: Эксперты UserGate Factor выпустили сигнатуру для защиты популярного веб-фреймворка Next.js на ОС Windows / Habr ## Эксперты UserGate Factor выпустили сигнатуру для защиты популярного веб-фреймворка Next.js на ОС Windows. Эксперты UserGate Factor (uFactor) добавили в систему обнаружения вторжений (СОВ) вендора новую сигнатуру для детектирования и блокировки атак, эксплуатирующих критическую \n[RCE-уязвимость в ИИ-редакторах кода угрожала 50 млн разработчиков. Разбираемся, что произошло / Комментарии / Хабр] https://habr.com/ru/companies/selectel/articles/1067406/comments — Title: RCE-уязвимость в ИИ-редакторах кода угрожала 50 млн разработчиков. Разбираемся, что произошло / Комментарии / Хабр # RCE-уязвимость в ИИ-редакторах кода угрожала 50 млн разработчиков. ## Комментарии 1. Можно ли вместо текста сделать гипертекст, чтобы пользователь не понимал на что кликает? Можно ли в язык разметки встроить вызов программного кода? Казалось бы, достаточно один раз сказать \"М\n[Spring4Shell RCE — критическая уязвимость в Java Spring Framework / Хабр] https://habr.com/ru/companies/pentestit/articles/658421 — не ограничивает производительность. [...] Работа эксплоита сводится к отправке запроса с параметрами class.module.classLoader.resources.context.parent.pipeline.first.\\, обработка которых при использовании WebappClassLoaderBase приводит к обращению к классу AccessLogValve. Указанный класс позволяет настроить логгер для создания произвольного jsp-файла в корневом окружении Apache Tomcat и записи в э\n[CVE-2023-35628 — zero-click RCE-уязвимость в Windows / Habr] https://habr.com/ru/amp/publications/783812 — Title: CVE-2023-35628 — zero-click RCE-уязвимость в Windows / Habr ## CVE-2023-35628 — zero-click RCE-уязвимость в Windows. В этой статье мы подробно рассмотрим одну интересную уязвимость удалённого выполнения к"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_nNzwJc21p6U3y89xV2rA8kVZ",
+     "function": {
+      "name": "web_search_ru",
+      "arguments": "{\"query\":\"Next.js уязвимость 16 июня 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_nNzwJc21p6U3y89xV2rA8kVZ",
+   "content": "[Opera] Opera (МФА: [ˈɑp(ə)ɹə]) — браузер и пакет прикладных программ для работы в Интернете, выпускаемый компанией Opera Software. Разработан в 1994 году группой исследователей из норвежской компании Telenor. С 1995 года — продукт компании Opera Software, образованной авторами первой версии браузера. Суммарная рыночная доля браузеров Opera в январе 2021 года составила 2,17 % — шестое место в мире. В России процент пользователей браузера выше среднемирового. В январе 2021 года доля браузеров Opera в Рунете составила 5,55 %. Браузер Opera портирован под множество операционных систем (включая Windows, macOS, Linux; ранее имелись версии для FreeBSD, Solaris). Также существуют версии браузера для мобильных платформ на основе Symbian OS, MeeGo, Java, Android, Windows Mobile, bada, iOS. Opera для PC и Opera Mini распространяются бесплатно с 2005 года, Opera Mobile — с 2010 (бета-версии с 2009). 13 февраля 2013 года разработчики заявили о переводе всей линейки продуктов Opera Software на движок Blink и V8. В 2021 году возможность использования VPN в браузере была заблокирована на территории Российской Федерации."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_h6N0b9SsooaRiRUdQmotKzST",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"CVE-2026-12345 Next.js уязвимость 16 июня 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_h6N0b9SsooaRiRUdQmotKzST",
+   "content": "No data"
+  },
+  {
+   "role": "user",
+   "content": "Инструменты больше недоступны. Ответь по тому, что уже известно, последней строкой FINAL: <ответ>."
+  },
+  {
+   "role": "assistant",
+   "content": "На данный момент нет информации о конкретной уязвимости в Next.js, описанной 16 июня 2026 года. FINAL: нет данных.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "unans-5",
+  "source": "habr",
+  "question": "Какая мажорная версия Tailwind CSS анонсирована в 2026 году?",
+  "answer": null,
+  "evidence": null,
+  "page": null,
+  "url": null,
+  "answerable": false
+ },
+ "answer": "NOT_FOUND\n\nFINAL: В источниках не указана информация о мажорной версии Tailwind CSS, анонсированной в 2026 году. Источник [1] описывает улучшения Tailwind CSS, но не упоминает номер версии или год анонса.",
+ "final": "В источниках не указана информация о мажорной версии Tailwind CSS, анонсированной в 2026 году. Источник [1] описывает улучшения Tailwind CSS, но не упоминает номер версии или год анонса.",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0011279999999999624,
+ "seconds": 3.657112250017235,
+ "steps": 1,
+ "messages": []
+}

@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-50",
+  "source": "habr",
+  "question": "Какая версия VS Code вышла с инфраструктурой для Copilot-агентов?",
+  "answer": "1.111",
+  "evidence": "VS Code 1.111 — Copilot-агенты обрастают инфраструктурой",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "answerable": true
+ },
+ "answer": "NOT_FOUND.  \nFINAL: NOT_FOUND",
+ "final": "NOT_FOUND",
+ "correct": false,
+ "refused": true,
+ "cost": 0.0001002000000000225,
+ "seconds": 1.118568291014526,
+ "steps": 1,
+ "messages": []
+}

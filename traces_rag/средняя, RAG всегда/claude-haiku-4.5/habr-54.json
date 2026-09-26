@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-54",
+  "source": "habr",
+  "question": "Какой инструмент позволяет запускать агентов Cursor через Telegram?",
+  "answer": "cursor-tg",
+  "evidence": "Агенты Cursor через Telegram с помощью cursor-tg!",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "answerable": true
+ },
+ "answer": "Согласно источнику [1], инструмент **cursor-tg** позволяет запускать агентов Cursor через Telegram.\n\nFINAL: cursor-tg",
+ "final": "cursor-tg",
+ "correct": true,
+ "refused": false,
+ "cost": 0.0007989999999999942,
+ "seconds": 1.4647442080022302,
+ "steps": 1,
+ "messages": []
+}

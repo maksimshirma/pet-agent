@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-60",
+  "source": "habr",
+  "question": "Какая новая модель добавлена в Transformers в июне 2026?",
+  "answer": "cohere2_moe",
+  "evidence": "добавлена новая модель cohere2_moe",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "answerable": true
+ },
+ "answer": "NOT_FOUND\n\nВ источниках упоминается, что в Transformers была добавлена новая модель cohere2_moe [1], однако в источниках отсутствует информация о конкретном месяце (июне 2026) добавления этой модели.\n\nFINAL: Нет информации о месяце добавления новой модели в Transformers.",
+ "final": "Нет информации о месяце добавления новой модели в Transformers.",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0008719999999999839,
+ "seconds": 1.945412416011095,
+ "steps": 1,
+ "messages": []
+}

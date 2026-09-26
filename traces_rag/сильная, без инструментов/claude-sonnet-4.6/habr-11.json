@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "habr-11",
+  "source": "habr",
+  "question": "Кто представил State of Vue 2026?",
+  "answer": "Evan You",
+  "evidence": "Evan You представил State of Vue 2026",
+  "page": "Frontend Status #14",
+  "url": "https://habr.com/ru/articles/1028734/",
+  "answerable": true
+ },
+ "answer": "FINAL: Эван Ю (Evan You)",
+ "final": "Эван Ю (Evan You)",
+ "correct": true,
+ "refused": false,
+ "cost": 0.0027209999999999977,
+ "seconds": 3.8295153329963796,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Кто представил State of Vue 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\": \"Вопрос о том, кто представил 'State of Vue 2026'. Это, вероятно, относится к докладу на конференции VueConf или аналогичном мероприятии. Эван Ю (Evan You) — создатель Vue.js — традиционно представляет такие доклады. Однако у меня нет конкретной информации о мероприятии 2026 года, так как мои данные ограничены.\", \"final\": \"Эван Ю (Evan You)\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

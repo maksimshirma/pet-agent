@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-21",
+  "source": "habr",
+  "question": "Какой API опубликован как First Public Working Draft в мае 2026?",
+  "answer": "Long Animation Frames API",
+  "evidence": "First Public Working Draft: Long Animation Frames API",
+  "page": "Frontend Status #15",
+  "url": "https://habr.com/ru/articles/1032276/",
+  "answerable": true
+ },
+ "answer": "Согласно источнику [2], Long Animation Frames API был опубликован как First Public Working Draft. Этот API позволяет обнаруживать длительные анимационные кадры, блокирующие UI-поток, и помогает оптимизировать производительность веб-страниц.\n\nFINAL: Long Animation Frames API опубликован как First Public Working Draft.",
+ "final": "Long Animation Frames API опубликован как First Public Working Draft.",
+ "correct": true,
+ "refused": false,
+ "cost": 0.0015009999999999746,
+ "seconds": 2.0831292920047417,
+ "steps": 1,
+ "messages": []
+}

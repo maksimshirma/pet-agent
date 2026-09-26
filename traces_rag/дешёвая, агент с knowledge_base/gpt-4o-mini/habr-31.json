@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "habr-31",
+  "source": "habr",
+  "question": "Какой инструмент собирает React-проект из коробки с SSR?",
+  "answer": "Rockpack",
+  "evidence": "Rockpack собирает всё одной командой",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "answerable": true
+ },
+ "answer": "Инструмент для сборки React-проекта из коробки с серверным рендерингом (SSR) называется Rockpack. Он предлагает настройку проекта с использованием TypeScript, SSR и других необходимых инструментов, что позволяет сосредоточиться на разработке функций, а не на первоначальной конфигурации.\n\nFINAL: Rockpack",
+ "final": "Rockpack",
+ "correct": true,
+ "refused": false,
+ "cost": 0.00021518999999997623,
+ "seconds": 3.8340068329998758,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы по локальной базе знаний (статьи Habr/lawebbox про фронтенд и AI в 2026 году). Всегда сначала вызови knowledge_base, при необходимости — с уточнённым запросом или фильтром по странице. Если после поиска в базе знаний нет ответа на вопрос, ответь ровно NOT_FOUND. Последняя строка ответа всегда FINAL: <короткий ответ или NOT_FOUND>."
+  },
+  {
+   "role": "user",
+   "content": "Какой инструмент собирает React-проект из коробки с SSR?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_LrPnGZ3cIchot8nFq6WfrOR0",
+     "function": {
+      "name": "knowledge_base",
+      "arguments": "{\"query\":\"React-проект из коробки с SSR\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_LrPnGZ3cIchot8nFq6WfrOR0",
+   "content": "[Frontend Status #18 / ⚛️ React] Rockpack: React-проект из коробки с SSR и ИИ : новый React-проект обычно начинается с недели настройки — сборка, линтер, тесты, серверный рендеринг, — а потом ещё думаешь, как не утонуть в коде от ИИ. Rockpack собирает всё одной командой: TypeScript, SSR, проверки качества и структура проекта, с которой и человеку, и ассистенту проще работать без хаоса; в комплекте даже готовый CLAUDE.md с правилами, чтобы агент не разносил репозиторий. Если хотите сразу писать фичи, а не неделю крутить конфиги — вот стартовая площадка.\n[Frontend Status #18 / Frontend Status: свежий дайджест фронтенда и AI — 16.06.2026] ⚛️ React-зоопарк, неделя конфигов и ручная мемоизация: карта Robin Wieruch на 2026-й, Rockpack из коробки, TanStack AI без вендорного замка, visx 4.0, RSC в TanStack Start и React Compiler — чтобы собирать стек без споров и вычистить лишний шум из кодбейза.\n[Frontend Status #18 / ⚛️ React] Серверные компоненты React в TanStack : Адам Ракис разбирает реализацию RSC в TanStack Start с нуля и считает её устроенной иначе и удачнее, чем в Next.js — компоненты выполняются server-only, их код никогда не уезжает в клиентские бандлы, они могут await -ить что угодно от стороннего fetch до прямого запроса к Postgres без утечки connection strings, но за это лишены state и обработчиков вроде onClick.\n[Frontend Status #9 / Frontend Status: свежий дайджест фронтенда и AI — 18.03.2026] ⚛️ React получает shadcn/cli v4 с режимом для агентов, SvelteKit ловит FOWL, Astro v6 подтягивает данные из API прямо в content collections.\n[Frontend Status #7 / ⚛️ React] open-source headless rich-text редактор для React — Yoopta: мощный open-source React-редактор в стиле Notion с блочной системой, готовыми плагинами и темами, коллаборация на CRDT (Yjs), AI-инструменты приближаются к релизу."
+  },
+  {
+   "role": "assistant",
+   "content": "Инструмент для сборки React-проекта из коробки с серверным рендерингом (SSR) называется Rockpack. Он предлагает настройку проекта с использованием TypeScript, SSR и других необходимых инструментов, что позволяет сосредоточиться на разработке функций, а не на первоначальной конфигурации.\n\nFINAL: Rockpack",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

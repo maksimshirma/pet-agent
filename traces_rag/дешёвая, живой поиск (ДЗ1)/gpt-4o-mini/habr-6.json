@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "habr-6",
+  "source": "habr",
+  "question": "Во сколько раз TanStack улучшил пропускную способность SSR?",
+  "answer": "5 раз",
+  "evidence": "TanStack улучшили производительность SSR в 5 раз",
+  "page": "Frontend Status #10",
+  "url": "https://habr.com/ru/articles/1015700/",
+  "answerable": true
+ },
+ "answer": "TanStack улучшил пропускную способность SSR в 5 раз. \n\nFINAL: 5",
+ "final": "5",
+ "correct": false,
+ "refused": false,
+ "cost": 0.00022710000000000785,
+ "seconds": 5.47982450001291,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Во сколько раз TanStack улучшил пропускную способность SSR?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_S0S8IODRtNkGRnDou9jBtXKS",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"TanStack пропускная способность SSR\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_S0S8IODRtNkGRnDou9jBtXKS",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 27.03.2026 / Хабр] https://habr.com/ru/articles/1015700 — ⚡ TypeScript 6.0, обновления безопасности Node.js, петиция против AI-кода в ядре Node.js и Kafka из Node.js по-взрослому. ⚛️ TanStack улучшил пропускную способность SSR в 5 раз, а Strawberry Browser переписал 130 000 строк с React на Svelte за две недели. 🅰️ Angular выпустила официальные скиллы для AI-агентов. 💚 Компоненты визуализации звука для Vue.js на Web Audio API. …и многое другое. ### 📺 Мед\n[Автоматическая виртуализация рендеринга ...] https://habr.com/ru/articles/537388 — Писец подкрался к нам незаметно: сначала перестали расти мощности компьютеров, потом пропускная способность сетей. ... SSR. Вырезаем SSR и\n[Эмиль Мустафин (bjlactelih) — Хабр Карьера] https://career.habr.com/bjlactelih — Аналитический дашборд для мониторинга технологических процессов предприятия. Стек: Next.js (App Router) TypeScript Ant Design Chart.js Zustand tRPC TanStack Query TailwindCSS - Спроектировал структуру на Next.js App Router с разделением server/client компонентов и выносом подготовки данных на сервер - Разработал переиспользуемые обёртки над Chart.js единая конфигурация, тултипы, легенды, форматы д\n[Point0 — фулстек TypeScript-фреймворк на Bun и React ...] https://habr.com/ru/articles/1054310/comments — У Point0 данные между клиентом и сервером типизированы насквозь без кодогенерации, всё едет на react-query с кешем, инвалидацией и SSR-гидрацией\n[whereareyo — Хабр Карьера] https://career.habr.com/whereareyo — Все сервисы Хабра Сообщество IT-специалистовQ&A Ответы на любые вопросы об ITКарьера Профессиональное развитие в ITКурсы Обучение для смены профессии, роста в карьере и саморазвития Войти через Хабр АккаунтЗарегистрироваться Войти через Хабр АккаунтЗарегистрироваться ВакансииСпециалистыКурсы и обучениеЭкспертыКомпанииРейтингЗарплатыЖурнал whereareyo whereareyo # whereareyo Эксперт Информация скрыт"
+  },
+  {
+   "role": "assistant",
+   "content": "TanStack улучшил пропускную способность SSR в 5 раз. \n\nFINAL: 5",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

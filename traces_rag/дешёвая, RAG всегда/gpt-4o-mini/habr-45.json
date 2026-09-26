@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-45",
+  "source": "habr",
+  "question": "Сколько часов длилась разведка перед атакой Shai-Hulud?",
+  "answer": "17 часов",
+  "evidence": "от взлома машины инженера и 17-часовой разведки",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "answerable": true
+ },
+ "answer": "Разведка перед атакой Shai-Hulud длилась 17 часов [1]. \n\nFINAL: 17 часов.",
+ "final": "17 часов.",
+ "correct": true,
+ "refused": false,
+ "cost": 0.00011729999999998686,
+ "seconds": 1.5230097919993568,
+ "steps": 1,
+ "messages": []
+}

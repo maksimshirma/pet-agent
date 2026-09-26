@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-59",
+  "source": "habr",
+  "question": "Какая уязвимость исправлена в Transformers в июне 2026?",
+  "answer": "уязвимость в пути при сохранении шаблонов",
+  "evidence": "Transformers: Исправлена уязвимость в пути при сохранении шаблонов",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "answerable": true
+ },
+ "answer": "В Transformers в июне 2026 была исправлена уязвимость в пути при сохранении шаблонов [1]. FINAL: Уязвимость в пути при сохранении шаблонов.",
+ "final": "Уязвимость в пути при сохранении шаблонов.",
+ "correct": true,
+ "refused": false,
+ "cost": 8.069999999998911e-05,
+ "seconds": 1.3551543749927077,
+ "steps": 1,
+ "messages": []
+}

@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-7",
+  "source": "habr",
+  "question": "Сколько строк кода переписал Strawberry Browser с React на Svelte?",
+  "answer": "130 000 строк",
+  "evidence": "Strawberry Browser переписал 130 000 строк с React на Svelte за две недели",
+  "page": "Frontend Status #10",
+  "url": "https://habr.com/ru/articles/1015700/",
+  "answerable": true
+ },
+ "answer": "Согласно источникам, Strawberry Browser переписал 130 000 строк кода с React на Svelte за две недели [1][2].\n\nFINAL: 130 000 строк кода.",
+ "final": "130 000 строк кода.",
+ "correct": true,
+ "refused": false,
+ "cost": 0.0007889999999999842,
+ "seconds": 1.4800714589946438,
+ "steps": 1,
+ "messages": []
+}

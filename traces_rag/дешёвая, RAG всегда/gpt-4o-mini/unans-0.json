@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "unans-0",
+  "source": "habr",
+  "question": "Какая мажорная версия Vue.js вышла в 2026 году?",
+  "answer": null,
+  "evidence": null,
+  "page": null,
+  "url": null,
+  "answerable": false
+ },
+ "answer": "NOT_FOUND\n\nFINAL: NOT_FOUND",
+ "final": "NOT_FOUND",
+ "correct": false,
+ "refused": true,
+ "cost": 9.660000000000224e-05,
+ "seconds": 0.8267539999797009,
+ "steps": 1,
+ "messages": []
+}

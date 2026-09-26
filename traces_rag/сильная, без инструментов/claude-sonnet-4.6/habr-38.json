@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "habr-38",
+  "source": "habr",
+  "question": "Какой инструмент решает проблему онбординга разработчиков?",
+  "answer": "Oncode",
+  "evidence": "Oncode решает одну из самых дорогих проблем в найме разработчиков — месяцы на онбординг",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "answerable": true
+ },
+ "answer": "FINAL: Backstage",
+ "final": "Backstage",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0025410000000000016,
+ "seconds": 3.4183846669911873,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Какой инструмент решает проблему онбординга разработчиков?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\": \"Вопрос общий, но в контексте DevOps/разработки наиболее часто упоминаемый инструмент для решения проблемы онбординга разработчиков — это 'Internal Developer Portal' или конкретный инструмент Backstage (от Spotify). Однако без дополнительного контекста (например, из какого источника вопрос), наиболее универсальный ответ — Backstage.\", \"final\": \"Backstage\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

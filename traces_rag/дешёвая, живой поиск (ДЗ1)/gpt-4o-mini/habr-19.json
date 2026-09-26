@@ -1,0 +1,145 @@
+{
+ "task": {
+  "id": "habr-19",
+  "source": "habr",
+  "question": "Какая версия useHotkeys вышла в мае 2026?",
+  "answer": "5.3",
+  "evidence": "useHotkeys 5.3",
+  "page": "Frontend Status #15",
+  "url": "https://habr.com/ru/articles/1032276/",
+  "answerable": true
+ },
+ "answer": "Не удалось найти информацию о версии useHotkeys, вышедшей в мае 2026 года. Вероятно, эта версия еще не была выпущена. Пожалуйста, уточните свои запросы или свяжитесь позже для обновлений. \n\nFINAL: информация недоступна.",
+ "final": "информация недоступна.",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0007996499999999851,
+ "seconds": 16.89843766699778,
+ "steps": 6,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какая версия useHotkeys вышла в мае 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_lrHTPLX7GstwDHayykvCk1Lh",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"useHotkeys обновление май 2026\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_lrHTPLX7GstwDHayykvCk1Lh",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI] https://habr.com/ru/articles/1032276 — useHotkeys 5.3: хук для keyboard shortcuts в компонентах: библиотека позволяет декларативно навешивать сочетания клавиш прямо в компонентах (например, `useHotkeys('ctrl+k', callback)`), управлять областями действия и держать горячие клавиши рядом с UI-логикой. `useHotkeys('ctrl+k', callback)` [...] 🛡️ Безопасность больше не факультатив: кейс критической уязвимости в GitHub и массовый багхант в Fir"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_lNk4RLbvasR4GmJBpxVtJtlB",
+     "function": {
+      "name": "web_search_ru",
+      "arguments": "{\"query\":\"useHotkeys версия май 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_lNk4RLbvasR4GmJBpxVtJtlB",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_QXY8V8AFzhetJygnCpa8Nggx",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"useHotkeys version May 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_QXY8V8AFzhetJygnCpa8Nggx",
+   "content": "[DR-DOS] DR-DOS is a disk operating system for IBM PC compatibles, originally developed by Gary A. Kildall's Digital Research and derived from Concurrent PC DOS 6.0, which was an advanced successor of CP/M-86. Upon its introduction in 1988, it was the first operating system that attempted to be compatible with IBM PC DOS and MS-DOS. The first release was version 3.31, named to match MS-DOS's then-current version. DR DOS 5.0 was released in 1990 as the first to be sold in retail; it was critically acclaimed and led to DR DOS becoming the main rival to Microsoft's MS-DOS, who quickly responded with its own MS-DOS 5.0 but releasing over a year later. It introduced a graphical user interface layer called ViewMAX. DR DOS 6.0 was released in 1991; then with Novell's acquisition of Digital Research, the following version was named Novell DOS 7.0 in 1994. After another sale, to Caldera, updated versions were released partly open-source under the Caldera moniker, and briefly as OpenDOS. The previously last version for desktops, Caldera DR-DOS 7.03, was released in 1999, after which the software was sold to Embedded Systems by Caldera and then by DeviceLogics. In January 2022, Whitehorn Ltd. Co. registered the DR DOS trademark. Since 2026 it has been releasing beta versions of DR DOS 9.0, an operating system written from scratch and not based on the code of previous versions."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_dpIPg65pj3Gj0oj3Z9CyPI9B",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"useHotkeys May 2026 version release notes\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_dpIPg65pj3Gj0oj3Z9CyPI9B",
+   "content": "[DR-DOS] DR-DOS is a disk operating system for IBM PC compatibles, originally developed by Gary A. Kildall's Digital Research and derived from Concurrent PC DOS 6.0, which was an advanced successor of CP/M-86. Upon its introduction in 1988, it was the first operating system that attempted to be compatible with IBM PC DOS and MS-DOS. The first release was version 3.31, named to match MS-DOS's then-current version. DR DOS 5.0 was released in 1990 as the first to be sold in retail; it was critically acclaimed and led to DR DOS becoming the main rival to Microsoft's MS-DOS, who quickly responded with its own MS-DOS 5.0 but releasing over a year later. It introduced a graphical user interface layer called ViewMAX. DR DOS 6.0 was released in 1991; then with Novell's acquisition of Digital Research, the following version was named Novell DOS 7.0 in 1994. After another sale, to Caldera, updated versions were released partly open-source under the Caldera moniker, and briefly as OpenDOS. The previously last version for desktops, Caldera DR-DOS 7.03, was released in 1999, after which the software was sold to Embedded Systems by Caldera and then by DeviceLogics. In January 2022, Whitehorn Ltd. Co. registered the DR DOS trademark. Since 2026 it has been releasing beta versions of DR DOS 9.0, an operating system written from scratch and not based on the code of previous versions."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_TaKCkigGZeBZdVQzu3YW85JS",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"useHotkeys 5.3 release date\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_TaKCkigGZeBZdVQzu3YW85JS",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI] https://habr.com/ru/articles/1032276 — useHotkeys 5.3: хук для keyboard shortcuts в компонентах: библиотека позволяет декларативно навешивать сочетания клавиш прямо в компонентах (например, `useHotkeys('ctrl+k', callback)`), управлять областями действия и держать горячие клавиши рядом с UI-логикой. `useHotkeys('ctrl+k', callback)` [...] `useHotkeys` 🌐 Стандарты и платформа двигаются вперёд: Baseline, Long Animation Frames, CBOR-LD и ап"
+  },
+  {
+   "role": "assistant",
+   "content": "Не удалось найти информацию о версии useHotkeys, вышедшей в мае 2026 года. Вероятно, эта версия еще не была выпущена. Пожалуйста, уточните свои запросы или свяжитесь позже для обновлений. \n\nFINAL: информация недоступна.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

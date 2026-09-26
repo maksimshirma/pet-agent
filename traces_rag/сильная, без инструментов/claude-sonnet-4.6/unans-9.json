@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "unans-9",
+  "source": "habr",
+  "question": "Сколько разработчиков используют Astro по данным опроса State of JS 2026?",
+  "answer": null,
+  "evidence": null,
+  "page": null,
+  "url": null,
+  "answerable": false
+ },
+ "answer": "FINAL: Данные опроса State of JS 2026 недоступны — этот опрос ещё не проводился.",
+ "final": "Данные опроса State of JS 2026 недоступны — этот опрос ещё не проводился.",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0020459999999999923,
+ "seconds": 2.8708389999810606,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Сколько разработчиков используют Astro по данным опроса State of JS 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\": \"Опрос State of JS 2026 ещё не проводился (на момент моих знаний данные существуют только до 2024 года включительно), поэтому такие данные недоступны.\", \"final\": \"Данные опроса State of JS 2026 недоступны — этот опрос ещё не проводился.\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

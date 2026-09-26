@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-41",
+  "source": "habr",
+  "question": "Кто ошибался в CSS Anchor Positioning?",
+  "answer": "Крис Койер",
+  "evidence": "Крис Койер ошибался в CSS Anchor Positioning!",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "answerable": true
+ },
+ "answer": "Согласно источнику [1], **Крис Койер** ошибался в CSS Anchor Positioning. Он считал, что якорь и позиционируемый элемент могут находиться где угодно в DOM, но на самом деле якорь обязан быть полностью отрендерен раньше, а в идеале — быть сиблингом и стоять первым.\n\nFINAL: Крис Койер ошибался в CSS Anchor Positioning относительно требований к расположению якоря в DOM.",
+ "final": "Крис Койер ошибался в CSS Anchor Positioning относительно требований к расположению якоря в DOM.",
+ "correct": true,
+ "refused": false,
+ "cost": 0.0015129999999999866,
+ "seconds": 2.4575340829906054,
+ "steps": 1,
+ "messages": []
+}

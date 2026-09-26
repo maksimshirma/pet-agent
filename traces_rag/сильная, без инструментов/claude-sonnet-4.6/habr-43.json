@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "habr-43",
+  "source": "habr",
+  "question": "Какой прирост дал двухпроходный алгоритм на TypeScript?",
+  "answer": "72–88%",
+  "evidence": "двухпроходный алгоритм дал 72–88% прироста на чистом TypeScript",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "answerable": true
+ },
+ "answer": "FINAL: Недостаточно контекста для ответа",
+ "final": "Недостаточно контекста для ответа",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0021840000000000054,
+ "seconds": 2.7321820000070147,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Какой прирост дал двухпроходный алгоритм на TypeScript?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\": \"Вопрос о приросте двухпроходного алгоритма на TypeScript не имеет достаточного контекста — неясно, о каком конкретном проекте, бенчмарке или статье идёт речь. Без дополнительных данных ответить точно невозможно.\", \"final\": \"Недостаточно контекста для ответа\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

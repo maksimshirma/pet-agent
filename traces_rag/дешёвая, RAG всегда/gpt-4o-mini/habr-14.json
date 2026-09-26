@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-14",
+  "source": "habr",
+  "question": "В какой версии Chromium доступен экспериментальный API HTML in Canvas?",
+  "answer": "Chromium 146+",
+  "evidence": "Доступно пока только в Chromium 146+ за флагом",
+  "page": "Frontend Status #14",
+  "url": "https://habr.com/ru/articles/1028734/",
+  "answerable": true
+ },
+ "answer": "Экспериментальный API HTML in Canvas доступен в Chromium 146+ [1]. FINAL: Chromium 146+.",
+ "final": "Chromium 146+.",
+ "correct": true,
+ "refused": false,
+ "cost": 0.00011640000000001649,
+ "seconds": 1.3953219579998404,
+ "steps": 1,
+ "messages": []
+}

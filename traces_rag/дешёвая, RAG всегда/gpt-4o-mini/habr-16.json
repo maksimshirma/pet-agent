@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-16",
+  "source": "habr",
+  "question": "Какая CVE была обнаружена на GitHub в мае 2026?",
+  "answer": "CVE-2026-3854",
+  "evidence": "CVE-2026-3854 на GitHub",
+  "page": "Frontend Status #15",
+  "url": "https://habr.com/ru/articles/1032276/",
+  "answerable": true
+ },
+ "answer": "CVE-2026-3854 была обнаружена на GitHub в мае 2026 [1]. \n\nFINAL: CVE-2026-3854",
+ "final": "CVE-2026-3854",
+ "correct": true,
+ "refused": false,
+ "cost": 0.00014039999999998498,
+ "seconds": 1.3665605830028653,
+ "steps": 1,
+ "messages": []
+}

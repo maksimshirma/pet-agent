@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-8",
+  "source": "habr",
+  "question": "За сколько дней была выполнена миграция на Svelte в Strawberry Browser?",
+  "answer": "за две недели",
+  "evidence": "переписал 130 000 строк с React на Svelte за две недели",
+  "page": "Frontend Status #10",
+  "url": "https://habr.com/ru/articles/1015700/",
+  "answerable": true
+ },
+ "answer": "Согласно источникам [1] и [2], миграция 130 000 строк кода с React на Svelte в Strawberry Browser была выполнена за две недели.\n\nFINAL: Две недели (14 дней).",
+ "final": "Две недели (14 дней).",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0008889999999999731,
+ "seconds": 1.5908643330039922,
+ "steps": 1,
+ "messages": []
+}

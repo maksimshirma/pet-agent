@@ -1,0 +1,115 @@
+{
+ "task": {
+  "id": "habr-15",
+  "source": "habr",
+  "question": "Какая версия React Email вышла в апреле 2026?",
+  "answer": "6.0.0",
+  "evidence": "React Email выпустил версию 6.0.0",
+  "page": "Frontend Status #14",
+  "url": "https://habr.com/ru/articles/1028734/",
+  "answerable": true
+ },
+ "answer": "В апреле 2026 года вышла версия 6.0.0 React Email, которая принесла значительные улучшения в экосистему компонентов и в процесс сборки шаблонов. \n\nFINAL: 6.0.0",
+ "final": "6.0.0",
+ "correct": true,
+ "refused": false,
+ "cost": 0.0006047999999999887,
+ "seconds": 13.785060249996604,
+ "steps": 4,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какая версия React Email вышла в апреле 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_5vOt8wtsOuCoj3rUFzNuCjsO",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"React Email version April 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_5vOt8wtsOuCoj3rUFzNuCjsO",
+   "content": "[Vivaldi (web browser)] Vivaldi () is a Norwegian-Icelandic freeware, cross-platform web browser with a built-in email client developed by Vivaldi Technologies. The company is employee-owned. Vivaldi was founded by Tatsuki Tomita and Jon Stephenson von Tetzchner, who was the co-founder and CEO of Opera Software. Vivaldi was initially released on 27 January 2015. Although it is accessible to general users, Vivaldi's design and feature-set primarily targets power users, in addition to former Opera users disgruntled by its transition from the Presto layout engine to a Chromium-based browser, which resulted in the loss of many of its distinctive features. Even though it is also Chromium-based, Vivaldi aims to revive the features of the Presto-based Opera with its own proprietary modifications. Vivaldi replaced Firefox as the default browser on the Cinnamon Community Edition of the Manjaro Linux distribution. As of March 2026, Vivaldi claims to have 4.0 million active users."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_Cel73Y57azHNyD8fa7Nuw7e2",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"React Email версия апрель 2026\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_Cel73Y57azHNyD8fa7Nuw7e2",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI — 27.04.2026 / Хабр] https://habr.com/ru/articles/1028734 — React Email выпустил версию 6.0.0: крупное обновление фреймворка для создания HTML-email-писем на React с улучшениями в экосистеме компонентов и процессе сборки шаблонов. ### 🅰️ Angular VoidZero ускорили Angular-компилятор с помощью AI: разработчики команды Oxc показывают, как использовали AI в инженерном цикле и получили заметный прирост скорости сборки Angular-проектов. ### 📦 Разное [...] Почему\n[React stack 2026: карта лучших библиотек по категориям / Хабр] https://habr.com/ru/articles/1032830 — 2017-2019 появились template engines — MJML (Mailjet Markup Language), Foundation for Emails. Высокоуровневый XML/HTML который компилируется в bullet-proof email HTML. В 2023 Resend запустил react-email — компоненты email пишутся как React JSX. Это стало game changer — frontend devs могут писать emails в знакомом stack. К 2026 стандарт. 🏆 react-email — Default 2026 React components для email templ\n[Что нового в React 19 / Хабр] https://habr.com/ru/companies/timeweb/articles/843016 — # Что нового в React 19 React 19 на подходе. Команда React анонсировала предрелизную версию React 19 в апреле. Это крупное обновление принесет с собой ряд улучшений и новых паттернов, нацеленных на повышение производительности, удобство использования и опыта разработки. Многие из этих возможностей были представлены в экспериментальном режиме в React 18, но в React 19 они станут стабильными. Давайт\n[Антон Медведев (tony_dot_style) — Хабр Карьера] https://career.habr.com/tony_dot_style — JavaScript • TypeScript • Redux • Webpack • React • Sass • Storybook • HTML • CSS • Адаптивная верстка СберТех 4.46 Российский разработчик программного обеспечения для технологической независимости бизнеса От 1000 до 5000 сотрудников Frontend разработчик Апрель 2023 — Февраль 2026 (2 года и 11 месяцев) [...] ## Навыки Выберите навык, чтобы посмотреть, какие тесты специалист уже прошел. Sass Postgr\n[Беспла"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_nedTAq8ITKJoKOrjmFVJKEBe",
+     "function": {
+      "name": "web_search_ru",
+      "arguments": "{\"query\": \"React Email версия апрель 2026\"}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 1,
+     "id": "call_686HQUtx6cyXKIaPkuEpYwTz",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"React Email release April 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_nedTAq8ITKJoKOrjmFVJKEBe",
+   "content": "[Love Nwantiti] «Love Nwantiti» — песня нигерийского исполнителя и продюсера CKay (Chukwuka Ekweani), вышедшая в 2019 году в качестве второго трека из его второго мини-альбома CKay the First через лейблы Chocolate City и Warner Music Group. Ремикс песни под названием «Love Nwantiti (Ah Ah Ah)» при участии нигерийского певца Joeboy и певца из Ганы Kuami Eugene, вышел в качестве сингла в 2020 году и имел коммерческий успех в Нигерии, Западной Азии, Северной Африке и на многих европейских клубных площадках, а также стал предметом сотрудничества с несколькими местными артистами для локализованных вариаций. Французская версия включала вокал французского рэпера Franglish. В 2021 году песня попала в чарты Европы, Австралии, Латинской Америки и Новой Зеландии, достигла первого места в Индии, Нидерландах, Норвегии и Швейцарии и завоевала популярность на TikTok. Она также достигла позиции № 3 в британском хит-параде UK Singles Chart и первого места в чарте инди-музыки UK Indie Singles Chart. Песня также достигла № 31 в Billboard Hot 100, № 2 в Billboard Global 200."
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_686HQUtx6cyXKIaPkuEpYwTz",
+   "content": "[List of people named in the Epstein files] The Epstein files comprise over six million pages of documents detailing the activities of American financier and convicted child sex offender Jeffrey Epstein. So far about three and a half million files have been made public with redactions, among them 180,000 images and 2,000 videos. This article lists people who cultivated relationships with Epstein, as evidenced in the released files and reported in reliable sources. Among others, they were professionals he hired; people who hired him; scholars he entertained and funded; powerful men and women; Silicon Valley elite, royalty, and political leaders who provided connections and companionship; people who wanted to stand close to the wealthy and connected; and lifelong friends. The compilation of these names in this list neither establishes wrongdoing by those named nor should it be interpreted as evidence that the people listed are guilty of misconduct. Many people featured in the files deny any wrongdoing in relation to Epstein's life and crimes, and Ghislaine Maxwell remains the only person ever convicted of being a co-conspirator of Epstein."
+  },
+  {
+   "role": "assistant",
+   "content": "В апреле 2026 года вышла версия 6.0.0 React Email, которая принесла значительные улучшения в экосистему компонентов и в процесс сборки шаблонов. \n\nFINAL: 6.0.0",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

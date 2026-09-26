@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-22",
+  "source": "habr",
+  "question": "Какой бинарный формат для Linked Data опубликовал W3C?",
+  "answer": "CBOR-LD 1.0",
+  "evidence": "W3C опубликовал FPWD CBOR-LD 1.0",
+  "page": "Frontend Status #15",
+  "url": "https://habr.com/ru/articles/1032276/",
+  "answerable": true
+ },
+ "answer": "[1] W3C опубликовал **CBOR-LD 1.0** — бинарный формат для Linked Data поверх CBOR с семантическим сжатием через JSON-LD контексты.\n\nFINAL: CBOR-LD 1.0",
+ "final": "CBOR-LD 1.0",
+ "correct": true,
+ "refused": false,
+ "cost": 0.0015109999999999846,
+ "seconds": 3.653454082988901,
+ "steps": 1,
+ "messages": []
+}

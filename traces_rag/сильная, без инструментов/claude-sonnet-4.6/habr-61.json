@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "habr-61",
+  "source": "habr",
+  "question": "Какие оптимизации добавлены в llama.cpp в июне 2026?",
+  "answer": "оптимизации CUDA",
+  "evidence": "llama.cpp: исправлены уязвимости в ggml-alloc, добавлены оптимизации CUDA",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "answerable": true
+ },
+ "answer": "FINAL: Нет данных — июнь 2026 года находится за пределами моих знаний.",
+ "final": "Нет данных — июнь 2026 года находится за пределами моих знаний.",
+ "correct": false,
+ "refused": false,
+ "cost": 0.001917000000000002,
+ "seconds": 2.8854627500113565,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Какие оптимизации добавлены в llama.cpp в июне 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\": \"Июнь 2026 года ещё не наступил (мои знания ограничены началом 2025 года), поэтому у меня нет информации о событиях этого периода.\", \"final\": \"Нет данных — июнь 2026 года находится за пределами моих знаний.\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

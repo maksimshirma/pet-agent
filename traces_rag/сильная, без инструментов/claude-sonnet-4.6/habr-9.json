@@ -1,0 +1,35 @@
+{
+ "task": {
+  "id": "habr-9",
+  "source": "habr",
+  "question": "Какая версия TypeScript упомянута в анонсе марта 2026?",
+  "answer": "6.0",
+  "evidence": "Анонс TypeScript 6.0",
+  "page": "Frontend Status #10",
+  "url": "https://habr.com/ru/articles/1015700/",
+  "answerable": true
+ },
+ "answer": "FINAL: Нет данных",
+ "final": "Нет данных",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0020010000000000028,
+ "seconds": 2.706122791976668,
+ "steps": 1,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Отвечай строго одним JSON-объектом по этой схеме, без текста вокруг, строки в одну линию, без лишних отступов, \\t, \\n:\n{\"properties\": {\"reasoning\": {\"description\": \"ход решения в одно-два предложения\", \"title\": \"Reasoning\", \"type\": \"string\"}, \"final\": {\"description\": \"только короткий итоговый ответ: имя, число, дата или название\", \"title\": \"Final\", \"type\": \"string\"}}, \"required\": [\"reasoning\", \"final\"], \"title\": \"Answer\", \"type\": \"object\"}"
+  },
+  {
+   "role": "user",
+   "content": "Какая версия TypeScript упомянута в анонсе марта 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"reasoning\": \"В условии задачи упоминается 'анонс марта 2026', однако на данный момент (2025 год) такого анонса не существует, и у меня нет информации о событиях после начала 2025 года. Ответить на этот вопрос невозможно.\", \"final\": \"Нет данных\"}",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

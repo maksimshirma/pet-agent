@@ -1,0 +1,101 @@
+{
+ "task": {
+  "id": "habr-48",
+  "source": "habr",
+  "question": "Какой отчёт обновился в марте 2026?",
+  "answer": "WCAG 3",
+  "evidence": "Обновился Working Draft WCAG 3",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "answerable": true
+ },
+ "answer": "В марте 2026 года был обновлён отчёт Check Point Research о кампании Operation TrueChaos. FINAL: \"Operation TrueChaos\"",
+ "final": "\"Operation TrueChaos\"",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0005833500000000102,
+ "seconds": 9.99101366699324,
+ "steps": 4,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какой отчёт обновился в марте 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_ZSGhMetZxZy8mxSBvuaenHfX",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"отчёт март 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_ZSGhMetZxZy8mxSBvuaenHfX",
+   "content": "[Yabloko] The Russian United Democratic Party \"Yabloko\" (RUDP Yabloko; Russian: Российская объединённая демократическая партия «Яблоко», romanized: Rossiyskaya obyedinyonnaya demokraticheskaya partiya \"Yabloko\", [ˈjabləkə] , lit. 'Apple') is a social-liberal political party in Russia. The organization positions itself as \"Russia's only democratic party\". A number of political scientists and researchers characterize Yabloko as the only legally registered party in the country that stands in actual opposition to the current government. Party representatives and independent observers state that the organization's members face systemic government pressure and repression. The party consequently participated in the elections of deputies of the State Duma of the Federal Assembly of the Russian Federation of all eight convocations. Until 2003, Yabloko was represented by a faction in the State Duma and later until 2007 by individual deputies. In March 2002, the party became a full member of the Liberal International, and since November 1998, it has been in observer status. The founder of the party Grigory Yavlinsky is an honorary vice-president of the Liberal International and winner of its Prize for Freedom. Yabloko was a member of the Alliance of Liberals and Democrats for Europe (ALDE) from 2006 to 2025. As of 2021, the party was represented by factions in 4 regional parliaments of the Russian Federation. In addition, members of the party were deputies of 13 administrative centers of the subjects of the Russian Federation, 183 representatives of the party were municipal deputies in Moscow and 84 in Saint Petersburg. Yabloko is the sole officially registered party to openly oppose the Russian war in Ukraine, openly calling \"for peace and freedom\". The party planned to partake in the 2026 Russian legislative election under their anti-war slogan. However, in August 2026, the party was barred from running by the Supreme Court of Russia due to a lawsuit by Rodina. The suit alle"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_NNQfzLcbhhS6IvxWxC3op8Yf",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"отчёт обновлен март 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_NNQfzLcbhhS6IvxWxC3op8Yf",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_Lu2LDYFU8hqLkgbudetzrWZW",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"отчёт обновление март 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_Lu2LDYFU8hqLkgbudetzrWZW",
+   "content": "[Обзор изменений в законодательстве ИТ и ИБ за март 2026 года / Хабр] https://habr.com/ru/companies/ussc/news/1020378 — 05.03.2026 Шестой кассационный суд общей юрисдикции, рассмотрев гражданское дело по иску гражданина к ПАО «АНК «Башнефть» о признании приказа о применении дисциплинарного взыскания в виде замечания незаконным, вынес решение о признании правомерности наказания работника за факт создания угрозы информационной безопасности (хранение паролей на виду), даже если негативные последствия (взлом, утечка) н\n[Доверенное обновление как вектор атаки: разбираем Operation TrueChaos и защиту от supply-chain угроз / Хабр] https://habr.com/ru/companies/ideco/news/1019700 — # Доверенное обновление как вектор атаки: разбираем Operation TrueChaos и защиту от supply-chain угроз 31 марта 2026 года Check Point Research опубликовала отчёт о кампании Operation TrueChaos. Злоумышленники нашли ранее неизвестную уязвимость нулевого дня в системе видеоконференцсвязи TrueConf и через неё проникли в сети государственных учреждений Юго-Восточной Азии. Уязвимость получила идентифик\n[Обновления функциональности GigaIDE за март 2026 / Хабр] https://habr.com/ru/companies/sberbank/articles/1019478 — Доработки: Реализован менеджер JDBC драйверов для упрощения работы с драйверами разных версий и из разных источников Добавлена функция “Explain plan” для запросов Доработаны функции работы со структурой БД в окне Explorer: “Open Data” - для быстрого открытия грида с редактором данных таблицы; “Open DDL in Editor” - для быстрого открытия DDL в окне редактора; добавлена возможность Drag&Drop имени о\n[Дайджест технических новостей, переводов и лонгридов инфослужбы Хабра за март 2026 года / Хабр] https://habr.com/ru/articles/1005080 — — Новые мирового эндокринологического сообщества, где убрали все наблюдательные исследования, и получилось, что пить надо при совсем уже лютых дефицитах. Упрощая — эти говорят, что если бы первые не производили эти добавки, их, возможно, и послушали бы. Организм с"
+  },
+  {
+   "role": "assistant",
+   "content": "В марте 2026 года был обновлён отчёт Check Point Research о кампании Operation TrueChaos. FINAL: \"Operation TrueChaos\"",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

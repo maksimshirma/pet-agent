@@ -1,0 +1,149 @@
+{
+ "task": {
+  "id": "unans-1",
+  "source": "habr",
+  "question": "Что нового появилось в Svelte 6?",
+  "answer": null,
+  "evidence": null,
+  "page": null,
+  "url": null,
+  "answerable": false
+ },
+ "answer": "К сожалению, в данный момент я не располагаю актуальной информацией о новшествах в Svelte 6. Рекомендую проверить официальные источники и документацию для получения последней информации. FINAL: информация недоступна.",
+ "final": "информация недоступна.",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0013218000000000119,
+ "seconds": 16.18251262497506,
+ "steps": 7,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Что нового появилось в Svelte 6?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_MJLOBCk4lOpOB9J6oSaygd1k",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"Svelte 6 новое\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_MJLOBCk4lOpOB9J6oSaygd1k",
+   "content": "[SvelteJS — Фреймворк для создания быстрых web-приложений / Хабр] https://habr.com/ru/hubs/sveltejs — 13 марта 2026 года вышла новая мажорная версия инструмента для сборки фронтенд‑приложений — Vite 8. Главным изменением стал переход на новый бандлер Rolldown, написанный на Rust. Теперь Vite использует единый инструмент вместо связки esbuild и Rollup, что позволяет значительно ускорить сборку — по заявлениям разработчиков, в некоторых проектах прирост достигает 10–30 раз. Это самое значительное из\n[SvelteJS: Релиз второй версии] https://habr.com/ru/articles/353896 — Буквально вчера вышла 2-я версия молодого, но весьма многообещающего фреймворка SvelteJS. Версия мажорная, а значит содержит не только новые\n[Svelte, исчезающий фреймворк, который уже не исчезнет] https://habr.com/ru/articles/498702 — Svelte позволяет вам писать высокоуровневый декларативный код в исходниках, который просто развивать и поддерживать, а на выходе получать\n[Пришло ли время забыть о React и перейти на Svelte? / Хабр] https://habr.com/ru/companies/ruvds/articles/488660 — Леффен дал GPT-6 Astra в режиме Extra High довольно общую задачу — изучить оставшиеся нерасшифрованными сообщения из коллекции CryptoCellar и попробовать взломать одно из них. По рассказу самого Леффена, непосредственно работа модели до нахождения решения заняла около десяти часов. Всё исследование вместе с разбором источников, дополнительными проверками и воспроизведением результата шло 14 и 15 с\n[Svelte, исчезающий фреймворк, что всё никак не исчезал] https://habr.com/ru/articles/498650 — Фронтенд — это область куда каждый день приходят новые люди без опыта. Они не в состоянии оценить масштаб ненужности Svelte. Они увидят"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_Z4XBD0YgsiuBv4LQILQIbmGd",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Svelte 6 features\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_Z4XBD0YgsiuBv4LQILQIbmGd",
+   "content": "[Android version history] The version history of the Android mobile operating system began with the public release of its first beta on November 5, 2007. The first commercial version, Android 1.0, was released on September 23, 2008. The operating system has been developed by Google on a yearly schedule since at least 2011. New major releases are usually announced at Google I/O in May, along with beta testing, with the stable version released to the public between August and October. From 2025, new versions were announced in the first quarter and shipped in the second quarter."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_AWe4nXlKa6Qs0u38dazsuoVy",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"Svelte 6 нововведения\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_AWe4nXlKa6Qs0u38dazsuoVy",
+   "content": "[SvelteJS: Релиз второй версии / Хабр] https://habr.com/ru/articles/353896 — ``` Вообще у меня создается впечатление, что Svelte все больше склоняется к использованию RORO в своих интерфейсах. А полный переход на ES6 лишь способствует этому. #### Это же наблюдение подтверждает новый синтаксис вычисляемых свойств: Было ``` export default { computed: { d: (a, b, c) => a = b + c } }; ``` Стало ``` export default { computed: { d: ({ a, b, c }) => a = b + c } }; ``` [...] Но на\n[История о том, как я написал компилятор Svelte на Rust / Хабр] https://habr.com/ru/articles/1065708 — ``` Этот рефакторинг занял тоже много времени, но теперь я стал понимать и замечать полноценно, когда что-то идёт не так. Стало проще следить за ИИ: если он адхоком делает что-то в кодгене, что можно унести в семантику. И агент-ревью /verdict-directed тоже стал заметно лучше и приносил пользу. Также появилась чёткая зависимость между пассами анализа, вместо спагетти кода. [...] грепает теги из ./d\n[Быстрое введение в Svelte с точки зрения разработчика на Angular / Хабр] https://habr.com/ru/articles/467091 — Если эта часть вызывала у вас наибольшие волнения, то спешу обрадовать, что не так давно в Svelte была добавлена поддержка RxJS и пропозала Observable для ECMAScript. Как разработчик на Angular, я уже привык работать с реактивным программированием, и отсутствие аналога async pipe было бы крайне неудобным. Но Svelte удивил меня и тут. [...] Новое значение записываемого хранилища может быть указано \n[Как я переписал свой проект на Svelte / Хабр] https://habr.com/ru/articles/745780 — Также с добавлением изменяемых пропсов теперь я могу разделять свой многотонный код на еще больше компонентов, где каждый отвечает за свое. И никакой тайпскрипт не нужен. Честно, ненавижу тайпскрипт. Согласен, в команде тайпскрипт может принести некоторую пользу, но для одиночки это приносит лишь муки и снижение скорости разработки. ## UseEffect [...] ## Special elements В свелт есть дополнительны\n[Пришло ли время за"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_3LoXYuYyjTBwxXD8UNTvYsjX",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Svelte 6 release notes\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_3LoXYuYyjTBwxXD8UNTvYsjX",
+   "content": "[Android version history] The version history of the Android mobile operating system began with the public release of its first beta on November 5, 2007. The first commercial version, Android 1.0, was released on September 23, 2008. The operating system has been developed by Google on a yearly schedule since at least 2011. New major releases are usually announced at Google I/O in May, along with beta testing, with the stable version released to the public between August and October. From 2025, new versions were announced in the first quarter and shipped in the second quarter."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_AMs7sLpmT1roHD6VBWSctnlq",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"новинки Svelte 6\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_AMs7sLpmT1roHD6VBWSctnlq",
+   "content": "[SvelteJS: Релиз второй версии] https://habr.com/ru/articles/353896 — Но на дворе 2018-й и чтобы компилятор мог продуцировать более оптимальный и еще более компактный код, было принято решение отказаться от поддержки ES5. Иными словами, теперь Svelte компилирует компоненты в ES6 и нам придется использовать транспиллер, если необходима поддержка старых версий. [...] Буквально вчера вышла 2-я версия молодого, но весьма многообещающего фреймворка SvelteJS. Версия мажор\n[SvelteJS — Фреймворк для создания быстрых web- ...] https://habr.com/ru/hubs/sveltejs — Кроме этого, в релизе появились встроенные devtools, улучшенная поддержка TypeScript, новые возможности для SSR и ряд изменений в экосистеме плагинов. На основе поста в официальном блоге Vite 8 разберём ключевые нововведения и как они повлияют на разработку. ## Ultimate guide по веб-компонентам Синхронизация атрибутов элемента с DOM-свойствами [...] 13 марта 2026 года вышла новая мажорная версия и\n[Svelte, исчезающий фреймворк, что всё никак не исчезал] https://habr.com/ru/articles/498650 — С практической точки зрения важно одно — насколько хорошо фреймворк решает реальные бизнес задачи. И с этой точки зрения, если взять 2 фреймворка примерно одинаково решающие задачи, но у одного из них больше коммьюнити и экосистема, разумно выбрать последний. Svelte вышел в 2016 году. Vue вышел в 2014. Разница в 2 года. Т.е. Svelte мог учесть все ошибки Vue и стать лучшим, отвоевать аудиторию и ры\n[Sapper и Svelte: быстрое руководство / Хабр] https://habr.com/ru/companies/piter/articles/645343 — Замечание редактора английского оригинала: Это руководство по Svelte и Sapper было обновлено 2 июля 2021 года с учетом информации оSvelteKit, пришедшем на смену Sapper. Подробнее о SvelteKit рассказано в статье “Exploring SvelteKit, the newest Svelte-based framework.”\n[Svelte, исчезающий фреймворк, который уже не исчезнет] https://habr.com/ru/articles/498702 — Я бы сказал, что только начиная со второй версии Svelte в принципе стал хоть как"
+  },
+  {
+   "role": "user",
+   "content": "Инструменты больше недоступны. Ответь по тому, что уже известно, последней строкой FINAL: <ответ>."
+  },
+  {
+   "role": "assistant",
+   "content": "К сожалению, в данный момент я не располагаю актуальной информацией о новшествах в Svelte 6. Рекомендую проверить официальные источники и документацию для получения последней информации. FINAL: информация недоступна.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

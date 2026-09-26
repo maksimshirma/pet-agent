@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-2",
+  "source": "habr",
+  "question": "Какой новый HTML-атрибут предложила команда Edge?",
+  "answer": "focusgroup",
+  "evidence": "Команда Edge предлагает новый HTML-атрибут `focusgroup`",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "answerable": true
+ },
+ "answer": "[1] Команда Edge предложила новый HTML-атрибут **focusgroup**. Этот атрибут добавляется на контейнер, и браузер сам обрабатывает клавиши стрелок, пропускает скрытые/disabled-элементы, учитывает направление текста и восстанавливает фокус при возврате.\n\nFINAL: focusgroup",
+ "final": "focusgroup",
+ "correct": true,
+ "refused": false,
+ "cost": 0.0015199999999999658,
+ "seconds": 2.319222791993525,
+ "steps": 1,
+ "messages": []
+}

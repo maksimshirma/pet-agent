@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "habr-60",
+  "source": "habr",
+  "question": "Какая новая модель добавлена в Transformers в июне 2026?",
+  "answer": "cohere2_moe",
+  "evidence": "добавлена новая модель cohere2_moe",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "answerable": true
+ },
+ "answer": "В июне 2026 года в Transformers была добавлена новая модель под названием cohere2_moe. FINAL: новая модель cohere2_moe.",
+ "final": "новая модель cohere2_moe.",
+ "correct": true,
+ "refused": false,
+ "cost": 0.00017078999999997624,
+ "seconds": 2.960002792009618,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы по локальной базе знаний (статьи Habr/lawebbox про фронтенд и AI в 2026 году). Всегда сначала вызови knowledge_base, при необходимости — с уточнённым запросом или фильтром по странице. Если после поиска в базе знаний нет ответа на вопрос, ответь ровно NOT_FOUND. Последняя строка ответа всегда FINAL: <короткий ответ или NOT_FOUND>."
+  },
+  {
+   "role": "user",
+   "content": "Какая новая модель добавлена в Transformers в июне 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_vC2xIXijxnXLdjnY9BtTKPGt",
+     "function": {
+      "name": "knowledge_base",
+      "arguments": "{\"query\":\"новая модель Transformers июнь 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_vC2xIXijxnXLdjnY9BtTKPGt",
+   "content": "[Frontend Status #18 / AI / ML] Transformers : Исправлена уязвимость в пути при сохранении шаблонов, добавлена поддержка XPU для FlashAttention, добавлена новая модель cohere2_moe, исправлены ошибки в проверке модели и в MaskGenerationPipeline.\n[Frontend Status #10 / Frontend Status: свежий дайджест фронтенда и AI — 27.03.2026] 🅰️ Angular выпустила официальные скиллы для AI-агентов.\n[Frontend Status #18 / ⚛️ React] TanStack AI Beta: «нейтральная территория» AI-инструментов выросла : встроить ИИ в своё приложение хочется — а на практике выбираешь между привязкой к одному облаку, дорогой миграцией и чужими правилами игры. Команда TanStack, которая привыкла делать инструменты под ваш стек, а не наоборот, довела TanStack AI до беты: в декабре пообещали «нейтральную территорию» без вендорного замка — и за полгода из сырого прототипа выросла платформа, на которой уже можно собирать настоящий продукт. Чат, картинки, голос, видео — одна и та же схема; захотели другую модель — меняете одну строчку, остальное не трогаете. Если вас пугает, что завтра придётся переезжать ради смены поставщика — это открытый путь без такого сценария.\n[Frontend Status #8 / 🌎 Браузеры] Google Chrome переходит на двухнедельные релизы с сентября 2026 — в целом это вся новость!\n[Frontend Status #18 / Безопасность] Transformers : Исправлена уязвимость в пути при сохранении шаблонов."
+  },
+  {
+   "role": "assistant",
+   "content": "В июне 2026 года в Transformers была добавлена новая модель под названием cohere2_moe. FINAL: новая модель cohere2_moe.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

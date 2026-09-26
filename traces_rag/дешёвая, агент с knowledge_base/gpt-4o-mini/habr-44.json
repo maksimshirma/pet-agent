@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "habr-44",
+  "source": "habr",
+  "question": "Какая компания опубликовала постмортем об атаке Shai-Hulud?",
+  "answer": "Trigger.dev",
+  "evidence": "компания Trigger.dev опубликовала постмортем об атаке Shai-Hulud",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "answerable": true
+ },
+ "answer": "Компания, опубликовавшая постмортем об атаке Shai-Hulud, — Trigger.dev. FINAL: Trigger.dev",
+ "final": "Trigger.dev",
+ "correct": true,
+ "refused": false,
+ "cost": 0.00016551999999997458,
+ "seconds": 2.649921083007939,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы по локальной базе знаний (статьи Habr/lawebbox про фронтенд и AI в 2026 году). Всегда сначала вызови knowledge_base, при необходимости — с уточнённым запросом или фильтром по странице. Если после поиска в базе знаний нет ответа на вопрос, ответь ровно NOT_FOUND. Последняя строка ответа всегда FINAL: <короткий ответ или NOT_FOUND>."
+  },
+  {
+   "role": "user",
+   "content": "Какая компания опубликовала постмортем об атаке Shai-Hulud?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_er5KqMbgpO96XYaxdcoy7ya6",
+     "function": {
+      "name": "knowledge_base",
+      "arguments": "{\"query\":\"Shai-Hulud постмортем\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_er5KqMbgpO96XYaxdcoy7ya6",
+   "content": "[Frontend Status #8 / ⚡ JS / TS] npm-червь: компания Trigger.dev опубликовала постмортем об атаке Shai-Hulud . В этом посте компания Trigger.dev подробно рассказывает, как стала жертвой атаки через npm-червя Shai-Hulud: от взлома машины инженера и 17-часовой разведки до 10 минут разрушительных действий в GitHub-репозиториях, а также делится опытом восстановления, техническими деталями работы вредоноса и ключевыми уроками по усилению безопасности.\n[Инженерная зрелость в JS / Лид] Главный вывод радара — хайп-цикл фронтенда выдохся, и команды массово возвращаются к предсказуемости вместо охоты за очередным «убийцей React». Для бэкенда и DevOps это не праздная новость: когда у соседей наконец перестаёт гореть прод из-за очередного модного билдера, у нас становится меньше интеграционных сюрпризов на стыке.\n[Frontend Status #8 / 🎨 CSS] Амит Шин разбирает, почему в крупных проектах z-index превращается в гонку вооружений между командами, и предлагает лечение: токенизация слоёв через CSS-переменные (--z-toast: 100, --z-overlay: 300). isolation:isolate учтён!\n[habr — статья про AI-агентов / Ссылки] Искусственный интеллект\n[habr — статья про AI-агентов / Ссылки] GitHub Spark announcement (June 2025)"
+  },
+  {
+   "role": "assistant",
+   "content": "Компания, опубликовавшая постмортем об атаке Shai-Hulud, — Trigger.dev. FINAL: Trigger.dev",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

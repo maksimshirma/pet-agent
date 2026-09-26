@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-30",
+  "source": "habr",
+  "question": "Кто обновил карту React-библиотек на 2026 год?",
+  "answer": "Robin Wieruch",
+  "evidence": "Robin Wieruch, который каждый год раскладывает этот зоопарк по полочкам, обновил карту на 2026-й",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "answerable": true
+ },
+ "answer": "Обновил карту React-библиотек на 2026 год Robin Wieruch [1]. \n\nFINAL: Robin Wieruch.",
+ "final": "Robin Wieruch.",
+ "correct": true,
+ "refused": false,
+ "cost": 0.00012000000000000899,
+ "seconds": 1.5938535839959513,
+ "steps": 1,
+ "messages": []
+}

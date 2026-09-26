@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-32",
+  "source": "habr",
+  "question": "Сколько библиотек TanStack собрано в одном приложении Jack Herrington?",
+  "answer": "17",
+  "evidence": "Jack Herrington собрал все 17 библиотек TanStack в одном приложении",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "answerable": true
+ },
+ "answer": "В одном приложении Jack Herrington собрано 17 библиотек TanStack [1]. \n\nFINAL: 17.",
+ "final": "17.",
+ "correct": true,
+ "refused": false,
+ "cost": 9.43500000000208e-05,
+ "seconds": 1.0898855419945903,
+ "steps": 1,
+ "messages": []
+}

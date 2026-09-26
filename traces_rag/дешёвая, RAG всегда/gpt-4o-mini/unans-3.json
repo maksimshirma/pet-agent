@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "unans-3",
+  "source": "habr",
+  "question": "Что изменилось в Bun 2.0?",
+  "answer": null,
+  "evidence": null,
+  "page": null,
+  "url": null,
+  "answerable": false
+ },
+ "answer": "NOT_FOUND  \nFINAL: NOT_FOUND",
+ "final": "NOT_FOUND",
+ "correct": false,
+ "refused": true,
+ "cost": 7.995000000002306e-05,
+ "seconds": 1.5986788340087514,
+ "steps": 1,
+ "messages": []
+}

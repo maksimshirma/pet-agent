@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "habr-26",
+  "source": "habr",
+  "question": "Какая библиотека позволяет встроить PDF в React, Solid и Svelte?",
+  "answer": "PDFSlick",
+  "evidence": "PDFSlick подключает PDF к React, Solid, Svelte",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "answerable": true
+ },
+ "answer": "Библиотека, которая позволяет встроить PDF в React, Solid и Svelte, называется PDFSlick. FINAL: PDFSlick",
+ "final": "PDFSlick",
+ "correct": true,
+ "refused": false,
+ "cost": 0.00023745000000000016,
+ "seconds": 4.3251855410053395,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какая библиотека позволяет встроить PDF в React, Solid и Svelte?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_n7zZa3FUdYcPyh1G318weqad",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"встроить PDF в React Solid Svelte\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_n7zZa3FUdYcPyh1G318weqad",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI] https://habr.com/ru/articles/1047986 — ### ⚡ JS / TS PDFSlick: PDF в React, Solid и Svelte: встроить PDF в веб-приложение — обычно это отдельный мир: чужой просмотрщик, мало контроля, боль с несколькими тяжёлыми файлами сразу. PDFSlick подключает PDF к React, Solid, Svelte и обычному JavaScript как к своим компонентам — от простого просмотра с зумом до аннотаций, комментариев и нескольких документов в одном окне. Если нужен полноценный\n[React stack 2026: карта лучших библиотек по категориям / Хабр] https://habr.com/ru/articles/1032830 — Не для отображения existing PDFs. 🏆 PDF.js + react-pdf-viewer — Display existing PDFs PDF.js от Mozilla — стандарт для отображения PDFs в браузере. react-pdf (этот другой react-pdf, viewer не renderer) — React wrapper. Поддерживает rendering, annotations, search inside PDF. 🥈 Puppeteer / Playwright HTML→PDF — Server-side для сложных layouts Render HTML в headless Chrome, export в PDF. Поддерживает\n[Адам Калашников (minddecay) — Хабр Карьера] https://career.habr.com/minddecay — Observability и аналитика: Sentry, Yandex Metrica AI в разработке: пишу для команды rules, agents, skills, проектную документацию Инфра: Git (GitLab, GitHub), npm, pnpm, yarn, Docker, SignalR Знаком (использую для pet-проектов: Svelte, SvelteKit, Effector, Jotai и многое другое Подходы: FSD, Atomic Design, Flux, SOLID, KISS, DRY ## Навыки Выберите навык, чтобы посмотреть, какие тесты специалист уж\n[А давайте убьем все фреймворки? / Комментарии / Хабр] https://habr.com/ru/articles/757150/comments — Похожее было и со Svelte. Мне очень понравился этот очень простой фреймворк, очень удобный для небольших задач. Но потом они начали обымать необъятное и он усложнился, потерял былую легкость. Добавление новых фишек - не только улучшает, но и ухудшает. [...] Вы не понимаете, что такое React. React это не шаблонизатор. Если вам нужно просто один раз вывести страницу (как это делает сгенерированный C\n[mrmamongo — Хабр Кар"
+  },
+  {
+   "role": "assistant",
+   "content": "Библиотека, которая позволяет встроить PDF в React, Solid и Svelte, называется PDFSlick. FINAL: PDFSlick",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

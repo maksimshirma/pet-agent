@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "habr-25",
+  "source": "habr",
+  "question": "Какие новые CSS-функции дают элементу номер и число соседей?",
+  "answer": "sibling-index() и sibling-count()",
+  "evidence": "новые CSS-функции `sibling-index()` и `sibling-count()`",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "answerable": true
+ },
+ "answer": "Новые CSS-функции `sibling-index()` и `sibling-count()` позволяют получить номер элемента среди его соседей и общее число соседей непосредственно в стилях, упрощая написание каскадных анимаций и избавляя от необходимости использовать JavaScript или сложные циклы. \n\nFINAL: sibling-index(), sibling-count()",
+ "final": "sibling-index(), sibling-count()",
+ "correct": false,
+ "refused": false,
+ "cost": 0.00027735000000000953,
+ "seconds": 5.160965249990113,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какие новые CSS-функции дают элементу номер и число соседей?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_PbW3aQKencQS6ID3sUg2FAdM",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"новые CSS-функции номер и число соседей\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_PbW3aQKencQS6ID3sUg2FAdM",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI] https://habr.com/ru/articles/1047986 — Математические раскладки: подсчёт соседей в дереве: новые CSS-функции `sibling-index()` и `sibling-count()` дают элементу его номер и общее число соседей прямо в стилях, а значит, ступенчатую анимацию-каскад можно описать одной строкой через `calc()`, без препроцессорных циклов, плодящих по `:nth-child()`-правилу на каждый элемент, и даже без JS. `sibling-index()` `sibling-count()` `calc()` `:nth-\n[Как правильно прописать :nth-child? — Хабр Q&A] https://qna.habr.com/q/552267 — Обратимся к документации CSS. Псевдокласс nth-child определяет состояние элемента по соседям слева (before), соседей может быть 0. Тип узла-элемента не играет роли (текстовые узлы игнорируются). Поэтому 0 и 4 имеют один цвет, так как 0 получает красный, как первый в div, а 4й (он же пятый, если считать от 1цы) так же красный, так как в его случае nth-child учитывает 4х соседей слева. Как сделать с\n[Количественные CSS селекторы / Хабр] https://habr.com/ru/articles/252181 — `<div class=\"container\"> <p>...</p> <p>...</p> <blockquote>...</blockquote> <figure>...</figure> <p>...</p> <p>...</p> </div>` `.container > :nth-last-child(n+3), .container > :nth-last-child(n+3) ~ { / здесь стили / }` `<div class=\"container\"> <div>...</div> <p>...</p> <p>...</p> <p>...</p> <p>...</p> <p>...</p> <p>...</p> <p>...</p> <blockquote>...</blockquote> </div>` `p:nth-last-of-type(n+6), \n[YAHW на React / Хабр] https://habr.com/ru/articles/549842 — `cellSize` `width, height` `top, left` `MineField` `bomb, flag` `MineField` `col` -- колонка `col` `row` -- строка `row` `checked` -- помечена флагом `checked` `opened` -- открыта `opened` `bombNbr` -- сколько мин (бомб) в соседних ячейках `bombNbr` И конечно, нужно реагировать на нажатия левой и правой кнопки мыши. За это отвечают следующие две функции, обратите внимание, они указаны в тэге `div`\n[CSS: полное руководство по функции calc() / Хабр] https://habr.com/ru/companies/ruvds/ar"
+  },
+  {
+   "role": "assistant",
+   "content": "Новые CSS-функции `sibling-index()` и `sibling-count()` позволяют получить номер элемента среди его соседей и общее число соседей непосредственно в стилях, упрощая написание каскадных анимаций и избавляя от необходимости использовать JavaScript или сложные циклы. \n\nFINAL: sibling-index(), sibling-count()",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

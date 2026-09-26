@@ -1,0 +1,101 @@
+{
+ "task": {
+  "id": "unans-9",
+  "source": "habr",
+  "question": "Сколько разработчиков используют Astro по данным опроса State of JS 2026?",
+  "answer": null,
+  "evidence": null,
+  "page": null,
+  "url": null,
+  "answerable": false
+ },
+ "answer": "NOT_FOUND. \n\nFINAL: NOT_FOUND",
+ "final": "NOT_FOUND",
+ "correct": false,
+ "refused": true,
+ "cost": 0.0005880699999999961,
+ "seconds": 7.829819167003734,
+ "steps": 4,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы по локальной базе знаний (статьи Habr/lawebbox про фронтенд и AI в 2026 году). Всегда сначала вызови knowledge_base, при необходимости — с уточнённым запросом или фильтром по странице. Если после поиска в базе знаний нет ответа на вопрос, ответь ровно NOT_FOUND. Последняя строка ответа всегда FINAL: <короткий ответ или NOT_FOUND>."
+  },
+  {
+   "role": "user",
+   "content": "Сколько разработчиков используют Astro по данным опроса State of JS 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_dzwrTQM64EXgnGGGnNUXDZCO",
+     "function": {
+      "name": "knowledge_base",
+      "arguments": "{\"query\":\"Astro разработчиков State of JS 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_dzwrTQM64EXgnGGGnNUXDZCO",
+   "content": "[habr — статья про AI-агентов / Ссылки] Astro framework: 2025 year in review\n[Frontend Status #7 / Frontend Status: свежий дайджест фронтенда и AI — 05.03.2026] В этом выпуске — разговор с одним из создателей WebAssembly о версии 3.0, трезвый взгляд на AI-копилотов и что приходит им на смену. Прокачиваемся в CSS и JS: что уже baseline в 2026, как не провалиться в ловушки дат и зачем нужен «Can I Stop». По фреймворкам: Angular чинит уязвимости и наконец делает формы человечными, Vue — про доступность, Svelte лидирует в State of JS. Плюс Bun, сайт конференции Three.js, опасный баг в Chromium и статья для тех, кто устал просто «рисовать пиксели».\n[Frontend Status #9 / Frontend Status: свежий дайджест фронтенда и AI — 18.03.2026] ⚛️ React получает shadcn/cli v4 с режимом для агентов, SvelteKit ловит FOWL, Astro v6 подтягивает данные из API прямо в content collections.\n[Инженерная зрелость в JS / Инженерная зрелость в JS: почему фронтенд-сообщество выбирает предсказуемость вместо хайпа] По данным Хабра, архитектор веб-направления «Лаборатории Касперского» Паша Востриков собрал на HolyJS Spring 2026 техрадар по JS-стеку: опросил 120+ инженеров и разложил их ответы по зонам Adopt, Trial, Assess и Hold.\n[Frontend Status #15 / Frontend Status: свежий дайджест фронтенда и AI — 06.05.2026] ⚡ JavaScript и React на новом витке: ES2025/ES2026, типизированные контракты, React Compiler, TanStack Form и useHotkeys как база для масштабируемой фронтенд-разработки."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_dzPJ5n9yjGvDzMs9WPDT7ePZ",
+     "function": {
+      "name": "knowledge_base",
+      "arguments": "{\"query\":\"State of JS 2026\",\"page\":\"Frontend Status #9\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_dzPJ5n9yjGvDzMs9WPDT7ePZ",
+   "content": "[Frontend Status #9 / NodeJS, Deno, Bun, etc] Node Weekly #615 : из важного — Temporal proposal дошёл до Stage 4 на TC39. Девять лет ждали. Node должен включить его по умолчанию в 26-й версии. TypeScript 6.0 RC вышел. Node переходит на один мажорный релиз в год начиная с Node 27. node-sqlite3 выпустил финальный 6.0 и уходит на пенсию — самое время переехать на better-sqlite3 или встроенный node:sqlite . MikroORM 7 сменил Knex на Kysely, стал нативным ESM и отвязался от Node. ArkType 2.2 добавил type.fn — функции с автоматической валидацией входных и выходных типов. В общем, мы сделали дайджест из другого дайджеста!)\n[Frontend Status #9 / 🌎 Браузеры] Chrome 146 : три заметных новинки. Scroll-triggered animations — декларативное управление анимациями на основе позиции скролла без JavaScript, то, что раньше делали через IntersectionObserver и ручной старт. Scoped custom element registry — несколько реестров кастомных элементов на одной странице, конфликты имён между библиотеками больше не проблема. Sanitizer API — наконец стабильный способ очистить произвольный HTML от потенциально опасного кода без сторонних библиотек, теперь и в Firefox тоже.\n[Frontend Status #9 / Frontend Status: свежий дайджест фронтенда и AI — 18.03.2026] ⚛️ React получает shadcn/cli v4 с режимом для агентов, SvelteKit ловит FOWL, Astro v6 подтягивает данные из API прямо в content collections.\n[Frontend Status #9 / Frontend Status: свежий дайджест фронтенда и AI — 18.03.2026] 🤖 VS Code переходит на еженедельные релизы благодаря AI-агентам, Chrome объясняет разницу между MCP и WebMCP, а Эдди Османи вводит термин «comprehension debt».\n[Frontend Status #9 / ⚡ JS / TS] Практическое руководство по миграции с Moment.js на Temporal API : Temporal дошёл до Stage 4, работает в Chrome 144+ и Firefox 139+. Джо Аттарди разбирает миграцию по рецептам: создание объектов, парсинг, форматирование, арифметика дат, сравнение, конвертация часовых поясов. Ключевые отличия: Temporal иммутабелен (никаких .clone() перед"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_fWQUKQr8WotbEzjeABu3ObrG",
+     "function": {
+      "name": "knowledge_base",
+      "arguments": "{\"query\":\"State of JS 2026 Astro\",\"page\":\"\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_fWQUKQr8WotbEzjeABu3ObrG",
+   "content": "[habr — статья про AI-агентов / Ссылки] Astro framework: 2025 year in review\n[Инженерная зрелость в JS / Инженерная зрелость в JS: почему фронтенд-сообщество выбирает предсказуемость вместо хайпа] По данным Хабра, архитектор веб-направления «Лаборатории Касперского» Паша Востриков собрал на HolyJS Spring 2026 техрадар по JS-стеку: опросил 120+ инженеров и разложил их ответы по зонам Adopt, Trial, Assess и Hold.\n[Frontend Status #7 / Frontend Status: свежий дайджест фронтенда и AI — 05.03.2026] В этом выпуске — разговор с одним из создателей WebAssembly о версии 3.0, трезвый взгляд на AI-копилотов и что приходит им на смену. Прокачиваемся в CSS и JS: что уже baseline в 2026, как не провалиться в ловушки дат и зачем нужен «Can I Stop». По фреймворкам: Angular чинит уязвимости и наконец делает формы человечными, Vue — про доступность, Svelte лидирует в State of JS. Плюс Bun, сайт конференции Three.js, опасный баг в Chromium и статья для тех, кто устал просто «рисовать пиксели».\n[Инженерная зрелость в JS / Что в зоне Adopt и почему это не сюрприз] Дискуссия «JS против TS» в 2026-м, как отмечается в разборе, выглядит примерно как спор о пользе электричества . TypeScript давно перестал быть подсветкой в IDE — это производственная необходимость и фундамент contract-first проектирования. Контракты на API, схемы запросов и ответов, типы ошибок — всё это теперь живёт в одном месте и не разъезжается при первом же рефакторинге.\n[Frontend Status #15 / ⚡ JS / TS] Что нового в JavaScript (и что будет дальше) : обзор того, что уже приехало в ES2025, что близко в ES2026 и какие новые возможности JavaScript можно применять уже сейчас — в том числе в связке с AI-ассистентами при генерации кода."
+  },
+  {
+   "role": "assistant",
+   "content": "NOT_FOUND. \n\nFINAL: NOT_FOUND",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

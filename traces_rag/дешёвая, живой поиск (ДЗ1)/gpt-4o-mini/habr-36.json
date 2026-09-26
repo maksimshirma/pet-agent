@@ -1,0 +1,123 @@
+{
+ "task": {
+  "id": "habr-36",
+  "source": "habr",
+  "question": "Сколько времени занимает генерация приложения в Spark?",
+  "answer": "~20 минут",
+  "evidence": "Spark за ~20 минут генерирует фронтенд, бэкенд, модель данных",
+  "page": "habr — статья про AI-агентов",
+  "url": "https://habr.com/ru/articles/1003526/",
+  "answerable": true
+ },
+ "answer": "Не удалось найти точных данных о времени генерации приложения в Spark. Обычно это время зависит от множества факторов, включая сложность приложения и конфигурацию кластера. FINAL: неизвестно.",
+ "final": "неизвестно.",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0007111499999999937,
+ "seconds": 11.84363045799546,
+ "steps": 5,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Сколько времени занимает генерация приложения в Spark?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_WN0v1H5azkwq5bV9RsUFYJKA",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"время генерация приложения в Spark\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_WN0v1H5azkwq5bV9RsUFYJKA",
+   "content": "[GitHub запустил ИИ-модель Spark для генерации веб- ...] https://habr.com/ru/news/854542/comments — GitHub запустил ИИ-модель Spark для генерации веб-приложений. 2 мин. 13K. Искусственный интеллектРазработка мобильных приложений * Веб\n[Со Spark на Apache Doris: как Kwai ускорила расчёт метрик A/B-экспериментов в 145 раз / Хабр] https://habr.com/ru/articles/1085270 — | Конфигурация | Полный старт | Ускорение | Фаза loadDb | --- --- | | Последовательно (до оптимизации) | 27,2 мин | — | 17,2 мин | | 8 потоков | 15,4 мин | 1,77x | 5,8 мин | | 16 потоков (внедрено полностью) | 10,4 мин | 2,61x | 4,7 мин | Сама фаза loadDb сократилась с 17,2 до 4,7 минуты — ускорение в 3,6 раза, что уменьшило общее время старта на 62%. [...] Раньше платформа A/B-экспериментов Kwai \n[GitHub запустил ИИ-модель Spark для генерации веб- ...] https://habr.com/ru/news/854542 — GitHub Spark предлагает интерактивные предварительные просмотры, варианты ревизий, автоматическую историю и выбор модели для разработки. Его\n[Подготовка приложений Spark Streaming к ...] https://habr.com/ru/companies/otus/articles/557812 — Подготовка приложений Spark Streaming к использованию в рабочей среде · Использование режима кластера YARN · Корректное завершение работы\n[Apache Spark, объяснение ключевых терминов] https://habr.com/ru/articles/592067 — Apache Spark - это мощный движок с открытым исходным кодом, построенный для скорости, простого использования, сложной аналитики, в котором есть"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_KsmzGvr6TIdb3nQg3OB14do9",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"время генерация приложения Apache Spark\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_KsmzGvr6TIdb3nQg3OB14do9",
+   "content": "[Практика использования Spark SQL, или Как не наступить на грабли / Хабр] https://habr.com/ru/companies/sberbank/articles/496310 — `2019-12-13|1227125|application_1576046768499_16691|0|Application Report : Application-Id : application_1576046768499_16691 Application-Name : <app_name> Application-Type : SPARK User : <user> Queue : <yarnqueue> Start-Time : 1576229137128 Finish-Time : 1576229189406 Progress : 100% State : FINISHED Final-State : SUCCEEDED Tracking-URL : RPC Port : 0 AM Host : … Aggregate Resource Allocation : 937\n[Apache Spark, объяснение ключевых терминов] https://habr.com/ru/articles/592067 — Spark запускает программы до 100 раз быстрее, чем Hadoop MapReduce в памяти или в 10 раз быстрее на диске. Его можно использовать для построения\n[Подбираем параметры сессии в Apache Spark, чтобы ...] https://habr.com/ru/companies/alfa/articles/772224 — spark.dynamicAllocation.executorIdleTimeout — определяет время в миллисекундах, в течение которого исполнитель (executor) может находиться без\n[Подготовка приложений Spark Streaming к ...] https://habr.com/ru/companies/otus/articles/557812 — Spark Streaming — это расширение Core Apache Spark для масштабируемой, высокопроизводительной и устойчивой к сбоям обработки потоков данных в\n[Apache Spark — достоинства, недостатки, пожелания] https://habr.com/ru/articles/329838 — Скажем, запуская свое Spark приложение, вы сразу выбираете между Java/Scala и Python, и не можете комбинировать языки в рамках одного запуска."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_R3FIXCCNm4214agWx1VvrP4b",
+     "function": {
+      "name": "web_search_ru",
+      "arguments": "{\"query\":\"время генерация приложения в Apache Spark\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_R3FIXCCNm4214agWx1VvrP4b",
+   "content": "[Apache Maven] Apache Maven — фреймворк для автоматизации сборки проектов на основе описания их структуры в файлах POM (англ. Project Object Model), на языке XML. Проект Maven издаётся сообществом Apache Software Foundation, где формально является частью Jakarta Project. Название системы является словом из языка идиш, смысл которого можно примерно выразить как «собиратель знания». Maven обеспечивает декларативную, а не императивную (в отличие от средства автоматизации сборки Apache Ant) сборку проекта. В файлах описания проекта содержится его спецификация, а не отдельные команды выполнения. Все задачи по обработке файлов, описанные в спецификации, Maven выполняет посредством их обработки последовательностью встроенных и внешних плагинов. Maven используется для построения и управления проектами, написанными на Java, C#, Ruby, Scala, и других языках. Среди примечательных альтернатив — система автоматической сборки Gradle, построенная на принципах Apache Ant и Maven, но использующая специализированный предметно-ориентированный язык на основе Groovy вместо POM-конфигурации."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_peIKtgCda4TpBKSjfNgD1VV9",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"размер приложения в Spark время генерации\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_peIKtgCda4TpBKSjfNgD1VV9",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": "Не удалось найти точных данных о времени генерации приложения в Spark. Обычно это время зависит от множества факторов, включая сложность приложения и конфигурацию кластера. FINAL: неизвестно.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-47",
+  "source": "habr",
+  "question": "Какой пример микрофронтендов в Angular 21 описан?",
+  "answer": "Native Federation",
+  "evidence": "пример микрофронтендов в Angular 21 с использованием Native Federation",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "answerable": true
+ },
+ "answer": "В источнике [1] описан пример микрофронтендов в Angular 21 с использованием Native Federation для создания независимых приложений в едином монорепозитории. \n\nFINAL: Пример микрофронтендов в Angular 21 с использованием Native Federation.",
+ "final": "Пример микрофронтендов в Angular 21 с использованием Native Federation.",
+ "correct": true,
+ "refused": false,
+ "cost": 0.00010964999999998892,
+ "seconds": 1.8597184590180404,
+ "steps": 1,
+ "messages": []
+}

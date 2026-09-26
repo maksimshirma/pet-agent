@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-1",
+  "source": "habr",
+  "question": "В какой версии Firefox были исправлены 22 CVE, найденные Claude?",
+  "answer": "Firefox 148",
+  "evidence": "итого 22 CVE вошли в Firefox 148",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "answerable": true
+ },
+ "answer": "В версии Firefox 148 были исправлены 22 CVE, найденные Claude [1]. \n\nFINAL: Firefox 148.",
+ "final": "Firefox 148.",
+ "correct": true,
+ "refused": false,
+ "cost": 7.934999999997805e-05,
+ "seconds": 2.1655256250232924,
+ "steps": 1,
+ "messages": []
+}

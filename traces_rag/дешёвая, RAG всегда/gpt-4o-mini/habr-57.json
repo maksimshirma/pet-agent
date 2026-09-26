@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-57",
+  "source": "habr",
+  "question": "Какая проблема исправлена в Tailwind CSS в июне 2026?",
+  "answer": "проблема с sourcemaps",
+  "evidence": "Tailwind CSS: исправлена проблема с sourcemaps",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "answerable": true
+ },
+ "answer": "NOT_FOUND.  \nFINAL: NOT_FOUND.",
+ "final": "NOT_FOUND.",
+ "correct": false,
+ "refused": true,
+ "cost": 0.00010649999999998161,
+ "seconds": 0.9443942089856137,
+ "steps": 1,
+ "messages": []
+}

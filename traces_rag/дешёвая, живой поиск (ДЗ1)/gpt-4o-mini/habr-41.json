@@ -1,0 +1,105 @@
+{
+ "task": {
+  "id": "habr-41",
+  "source": "habr",
+  "question": "Кто ошибался в CSS Anchor Positioning?",
+  "answer": "Крис Койер",
+  "evidence": "Крис Койер ошибался в CSS Anchor Positioning!",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "answerable": true
+ },
+ "answer": "Ошибки в CSS Anchor Positioning могут возникнуть из-за неверного понимания позиции элементов, неправильного использования свойств или неучета особенностей работы браузеров с новыми фичами CSS. Например, разработчики могут ошибиться в установке координат либо неправильно настроить поведение якорных элементов. Однако конкретные фамилии или примеры не указаны. \n\nFINAL: ошибок много, конкретных имен нет.",
+ "final": "ошибок много, конкретных имен нет.",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0008173499999999945,
+ "seconds": 24.96958941599587,
+ "steps": 5,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Кто ошибался в CSS Anchor Positioning?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_yEvIiIbOBQ3Sk2vdrnvYSO6i",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"CSS Anchor Positioning ошибки\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_yEvIiIbOBQ3Sk2vdrnvYSO6i",
+   "content": "[CSS — Каскадные таблицы стилей / Хабр] https://habr.com/ru/hubs/css/articles/page10 — На HTML и CSS очень сложно сделать критическую ошибку. Чтобы интерфейс не заработал. Но всё же я собрал список. Я постарался выделить только критические ошибки. Конечно, это субъективный список, поэтому не знаю, согласитесь ли вы с ним. Давайте посмотрим, что я вам подготовил. ## CSS Anchor Positioning API Большой обзор нового API для позиционирования элементов в CSS. [...] ## Очень вероятно, что \n[Новинки CSS и UI: I/O 2023 / Хабр] https://habr.com/ru/articles/741914 — Для решения этой проблемы интерфейс позиционирования якоря предоставляет возможность кастомизации резервных (fallback) позиций. В следующем примере создается резервная позиция \"top-then-bottom\". Браузер сначала попытается позиционировать тултип сверху, а если он не помещается в область просмотра, браузер помещает его под элемент-якорь. [...] ### Позиционирование якоря Поповеры часто используются в\n[CSS в 2026 году: где JavaScript уже не обязателен / Хабр] https://habr.com/ru/companies/vk/articles/1080386 — Тултипы, меню и превью обычно должны появляться рядом с конкретным элементом: кнопкой, аватаром, полем ввода. Раньше для этого часто считали координаты через JS, следили за прокруткой, изменением размеров окна и выходом элемента за границы экрана. CSS Anchor Positioning позволяет связать всплывающий элемент с якорем и описать позицию декларативно. ``` .trigger { anchor-name: --menu-trigger; } .men\n[Frontend Status: свежий дайджест фронтенда и AI — 03.04.2026 / Хабр] https://habr.com/ru/articles/1018828 — Темани Афиф на Frontend Masters показал, как CSS Anchor Positioning позволяет связать два произвольных элемента стрелкой — с позицией, формой, измерением расстояния между ними и реакцией на сближение — всё без JavaScript (кроме drag). Ключевой трюк: `inset: min(anchor(--c1 inside), anchor(--c2 inside))` строит минимальный прямоугольник вокруг обоих элементов, который двигается вместе с ними. Дальш\n[Настройка Fire"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_7a3ZkVdvN5lWcFgqsiohcpaY",
+     "function": {
+      "name": "web_search_ru",
+      "arguments": "{\"query\":\"CSS Anchor Positioning ошибки\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_7a3ZkVdvN5lWcFgqsiohcpaY",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_JvLmALUvIWVTU2ploLVEgDXk",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"CSS Anchor Positioning mistakes\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_JvLmALUvIWVTU2ploLVEgDXk",
+   "content": "[SS Merchant] SS Merchant was an American iron–hulled passenger and package freighter in service between 1862 and 1875. The first iron–hulled merchant ship built on the Great Lakes, she was built in 1862 in Buffalo, New York, by the David Bell shipyard, out of components manufactured in Black Rock, New York, and Philadelphia, Pennsylvania. She was built for James C. and Edwin T. Evans of Buffalo, under whom she carried passengers and freight. Merchant made her maiden voyage in August 1862, sailing from Buffalo to Chicago. Between late 1872 and early 1873, she was lengthened by 30 feet (9.1 m), and had her passenger cabins removed. Also in 1873, Merchant was sold to the Erie & Western Transportation Company (also known as the \"Anchor Line\") of Erie, Pennsylvania. On October 6, 1875, while bound from Chicago for Milwaukee, Wisconsin, with a cargo of 20,000 bushels of corn, 200 barrels of flour and 2,000 bags of flax, she ran aground on Racine Reef off Racine, Wisconsin, due to a navigational error. Her hull punctured, she settled onto the reef. Although it was initially believed that she could be saved, she was abandoned by October 13 and had broken apart by November 1. By 1877, all of her machinery had been recovered. Rediscovered sometime during the 1990s, her wreck lies fragmented and scattered over a large area in about 25 feet (7.6 m) of water."
+  },
+  {
+   "role": "user",
+   "content": "Инструменты больше недоступны. Ответь по тому, что уже известно, последней строкой FINAL: <ответ>."
+  },
+  {
+   "role": "assistant",
+   "content": "Ошибки в CSS Anchor Positioning могут возникнуть из-за неверного понимания позиции элементов, неправильного использования свойств или неучета особенностей работы браузеров с новыми фичами CSS. Например, разработчики могут ошибиться в установке координат либо неправильно настроить поведение якорных элементов. Однако конкретные фамилии или примеры не указаны. \n\nFINAL: ошибок много, конкретных имен нет.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

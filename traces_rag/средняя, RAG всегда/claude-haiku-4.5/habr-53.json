@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-53",
+  "source": "habr",
+  "question": "Кто разбирает AT Protocol под капотом Bluesky?",
+  "answer": "Дэвид Бушелл",
+  "evidence": "Дэвид Бушелл разбирает AT Protocol",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "answerable": true
+ },
+ "answer": "Согласно источнику [1], AT Protocol под капотом Bluesky разбирает **Дэвид Бушелл** (David Bushnell). Он объясняет преимущества этой технологии, уже построил на её основе своё приложение и подробно разбирает, как устроена OAuth-авторизация через PDS.\n\nFINAL: Дэвид Бушелл разбирает AT Protocol под капотом Bluesky.",
+ "final": "Дэвид Бушелл разбирает AT Protocol под капотом Bluesky.",
+ "correct": true,
+ "refused": false,
+ "cost": 0.0013170000000000126,
+ "seconds": 2.30085249998956,
+ "steps": 1,
+ "messages": []
+}

@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "habr-5",
+  "source": "habr",
+  "question": "Какой фреймворк занял первое место в State of JS 2025 по позитивным отзывам?",
+  "answer": "Svelte",
+  "evidence": "Svelte продолжает занимать первое место среди реактивных фреймворков по позитивным отзывам",
+  "page": "Frontend Status #7",
+  "url": "https://habr.com/ru/articles/1007014/",
+  "answerable": true
+ },
+ "answer": "Согласно отчету State of JS 2025, Svelte продолжает занимать первое место среди реактивных фреймворков по позитивным отзывам.\n\nFINAL: Svelte",
+ "final": "Svelte",
+ "correct": true,
+ "refused": false,
+ "cost": 0.00021283999999999192,
+ "seconds": 3.27924395800801,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы по локальной базе знаний (статьи Habr/lawebbox про фронтенд и AI в 2026 году). Всегда сначала вызови knowledge_base, при необходимости — с уточнённым запросом или фильтром по странице. Если после поиска в базе знаний нет ответа на вопрос, ответь ровно NOT_FOUND. Последняя строка ответа всегда FINAL: <короткий ответ или NOT_FOUND>."
+  },
+  {
+   "role": "user",
+   "content": "Какой фреймворк занял первое место в State of JS 2025 по позитивным отзывам?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_ZgOkQe3xB8dF7qTvYgGR8Ld0",
+     "function": {
+      "name": "knowledge_base",
+      "arguments": "{\"query\":\"State of JS 2025 фреймворк позитивные отзывы\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_ZgOkQe3xB8dF7qTvYgGR8Ld0",
+   "content": "[Frontend Status #7 / 🧡 Svelte] State of Svelte: что нового во фреймворке . Кстати, судя по докладу State of JS 2025, Svelte продолжает занимать первое место среди реактивных фреймворков по позитивным отзывам.\n[Frontend Status #14 / 🤖 AI] HyperFrames — фреймворк для создания видео на HTML и JavaScript : open-source альтернатива Remotion без React, в которой можно собирать ролики из готовых блоков, эффектов и медиа-клипов.\n[Frontend Status #7 / Frontend Status: свежий дайджест фронтенда и AI — 05.03.2026] В этом выпуске — разговор с одним из создателей WebAssembly о версии 3.0, трезвый взгляд на AI-копилотов и что приходит им на смену. Прокачиваемся в CSS и JS: что уже baseline в 2026, как не провалиться в ловушки дат и зачем нужен «Can I Stop». По фреймворкам: Angular чинит уязвимости и наконец делает формы человечными, Vue — про доступность, Svelte лидирует в State of JS. Плюс Bun, сайт конференции Three.js, опасный баг в Chromium и статья для тех, кто устал просто «рисовать пиксели».\n[Frontend Status #15 / ⚡ JS / TS] Что нового в JavaScript (и что будет дальше) : обзор того, что уже приехало в ES2025, что близко в ES2026 и какие новые возможности JavaScript можно применять уже сейчас — в том числе в связке с AI-ассистентами при генерации кода.\n[Frontend Status #8 / Frontend Status: свежий дайджест фронтенда и AI — 12.03.2026] В этом выпуске — CodePen 2.0 и клон Loom на Next.js в видео; про AI: почему коллекция промптов не заменяет мышление, автоисследования на игровом PC и онбординг через Oncode. Безопасность в центре: Clinejection (4000 машин через GitHub-issue), как GitHub защищает агентские воркфлоу, укорочение срока жизни TLS-сертификатов, веб-агенты, сливающие данные пользователей, и 22 CVE в Firefox после проверки кодовой базы Claude. В CSS — все способы выбрать <html> , война z-index и подводный камень Anchor Positioning; в JS — когда пора переходить на Rust, разбор requestAnimationFrame и постмортем npm-червя Shai-Hulud. По фреймворкам: ретро-компоненты и "
+  },
+  {
+   "role": "assistant",
+   "content": "Согласно отчету State of JS 2025, Svelte продолжает занимать первое место среди реактивных фреймворков по позитивным отзывам.\n\nFINAL: Svelte",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

@@ -1,0 +1,105 @@
+{
+ "task": {
+  "id": "habr-24",
+  "source": "habr",
+  "question": "Какая уязвимость в Next.js описана в выпуске от 16 июня 2026?",
+  "answer": "CVE-2025-55182",
+  "evidence": "CVE-2025-55182 — RCE в Next.js через Server Actions",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "answerable": true
+ },
+ "answer": "NOT_FOUND.",
+ "final": "NOT_FOUND.",
+ "correct": false,
+ "refused": true,
+ "cost": 0.0008920400000000384,
+ "seconds": 7.866999500023667,
+ "steps": 5,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы по локальной базе знаний (статьи Habr/lawebbox про фронтенд и AI в 2026 году). Всегда сначала вызови knowledge_base, при необходимости — с уточнённым запросом или фильтром по странице. Если после поиска в базе знаний нет ответа на вопрос, ответь ровно NOT_FOUND. Последняя строка ответа всегда FINAL: <короткий ответ или NOT_FOUND>."
+  },
+  {
+   "role": "user",
+   "content": "Какая уязвимость в Next.js описана в выпуске от 16 июня 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_faWlfkv0cBl6LUPkBHrU1I4U",
+     "function": {
+      "name": "knowledge_base",
+      "arguments": "{\"query\":\"уязвимость Next.js\",\"page\":\"Frontend Status #8\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_faWlfkv0cBl6LUPkBHrU1I4U",
+   "content": "[Frontend Status #8 / 🎬 Видео] Clone Loom на Next.js В этом курсе мы создадим полноценный клон Loom с адаптивной потоковой передачей видео, записью экрана, AI-функциями и безопасным доступом, используя Mux, Next.js 15 и современные веб-технологии.\n[Frontend Status #8 / Frontend Status: свежий дайджест фронтенда и AI — 12.03.2026] В этом выпуске — CodePen 2.0 и клон Loom на Next.js в видео; про AI: почему коллекция промптов не заменяет мышление, автоисследования на игровом PC и онбординг через Oncode. Безопасность в центре: Clinejection (4000 машин через GitHub-issue), как GitHub защищает агентские воркфлоу, укорочение срока жизни TLS-сертификатов, веб-агенты, сливающие данные пользователей, и 22 CVE в Firefox после проверки кодовой базы Claude. В CSS — все способы выбрать <html> , война z-index и подводный камень Anchor Positioning; в JS — когда пора переходить на Rust, разбор requestAnimationFrame и постмортем npm-червя Shai-Hulud. По фреймворкам: ретро-компоненты и cron-генератор в React, микрофронтенды в Angular 21. Веб-стандарты: обновление WCAG 3 и отчёт TC39 про ES2026. Браузеры: Chrome переходит на двухнедельные релизы, Edge предлагает атрибут focusgroup . Плюс VS Code 1.111 с инфраструктурой для Copilot-агентов, «убедительный дизайн» и усталость от токенов, TDD в эпоху AI, элемент <geolocation> , AT Protocol под капотом Bluesky и запуск Cursor-агентов из Telegram.\n[Frontend Status #8 / ⚛️ React] Компонент для создания выражений cron — бесплатный визуальный конструктор cron-выражений с открытым исходным кодом, поддерживающий форматы Unix и Quartz, с предпросмотром в реальном времени и доступный в виде React-компонента.\n[Frontend Status #8 / 🅰️ Angular] Микрофронтенды Angular 21 и Native Federation — пример микрофронтендов в Angular 21 с использованием Native Federation для создания независимых приложений в едином монорепозитории.\n[Frontend Status #8 / 📦 Разное] Статья подготовлена при поддержке @CosyFrontend , @alexbraun и @DreamShaded ."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_m7uNSyPhs1JBt3eaBrsw5z2D",
+     "function": {
+      "name": "knowledge_base",
+      "arguments": "{\"query\":\"Next.js уязвимость\",\"page\":\"Frontend Status #8\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_m7uNSyPhs1JBt3eaBrsw5z2D",
+   "content": "[Frontend Status #8 / 🎬 Видео] Clone Loom на Next.js В этом курсе мы создадим полноценный клон Loom с адаптивной потоковой передачей видео, записью экрана, AI-функциями и безопасным доступом, используя Mux, Next.js 15 и современные веб-технологии.\n[Frontend Status #8 / 📦 Разное] Крис Койер разбирает странную природу элемента <geolocation> — текст и иконку нельзя менять, часть CSS молча игнорируется, часть — ограничена капами, а часть применяется, но тогда кнопка просто перестаёт работать. Браузер впервые принудительно следит за тем, чтобы элемент нельзя было спрятать и обмануть пользователя.\n[Frontend Status #8 / Frontend Status: свежий дайджест фронтенда и AI — 12.03.2026] В этом выпуске — CodePen 2.0 и клон Loom на Next.js в видео; про AI: почему коллекция промптов не заменяет мышление, автоисследования на игровом PC и онбординг через Oncode. Безопасность в центре: Clinejection (4000 машин через GitHub-issue), как GitHub защищает агентские воркфлоу, укорочение срока жизни TLS-сертификатов, веб-агенты, сливающие данные пользователей, и 22 CVE в Firefox после проверки кодовой базы Claude. В CSS — все способы выбрать <html> , война z-index и подводный камень Anchor Positioning; в JS — когда пора переходить на Rust, разбор requestAnimationFrame и постмортем npm-червя Shai-Hulud. По фреймворкам: ретро-компоненты и cron-генератор в React, микрофронтенды в Angular 21. Веб-стандарты: обновление WCAG 3 и отчёт TC39 про ES2026. Браузеры: Chrome переходит на двухнедельные релизы, Edge предлагает атрибут focusgroup . Плюс VS Code 1.111 с инфраструктурой для Copilot-агентов, «убедительный дизайн» и усталость от токенов, TDD в эпоху AI, элемент <geolocation> , AT Protocol под капотом Bluesky и запуск Cursor-агентов из Telegram.\n[Frontend Status #8 / 🎨 CSS] Амит Шин разбирает, почему в крупных проектах z-index превращается в гонку вооружений между командами, и предлагает лечение: токенизация слоёв через CSS-переменные (--z-toast: 100, --z-overlay: 300). isolation:isolate учтён!\n"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_TyhPfoUIUahgPOBrJyvav0Y6",
+     "function": {
+      "name": "knowledge_base",
+      "arguments": "{\"query\":\"уязвимость в Next.js\",\"page\":\"Frontend Status\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_TyhPfoUIUahgPOBrJyvav0Y6",
+   "content": "ничего не найдено"
+  },
+  {
+   "role": "user",
+   "content": "Инструменты больше недоступны. Ответь по тому, что уже известно, последней строкой FINAL: <ответ>."
+  },
+  {
+   "role": "assistant",
+   "content": "NOT_FOUND.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

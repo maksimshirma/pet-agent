@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "habr-3",
+  "source": "habr",
+  "question": "Кто был гостем подкаста о WebAssembly 3.0 20 января 2026?",
+  "answer": "Andreas Rossberg",
+  "evidence": "Гость — Andreas Rossberg, один из ключевых архитекторов WebAssembly с первых дней",
+  "page": "Frontend Status #7",
+  "url": "https://habr.com/ru/articles/1007014/",
+  "answerable": true
+ },
+ "answer": "Гостем подкаста о WebAssembly 3.0 20 января 2026 был Andreas Rossberg, один из ключевых архитекторов WebAssembly с первых дней, участник создания спецификации 3.0.\n\nFINAL: Andreas Rossberg",
+ "final": "Andreas Rossberg",
+ "correct": true,
+ "refused": false,
+ "cost": 0.00022498999999998048,
+ "seconds": 3.7713369590055663,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы по локальной базе знаний (статьи Habr/lawebbox про фронтенд и AI в 2026 году). Всегда сначала вызови knowledge_base, при необходимости — с уточнённым запросом или фильтром по странице. Если после поиска в базе знаний нет ответа на вопрос, ответь ровно NOT_FOUND. Последняя строка ответа всегда FINAL: <короткий ответ или NOT_FOUND>."
+  },
+  {
+   "role": "user",
+   "content": "Кто был гостем подкаста о WebAssembly 3.0 20 января 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_PCaqtDgkwY3xLi67RVRwRKpo",
+     "function": {
+      "name": "knowledge_base",
+      "arguments": "{\"query\":\"гость подкаста WebAssembly 3.0 20 января 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_PCaqtDgkwY3xLi67RVRwRKpo",
+   "content": "[Frontend Status #7 / 🎧 Аудиоподкаст] WebAssembly 3.0 с Andreas Rossberg — Эпизод от 20 января 2026. Гость — Andreas Rossberg, один из ключевых архитекторов WebAssembly с первых дней (V8/Google), участник создания спецификации 3.0.\n[Frontend Status #7 / Frontend Status: свежий дайджест фронтенда и AI — 05.03.2026] В этом выпуске — разговор с одним из создателей WebAssembly о версии 3.0, трезвый взгляд на AI-копилотов и что приходит им на смену. Прокачиваемся в CSS и JS: что уже baseline в 2026, как не провалиться в ловушки дат и зачем нужен «Can I Stop». По фреймворкам: Angular чинит уязвимости и наконец делает формы человечными, Vue — про доступность, Svelte лидирует в State of JS. Плюс Bun, сайт конференции Three.js, опасный баг в Chromium и статья для тех, кто устал просто «рисовать пиксели».\n[Frontend Status #14 / Frontend Status: свежий дайджест фронтенда и AI — 27.04.2026] 🧪 Инструменты, которые сокращают путь до релиза: автогенерация E2E, Excel через WebAssembly и процедурный звук для живого интерфейса.\n[Frontend Status #8 / Frontend Status: свежий дайджест фронтенда и AI — 12.03.2026] В этом выпуске — CodePen 2.0 и клон Loom на Next.js в видео; про AI: почему коллекция промптов не заменяет мышление, автоисследования на игровом PC и онбординг через Oncode. Безопасность в центре: Clinejection (4000 машин через GitHub-issue), как GitHub защищает агентские воркфлоу, укорочение срока жизни TLS-сертификатов, веб-агенты, сливающие данные пользователей, и 22 CVE в Firefox после проверки кодовой базы Claude. В CSS — все способы выбрать <html> , война z-index и подводный камень Anchor Positioning; в JS — когда пора переходить на Rust, разбор requestAnimationFrame и постмортем npm-червя Shai-Hulud. По фреймворкам: ретро-компоненты и cron-генератор в React, микрофронтенды в Angular 21. Веб-стандарты: обновление WCAG 3 и отчёт TC39 про ES2026. Браузеры: Chrome переходит на двухнедельные релизы, Edge предлагает атрибут focusgroup . Плюс VS Code 1.111 с инфраструктурой для"
+  },
+  {
+   "role": "assistant",
+   "content": "Гостем подкаста о WebAssembly 3.0 20 января 2026 был Andreas Rossberg, один из ключевых архитекторов WebAssembly с первых дней, участник создания спецификации 3.0.\n\nFINAL: Andreas Rossberg",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

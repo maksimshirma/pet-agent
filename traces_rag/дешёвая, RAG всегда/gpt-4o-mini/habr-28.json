@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-28",
+  "source": "habr",
+  "question": "Какой размер InferDI в бандле?",
+  "answer": "около 2 КБ",
+  "evidence": "в бандле — около 2 КБ",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "answerable": true
+ },
+ "answer": "Размер InferDI в бандле — около 2 КБ [1]. \n\nFINAL: 2 КБ.",
+ "final": "2 КБ.",
+ "correct": false,
+ "refused": false,
+ "cost": 0.00011354999999999005,
+ "seconds": 0.894066583015956,
+ "steps": 1,
+ "messages": []
+}

@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "habr-31",
+  "source": "habr",
+  "question": "Какой инструмент собирает React-проект из коробки с SSR?",
+  "answer": "Rockpack",
+  "evidence": "Rockpack собирает всё одной командой",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "answerable": true
+ },
+ "answer": "Наиболее популярные инструменты для сборки React-проекта с серверным рендерингом (SSR) — это Next.js и Gatsby. Из них Next.js считается стандартом для SSR в экосистеме React. \n\nFINAL: Next.js",
+ "final": "Next.js",
+ "correct": false,
+ "refused": false,
+ "cost": 0.00023234999999999228,
+ "seconds": 4.755025582999224,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какой инструмент собирает React-проект из коробки с SSR?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_X6x3OnjgpKwcWnAYe7BKuyoa",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"React проект с SSR\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_X6x3OnjgpKwcWnAYe7BKuyoa",
+   "content": "[Собираем свою библиотеку для SSR на React] https://habr.com/ru/companies/kts/articles/566176 — Наиболее популярные сейчас React-ориентированные фреймворки для SSR и SCG (static content generation) - это NextJS и Gatsby. Фреймворки решают\n[React Server-Side Rendering (SSR) — руководство новичка] https://habr.com/ru/articles/551948 — В этом уроке мы поговорим о серверном рендеринге (SSR), его преимуществах и подводных камнях. Затем мы создадим мини React проект и express\n[Как добавить SSR к React.js проекту? — Хабр Q&A] https://qna.habr.com/q/474533 — Есть такая штука как Next.js, много бойлерплейтов с webpack + express.js, возможно вам будет интересно Ответ написан 1 комментарий 1 комментарий Facebook Вконтакте Twitter hazratgs Хазрат Гаджикеримов @hazratgs Автор вопроса Да это отличный инструмент, но мне хочется по шагам понять, как сделать его, а рыться в исходниках такого большого проекта сложновато. Написано Ваш ответ на вопрос ### Войдите\n[Как настроить Server Side Rendering для индексации SPA приложений поисковиками / Хабр] https://habr.com/ru/articles/1017642 — Кроме метрик, SSR решает проблему превью в социальных сетях: VK, Telegram и другие мессенджеры не выполняют JavaScript при формировании превью, и без SSR они видят пустую страницу. ### Настройка SSR для React: пошагово с Next.js Настройка SSR для React: пошагово с Next.js Настройка SSR для React: пошагово с Next.js Next.js — стандарт для SSR в экосистеме React. Он берёт на себя всю серверную логик\n[Реализация Server-Side Rendering (SSR) при помощи ...] https://habr.com/ru/articles/761756 — В этом разделе мы погрузимся в тонкости Server-Side Rendering, или, как его часто сокращают, SSR, используя React и Bun. Добавление пакетов"
+  },
+  {
+   "role": "assistant",
+   "content": "Наиболее популярные инструменты для сборки React-проекта с серверным рендерингом (SSR) — это Next.js и Gatsby. Из них Next.js считается стандартом для SSR в экосистеме React. \n\nFINAL: Next.js",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

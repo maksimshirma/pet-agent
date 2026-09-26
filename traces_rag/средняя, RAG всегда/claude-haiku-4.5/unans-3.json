@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "unans-3",
+  "source": "habr",
+  "question": "Что изменилось в Bun 2.0?",
+  "answer": null,
+  "evidence": null,
+  "page": null,
+  "url": null,
+  "answerable": false
+ },
+ "answer": "NOT_FOUND\n\nИсточники содержат информацию об обновлениях Bun версии 1.3.10 и различных исправлениях в других версиях, но не содержат информации о Bun 2.0.\n\nFINAL: В источниках нет информации об изменениях в Bun 2.0.",
+ "final": "В источниках нет информации об изменениях в Bun 2.0.",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0011859999999999649,
+ "seconds": 2.1634323339967523,
+ "steps": 1,
+ "messages": []
+}

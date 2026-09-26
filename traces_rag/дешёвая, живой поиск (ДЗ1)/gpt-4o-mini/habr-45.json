@@ -1,0 +1,101 @@
+{
+ "task": {
+  "id": "habr-45",
+  "source": "habr",
+  "question": "Сколько часов длилась разведка перед атакой Shai-Hulud?",
+  "answer": "17 часов",
+  "evidence": "от взлома машины инженера и 17-часовой разведки",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "answerable": true
+ },
+ "answer": "Разведка перед атакой Shai-Hulud длилась 17 часов. \n\nFINAL: 17 часов.",
+ "final": "17 часов.",
+ "correct": true,
+ "refused": false,
+ "cost": 0.00039300000000000446,
+ "seconds": 6.9015254999976605,
+ "steps": 4,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Сколько часов длилась разведка перед атакой Shai-Hulud?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_zchEaH4SFq55DwcMwkulxfqz",
+     "function": {
+      "name": "web_search_ru",
+      "arguments": "{\"query\":\"Shai-Hulud разведка атака\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_zchEaH4SFq55DwcMwkulxfqz",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_QQtF0XeEnHb86p53Ujs4p6yj",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Shai-Hulud reconnaissance attack duration\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_QQtF0XeEnHb86p53Ujs4p6yj",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_Vj8BBOchCNZd6JuQVNi7JlC3",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"Shai-Hulud разведка атака\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_Vj8BBOchCNZd6JuQVNi7JlC3",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI] https://habr.com/ru/articles/1009296 — npm-червь: компания Trigger.dev опубликовала постмортем об атаке Shai-Hulud. В этом посте компания Trigger.dev подробно рассказывает, как стала жертвой атаки через npm-червя Shai-Hulud: от взлома машины инженера и 17-часовой разведки до 10 минут разрушительных действий в GitHub-репозиториях, а также делится опытом восстановления, техническими деталями работы вредоноса и ключевыми уроками по усилен\n[Кибербезопасность 2026: когда атаки работают быстрее защитников / Хабр] https://habr.com/ru/companies/cloud4y/articles/988204 — Взлом Trust Wallet через компрометацию цепочки поставок Shai-Hulud привёл к краже около 8,5 млн долларов. Атакующие получили доступ к GitHub-секретам разработчиков и API-ключу Chrome Web Store, что позволило загружать вредоносные сборки расширения напрямую, минуя стандартный процесс ревью. [...] Эксперты по кибербезопасности всё чаще используют термин «агентный AI» — автономные системы, способные \n[Информационная безопасность — Защита данных / Хабр] https://habr.com/ru/hubs/infosecurity/posts/page5 — Новые настройки заметно сужают возможности для атак через установочные скрипты. Это хорошо видно на примере Shai-Hulud и Shai-Hulud 2.0. В первой вредоносные версии пакетов в основном запускали код через postinstall, а во второй для этого использовался preinstall. Однако важно понимать, что вредоносный пакет по-прежнему может попасть в реестр и дерево зависимостей, а нежелательный код выполнится п\n[ТОП-5 ИБ‑событий недели по версии Jet CSIRT] https://habr.com/ru/companies/jetinfosystems/news/1069136 — Кампания Shai‑Hulud затронула более 440 пакетов npm с общим числом ежемесячных загрузок свыше двух миллиардов. Заражение происходит через скрипт\n[Когда доверие стало уязвимостью: что последние исследования говорят о влиянии ИИ на кибербезопасность / Хабр] https://habr.com/ru/companies/ru_mts/articles/1017026 — Один из примеров — события сентября 2025 года, когда мей"
+  },
+  {
+   "role": "assistant",
+   "content": "Разведка перед атакой Shai-Hulud длилась 17 часов. \n\nFINAL: 17 часов.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

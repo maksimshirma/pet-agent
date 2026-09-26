@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "unans-4",
+  "source": "habr",
+  "question": "Какая версия Vite вышла вслед за Vite 7?",
+  "answer": null,
+  "evidence": null,
+  "page": null,
+  "url": null,
+  "answerable": false
+ },
+ "answer": "NOT_FOUND\n\nВ источниках нет информации о том, какая версия Vite вышла после Vite 7. Источник [1] упоминает исправления в Vite, но не указывает номер версии.\n\nFINAL: Информация о версии Vite, вышедшей после Vite 7, в предоставленных источниках отсутствует.",
+ "final": "Информация о версии Vite, вышедшей после Vite 7, в предоставленных источниках отсутствует.",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0011340000000000239,
+ "seconds": 1.81686083402019,
+ "steps": 1,
+ "messages": []
+}

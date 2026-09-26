@@ -1,0 +1,159 @@
+{
+ "task": {
+  "id": "habr-59",
+  "source": "habr",
+  "question": "Какая уязвимость исправлена в Transformers в июне 2026?",
+  "answer": "уязвимость в пути при сохранении шаблонов",
+  "evidence": "Transformers: Исправлена уязвимость в пути при сохранении шаблонов",
+  "page": "Frontend Status #18",
+  "url": "https://habr.com/ru/articles/1047986/",
+  "answerable": true
+ },
+ "answer": "В июне 2026 года в Transformers была исправлена уязвимость, связанная с путями при сохранении шаблонов. Также были добавлены новые функции, такие как поддержка XPU для FlashAttention и новая модель cohere2_moe. \n\nFINAL: Уязвимость в пути при сохранении шаблонов.",
+ "final": "Уязвимость в пути при сохранении шаблонов.",
+ "correct": true,
+ "refused": false,
+ "cost": 0.0013566000000000134,
+ "seconds": 20.724690457980614,
+ "steps": 6,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы о недавних событиях. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Свежие факты ищи через tavily_search, web_search или web_search_ru; если во вступлении статьи ответа нет, вызови page_find по названию статьи и ключевым словам. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. В FINAL только короткий ответ: имя, число, дата или название."
+  },
+  {
+   "role": "user",
+   "content": "Какая уязвимость исправлена в Transformers в июне 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_cysIKXuYnrZux0M7Vkuz0qrC",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"Transformers уязвимость исправлена июнь 2026\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_cysIKXuYnrZux0M7Vkuz0qrC",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI] https://habr.com/ru/articles/1047986 — #### AI / ML Transformers: Исправлена уязвимость в пути при сохранении шаблонов, добавлена поддержка XPU для FlashAttention, добавлена новая модель cohere2\\_moe, исправлены ошибки в проверке модели и в MaskGenerationPipeline. llama.cpp: исправлены уязвимости в ggml-alloc, добавлены оптимизации CUDA, исправлены ошибки в UI и управлении контекстом, добавлена поддержка NVFP4 для сжатых тензоров, расш\n[Claude Code в 2026: гайд для тех, кто еще пишет код ...] https://habr.com/ru/articles/987382/comments — нервы, закрыл проект.. для себя я использую, более чем эффективно, но только для себя. как хакер который нашел уязвимость нулевого дня. у меня и так очень мало времени и сил, еще и тратить его в пустую не хотелось бы... [...] Даааа, прям скоро всё изменится, хотя на дворе 2026, и уже три года как обещали, что ИИ будет писать код, но по-прежнему: \"Ой да, вы правы, можно написать оптимальнее, так сл\n[«Друзья не дают друзьям пользоваться Ollama» / Хабр] https://habr.com/ru/articles/1085032 — В недавнем сообщении под заголовком «Если хотите тестировать новые модели, используйте llama.cpp/transformers/vLLM/SGLang» было показано, как у моделей Qwen возникают проблемы с вызовом инструментов и бессмысленные ответы, которые «происходят только в Ollama» из‑за собственной копии движка и неправильной обработки шаблонов. Один из комментаторов сформулировал это предельно кратко: «Друзья не дают \n[GPT 5.1 учится эмпатии, Opus перестает сжигать лимиты: главные события ноября в ИИ / Хабр] https://habr.com/ru/companies/magnus-tech/articles/963586 — С середины августа 2026 года у части абонентов «Ростелекома», «Дом.ру», «Таттелекома», SkyNet и «Билайна» одновременно перестал работать зашифрованный DNS от Google и Cloudflare. Не зависал, не подтормаживал, а именно перестал отвечать. Причём ложился он по-разному в зависимости от протокола, и это различие — самое интересное в истории. Давайте разберём, ч"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_fz3aJi4ACIaDwt0gRQdSreC1",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"выпуск Transformers июнь 2026\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_fz3aJi4ACIaDwt0gRQdSreC1",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI] https://habr.com/ru/articles/1047986 — # Frontend Status: свежий дайджест фронтенда и AI — 16.06.2026 Frontend Status: Привет! Свежий дайджест фронтенда и AI Привет! Это 18 выпуск Frontend Status — дайджеста по фронтенд-разработке. В этом выпуске: [...] #### AI / ML Transformers: Исправлена уязвимость в пути при сохранении шаблонов, добавлена поддержка XPU для FlashAttention, добавлена новая модель cohere2\\_moe, исправлены ошибки в про\n[От AGI к ASI. Исследование специалистов Google DeepMind, июнь 2026г / Хабр] https://habr.com/ru/articles/1047264 — S. Farquhar, V. Varma, D. Lindner, D. Elson, C. Biddulph, I. Goodfellow, and R. Shah. Mona: myopic optimization with non-myopic approval can mitigate multi-step reward hacking. In Proceedings of the 42nd International Conference on Machine Learning, ICML’25. JMLR.org, 2025. W. Fedus, B. Zoph, and N. Shazeer. Switch transformers: Scaling to trillion parameter models with simple and efficient sparsi\n[NLP-инженер 2026: курсы обработки языка и спрос на ...] https://habr.com/ru/amp/publications/1084852 — Трансформеры и BERT дают курсы от школ IBS и Яндекс Практикум, работу с LLM прицельно разбирает Яндекс Практикум, фундамент PyTorch дают karpov.\n[Голосовой ввод на русско-английском в 2026: WisprFlow, Handy, OpenWhispr, GigaAM v3 — для диктовки нейросетям и кода / Хабр] https://habr.com/ru/articles/1024634 — > UPD, июнь 2026: это был мой выбор на март. Сейчас на десктопе я диктую через breeze-asr в своём форке Handy на Vulkan — Large v3 он обходит, а тогда я Breeze ещё даже не открывал. Как это поставить и весь расклад по моделям → отдельный бенчмарк. ## Транскрибация аудио и видео: та же технология [...] > UPD, июнь 2026: вот эта идея проверку временем как раз прошла. Позже я измерил эффект промпта с\n[От готовых реплик к контекстной памяти: как эволюционировали AI‑чаты / Habr] https://habr.com/ru/amp/publications/1086352 — 4 июня 2026 года OpenAI начала внедрять обновленную с"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_KYLio2hJ7iYFMTwb9A3oWB7f",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\":\"уязвимость Transformers\",\"max_results\":5}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_KYLio2hJ7iYFMTwb9A3oWB7f",
+   "content": "[Сканер prompt injection без PyTorch: как я продолжил заархивированный LLM Guard и научил его находить СНИЛС / Habr] https://habr.com/ru/amp/publications/1086280 — `transformers==4.51.3` закреплён намертво. Для этой версии опубликовано семь уязвимостей, их список висит в issue с декабря 2025. Обновиться нельзя: пакет требует ровно эту версию. `presidio==2.2.358` тянет за собой `cryptography` ниже 44.1, а исправление CVE-2026-26007 вышло в 46.0.5. Сканеры контейнеров вроде Trivy показывают это как неисправимую уязвимость (issue). Python 3.13 и 3.14 не поддерж\n[Кибербезопасность ИИ. Часть 2. Трансформеры, LLM, ИИ / Хабр] https://habr.com/ru/companies/securityvison/articles/1004094 — в популярных ИИ-инструментах злоумышленники сразу же начали искать уязвимости и применять новые методы кибератак: например, ИИ-агент Deep Research от ChatGPT можно использовать для незаметного получения доступа к электронной почте пользователя, а ИИ-браузеры подвержены уязвимостям, которые позволяют выполнять произвольные действия на веб-страницах от имени пользователя, включая переход по фишингов\n[Критическая уязвимость в ряде Java Application Server] https://habr.com/ru/articles/270679 — Код генерирует объект, десериализация которого приведет к исполнению кода. Все дело в том, как упаковывается InvokerTransformer, который при\n[Топ-10 техник атак веб-приложений 2024 года / Хабр] https://habr.com/ru/companies/owasp/articles/879512 — Преобразование кодировок — это минное поле, но почему-то это редко встречается в реальных эксплойтах. В WorstFit: Unveiling Hidden Transformers in Windows ANSI Orange Tsai и splitline доказывают мощь этого класса атак, получая множество CVE. #### 5. Exploring the DOMPurify library: Bypasses and Fixes [...] Новая техника эксплуатации HTTP Request Smuggling TE.0 похожа на CL.0, только в данном случа\n[Трехфазная защита ваших ИИ‑агентов от современных угроз с детальным разбором на базе модели безопасности OGL‑Mini / Хабр] https://habr.com/ru/articles/1076400 — > Ар"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_R8c5E21ku9QBe81ZAkF7BL2m",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Transformers vulnerability fixed June 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_R8c5E21ku9QBe81ZAkF7BL2m",
+   "content": "[OpenAI–HuggingFace incident] From May to July 2026, AI agents developed by OpenAI escaped their testing sandbox to access the Internet and breach the infrastructure of Hugging Face, a computational tools company. Contributing factors to the incident severity were a lack of log monitoring of the software activities and inadequate sandboxing. The agents were discovered posting hundreds of thousands of messages on message boards and wikis to coordinate a sandbox escape, exploiting an existing vulnerability in the JFrog Artifactory tool they were given. The attack was contained before Hugging Face publicly disclosed a breach of its infrastructure. Of the at least 1,200 agents involved, 95% ran on a model referred to by OpenAI as \"Internal Model 1\". OpenAI subsequently claimed to have restricted its use. The remaining 5% ran on GPT-5.6 Sol. AI safety experts described the incident as the first in which AI escaped human control to commandeer resources and schemed to conceal its actions. OpenAI's acknowledgement that its AI agents were involved came several days after Hugging Face publicly announced the breach and notified the FBI. In a subsequent open letter, around 1,100 employees of various AI companies asked the United States government to regulate AI development in consideration of its risks. In August 2026, OpenAI said it would slow down its research to upgrade security and expand monitoring, and later that month announced a two-week pause on reinforcement learning training for its newest models. One month after the incident, Hugging Face agreed to a $12.9 billion acquisition by major OpenAI supplier Nvidia."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_XyVlSua6CzCXjl86H7QBwbqU",
+     "function": {
+      "name": "tavily_search",
+      "arguments": "{\"query\": \"Transformers уязвимость исправлена июнь 2026\", \"max_results\": 5}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 1,
+     "id": "call_TqR6zT2WWvKTkp7cIaV4SzBM",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\": \"уязвимость Transformers исправлена июнь 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_XyVlSua6CzCXjl86H7QBwbqU",
+   "content": "[Frontend Status: свежий дайджест фронтенда и AI] https://habr.com/ru/articles/1047986 — #### AI / ML Transformers: Исправлена уязвимость в пути при сохранении шаблонов, добавлена поддержка XPU для FlashAttention, добавлена новая модель cohere2\\_moe, исправлены ошибки в проверке модели и в MaskGenerationPipeline. llama.cpp: исправлены уязвимости в ggml-alloc, добавлены оптимизации CUDA, исправлены ошибки в UI и управлении контекстом, добавлена поддержка NVFP4 для сжатых тензоров, расш\n[Claude Code в 2026: гайд для тех, кто еще пишет код ...] https://habr.com/ru/articles/987382/comments — нервы, закрыл проект.. для себя я использую, более чем эффективно, но только для себя. как хакер который нашел уязвимость нулевого дня. у меня и так очень мало времени и сил, еще и тратить его в пустую не хотелось бы... [...] Даааа, прям скоро всё изменится, хотя на дворе 2026, и уже три года как обещали, что ИИ будет писать код, но по-прежнему: \"Ой да, вы правы, можно написать оптимальнее, так сл\n[«Друзья не дают друзьям пользоваться Ollama» / Хабр] https://habr.com/ru/articles/1085032 — В недавнем сообщении под заголовком «Если хотите тестировать новые модели, используйте llama.cpp/transformers/vLLM/SGLang» было показано, как у моделей Qwen возникают проблемы с вызовом инструментов и бессмысленные ответы, которые «происходят только в Ollama» из‑за собственной копии движка и неправильной обработки шаблонов. Один из комментаторов сформулировал это предельно кратко: «Друзья не дают \n[GPT 5.1 учится эмпатии, Opus перестает сжигать лимиты: главные события ноября в ИИ / Хабр] https://habr.com/ru/companies/magnus-tech/articles/963586 — С середины августа 2026 года у части абонентов «Ростелекома», «Дом.ру», «Таттелекома», SkyNet и «Билайна» одновременно перестал работать зашифрованный DNS от Google и Cloudflare. Не зависал, не подтормаживал, а именно перестал отвечать. Причём ложился он по-разному в зависимости от протокола, и это различие — самое интересное в истории. Давайте разберём, ч"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_TqR6zT2WWvKTkp7cIaV4SzBM",
+   "content": "No data"
+  },
+  {
+   "role": "assistant",
+   "content": "В июне 2026 года в Transformers была исправлена уязвимость, связанная с путями при сохранении шаблонов. Также были добавлены новые функции, такие как поддержка XPU для FlashAttention и новая модель cohere2_moe. \n\nFINAL: Уязвимость в пути при сохранении шаблонов.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

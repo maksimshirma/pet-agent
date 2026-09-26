@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "habr-23",
+  "source": "habr",
+  "question": "Какой IANA-тег назначен для CBOR-LD?",
+  "answer": "0xCB1D",
+  "evidence": "IANA-тег 0xCB1D",
+  "page": "Frontend Status #15",
+  "url": "https://habr.com/ru/articles/1032276/",
+  "answerable": true
+ },
+ "answer": "IANA-тег, назначенный для CBOR-LD, - 0xCB1D. \n\nFINAL: 0xCB1D",
+ "final": "0xCB1D",
+ "correct": true,
+ "refused": false,
+ "cost": 0.0001680299999999857,
+ "seconds": 3.617620665987488,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы по локальной базе знаний (статьи Habr/lawebbox про фронтенд и AI в 2026 году). Всегда сначала вызови knowledge_base, при необходимости — с уточнённым запросом или фильтром по странице. Если после поиска в базе знаний нет ответа на вопрос, ответь ровно NOT_FOUND. Последняя строка ответа всегда FINAL: <короткий ответ или NOT_FOUND>."
+  },
+  {
+   "role": "user",
+   "content": "Какой IANA-тег назначен для CBOR-LD?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_YLNCmmTuY9S0lPK6iD7RAt8d",
+     "function": {
+      "name": "knowledge_base",
+      "arguments": "{\"query\":\"IANA-тег CBOR-LD\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_YLNCmmTuY9S0lPK6iD7RAt8d",
+   "content": "[Frontend Status #15 / 🌐 Веб-стандарты] W3C опубликовал FPWD CBOR-LD 1.0 , бинарный формат для Linked Data поверх CBOR с семантическим сжатием через JSON-LD контексты, что даёт выигрыш над gzip больше 60%, IANA-тег 0xCB1D и реестр use-case словарей. Цель: IoT, wire-protocols и компактное хранилище.\n[habr — статья про AI-агентов / Ссылки] BLT-Preflight: Pre-PR security analysis\n[habr — статья про AI-агентов / Что нового?] BLT-MCP. Реализация Model Context Protocol (MCP) для безопасности. Теперь AI-агенты могут напрямую через стандартизированный протокол (JSON-RPC 2.0) общаться с инфраструктурой безопасности: логировать баги, запрашивать статусы, триггерить награды. Это превращает безопасность из бюрократической преграды в API-доступный сервис.\n[Frontend Status #7 / 🤖 AI] Инфраструктура для интернета агентов: armalo даёт AI-агентам верифицируемую идентичность, репутационные оценки, USDC-эскроу (sic!) для сделок между агентами и shared memory mesh для координации swarm-сетей.\n[habr — статья про AI-агентов / Что нового?] BLT-Preflight. Система, которая анализирует ваш PR еще до его создания. Она смотрит на issue, метаданные и историю, чтобы подсказать разработчику: «Это изменение может нарушить безопасность, рекомендуется проверить соответствующие компоненты»."
+  },
+  {
+   "role": "assistant",
+   "content": "IANA-тег, назначенный для CBOR-LD, - 0xCB1D. \n\nFINAL: 0xCB1D",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

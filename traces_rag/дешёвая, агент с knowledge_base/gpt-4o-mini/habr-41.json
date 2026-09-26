@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "habr-41",
+  "source": "habr",
+  "question": "Кто ошибался в CSS Anchor Positioning?",
+  "answer": "Крис Койер",
+  "evidence": "Крис Койер ошибался в CSS Anchor Positioning!",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "answerable": true
+ },
+ "answer": "Крис Койер ошибался в CSS Anchor Positioning, полагая, что якорь и позиционируемый элемент могут находиться где угодно в DOM. На самом деле якорь должен быть полностью отрендерен раньше и идеальным образом находиться сиблингом и стоять первым. \n\nFINAL: Крис Койер ошибался в CSS Anchor Positioning.",
+ "final": "Крис Койер ошибался в CSS Anchor Positioning.",
+ "correct": true,
+ "refused": false,
+ "cost": 0.0002036300000000102,
+ "seconds": 3.535045374999754,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы по локальной базе знаний (статьи Habr/lawebbox про фронтенд и AI в 2026 году). Всегда сначала вызови knowledge_base, при необходимости — с уточнённым запросом или фильтром по странице. Если после поиска в базе знаний нет ответа на вопрос, ответь ровно NOT_FOUND. Последняя строка ответа всегда FINAL: <короткий ответ или NOT_FOUND>."
+  },
+  {
+   "role": "user",
+   "content": "Кто ошибался в CSS Anchor Positioning?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_wn8vkMQ2yMvISP4llEOGb0di",
+     "function": {
+      "name": "knowledge_base",
+      "arguments": "{\"query\":\"CSS Anchor Positioning\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_wn8vkMQ2yMvISP4llEOGb0di",
+   "content": "[Frontend Status #11 / 🎨 CSS] Темани Афиф на Frontend Masters показал , как CSS Anchor Positioning позволяет связать два произвольных элемента стрелкой — с позицией, формой, измерением расстояния между ними и реакцией на сближение — всё без JavaScript (кроме drag). Ключевой трюк: inset: min(anchor(--c1 inside), anchor(--c2 inside)) строит минимальный прямоугольник вокруг обоих элементов, который двигается вместе с ними. Дальше clip-path , математика через round() и atan2() для угла поворота, и @container для детектирования столкновения.\n[Frontend Status #11 / Frontend Status: свежий дайджест фронтенда и AI — 03.04.2026] 🎨 CSS Anchor Positioning: два круга, стрелка и ноль строк JS от Темани Афифа.\n[Frontend Status #8 / 🎨 CSS] Крис Койер ошибался в CSS Anchor Positioning ! Точнее, считал, что якорь и позиционируемый элемент могут находиться где угодно в DOM, но, оказывается, нет: якорь обязан быть полностью отрендерен раньше, а в идеале — быть сиблингом и стоять первым.\n[Frontend Status #7 / 🎨 CSS] Одометр из автомобиля теперь на чистом CSS , без единой строки JavaScript. Статья показывает, как с помощью attr(), mod(), sibling-index() и @property автоматически раскидать цифры числа по отдельным элементам и заставить их крутиться вертикально при смене значения.\n[Frontend Status #10 / 🎨 CSS] Flexbox Masonry Layout (Explained with Math) — Математическая модель masonry-раскладки на Flexbox: как распределить элементы с разными соотношениями сторон так, чтобы высоты сходились. Автор выводит алгебраические преобразования, а не просто показывает «работающий пример». Нужна таки математика программистам!"
+  },
+  {
+   "role": "assistant",
+   "content": "Крис Койер ошибался в CSS Anchor Positioning, полагая, что якорь и позиционируемый элемент могут находиться где угодно в DOM. На самом деле якорь должен быть полностью отрендерен раньше и идеальным образом находиться сиблингом и стоять первым. \n\nFINAL: Крис Койер ошибался в CSS Anchor Positioning.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

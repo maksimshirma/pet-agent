@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-40",
+  "source": "habr",
+  "question": "Сколько CVE вошло в Firefox 148 после проверки Claude?",
+  "answer": "22",
+  "evidence": "итого 22 CVE вошли в Firefox 148",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "answerable": true
+ },
+ "answer": "В Firefox 148 вошло 22 CVE после проверки Claude [1]. \n\nFINAL: 22 CVE.",
+ "final": "22 CVE.",
+ "correct": true,
+ "refused": false,
+ "cost": 0.00011249999999998761,
+ "seconds": 1.9859236250049435,
+ "steps": 1,
+ "messages": []
+}

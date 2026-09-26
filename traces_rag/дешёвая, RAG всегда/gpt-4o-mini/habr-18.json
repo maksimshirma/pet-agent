@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "habr-18",
+  "source": "habr",
+  "question": "Какая версия SvelteKit получила поддержку TypeScript 6.0?",
+  "answer": "2.56",
+  "evidence": "TypeScript 6.0 в SvelteKit 2.56",
+  "page": "Frontend Status #15",
+  "url": "https://habr.com/ru/articles/1032276/",
+  "answerable": true
+ },
+ "answer": "NOT_FOUND\n\nFINAL: NOT_FOUND",
+ "final": "NOT_FOUND",
+ "correct": false,
+ "refused": true,
+ "cost": 5.969999999999587e-05,
+ "seconds": 0.9010898749984335,
+ "steps": 1,
+ "messages": []
+}

@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "habr-47",
+  "source": "habr",
+  "question": "Какой пример микрофронтендов в Angular 21 описан?",
+  "answer": "Native Federation",
+  "evidence": "пример микрофронтендов в Angular 21 с использованием Native Federation",
+  "page": "Frontend Status #8",
+  "url": "https://habr.com/ru/articles/1009296/",
+  "answerable": true
+ },
+ "answer": "В Angular 21 описан пример микрофронтендов с использованием Native Federation, который позволяет создавать независимые приложения в едином монорепозитории. \n\nFINAL: Микрофронтенды с использованием Native Federation.",
+ "final": "Микрофронтенды с использованием Native Federation.",
+ "correct": true,
+ "refused": false,
+ "cost": 0.00017380999999999647,
+ "seconds": 3.7473526669782586,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы по локальной базе знаний (статьи Habr/lawebbox про фронтенд и AI в 2026 году). Всегда сначала вызови knowledge_base, при необходимости — с уточнённым запросом или фильтром по странице. Если после поиска в базе знаний нет ответа на вопрос, ответь ровно NOT_FOUND. Последняя строка ответа всегда FINAL: <короткий ответ или NOT_FOUND>."
+  },
+  {
+   "role": "user",
+   "content": "Какой пример микрофронтендов в Angular 21 описан?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_w2eGOpFU6xoSCr7ZH8dVqp0s",
+     "function": {
+      "name": "knowledge_base",
+      "arguments": "{\"query\":\"микрофронтенды Angular 21\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_w2eGOpFU6xoSCr7ZH8dVqp0s",
+   "content": "[Frontend Status #8 / 🅰️ Angular] Микрофронтенды Angular 21 и Native Federation — пример микрофронтендов в Angular 21 с использованием Native Federation для создания независимых приложений в едином монорепозитории.\n[Frontend Status #18 / Бэкенд] Angular : исправлена уязвимость в доверии к JSDoc, добавлено подтверждение перед загрузкой рабочего пространства, улучшена производительность при обработке ошибок парсера, отключено ядро языка в ненадежных рабочих пространствах.\n[Frontend Status #14 / Frontend Status: свежий дайджест фронтенда и AI — 27.04.2026] ⚡ JS/TS и фреймворки под давлением масштаба: читаемость кода, ускорение Angular и обновления React/Vue как ориентиры для технических решений.\n[Frontend Status #7 / 🅰️ Angular] Формы в Angular всегда были болью : FormGroup с nullable-контролами, ControlValueAccessor на 250 строк ради простого степпера, ошибки валидации, которые нужно выкапывать из вложенных контролов вручную. Signal Forms в Angular 21 убирают всё это.\n[Frontend Status #7 / 🅰️ Angular] Устранение недавних уязвимостей в Angular — Команда разработчиков Angular рассказала о том, как были исправлены 2 серьезные уязвимости — SSRF и инъекции заголовков в Angular SSR, а также открытый редирект через префикс X-Forwarded."
+  },
+  {
+   "role": "assistant",
+   "content": "В Angular 21 описан пример микрофронтендов с использованием Native Federation, который позволяет создавать независимые приложения в едином монорепозитории. \n\nFINAL: Микрофронтенды с использованием Native Federation.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

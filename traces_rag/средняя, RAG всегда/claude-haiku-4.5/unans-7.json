@@ -1,0 +1,20 @@
+{
+ "task": {
+  "id": "unans-7",
+  "source": "habr",
+  "question": "Что показала Apple на WWDC 2026 для веб-разработчиков?",
+  "answer": null,
+  "evidence": null,
+  "page": null,
+  "url": null,
+  "answerable": false
+ },
+ "answer": "NOT_FOUND\n\nВ предоставленных источниках нет информации о том, что показала Apple на WWDC 2026 для веб-разработчиков. Источники содержат информацию о обновлениях Safari Technology Preview, браузерных возможностях и веб-стандартах, но не упоминают WWDC 2026.\n\nFINAL: Информация о презентациях Apple на WWDC 2026 не найдена в источниках.",
+ "final": "Информация о презентациях Apple на WWDC 2026 не найдена в источниках.",
+ "correct": false,
+ "refused": false,
+ "cost": 0.0018850000000000255,
+ "seconds": 3.674624749983195,
+ "steps": 1,
+ "messages": []
+}

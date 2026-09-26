@@ -1,0 +1,57 @@
+{
+ "task": {
+  "id": "habr-10",
+  "source": "habr",
+  "question": "Какая минимальная версия Node.js требуется для pnpm v11 RC?",
+  "answer": "22",
+  "evidence": "минимальная версия Node.js теперь 22",
+  "page": "Frontend Status #15",
+  "url": "https://habr.com/ru/articles/1032276/",
+  "answerable": true
+ },
+ "answer": "Минимальная версия Node.js, требуемая для pnpm v11 RC, составляет 22. FINAL: 22",
+ "final": "22",
+ "correct": true,
+ "refused": false,
+ "cost": 0.00019560000000001798,
+ "seconds": 3.713520833000075,
+ "steps": 2,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты отвечаешь на вопросы по локальной базе знаний (статьи Habr/lawebbox про фронтенд и AI в 2026 году). Всегда сначала вызови knowledge_base, при необходимости — с уточнённым запросом или фильтром по странице. Если после поиска в базе знаний нет ответа на вопрос, ответь ровно NOT_FOUND. Последняя строка ответа всегда FINAL: <короткий ответ или NOT_FOUND>."
+  },
+  {
+   "role": "user",
+   "content": "Какая минимальная версия Node.js требуется для pnpm v11 RC?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_5H9jgilXkGcRXgx1UNchecy6",
+     "function": {
+      "name": "knowledge_base",
+      "arguments": "{\"query\":\"минимальная версия Node.js для pnpm v11 RC\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_5H9jgilXkGcRXgx1UNchecy6",
+   "content": "[Frontend Status #15 / 🛠️ Инструменты] Вышел релиз-кандидат pnpm v11 : минимальная версия Node.js теперь 22, сам pnpm стал чистым ESM, по безопасности дефолты затянули: minimumReleaseAge=1440 (новые пакеты резолвятся не раньше суток после публикации, прямой ответ на свежие supply-chain атаки) и blockExoticSubdeps=true. Команды publish, login, view, deprecate, unpublish, dist-tag, version больше не делегируют в npm CLI, а переписаны нативно. Глобальные установки теперь изолированы: каждая pnpm add -g получает свою папку с собственным package.json и lockfile, никаких больше конфликтов peer-зависимостей между глобальными пакетами.\n[Frontend Status #10 / ⚡ JS / TS] Node.js 25.x, 24.x, 22.x, 20.x обновление безопасности - Доступны новые обновления безопасности для Node.js\n[Frontend Status #9 / NodeJS, Deno, Bun, etc] Node Weekly #615 : из важного — Temporal proposal дошёл до Stage 4 на TC39. Девять лет ждали. Node должен включить его по умолчанию в 26-й версии. TypeScript 6.0 RC вышел. Node переходит на один мажорный релиз в год начиная с Node 27. node-sqlite3 выпустил финальный 6.0 и уходит на пенсию — самое время переехать на better-sqlite3 или встроенный node:sqlite . MikroORM 7 сменил Knex на Kysely, стал нативным ESM и отвязался от Node. ArkType 2.2 добавил type.fn — функции с автоматической валидацией входных и выходных типов. В общем, мы сделали дайджест из другого дайджеста!)\n[Frontend Status #14 / 🛡️ Безопасность] OWASP обновляет NPM Security Cheat Sheet : актуальный чеклист по безопасности npm-пакетов с практиками против typosquatting и dependency confusion, а также рекомендациями по trusted publishing и отключению опасных lifecycle scripts.\n[Frontend Status #10 / ⚡ JS / TS] Петиция в Node.js - Node.js — это критически важная инфраструктура, работающая на миллионах серверов в сети и поддерживающая инженеров с помощью утилит командной строки, которые они используют ежедневно. Мы считаем, что размывание ядра, написанного вручную с тщательностью и усердием на прот"
+  },
+  {
+   "role": "assistant",
+   "content": "Минимальная версия Node.js, требуемая для pnpm v11 RC, составляет 22. FINAL: 22",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}
